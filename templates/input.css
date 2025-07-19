@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-neumorphic {
+    @apply px-6 py-3 bg-gray-100 rounded-lg font-semibold transition-all duration-200 shadow-neumorphic hover:shadow-neumorphic-inset;
+  }
+  
+  .card-neumorphic {
+    @apply bg-gray-50 rounded-xl p-6 shadow-neumorphic;
+  }
+  
+  .input-neumorphic {
+    @apply w-full px-4 py-3 bg-gray-50 rounded-lg shadow-neumorphic-inset focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+}

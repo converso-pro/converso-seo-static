@@ -1,0 +1,15 @@
+{
+  "name": "converso-seo-static",
+  "version": "1.0.0",
+  "description": "Simple static HTML generator for Converso SEO pages",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "build:css": "npx tailwindcss -i ./templates/input.css -o ./static/styles.css --minify",
+    "serve": "npx http-server ./output -p 8000"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
