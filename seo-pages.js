@@ -1111,6 +1111,49 @@ const SEO_PAGES = [
       h1: 'Terms of Service',
       pageType: 'terms'
     }
+  },
+
+  // ==================== ADDITIONAL REQUESTED PAGES ====================
+  
+  {
+    slug: 'preco-sistema-agendamento-online',
+    template: 'default',
+    languages: ['pt-BR'],
+    data: {
+      title: 'Preço Sistema de Agendamento Online 2024 - Comparativo Completo',
+      metaDescription: 'Descubra quanto custa um sistema de agendamento online profissional. Compare preços, funcionalidades e escolha a melhor opção para seu negócio.',
+      h1: 'Quanto Custa um Sistema de Agendamento Online?'
+    }
+  },
+  {
+    slug: 'como-montar-salao-beleza',
+    template: 'default',
+    languages: ['pt-BR'],
+    data: {
+      title: 'Como Montar um Salão de Beleza - Guia Completo 2024',
+      metaDescription: 'Aprenda como montar um salão de beleza do zero. Documentação, investimento inicial, equipamentos e dicas para ter sucesso.',
+      h1: 'Como Montar um Salão de Beleza do Zero'
+    }
+  },
+  {
+    slug: 'quanto-cobrar-corte-cabelo',
+    template: 'default',
+    languages: ['pt-BR'],
+    data: {
+      title: 'Quanto Cobrar por Corte de Cabelo em 2024 - Guia de Preços',
+      metaDescription: 'Saiba quanto cobrar por corte de cabelo em 2024. Tabela de preços por região, cálculo de custos e estratégias de precificação.',
+      h1: 'Quanto Cobrar por um Corte de Cabelo?'
+    }
+  },
+  {
+    slug: 'mercado-beleza-estetica-brasil',
+    template: 'default',
+    languages: ['pt-BR'],
+    data: {
+      title: 'Mercado de Beleza e Estética no Brasil - Análise 2024',
+      metaDescription: 'Conheça o mercado de beleza e estética no Brasil. Números, tendências, oportunidades e como aproveitar o crescimento do setor.',
+      h1: 'O Mercado de Beleza e Estética no Brasil'
+    }
   }
 ]
 
