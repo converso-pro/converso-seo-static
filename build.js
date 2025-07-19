@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { SEO_PAGES } = require('./seo-pages.js');
+const { PAGE_CONTENTS } = require('./page-contents.js');
 
 // Translations
 const translations = {
@@ -388,11 +389,307 @@ function generateBlogPostContent(page, language, t) {
   `;
 }
 
+// Generate rich content sections
+function generateRichSection(section, t) {
+  switch(section.type) {
+    case 'hero':
+      return `
+        <section class="bg-gradient-to-br from-blue-50 to-green-50 py-20 px-4">
+          <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+              ${section.title}
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              ${section.subtitle}
+            </p>
+          </div>
+        </section>
+      `;
+      
+    case 'features':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              ${section.items.map(item => `
+                <div class="card-neumorphic">
+                  <div class="text-4xl mb-4">${item.icon}</div>
+                  <h3 class="text-xl font-bold mb-3">${item.title}</h3>
+                  <p class="text-gray-600">${item.description}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+      
+    case 'comparison':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">${section.title}</h2>
+            <p class="text-xl text-gray-600 text-center mb-12">${section.subtitle}</p>
+            <div class="overflow-x-auto">
+              <table class="w-full bg-white rounded-lg shadow-neumorphic">
+                <thead>
+                  <tr class="bg-gradient-primary text-white">
+                    ${section.table.headers.map(h => `<th class="p-4">${h}</th>`).join('')}
+                  </tr>
+                </thead>
+                <tbody>
+                  ${section.table.rows.map((row, i) => `
+                    <tr class="${i % 2 === 0 ? 'bg-gray-50' : ''}">
+                      ${row.map(cell => `<td class="p-4 text-center">${cell}</td>`).join('')}
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      `;
+      
+    case 'testimonials':
+      return `
+        <section class="py-16 px-4 bg-gray-50">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+              ${section.items.map(item => `
+                <div class="card-neumorphic">
+                  <div class="flex mb-4">
+                    ${Array(item.rating).fill('⭐').join('')}
+                  </div>
+                  <p class="text-gray-700 mb-4 italic">"${item.text}"</p>
+                  <div>
+                    <p class="font-bold">${item.name}</p>
+                    <p class="text-sm text-gray-600">${item.business}</p>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+      
+    case 'pricing':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="grid md:grid-cols-${section.plans.length} gap-8 max-w-4xl mx-auto">
+              ${section.plans.map(plan => `
+                <div class="card-neumorphic ${plan.popular ? 'ring-4 ring-blue-500' : ''}">
+                  ${plan.popular ? '<div class="bg-blue-500 text-white text-center py-2 -mt-6 -mx-6 mb-6 rounded-t-xl">Mais Popular</div>' : ''}
+                  <h3 class="text-2xl font-bold mb-2">${plan.name}</h3>
+                  <p class="text-3xl font-bold text-blue-600 mb-2">${plan.price}</p>
+                  <p class="text-gray-600 mb-6">${plan.description}</p>
+                  <ul class="space-y-3 mb-8">
+                    ${plan.features.map(f => `
+                      <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        <span>${f}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                  <a href="https://app.converso.pro/auth?mode=signup" class="block w-full py-3 text-center bg-gradient-primary text-white rounded-lg font-bold hover:opacity-90">
+                    Começar Agora
+                  </a>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+      
+    case 'faq':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="space-y-4">
+              ${section.items.map(item => `
+                <details class="card-neumorphic cursor-pointer">
+                  <summary class="font-bold text-lg p-6">${item.question}</summary>
+                  <p class="px-6 pb-6 text-gray-700">${item.answer}</p>
+                </details>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+      
+    case 'content':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-4xl mx-auto prose prose-lg">
+            <h2 class="text-2xl font-bold mb-6">${section.title}</h2>
+            ${section.paragraphs.map(p => `<p class="mb-4">${p}</p>`).join('')}
+          </div>
+        </section>
+      `;
+      
+    case 'step-by-step':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            ${section.steps.map(step => `
+              <div class="mb-12 card-neumorphic">
+                <div class="flex items-center mb-6">
+                  <div class="w-16 h-16 bg-gradient-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mr-4">
+                    ${step.number}
+                  </div>
+                  <h3 class="text-2xl font-bold">${step.title}</h3>
+                </div>
+                <p class="text-gray-700 mb-6">${step.content}</p>
+                ${step.checklist ? `
+                  <ul class="space-y-2">
+                    ${step.checklist.map(item => `
+                      <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        <span>${item}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                ` : ''}
+                ${step.tip ? `<p class="mt-4 p-4 bg-blue-50 rounded-lg text-blue-700"><strong>💡 Dica:</strong> ${step.tip}</p>` : ''}
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      `;
+      
+    case 'regional-pricing':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">${section.title}</h2>
+            <div class="overflow-x-auto">
+              <table class="w-full bg-white rounded-lg shadow-neumorphic">
+                <thead>
+                  <tr class="bg-gradient-primary text-white">
+                    <th class="p-4 text-left">Região</th>
+                    <th class="p-4">Básico</th>
+                    <th class="p-4">Premium</th>
+                    <th class="p-4">Luxo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${section.data.map((item, i) => `
+                    <tr class="${i % 2 === 0 ? 'bg-gray-50' : ''}">
+                      <td class="p-4 font-medium">${item.region}</td>
+                      <td class="p-4 text-center">${item.basic}</td>
+                      <td class="p-4 text-center">${item.premium}</td>
+                      <td class="p-4 text-center">${item.luxury}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+            ${section.note ? `<p class="text-sm text-gray-600 mt-4 text-center">${section.note}</p>` : ''}
+          </div>
+        </section>
+      `;
+      
+    case 'market-overview':
+      return `
+        <section class="py-16 px-4 bg-gradient-to-br from-blue-50 to-green-50">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              ${section.stats.map(stat => `
+                <div class="bg-white rounded-lg p-6 shadow-neumorphic text-center">
+                  <div class="text-3xl font-bold text-blue-600 mb-2">${stat.number}</div>
+                  <div class="text-gray-700 font-medium">${stat.label}</div>
+                  ${stat.growth ? `<div class="text-green-600 text-sm mt-2">${stat.growth}</div>` : ''}
+                  ${stat.detail ? `<div class="text-gray-500 text-sm mt-2">${stat.detail}</div>` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+      
+    case 'segment-breakdown':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="space-y-6">
+              ${section.segments.map(segment => `
+                <div class="card-neumorphic">
+                  <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-bold">${segment.name}</h3>
+                    <div class="text-right">
+                      <div class="text-2xl font-bold text-blue-600">${segment.value}</div>
+                      <div class="text-sm text-gray-600">${segment.percentage} do mercado</div>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="text-green-600 font-medium">${segment.growth} crescimento</div>
+                    <div class="text-sm text-gray-600">${segment.includes.join(', ')}</div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+      
+    case 'pricing-comparison':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+              ${section.categories.map(cat => `
+                <div class="card-neumorphic ${cat.highlight ? 'ring-4 ring-green-500' : ''}">
+                  <h3 class="text-xl font-bold mb-2">${cat.name}</h3>
+                  <p class="text-2xl font-bold text-blue-600 mb-4">${cat.pricing}</p>
+                  <div class="mb-4">
+                    <p class="font-medium text-green-600 mb-2">Prós:</p>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                      ${cat.pros.map(pro => `<li>✓ ${pro}</li>`).join('')}
+                    </ul>
+                  </div>
+                  <div class="mb-4">
+                    <p class="font-medium text-red-600 mb-2">Contras:</p>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                      ${cat.cons.map(con => `<li>✗ ${con}</li>`).join('')}
+                    </ul>
+                  </div>
+                  <div class="pt-4 border-t">
+                    <p class="text-sm font-medium">Custo Real: <span class="text-lg font-bold">${cat.realCost}</span></p>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+      
+    default:
+      return '';
+  }
+}
+
 // Generate default content
 function generateDefaultContent(page, language, t) {
   const title = page.data?.h1 || page.data?.title || 'Converso';
   const description = page.data?.metaDescription || '';
+  const slug = page.slug;
   
+  // Check if we have rich content for this page
+  const richContent = PAGE_CONTENTS[slug]?.[language];
+  
+  if (richContent && richContent.sections) {
+    // Generate rich content
+    return richContent.sections.map(section => generateRichSection(section, t)).join('');
+  }
+  
+  // Fallback to simple content
   return `
     <section class="py-20 px-4">
       <div class="max-w-4xl mx-auto">
@@ -400,19 +697,19 @@ function generateDefaultContent(page, language, t) {
         <p class="text-xl text-gray-600 mb-12">${description}</p>
         
         <div class="card-neumorphic mb-8">
-          <h2 class="text-2xl font-bold mb-4">Why Choose Converso?</h2>
+          <h2 class="text-2xl font-bold mb-4">Por que escolher o Converso?</h2>
           <ul class="space-y-3">
             <li class="flex items-start">
               <span class="text-green-600 mr-2 text-xl">${t.FEATURE_CHECK}</span>
-              <span>Create your professional website in 5 minutes</span>
+              <span>Crie seu site profissional em 5 minutos</span>
             </li>
             <li class="flex items-start">
               <span class="text-green-600 mr-2 text-xl">${t.FEATURE_CHECK}</span>
-              <span>No booking fees or commissions</span>
+              <span>Sem taxas por agendamento ou comissões</span>
             </li>
             <li class="flex items-start">
               <span class="text-green-600 mr-2 text-xl">${t.FEATURE_CHECK}</span>
-              <span>Full control over your business</span>
+              <span>Controle total sobre seu negócio</span>
             </li>
           </ul>
         </div>
