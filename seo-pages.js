@@ -33,7 +33,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['en'],
     data: {
-      title: 'Converso vs Calendly - Complete Comparison 2024',
+      title: 'Converso vs Calendly - Complete Comparison 2025',
       metaDescription: 'Compare Converso vs Calendly. Features, pricing, and which is best for your business.',
       h1: 'Converso vs Calendly: Which is Better?',
       competitor: 'Calendly'
@@ -44,7 +44,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['pt-BR'],
     data: {
-      title: 'Converso vs Calendly - Comparação Completa 2024',
+      title: 'Converso vs Calendly - Comparação Completa 2025',
       metaDescription: 'Compare Converso vs Calendly. Recursos, preços e qual é melhor para seu negócio.',
       h1: 'Converso vs Calendly: Qual é Melhor?',
       competitor: 'Calendly'
@@ -55,7 +55,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['es'],
     data: {
-      title: 'Converso vs Calendly - Comparación Completa 2024',
+      title: 'Converso vs Calendly - Comparación Completa 2025',
       metaDescription: 'Compara Converso vs Calendly. Características, precios y cuál es mejor para tu negocio.',
       h1: 'Converso vs Calendly: ¿Cuál es Mejor?',
       competitor: 'Calendly'
@@ -68,7 +68,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['en'],
     data: {
-      title: 'Converso vs Acuity - Complete Comparison 2024',
+      title: 'Converso vs Acuity - Complete Comparison 2025',
       metaDescription: 'Compare Converso vs Acuity Scheduling. Features, pricing, and honest review.',
       h1: 'Converso vs Acuity: Which is Better?',
       competitor: 'Acuity'
@@ -79,7 +79,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['pt-BR'],
     data: {
-      title: 'Converso vs Acuity - Comparação Completa 2024',
+      title: 'Converso vs Acuity - Comparação Completa 2025',
       metaDescription: 'Compare Converso vs Acuity Scheduling. Recursos, preços e análise honesta.',
       h1: 'Converso vs Acuity: Qual é Melhor?',
       competitor: 'Acuity'
@@ -90,7 +90,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['es'],
     data: {
-      title: 'Converso vs Acuity - Comparación Completa 2024',
+      title: 'Converso vs Acuity - Comparación Completa 2025',
       metaDescription: 'Compara Converso vs Acuity Scheduling. Características, precios y análisis honesto.',
       h1: 'Converso vs Acuity: ¿Cuál es Mejor?',
       competitor: 'Acuity'
@@ -103,7 +103,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['en'],
     data: {
-      title: 'Converso vs Square Appointments - Comparison 2024',
+      title: 'Converso vs Square Appointments - Comparison 2025',
       metaDescription: 'Compare Converso vs Square Appointments. Features, fees, and which fits your business.',
       h1: 'Converso vs Square: Complete Comparison',
       competitor: 'Square'
@@ -114,7 +114,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['pt-BR'],
     data: {
-      title: 'Converso vs Square Appointments - Comparação 2024',
+      title: 'Converso vs Square Appointments - Comparação 2025',
       metaDescription: 'Compare Converso vs Square Appointments. Recursos, taxas e qual se adequa ao seu negócio.',
       h1: 'Converso vs Square: Comparação Completa',
       competitor: 'Square'
@@ -127,9 +127,9 @@ const SEO_PAGES = [
     template: 'alternatives',
     languages: ['en'],
     data: {
-      title: 'Best Calendly Alternatives 2024 - Top 10 Options',
+      title: 'Best Calendly Alternatives 2025 - Top 10 Options',
       metaDescription: 'Looking for Calendly alternatives? Compare the best scheduling tools with features and pricing.',
-      h1: 'Top Calendly Alternatives for 2024',
+      h1: 'Top Calendly Alternatives for 2025',
       mainCompetitor: 'Calendly'
     }
   },
@@ -138,9 +138,9 @@ const SEO_PAGES = [
     template: 'alternatives',
     languages: ['pt-BR'],
     data: {
-      title: 'Melhores Alternativas ao Calendly 2024 - Top 10 Opções',
+      title: 'Melhores Alternativas ao Calendly 2025 - Top 10 Opções',
       metaDescription: 'Procurando alternativas ao Calendly? Compare as melhores ferramentas de agendamento com recursos e preços.',
-      h1: 'Principais Alternativas ao Calendly para 2024',
+      h1: 'Principais Alternativas ao Calendly para 2025',
       mainCompetitor: 'Calendly'
     }
   },
@@ -149,9 +149,9 @@ const SEO_PAGES = [
     template: 'alternatives',
     languages: ['es'],
     data: {
-      title: 'Mejores Alternativas a Calendly 2024 - Top 10 Opciones',
+      title: 'Mejores Alternativas a Calendly 2025 - Top 10 Opciones',
       metaDescription: 'Buscando alternativas a Calendly? Compara las mejores herramientas de programación con características y precios.',
-      h1: 'Principales Alternativas a Calendly para 2024',
+      h1: 'Principales Alternativas a Calendly para 2025',
       mainCompetitor: 'Calendly'
     }
   },
@@ -164,7 +164,7 @@ const SEO_PAGES = [
     template: 'industry',
     languages: ['en'],
     data: {
-      title: 'Best Booking System for Hair Salons 2024',
+      title: 'Best Booking System for Hair Salons 2025',
       metaDescription: 'Find the best booking system for your hair salon. Compare features, pricing, and reviews.',
       h1: 'Best Booking System for Hair Salons',
       industry: 'hair-salon'
@@ -175,7 +175,7 @@ const SEO_PAGES = [
     template: 'industry',
     languages: ['pt-BR'],
     data: {
-      title: 'Melhor Sistema de Agendamento para Salões 2024',
+      title: 'Melhor Sistema de Agendamento para Salões 2025',
       metaDescription: 'Encontre o melhor sistema de agendamento para seu salão. Compare recursos, preços e avaliações.',
       h1: 'Melhor Sistema de Agendamento para Salões',
       industry: 'hair-salon'
@@ -186,7 +186,7 @@ const SEO_PAGES = [
     template: 'industry',
     languages: ['es'],
     data: {
-      title: 'Mejor Sistema de Citas para Salones 2024',
+      title: 'Mejor Sistema de Citas para Salones 2025',
       metaDescription: 'Encuentra el mejor sistema de citas para tu salón. Compara características, precios y reseñas.',
       h1: 'Mejor Sistema de Citas para Salones',
       industry: 'hair-salon'
@@ -364,7 +364,7 @@ const SEO_PAGES = [
     template: 'guide',
     languages: ['pt-BR'],
     data: {
-      title: 'Guia Completo para Revenda de Celulares 2024',
+      title: 'Guia Completo para Revenda de Celulares 2025',
       metaDescription: 'Aprenda como montar uma revenda de celulares. Fornecedores, margem de lucro e estratégias.',
       h1: 'Guia Completo: Revenda de Celulares',
       guideType: 'business-setup'
@@ -390,7 +390,7 @@ const SEO_PAGES = [
     template: 'industry',
     languages: ['pt-BR'],
     data: {
-      title: 'Sistema de Gestão para Barbearia - Completo 2024',
+      title: 'Sistema de Gestão para Barbearia - Completo 2025',
       metaDescription: 'Sistema completo para gerenciar sua barbearia. Agendamento, fila digital, fidelidade e mais.',
       h1: 'Sistema de Gestão Completo para Barbearia',
       industry: 'barbershop'
@@ -423,7 +423,7 @@ const SEO_PAGES = [
     template: 'guide',
     languages: ['pt-BR'],
     data: {
-      title: 'Guia Completo: Como Abrir uma Barbearia 2024',
+      title: 'Guia Completo: Como Abrir uma Barbearia 2025',
       metaDescription: 'Tudo que você precisa saber para abrir uma barbearia. Investimento, documentação e dicas.',
       h1: 'Como Abrir uma Barbearia: Guia Completo',
       guideType: 'business-setup'
@@ -445,7 +445,7 @@ const SEO_PAGES = [
     template: 'guide',
     languages: ['pt-BR'],
     data: {
-      title: 'Marketing Digital para Barbearia - Guia 2024',
+      title: 'Marketing Digital para Barbearia - Guia 2025',
       metaDescription: 'Estratégias de marketing digital para barbearia. Redes sociais, Google e fidelização.',
       h1: 'Marketing Digital para Barbearia',
       guideType: 'marketing'
@@ -491,7 +491,7 @@ const SEO_PAGES = [
     template: 'guide',
     languages: ['en'],
     data: {
-      title: 'Complete Guide: How to Open a Barbershop 2024',
+      title: 'Complete Guide: How to Open a Barbershop 2025',
       metaDescription: 'Everything you need to know to open a barbershop. Investment, documentation, and tips.',
       h1: 'How to Open a Barbershop: Complete Guide',
       guideType: 'business-setup'
@@ -513,7 +513,7 @@ const SEO_PAGES = [
     template: 'guide',
     languages: ['en'],
     data: {
-      title: 'Digital Marketing for Barbershops - Guide 2024',
+      title: 'Digital Marketing for Barbershops - Guide 2025',
       metaDescription: 'Digital marketing strategies for barbershops. Social media, Google, and customer retention.',
       h1: 'Digital Marketing for Barbershops',
       guideType: 'marketing'
@@ -537,7 +537,7 @@ const SEO_PAGES = [
     template: 'guide',
     languages: ['es'],
     data: {
-      title: 'Guía Completa: Cómo Abrir una Barbería 2024',
+      title: 'Guía Completa: Cómo Abrir una Barbería 2025',
       metaDescription: 'Todo lo que necesitas saber para abrir una barbería. Inversión, documentación y consejos.',
       h1: 'Cómo Abrir una Barbería: Guía Completa',
       guideType: 'business-setup'
@@ -570,7 +570,7 @@ const SEO_PAGES = [
     template: 'guide',
     languages: ['es'],
     data: {
-      title: 'Marketing Digital para Barbería - Guía 2024',
+      title: 'Marketing Digital para Barbería - Guía 2025',
       metaDescription: 'Estrategias de marketing digital para barbería. Redes sociales y fidelización.',
       h1: 'Marketing Digital para Barbería',
       guideType: 'marketing'
@@ -675,7 +675,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['pt-BR'],
     data: {
-      title: 'Qual o Melhor Aplicativo para Barbearia? Guia 2024',
+      title: 'Qual o Melhor Aplicativo para Barbearia? Guia 2025',
       metaDescription: 'Descubra o melhor aplicativo para barbearia. Compare preços, recursos e avaliações.',
       h1: 'Qual o Melhor Aplicativo para Barbearia?',
       competitors: ['Fresha', 'Booksy', 'Trinks']
@@ -686,7 +686,7 @@ const SEO_PAGES = [
     template: 'pricing',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Custa um App para Barbearia? Preços 2024',
+      title: 'Quanto Custa um App para Barbearia? Preços 2025',
       metaDescription: 'Saiba quanto custa um app para barbearia. Compare preços e calcule o ROI.',
       h1: 'Quanto Custa um App para Barbearia?',
       priceRange: { min: 0, max: 88, currency: 'BRL' }
@@ -697,7 +697,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['pt-BR'],
     data: {
-      title: 'Melhor Aplicativo de Agendamento Online 2024',
+      title: 'Melhor Aplicativo de Agendamento Online 2025',
       metaDescription: 'Compare os melhores aplicativos de agendamento online. Preços e recursos.',
       h1: 'Qual o Melhor Aplicativo de Agendamento?',
       competitors: ['Calendly', 'Booksy', 'Google Calendar']
@@ -752,7 +752,7 @@ const SEO_PAGES = [
     template: 'pricing',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Custa um Site para Barbearia? Preços 2024',
+      title: 'Quanto Custa um Site para Barbearia? Preços 2025',
       metaDescription: 'Descubra quanto custa criar um site para barbearia. Compare opções.',
       h1: 'Quanto Custa um Site para Barbearia?',
       priceRange: { min: 0, max: 5000, currency: 'BRL' }
@@ -787,7 +787,7 @@ const SEO_PAGES = [
     template: 'pricing',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Custa iPhone para Revender? Tabela 2024',
+      title: 'Quanto Custa iPhone para Revender? Tabela 2025',
       metaDescription: 'Preços de iPhone para revenda. Margem de lucro e fornecedores.',
       h1: 'Quanto Custa iPhone para Revender?',
       productType: 'iPhone'
@@ -798,7 +798,7 @@ const SEO_PAGES = [
     template: 'guide',
     languages: ['pt-BR'],
     data: {
-      title: 'Onde Achar Fornecedores de iPhone - Lista 2024',
+      title: 'Onde Achar Fornecedores de iPhone - Lista 2025',
       metaDescription: 'Encontre fornecedores confiáveis de iPhone. Nacional e importação.',
       h1: 'Onde Achar Fornecedores de iPhone?',
       guideType: 'suppliers'
@@ -809,7 +809,7 @@ const SEO_PAGES = [
     template: 'analysis',
     languages: ['pt-BR'],
     data: {
-      title: 'Margem de Lucro iPhone - Análise Completa 2024',
+      title: 'Margem de Lucro iPhone - Análise Completa 2025',
       metaDescription: 'Descubra a margem de lucro na revenda de iPhone. Cálculos reais.',
       h1: 'Qual a Margem de Lucro do iPhone?',
       productType: 'iPhone'
@@ -820,7 +820,7 @@ const SEO_PAGES = [
     template: 'analysis',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Ganha um Revendedor de iPhone? Valores 2024',
+      title: 'Quanto Ganha um Revendedor de iPhone? Valores 2025',
       metaDescription: 'Descubra quanto ganha um revendedor de iPhone. Valores reais.',
       h1: 'Quanto Ganha um Revendedor de iPhone?',
       profession: 'revendedor-iphone'
@@ -833,7 +833,7 @@ const SEO_PAGES = [
     template: 'analysis',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Ganha um Técnico de iPhone? Salários 2024',
+      title: 'Quanto Ganha um Técnico de iPhone? Salários 2025',
       metaDescription: 'Salários de técnico de iPhone. CLT, autônomo e próprio negócio.',
       h1: 'Quanto Ganha um Técnico de iPhone?',
       profession: 'tecnico-iphone'
@@ -844,7 +844,7 @@ const SEO_PAGES = [
     template: 'pricing',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Cobrar para Restaurar iPhone? Tabela 2024',
+      title: 'Quanto Cobrar para Restaurar iPhone? Tabela 2025',
       metaDescription: 'Tabela de preços para restauração de iPhone. Valores por modelo.',
       h1: 'Quanto Cobrar para Restaurar iPhone?',
       service: 'restauracao'
@@ -855,7 +855,7 @@ const SEO_PAGES = [
     template: 'pricing',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Custa Reparo de Placa iPhone? Preços 2024',
+      title: 'Quanto Custa Reparo de Placa iPhone? Preços 2025',
       metaDescription: 'Preços de reparo de placa-mãe iPhone. Valores por modelo e defeito.',
       h1: 'Quanto Custa Reparo de Placa iPhone?',
       service: 'reparo-placa'
@@ -879,7 +879,7 @@ const SEO_PAGES = [
     template: 'pricing',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Custa Curso de Cabeleireiro? Valores 2024',
+      title: 'Quanto Custa Curso de Cabeleireiro? Valores 2025',
       metaDescription: 'Preços de cursos de cabeleireiro. Básico ao avançado.',
       h1: 'Quanto Custa um Curso de Cabeleireiro?',
       courseType: 'cabeleireiro'
@@ -945,7 +945,7 @@ const SEO_PAGES = [
     template: 'guide',
     languages: ['pt-BR'],
     data: {
-      title: 'Como Começar Salão de Beleza Pequeno - Guia 2024',
+      title: 'Como Começar Salão de Beleza Pequeno - Guia 2025',
       metaDescription: 'Monte um salão pequeno com pouco investimento. Passo a passo.',
       h1: 'Como Começar um Salão Pequeno?',
       businessSize: 'pequeno'
@@ -956,7 +956,7 @@ const SEO_PAGES = [
     template: 'analysis',
     languages: ['pt-BR'],
     data: {
-      title: 'Qual Área da Beleza Dá Mais Lucro? Análise 2024',
+      title: 'Qual Área da Beleza Dá Mais Lucro? Análise 2025',
       metaDescription: 'Descubra as áreas mais lucrativas da beleza. Dados e tendências.',
       h1: 'Qual Área da Beleza Dá Mais Lucro?',
       industry: 'beleza'
@@ -991,7 +991,7 @@ const SEO_PAGES = [
     template: 'pricing',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Custa Abrir uma Loja? Online e Física 2024',
+      title: 'Quanto Custa Abrir uma Loja? Online e Física 2025',
       metaDescription: 'Investimento para abrir loja online e física. Compare os valores.',
       h1: 'Quanto Custa Abrir uma Loja?',
       storeTypes: ['online', 'fisica']
@@ -1024,7 +1024,7 @@ const SEO_PAGES = [
     template: 'comparison',
     languages: ['pt-BR'],
     data: {
-      title: 'Melhor Plataforma de E-commerce 2024 - Comparativo',
+      title: 'Melhor Plataforma de E-commerce 2025 - Comparativo',
       metaDescription: 'Compare as melhores plataformas de e-commerce. Preços e recursos.',
       h1: 'Qual a Melhor Plataforma de E-commerce?',
       competitors: ['Shopify', 'WooCommerce', 'Nuvemshop']
@@ -1048,7 +1048,7 @@ const SEO_PAGES = [
     template: 'analysis',
     languages: ['pt-BR'],
     data: {
-      title: 'A Shopify é Gratuita? Análise Completa 2024',
+      title: 'A Shopify é Gratuita? Análise Completa 2025',
       metaDescription: 'Descubra se a Shopify é gratuita. Teste grátis e custos reais.',
       h1: 'A Shopify é Gratuita?',
       platform: 'Shopify'
@@ -1070,7 +1070,7 @@ const SEO_PAGES = [
     template: 'pricing',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Custa Manter um Site? Custos Mensais 2024',
+      title: 'Quanto Custa Manter um Site? Custos Mensais 2025',
       metaDescription: 'Custos mensais para manter um site. Hospedagem, domínio e mais.',
       h1: 'Quanto Custa Manter um Site?',
       maintenanceType: 'website'
@@ -1120,7 +1120,7 @@ const SEO_PAGES = [
     template: 'default',
     languages: ['pt-BR'],
     data: {
-      title: 'Preço Sistema de Agendamento Online 2024 - Comparativo Completo',
+      title: 'Preço Sistema de Agendamento Online 2025 - Comparativo Completo',
       metaDescription: 'Descubra quanto custa um sistema de agendamento online profissional. Compare preços, funcionalidades e escolha a melhor opção para seu negócio.',
       h1: 'Quanto Custa um Sistema de Agendamento Online?'
     }
@@ -1130,7 +1130,7 @@ const SEO_PAGES = [
     template: 'default',
     languages: ['pt-BR'],
     data: {
-      title: 'Como Montar um Salão de Beleza - Guia Completo 2024',
+      title: 'Como Montar um Salão de Beleza - Guia Completo 2025',
       metaDescription: 'Aprenda como montar um salão de beleza do zero. Documentação, investimento inicial, equipamentos e dicas para ter sucesso.',
       h1: 'Como Montar um Salão de Beleza do Zero'
     }
@@ -1140,8 +1140,8 @@ const SEO_PAGES = [
     template: 'default',
     languages: ['pt-BR'],
     data: {
-      title: 'Quanto Cobrar por Corte de Cabelo em 2024 - Guia de Preços',
-      metaDescription: 'Saiba quanto cobrar por corte de cabelo em 2024. Tabela de preços por região, cálculo de custos e estratégias de precificação.',
+      title: 'Quanto Cobrar por Corte de Cabelo em 2025 - Guia de Preços',
+      metaDescription: 'Saiba quanto cobrar por corte de cabelo em 2025. Tabela de preços por região, cálculo de custos e estratégias de precificação.',
       h1: 'Quanto Cobrar por um Corte de Cabelo?'
     }
   },
@@ -1150,7 +1150,7 @@ const SEO_PAGES = [
     template: 'default',
     languages: ['pt-BR'],
     data: {
-      title: 'Mercado de Beleza e Estética no Brasil - Análise 2024',
+      title: 'Mercado de Beleza e Estética no Brasil - Análise 2025',
       metaDescription: 'Conheça o mercado de beleza e estética no Brasil. Números, tendências, oportunidades e como aproveitar o crescimento do setor.',
       h1: 'O Mercado de Beleza e Estética no Brasil'
     }

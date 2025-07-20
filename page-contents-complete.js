@@ -5,13 +5,13 @@ const PAGE_CONTENTS = {
       sections: [
         {
           type: 'hero',
-          title: 'Qual o Melhor Aplicativo para Barbearias em 2024?',
+          title: 'Qual o Melhor Aplicativo para Barbearias em 2025?',
           subtitle: 'Converso lidera o mercado com sistema completo sem taxas por agendamento. Aumente seu faturamento em até 40% com ferramentas profissionais que realmente funcionam.'
         },
         {
           type: 'quick-answer',
           title: 'Resposta Rápida',
-          content: 'O Converso é o melhor aplicativo para barbearias em 2024 porque oferece site próprio profissional, fila digital com QR code, programa de fidelidade automático e ZERO taxa por agendamento. Enquanto concorrentes cobram até 20% por corte, você paga apenas R$ 88/mês fixo.'
+          content: 'O Converso é o melhor aplicativo para barbearias em 2025 porque oferece site próprio profissional, fila digital com QR code, programa de fidelidade automático e ZERO taxa por agendamento. Enquanto concorrentes cobram até 20% por corte, você paga apenas R$ 88/mês fixo.'
         },
         {
           type: 'features',
@@ -86,7 +86,7 @@ const PAGE_CONTENTS = {
           type: 'case-study',
           title: 'Caso de Sucesso Real',
           subtitle: 'Barbearia Premium SP aumentou faturamento em 45%',
-          content: 'A Barbearia Premium, localizada em São Paulo, migrou para o Converso em janeiro de 2024. Em apenas 3 meses:',
+          content: 'A Barbearia Premium, localizada em São Paulo, migrou para o Converso em janeiro de 2025. Em apenas 3 meses:',
           results: [
             '45% de aumento no faturamento total',
             '80% de redução nas faltas (no-shows)',
@@ -301,7 +301,7 @@ const PAGE_CONTENTS = {
       sections: [
         {
           type: 'hero',
-          title: 'Quanto Custa um Sistema de Agendamento Online em 2024?',
+          title: 'Quanto Custa um Sistema de Agendamento Online em 2025?',
           subtitle: 'Análise completa e transparente de preços, taxas ocultas e custos reais. Descubra quanto você realmente vai pagar e economize até R$ 24.000 por ano.'
         },
         {
@@ -311,7 +311,7 @@ const PAGE_CONTENTS = {
         },
         {
           type: 'market-overview',
-          title: 'Panorama do Mercado 2024',
+          title: 'Panorama do Mercado 2025',
           stats: [
             { label: 'Crescimento do mercado', value: '300%', period: 'últimos 3 anos' },
             { label: 'Profissionais usando sistemas', value: '2.5M', period: 'Brasil' },
@@ -668,7 +668,7 @@ const PAGE_CONTENTS = {
       sections: [
         {
           type: 'hero',
-          title: 'Como Montar um Salão de Beleza do Zero em 2024',
+          title: 'Como Montar um Salão de Beleza do Zero em 2025',
           subtitle: 'Guia definitivo com passo a passo completo, custos reais, documentação necessária e estratégias comprovadas para ter sucesso desde o primeiro dia.'
         },
         {
@@ -1375,7 +1375,7 @@ const PAGE_CONTENTS = {
       sections: [
         {
           type: 'hero',
-          title: 'Quanto Cobrar por Corte de Cabelo em 2024?',
+          title: 'Quanto Cobrar por Corte de Cabelo em 2025?',
           subtitle: 'Guia completo com tabela de preços por região, cálculo de custos e estratégias para precificar corretamente sem perder clientes nem lucro.'
         },
         {
@@ -1567,7 +1567,7 @@ const PAGE_CONTENTS = {
         },
         {
           type: 'service-table',
-          title: 'Tabela de Preços Sugerida 2024',
+          title: 'Tabela de Preços Sugerida 2025',
           subtitle: 'Baseada em salão médio de cidade média',
           services: [
             {
@@ -1898,7 +1898,7 @@ const PAGE_CONTENTS = {
         },
         {
           type: 'future-trends',
-          title: 'Tendências de Preços para 2024-2025',
+          title: 'Tendências de Preços para 2025-2026',
           trends: [
             {
               trend: '🤖 Precificação por IA',
@@ -1988,7 +1988,7 @@ const PAGE_CONTENTS = {
       sections: [
         {
           type: 'hero',
-          title: 'Mercado de Beleza e Estética no Brasil 2024',
+          title: 'Mercado de Beleza e Estética no Brasil 2025',
           subtitle: 'Análise completa do 4º maior mercado de beleza do mundo: números, tendências, oportunidades e como aproveitar o boom do setor que cresce 10% ao ano.'
         },
         {
@@ -2028,7 +2028,7 @@ const PAGE_CONTENTS = {
           title: 'Crescimento Explosivo: Números que Impressionam',
           periods: [
             {
-              period: '2019-2024',
+              period: '2020-2025',
               growth: '+67%',
               factors: [
                 'Pandemia acelerou digitalização',
@@ -2038,7 +2038,7 @@ const PAGE_CONTENTS = {
               ]
             },
             {
-              period: 'Projeção 2024-2029',
+              period: 'Projeção 2025-2030',
               growth: '+85%',
               revenue: 'R$ 225 Bilhões',
               drivers: [
@@ -2363,8 +2363,8 @@ const PAGE_CONTENTS = {
           ]
         },
         {
-          type: 'trends-2024',
-          title: 'Tendências que Dominam 2024',
+          type: 'trends-2025',
+          title: 'Tendências que Dominam 2025',
           trends: [
             {
               trend: '🌱 Beleza Limpa (Clean Beauty)',
