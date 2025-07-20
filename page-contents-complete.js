@@ -1338,15 +1338,15 @@ const PAGE_CONTENTS = {
           title: 'Conselhos de Quem Já Passou por Isso',
           tips: [
             {
-              author: 'Maria Silva, dona de rede com 5 salões',
+              name: 'Maria Silva, dona de rede com 5 salões',
               tip: 'Comece pequeno mas com qualidade. É melhor crescer devagar e sólido que rápido e quebrar.'
             },
             {
-              author: 'João Santos, 15 anos no mercado',
+              name: 'João Santos, 15 anos no mercado',
               tip: 'Trate bem sua equipe. Profissional feliz atende melhor e fica mais tempo.'
             },
             {
-              author: 'Ana Costa, consultora SEBRAE',
+              name: 'Ana Costa, consultora SEBRAE',
               tip: 'Gestão é tudo. Salão não quebra por falta de cliente, quebra por falta de controle.'
             }
           ]
@@ -2915,22 +2915,22 @@ const PAGE_CONTENTS = {
         {
           type: 'testimonials',
           title: 'Barbearias que Multiplicaram Clientes',
-          testimonials: [
+          items: [
             {
-              author: 'Ricardo Santos',
-              role: 'Barbearia Old School - BH',
+              name: 'Ricardo Santos',
+              business: 'Barbearia Old School - BH',
               text: 'Em 3 meses usando essas estratégias, saí de 8 para 35 clientes por dia. O segredo foi consistência no Instagram e Google.',
               results: '+337% de clientes'
             },
             {
-              author: 'Felipe Oliveira',
-              role: 'Barber Shop 77 - SP',
+              name: 'Felipe Oliveira',
+              business: 'Barber Shop 77 - SP',
               text: 'O programa de indicação mudou tudo. 60% dos novos clientes vêm por indicação. Gasto zero em publicidade paga.',
               results: 'R$ 0 em ads, agenda cheia'
             },
             {
-              author: 'André Costa',
-              role: 'Barbearia Moderna - RJ',
+              name: 'André Costa',
+              business: 'Barbearia Moderna - RJ',
               text: 'WhatsApp Business + agendamento online = combo perfeito. Reduzi 90% das faltas e dobrei o faturamento.',
               results: '2x faturamento em 6 meses'
             }
@@ -3542,23 +3542,23 @@ const PAGE_CONTENTS = {
         {
           type: 'testimonials',
           title: 'Experiências Reais de Lojistas',
-          testimonials: [
+          items: [
             {
-              author: 'Carlos Silva',
+              name: 'Carlos Silva',
               store: 'TechStore Brasil',
               platform: 'Shopify',
               text: 'Migrei do WooCommerce para Shopify e as vendas cresceram 40%. O checkout otimizado faz toda diferença.',
               revenue: 'R$ 120k/mês'
             },
             {
-              author: 'Ana Costa',
+              name: 'Ana Costa',
               store: 'Moda Feminina AC',
               platform: 'Nuvemshop',
               text: 'Perfeito para quem está começando. Suporte em português salva vidas. Integração com Mercado Livre é excelente.',
               revenue: 'R$ 45k/mês'
             },
             {
-              author: 'Roberto Mendes',
+              name: 'Roberto Mendes',
               store: 'Marketplace Gourmet',
               platform: 'WooCommerce',
               text: 'Tenho 50 vendedores na plataforma. Só WooCommerce permitiu criar esse modelo sem pagar fortuna.',
@@ -4328,22 +4328,22 @@ const PAGE_CONTENTS = {
         {
           type: 'testimonials',
           title: 'Barbearias que Transformaram a Gestão',
-          testimonials: [
+          items: [
             {
-              author: 'Diego Ferreira',
-              role: 'Barbearia Concept - SP',
+              name: 'Diego Ferreira',
+              business: 'Barbearia Concept - SP',
               text: 'Sai do papel e caneta para gestão total digital. Faturamento dobrou em 6 meses, equipe motivada com comissões transparentes.',
               results: '2x faturamento'
             },
             {
-              author: 'Marcos Silva',
-              role: 'Old Barber - RJ',
+              name: 'Marcos Silva',
+              business: 'Old Barber - RJ',
               text: 'A fila digital revolucionou. Cliente toma café enquanto espera, recebe notificação no celular. Experiência premium.',
               results: 'NPS 92'
             },
             {
-              author: 'Rafael Costa',
-              role: 'Barbearia 360 - MG',
+              name: 'Rafael Costa',
+              business: 'Barbearia 360 - MG',
               text: 'Sistema paga sozinho no primeiro mês. Economizei R$ 3.000 só reduzindo faltas. Melhor investimento que fiz.',
               results: 'ROI 1.600%'
             }

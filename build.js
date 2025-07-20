@@ -361,20 +361,36 @@ function generateRichSection(section, t) {
       `;
       
     case 'cta-final':
+      // Handle both old and new CTA formats
+      const primaryText = section.primaryCta?.text || section.cta?.primary || 'Começar Grátis';
+      const primarySubtext = section.primaryCta?.subtext || '';
+      const secondaryText = section.secondaryCta?.text || section.cta?.secondary || null;
+      const secondarySubtext = section.secondaryCta?.subtext || '';
+      
       return `
         <section class="py-20 px-4 bg-gradient-to-br from-blue-600 to-green-600">
           <div class="max-w-4xl mx-auto text-center text-white">
             <h2 class="text-4xl font-bold mb-4">${section.title}</h2>
             <p class="text-xl mb-12">${section.subtitle}</p>
+            ${section.benefits ? `
+              <div class="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-12">
+                ${section.benefits.map(benefit => `
+                  <div class="flex items-center justify-center">
+                    <span class="text-2xl mr-2">✓</span>
+                    <span>${benefit}</span>
+                  </div>
+                `).join('')}
+              </div>
+            ` : ''}
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
               <a href="https://app.converso.pro/auth?mode=signup" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg shadow-neumorphic hover:shadow-neumorphic-inset transition-all">
-                ${section.primaryCta.text}
-                ${section.primaryCta.subtext ? `<span class="block text-sm font-normal mt-1">${section.primaryCta.subtext}</span>` : ''}
+                ${primaryText}
+                ${primarySubtext ? `<span class="block text-sm font-normal mt-1">${primarySubtext}</span>` : ''}
               </a>
-              ${section.secondaryCta ? `
+              ${secondaryText ? `
                 <a href="https://wa.me/5511999999999" class="inline-block bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-all">
-                  ${section.secondaryCta.text}
-                  ${section.secondaryCta.subtext ? `<span class="block text-sm font-normal mt-1">${section.secondaryCta.subtext}</span>` : ''}
+                  ${secondaryText}
+                  ${secondarySubtext ? `<span class="block text-sm font-normal mt-1">${secondarySubtext}</span>` : ''}
                 </a>
               ` : ''}
             </div>
@@ -984,30 +1000,68 @@ function generateRichSection(section, t) {
       `;
 
     case 'hidden-costs':
-      return `
-        <section class="py-16 px-4 bg-red-50">
-          <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-4">${section.title}</h2>
-            ${section.subtitle ? `<p class="text-xl text-gray-600 text-center mb-12">${section.subtitle}</p>` : ''}
-            <div class="space-y-6">
-              ${section.items.map(item => `
-                <div class="card-neumorphic bg-white">
-                  <div class="flex items-start justify-between">
-                    <div class="flex-1">
-                      <h3 class="text-lg font-bold mb-2">${item.cost}</h3>
-                      <p class="text-gray-700 mb-2">${item.description}</p>
-                      <p class="text-red-600 font-medium">Impacto: ${item.impact}</p>
-                    </div>
-                    <div class="ml-4 text-right">
-                      <p class="text-green-600 font-bold">${item.converso}</p>
+      // Handle different hidden costs formats
+      if (section.costs) {
+        // Platform comparison format
+        return `
+          <section class="py-16 px-4 bg-red-50">
+            <div class="max-w-6xl mx-auto">
+              <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+              <div class="overflow-x-auto">
+                <table class="w-full card-neumorphic">
+                  <thead>
+                    <tr class="border-b">
+                      <th class="text-left p-4">Custo</th>
+                      <th class="text-center p-4">Shopify</th>
+                      <th class="text-center p-4">WooCommerce</th>
+                      <th class="text-center p-4">Nuvemshop</th>
+                      <th class="text-center p-4">Loja Integrada</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${section.costs.map(cost => `
+                      <tr class="border-b">
+                        <td class="p-4 font-medium">${cost.item}</td>
+                        <td class="p-4 text-center">${cost.shopify || '-'}</td>
+                        <td class="p-4 text-center">${cost.woo || '-'}</td>
+                        <td class="p-4 text-center">${cost.nuvem || '-'}</td>
+                        <td class="p-4 text-center">${cost.loja || '-'}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        `;
+      } else if (section.items) {
+        // Standard hidden costs format
+        return `
+          <section class="py-16 px-4 bg-red-50">
+            <div class="max-w-4xl mx-auto">
+              <h2 class="text-3xl font-bold text-center mb-4">${section.title}</h2>
+              ${section.subtitle ? `<p class="text-xl text-gray-600 text-center mb-12">${section.subtitle}</p>` : ''}
+              <div class="space-y-6">
+                ${section.items.map(item => `
+                  <div class="card-neumorphic bg-white">
+                    <div class="flex items-start justify-between">
+                      <div class="flex-1">
+                        <h3 class="text-lg font-bold mb-2">${item.cost}</h3>
+                        <p class="text-gray-700 mb-2">${item.description}</p>
+                        <p class="text-red-600 font-medium">Impacto: ${item.impact}</p>
+                      </div>
+                      <div class="ml-4 text-right">
+                        <p class="text-green-600 font-bold">${item.converso}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
               `).join('')}
             </div>
           </div>
         </section>
       `;
+      }
+      return '';
 
     case 'service-table':
       return `
@@ -1977,28 +2031,52 @@ function generateRichSection(section, t) {
       `;
 
     case 'checklist':
-      return `
-        <section class="py-16 px-4 bg-gray-50">
-          <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-              ${section.categories.map(cat => `
-                <div class="card-neumorphic">
-                  <h3 class="text-lg font-bold mb-4">${cat.category}</h3>
-                  <ul class="space-y-2">
-                    ${cat.items.map(item => `
-                      <li class="flex items-start">
-                        <span class="text-green-600 mr-2">☐</span>
-                        <span>${item}</span>
-                      </li>
-                    `).join('')}
-                  </ul>
-                </div>
-              `).join('')}
+      // Handle both categorized and simple checklists
+      if (section.categories) {
+        return `
+          <section class="py-16 px-4 bg-gray-50">
+            <div class="max-w-4xl mx-auto">
+              <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+              <div class="grid md:grid-cols-2 gap-6">
+                ${section.categories.map(cat => `
+                  <div class="card-neumorphic">
+                    <h3 class="text-lg font-bold mb-4">${cat.category}</h3>
+                    <ul class="space-y-2">
+                      ${cat.items.map(item => `
+                        <li class="flex items-start">
+                          <span class="text-green-600 mr-2">☐</span>
+                          <span>${item}</span>
+                        </li>
+                      `).join('')}
+                    </ul>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </section>
+        `;
+      } else if (section.items) {
+        // Simple checklist
+        return `
+          <section class="py-16 px-4 bg-gray-50">
+            <div class="max-w-4xl mx-auto">
+              <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+              <div class="card-neumorphic max-w-2xl mx-auto">
+                <ul class="space-y-3">
+                  ${section.items.map(item => `
+                    <li class="flex items-start">
+                      <span class="text-green-600 mr-2 text-xl">${item.startsWith('✓') ? '' : '✓'}</span>
+                      <span>${item.replace('✓ ', '')}</span>
+                    </li>
+                  `).join('')}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
       `;
+      }
+      return '';
 
     case 'final-tips':
       return `
