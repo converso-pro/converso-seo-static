@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Neumorphic design classes */
+@layer components {
+  .shadow-neumorphic {
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.1), -8px -8px 16px 0 rgba(255, 255, 255, 0.5);
+  }
+  
+  .shadow-neumorphic-inset {
+    box-shadow: inset 8px 8px 16px 0 rgba(0, 0, 0, 0.1), inset -8px -8px 16px 0 rgba(255, 255, 255, 0.5);
+  }
+  
+  .shadow-neumorphic-sm {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.1), -4px -4px 8px 0 rgba(255, 255, 255, 0.5);
+  }
+  
+  .card-neumorphic {
+    @apply bg-white rounded-xl p-6 shadow-neumorphic;
+  }
+  
+  .btn-neumorphic {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-neumorphic hover:shadow-neumorphic-inset;
+  }
+  
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-blue-600 to-green-600;
+  }
+}
