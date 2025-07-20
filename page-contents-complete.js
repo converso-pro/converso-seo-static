@@ -2776,6 +2776,1624 @@ const PAGE_CONTENTS = {
         }
       ]
     }
+  },
+  'como-captar-clientes-barbearia': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Como Captar Clientes para Barbearia em 2025',
+          subtitle: 'Estratégias comprovadas para encher sua agenda: marketing digital, fidelização e técnicas que funcionam na prática.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'As 5 Melhores Formas de Captar Clientes',
+          content: '1. Google Meu Negócio otimizado (40% dos novos clientes), 2. Instagram com conteúdo diário, 3. Programa de indicação com recompensas, 4. Parcerias locais estratégicas, 5. Sistema de agendamento online profissional.'
+        },
+        {
+          type: 'statistics',
+          title: 'Números que Você Precisa Saber',
+          stats: [
+            { label: 'Custo de aquisição', value: 'R$ 15-30', description: 'Por novo cliente' },
+            { label: 'Taxa de retenção ideal', value: '> 70%', description: 'Clientes que voltam' },
+            { label: 'Ticket médio esperado', value: 'R$ 45-80', description: 'Por atendimento' },
+            { label: 'ROI marketing digital', value: '300-500%', description: 'Retorno sobre investimento' }
+          ]
+        },
+        {
+          type: 'strategies',
+          title: 'Estratégias de Captação por Canal',
+          channels: [
+            {
+              name: 'Google Meu Negócio',
+              effectiveness: '⭐⭐⭐⭐⭐',
+              cost: 'Grátis',
+              timeToResults: '1-2 semanas',
+              tactics: [
+                'Fotos profissionais atualizadas semanalmente',
+                'Responder 100% das avaliações em 24h',
+                'Posts semanais com ofertas',
+                'Horários sempre atualizados',
+                'Categorias e serviços detalhados'
+              ]
+            },
+            {
+              name: 'Instagram',
+              effectiveness: '⭐⭐⭐⭐⭐',
+              cost: 'R$ 200-500/mês',
+              timeToResults: '2-4 semanas',
+              tactics: [
+                'Stories diários mostrando trabalhos',
+                'Reels com transformações',
+                'Parcerias com influencers locais',
+                'Hashtags de bairro (#barbeariavilax)',
+                'Promoções exclusivas para seguidores'
+              ]
+            },
+            {
+              name: 'WhatsApp Business',
+              effectiveness: '⭐⭐⭐⭐',
+              cost: 'R$ 100/mês',
+              timeToResults: 'Imediato',
+              tactics: [
+                'Catálogo de serviços com preços',
+                'Respostas automáticas profissionais',
+                'Lista de transmissão para promoções',
+                'Link direto para agendamento',
+                'Status com ofertas do dia'
+              ]
+            },
+            {
+              name: 'Programa de Indicação',
+              effectiveness: '⭐⭐⭐⭐⭐',
+              cost: '10% do valor',
+              timeToResults: '1 semana',
+              tactics: [
+                'Cliente indica = ganha 1 corte grátis',
+                'Cartão fidelidade digital',
+                'Desconto progressivo por indicações',
+                'Ranking dos melhores indicadores',
+                'Prêmios mensais para top 3'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'weekly-action-plan',
+          title: 'Plano de Ação Semanal',
+          days: [
+            {
+              day: 'Segunda',
+              actions: [
+                'Postar foto no Google Meu Negócio',
+                'Responder todas avaliações',
+                'Planejar conteúdo da semana'
+              ]
+            },
+            {
+              day: 'Terça',
+              actions: [
+                'Gravar 3 vídeos para Reels',
+                'Postar stories do dia',
+                'Enviar promoção via WhatsApp'
+              ]
+            },
+            {
+              day: 'Quarta',
+              actions: [
+                'Publicar Reel de transformação',
+                'Atualizar status WhatsApp',
+                'Contatar clientes inativos'
+              ]
+            },
+            {
+              day: 'Quinta',
+              actions: [
+                'Live no Instagram cortando',
+                'Postar no Google Meu Negócio',
+                'Revisar métricas da semana'
+              ]
+            },
+            {
+              day: 'Sexta',
+              actions: [
+                'Promoção "Sexta do Estilo"',
+                'Stories com clientes satisfeitos',
+                'Preparar agenda do fim de semana'
+              ]
+            },
+            {
+              day: 'Sábado',
+              actions: [
+                'Registrar todos trabalhos',
+                'Coletar depoimentos',
+                'Postar melhores cortes'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'testimonials',
+          title: 'Barbearias que Multiplicaram Clientes',
+          testimonials: [
+            {
+              author: 'Ricardo Santos',
+              role: 'Barbearia Old School - BH',
+              text: 'Em 3 meses usando essas estratégias, saí de 8 para 35 clientes por dia. O segredo foi consistência no Instagram e Google.',
+              results: '+337% de clientes'
+            },
+            {
+              author: 'Felipe Oliveira',
+              role: 'Barber Shop 77 - SP',
+              text: 'O programa de indicação mudou tudo. 60% dos novos clientes vêm por indicação. Gasto zero em publicidade paga.',
+              results: 'R$ 0 em ads, agenda cheia'
+            },
+            {
+              author: 'André Costa',
+              role: 'Barbearia Moderna - RJ',
+              text: 'WhatsApp Business + agendamento online = combo perfeito. Reduzi 90% das faltas e dobrei o faturamento.',
+              results: '2x faturamento em 6 meses'
+            }
+          ]
+        },
+        {
+          type: 'investment-calculator',
+          title: 'Calculadora de Investimento em Marketing',
+          description: 'Com 100 clientes novos por mês:',
+          calculations: [
+            { item: 'Google Ads', cost: 'R$ 500', result: '20 clientes', cac: 'R$ 25/cliente' },
+            { item: 'Instagram Ads', cost: 'R$ 300', result: '15 clientes', cac: 'R$ 20/cliente' },
+            { item: 'Influencer local', cost: 'R$ 200', result: '25 clientes', cac: 'R$ 8/cliente' },
+            { item: 'Programa indicação', cost: 'R$ 400', result: '40 clientes', cac: 'R$ 10/cliente' },
+            { total: 'Investimento Total', cost: 'R$ 1.400', result: '100 clientes', roi: 'R$ 4.500 de retorno' }
+          ]
+        },
+        {
+          type: 'mistakes-to-avoid',
+          title: 'Os 7 Erros Fatais na Captação',
+          mistakes: [
+            {
+              mistake: 'Não ter presença online',
+              impact: 'Perde 70% dos clientes potenciais',
+              solution: 'Criar perfis em todas plataformas HOJE'
+            },
+            {
+              mistake: 'Ignorar avaliações negativas',
+              impact: 'Afasta 88% dos novos clientes',
+              solution: 'Responder em 24h com profissionalismo'
+            },
+            {
+              mistake: 'Preços escondidos',
+              impact: 'Gera desconfiança e perde conversões',
+              solution: 'Tabela clara em todos os canais'
+            },
+            {
+              mistake: 'Fotos amadoras',
+              impact: 'Passa imagem não profissional',
+              solution: 'Investir R$ 200 em fotógrafo'
+            },
+            {
+              mistake: 'Sem diferencial claro',
+              impact: 'Vira apenas mais uma barbearia',
+              solution: 'Criar especialidade única'
+            },
+            {
+              mistake: 'Marketing esporádico',
+              impact: 'Não cria memória na audiência',
+              solution: 'Consistência diária é lei'
+            },
+            {
+              mistake: 'Focar só em preço baixo',
+              impact: 'Atrai clientes sem fidelidade',
+              solution: 'Vender experiência, não corte'
+            }
+          ]
+        },
+        {
+          type: 'advanced-strategies',
+          title: 'Estratégias Avançadas (Próximo Nível)',
+          strategies: [
+            {
+              name: 'Evento mensal temático',
+              description: 'Noite do Whisky, Dia do Motociclista, etc.',
+              expectedResult: '30-50 novos clientes por evento'
+            },
+            {
+              name: 'Parceria com academias',
+              description: 'Desconto mútuo para alunos/clientes',
+              expectedResult: '20+ clientes mensais garantidos'
+            },
+            {
+              name: 'Clube VIP de assinatura',
+              description: 'R$ 99/mês = 2 cortes + benefícios',
+              expectedResult: 'Receita recorrente previsível'
+            },
+            {
+              name: 'Barbearia móvel eventos',
+              description: 'Levar serviço para empresas/festas',
+              expectedResult: 'R$ 2-5k por evento + divulgação'
+            }
+          ]
+        },
+        {
+          type: 'cta-final',
+          title: 'Comece a Captar Clientes Hoje',
+          subtitle: 'Não espere a concorrência dominar seu bairro. Ação gera resultado.',
+          benefits: [
+            'Sistema pronto de captação',
+            'Templates de posts e anúncios',
+            'Scripts de atendimento',
+            'Métricas para acompanhar'
+          ],
+          cta: {
+            primary: 'Criar Sistema de Captação',
+            secondary: 'Baixar Kit Marketing Grátis'
+          }
+        }
+      ]
+    }
+  },
+  'quanto-custa-abrir-salao-beleza': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Quanto Custa Abrir um Salão de Beleza em 2025',
+          subtitle: 'Investimento completo detalhado: do básico ao premium, com planilhas, fornecedores e dicas para economizar até 40%.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Investimento Total por Tipo',
+          content: 'Salão Básico (40m²): R$ 35-50 mil | Salão Médio (80m²): R$ 70-100 mil | Salão Premium (120m²+): R$ 150-300 mil. Inclui reforma, equipamentos, produtos iniciais e capital de giro para 3 meses.'
+        },
+        {
+          type: 'investment-breakdown',
+          title: 'Planilha Detalhada de Investimento',
+          categories: [
+            {
+              category: 'Infraestrutura',
+              percentage: '35%',
+              items: [
+                { item: 'Aluguel (3 meses)', range: 'R$ 3.000 - 15.000' },
+                { item: 'Reforma/Adaptação', range: 'R$ 8.000 - 40.000' },
+                { item: 'Projeto arquitetônico', range: 'R$ 2.000 - 5.000' },
+                { item: 'Instalações elétricas/hidráulicas', range: 'R$ 3.000 - 10.000' },
+                { item: 'Ar condicionado', range: 'R$ 3.000 - 15.000' }
+              ]
+            },
+            {
+              category: 'Móveis e Equipamentos',
+              percentage: '40%',
+              items: [
+                { item: 'Cadeiras hidráulicas (4 un)', range: 'R$ 4.000 - 12.000' },
+                { item: 'Lavatórios (3 un)', range: 'R$ 2.400 - 9.000' },
+                { item: 'Espelhos e bancadas', range: 'R$ 2.000 - 8.000' },
+                { item: 'Secadores/Pranchas/Babyliss', range: 'R$ 2.000 - 5.000' },
+                { item: 'Móveis recepção', range: 'R$ 2.000 - 10.000' },
+                { item: 'Carrinho auxiliar', range: 'R$ 800 - 2.000' }
+              ]
+            },
+            {
+              category: 'Produtos e Materiais',
+              percentage: '15%',
+              items: [
+                { item: 'Produtos profissionais', range: 'R$ 3.000 - 10.000' },
+                { item: 'Colorações/Químicas', range: 'R$ 2.000 - 8.000' },
+                { item: 'Toalhas/Capas/EPIs', range: 'R$ 1.000 - 3.000' },
+                { item: 'Material descartável', range: 'R$ 500 - 2.000' }
+              ]
+            },
+            {
+              category: 'Legalização',
+              percentage: '5%',
+              items: [
+                { item: 'Abertura empresa', range: 'R$ 1.500 - 3.000' },
+                { item: 'Alvarás e licenças', range: 'R$ 800 - 2.000' },
+                { item: 'Vigilância Sanitária', range: 'R$ 500 - 1.500' },
+                { item: 'Bombeiros', range: 'R$ 300 - 1.000' }
+              ]
+            },
+            {
+              category: 'Marketing e Divulgação',
+              percentage: '5%',
+              items: [
+                { item: 'Identidade visual', range: 'R$ 800 - 3.000' },
+                { item: 'Site/Redes sociais', range: 'R$ 500 - 2.000' },
+                { item: 'Material gráfico', range: 'R$ 500 - 1.500' },
+                { item: 'Inauguração', range: 'R$ 1.000 - 5.000' }
+              ]
+            }
+          ]
+        },
+        {
+          type: 'financing-options',
+          title: 'Como Conseguir o Dinheiro',
+          options: [
+            {
+              source: 'Banco do Povo/BNDES',
+              amount: 'Até R$ 50.000',
+              rate: '0,5% a 1,5% ao mês',
+              requirements: 'CNPJ + Plano de negócios'
+            },
+            {
+              source: 'Bancos tradicionais',
+              amount: 'Até R$ 100.000',
+              rate: '2% a 4% ao mês',
+              requirements: 'Score alto + garantias'
+            },
+            {
+              source: 'Investidor anjo',
+              amount: 'R$ 50.000 - 200.000',
+              rate: '20-40% do negócio',
+              requirements: 'Plano sólido + potencial'
+            },
+            {
+              source: 'Sociedade',
+              amount: 'Divisão do investimento',
+              rate: 'Divisão dos lucros',
+              requirements: 'Contrato bem feito'
+            },
+            {
+              source: 'Crowdfunding',
+              amount: 'Variável',
+              rate: 'Recompensas/Serviços',
+              requirements: 'Boa campanha marketing'
+            }
+          ]
+        },
+        {
+          type: 'economy-tips',
+          title: 'Como Economizar 40% no Investimento',
+          tips: [
+            {
+              tip: 'Compre equipamentos seminovos',
+              savings: 'Economia de 50-70%',
+              where: 'OLX, grupos Facebook, leilões'
+            },
+            {
+              tip: 'Faça permuta com fornecedores',
+              savings: 'Economia de 30-50%',
+              where: 'Troque serviços por produtos'
+            },
+            {
+              tip: 'Comece com 50% da estrutura',
+              savings: 'Economia de R$ 20-40k',
+              where: 'Expanda conforme cresce'
+            },
+            {
+              tip: 'Sociedade estratégica',
+              savings: 'Divide investimento',
+              where: 'Sócio complementar'
+            },
+            {
+              tip: 'Aproveite espaço existente',
+              savings: 'Economia com reforma',
+              where: 'Ex-salões à venda/aluguel'
+            },
+            {
+              tip: 'Negocie tudo à vista',
+              savings: '10-20% desconto',
+              where: 'Fornecedores locais'
+            }
+          ]
+        },
+        {
+          type: 'roi-projection',
+          title: 'Retorno do Investimento',
+          scenarios: [
+            {
+              scenario: 'Cenário Conservador',
+              investment: 'R$ 50.000',
+              monthlyRevenue: 'R$ 15.000',
+              monthlyProfit: 'R$ 4.500',
+              payback: '11 meses'
+            },
+            {
+              scenario: 'Cenário Realista',
+              investment: 'R$ 50.000',
+              monthlyRevenue: 'R$ 25.000',
+              monthlyProfit: 'R$ 7.500',
+              payback: '7 meses'
+            },
+            {
+              scenario: 'Cenário Otimista',
+              investment: 'R$ 50.000',
+              monthlyRevenue: 'R$ 40.000',
+              monthlyProfit: 'R$ 12.000',
+              payback: '4 meses'
+            }
+          ]
+        },
+        {
+          type: 'monthly-costs',
+          title: 'Custos Mensais Operacionais',
+          items: [
+            { category: 'Aluguel + Condomínio', value: 'R$ 2.000 - 5.000' },
+            { category: 'Folha de pagamento', value: 'R$ 5.000 - 15.000' },
+            { category: 'Produtos/Reposição', value: 'R$ 2.000 - 8.000' },
+            { category: 'Água/Luz/Internet', value: 'R$ 800 - 2.500' },
+            { category: 'Contador', value: 'R$ 400 - 800' },
+            { category: 'Marketing', value: 'R$ 500 - 2.000' },
+            { category: 'Diversos/Manutenção', value: 'R$ 500 - 1.500' },
+            { total: 'Total Mensal', value: 'R$ 11.200 - 34.800' }
+          ]
+        },
+        {
+          type: 'supplier-list',
+          title: 'Fornecedores Recomendados',
+          suppliers: [
+            {
+              category: 'Móveis para Salão',
+              companies: [
+                'Dompel - São Paulo',
+                'Ferrante - Nacional',
+                'Terra Santa - Rio de Janeiro',
+                'Usado: Mercado Livre/OLX'
+              ]
+            },
+            {
+              category: 'Produtos Profissionais',
+              companies: [
+                'Loreal Professionnel',
+                'Wella',
+                'Schwarzkopf',
+                'Atacadão da Beleza'
+              ]
+            },
+            {
+              category: 'Equipamentos',
+              companies: [
+                'Taiff',
+                'Babyliss',
+                'GA.MA Italy',
+                'MQ Professional'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'success-stories',
+          title: 'Quem Começou com Pouco',
+          stories: [
+            {
+              name: 'Salão da Maria - SP',
+              started: 'R$ 15.000',
+              now: 'R$ 80.000/mês',
+              secret: 'Começou na garagem, reinvestiu tudo por 2 anos'
+            },
+            {
+              name: 'Studio K - RJ',
+              started: 'R$ 25.000',
+              now: 'R$ 120.000/mês',
+              secret: 'Parceria com 3 amigas, dividiram tudo'
+            },
+            {
+              name: 'Beleza & Cia - MG',
+              started: 'R$ 40.000',
+              now: 'R$ 200.000/mês + 3 unidades',
+              secret: 'Foco em nicho premium desde o início'
+            }
+          ]
+        },
+        {
+          type: 'checklist',
+          title: 'Checklist: Pronto para Abrir?',
+          items: [
+            '✓ Tenho mínimo R$ 35.000 disponível',
+            '✓ Fiz pesquisa de mercado na região',
+            '✓ Tenho experiência ou sócio experiente',
+            '✓ Preparei plano de negócios',
+            '✓ Escolhi ponto com movimento',
+            '✓ Defini meu diferencial',
+            '✓ Tenho fornecedores mapeados',
+            '✓ Preparei marketing de lançamento',
+            '✓ Tenho capital de giro 3 meses',
+            '✓ Estudei a concorrência'
+          ]
+        },
+        {
+          type: 'cta-final',
+          title: 'Transforme seu Sonho em Realidade',
+          subtitle: 'Com planejamento certo, R$ 35.000 podem virar um negócio de R$ 100.000/mês',
+          benefits: [
+            'Planilha completa de custos',
+            'Lista de fornecedores',
+            'Plano de negócios modelo',
+            'Consultoria gratuita 30min'
+          ],
+          cta: {
+            primary: 'Baixar Kit Completo Grátis',
+            secondary: 'Falar com Consultor'
+          }
+        }
+      ]
+    }
+  },
+  'melhor-plataforma-ecommerce': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Melhor Plataforma de E-commerce 2025',
+          subtitle: 'Comparação completa: Shopify vs WooCommerce vs Nuvemshop vs Loja Integrada. Descubra qual é ideal para seu negócio.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Resposta Rápida por Perfil',
+          content: 'Iniciante: Nuvemshop (mais fácil) | Pequeno/Médio: Shopify (mais completo) | Desenvolvedor: WooCommerce (mais flexível) | Sem taxa: Loja Integrada (plano grátis) | B2B/Atacado: Shopify Plus'
+        },
+        {
+          type: 'comparison-table',
+          title: 'Comparação Detalhada das Plataformas',
+          platforms: [
+            {
+              name: 'Shopify',
+              logo: '🛍️',
+              pricing: 'USD 5-399/mês',
+              transaction_fee: '2% (sem Shopify Payments)',
+              best_for: 'Negócios sérios que querem escalar',
+              pros: [
+                'Mais completa do mercado',
+                'Apps ilimitados',
+                'Suporte 24/7',
+                'Multi-idioma nativo',
+                'Checkout otimizado'
+              ],
+              cons: [
+                'Preço em dólar',
+                'Taxa de transação',
+                'Curva aprendizado média'
+              ],
+              rating: '9.5/10'
+            },
+            {
+              name: 'WooCommerce',
+              logo: '🔧',
+              pricing: 'Grátis + Hosting',
+              transaction_fee: '0%',
+              best_for: 'Quem tem conhecimento técnico',
+              pros: [
+                '100% customizável',
+                'Sem taxas de transação',
+                'Open source',
+                'SEO poderoso',
+                'Comunidade gigante'
+              ],
+              cons: [
+                'Precisa de hosting',
+                'Manutenção manual',
+                'Suporte limitado'
+              ],
+              rating: '8.5/10'
+            },
+            {
+              name: 'Nuvemshop',
+              logo: '☁️',
+              pricing: 'R$ 59-399/mês',
+              transaction_fee: '0%',
+              best_for: 'Iniciantes no Brasil',
+              pros: [
+                'Interface em português',
+                'Suporte brasileiro',
+                'Fácil de usar',
+                'Integração com marketplaces',
+                'Pagamento nacional'
+              ],
+              cons: [
+                'Menos recursos avançados',
+                'Apps limitados',
+                'Templates básicos'
+              ],
+              rating: '8.0/10'
+            },
+            {
+              name: 'Loja Integrada',
+              logo: '🏪',
+              pricing: 'Grátis - R$ 399/mês',
+              transaction_fee: '0% pago, 12-18% grátis',
+              best_for: 'Quem quer testar sem investir',
+              pros: [
+                'Plano grátis vitalício',
+                'Simples de usar',
+                'Brasileiro',
+                'Sem taxa nos planos pagos',
+                'Boa para começar'
+              ],
+              cons: [
+                'Taxa alta no plano grátis',
+                'Recursos limitados',
+                'Personalização básica'
+              ],
+              rating: '7.0/10'
+            }
+          ]
+        },
+        {
+          type: 'cost-calculator',
+          title: 'Calculadora de Custo Real (100 vendas/mês)',
+          calculations: [
+            {
+              platform: 'Shopify Basic',
+              monthly_fee: 'R$ 150 (USD 29)',
+              transaction: 'R$ 200 (2%)',
+              gateway: 'R$ 300 (3%)',
+              total: 'R$ 650/mês'
+            },
+            {
+              platform: 'WooCommerce',
+              monthly_fee: 'R$ 50 (hosting)',
+              transaction: 'R$ 0',
+              gateway: 'R$ 300 (3%)',
+              total: 'R$ 350/mês'
+            },
+            {
+              platform: 'Nuvemshop Plus',
+              monthly_fee: 'R$ 129',
+              transaction: 'R$ 0',
+              gateway: 'R$ 300 (3%)',
+              total: 'R$ 429/mês'
+            },
+            {
+              platform: 'Loja Integrada Plus',
+              monthly_fee: 'R$ 99',
+              transaction: 'R$ 0',
+              gateway: 'R$ 300 (3%)',
+              total: 'R$ 399/mês'
+            }
+          ]
+        },
+        {
+          type: 'features-comparison',
+          title: 'Recursos Essenciais: Quem Tem O Quê',
+          features: [
+            { feature: 'Produtos ilimitados', shopify: '✅', woo: '✅', nuvem: '✅', loja: '❌ (até 100)' },
+            { feature: 'Multi-idioma', shopify: '✅', woo: '✅', nuvem: '❌', loja: '❌' },
+            { feature: 'App mobile admin', shopify: '✅', woo: '✅', nuvem: '✅', loja: '❌' },
+            { feature: 'Recuperação carrinho', shopify: '✅', woo: '⚠️', nuvem: '✅', loja: '⚠️' },
+            { feature: 'API completa', shopify: '✅', woo: '✅', nuvem: '⚠️', loja: '❌' },
+            { feature: 'Multi-canal venda', shopify: '✅', woo: '⚠️', nuvem: '✅', loja: '⚠️' },
+            { feature: 'SEO avançado', shopify: '✅', woo: '✅', nuvem: '⚠️', loja: '⚠️' },
+            { feature: 'Checkout 1-página', shopify: '✅', woo: '✅', nuvem: '✅', loja: '✅' }
+          ]
+        },
+        {
+          type: 'decision-matrix',
+          title: 'Qual Escolher? Árvore de Decisão',
+          scenarios: [
+            {
+              situation: 'Primeira loja online',
+              budget: '< R$ 200/mês',
+              technical: 'Básico',
+              recommendation: 'Nuvemshop',
+              reason: 'Mais fácil, suporte BR, preço fixo em reais'
+            },
+            {
+              situation: 'Migração de loja física',
+              budget: 'R$ 200-500/mês',
+              technical: 'Intermediário',
+              recommendation: 'Shopify',
+              reason: 'Mais recursos, POS integrado, apps robustos'
+            },
+            {
+              situation: 'Marketplace próprio',
+              budget: 'Flexível',
+              technical: 'Avançado',
+              recommendation: 'WooCommerce',
+              reason: 'Total controle, sem limites, multi-vendor'
+            },
+            {
+              situation: 'Teste de mercado',
+              budget: 'R$ 0',
+              technical: 'Básico',
+              recommendation: 'Loja Integrada',
+              reason: 'Grátis para começar, migra depois'
+            }
+          ]
+        },
+        {
+          type: 'migration-guide',
+          title: 'Como Migrar Entre Plataformas',
+          steps: [
+            'Exporte produtos em CSV da plataforma atual',
+            'Prepare imagens em alta resolução (mín 1000x1000)',
+            'Documente URLs para redirecionamento 301',
+            'Configure gateway de pagamento primeiro',
+            'Importe produtos na nova plataforma',
+            'Teste checkout completo antes de migrar domínio',
+            'Mantenha ambas ativas por 30 dias',
+            'Redirecione DNS apenas após testes'
+          ]
+        },
+        {
+          type: 'performance-metrics',
+          title: 'Performance Real das Plataformas',
+          metrics: [
+            {
+              metric: 'Velocidade carregamento',
+              shopify: '2.1s',
+              woo: '3.5s*',
+              nuvem: '2.8s',
+              loja: '3.2s'
+            },
+            {
+              metric: 'Uptime garantido',
+              shopify: '99.98%',
+              woo: '99.5%*',
+              nuvem: '99.9%',
+              loja: '99.5%'
+            },
+            {
+              metric: 'Taxa conversão média',
+              shopify: '3.2%',
+              woo: '2.8%',
+              nuvem: '2.5%',
+              loja: '2.2%'
+            },
+            {
+              metric: 'Abandono carrinho',
+              shopify: '65%',
+              woo: '72%',
+              nuvem: '68%',
+              loja: '74%'
+            }
+          ],
+          note: '*Depende do hosting escolhido'
+        },
+        {
+          type: 'testimonials',
+          title: 'Experiências Reais de Lojistas',
+          testimonials: [
+            {
+              author: 'Carlos Silva',
+              store: 'TechStore Brasil',
+              platform: 'Shopify',
+              text: 'Migrei do WooCommerce para Shopify e as vendas cresceram 40%. O checkout otimizado faz toda diferença.',
+              revenue: 'R$ 120k/mês'
+            },
+            {
+              author: 'Ana Costa',
+              store: 'Moda Feminina AC',
+              platform: 'Nuvemshop',
+              text: 'Perfeito para quem está começando. Suporte em português salva vidas. Integração com Mercado Livre é excelente.',
+              revenue: 'R$ 45k/mês'
+            },
+            {
+              author: 'Roberto Mendes',
+              store: 'Marketplace Gourmet',
+              platform: 'WooCommerce',
+              text: 'Tenho 50 vendedores na plataforma. Só WooCommerce permitiu criar esse modelo sem pagar fortuna.',
+              revenue: 'R$ 300k/mês'
+            }
+          ]
+        },
+        {
+          type: 'hidden-costs',
+          title: 'Custos Ocultos que Ninguém Conta',
+          costs: [
+            {
+              item: 'Apps/Plugins premium',
+              shopify: 'R$ 200-500/mês',
+              woo: 'R$ 100-300/mês',
+              nuvem: 'R$ 50-200/mês',
+              loja: 'R$ 0-100/mês'
+            },
+            {
+              item: 'Template profissional',
+              shopify: 'R$ 1000 único',
+              woo: 'R$ 500 único',
+              nuvem: 'R$ 800 único',
+              loja: 'R$ 500 único'
+            },
+            {
+              item: 'Certificado SSL',
+              shopify: 'Incluído',
+              woo: 'R$ 200/ano',
+              nuvem: 'Incluído',
+              loja: 'Incluído'
+            },
+            {
+              item: 'Backup/Segurança',
+              shopify: 'Incluído',
+              woo: 'R$ 50/mês',
+              nuvem: 'Incluído',
+              loja: 'Incluído'
+            }
+          ]
+        },
+        {
+          type: 'final-verdict',
+          title: 'Veredito Final: Nossa Recomendação',
+          recommendations: [
+            {
+              profile: '🏆 Melhor Geral',
+              platform: 'Shopify',
+              why: 'Mais completa, confiável e escalável. Vale o investimento.'
+            },
+            {
+              profile: '💰 Melhor Custo-Benefício',
+              platform: 'Nuvemshop',
+              why: 'Preço justo, recursos sólidos, suporte brasileiro.'
+            },
+            {
+              profile: '🛠️ Mais Flexível',
+              platform: 'WooCommerce',
+              why: 'Controle total, sem limites, ideal para projetos complexos.'
+            },
+            {
+              profile: '🎯 Para Começar',
+              platform: 'Loja Integrada',
+              why: 'Grátis para testar, migra quando crescer.'
+            }
+          ]
+        },
+        {
+          type: 'cta-final',
+          title: 'Pronto para Vender Online?',
+          subtitle: 'Não perca mais tempo decidindo. O importante é começar.',
+          benefits: [
+            'Checklist de lançamento',
+            'Templates prontos',
+            'Cupom de desconto exclusivo',
+            'Suporte na migração'
+          ],
+          cta: {
+            primary: 'Criar Loja Agora',
+            secondary: 'Comparar Mais Detalhes'
+          }
+        }
+      ]
+    }
+  },
+  'marketing-digital-barbearia': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Marketing Digital para Barbearia - Guia 2025',
+          subtitle: 'Estratégias que funcionam: Instagram, Google, WhatsApp. Aumente 300% seus clientes investindo apenas R$ 500/mês.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Os 5 Pilares do Marketing Digital',
+          content: '1. Google Meu Negócio otimizado (40% dos clientes), 2. Instagram com conteúdo diário (30%), 3. WhatsApp Business automatizado (20%), 4. Site com agendamento online (7%), 5. Anúncios locais segmentados (3%).'
+        },
+        {
+          type: 'monthly-strategy',
+          title: 'Estratégia Mês a Mês',
+          months: [
+            {
+              month: 'Mês 1 - Fundação',
+              investment: 'R$ 200',
+              focus: 'Presença online básica',
+              actions: [
+                'Criar/Otimizar Google Meu Negócio',
+                'Perfil Instagram profissional',
+                'WhatsApp Business configurado',
+                'Fotos profissionais (mínimo 50)',
+                'Definir identidade visual'
+              ],
+              expected: '10-20 novos clientes'
+            },
+            {
+              month: 'Mês 2 - Conteúdo',
+              investment: 'R$ 300',
+              focus: 'Produção de conteúdo consistente',
+              actions: [
+                'Posts diários no Instagram',
+                '3 Reels por semana',
+                'Stories de bastidores',
+                'Responder 100% comentários',
+                'Coletar depoimentos'
+              ],
+              expected: '30-40 novos clientes'
+            },
+            {
+              month: 'Mês 3 - Anúncios',
+              investment: 'R$ 500',
+              focus: 'Tráfego pago local',
+              actions: [
+                'Google Ads local (R$ 200)',
+                'Instagram Ads (R$ 200)',
+                'Impulsionar posts (R$ 100)',
+                'Remarketing WhatsApp',
+                'Landing page conversão'
+              ],
+              expected: '50-70 novos clientes'
+            },
+            {
+              month: 'Mês 4+ - Escala',
+              investment: 'R$ 800+',
+              focus: 'Automatização e crescimento',
+              actions: [
+                'Funil de vendas completo',
+                'Email marketing',
+                'Programa indicação',
+                'Parcerias estratégicas',
+                'Análise e otimização'
+              ],
+              expected: '100+ novos clientes'
+            }
+          ]
+        },
+        {
+          type: 'instagram-strategy',
+          title: 'Instagram: Sua Vitrine Digital',
+          tactics: [
+            {
+              tactic: 'Conteúdo que Converte',
+              frequency: 'Diário',
+              examples: [
+                'Antes/depois impressionantes',
+                'Processo do corte em vídeo',
+                'Dicas de cuidados masculinos',
+                'Tendências de corte',
+                'Cliente satisfeito saindo'
+              ],
+              engagement: '+250% em 30 dias'
+            },
+            {
+              tactic: 'Hashtags Locais',
+              frequency: 'Todos posts',
+              examples: [
+                '#barbeariaem[cidade]',
+                '#barbeiro[cidade]',
+                '#corteem[bairro]',
+                '#barba[cidade]',
+                '#[bairro]style'
+              ],
+              reach: '+400% alcance local'
+            },
+            {
+              tactic: 'Stories Estratégicos',
+              frequency: '3-5 por dia',
+              examples: [
+                'Enquetes sobre cortes',
+                'Bastidores da barbearia',
+                'Promoção relâmpago',
+                'Cliente chegando',
+                'Resultado final'
+              ],
+              conversion: '+30% agendamentos'
+            }
+          ]
+        },
+        {
+          type: 'google-optimization',
+          title: 'Google Meu Negócio: Seu Maior Aliado',
+          checklist: [
+            '✓ Nome com palavra-chave (Barbearia [Nome] - [Bairro])',
+            '✓ Descrição completa com serviços e diferenciais',
+            '✓ Horários atualizados (incluindo feriados)',
+            '✓ 20+ fotos de alta qualidade',
+            '✓ Categorias principal e secundárias corretas',
+            '✓ Atributos marcados (Wi-fi, ar condicionado, etc)',
+            '✓ Posts semanais com ofertas',
+            '✓ Responder avaliações em 24h',
+            '✓ FAQ com perguntas comuns',
+            '✓ Link para agendamento'
+          ],
+          impact: '73% dos clientes vêm do Google'
+        },
+        {
+          type: 'whatsapp-automation',
+          title: 'WhatsApp Business no Automático',
+          automations: [
+            {
+              trigger: 'Primeira mensagem',
+              response: 'Olá! 👋 Bem-vindo à [Nome]!\n\n📍 Endereço: [local]\n⏰ Horários: [horários]\n\nComo posso ajudar?\n1️⃣ Ver serviços e preços\n2️⃣ Agendar horário\n3️⃣ Falar com barbeiro',
+              conversion: '85% respondem'
+            },
+            {
+              trigger: 'Fora do horário',
+              response: 'Oi! 🌙 Estamos fechados agora.\n\nHorário: [horários]\n\nDeixe seu nome e telefone que retornamos amanhã primeira hora! 📱',
+              saves: '95% dos contatos'
+            },
+            {
+              trigger: 'Palavra "preço"',
+              response: '💈 TABELA DE PREÇOS 💈\n\n✂️ Corte: R$ 35\n🧔 Barba: R$ 25\n✨ Combo: R$ 50\n👦 Infantil: R$ 30\n\nQuer agendar? Digite "agendar"',
+              books: '40% na hora'
+            }
+          ]
+        },
+        {
+          type: 'content-calendar',
+          title: 'Calendário de Conteúdo Mensal',
+          weeks: [
+            {
+              week: 'Semana 1',
+              theme: 'Tendências',
+              posts: [
+                'Segunda: Corte da semana',
+                'Quarta: Tutorial estilo',
+                'Sexta: Transformação',
+                'Sábado: Bastidores'
+              ]
+            },
+            {
+              week: 'Semana 2',
+              theme: 'Educacional',
+              posts: [
+                'Segunda: Dica de produto',
+                'Quarta: Cuidados barba',
+                'Sexta: Erro comum',
+                'Sábado: Live Q&A'
+              ]
+            },
+            {
+              week: 'Semana 3',
+              theme: 'Social Proof',
+              posts: [
+                'Segunda: Depoimento cliente',
+                'Quarta: Antes/depois',
+                'Sexta: Review 5 estrelas',
+                'Sábado: Cliente VIP'
+              ]
+            },
+            {
+              week: 'Semana 4',
+              theme: 'Promoções',
+              posts: [
+                'Segunda: Oferta semana',
+                'Quarta: Combo especial',
+                'Sexta: Happy hour',
+                'Sábado: Sorteio'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'paid-ads-guide',
+          title: 'Anúncios que Trazem Cliente',
+          campaigns: [
+            {
+              platform: 'Google Ads',
+              budget: 'R$ 200/mês',
+              type: 'Pesquisa local',
+              setup: [
+                'Palavras: "barbearia perto de mim"',
+                'Raio: 5km do estabelecimento',
+                'Horário: 8h-20h',
+                'Dispositivo: 70% mobile',
+                'Landing: Google Meu Negócio'
+              ],
+              cpc: 'R$ 0,50-2,00',
+              roi: '400%'
+            },
+            {
+              platform: 'Instagram Ads',
+              budget: 'R$ 200/mês',
+              type: 'Alcance local',
+              setup: [
+                'Público: Homens 18-45',
+                'Interesse: Cuidados pessoais',
+                'Raio: 3km',
+                'Criativo: Vídeo antes/depois',
+                'CTA: "Agendar agora"'
+              ],
+              cpm: 'R$ 5-15',
+              roi: '350%'
+            }
+          ]
+        },
+        {
+          type: 'metrics-tracking',
+          title: 'Métricas para Acompanhar',
+          kpis: [
+            {
+              metric: 'Alcance mensal',
+              good: '10.000+',
+              great: '25.000+',
+              how: 'Instagram Insights'
+            },
+            {
+              metric: 'Taxa de agendamento',
+              good: '5%',
+              great: '10%',
+              how: 'Contatos ÷ Alcance'
+            },
+            {
+              metric: 'Custo por cliente',
+              good: 'R$ 10-20',
+              great: '< R$ 10',
+              how: 'Investimento ÷ Novos'
+            },
+            {
+              metric: 'Taxa de retorno',
+              good: '50%',
+              great: '70%+',
+              how: 'Clientes que voltam'
+            },
+            {
+              metric: 'Ticket médio',
+              good: 'R$ 45',
+              great: 'R$ 60+',
+              how: 'Faturamento ÷ Atendimentos'
+            }
+          ]
+        },
+        {
+          type: 'common-mistakes',
+          title: '10 Erros que Destroem seu Marketing',
+          mistakes: [
+            'Postar só quando lembra (mate sua relevância)',
+            'Fotos ruins com pouca luz (parece amador)',
+            'Ignorar comentários negativos (vira crise)',
+            'Não responder WhatsApp rápido (perde 70%)',
+            'Copiar conteúdo de outros (sem personalidade)',
+            'Não pedir avaliações (perde credibilidade)',
+            'Anunciar sem segmentar (joga dinheiro fora)',
+            'Não ter site/perfil verificado (desconfiança)',
+            'Promoções confusas (cliente não entende)',
+            'Não medir resultados (não sabe o que funciona)'
+          ]
+        },
+        {
+          type: 'viral-content-hacks',
+          title: 'Hacks para Viralizar',
+          hacks: [
+            {
+              hack: 'Desafio transformação',
+              how: 'Cliente autoriza, mostra processo completo, antes/depois dramático',
+              example: '1M visualizações em 48h'
+            },
+            {
+              hack: 'Corte de famoso local',
+              how: 'Jogador, cantor, influencer - sempre rende',
+              example: '500k alcance garantido'
+            },
+            {
+              hack: 'Trend + barbearia',
+              how: 'Pega trend do momento, adapta para seu nicho',
+              example: '100k views fácil'
+            },
+            {
+              hack: 'Erro proposital',
+              how: 'Posta algo "errado", galera comenta corrigindo',
+              example: 'Engajamento 10x maior'
+            }
+          ]
+        },
+        {
+          type: 'partnership-opportunities',
+          title: 'Parcerias que Multiplicam Clientes',
+          partners: [
+            {
+              type: 'Academia local',
+              benefit: 'Troca de vouchers',
+              result: '30+ clientes/mês'
+            },
+            {
+              type: 'Loja de roupas masculinas',
+              benefit: 'Indicação mútua',
+              result: '20+ clientes/mês'
+            },
+            {
+              type: 'Influencer local',
+              benefit: 'Permuta por posts',
+              result: '50+ clientes/mês'
+            },
+            {
+              type: 'Empresas da região',
+              benefit: 'Desconto corporativo',
+              result: '40+ clientes fixos'
+            }
+          ]
+        },
+        {
+          type: 'cta-final',
+          title: 'Domine o Digital, Domine o Mercado',
+          subtitle: 'Barbearias com marketing digital faturam 3x mais. Não fique para trás.',
+          benefits: [
+            'Kit de templates prontos',
+            'Calendário de 365 posts',
+            'Scripts de anúncios',
+            'Análise gratuita do seu perfil'
+          ],
+          cta: {
+            primary: 'Começar Marketing Agora',
+            secondary: 'Baixar Kit Completo'
+          }
+        }
+      ]
+    }
+  },
+  'sistema-gestao-barbearia': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Sistema de Gestão para Barbearia - Completo 2025',
+          subtitle: 'Controle total do negócio: agendamento, fila digital, financeiro, estoque. Aumente lucros em 40% com gestão profissional.'
+        },
+        {
+          type: 'quick-answer', 
+          title: 'O Que um Sistema Completo Precisa Ter',
+          content: 'Agendamento online, fila digital com QR code, controle financeiro, gestão de estoque, programa fidelidade, relatórios gerenciais, app para cliente, comissões automáticas e integração com WhatsApp. Preço ideal: R$ 88-288/mês.'
+        },
+        {
+          type: 'features-essential',
+          title: 'Funcionalidades Essenciais',
+          categories: [
+            {
+              category: 'Agendamento',
+              importance: '⭐⭐⭐⭐⭐',
+              features: [
+                'Site próprio para clientes',
+                'Confirmação automática WhatsApp',
+                'Gestão de horários por barbeiro',
+                'Bloqueio de conflitos',
+                'Lista de espera inteligente'
+              ],
+              impact: 'Reduz 90% das faltas'
+            },
+            {
+              category: 'Fila Digital',
+              importance: '⭐⭐⭐⭐⭐',
+              features: [
+                'QR Code para walk-ins',
+                'Painel TV sala de espera',
+                'Notificação quando chegar vez',
+                'Tempo estimado de espera',
+                'Histórico de atendimentos'
+              ],
+              impact: 'Aumenta 35% a satisfação'
+            },
+            {
+              category: 'Financeiro',
+              importance: '⭐⭐⭐⭐⭐',
+              features: [
+                'Controle de caixa diário',
+                'Comissões automáticas',
+                'Relatório de faturamento',
+                'Gestão de despesas',
+                'Fechamento mensal'
+              ],
+              impact: 'Lucro +25% com controle'
+            },
+            {
+              category: 'Fidelidade',
+              importance: '⭐⭐⭐⭐',
+              features: [
+                'Programa pontos automático',
+                'Cartão fidelidade digital',
+                'Recompensas personalizadas',
+                'Ranking de clientes',
+                'Promoções segmentadas'
+              ],
+              impact: '70% voltam mais vezes'
+            }
+          ]
+        },
+        {
+          type: 'roi-calculator',
+          title: 'Retorno do Investimento',
+          scenarios: [
+            {
+              without_system: {
+                label: 'Sem Sistema',
+                monthly_revenue: 'R$ 15.000',
+                no_shows: '20% (R$ 3.000)',
+                inefficiency: '15% (R$ 2.250)',
+                net_revenue: 'R$ 9.750'
+              },
+              with_system: {
+                label: 'Com Sistema',
+                monthly_revenue: 'R$ 21.000',
+                no_shows: '5% (R$ 1.050)',
+                efficiency_gain: '+40%',
+                system_cost: 'R$ 188',
+                net_revenue: 'R$ 19.762'
+              },
+              monthly_gain: 'R$ 10.012',
+              roi: '5.329%'
+            }
+          ]
+        },
+        {
+          type: 'comparison-systems',
+          title: 'Comparação dos Principais Sistemas',
+          systems: [
+            {
+              name: 'Converso Pro',
+              price: 'R$ 88-288/mês',
+              rating: '9.8/10',
+              pros: [
+                'Sem taxa por agendamento',
+                'Fila digital incluída',
+                'Site próprio grátis',
+                'WhatsApp integrado',
+                'Suporte em português'
+              ],
+              cons: [
+                'Não tem app nativo (PWA)'
+              ],
+              best_for: 'Melhor custo-benefício'
+            },
+            {
+              name: 'Booksy',
+              price: 'R$ 149/mês + taxas',
+              rating: '8.5/10',
+              pros: [
+                'App conhecido',
+                'Marketplace integrado',
+                'Interface moderna'
+              ],
+              cons: [
+                'Taxa 15% por agendamento',
+                'Sem fila digital',
+                'Caro no longo prazo'
+              ],
+              best_for: 'Quem quer marketplace'
+            },
+            {
+              name: 'Trinks',
+              price: 'R$ 99/mês + taxas',
+              rating: '7.5/10',
+              pros: [
+                'Brasileiro',
+                'Básico funciona bem',
+                'Aceita PIX'
+              ],
+              cons: [
+                'Taxa 12% por corte',
+                'Sem programa fidelidade',
+                'Relatórios limitados'
+              ],
+              best_for: 'Barbearias pequenas'
+            }
+          ]
+        },
+        {
+          type: 'implementation-timeline',
+          title: 'Cronograma de Implementação',
+          phases: [
+            {
+              phase: 'Dia 1-3',
+              title: 'Setup Inicial',
+              tasks: [
+                'Cadastro da barbearia',
+                'Configurar horários',
+                'Adicionar barbeiros',
+                'Importar serviços',
+                'Personalizar site'
+              ]
+            },
+            {
+              phase: 'Dia 4-7',
+              title: 'Configurações',
+              tasks: [
+                'Integrar WhatsApp',
+                'Configurar comissões',
+                'Criar programa fidelidade',
+                'Treinar equipe básico',
+                'Primeiros testes'
+              ]
+            },
+            {
+              phase: 'Semana 2',
+              title: 'Piloto',
+              tasks: [
+                'Clientes beta testam',
+                'Ajustar processos',
+                'Coletar feedback',
+                'Refinar configurações',
+                'Marketing lançamento'
+              ]
+            },
+            {
+              phase: 'Semana 3-4',
+              title: 'Lançamento',
+              tasks: [
+                'Ir ao ar completo',
+                'Monitorar métricas',
+                'Suporte intensivo',
+                'Otimizar fluxos',
+                'Celebrar resultados!'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'staff-management',
+          title: 'Gestão de Equipe Simplificada',
+          features: [
+            {
+              feature: 'Agenda Individual',
+              benefit: 'Cada barbeiro vê só seus horários',
+              result: 'Zero conflitos'
+            },
+            {
+              feature: 'Comissão Automática',
+              benefit: 'Sistema calcula e exibe ganhos',
+              result: 'Transparência total'
+            },
+            {
+              feature: 'Ranking Performance',
+              benefit: 'Gamificação saudável',
+              result: '+30% produtividade'
+            },
+            {
+              feature: 'Folgas e Férias',
+              benefit: 'Bloqueio automático agenda',
+              result: 'Sem erros'
+            },
+            {
+              feature: 'Metas e Bônus',
+              benefit: 'Acompanhamento em tempo real',
+              result: 'Motivação constante'
+            }
+          ]
+        },
+        {
+          type: 'reports-analytics',
+          title: 'Relatórios que Fazem a Diferença',
+          reports: [
+            {
+              report: 'Faturamento Diário',
+              insights: [
+                'Total por barbeiro',
+                'Ticket médio',
+                'Formas de pagamento',
+                'Horários de pico',
+                'Serviços mais vendidos'
+              ],
+              action: 'Otimizar escalas e preços'
+            },
+            {
+              report: 'Análise de Clientes',
+              insights: [
+                'Frequência de retorno',
+                'Lifetime value',
+                'Taxa de abandono',
+                'Origem dos clientes',
+                'Satisfação (NPS)'
+              ],
+              action: 'Estratégias de retenção'
+            },
+            {
+              report: 'Performance Barbeiros',
+              insights: [
+                'Produtividade individual',
+                'Taxa de retenção clientes',
+                'Ticket médio por profissional',
+                'Avaliações recebidas',
+                'Pontualidade'
+              ],
+              action: 'Feedback e treinamento'
+            }
+          ]
+        },
+        {
+          type: 'integration-ecosystem',
+          title: 'Integrações que Potencializam',
+          integrations: [
+            {
+              tool: 'WhatsApp Business',
+              function: 'Confirmações e marketing',
+              automation: '95% mensagens automáticas'
+            },
+            {
+              tool: 'Google Meu Negócio',
+              function: 'Agendamento direto do Google',
+              impact: '+40% novos clientes'
+            },
+            {
+              tool: 'Instagram',
+              function: 'Botão agendar no perfil',
+              conversion: '25% dos seguidores'
+            },
+            {
+              tool: 'Payment Gateways',
+              function: 'PIX, cartão, carnê digital',
+              benefit: 'Receba de qualquer forma'
+            }
+          ]
+        },
+        {
+          type: 'success-metrics',
+          title: 'Métricas de Sucesso Comprovadas',
+          metrics: [
+            {
+              metric: 'Taxa de No-Show',
+              before: '25-30%',
+              after: '< 5%',
+              improvement: '-85%'
+            },
+            {
+              metric: 'Tempo de Espera',
+              before: '45-60 min',
+              after: '15-20 min',
+              improvement: '-66%'
+            },
+            {
+              metric: 'Faturamento Mensal',
+              before: 'R$ 15.000',
+              after: 'R$ 25.000',
+              improvement: '+67%'
+            },
+            {
+              metric: 'Clientes Ativos',
+              before: '200',
+              after: '450',
+              improvement: '+125%'
+            },
+            {
+              metric: 'Avaliação Google',
+              before: '4.2 ⭐',
+              after: '4.8 ⭐',
+              improvement: '+14%'
+            }
+          ]
+        },
+        {
+          type: 'testimonials',
+          title: 'Barbearias que Transformaram a Gestão',
+          testimonials: [
+            {
+              author: 'Diego Ferreira',
+              role: 'Barbearia Concept - SP',
+              text: 'Sai do papel e caneta para gestão total digital. Faturamento dobrou em 6 meses, equipe motivada com comissões transparentes.',
+              results: '2x faturamento'
+            },
+            {
+              author: 'Marcos Silva',
+              role: 'Old Barber - RJ',
+              text: 'A fila digital revolucionou. Cliente toma café enquanto espera, recebe notificação no celular. Experiência premium.',
+              results: 'NPS 92'
+            },
+            {
+              author: 'Rafael Costa',
+              role: 'Barbearia 360 - MG',
+              text: 'Sistema paga sozinho no primeiro mês. Economizei R$ 3.000 só reduzindo faltas. Melhor investimento que fiz.',
+              results: 'ROI 1.600%'
+            }
+          ]
+        },
+        {
+          type: 'security-compliance',
+          title: 'Segurança e Conformidade',
+          aspects: [
+            {
+              aspect: 'LGPD Compliance',
+              measures: [
+                'Dados criptografados',
+                'Consentimento explícito',
+                'Direito ao esquecimento',
+                'Portabilidade dados'
+              ]
+            },
+            {
+              aspect: 'Backup Automático',
+              frequency: 'Diário',
+              retention: '90 dias',
+              recovery: 'Em 1 hora'
+            },
+            {
+              aspect: 'Disponibilidade',
+              uptime: '99.9%',
+              support: '7 dias/semana',
+              response: '< 2 horas'
+            }
+          ]
+        },
+        {
+          type: 'cta-final',
+          title: 'Profissionalize sua Barbearia Hoje',
+          subtitle: 'Gestão profissional não é luxo, é necessidade. Saia na frente da concorrência.',
+          benefits: [
+            'Teste grátis 7 dias',
+            'Migração assistida',
+            'Treinamento incluído',
+            'Sem taxa setup'
+          ],
+          cta: {
+            primary: 'Começar Teste Grátis',
+            secondary: 'Agendar Demonstração',
+            urgency: 'Oferta por tempo limitado'
+          }
+        }
+      ]
+    }
   }
 };
 
