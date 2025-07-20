@@ -1,5 +1,4 @@
 {
-  "buildCommand": "npm run build && npm run build:css && cp static/styles.css output/",
   "outputDirectory": "output",
   "cleanUrls": true,
   "trailingSlash": false,
@@ -20,16 +19,6 @@
           "value": "1; mode=block"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/robots.txt",
-      "destination": "/robots.txt"
-    },
-    {
-      "source": "/sitemap.xml",
-      "destination": "/sitemap.xml"
     }
   ]
 }
