@@ -2365,6 +2365,7 @@ function generateRichPage(page, language, t) {
   
   if (!content || !content.sections) {
     // Fallback to simple content if no rich content available
+    console.log(`No rich content found for ${page.slug}/${language}`);
     return generateDefaultContent(page, language, t);
   }
   
@@ -2430,8 +2431,8 @@ function processPage(page, language) {
   const pageContent = generateRichPage(page, language, t);
   
   // Get title and description from page config
-  const title = page.title?.[language] || page.title?.['pt-BR'] || page.title || 'Converso';
-  const description = page.description?.[language] || page.description?.['pt-BR'] || page.description || '';
+  const title = page.data?.title || page.title?.[language] || page.title?.['pt-BR'] || page.title || 'Converso';
+  const description = page.data?.metaDescription || page.description?.[language] || page.description?.['pt-BR'] || page.description || '';
   
   const html = template
     // Meta tags
