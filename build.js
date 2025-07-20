@@ -1910,7 +1910,7 @@ function generateRichSection(section, t) {
                     ${(cat.items || []).map(item => `
                       <div class="flex justify-between">
                         <span>${item.item || item.name || ''}</span>
-                        <span class="font-medium">${item.cost || item.price || ''}</span>
+                        <span class="font-medium">${item.cost || item.price || item.range || ''}</span>
                       </div>
                     `).join('')}
                   </div>
@@ -2013,24 +2013,44 @@ function generateRichSection(section, t) {
       `;
 
     case 'common-mistakes':
-      return `
-        <section class="py-16 px-4">
-          <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
-            <div class="space-y-6">
-              ${section.mistakes.map(mistake => `
-                <div class="card-neumorphic border-l-4 border-red-500">
-                  <h3 class="text-lg font-bold mb-3">${mistake.mistake}</h3>
-                  <p class="text-red-600 mb-3">Consequência: ${mistake.consequence}</p>
-                  <div class="bg-green-50 p-3 rounded-lg">
-                    <p class="font-medium text-green-700">✓ Solução: ${mistake.solution}</p>
+      // Handle both string array and object array formats
+      if (section.mistakes && typeof section.mistakes[0] === 'string') {
+        // String array format (marketing-digital-barbearia)
+        return `
+          <section class="py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+              <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+              <div class="grid md:grid-cols-2 gap-4">
+                ${section.mistakes.map((mistake, idx) => `
+                  <div class="card-neumorphic border-l-4 ${idx < 3 ? 'border-red-500' : 'border-orange-400'}">
+                    <p class="text-lg font-medium">${mistake}</p>
                   </div>
-                </div>
-              `).join('')}
+                `).join('')}
+              </div>
             </div>
-          </div>
-        </section>
-      `;
+          </section>
+        `;
+      } else {
+        // Object array format
+        return `
+          <section class="py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+              <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+              <div class="space-y-6">
+                ${section.mistakes.map(mistake => `
+                  <div class="card-neumorphic border-l-4 border-red-500">
+                    <h3 class="text-lg font-bold mb-3">${mistake.mistake}</h3>
+                    <p class="text-red-600 mb-3">Consequência: ${mistake.consequence}</p>
+                    <div class="bg-green-50 p-3 rounded-lg">
+                      <p class="font-medium text-green-700">✓ Solução: ${mistake.solution}</p>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </section>
+        `;
+      }
 
     case 'checklist':
       // Handle both categorized and simple checklists
@@ -2582,22 +2602,22 @@ function generateRichSection(section, t) {
             <div class="grid md:grid-cols-2 gap-8">
               ${(section.stories || []).map(story => `
                 <div class="card-neumorphic">
-                  <h3 class="text-xl font-bold mb-4">${story.business}</h3>
-                  <p class="text-gray-700 mb-4">${story.description}</p>
+                  <h3 class="text-xl font-bold mb-4">${story.name || story.business || story.title || ''}</h3>
+                  <p class="text-gray-700 mb-4">${story.secret || story.description || story.story || ''}</p>
                   <div class="grid grid-cols-2 gap-4 mb-4">
                     <div class="bg-red-50 p-3 rounded-lg">
                       <p class="text-sm text-gray-600">Antes</p>
-                      <p class="font-bold text-red-600">${story.before}</p>
+                      <p class="font-bold text-red-600">${story.started || story.before || story.investment || ''}</p>
                     </div>
                     <div class="bg-green-50 p-3 rounded-lg">
                       <p class="text-sm text-gray-600">Depois</p>
-                      <p class="font-bold text-green-600">${story.after}</p>
+                      <p class="font-bold text-green-600">${story.now || story.after || story.revenue || ''}</p>
                     </div>
                   </div>
-                  ${story.quote ? `
+                  ${story.quote || story.testimonial ? `
                     <blockquote class="border-l-4 border-blue-600 pl-4 italic text-gray-700">
-                      "${story.quote}"
-                      <footer class="text-sm text-gray-600 mt-2">— ${story.owner}</footer>
+                      "${story.quote || story.testimonial}"
+                      <footer class="text-sm text-gray-600 mt-2">— ${story.owner || story.name || ''}</footer>
                     </blockquote>
                   ` : ''}
                 </div>
@@ -2703,6 +2723,53 @@ function generateRichSection(section, t) {
                       `;
                     }
                   }).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      `;
+
+    case 'features-comparison':
+      // Debug log
+      if (section.features && section.features[0]) {
+        console.log('features-comparison data:', JSON.stringify(section.features[0], null, 2));
+      }
+      
+      return `
+        <section class="py-16 px-4 bg-gray-50">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="overflow-x-auto">
+              <table class="w-full card-neumorphic">
+                <thead>
+                  <tr class="border-b bg-gray-50">
+                    <th class="text-left p-4">Recurso</th>
+                    ${section.features && section.features[0] ? 
+                      Object.keys(section.features[0])
+                        .filter(key => key !== 'feature')
+                        .map(platform => `<th class="text-center p-4">${platform.charAt(0).toUpperCase() + platform.slice(1)}</th>`)
+                        .join('')
+                      : ''
+                    }
+                  </tr>
+                </thead>
+                <tbody>
+                  ${(section.features || []).map((item, idx) => `
+                    <tr class="${idx % 2 === 0 ? 'bg-gray-50' : ''} border-b">
+                      <td class="p-4 font-medium">${item.feature || ''}</td>
+                      ${Object.entries(item)
+                        .filter(([key]) => key !== 'feature')
+                        .map(([platform, value]) => `
+                          <td class="p-4 text-center">
+                            ${value === '✅' ? '<span class="text-green-600 text-xl">✅</span>' :
+                              value === '❌' ? '<span class="text-red-600 text-xl">❌</span>' :
+                              value === '⚠️' ? '<span class="text-yellow-600 text-xl">⚠️</span>' :
+                              value}
+                          </td>
+                        `).join('')}
+                    </tr>
+                  `).join('')}
                 </tbody>
               </table>
             </div>
