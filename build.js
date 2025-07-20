@@ -279,8 +279,10 @@ function generateRichSection(section, t) {
                   <p class="text-gray-700 mb-4 italic">"${item.text}"</p>
                   <div>
                     <p class="font-bold">${item.name}</p>
-                    <p class="text-sm text-gray-600">${item.business}</p>
+                    <p class="text-sm text-gray-600">${item.business || item.store || ''}</p>
                     ${item.results ? `<p class="text-sm text-green-600 font-bold mt-1">${item.results}</p>` : ''}
+                    ${item.platform ? `<p class="text-sm text-blue-600 font-medium">${item.platform}</p>` : ''}
+                    ${item.revenue ? `<p class="text-sm text-green-600 font-bold">${item.revenue}</p>` : ''}
                   </div>
                 </div>
               `).join('')}
@@ -465,7 +467,7 @@ function generateRichSection(section, t) {
         <section class="py-16 px-4 bg-gray-50">
           <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-4">${section.title}</h2>
-            <p class="text-xl text-gray-600 text-center mb-12">${section.subtitle}</p>
+            <p class="text-xl text-gray-600 text-center mb-12">${section.subtitle || section.description || ''}</p>
             ${section.steps.map((step, idx) => `
               <div class="card-neumorphic mb-8">
                 <h3 class="text-xl font-bold mb-4">${step.step}</h3>
@@ -1500,7 +1502,7 @@ function generateRichSection(section, t) {
         <section class="py-16 px-4 bg-gray-50">
           <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-4">${section.title}</h2>
-            <p class="text-xl text-gray-600 text-center mb-12">${section.subtitle}</p>
+            <p class="text-xl text-gray-600 text-center mb-12">${section.subtitle || section.description || ''}</p>
             <div class="grid md:grid-cols-2 gap-8">
               ${section.strategies.map(strategy => `
                 <div class="card-neumorphic">
@@ -1827,7 +1829,7 @@ function generateRichSection(section, t) {
         <section class="py-16 px-4 bg-gray-50">
           <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-4">${section.title}</h2>
-            <p class="text-xl text-gray-600 text-center mb-12">${section.subtitle}</p>
+            <p class="text-xl text-gray-600 text-center mb-12">${section.subtitle || section.description || ''}</p>
             ${section.content ? `<p class="text-lg text-center mb-8">${section.content}</p>` : ''}
             ${section.metrics ? `
               <div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -1905,17 +1907,17 @@ function generateRichSection(section, t) {
                 <div class="card-neumorphic">
                   <h3 class="text-xl font-bold mb-4">${cat.category}</h3>
                   <div class="space-y-2">
-                    ${cat.items.map(item => `
+                    ${(cat.items || []).map(item => `
                       <div class="flex justify-between">
-                        <span>${item.item}</span>
-                        <span class="font-medium">${item.cost}</span>
+                        <span>${item.item || item.name || ''}</span>
+                        <span class="font-medium">${item.cost || item.price || ''}</span>
                       </div>
                     `).join('')}
                   </div>
                   <div class="border-t mt-3 pt-3">
                     <div class="flex justify-between font-bold">
                       <span>Subtotal:</span>
-                      <span>${cat.subtotal}</span>
+                      <span>${cat.subtotal || cat.total || ''}</span>
                     </div>
                   </div>
                 </div>
@@ -2294,7 +2296,7 @@ function generateRichSection(section, t) {
         <section class="py-16 px-4 bg-gray-50">
           <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-4">${section.title}</h2>
-            <p class="text-xl text-gray-600 text-center mb-12">${section.subtitle}</p>
+            <p class="text-xl text-gray-600 text-center mb-12">${section.subtitle || section.description || ''}</p>
             <div class="card-neumorphic">
               ${section.inputs ? `
                 <div class="mb-6">
@@ -2354,7 +2356,362 @@ function generateRichSection(section, t) {
         </section>
       `;
 
+    case 'comparison-table':
+      return `
+        <section class="py-16 px-4 bg-gray-50">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-${section.platforms?.length || 3} gap-6">
+              ${(section.platforms || []).map(platform => `
+                <div class="card-neumorphic hover:shadow-neumorphic-hover transition-all">
+                  <div class="text-4xl mb-4 text-center">${platform.logo || '💻'}</div>
+                  <h3 class="text-2xl font-bold mb-2 text-center">${platform.name}</h3>
+                  <p class="text-lg font-medium text-center mb-4">${platform.pricing}</p>
+                  ${platform.transaction_fee ? `<p class="text-sm text-red-600 text-center mb-4">Taxa: ${platform.transaction_fee}</p>` : ''}
+                  <p class="text-sm text-gray-600 text-center mb-6">${platform.best_for}</p>
+                  
+                  ${platform.pros ? `
+                    <div class="mb-4">
+                      <h4 class="font-bold text-green-600 mb-2">✓ Pontos Fortes</h4>
+                      <ul class="space-y-1">
+                        ${platform.pros.map(pro => `
+                          <li class="text-sm text-gray-700">• ${pro}</li>
+                        `).join('')}
+                      </ul>
+                    </div>
+                  ` : ''}
+                  
+                  ${platform.cons ? `
+                    <div class="mb-4">
+                      <h4 class="font-bold text-red-600 mb-2">✗ Limitações</h4>
+                      <ul class="space-y-1">
+                        ${platform.cons.map(con => `
+                          <li class="text-sm text-gray-700">• ${con}</li>
+                        `).join('')}
+                      </ul>
+                    </div>
+                  ` : ''}
+                  
+                  ${platform.rating ? `
+                    <div class="text-center mt-6 pt-6 border-t">
+                      <span class="text-2xl font-bold text-blue-600">${platform.rating}</span>
+                    </div>
+                  ` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+
+    case 'cost-calculator':
+      return `
+        <section class="py-16 px-4 bg-gray-50">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">${section.title}</h2>
+            ${section.subtitle ? `<p class="text-xl text-gray-600 text-center mb-12">${section.subtitle}</p>` : ''}
+            <div class="card-neumorphic">
+              ${section.description ? `<p class="text-lg mb-6">${section.description}</p>` : ''}
+              
+              ${(section.platforms || []).map(platform => `
+                <div class="space-y-4">
+                  ${platform.items?.map(item => `
+                    <div class="flex justify-between items-center p-4 ${item.highlight ? 'bg-green-50 rounded-lg' : ''}">
+                      <span class="font-medium">${item.name || platform.name}</span>
+                      <div class="text-right">
+                        <span class="text-lg">${item.cost || platform.cost}</span>
+                        ${item.yearly ? `<span class="text-sm text-gray-600 ml-2">(${item.yearly})</span>` : ''}
+                        ${item.savings ? `<div class="text-green-600 font-bold">${item.savings}</div>` : ''}
+                      </div>
+                    </div>
+                  `).join('') || `
+                    <div class="flex justify-between items-center p-4">
+                      <span class="font-medium">${platform.name}</span>
+                      <span class="text-lg">${platform.cost}</span>
+                    </div>
+                  `}
+                </div>
+              `).join('')}
+              
+              ${section.total ? `
+                <div class="mt-6 pt-6 border-t">
+                  <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold">Total</span>
+                    <span class="text-2xl font-bold text-blue-600">${section.total}</span>
+                  </div>
+                  ${section.savings ? `<p class="text-green-600 font-bold text-center mt-2">${section.savings}</p>` : ''}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        </section>
+      `;
+
+    case 'statistics':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              ${(section.stats || []).map(stat => `
+                <div class="card-neumorphic text-center">
+                  <div class="text-4xl font-bold text-blue-600 mb-2">${stat.value}</div>
+                  <div class="text-gray-600">${stat.label}</div>
+                  ${stat.source ? `<div class="text-xs text-gray-400 mt-2">${stat.source}</div>` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+
+    case 'strategies':
+      return `
+        <section class="py-16 px-4 bg-gray-50">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="space-y-6">
+              ${(section.channels || section.items || []).map((strategy, idx) => `
+                <div class="card-neumorphic">
+                  ${strategy.name ? `
+                    <div class="flex items-start justify-between mb-4">
+                      <h3 class="text-xl font-bold">${strategy.name || strategy.title || ''}</h3>
+                      ${strategy.effectiveness ? `<span class="text-yellow-500">${strategy.effectiveness}</span>` : ''}
+                    </div>
+                    ${strategy.cost !== undefined || strategy.timeToResults ? `
+                      <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        ${strategy.cost ? `
+                          <div>
+                            <span class="text-sm text-gray-600">Custo:</span>
+                            <span class="font-medium ml-2">${strategy.cost}</span>
+                          </div>
+                        ` : ''}
+                        ${strategy.timeToResults ? `
+                          <div>
+                            <span class="text-sm text-gray-600">Resultados em:</span>
+                            <span class="font-medium ml-2">${strategy.timeToResults}</span>
+                          </div>
+                        ` : ''}
+                      </div>
+                    ` : ''}
+                    ${strategy.tactics ? `
+                      <div>
+                        <h4 class="font-medium mb-2">Táticas:</h4>
+                        <ul class="space-y-1">
+                          ${strategy.tactics.map(tactic => `
+                            <li class="text-sm text-gray-700 flex items-start">
+                              <span class="text-green-600 mr-2">→</span>
+                              <span>${tactic}</span>
+                            </li>
+                          `).join('')}
+                        </ul>
+                      </div>
+                    ` : ''}
+                    ${strategy.expected ? `<p class="text-sm text-green-600 font-medium mt-4">Resultado esperado: ${strategy.expected}</p>` : ''}
+                  ` : `
+                    <div class="flex items-start">
+                      <div class="bg-gradient-primary text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-4 font-bold">
+                        ${strategy.number || idx + 1}
+                      </div>
+                      <div class="flex-1">
+                        <h3 class="text-xl font-bold mb-2">${strategy.title || ''}</h3>
+                        <p class="text-gray-700 mb-4">${strategy.description || ''}</p>
+                        ${strategy.tips ? `
+                          <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Como implementar:</h4>
+                            <ul class="space-y-1">
+                              ${strategy.tips.map(tip => `
+                                <li class="text-sm text-gray-700">• ${tip}</li>
+                              `).join('')}
+                            </ul>
+                          </div>
+                        ` : ''}
+                        ${strategy.result ? `
+                          <div class="mt-3 text-green-600 font-bold">
+                            📈 Resultado esperado: ${strategy.result}
+                          </div>
+                        ` : ''}
+                      </div>
+                    </div>
+                  `}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+
+    case 'features-comparison':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="overflow-x-auto">
+              <table class="w-full card-neumorphic">
+                <thead>
+                  <tr class="border-b bg-gray-50">
+                    <th class="text-left p-4">Recurso</th>
+                    ${(section.columns || []).map(col => `
+                      <th class="text-center p-4">${col}</th>
+                    `).join('')}
+                  </tr>
+                </thead>
+                <tbody>
+                  ${(section.features || []).map((feature, idx) => `
+                    <tr class="${idx % 2 === 0 ? 'bg-gray-50' : ''} border-b">
+                      <td class="p-4 font-medium">${feature.name}</td>
+                      ${feature.values?.map(val => `
+                        <td class="p-4 text-center">
+                          ${val === true ? '✅' : val === false ? '❌' : val || '-'}
+                        </td>
+                      `).join('')}
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      `;
+
+    case 'success-stories':
+      return `
+        <section class="py-16 px-4 bg-gradient-to-br from-blue-50 to-green-50">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+              ${(section.stories || []).map(story => `
+                <div class="card-neumorphic">
+                  <h3 class="text-xl font-bold mb-4">${story.business}</h3>
+                  <p class="text-gray-700 mb-4">${story.description}</p>
+                  <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div class="bg-red-50 p-3 rounded-lg">
+                      <p class="text-sm text-gray-600">Antes</p>
+                      <p class="font-bold text-red-600">${story.before}</p>
+                    </div>
+                    <div class="bg-green-50 p-3 rounded-lg">
+                      <p class="text-sm text-gray-600">Depois</p>
+                      <p class="font-bold text-green-600">${story.after}</p>
+                    </div>
+                  </div>
+                  ${story.quote ? `
+                    <blockquote class="border-l-4 border-blue-600 pl-4 italic text-gray-700">
+                      "${story.quote}"
+                      <footer class="text-sm text-gray-600 mt-2">— ${story.owner}</footer>
+                    </blockquote>
+                  ` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+
+    case 'roi-calculator':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">${section.title}</h2>
+            ${section.subtitle ? `<p class="text-xl text-gray-600 text-center mb-12">${section.subtitle}</p>` : ''}
+            <div class="card-neumorphic">
+              <h3 class="text-xl font-bold mb-6">Seu Investimento</h3>
+              <div class="space-y-4 mb-8">
+                ${(section.inputs || []).map(input => `
+                  <div class="flex justify-between items-center">
+                    <span>${input.label}</span>
+                    <span class="font-bold">${input.value}</span>
+                  </div>
+                `).join('')}
+              </div>
+              
+              <h3 class="text-xl font-bold mb-6">Retorno Esperado</h3>
+              <div class="space-y-4">
+                ${(section.returns || []).map(ret => `
+                  <div class="flex justify-between items-center ${ret.highlight ? 'bg-green-50 p-3 rounded-lg' : ''}">
+                    <span>${ret.label}</span>
+                    <span class="font-bold ${ret.highlight ? 'text-green-600' : ''}">${ret.value}</span>
+                  </div>
+                `).join('')}
+              </div>
+              
+              ${section.summary ? `
+                <div class="mt-8 p-6 bg-gradient-to-r from-blue-50 to-green-50 rounded-lg text-center">
+                  <p class="text-2xl font-bold text-blue-600">${section.summary}</p>
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        </section>
+      `;
+
+    case 'features-essential':
+      return `
+        <section class="py-16 px-4">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">${section.title}</h2>
+            <div class="overflow-x-auto">
+              <table class="w-full card-neumorphic">
+                <thead>
+                  <tr class="border-b bg-gray-50">
+                    <th class="text-left p-4">Recurso</th>
+                    ${(section.platforms || []).map(platform => 
+                      `<th class="text-center p-4">${platform}</th>`
+                    ).join('')}
+                  </tr>
+                </thead>
+                <tbody>
+                  ${(section.features || section.categories || []).map((item, idx) => {
+                    // Handle both features array and categories array structures
+                    if (item.category) {
+                      // Categories structure
+                      return `
+                        <tr class="${idx % 2 === 0 ? 'bg-gray-50' : ''} border-b">
+                          <td class="p-4">
+                            <div>
+                              <span class="font-medium">${item.category}</span>
+                              ${item.importance ? `<span class="ml-2">${item.importance}</span>` : ''}
+                              ${item.impact ? `<p class="text-sm text-green-600">${item.impact}</p>` : ''}
+                            </div>
+                          </td>
+                          ${item.features ? `
+                            <td class="p-4" colspan="${(section.platforms || []).length || 1}">
+                              <ul class="space-y-1">
+                                ${item.features.map(f => `
+                                  <li class="text-sm text-gray-700 flex items-start">
+                                    <span class="text-green-600 mr-2">✓</span>
+                                    <span>${f}</span>
+                                  </li>
+                                `).join('')}
+                              </ul>
+                            </td>
+                          ` : ''}
+                        </tr>
+                      `;
+                    } else {
+                      // Features structure
+                      return `
+                        <tr class="${idx % 2 === 0 ? 'bg-gray-50' : ''} border-b">
+                          <td class="p-4 font-medium">${item.feature || item.name || ''}</td>
+                          ${(item.platforms || item.availability || []).map(platform => 
+                            `<td class="p-4 text-center">${
+                              typeof platform === 'object' ? 
+                                (platform.has === true ? '✓' : platform.has === false ? '✗' : platform.value || platform.has || '') : 
+                                platform
+                            }</td>`
+                          ).join('')}
+                        </tr>
+                      `;
+                    }
+                  }).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      `;
+
     default:
+      console.warn(`Unknown section type: ${section.type}`);
       return '';
   }
 }
