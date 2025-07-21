@@ -2731,11 +2731,6 @@ function generateRichSection(section, t) {
       `;
 
     case 'features-comparison':
-      // Debug log
-      if (section.features && section.features[0]) {
-        console.log('features-comparison data:', JSON.stringify(section.features[0], null, 2));
-      }
-      
       return `
         <section class="py-16 px-4 bg-gray-50">
           <div class="max-w-6xl mx-auto">
@@ -2745,29 +2740,40 @@ function generateRichSection(section, t) {
                 <thead>
                   <tr class="border-b bg-gray-50">
                     <th class="text-left p-4">Recurso</th>
-                    ${section.features && section.features[0] ? 
-                      Object.keys(section.features[0])
-                        .filter(key => key !== 'feature')
-                        .map(platform => `<th class="text-center p-4">${platform.charAt(0).toUpperCase() + platform.slice(1)}</th>`)
-                        .join('')
-                      : ''
-                    }
+                    <th class="text-center p-4">Shopify</th>
+                    <th class="text-center p-4">WooCommerce</th>
+                    <th class="text-center p-4">Nuvemshop</th>
+                    <th class="text-center p-4">Loja Integrada</th>
                   </tr>
                 </thead>
                 <tbody>
                   ${(section.features || []).map((item, idx) => `
                     <tr class="${idx % 2 === 0 ? 'bg-gray-50' : ''} border-b">
-                      <td class="p-4 font-medium">${item.feature || ''}</td>
-                      ${Object.entries(item)
-                        .filter(([key]) => key !== 'feature')
-                        .map(([platform, value]) => `
-                          <td class="p-4 text-center">
-                            ${value === '✅' ? '<span class="text-green-600 text-xl">✅</span>' :
-                              value === '❌' ? '<span class="text-red-600 text-xl">❌</span>' :
-                              value === '⚠️' ? '<span class="text-yellow-600 text-xl">⚠️</span>' :
-                              value}
-                          </td>
-                        `).join('')}
+                      <td class="p-4 font-medium">${item.feature}</td>
+                      <td class="p-4 text-center">
+                        ${item.shopify === '✅' ? '<span class="text-green-600 text-xl">✅</span>' :
+                          item.shopify === '❌' ? '<span class="text-red-600 text-xl">❌</span>' :
+                          item.shopify === '⚠️' ? '<span class="text-yellow-600 text-xl">⚠️</span>' :
+                          `<span class="text-gray-700">${item.shopify}</span>`}
+                      </td>
+                      <td class="p-4 text-center">
+                        ${item.woo === '✅' ? '<span class="text-green-600 text-xl">✅</span>' :
+                          item.woo === '❌' ? '<span class="text-red-600 text-xl">❌</span>' :
+                          item.woo === '⚠️' ? '<span class="text-yellow-600 text-xl">⚠️</span>' :
+                          `<span class="text-gray-700">${item.woo}</span>`}
+                      </td>
+                      <td class="p-4 text-center">
+                        ${item.nuvem === '✅' ? '<span class="text-green-600 text-xl">✅</span>' :
+                          item.nuvem === '❌' ? '<span class="text-red-600 text-xl">❌</span>' :
+                          item.nuvem === '⚠️' ? '<span class="text-yellow-600 text-xl">⚠️</span>' :
+                          `<span class="text-gray-700">${item.nuvem}</span>`}
+                      </td>
+                      <td class="p-4 text-center">
+                        ${item.loja === '✅' ? '<span class="text-green-600 text-xl">✅</span>' :
+                          item.loja === '❌' ? '<span class="text-red-600 text-xl">❌</span>' :
+                          item.loja === '⚠️' ? '<span class="text-yellow-600 text-xl">⚠️</span>' :
+                          `<span class="text-gray-700">${item.loja}</span>`}
+                      </td>
                     </tr>
                   `).join('')}
                 </tbody>

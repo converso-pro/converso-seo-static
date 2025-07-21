@@ -1,144 +1,856 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical Clinic Booking System - HIPAA Compliant</title>
-  <meta name="description" content="Professional booking system for medical clinics. Patient management, scheduling, and reminders.">
-  <meta property="og:title" content="Medical Clinic Booking System - HIPAA Compliant">
-  <meta property="og:description" content="Professional booking system for medical clinics. Patient management, scheduling, and reminders.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seo.converso.pro/use-cases/medical-clinic-booking">
-  <meta property="og:image" content="https://converso.pro/converso-og.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Medical Clinic Booking System - HIPAA Compliant">
-  <meta name="twitter:description" content="Professional booking system for medical clinics. Patient management, scheduling, and reminders.">
-  <link rel="canonical" href="https://seo.converso.pro/use-cases/medical-clinic-booking">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" href="https://converso.pro/favicon.ico">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-</head>
-<body class="bg-gray-50 text-gray-900">
-  <!-- Header -->
-  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <!-- Logo -->
-        <a href="https://converso.pro" class="flex items-center group">
-          <span class="text-2xl font-bold">
-            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
-          </span>
-        </a>
-        
-        <!-- Navigation -->
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Recursos</a>
-          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Preços</a>
-          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Depoimentos</a>
-        </nav>
-        
-        <!-- CTA Buttons -->
-        <div class="flex items-center space-x-4">
-          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
-            Entrar
-          </a>
-          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
-            Começar Grátis
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Agendamento para Clínicas Médicas | Converso - Reduza Faltas em 90%</title>
+    <meta name="description" content="Sistema completo de agendamento online para clínicas médicas. Portal do paciente, lembretes SMS/WhatsApp, prontuário eletrônico. Reduza faltas e otimize operações.">
+    <meta name="keywords" content="sistema agendamento clínica médica, software médico, agendamento online médico, gestão clínica, prontuário eletrônico">
     
-    <section class="py-20 px-4">
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Medical Clinic Booking System</h1>
-        <p class="text-xl text-gray-600 text-center mb-12">Professional booking system for medical clinics. Patient management, scheduling, and reminders.</p>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sistema de Agendamento para Clínicas Médicas - Converso">
+    <meta property="og:description" content="Sistema completo para clínicas: agendamento online, portal do paciente, lembretes automáticos. Reduza faltas em 90%.">
+    <meta property="og:url" content="https://seo.converso.pro/pt-BR/use-cases/medical-clinic-booking/">
+    <meta property="og:type" content="article">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://seo.converso.pro/pt-BR/use-cases/medical-clinic-booking/">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        <div class="card-neumorphic mb-8">
-          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
-          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
-          <ul class="space-y-2">
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>No booking fees</span>
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>Your own professional website</span>
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>WhatsApp integration</span>
-            </li>
-          </ul>
-        </div>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
         
-        <div class="text-center">
-          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
-            Criar Seu Site Agora
-          </a>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #f0f2f5;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+            color: white;
+            box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px #c8cacd, -7px -7px 20px #ffffff;
+        }
+        
+        .btn-secondary {
+            background: #f0f2f5;
+            color: #333;
+            box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px #c8cacd, -7px -7px 20px #ffffff;
+        }
+        
+        @media (max-width: 768px) {
+            .hide-mobile {
+                display: none;
+            }
+        }
+        
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            background: #f0f2f5;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .neumorphic {
+            background: #f0f2f5;
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .comparison-table tr:hover {
+            background: rgba(59, 130, 246, 0.05);
+        }
+        
+        .highlight-green {
+            color: #10b981;
+            font-weight: 600;
+        }
+        
+        .highlight-red {
+            color: #ef4444;
+            font-weight: 600;
+        }
+        
+        .highlight-blue {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .testimonial-card {
+            background: #f0f2f5;
+            border-radius: 15px;
+            box-shadow: 10px 10px 30px #c8cacd, -10px -10px 30px #ffffff;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stars {
+            color: #fbbf24;
+            margin-bottom: 1rem;
+        }
+        
+        .alert {
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+        
+        .alert-warning {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            color: #92400e;
+        }
+        
+        .alert-info {
+            background: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            color: #1e40af;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .cta-buttons {
+            margin-top: 2rem;
+        }
+        
+        .btn-white {
+            background: white;
+            color: #3b82f6;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn-white:hover {
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background: #1f2937;
+            color: #e5e7eb;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-content h4 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-content a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-content a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+            color: #9ca3af;
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .neumorphic {
+                padding: 1.5rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
+            <div class="nav-buttons">
+                <a href="https://converso.pro" class="btn btn-secondary hide-mobile">Voltar ao Site</a>
+                <a href="https://app.converso.pro/auth" class="btn btn-primary">Login</a>
+            </div>
         </div>
-      </div>
+    </header>
+    
+    <section class="hero">
+        <h1 class="gradient-text">Sistema de Agendamento para Clínicas Médicas</h1>
+        <p class="subtitle">Otimize sua clínica com agendamento online inteligente. Reduza faltas em 90%, automatize lembretes e ofereça portal exclusivo para pacientes.</p>
     </section>
-  
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <!-- Company -->
-        <div>
-          <h3 class="text-lg font-semibold mb-4">Converso</h3>
-          <p class="text-gray-400 text-sm">
-            Crie seu site profissional de agendamentos em minutos. Junte-se a milhares de profissionais que confiam no Converso.
-          </p>
+    
+    <div class="container">
+        <!-- Quick Answer Box -->
+        <section>
+            <div class="neumorphic" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);">
+                <h2 style="margin-bottom: 1.5rem;">🏥 Por Que Clínicas Escolhem Converso</h2>
+                <div style="font-size: 1.125rem; line-height: 2;">
+                    <p><strong>📱 Portal do Paciente:</strong> <span class="highlight-green">100% digital</span> com histórico completo</p>
+                    <p><strong>🔔 Lembretes Inteligentes:</strong> <span class="highlight-blue">90% menos faltas</span> com SMS + WhatsApp</p>
+                    <p><strong>⏰ Agenda Otimizada:</strong> <span class="highlight-green">+35% produtividade</span> médica</p>
+                    <p><strong>📊 Gestão Completa:</strong> <span class="highlight-blue">Zero papel</span> com prontuário digital</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Problems and Solutions -->
+        <section>
+            <h2 style="font-size: 2.5rem; text-align: center; margin: 3rem 0;">Desafios que Toda Clínica Enfrenta</h2>
+            
+            <div class="card-grid">
+                <div class="neumorphic">
+                    <h3 style="color: #ef4444; margin-bottom: 1rem;">❌ Gestão Manual</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0;">• Agenda de papel confusa</li>
+                        <li style="padding: 0.5rem 0;">• Telefone tocando sem parar</li>
+                        <li style="padding: 0.5rem 0;">• Taxa de faltas altíssima (40%+)</li>
+                        <li style="padding: 0.5rem 0;">• Prontuários desorganizados</li>
+                        <li style="padding: 0.5rem 0;">• Pacientes insatisfeitos com espera</li>
+                    </ul>
+                </div>
+                
+                <div class="neumorphic">
+                    <h3 style="color: #10b981; margin-bottom: 1rem;">✅ Com Converso</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0;">• Agendamento online 24/7</li>
+                        <li style="padding: 0.5rem 0;">• Central telefônica livre</li>
+                        <li style="padding: 0.5rem 0;">• Apenas 4% de faltas</li>
+                        <li style="padding: 0.5rem 0;">• Prontuário digital seguro</li>
+                        <li style="padding: 0.5rem 0;">• Pacientes informados e satisfeitos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ROI Calculator -->
+        <section style="margin-top: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">💰 Impacto Financeiro - Clínica Médica</h2>
+            
+            <div class="neumorphic">
+                <h3 style="margin-bottom: 1.5rem;">Clínica com 5 Médicos - Resultados Reais</h3>
+                <div class="table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Métrica</th>
+                                <th>Antes</th>
+                                <th>Com Converso</th>
+                                <th>Melhoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Consultas/mês</strong></td>
+                                <td>800 consultas</td>
+                                <td>1.080 consultas</td>
+                                <td><span class="highlight-green">+280 consultas</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Taxa de faltas</strong></td>
+                                <td><span class="highlight-red">40%</span></td>
+                                <td><span class="highlight-green">4%</span></td>
+                                <td>-90% faltas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tempo administrativo</strong></td>
+                                <td>40h/semana</td>
+                                <td>10h/semana</td>
+                                <td><span class="highlight-green">-75% tempo</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Satisfação pacientes</strong></td>
+                                <td>65%</td>
+                                <td>94%</td>
+                                <td><span class="highlight-green">+45%</span></td>
+                            </tr>
+                            <tr style="background: rgba(16, 185, 129, 0.1);">
+                                <td><strong>Faturamento adicional</strong></td>
+                                <td colspan="2" style="text-align: center;">
+                                    <strong class="highlight-green" style="font-size: 1.5rem;">+R$ 84.000/mês</strong>
+                                </td>
+                                <td><strong>+35%</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.875rem; color: #666;">
+                    * Baseado em clínicas usando Converso há mais de 12 meses (consulta média R$300)
+                </p>
+            </div>
+        </section>
+        
+        <!-- Features Specific for Medical Clinics -->
+        <section style="margin-top: 4rem;">
+            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🚀 Recursos Exclusivos para Clínicas</h2>
+            
+            <div class="card-grid">
+                <div class="neumorphic">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">👥</div>
+                        <h3 class="gradient-text">Portal do Paciente</h3>
+                    </div>
+                    <p>Área exclusiva onde pacientes acessam histórico, resultados de exames, próximas consultas e documentos.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="padding: 0.25rem 0;">✓ Login seguro com OTP</li>
+                        <li style="padding: 0.25rem 0;">✓ Histórico completo</li>
+                        <li style="padding: 0.25rem 0;">✓ Download de documentos</li>
+                    </ul>
+                </div>
+                
+                <div class="neumorphic">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">📋</div>
+                        <h3 class="gradient-text">Prontuário Eletrônico</h3>
+                    </div>
+                    <p>Sistema completo de prontuário digital com templates por especialidade, CID-10 integrado e assinatura digital.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="padding: 0.25rem 0;">✓ Templates médicos</li>
+                        <li style="padding: 0.25rem 0;">✓ Prescrição digital</li>
+                        <li style="padding: 0.25rem 0;">✓ LGPD compliant</li>
+                    </ul>
+                </div>
+                
+                <div class="neumorphic">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">🔔</div>
+                        <h3 class="gradient-text">Lembretes Multi-Canal</h3>
+                    </div>
+                    <p>Sistema inteligente que envia lembretes por SMS, WhatsApp e email. Confirma presença e permite reagendamento.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="padding: 0.25rem 0;">✓ SMS 48h antes</li>
+                        <li style="padding: 0.25rem 0;">✓ WhatsApp 24h antes</li>
+                        <li style="padding: 0.25rem 0;">✓ Confirmação 1-click</li>
+                    </ul>
+                </div>
+                
+                <div class="neumorphic">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">👨‍⚕️</div>
+                        <h3 class="gradient-text">Multi-Especialidades</h3>
+                    </div>
+                    <p>Gerencie múltiplos médicos e especialidades. Cada profissional com agenda própria, valores e durações específicas.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="padding: 0.25rem 0;">✓ Agendas individuais</li>
+                        <li style="padding: 0.25rem 0;">✓ Valores por médico</li>
+                        <li style="padding: 0.25rem 0;">✓ Relatórios separados</li>
+                    </ul>
+                </div>
+                
+                <div class="neumorphic">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">💳</div>
+                        <h3 class="gradient-text">Pagamento Online</h3>
+                    </div>
+                    <p>Receba pagamentos antecipados via Pix ou cartão. Reduza inadimplência e garanta comprometimento do paciente.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="padding: 0.25rem 0;">✓ Pix integrado</li>
+                        <li style="padding: 0.25rem 0;">✓ Cartão de crédito</li>
+                        <li style="padding: 0.25rem 0;">✓ Política cancelamento</li>
+                    </ul>
+                </div>
+                
+                <div class="neumorphic">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">📊</div>
+                        <h3 class="gradient-text">Analytics Médico</h3>
+                    </div>
+                    <p>Dashboards específicos para gestão médica: taxa de ocupação, faltas por horário, tempo médio de consulta.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="padding: 0.25rem 0;">✓ Taxa ocupação</li>
+                        <li style="padding: 0.25rem 0;">✓ Análise de faltas</li>
+                        <li style="padding: 0.25rem 0;">✓ Performance médicos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Specialties Configuration -->
+        <section style="margin-top: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">🏥 Especialidades Pré-Configuradas</h2>
+            
+            <div class="neumorphic">
+                <p style="margin-bottom: 1.5rem;">Sistema vem com todas as especialidades médicas configuradas:</p>
+                
+                <div class="table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Especialidade</th>
+                                <th>Duração Padrão</th>
+                                <th>Valor Sugerido</th>
+                                <th>Recursos Especiais</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Clínico Geral</td>
+                                <td>30 min</td>
+                                <td>R$ 200</td>
+                                <td>Prontuário básico, CID-10</td>
+                            </tr>
+                            <tr>
+                                <td>Cardiologia</td>
+                                <td>40 min</td>
+                                <td>R$ 350</td>
+                                <td>ECG, Laudos, Retornos</td>
+                            </tr>
+                            <tr>
+                                <td>Dermatologia</td>
+                                <td>30 min</td>
+                                <td>R$ 300</td>
+                                <td>Fotos antes/depois, Procedimentos</td>
+                            </tr>
+                            <tr>
+                                <td>Pediatria</td>
+                                <td>30 min</td>
+                                <td>R$ 250</td>
+                                <td>Carteira vacinas, Curva crescimento</td>
+                            </tr>
+                            <tr>
+                                <td>Ginecologia</td>
+                                <td>40 min</td>
+                                <td>R$ 300</td>
+                                <td>Pré-natal, Exames periódicos</td>
+                            </tr>
+                            <tr>
+                                <td>Ortopedia</td>
+                                <td>30 min</td>
+                                <td>R$ 350</td>
+                                <td>Raio-X, Fisioterapia integrada</td>
+                            </tr>
+                            <tr>
+                                <td>Psiquiatria</td>
+                                <td>50 min</td>
+                                <td>R$ 400</td>
+                                <td>Receitas controladas, Acompanhamento</td>
+                            </tr>
+                            <tr>
+                                <td>Oftalmologia</td>
+                                <td>30 min</td>
+                                <td>R$ 280</td>
+                                <td>Exames, Cirurgias, Óculos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Success Stories -->
+        <section style="margin-top: 4rem;">
+            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🌟 Clínicas de Sucesso com Converso</h2>
+            
+            <div class="card-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p style="font-style: italic; margin-bottom: 1rem;">
+                        "Reduzimos faltas de 45% para 4%. São 200 consultas a mais por mês! O portal do paciente eliminou 80% das ligações. Equipe focada no atendimento, não no telefone."
+                    </p>
+                    <div>
+                        <p style="font-weight: 600;">Dra. Maria Santos</p>
+                        <p style="font-size: 0.875rem; color: #666;">Clínica Saúde Total - São Paulo</p>
+                        <p style="font-size: 0.875rem; color: #10b981; font-weight: 600;">+R$ 60.000/mês</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p style="font-style: italic; margin-bottom: 1rem;">
+                        "O prontuário eletrônico mudou tudo. Consultas 30% mais rápidas, zero papel, pacientes adoram receber prescrição no celular. Pagamento online reduziu inadimplência a zero."
+                    </p>
+                    <div>
+                        <p style="font-weight: 600;">Dr. João Costa</p>
+                        <p style="font-size: 0.875rem; color: #666;">Centro Médico Vida - Rio de Janeiro</p>
+                        <p style="font-size: 0.875rem; color: #10b981; font-weight: 600;">30% mais produtividade</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p style="font-style: italic; margin-bottom: 1rem;">
+                        "12 médicos, 8 especialidades, zero confusão. Cada um com sua agenda e valores. Relatórios mostram exatamente onde melhorar. ROI em 2 meses!"
+                    </p>
+                    <div>
+                        <p style="font-weight: 600;">Dra. Ana Oliveira</p>
+                        <p style="font-size: 0.875rem; color: #666;">Policlínica Central - Brasília</p>
+                        <p style="font-size: 0.875rem; color: #10b981; font-weight: 600;">ROI em 2 meses</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Implementation Timeline -->
+        <section style="margin-top: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">📅 Cronograma de Implementação</h2>
+            
+            <div class="neumorphic" style="max-width: 800px; margin: 0 auto;">
+                <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
+                    <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">Dia 1</span>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem;">Configuração Inicial (2h)</h3>
+                        <p style="color: #666;">Cadastre clínica, médicos, especialidades. Importe agenda existente com nossa ajuda.</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
+                    <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">Dia 3</span>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem;">Treinamento Equipe</h3>
+                        <p style="color: #666;">Vídeo-chamada com toda equipe. Médicos e recepção dominam o sistema.</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
+                    <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">Semana 1</span>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem;">Migração Completa</h3>
+                        <p style="color: #666;">Pacientes agendando online. Lembretes automáticos funcionando. Zero papel.</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
+                    <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">Mês 1</span>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem;">Primeiros Resultados</h3>
+                        <p style="color: #666;">Faltas reduzidas em 70%. Equipe mais produtiva. Pacientes elogiando.</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; align-items: flex-start;">
+                    <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">Mês 3</span>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem;">Otimização Total</h3>
+                        <p style="color: #666;">90% menos faltas. 35% mais consultas. ROI comprovado com relatórios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Compliance and Security -->
+        <section style="margin-top: 4rem;">
+            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🔒 Segurança e Conformidade</h2>
+            
+            <div class="neumorphic" style="background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔐</div>
+                        <h4>Criptografia Total</h4>
+                        <p style="font-size: 0.875rem; color: #666;">Dados médicos protegidos com criptografia de ponta a ponta</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📋</div>
+                        <h4>LGPD Compliant</h4>
+                        <p style="font-size: 0.875rem; color: #666;">100% adequado à Lei Geral de Proteção de Dados</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🏥</div>
+                        <h4>CFM Aprovado</h4>
+                        <p style="font-size: 0.875rem; color: #666;">Segue todas as normas do Conselho Federal de Medicina</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💾</div>
+                        <h4>Backup Diário</h4>
+                        <p style="font-size: 0.875rem; color: #666;">Backups automáticos com retenção de 90 dias</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section style="margin-top: 4rem;">
+            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">❓ Perguntas Frequentes - Clínicas</h2>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="neumorphic" style="margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 0.5rem;">Como funciona a integração com convênios?</h3>
+                    <p style="color: #666;">Sistema permite cadastrar todos os convênios aceitos. Paciente seleciona o convênio ao agendar. Você pode definir valores diferenciados e gerar guias TISS automaticamente.</p>
+                </div>
+                
+                <div class="neumorphic" style="margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 0.5rem;">E se o médico precisar bloquear horários?</h3>
+                    <p style="color: #666;">Cada médico acessa sua agenda pelo celular e bloqueia horários em segundos. Pacientes com consultas afetadas são notificados automaticamente para reagendar.</p>
+                </div>
+                
+                <div class="neumorphic" style="margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 0.5rem;">Como funciona o prontuário eletrônico?</h3>
+                    <p style="color: #666;">Templates prontos por especialidade, CID-10 integrado, prescrição digital com banco de medicamentos. Tudo assinado digitalmente e disponível para o paciente no portal.</p>
+                </div>
+                
+                <div class="neumorphic" style="margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 0.5rem;">Pacientes idosos conseguem usar?</h3>
+                    <p style="color: #666;">Interface super simples! Mas mantemos agendamento por telefone para quem preferir. A recepção usa o mesmo sistema, então nunca há conflito de horários.</p>
+                </div>
+                
+                <div class="neumorphic">
+                    <h3 style="margin-bottom: 0.5rem;">Como migrar do sistema atual?</h3>
+                    <p style="color: #666;">Nossa equipe faz toda migração gratuitamente. Importamos pacientes, histórico de consultas e agenda futura. Em 48h está tudo funcionando sem interromper atendimentos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Comparison -->
+        <section style="margin-top: 4rem;">
+            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">💰 Investimento vs Economia</h2>
+            
+            <div class="neumorphic">
+                <div class="table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Plano</th>
+                                <th>Investimento</th>
+                                <th>Recursos</th>
+                                <th>Economia Mensal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Plus</strong></td>
+                                <td>R$ 88/mês</td>
+                                <td>1 médico<br>500 consultas<br>Portal básico</td>
+                                <td><span class="highlight-green">+R$ 15.000</span></td>
+                            </tr>
+                            <tr style="background: rgba(16, 185, 129, 0.1);">
+                                <td><strong>Pro (Recomendado)</strong></td>
+                                <td>R$ 288/mês</td>
+                                <td>Médicos ilimitados<br>Consultas ilimitadas<br>Prontuário completo<br>Portal avançado</td>
+                                <td><span class="highlight-green">+R$ 84.000</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Enterprise</strong></td>
+                                <td>Sob consulta</td>
+                                <td>Multi-unidades<br>API completa<br>Suporte dedicado</td>
+                                <td><span class="highlight-blue">Personalizado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top: 1rem; text-align: center; font-weight: 600;">
+                    ROI médio de <span class="highlight-green">291x</span> - Para cada R$1 investido, economia de R$291
+                </p>
+            </div>
+        </section>
+        
+        <!-- Pro Tips -->
+        <div class="alert alert-info" style="margin-top: 3rem;">
+            <strong>💡 Dica Médica:</strong> Comece ativando o portal do paciente e lembretes automáticos. Em 30 dias suas faltas caem 70%. Use a economia para expandir horários de atendimento e faturar ainda mais!
         </div>
         
-        <!-- Links -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Produto</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro#features" class="hover:text-white transition">Recursos</a></li>
-            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Preços</a></li>
-            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
-          </ul>
+        <!-- Final CTA -->
+        <div class="cta-section">
+            <h2 style="margin-bottom: 1.5rem;">Modernize Sua Clínica em 48 Horas</h2>
+            <p style="margin-bottom: 2rem;">Junte-se a centenas de clínicas que reduziram faltas em 90% e aumentaram faturamento</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; max-width: 600px; margin: 2rem auto;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
+                    <span>Demonstração ao vivo</span>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
+                    <span>Migração gratuita</span>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
+                    <span>Treinamento incluído</span>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
+                    <span>Suporte médico 24/7</span>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="https://app.converso.pro/auth" class="btn-white">
+                    Agendar Demonstração
+                </a>
+            </div>
         </div>
-        
-        <!-- Support -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Suporte</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro/help" class="hover:text-white transition">Central de Ajuda</a></li>
-            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contato</a></li>
-          </ul>
-        </div>
-        
-        <!-- Legal -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Legal</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Política de Privacidade</a></li>
-            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Termos de Serviço</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-        <p>&copy; 2025 Converso. Todos os direitos reservados.</p>
-      </div>
     </div>
-  </footer>
+    
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Converso</h4>
+                <p style="font-size: 0.875rem; color: #999; margin-top: 0.5rem;">
+                    Crie seu site profissional de agendamentos em minutos. Junte-se a milhares de profissionais que confiam no Converso.
+                </p>
+            </div>
+            
+            <div>
+                <h4>Produto</h4>
+                <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+                    <li style="margin: 0.5rem 0;"><a href="https://converso.pro/pricing">Preços</a></li>
+                    <li style="margin: 0.5rem 0;"><a href="https://converso.pro/apps">Apps</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Suporte</h4>
+                <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+                    <li style="margin: 0.5rem 0;"><a href="https://converso.pro/faq">Central de Ajuda</a></li>
+                    <li style="margin: 0.5rem 0;"><a href="https://converso.pro">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Legal</h4>
+                <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+                    <li style="margin: 0.5rem 0;"><a href="https://converso.pro/privacy">Política de Privacidade</a></li>
+                    <li style="margin: 0.5rem 0;"><a href="https://converso.pro/terms">Termos de Serviço</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Converso. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
