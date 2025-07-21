@@ -80,8 +80,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Spanish Feature Pages (Priority 0.8) -->
   <url>
     <loc>https://seo.converso.pro/es/about/</loc>
     <changefreq>weekly</changefreq>
@@ -89,11 +87,6 @@
   </url>
   <url>
     <loc>https://seo.converso.pro/es/apps/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/apps/e-commerce/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -142,20 +135,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Portuguese Feature Pages (Priority 0.8) -->
   <url>
     <loc>https://seo.converso.pro/pt-BR/about/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/apps/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/apps/e-commerce/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -185,54 +166,29 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/barbearia/</loc>
+    <loc>https://seo.converso.pro/pt-BR/use-cases/barber/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/barberia/</loc>
+    <loc>https://seo.converso.pro/pt-BR/use-cases/medical-clinic-booking/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/citas-medicas-clinica/</loc>
+    <loc>https://seo.converso.pro/pt-BR/use-cases/personal-trainer-booking/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/clinica-medica/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/personal-trainer-citas/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/personal-trainer/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/terapeuta-citas/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/terapeutas/</loc>
+    <loc>https://seo.converso.pro/pt-BR/use-cases/therapist-booking/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Priority 0.7: All other content pages (English) -->
+  <!-- Priority 0.7: All other content pages -->
   <url>
-    <loc>https://seo.converso.pro/alternativas-calendly/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/app-gratis-barberia-clark-county/</loc>
+    <loc>https://seo.converso.pro/calendly-alternatives/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -242,12 +198,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/barbershop-booking-software/</loc>
+    <loc>https://seo.converso.pro/barbershop-guide-henderson-nv/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/barbershop-guide-henderson-nv/</loc>
+    <loc>https://seo.converso.pro/best-barbershop-software-henderson/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -262,12 +218,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/best-barber-app-clark-county/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/best-barbershop-software-henderson/</loc>
+    <loc>https://seo.converso.pro/barbershop-booking-software/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -277,7 +228,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/calendly-alternatives/</loc>
+    <loc>https://seo.converso.pro/digital-queue-barbershop/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -287,7 +238,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/digital-queue-barbershop/</loc>
+    <loc>https://seo.converso.pro/best-barber-app-clark-county/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -301,13 +252,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Priority 0.7: All other content pages (Spanish) -->
-  <url>
-    <loc>https://seo.converso.pro/es/agendamento-barbearia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  
+  <!-- Adding all Spanish pages with priority 0.7 -->
   <url>
     <loc>https://seo.converso.pro/es/alternativas-calendly/</loc>
     <changefreq>weekly</changefreq>
@@ -359,52 +305,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/es/compare/converso-vs-acuity/</loc>
+    <loc>https://seo.converso.pro/es/agendamento-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/es/compare/converso-vs-calendly/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/compare/converso-vs-square/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/digital-marketing-barbershop/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/digital-queue-barbershop/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/fila-digital-barbearia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/fila-digital-barberia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/free-barber-app-clark-county/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/fresha-gratuita/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/guia-abrir-barbearia/</loc>
+    <loc>https://seo.converso.pro/es/sistema-gestao-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -414,22 +320,27 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/es/guia-completo-revenda-celulares/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/margem-lucro-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/marketing-digital-barbearia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://seo.converso.pro/es/marketing-digital-barberia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/es/fila-digital-barberia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/es/uso-barberia-moderna/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/es/sistema-gestion-barberia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/es/melhor-aplicativo-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -444,207 +355,32 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/es/melhor-aplicativo-agendamento/</loc>
+    <loc>https://seo.converso.pro/es/como-captar-clientes-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/es/melhor-aplicativo-barbearia/</loc>
+    <loc>https://seo.converso.pro/es/como-fidelizar-clientes-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/es/melhor-plataforma-ecommerce/</loc>
+    <loc>https://seo.converso.pro/es/como-administrar-dinheiro-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/es/melhor-programa-gratuito-cadastro-clientes/</loc>
+    <loc>https://seo.converso.pro/es/como-montar-salao-beleza/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/es/melhor-sistema-agendamento-saloes/</loc>
+    <loc>https://seo.converso.pro/es/como-atrair-clientes-salao-beleza/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://seo.converso.pro/es/mercado-beleza-estetica-brasil/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/modern-barbershop-use-case/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/o-que-nao-pode-faltar-salao-beleza/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/o-que-necessario-loja-online/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/onde-achar-fornecedores-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/open-barbershop-guide/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/ordem-servico-assistencia-tecnica-celular/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/preco-sistema-agendamento-online/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/qual-area-beleza-da-mais-lucro/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-cobrar-corte-cabelo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-cobrar-restaurar-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-custa-abrir-loja/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-custa-abrir-salao-beleza/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-custa-app-barbearia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-custa-criar-site-shopify/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-custa-curso-cabeleireiro/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-custa-curso-manutencao-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-custa-iphone-revender/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-custa-manter-site/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-custa-reparo-placa-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-custa-site-barbearia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-ganha-revendedor-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-ganha-tecnico-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/quanto-paga-mes-shopify/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/shopify-gratuita/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/sistema-gestao-barbearia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/sistema-gestao-loja-celular/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/sistema-gestion-barberia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/use-cases/barber/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/use-cases/medical-clinic-booking/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/use-cases/personal-trainer-booking/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/use-cases/therapist-booking/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/uso-barbearia-moderna/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/uso-barberia-moderna/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/uso-revendedor-celulares/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Priority 0.7: All other content pages (Portuguese) -->
+  
+  <!-- Adding Portuguese pages with priority 0.7 -->
   <url>
     <loc>https://seo.converso.pro/pt-BR/agendamento-barbearia/</loc>
     <changefreq>weekly</changefreq>
@@ -661,147 +397,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/barbershop-booking-henderson/</loc>
+    <loc>https://seo.converso.pro/pt-BR/melhor-plataforma-ecommerce/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/barbershop-guide-henderson-nv/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/barbershop-management-system/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/barbershop-online-booking/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/best-barber-app-clark-county/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/best-barbershop-software-henderson/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/best-booking-system-for-hair-salons/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/calendly-alternatives/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-administrar-dinheiro-barbearia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-atrair-clientes-salao-beleza/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-captar-clientes-barbearia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-comecar-negocio-online/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-comecar-salao-beleza-pequeno/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-comecar-salao-beleza/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-criar-loja-pouco-dinheiro/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-fidelizar-clientes-barbearia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-ganhar-dinheiro-cabeleireira/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-montar-salao-beleza/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-ser-revendedor-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/como-ter-sucesso-cabeleireira/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/compare/converso-vs-acuity/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/compare/converso-vs-calendly/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/compare/converso-vs-square/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/digital-marketing-barbershop/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/digital-queue-barbershop/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/fila-digital-barbearia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/fila-digital-barberia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/free-barber-app-clark-county/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/fresha-gratuita/</loc>
+    <loc>https://seo.converso.pro/pt-BR/sistema-gestao-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -811,122 +412,37 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/guia-abrir-barberia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/guia-completo-revenda-celulares/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/margem-lucro-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://seo.converso.pro/pt-BR/marketing-digital-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/marketing-digital-barberia/</loc>
+    <loc>https://seo.converso.pro/pt-BR/fila-digital-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/mejor-app-barberia-clark-county/</loc>
+    <loc>https://seo.converso.pro/pt-BR/como-captar-clientes-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/mejor-sistema-citas-salones/</loc>
+    <loc>https://seo.converso.pro/pt-BR/como-fidelizar-clientes-barbearia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/melhor-aplicativo-agendamento/</loc>
+    <loc>https://seo.converso.pro/pt-BR/como-montar-salao-beleza/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/melhor-aplicativo-barbearia/</loc>
+    <loc>https://seo.converso.pro/pt-BR/como-atrair-clientes-salao-beleza/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/melhor-plataforma-ecommerce/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/melhor-programa-gratuito-cadastro-clientes/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/melhor-sistema-agendamento-saloes/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/mercado-beleza-estetica-brasil/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/modern-barbershop-use-case/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/o-que-nao-pode-faltar-salao-beleza/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/o-que-necessario-loja-online/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/onde-achar-fornecedores-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/open-barbershop-guide/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/ordem-servico-assistencia-tecnica-celular/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/preco-sistema-agendamento-online/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/qual-area-beleza-da-mais-lucro/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/quanto-cobrar-corte-cabelo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/quanto-cobrar-restaurar-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/quanto-custa-abrir-loja/</loc>
+    <loc>https://seo.converso.pro/pt-BR/como-comecar-negocio-online/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -941,22 +457,57 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://seo.converso.pro/pt-BR/quanto-cobrar-corte-cabelo/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/preco-sistema-agendamento-online/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/quanto-custa-site-barbearia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/melhor-aplicativo-barbearia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/melhor-aplicativo-agendamento/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/melhor-programa-gratuito-cadastro-clientes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/melhor-sistema-agendamento-saloes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/fresha-gratuita/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/shopify-gratuita/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/quanto-paga-mes-shopify/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://seo.converso.pro/pt-BR/quanto-custa-criar-site-shopify/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/quanto-custa-curso-cabeleireiro/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/quanto-custa-curso-manutencao-iphone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/pt-BR/quanto-custa-iphone-revender/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -966,12 +517,37 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/quanto-custa-reparo-placa-iphone/</loc>
+    <loc>https://seo.converso.pro/pt-BR/como-criar-loja-pouco-dinheiro/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/quanto-custa-site-barbearia/</loc>
+    <loc>https://seo.converso.pro/pt-BR/quanto-custa-abrir-loja/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/o-que-necessario-loja-online/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/como-ser-revendedor-iphone/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/quanto-custa-iphone-revender/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/onde-achar-fornecedores-iphone/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/margem-lucro-iphone/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -986,17 +562,17 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/quanto-paga-mes-shopify/</loc>
+    <loc>https://seo.converso.pro/pt-BR/quanto-cobrar-restaurar-iphone/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/shopify-gratuita/</loc>
+    <loc>https://seo.converso.pro/pt-BR/quanto-custa-reparo-placa-iphone/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/sistema-gestao-barbearia/</loc>
+    <loc>https://seo.converso.pro/pt-BR/quanto-custa-curso-manutencao-iphone/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1006,27 +582,57 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/sistema-gestion-barberia/</loc>
+    <loc>https://seo.converso.pro/pt-BR/ordem-servico-assistencia-tecnica-celular/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/use-cases/barber/</loc>
+    <loc>https://seo.converso.pro/pt-BR/guia-completo-revenda-celulares/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/use-cases/medical-clinic-booking/</loc>
+    <loc>https://seo.converso.pro/pt-BR/uso-revendedor-celulares/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/use-cases/personal-trainer-booking/</loc>
+    <loc>https://seo.converso.pro/pt-BR/quanto-custa-curso-cabeleireiro/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/use-cases/therapist-booking/</loc>
+    <loc>https://seo.converso.pro/pt-BR/como-comecar-salao-beleza/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/como-ter-sucesso-cabeleireira/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/como-ganhar-dinheiro-cabeleireira/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/como-comecar-salao-beleza-pequeno/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/qual-area-beleza-da-mais-lucro/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/o-que-nao-pode-faltar-salao-beleza/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/mercado-beleza-estetica-brasil/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1036,12 +642,57 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/uso-barberia-moderna/</loc>
+    <loc>https://seo.converso.pro/pt-BR/modern-barbershop-use-case/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/pt-BR/uso-revendedor-celulares/</loc>
+    <loc>https://seo.converso.pro/pt-BR/como-administrar-dinheiro-barbearia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/quanto-custa-site-barbearia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/barbearia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/barberia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/clinica-medica/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/citas-medicas-clinica/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/personal-trainer/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/personal-trainer-citas/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/terapeutas/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/pt-BR/casos-de-uso/terapeuta-citas/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
