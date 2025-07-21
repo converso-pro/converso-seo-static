@@ -1370,3 +1370,9 @@ const sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>
 
 fs.writeFileSync(path.join(__dirname, 'output', 'sitemap.xml'), sitemapXML);
 console.log('✓ sitemap.xml created with 297 URLs');
+
+// Restore custom pages
+const { restoreCustomPages } = require('./preserve-custom-pages');
+console.log('Post-build: Restoring custom pages...');
+restoreCustomPages();
+console.log('✓ Custom pages restored');
