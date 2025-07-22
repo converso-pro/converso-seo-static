@@ -3,706 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema de Agendamento para Personal Trainer: Melhor App 2025 | Converso</title>
-  <meta name="description" content="Sistema completo para personal trainers: agendamento online, gestão de alunos, treinos personalizados, Pix. Desde R$ 0/mês. Mais de 3.000 trainers confiam.">
-  <meta property="og:title" content="Melhor Sistema para Personal Trainer Brasil 2025 - Converso">
-  <meta property="og:description" content="App completo para personal trainers: treinos, agendamentos, alunos, pagamentos. Tudo em português.">
+  <title>Sistema de Agendamento para Personal Trainer</title>
+  <meta name="description" content="Sistema profissional de agendamento para personal trainers. Gerencie clientes, horários e pagamentos.">
+  <meta property="og:title" content="Sistema de Agendamento para Personal Trainer">
+  <meta property="og:description" content="Sistema profissional de agendamento para personal trainers. Gerencie clientes, horários e pagamentos.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seo.converso.pro/pt-BR/casos-de-uso/personal-trainer">
+  <meta property="og:url" content="https://seo.converso.pro/casos-de-uso/personal-trainer">
   <meta property="og:image" content="https://converso.pro/converso-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sistema Personal Trainer Brasil - Converso">
-  <meta name="twitter:description" content="O app mais completo para personal trainers brasileiros. Treinos, agenda, pagamentos.">
-  <link rel="canonical" href="https://seo.converso.pro/pt-BR/casos-de-uso/personal-trainer">
+  <meta name="twitter:title" content="Sistema de Agendamento para Personal Trainer">
+  <meta name="twitter:description" content="Sistema profissional de agendamento para personal trainers. Gerencie clientes, horários e pagamentos.">
+  <link rel="canonical" href="https://seo.converso.pro/casos-de-uso/personal-trainer">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="https://converso.pro/favicon.ico">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f0f2f5;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .neumorphic {
-      background: #f0f2f5;
-      border-radius: 20px;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .neumorphic-inset {
-      background: #f0f2f5;
-      border-radius: 15px;
-      box-shadow: inset 8px 8px 16px #c8cacd, inset -8px -8px 16px #ffffff;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .gradient-bg {
-      background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
-    }
-
-    header {
-      background: #f0f2f5;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .nav-buttons {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .btn {
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
-      color: white;
-      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
-    }
-
-    .btn-secondary {
-      background: white;
-      color: #333;
-      box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
-    }
-
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.2;
-    }
-
-    .subtitle {
-      font-size: 1.25rem;
-      color: #666;
-      max-width: 800px;
-      margin: 0 auto 3rem;
-    }
-
-    .stats {
-      background: linear-gradient(135deg, #d97706 0%, #dc2626 100%);
-      color: white;
-      padding: 4rem 2rem;
-      margin: 4rem 0;
-    }
-
-    .stats-container {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      text-align: center;
-    }
-
-    .stat-number {
-      font-size: 3rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-
-    .comparison-table {
-      background: white;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-      margin: 2rem 0;
-    }
-
-    .comparison-table table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .comparison-table th {
-      background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
-      color: white;
-      padding: 1.5rem;
-      text-align: left;
-      font-weight: 600;
-    }
-
-    .comparison-table td {
-      padding: 1.5rem;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .comparison-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .check-mark {
-      color: #10b981;
-      font-size: 1.5rem;
-    }
-
-    .x-mark {
-      color: #ef4444;
-      font-size: 1.5rem;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin: 4rem 0;
-    }
-
-    .feature-card {
-      text-align: center;
-      padding: 2rem;
-      transition: transform 0.3s ease;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .feature-icon {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .section {
-      max-width: 1200px;
-      margin: 4rem auto;
-      padding: 0 2rem;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .testimonial {
-      padding: 2rem;
-      margin: 2rem 0;
-      text-align: center;
-      font-style: italic;
-    }
-
-    .cta-section {
-      background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
-      color: white;
-      padding: 4rem 2rem;
-      text-align: center;
-      border-radius: 30px;
-      margin: 4rem auto;
-      max-width: 1000px;
-    }
-
-    .problem-solution {
-      background: #fee2e2;
-      border-left: 4px solid #ef4444;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      border-radius: 10px;
-    }
-
-    .solution-box {
-      background: #d1fae5;
-      border-left: 4px solid #10b981;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      border-radius: 10px;
-    }
-
-    footer {
-      background: #1f2937;
-      color: white;
-      padding: 3rem 0;
-      text-align: center;
-      margin-top: 4rem;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      
-      .hide-mobile {
-        display: none;
-      }
-      
-      .comparison-table {
-        overflow-x: auto;
-      }
-      
-      .comparison-table table {
-        min-width: 600px;
-      }
-    }
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
   <!-- Header -->
-  <header>
-    <div class="header-container">
-      <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
-      <div class="nav-buttons">
-        <a href="/pt-BR/" class="btn btn-secondary hide-mobile">Recursos</a>
-        <a href="https://app.converso.pro/auth" class="btn btn-primary">Começar Grátis</a>
+  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="https://converso.pro" class="flex items-center group">
+          <span class="text-2xl font-bold">
+            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
+          </span>
+        </a>
+        
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Recursos</a>
+          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Preços</a>
+          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Depoimentos</a>
+        </nav>
+        
+        <!-- CTA Buttons -->
+        <div class="flex items-center space-x-4">
+          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
+            Entrar
+          </a>
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
+            Começar Grátis
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="neumorphic">
-      <div class="gradient-text" style="font-size: 4rem; margin-bottom: 1rem;">💪</div>
-      <h1>Sistema para Personal Trainer: <span class="gradient-text">O Melhor App Brasileiro 2025</span></h1>
-      <p class="subtitle">
-        <strong>Converso é a ferramenta #1</strong> para personal trainers no Brasil. 
-        Agendamento online, gestão de alunos, treinos personalizados, controle financeiro, Pix integrado. 
-        Sem comissões ocultas, desde R$ 0/mês. Mais de 3.000 personal trainers já confiam 
-        em São Paulo, Rio de Janeiro, Brasília e todo o Brasil.
-      </p>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="https://app.converso.pro/auth" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">
-          Criar Minha Academia Digital
-        </a>
-        <a href="#comparacao" class="btn btn-secondary">Ver Comparação Completa</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section class="stats">
-    <div class="stats-container">
-      <div>
-        <div class="stat-number">R$ 0</div>
-        <div>Taxa Mensal</div>
-      </div>
-      <div>
-        <div class="stat-number">5min</div>
-        <div>Configuração Total</div>
-      </div>
-      <div>
-        <div class="stat-number">95%</div>
-        <div>Menos Desistências</div>
-      </div>
-      <div>
-        <div class="stat-number">3.000+</div>
-        <div>Trainers Ativos</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Problem/Solution Section -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Problemas Reais que <span class="gradient-text">Todo Personal Enfrenta</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Soluções digitais para profissionais modernos</p>
-    </div>
+  <!-- Main Content -->
+  <main>
     
-    <div style="display: grid; gap: 2rem; max-width: 800px; margin: 0 auto;">
-      <div>
-        <div class="problem-solution">
-          <h3 style="color: #dc2626; margin-bottom: 0.5rem;">❌ Problema: Alunos Ligam Durante Treinos</h3>
-          <p>70% das ligações acontecem durante atendimento. Você perde foco no aluno que está treinando.</p>
-        </div>
-        <div class="solution-box">
-          <h3 style="color: #059669; margin-bottom: 0.5rem;">✓ Solução: Agendamento Online 24/7</h3>
-          <p>Seus alunos agendam quando querem pelo WhatsApp ou site. Você treina sem interrupções.</p>
-        </div>
-      </div>
-      
-      <div>
-        <div class="problem-solution">
-          <h3 style="color: #dc2626; margin-bottom: 0.5rem;">❌ Problema: Desistências Constantes Matam Renda</h3>
-          <p>40% dos alunos desistem nos primeiros 3 meses. Perda de R$ 2.000-4.000/mês.</p>
-        </div>
-        <div class="solution-box">
-          <h3 style="color: #059669; margin-bottom: 0.5rem;">✓ Solução: Acompanhamento Automático</h3>
-          <p>Lembretes motivacionais, progresso visual, metas gamificadas. Retenção aumenta 80%.</p>
-        </div>
-      </div>
-      
-      <div>
-        <div class="problem-solution">
-          <h3 style="color: #dc2626; margin-bottom: 0.5rem;">❌ Problema: Controle Financeiro Bagunçado</h3>
-          <p>Planilhas confusas, mensalidades em atraso, sem controle de receitas vs despesas.</p>
-        </div>
-        <div class="solution-box">
-          <h3 style="color: #059669; margin-bottom: 0.5rem;">✓ Solução: Gestão Financeira Automática</h3>
-          <p>Cobrança automática via Pix, relatórios financeiros, controle de inadimplência.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Comparison Table -->
-  <section class="section" id="comparacao">
-    <div class="section-header">
-      <h2 class="section-title">Comparação: <span class="gradient-text">Converso vs Concorrentes</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Análise dos principais apps para personal trainers</p>
-    </div>
-    
-    <div class="comparison-table">
-      <table>
-        <thead>
-          <tr>
-            <th>Característica</th>
-            <th style="background: #dc2626;">Converso</th>
-            <th>TreineMe</th>
-            <th>Freeletics</th>
-            <th>MyFitnessPal</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Preço Mensal</strong></td>
-            <td><strong>R$ 0 - R$ 288</strong></td>
-            <td>R$ 97 - R$ 297</td>
-            <td>R$ 39 - R$ 119</td>
-            <td>R$ 149 - R$ 399</td>
-          </tr>
-          <tr>
-            <td><strong>Agendamento Online</strong></td>
-            <td><span class="check-mark">✓</span> Completo</td>
-            <td><span class="x-mark">✗</span> Não</td>
-            <td><span class="x-mark">✗</span> Não</td>
-            <td><span class="x-mark">✗</span> Não</td>
-          </tr>
-          <tr>
-            <td><strong>Gestão Financeira</strong></td>
-            <td><span class="check-mark">✓</span> Com Pix</td>
-            <td><span class="x-mark">✗</span> Básico</td>
-            <td><span class="x-mark">✗</span> Não</td>
-            <td><span class="x-mark">✗</span> Não</td>
-          </tr>
-          <tr>
-            <td><strong>WhatsApp Integrado</strong></td>
-            <td><span class="check-mark">✓</span> Nativo</td>
-            <td><span class="x-mark">✗</span> Não</td>
-            <td><span class="x-mark">✗</span> Não</td>
-            <td><span class="x-mark">✗</span> Não</td>
-          </tr>
-          <tr>
-            <td><strong>Site Próprio</strong></td>
-            <td><span class="check-mark">✓</span> converso.pro/p/seuNome</td>
-            <td><span class="x-mark">✗</span> Não</td>
-            <td><span class="x-mark">✗</span> Não</td>
-            <td><span class="x-mark">✗</span> Não</td>
-          </tr>
-          <tr>
-            <td><strong>Treinos Personalizados</strong></td>
-            <td><span class="check-mark">✓</span> Ilimitados</td>
-            <td><span class="check-mark">✓</span> Sim</td>
-            <td>Limitado</td>
-            <td><span class="x-mark">✗</span> Não</td>
-          </tr>
-          <tr>
-            <td><strong>Gestão de Alunos</strong></td>
-            <td><span class="check-mark">✓</span> Completa</td>
-            <td><span class="check-mark">✓</span> Básica</td>
-            <td><span class="x-mark">✗</span> Não</td>
-            <td>Limitada</td>
-          </tr>
-          <tr>
-            <td><strong>Suporte em Português</strong></td>
-            <td><span class="check-mark">✓</span> 24/7</td>
-            <td><span class="check-mark">✓</span> Sim</td>
-            <td><span class="x-mark">✗</span> Limitado</td>
-            <td>Parcial</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="neumorphic" style="background: #fef3c7; margin-top: 2rem;">
-      <h3 style="color: #92400e; margin-bottom: 1rem;">💰 Cálculo Real para Personal (30 alunos, R$ 150/mês cada)</h3>
-      <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-        <li style="padding: 0.5rem 0;">• <strong>TreineMe:</strong> R$ 97-297/mês = <strong>R$ 1.164-3.564/ano</strong></li>
-        <li style="padding: 0.5rem 0;">• <strong>Freeletics:</strong> R$ 39-119/mês = <strong>R$ 468-1.428/ano</strong></li>
-        <li style="padding: 0.5rem 0;">• <strong>MyFitnessPal:</strong> R$ 149-399/mês = <strong>R$ 1.788-4.788/ano</strong></li>
-        <li style="padding: 0.5rem 0; color: #dc2626; font-weight: bold;">• <strong>Converso:</strong> R$ 0-288/mês = <strong>R$ 0-3.456/ano + ZERO comissões</strong></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Features Grid -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Sistema Completo para <span class="gradient-text">Personal Trainers</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Tudo que você precisa para profissionalizar seu negócio</p>
-    </div>
-    
-    <div class="feature-grid">
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">🏋️</div>
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Treinos Personalizados</h3>
-        <p>
-          Crie treinos únicos para cada aluno com biblioteca de 500+ exercícios. 
-          Vídeos, GIFs, instruções detalhadas.
-        </p>
-      </div>
-      
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">📅</div>
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Agenda Inteligente</h3>
-        <p>
-          Seus alunos agendam treinos online 24/7. Bloqueios automáticos, 
-          lembretes via WhatsApp, sem conflitos.
-        </p>
-      </div>
-      
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">📊</div>
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Evolução dos Alunos</h3>
-        <p>
-          Acompanhe progresso com fotos, medidas, peso, performance. 
-          Gráficos motivacionais que mantêm alunos engajados.
-        </p>
-      </div>
-      
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">💳</div>
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Cobrança Automática</h3>
-        <p>
-          Mensalidades via Pix automático, cartão, boleto. 
-          Controle de inadimplência, lembretes de pagamento.
-        </p>
-      </div>
-      
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">💬</div>
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">WhatsApp Profissional</h3>
-        <p>
-          Chat integrado para tirar dúvidas, enviar treinos, motivar alunos. 
-          Tudo organizado em um só lugar.
-        </p>
-      </div>
-      
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">🌐</div>
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Site Profissional</h3>
-        <p>
-          Seu site próprio: converso.pro/p/seuNome. Portfólio, 
-          depoimentos, agendamento online. Conquiste mais alunos.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Success Stories -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Personal Trainers de Sucesso com <span class="gradient-text">Converso</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Histórias reais de transformação profissional</p>
-    </div>
-    
-    <div style="display: grid; gap: 2rem;">
-      <div class="neumorphic testimonial">
-        <p style="font-size: 1.25rem; margin-bottom: 1rem;">
-          "Antes tinha 15 alunos e estava sempre correndo atrás de pagamento. 
-          Com Converso tenho 45 alunos, cobrança automática e site profissional. 
-          Minha renda triplicou em 8 meses."
-        </p>
-        <p><strong>Rafael Costa</strong> - Personal Trainer, São Paulo</p>
-        <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
-      </div>
-      
-      <div class="neumorphic testimonial">
-        <p style="font-size: 1.25rem; margin-bottom: 1rem;">
-          "O que mais gostei foi a gestão de treinos. Crio o treino uma vez 
-          e o aluno recebe no celular com vídeos. Economizo 3 horas por dia 
-          que antes gastava explicando exercícios."
-        </p>
-        <p><strong>Mariana Silva</strong> - Personal Trainer, Rio de Janeiro</p>
-        <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
-      </div>
-      
-      <div class="neumorphic testimonial">
-        <p style="font-size: 1.25rem; margin-bottom: 1rem;">
-          "Trabalho com atletas de alto rendimento. O sistema de evolução 
-          do Converso me permite acompanhar cada detalhe da performance. 
-          Meus atletas melhoraram 30% mais rápido."
-        </p>
-        <p><strong>Anderson Oliveira</strong> - Personal de Atletas, Brasília</p>
-        <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Personal Trainer Specific Features -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Recursos Exclusivos para <span class="gradient-text">Personal Trainers</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Funcionalidades desenvolvidas com profissionais</p>
-    </div>
-    
-    <div style="display: grid; gap: 1.5rem; max-width: 800px; margin: 0 auto;">
-      <div class="neumorphic">
-        <h3 style="color: #dc2626; margin-bottom: 1rem;">🎯 Periodização de Treinos</h3>
-        <p>
-          Sistema de periodização automática com microciclos, mesociclos e macrociclos. 
-          Progressão científica dos seus alunos.
-        </p>
-      </div>
-      
-      <div class="neumorphic">
-        <h3 style="color: #dc2626; margin-bottom: 1rem;">📸 Análise Postural</h3>
-        <p>
-          Ferramenta para análise postural com fotos antes/depois. 
-          Marque desvios, acompanhe correções, mostre resultados.
-        </p>
-      </div>
-      
-      <div class="neumorphic">
-        <h3 style="color: #dc2626; margin-bottom: 1rem;">🍎 Planos Alimentares</h3>
-        <p>
-          Crie planos alimentares básicos para seus alunos. 
-          Calculadora de macros, lista de substituições, receitas fit.
-        </p>
-      </div>
-      
-      <div class="neumorphic">
-        <h3 style="color: #dc2626; margin-bottom: 1rem;">🏆 Gamificação</h3>
-        <p>
-          Sistema de conquistas, badges e rankings. Seus alunos competem 
-          entre si e ficam mais motivados a treinar.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section class="section">
-    <div class="neumorphic" style="background: #1f2937; color: white;">
-      <h2 style="font-size: 2rem; margin-bottom: 1.5rem; text-align: center;">
-        Planos para Todo Tipo de <span style="color: #f59e0b;">Personal Trainer</span>
-      </h2>
-      
-      <div style="max-width: 600px; margin: 0 auto;">
-        <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 1rem;">🆓 <strong>Plano Gratuito</strong></h3>
-          <p>10 alunos, treinos básicos, agenda simples, WhatsApp</p>
-          <p style="font-size: 1.25rem; margin-top: 0.5rem;"><strong>R$ 0/mês para sempre</strong></p>
+    <section class="py-20 px-4">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Sistema de Agendamento para Personal</h1>
+        <p class="text-xl text-gray-600 text-center mb-12">Sistema profissional de agendamento para personal trainers. Gerencie clientes, horários e pagamentos.</p>
+        
+        <div class="card-neumorphic mb-8">
+          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
+          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>No booking fees</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>Your own professional website</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>WhatsApp integration</span>
+            </li>
+          </ul>
         </div>
         
-        <div style="background: rgba(245, 158, 11, 0.2); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem; border: 2px solid #f59e0b;">
-          <h3 style="margin-bottom: 1rem;">⭐ <strong>Plano Plus</strong></h3>
-          <p>100 alunos, treinos avançados, cobrança automática, relatórios</p>
-          <p style="font-size: 1.25rem; margin-top: 0.5rem;"><strong>R$ 88/mês</strong></p>
-        </div>
-        
-        <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 15px;">
-          <h3 style="margin-bottom: 1rem;">💎 <strong>Plano Pro</strong></h3>
-          <p>Alunos ilimitados, multi-personal, domínio próprio, API</p>
-          <p style="font-size: 1.25rem; margin-top: 0.5rem;"><strong>R$ 288/mês</strong></p>
+        <div class="text-center">
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
+            Criar Seu Site Agora
+          </a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Perguntas <span class="gradient-text">Frequentes</span></h2>
-    </div>
-    
-    <div style="display: grid; gap: 1.5rem; max-width: 800px; margin: 0 auto;">
-      <div class="neumorphic">
-        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Posso testar antes de pagar?</h3>
-        <p>Sim! O plano gratuito é permanente. Você só paga se quiser mais alunos e recursos avançados.</p>
-      </div>
-      
-      <div class="neumorphic">
-        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Como os alunos acessam os treinos?</h3>
-        <p>Eles recebem link por WhatsApp ou acessam seu site. Não precisam baixar nenhum app extra.</p>
-      </div>
-      
-      <div class="neumorphic">
-        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Funciona para personal online?</h3>
-        <p>Perfeito! Seus alunos podem estar em qualquer lugar do mundo. Treinos, pagamentos, tudo online.</p>
-      </div>
-      
-      <div class="neumorphic">
-        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">E se trabalho em várias academias?</h3>
-        <p>Sem problema! Gerencie alunos de diferentes locais em um só sistema. Agenda unificada.</p>
-      </div>
-      
-      <div class="neumorphic">
-        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Posso migrar meus alunos atuais?</h3>
-        <p>Sim! Fazemos a migração gratuita de todos seus alunos, treinos e históricos. Zero trabalho para você.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <div class="cta-section">
-    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Profissionalize Seu Negócio em 5 Minutos</h2>
-    <p style="font-size: 1.25rem; margin-bottom: 2rem;">
-      Junte-se a mais de 3.000 personal trainers que já transformaram suas carreiras
-    </p>
-    <a href="https://app.converso.pro/auth" class="btn" style="background: white; color: #333; padding: 1rem 2.5rem; font-size: 1.125rem;">
-      Começar Grátis Agora
-    </a>
-    <p style="margin-top: 1rem; opacity: 0.9;">Sem cartão • Migração gratuita • Suporte fitness especializado 24/7</p>
-  </div>
+    </section>
+  
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Sistema para Personal Trainer - Converso. Parte de <a href="https://converso.pro" style="color: #f59e0b;">converso.pro</a></p>
+  <footer class="bg-gray-900 text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Company -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Converso</h3>
+          <p class="text-gray-400 text-sm">
+            Crie seu site profissional de agendamentos em minutos. Junte-se a milhares de profissionais que confiam no Converso.
+          </p>
+        </div>
+        
+        <!-- Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Produto</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro#features" class="hover:text-white transition">Recursos</a></li>
+            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Preços</a></li>
+            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Suporte</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/help" class="hover:text-white transition">Central de Ajuda</a></li>
+            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contato</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Política de Privacidade</a></li>
+            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Termos de Serviço</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Converso. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

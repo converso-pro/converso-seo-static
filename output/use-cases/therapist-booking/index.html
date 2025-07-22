@@ -3,1016 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Transform your therapy practice with Converso's booking system. Reduce no-shows by 91%, save 18 hours weekly on admin, and focus on client care. Built for mental health professionals.">
-  <meta name="keywords" content="therapist booking system, therapy scheduling software, counselor appointment booking, mental health practice management, therapist client management">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Converso">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph Tags -->
-  <meta property="og:title" content="Therapist Booking System - Reduce No-Shows by 91% | Converso">
-  <meta property="og:description" content="Professional booking system for therapists and counselors. Automate scheduling, maintain privacy, manage clients, and grow your practice. Zero booking fees.">
+  <title>Therapist Booking System - Private Practice Solution</title>
+  <meta name="description" content="Professional booking system for therapists. Client management, scheduling, and secure notes.">
+  <meta property="og:title" content="Therapist Booking System - Private Practice Solution">
+  <meta property="og:description" content="Professional booking system for therapists. Client management, scheduling, and secure notes.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://seo.converso.pro/use-cases/therapist-booking">
-  <meta property="og:image" content="https://converso.pro/og-therapist-use-case.jpg">
-  
-  <!-- Twitter Card Tags -->
+  <meta property="og:image" content="https://converso.pro/converso-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Therapist Booking System - Reduce No-Shows by 91% | Converso">
-  <meta name="twitter:description" content="Professional booking system for therapists and counselors. Automate scheduling, maintain privacy, manage clients, and grow your practice.">
-  <meta name="twitter:image" content="https://converso.pro/og-therapist-use-case.jpg">
-  
-  <title>Therapist Booking System - Reduce No-Shows by 91% | Converso</title>
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f0f2f5;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    /* Header Styles */
-    header {
-      background: #f0f2f5;
-      padding: 1.5rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
-    }
-
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .nav-buttons {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .btn {
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
-    }
-
-    .btn-secondary {
-      background: #e5e7eb;
-      color: #374151;
-    }
-
-    .btn-secondary:hover {
-      background: #d1d5db;
-    }
-
-    /* Hero Section */
-    .hero {
-      padding: 5rem 0;
-      text-align: center;
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%);
-    }
-
-    .hero h1 {
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      font-weight: 800;
-      margin-bottom: 1.5rem;
-      line-height: 1.2;
-    }
-
-    .subtitle {
-      font-size: 1.25rem;
-      color: #6b7280;
-      max-width: 800px;
-      margin: 0 auto 2rem;
-    }
-
-    /* Neumorphic Styles */
-    .neumorphic {
-      background: #f0f2f5;
-      border-radius: 20px;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    /* Content Sections */
-    section {
-      margin-bottom: 4rem;
-    }
-
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-      color: #1f2937;
-    }
-
-    h3 {
-      font-size: 1.75rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: #374151;
-    }
-
-    /* Cards Grid */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .platform-card {
-      transition: transform 0.3s ease;
-    }
-
-    .platform-card:hover {
-      transform: translateY(-5px);
-    }
-
-    /* Feature List */
-    .feature-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin: 2rem 0;
-    }
-
-    .feature-item {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    /* Stats */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-
-    .stat-card {
-      text-align: center;
-      padding: 1.5rem;
-    }
-
-    .stat-number {
-      font-size: 3rem;
-      font-weight: 800;
-      color: #3b82f6;
-      line-height: 1;
-    }
-
-    .stat-label {
-      color: #6b7280;
-      margin-top: 0.5rem;
-    }
-
-    /* Table Styles */
-    .table-wrapper {
-      overflow-x: auto;
-      margin: 2rem 0;
-    }
-
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .comparison-table th {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      padding: 1rem;
-      text-align: left;
-      font-weight: 600;
-    }
-
-    .comparison-table td {
-      padding: 1rem;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .comparison-table tr:hover {
-      background: #f9fafb;
-    }
-
-    /* Alert Boxes */
-    .alert {
-      padding: 1rem 1.5rem;
-      border-radius: 10px;
-      margin: 2rem 0;
-      display: flex;
-      align-items: start;
-      gap: 0.5rem;
-    }
-
-    .alert-info {
-      background: #dbeafe;
-      color: #1e40af;
-      border: 1px solid #93c5fd;
-    }
-
-    .alert-warning {
-      background: #fed7aa;
-      color: #c2410c;
-      border: 1px solid #fdba74;
-    }
-
-    /* CTA Section */
-    .cta-section {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      border-radius: 30px;
-      padding: 4rem 2rem;
-      text-align: center;
-      margin: 4rem 0;
-    }
-
-    .cta-section h2 {
-      color: white;
-      margin-bottom: 1.5rem;
-    }
-
-    .cta-buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-    }
-
-    .btn-white {
-      background: white;
-      color: #3b82f6;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-
-    .btn-white:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
-    }
-
-    /* Footer */
-    footer {
-      background: #1f2937;
-      color: #e5e7eb;
-      padding: 3rem 0 1.5rem;
-      margin-top: 6rem;
-    }
-
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    footer h4 {
-      color: white;
-      margin-bottom: 1rem;
-    }
-
-    footer a {
-      color: #e5e7eb;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    footer a:hover {
-      color: #3b82f6;
-    }
-
-    .footer-bottom {
-      text-align: center;
-      padding-top: 2rem;
-      border-top: 1px solid #374151;
-      color: #9ca3af;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hide-mobile {
-        display: none;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.75rem;
-      }
-
-      .stat-number {
-        font-size: 2rem;
-      }
-
-      .container {
-        padding: 0 1rem;
-      }
-    }
-
-    /* Additional Styles */
-    .highlight-blue {
-      color: #3b82f6;
-      font-weight: 600;
-    }
-
-    .highlight-green {
-      color: #10b981;
-      font-weight: 600;
-    }
-
-    .testimonial-card {
-      background: white;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      margin: 1rem 0;
-    }
-
-    .stars {
-      color: #fbbf24;
-      font-size: 1.25rem;
-      margin-bottom: 1rem;
-    }
-  </style>
+  <meta name="twitter:title" content="Therapist Booking System - Private Practice Solution">
+  <meta name="twitter:description" content="Professional booking system for therapists. Client management, scheduling, and secure notes.">
+  <link rel="canonical" href="https://seo.converso.pro/use-cases/therapist-booking">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="https://converso.pro/favicon.ico">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
   <!-- Header -->
-  <header>
-    <div class="header-container">
-      <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
-      <div class="nav-buttons">
-        <a href="https://converso.pro" class="btn btn-secondary hide-mobile">Back to Site</a>
-        <a href="https://app.converso.pro/auth" class="btn btn-primary">Sign In</a>
+  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="https://converso.pro" class="flex items-center group">
+          <span class="text-2xl font-bold">
+            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
+          </span>
+        </a>
+        
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Features</a>
+          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Pricing</a>
+          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Testimonials</a>
+        </nav>
+        
+        <!-- CTA Buttons -->
+        <div class="flex items-center space-x-4">
+          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
+            Login
+          </a>
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
+            Start Free
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="gradient-text">Therapist Booking System That Respects Your Practice</h1>
-      <p class="subtitle">Reduce no-shows by 91%, save 18 hours weekly on administrative tasks, and maintain complete client privacy. Built specifically for mental health professionals who value both efficiency and confidentiality.</p>
-    </div>
-  </section>
-
-  <!-- Main Container -->
-  <div class="container">
-    <!-- Quick Answer Box -->
-    <section>
-      <div class="neumorphic" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);">
-        <h2 style="margin-bottom: 1.5rem;">Why Therapists Choose Converso</h2>
-        <div style="font-size: 1.125rem; line-height: 2;">
-          <p><strong>🧠 91% Fewer No-Shows:</strong> <span class="highlight-blue">Gentle reminders</span> respect client privacy while ensuring attendance</p>
-          <p><strong>⏰ 18 Hours Saved Weekly:</strong> <span class="highlight-green">Automated scheduling</span> frees time for client care</p>
-          <p><strong>🔐 Complete Privacy:</strong> <span class="highlight-blue">Secure platform</span> maintains confidentiality standards</p>
-          <p><strong>💰 Zero Booking Fees:</strong> <span class="highlight-green">Keep all revenue</span> with no per-session charges</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- The Therapist's Challenge -->
-    <section>
-      <h2>The Mental Health Professional's Daily Reality</h2>
-      <div class="card-grid">
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">📞</div>
-            <h3 class="gradient-text">Scheduling Overwhelm</h3>
-          </div>
-          <p>Back-to-back sessions leave no time for scheduling calls. Voicemail tag creates barriers for clients seeking help. Administrative burden leads to therapist burnout.</p>
-          <div class="alert alert-warning" style="margin-top: 1rem;">
-            <strong>⚠️ Fact:</strong> Therapists spend 18+ hours weekly on admin tasks
-          </div>
-        </div>
-
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">💔</div>
-            <h3 class="gradient-text">Client Access Barriers</h3>
-          </div>
-          <p>Anxious clients struggle with phone calls. Working professionals can't call during office hours. Missed connections mean missed opportunities to help.</p>
-          <div class="alert alert-warning" style="margin-top: 1rem;">
-            <strong>⚠️ Reality:</strong> 42% of clients prefer online booking
-          </div>
-        </div>
-
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">📊</div>
-            <h3 class="gradient-text">Practice Management Chaos</h3>
-          </div>
-          <p>Paper calendars risk double-booking. No-shows impact income stability. Manual reminders breach efficiency while maintaining privacy concerns.</p>
-          <div class="alert alert-warning" style="margin-top: 1rem;">
-            <strong>⚠️ Impact:</strong> Average practice loses $380/week to no-shows
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Success Story -->
-    <section style="background: #f9fafb; padding: 3rem 0; margin: 0 -2rem;">
-      <div style="padding: 0 2rem;">
-        <h2>From Overwhelmed to Organized: Dr. Emily's Journey</h2>
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p style="font-style: italic; margin-bottom: 1rem; font-size: 1.125rem;">
-            "I was spending evenings and weekends on scheduling, missing time with my family. Converso gave me my life back. My no-show rate dropped from 15% to under 2%, and clients love the convenience. Most importantly, I can focus on what matters - helping people heal."
-          </p>
-          <div>
-            <p style="font-weight: 600;">Dr. Emily Richardson, LCSW</p>
-            <p style="font-size: 0.875rem; color: #666;">Mindful Therapy Practice, Denver</p>
-            <p style="font-size: 0.875rem; color: #10b981; font-weight: 600;">18 hours/week saved, 91% fewer no-shows</p>
-          </div>
-        </div>
-
-        <div class="stats-grid" style="margin-top: 3rem;">
-          <div class="neumorphic stat-card">
-            <div class="stat-number gradient-text">91%</div>
-            <div class="stat-label">Fewer No-Shows</div>
-          </div>
-          <div class="neumorphic stat-card">
-            <div class="stat-number gradient-text">18hrs</div>
-            <div class="stat-label">Saved Weekly</div>
-          </div>
-          <div class="neumorphic stat-card">
-            <div class="stat-number gradient-text">100%</div>
-            <div class="stat-label">Privacy Maintained</div>
-          </div>
-          <div class="neumorphic stat-card">
-            <div class="stat-number gradient-text">$0</div>
-            <div class="stat-label">Booking Fees</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How Converso Transforms Therapy Practices -->
-    <section>
-      <h2>Your Complete Practice Management Solution</h2>
-      
-      <div class="neumorphic" style="margin-bottom: 2rem;">
-        <h3>1. Professional Online Scheduling</h3>
-        <p style="margin-bottom: 1rem;">Let clients book appointments 24/7 while maintaining professional boundaries and privacy.</p>
-        <div class="feature-list">
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Discreet booking interface</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Intake form collection</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Buffer time management</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Waitlist functionality</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="neumorphic" style="margin-bottom: 2rem;">
-        <h3>2. Privacy-First Design</h3>
-        <p style="margin-bottom: 1rem;">Built with mental health confidentiality requirements in mind.</p>
-        <div class="feature-list">
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Encrypted communications</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Discreet reminder options</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Private client portal</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Secure data storage</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="neumorphic" style="margin-bottom: 2rem;">
-        <h3>3. Smart Reminder System</h3>
-        <p style="margin-bottom: 1rem;">Reduce no-shows while respecting client privacy and preferences.</p>
-        <div class="feature-list">
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Customizable reminder timing</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Neutral message options</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Easy rescheduling links</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Cancellation management</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="neumorphic">
-        <h3>4. Practice Growth Tools</h3>
-        <p style="margin-bottom: 1rem;">Build your practice while maintaining professional standards.</p>
-        <div class="feature-list">
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Professional therapist website</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Specialization highlighting</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Insurance information display</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>New client onboarding</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Financial Impact for Therapists -->
-    <section>
-      <h2>The Financial Reality: Your Time Is Valuable</h2>
-      <div class="neumorphic">
-        <h3 style="text-align: center; margin-bottom: 2rem;">Monthly Impact Analysis for Private Practice</h3>
-        <div class="table-wrapper">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Category</th>
-                <th>Manual Scheduling</th>
-                <th>With Converso</th>
-                <th>Monthly Benefit</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>No-show revenue loss</td>
-                <td>$1,520/month (4 per week)</td>
-                <td>$152/month</td>
-                <td style="color: #10b981; font-weight: 600;">+$1,368</td>
-              </tr>
-              <tr>
-                <td>Admin time (@ $95/hour)</td>
-                <td>72 hours = $6,840</td>
-                <td>8 hours = $760</td>
-                <td style="color: #10b981; font-weight: 600;">+$6,080</td>
-              </tr>
-              <tr>
-                <td>Missed new clients</td>
-                <td>8 potential clients</td>
-                <td>0 missed</td>
-                <td style="color: #10b981; font-weight: 600;">+$3,040</td>
-              </tr>
-              <tr>
-                <td>Software cost</td>
-                <td>$0</td>
-                <td>$48/month</td>
-                <td style="color: #ef4444;">-$48</td>
-              </tr>
-              <tr style="background: #f0f9ff;">
-                <td><strong>Total Monthly Impact</strong></td>
-                <td><strong>-$8,360 lost</strong></td>
-                <td><strong>+$1,892 gained</strong></td>
-                <td style="color: #10b981; font-weight: 800; font-size: 1.25rem;">+$10,440</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="alert alert-info" style="margin-top: 2rem;">
-          <strong>💡 ROI:</strong> 21,750% return - Converso pays for itself with preventing just 1 no-show
-        </div>
-      </div>
-    </section>
-
-    <!-- Therapy-Specific Features -->
-    <section>
-      <h2>Designed for Mental Health Professionals</h2>
-      <div class="card-grid">
-        <div class="neumorphic platform-card">
-          <h3>Session Types</h3>
-          <p>Offer different appointment options with appropriate scheduling.</p>
-          <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-            <li style="margin: 0.5rem 0;">✓ Initial consultations (90 min)</li>
-            <li style="margin: 0.5rem 0;">✓ Regular sessions (50 min)</li>
-            <li style="margin: 0.5rem 0;">✓ Couples therapy (80 min)</li>
-            <li style="margin: 0.5rem 0;">✓ Teletherapy options</li>
+  <!-- Main Content -->
+  <main>
+    
+    <section class="py-20 px-4">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Therapist Booking System</h1>
+        <p class="text-xl text-gray-600 text-center mb-12">Professional booking system for therapists. Client management, scheduling, and secure notes.</p>
+        
+        <div class="card-neumorphic mb-8">
+          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
+          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>No booking fees</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>Your own professional website</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>WhatsApp integration</span>
+            </li>
           </ul>
         </div>
-
-        <div class="neumorphic platform-card">
-          <h3>Scheduling Controls</h3>
-          <p>Maintain boundaries and prevent burnout with smart scheduling.</p>
-          <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-            <li style="margin: 0.5rem 0;">✓ Buffer time between clients</li>
-            <li style="margin: 0.5rem 0;">✓ Max daily session limits</li>
-            <li style="margin: 0.5rem 0;">✓ Vacation scheduling</li>
-            <li style="margin: 0.5rem 0;">✓ Emergency slot management</li>
-          </ul>
-        </div>
-
-        <div class="neumorphic platform-card">
-          <h3>Client Communication</h3>
-          <p>Professional boundaries with necessary accessibility.</p>
-          <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-            <li style="margin: 0.5rem 0;">✓ Secure messaging option</li>
-            <li style="margin: 0.5rem 0;">✓ Appointment confirmations</li>
-            <li style="margin: 0.5rem 0;">✓ Cancellation policies</li>
-            <li style="margin: 0.5rem 0;">✓ Crisis resource links</li>
-          </ul>
+        
+        <div class="text-center">
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
+            Create Your Website Now
+          </a>
         </div>
       </div>
     </section>
-
-    <!-- Implementation Timeline -->
-    <section>
-      <h2>Launch Your Professional Presence Today</h2>
-      <div class="neumorphic" style="max-width: 800px; margin: 0 auto;">
-        <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-          <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">1</span>
-          <div>
-            <h3 style="margin-bottom: 0.5rem;">Professional Profile (15 minutes)</h3>
-            <p style="color: #666;">Create your therapist profile with credentials, specializations, and approach. Add your photo and professional statement.</p>
-          </div>
-        </div>
-
-        <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-          <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">2</span>
-          <div>
-            <h3 style="margin-bottom: 0.5rem;">Service Setup (10 minutes)</h3>
-            <p style="color: #666;">Configure session types, durations, and fees. Set your availability with built-in boundary protections.</p>
-          </div>
-        </div>
-
-        <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-          <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">3</span>
-          <div>
-            <h3 style="margin-bottom: 0.5rem;">Privacy Settings (5 minutes)</h3>
-            <p style="color: #666;">Customize reminder messages, intake forms, and communication preferences to match your practice standards.</p>
-          </div>
-        </div>
-
-        <div style="display: flex; align-items: flex-start;">
-          <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">4</span>
-          <div>
-            <h3 style="margin-bottom: 0.5rem;">Share Professionally (5 minutes)</h3>
-            <p style="color: #666;">Add booking link to your Psychology Today profile, website, and referral networks. Start accepting appointments immediately.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Therapist Testimonials -->
-    <section style="background: #f9fafb; padding: 3rem 0; margin: 0 -2rem;">
-      <div style="padding: 0 2rem;">
-        <h2>Mental Health Professionals Trust Converso</h2>
-        <div class="card-grid">
-          <div class="testimonial-card">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p style="font-style: italic; margin-bottom: 1rem;">
-              "Finally, a system that understands therapy practices. The privacy features are excellent, and my clients appreciate the professional, easy booking process."
-            </p>
-            <div>
-              <p style="font-weight: 600;">Dr. Michael Chen, Ph.D.</p>
-              <p style="font-size: 0.875rem; color: #666;">Clinical Psychologist, San Francisco</p>
-              <p style="font-size: 0.875rem; color: #10b981; font-weight: 600;">95% client retention rate</p>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p style="font-style: italic; margin-bottom: 1rem;">
-              "Converso eliminated my evening admin work. I see 2 more clients per week and actually leave the office on time. Game-changer for work-life balance."
-            </p>
-            <div>
-              <p style="font-weight: 600;">Sarah Martinez, LMFT</p>
-              <p style="font-size: 0.875rem; color: #666;">Couples & Family Therapy, Austin</p>
-              <p style="font-size: 0.875rem; color: #10b981; font-weight: 600;">20 hours/week reclaimed</p>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p style="font-style: italic; margin-bottom: 1rem;">
-              "No-shows went from destroying my week to being rare. The reminder system is perfect - professional yet effective. Worth every penny."
-            </p>
-            <div>
-              <p style="font-weight: 600;">Dr. James Wilson, LPC</p>
-              <p style="font-size: 0.875rem; color: #666;">Anxiety & Depression Specialist, Seattle</p>
-              <p style="font-size: 0.875rem; color: #10b981; font-weight: 600;">Revenue up 45% in 3 months</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Advanced Features for Therapists -->
-    <section>
-      <h2>Everything You Need for Professional Practice</h2>
-      
-      <div class="neumorphic" style="margin-bottom: 2rem;">
-        <h3>Client Management</h3>
-        <div class="feature-list">
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Secure client records</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Session history tracking</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Treatment duration monitoring</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Referral source tracking</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="neumorphic" style="margin-bottom: 2rem;">
-        <h3>Financial Management</h3>
-        <div class="feature-list">
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Session fee tracking</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Insurance information</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Superbill generation</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Payment reminders</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="neumorphic">
-        <h3>Practice Analytics</h3>
-        <div class="feature-list">
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Utilization reports</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>No-show patterns</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Revenue tracking</span>
-          </div>
-          <div class="feature-item">
-            <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-            <span>Client retention metrics</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Common Concerns -->
-    <section>
-      <h2>Addressing Your Professional Concerns</h2>
-      <div style="max-width: 800px; margin: 0 auto;">
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">"What about client confidentiality?"</h3>
-          <p style="color: #666;">Privacy is our priority. All communications are encrypted, reminders can be customized to be discreet, and client data is securely stored. We understand the unique requirements of mental health practices.</p>
-        </div>
-
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">"Will online booking reduce the therapeutic relationship?"</h3>
-          <p style="color: #666;">Actually, it enhances it. Clients appreciate the respect for their time and the professional boundaries. You'll spend session time on therapy, not scheduling logistics.</p>
-        </div>
-
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">"What if I need to manage crisis situations?"</h3>
-          <p style="color: #666;">Include crisis resources on your booking page, set emergency appointment slots, and maintain control over your availability. The system supports your clinical judgment.</p>
-        </div>
-
-        <div class="neumorphic">
-          <h3 style="margin-bottom: 0.5rem;">"How does this work with insurance?"</h3>
-          <p style="color: #666;">Collect insurance information during booking, generate superbills easily, and track which clients use insurance vs. private pay. Simplifies your billing process significantly.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Teletherapy Section -->
-    <section>
-      <h2>Perfect for Teletherapy Practices</h2>
-      <div class="neumorphic" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);">
-        <div style="text-align: center;">
-          <h3 style="margin-bottom: 1rem;">Seamless Virtual Session Management</h3>
-          <p style="font-size: 1.125rem; margin-bottom: 2rem;">Whether in-person, hybrid, or fully virtual, Converso adapts to your practice model.</p>
-          <div class="feature-list" style="max-width: 600px; margin: 0 auto;">
-            <div class="feature-item">
-              <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-              <span>Video link automation</span>
-            </div>
-            <div class="feature-item">
-              <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-              <span>Time zone management</span>
-            </div>
-            <div class="feature-item">
-              <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-              <span>Platform preferences</span>
-            </div>
-            <div class="feature-item">
-              <span style="color: #10b981; font-size: 1.5rem;">✓</span>
-              <span>Technical setup reminders</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section>
-      <h2>Frequently Asked Questions</h2>
-      <div style="max-width: 800px; margin: 0 auto;">
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">How much does Converso cost for therapists?</h3>
-          <p style="color: #666;">Start free with 10 sessions/month to test the system. Plus plan ($18/month) includes 500 bookings - perfect for most practices. Pro plan ($48/month) offers unlimited bookings and priority support. No booking fees ever.</p>
-        </div>
-
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Can I customize intake forms?</h3>
-          <p style="color: #666;">Yes! Create custom intake forms to collect necessary information before the first session. Forms are securely stored and can include consent documents, insurance details, and clinical questionnaires.</p>
-        </div>
-
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">How do cancellations work?</h3>
-          <p style="color: #666;">Set your cancellation policy (24, 48, 72 hours), and the system enforces it automatically. Clients can reschedule within your parameters, and you maintain full control over exceptions.</p>
-        </div>
-
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Is this HIPAA compliant?</h3>
-          <p style="color: #666;">While Converso focuses on appointment scheduling (not clinical records), we maintain high security standards with encryption and privacy protections suitable for mental health practices.</p>
-        </div>
-
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Can I block time for notes and self-care?</h3>
-          <p style="color: #666;">Absolutely! Set buffer times between appointments, block lunch hours, and schedule admin time. The system respects your boundaries and prevents overbooking.</p>
-        </div>
-
-        <div class="neumorphic">
-          <h3 style="margin-bottom: 0.5rem;">What makes this different from therapy-specific EMRs?</h3>
-          <p style="color: #666;">Simplicity and focus. While EMRs cost $200+ monthly and include features you may not need, Converso perfects scheduling at a fraction of the cost. Many therapists use us alongside their preferred notes system.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Final CTA -->
-    <div class="cta-section">
-      <h2>Ready to Reclaim Your Time and Grow Your Practice?</h2>
-      <p style="margin-bottom: 2rem; font-size: 1.125rem;">Join thousands of therapists who've eliminated scheduling stress, reduced no-shows, and created better work-life balance.</p>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 600px; margin: 2rem auto;">
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Start free today</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>No credit card required</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Launch in 30 minutes</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Zero booking fees</span>
-        </div>
-      </div>
-      
-      <div class="cta-buttons">
-        <a href="https://app.converso.pro/auth" class="btn-white">
-          Create Your Therapy Practice Account
-        </a>
-      </div>
-      
-      <p style="margin-top: 2rem; font-size: 0.875rem; opacity: 0.9;">
-        Free plan includes 10 sessions/month. Perfect for testing with real clients.
-      </p>
-    </div>
-  </div>
+  
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div>
-        <h4>Converso</h4>
-        <p style="font-size: 0.875rem; color: #999; margin-top: 0.5rem;">
-          Professional booking system for therapists. Reduce no-shows, save time, and focus on what matters - helping clients heal.
-        </p>
+  <footer class="bg-gray-900 text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Company -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Converso</h3>
+          <p class="text-gray-400 text-sm">
+            Create your professional booking website in minutes. Join thousands of professionals who trust Converso.
+          </p>
+        </div>
+        
+        <!-- Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro#features" class="hover:text-white transition">Features</a></li>
+            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/help" class="hover:text-white transition">Help Center</a></li>
+            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Terms of Service</a></li>
+          </ul>
+        </div>
       </div>
       
-      <div>
-        <h4>Product</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/pricing">Pricing</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/apps">Apps</a></li>
-        </ul>
+      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Converso. All rights reserved.</p>
       </div>
-      
-      <div>
-        <h4>Support</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/faq">Help Center</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro">Contact</a></li>
-        </ul>
-      </div>
-      
-      <div>
-        <h4>Legal</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/privacy">Privacy Policy</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/terms">Terms of Service</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2025 Converso. All rights reserved.</p>
     </div>
   </footer>
 </body>

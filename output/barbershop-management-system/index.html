@@ -3,908 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barbershop Management System: Complete Business Solution (2025)</title>
-  <meta name="description" content="All-in-one barbershop management system. Control appointments, inventory, staff, finances, and marketing from one dashboard. Increase efficiency by 84% and revenue by 67%.">
-  <meta property="og:title" content="Barbershop Management System: Complete Business Solution">
-  <meta property="og:description" content="All-in-one barbershop management system. Control appointments, inventory, staff, finances, and marketing from one dashboard. Increase efficiency by 84% and revenue by 67%.">
+  <title>Barbershop Management System - Complete Solution</title>
+  <meta name="description" content="Complete system to manage your barbershop. Booking, digital queue, loyalty programs.">
+  <meta property="og:title" content="Barbershop Management System - Complete Solution">
+  <meta property="og:description" content="Complete system to manage your barbershop. Booking, digital queue, loyalty programs.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://seo.converso.pro/barbershop-management-system">
   <meta property="og:image" content="https://converso.pro/converso-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Barbershop Management System: Complete Business Solution">
-  <meta name="twitter:description" content="All-in-one barbershop management system. Control appointments, inventory, staff, finances, and marketing from one dashboard. Increase efficiency by 84% and revenue by 67%.">
+  <meta name="twitter:title" content="Barbershop Management System - Complete Solution">
+  <meta name="twitter:description" content="Complete system to manage your barbershop. Booking, digital queue, loyalty programs.">
   <link rel="canonical" href="https://seo.converso.pro/barbershop-management-system">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="https://converso.pro/favicon.ico">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f0f2f5;
-      color: #333;
-      line-height: 1.6;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    header {
-      background: #f0f2f5;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .logo {
-      font-size: 1.75rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    
-    .gradient-text {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    
-    .nav-buttons {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-    
-    .btn {
-      padding: 0.5rem 1.5rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-    
-    .btn-primary {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-    }
-    
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
-    }
-    
-    .btn-secondary {
-      background: #f0f2f5;
-      color: #333;
-      box-shadow: 5px 5px 10px #d1d5db, -5px -5px 10px #ffffff;
-    }
-    
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.2;
-    }
-    
-    .subtitle {
-      font-size: 1.25rem;
-      color: #666;
-      margin-bottom: 2rem;
-    }
-    
-    .neumorphic {
-      background: #f0f2f5;
-      border-radius: 20px;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-    
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin: 2rem 0;
-    }
-    
-    .platform-card {
-      transition: transform 0.3s ease;
-    }
-    
-    .platform-card:hover {
-      transform: translateY(-5px);
-    }
-    
-    .highlight-blue {
-      color: #3b82f6;
-      font-weight: 600;
-    }
-    
-    .highlight-green {
-      color: #10b981;
-      font-weight: 600;
-    }
-    
-    .table-wrapper {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1rem 0;
-    }
-    
-    .comparison-table th,
-    .comparison-table td {
-      padding: 1rem;
-      text-align: left;
-      border-bottom: 1px solid #e5e7eb;
-    }
-    
-    .comparison-table th {
-      background: #f9fafb;
-      font-weight: 600;
-      color: #374151;
-    }
-    
-    .alert {
-      padding: 1rem 1.5rem;
-      border-radius: 10px;
-      margin: 2rem 0;
-    }
-    
-    .alert-warning {
-      background: #fef3c7;
-      border-left: 4px solid #f59e0b;
-      color: #92400e;
-    }
-    
-    .alert-info {
-      background: #dbeafe;
-      border-left: 4px solid #3b82f6;
-      color: #1e3a8a;
-    }
-    
-    .testimonial-card {
-      background: #f0f2f5;
-      border-radius: 20px;
-      box-shadow: 10px 10px 30px #c8cacd, -10px -10px 30px #ffffff;
-      padding: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .stars {
-      color: #f59e0b;
-      font-size: 1.25rem;
-      margin-bottom: 1rem;
-    }
-    
-    .cta-section {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      padding: 3rem 2rem;
-      border-radius: 20px;
-      text-align: center;
-      margin: 4rem 0;
-    }
-    
-    .cta-buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    
-    .btn-white {
-      background: white;
-      color: #3b82f6;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    
-    .btn-white:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    
-    footer {
-      background: #111827;
-      color: #9ca3af;
-      padding: 3rem 0 1rem;
-      margin-top: 4rem;
-    }
-    
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    
-    .footer-content h4 {
-      color: white;
-      margin-bottom: 1rem;
-    }
-    
-    .footer-content a {
-      color: #9ca3af;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    .footer-content a:hover {
-      color: white;
-    }
-    
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-      text-align: center;
-      border-top: 1px solid #374151;
-      margin-top: 2rem;
-    }
-    
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      
-      .hide-mobile {
-        display: none;
-      }
-      
-      .card-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .cta-buttons {
-        flex-direction: column;
-      }
-      
-      .comparison-table {
-        font-size: 0.875rem;
-      }
-    }
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
-<body>
-  <header>
-    <div class="header-container">
-      <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
-      <div class="nav-buttons">
-        <a href="https://converso.pro" class="btn btn-secondary hide-mobile">Back to Site</a>
-        <a href="https://app.converso.pro/auth" class="btn btn-primary">Sign In</a>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="https://converso.pro" class="flex items-center group">
+          <span class="text-2xl font-bold">
+            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
+          </span>
+        </a>
+        
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Features</a>
+          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Pricing</a>
+          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Testimonials</a>
+        </nav>
+        
+        <!-- CTA Buttons -->
+        <div class="flex items-center space-x-4">
+          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
+            Login
+          </a>
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
+            Start Free
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <section class="hero">
-    <h1 class="gradient-text">The Only Barbershop Management System You'll Ever Need</h1>
-    <p class="subtitle">Run your entire barbershop from one powerful dashboard. Manage appointments, staff, inventory, finances, and marketing - all integrated seamlessly. Used by 15,000+ successful barbershops worldwide.</p>
-  </section>
-
-  <div class="container">
-    <section>
-      <div class="neumorphic" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);">
-        <h2 style="margin-bottom: 1.5rem;">Quick Answer</h2>
-        <div style="font-size: 1.125rem; line-height: 2;">
-          <p><strong>🎯 What it does:</strong> <span class="highlight-blue">Complete business control</span> - From bookings to inventory to payroll in one system</p>
-          <p><strong>📊 Efficiency gain:</strong> <span class="highlight-green">84% time saved</span> - Automate repetitive tasks and focus on cutting hair</p>
-          <p><strong>💰 Revenue impact:</strong> <span class="highlight-blue">67% growth average</span> - Better scheduling, inventory control, and client retention</p>
-          <p><strong>⚡ Implementation:</strong> <span class="highlight-green">Live in 24 hours</span> - Full data migration and staff training included</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Why Traditional Management Methods Are Killing Your Profits</h2>
-      <div class="card-grid">
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">📊</div>
-            <h3 class="gradient-text">$4,200/Month Lost</h3>
-            <p style="font-size: 1.25rem; font-weight: 600;">To Inefficiency</p>
-          </div>
-          <p style="color: #666;">Manual scheduling errors, inventory waste, missed opportunities, and poor client retention cost the average barbershop $4,200 monthly. That's $50,400 yearly in preventable losses.</p>
-          <div style="margin-top: 1rem; padding: 1rem; background: #f9fafb; border-radius: 10px;">
-            <strong>Breakdown:</strong> $1,800 scheduling gaps + $900 inventory waste + $1,500 missed upsells
-          </div>
-        </div>
-        
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">⏱️</div>
-            <h3 class="gradient-text">19 Hours Weekly</h3>
-            <p style="font-size: 1.25rem; font-weight: 600;">On Admin Tasks</p>
-          </div>
-          <p style="color: #666;">Between scheduling, inventory counts, payroll calculations, and client communications, owners spend 19+ hours weekly on management instead of revenue-generating activities.</p>
-          <div style="margin-top: 1rem; padding: 1rem; background: #f9fafb; border-radius: 10px;">
-            <strong>Time drain:</strong> Could serve 38 additional clients weekly with saved time
-          </div>
-        </div>
-        
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🔄</div>
-            <h3 class="gradient-text">43% Client Churn</h3>
-            <p style="font-size: 1.25rem; font-weight: 600;">Without Systems</p>
-          </div>
-          <p style="color: #666;">Without proper follow-up systems, appointment reminders, and loyalty programs, barbershops lose 43% of clients annually. Each lost client costs $780 in lifetime value.</p>
-          <div style="margin-top: 1rem; padding: 1rem; background: #f9fafb; border-radius: 10px;">
-            <strong>Reality check:</strong> Retaining clients costs 5x less than acquiring new ones
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Complete Management System Feature Breakdown</h2>
-      <div class="neumorphic">
-        <div class="table-wrapper">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Management Area</th>
-                <th>Converso Features</th>
-                <th>Business Impact</th>
-                <th>Monthly Value</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Appointment Management</strong></td>
-                <td>24/7 online booking, SMS reminders, waitlist automation</td>
-                <td>87% fewer no-shows, 73% more bookings</td>
-                <td class="highlight-green">+$3,200</td>
-              </tr>
-              <tr>
-                <td><strong>Staff Management</strong></td>
-                <td>Digital timeclock, commission tracking, performance analytics</td>
-                <td>Zero payroll errors, 2 hours saved weekly</td>
-                <td class="highlight-green">+$450</td>
-              </tr>
-              <tr>
-                <td><strong>Inventory Control</strong></td>
-                <td>Auto-reorder alerts, usage tracking, supplier management</td>
-                <td>32% less waste, never run out of supplies</td>
-                <td class="highlight-green">+$380</td>
-              </tr>
-              <tr>
-                <td><strong>Financial Tracking</strong></td>
-                <td>Real-time revenue, expense tracking, tax reports</td>
-                <td>Complete financial visibility, CPA-ready reports</td>
-                <td class="highlight-green">+$200</td>
-              </tr>
-              <tr>
-                <td><strong>Client Management</strong></td>
-                <td>Digital profiles, service history, automated marketing</td>
-                <td>56% better retention, 89% repeat rate</td>
-                <td class="highlight-green">+$1,100</td>
-              </tr>
-              <tr>
-                <td><strong>Marketing Automation</strong></td>
-                <td>Birthday offers, win-back campaigns, loyalty rewards</td>
-                <td>4.2x marketing ROI, 67% open rates</td>
-                <td class="highlight-green">+$870</td>
-              </tr>
-              <tr>
-                <td><strong>Analytics & Reporting</strong></td>
-                <td>Service popularity, peak hours, barber performance</td>
-                <td>Data-driven decisions, optimize everything</td>
-                <td class="highlight-green">+$600</td>
-              </tr>
-              <tr style="background: #f0fef3;">
-                <td><strong>Total Monthly Impact</strong></td>
-                <td colspan="2"><strong>Complete business transformation</strong></td>
-                <td><strong class="highlight-green">+$6,800</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section style="background: #f9fafb; padding: 3rem 0; margin: 0 -2rem;">
-      <div style="padding: 0 2rem;">
-        <h2>How Top Barbershops Use Converso Management System</h2>
-        
-        <div style="max-width: 800px; margin: 2rem auto;">
-          <div class="neumorphic">
-            <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-              <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">1</span>
-              <div>
-                <h3 style="margin-bottom: 0.5rem;">Morning Dashboard Check (2 minutes)</h3>
-                <p style="color: #666;">Open your phone at 8 AM. See today's schedule, yesterday's revenue, and any important alerts. Your daily game plan is ready before you even reach the shop.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="neumorphic">
-            <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-              <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">2</span>
-              <div>
-                <h3 style="margin-bottom: 0.5rem;">Automated Client Flow (All day)</h3>
-                <p style="color: #666;">Clients book online, get SMS confirmations, check in digitally, and receive service. Meanwhile, their profile updates automatically with visit history and preferences.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="neumorphic">
-            <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-              <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">3</span>
-              <div>
-                <h3 style="margin-bottom: 0.5rem;">Smart Inventory Management (5 minutes/week)</h3>
-                <p style="color: #666;">System tracks product usage per service. When supplies run low, you get alerts. Approve reorders with one click. Never run out of essentials again.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="neumorphic">
-            <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-              <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">4</span>
-              <div>
-                <h3 style="margin-bottom: 0.5rem;">End-of-Day Reports (Automatic)</h3>
-                <p style="color: #666;">Close the shop and your phone shows: daily revenue, tomorrow's schedule, staff performance, and suggested improvements. Make better decisions with zero effort.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Real Barbershop Transformations</h2>
-      <div class="card-grid">
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p style="font-style: italic; margin-bottom: 1rem;">
-            "First month: revenue up 52%. The system found gaps in our schedule I never knew existed. Now we're booked solid and inventory costs dropped 40%."
-          </p>
-          <div>
-            <p style="font-weight: 600;">Carlos Martinez</p>
-            <p style="font-size: 0.875rem; color: #666;">Premium Cuts, Houston - 6 chairs</p>
-            <p style="font-size: 0.875rem; color: #10b981; font-weight: 600;">$8,400 monthly revenue increase</p>
-          </div>
-        </div>
-        
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p style="font-style: italic; margin-bottom: 1rem;">
-            "Payroll used to take me 3 hours every week. Now it's automatic. Commission calculations, tips, everything. My barbers love seeing their stats in real-time."
-          </p>
-          <div>
-            <p style="font-weight: 600;">Michael Thompson</p>
-            <p style="font-size: 0.875rem; color: #666;">The Gentleman's Cut, Atlanta - 8 chairs</p>
-            <p style="font-size: 0.875rem; color: #10b981; font-weight: 600;">156 hours saved annually</p>
-          </div>
-        </div>
-        
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p style="font-style: italic; margin-bottom: 1rem;">
-            "The analytics showed our Tuesdays were dead. Added a 20% Tuesday special through the system, now it's our second busiest day. Data doesn't lie."
-          </p>
-          <div>
-            <p style="font-weight: 600;">Jerome Williams</p>
-            <p style="font-size: 0.875rem; color: #666;">Urban Edge Barbershop, Chicago - 4 chairs</p>
-            <p style="font-size: 0.875rem; color: #10b981; font-weight: 600;">Tuesday revenue up 340%</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Deep Dive: Revenue Optimization Features</h2>
-      <div class="card-grid">
-        <div class="neumorphic">
-          <h3 style="color: #3b82f6; margin-bottom: 1rem;">📈 Dynamic Pricing Engine</h3>
-          <p>Automatically adjust prices based on demand. Busy Saturdays? Prices go up 15%. Slow Tuesday afternoon? Offer instant discounts to fill chairs.</p>
-          <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
-            <li style="margin: 0.5rem 0;">✓ Peak hour premiums</li>
-            <li style="margin: 0.5rem 0;">✓ Last-minute discounts</li>
-            <li style="margin: 0.5rem 0;">✓ Service bundle deals</li>
-            <li style="margin: 0.5rem 0;">✓ Loyalty member pricing</li>
-          </ul>
-        </div>
-        
-        <div class="neumorphic">
-          <h3 style="color: #10b981; margin-bottom: 1rem;">🎁 Automated Upselling</h3>
-          <p>System suggests add-ons based on client history and preferences. "Add a beard trim for just $10?" Increases average ticket by 37%.</p>
-          <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
-            <li style="margin: 0.5rem 0;">✓ Smart service suggestions</li>
-            <li style="margin: 0.5rem 0;">✓ Product recommendations</li>
-            <li style="margin: 0.5rem 0;">✓ Package upgrades</li>
-            <li style="margin: 0.5rem 0;">✓ Membership offers</li>
-          </ul>
-        </div>
-        
-        <div class="neumorphic">
-          <h3 style="color: #f59e0b; margin-bottom: 1rem;">💳 Membership Programs</h3>
-          <p>Create VIP memberships with perks like priority booking, exclusive hours, and monthly discounts. Average shop adds $2,100/month in membership revenue.</p>
-          <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
-            <li style="margin: 0.5rem 0;">✓ Recurring billing</li>
-            <li style="margin: 0.5rem 0;">✓ Member-only benefits</li>
-            <li style="margin: 0.5rem 0;">✓ Tiered programs</li>
-            <li style="margin: 0.5rem 0;">✓ Auto-renewal</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section style="background: #f9fafb; padding: 3rem 0; margin: 0 -2rem;">
-      <div style="padding: 0 2rem;">
-        <h2>Staff Management That Actually Works</h2>
-        <div class="neumorphic" style="max-width: 800px; margin: 0 auto;">
-          <h3 style="margin-bottom: 1.5rem;">Complete Staff Control Center</h3>
-          <div class="table-wrapper">
-            <table class="comparison-table">
-              <thead>
-                <tr>
-                  <th>Feature</th>
-                  <th>How It Works</th>
-                  <th>Staff Benefit</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Digital Time Clock</strong></td>
-                  <td>Clock in/out from phone, GPS verified</td>
-                  <td>No disputes, accurate pay</td>
-                </tr>
-                <tr>
-                  <td><strong>Commission Tracking</strong></td>
-                  <td>Real-time earnings visible to barbers</td>
-                  <td>Motivated staff, transparency</td>
-                </tr>
-                <tr>
-                  <td><strong>Performance Metrics</strong></td>
-                  <td>Client ratings, revenue per hour, retention</td>
-                  <td>Clear growth paths</td>
-                </tr>
-                <tr>
-                  <td><strong>Schedule Management</strong></td>
-                  <td>Request time off, swap shifts in-app</td>
-                  <td>Work-life balance</td>
-                </tr>
-                <tr>
-                  <td><strong>Tip Distribution</strong></td>
-                  <td>Digital tips split automatically</td>
-                  <td>Fair, instant access</td>
-                </tr>
-                <tr>
-                  <td><strong>Training Modules</strong></td>
-                  <td>Built-in education and certifications</td>
-                  <td>Skill development</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div style="margin-top: 1.5rem; padding: 1rem; background: #d1fae5; border-radius: 10px;">
-            <strong>Result:</strong> 89% staff retention rate vs 41% industry average
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>The Complete 11+ App Ecosystem</h2>
-      <p style="color: #666; margin-bottom: 2rem;">Every tool you need to run a modern barbershop, all integrated and included in your subscription. No extra fees, no complicated integrations.</p>
-      
-      <div class="card-grid">
-        <div class="neumorphic">
-          <h4 style="color: #3b82f6; margin-bottom: 0.5rem;">📱 Mobile Booking App</h4>
-          <p style="font-size: 0.875rem;">Clients book, reschedule, and pay from their phones. Works perfectly on any device.</p>
-        </div>
-        
-        <div class="neumorphic">
-          <h4 style="color: #10b981; margin-bottom: 0.5rem;">💬 WhatsApp Business</h4>
-          <p style="font-size: 0.875rem;">Accept bookings via WhatsApp. Perfect for clients who prefer messaging over calls.</p>
-        </div>
-        
-        <div class="neumorphic">
-          <h4 style="color: #f59e0b; margin-bottom: 0.5rem;">🎫 Digital Queue System</h4>
-          <p style="font-size: 0.875rem;">Walk-ins join virtual queue. Get SMS when their turn approaches. No more packed lobbies.</p>
-        </div>
-        
-        <div class="neumorphic">
-          <h4 style="color: #ef4444; margin-bottom: 0.5rem;">📊 Analytics Dashboard</h4>
-          <p style="font-size: 0.875rem;">Real-time metrics on everything. Revenue, busy times, popular services, staff performance.</p>
-        </div>
-        
-        <div class="neumorphic">
-          <h4 style="color: #8b5cf6; margin-bottom: 0.5rem;">📧 Marketing Automation</h4>
-          <p style="font-size: 0.875rem;">Birthday greetings, win-back campaigns, and promotions. All automatic, all profitable.</p>
-        </div>
-        
-        <div class="neumorphic">
-          <h4 style="color: #3b82f6; margin-bottom: 0.5rem;">⭐ Review Management</h4>
-          <p style="font-size: 0.875rem;">Automatically request reviews from happy clients. Build your online reputation fast.</p>
-        </div>
-        
-        <div class="neumorphic">
-          <h4 style="color: #10b981; margin-bottom: 0.5rem;">🏆 Loyalty Program</h4>
-          <p style="font-size: 0.875rem;">Points, rewards, and VIP tiers. Keep clients coming back more frequently.</p>
-        </div>
-        
-        <div class="neumorphic">
-          <h4 style="color: #f59e0b; margin-bottom: 0.5rem;">💼 Client Portal</h4>
-          <p style="font-size: 0.875rem;">Clients access booking history, loyalty points, and exclusive offers 24/7.</p>
-        </div>
-        
-        <div class="neumorphic">
-          <h4 style="color: #ef4444; margin-bottom: 0.5rem;">📱 Staff Mobile App</h4>
-          <p style="font-size: 0.875rem;">Barbers manage their schedule, track earnings, and communicate from anywhere.</p>
-        </div>
-      </div>
-      
-      <div class="alert alert-info" style="margin-top: 2rem;">
-        <strong>💡 Integration Magic:</strong> All apps work together seamlessly. Book in WhatsApp, managed in dashboard, marketed via email, tracked in analytics. One system, infinite possibilities.
-      </div>
-    </section>
-
-    <section>
-      <h2>Security & Reliability You Can Trust</h2>
-      <div class="card-grid">
-        <div class="neumorphic">
-          <h3 style="color: #3b82f6; margin-bottom: 1rem;">🔒 Bank-Level Security</h3>
-          <p>Your data is encrypted with 256-bit SSL, the same security banks use. PCI compliant for payment processing. SOC 2 certified infrastructure.</p>
-          <div style="margin-top: 1rem; padding: 1rem; background: #f9fafb; border-radius: 10px;">
-            <strong>Protection includes:</strong> Daily backups, fraud monitoring, GDPR compliance
-          </div>
-        </div>
-        
-        <div class="neumorphic">
-          <h3 style="color: #10b981; margin-bottom: 1rem;">⚡ 99.9% Uptime</h3>
-          <p>Your business never sleeps, neither do we. Redundant servers across multiple data centers ensure your system is always available.</p>
-          <div style="margin-top: 1rem; padding: 1rem; background: #f9fafb; border-radius: 10px;">
-            <strong>Last 12 months:</strong> 99.98% uptime, 0 data losses, 24/7 monitoring
-          </div>
-        </div>
-        
-        <div class="neumorphic">
-          <h3 style="color: #f59e0b; margin-bottom: 1rem;">📞 Real Human Support</h3>
-          <p>Not chatbots. Real barbershop experts available via phone, chat, or email. Average response time: 3 minutes during business hours.</p>
-          <div style="margin-top: 1rem; padding: 1rem; background: #f9fafb; border-radius: 10px;">
-            <strong>Support includes:</strong> Onboarding help, training videos, success coaching
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section style="background: #f9fafb; padding: 3rem 0; margin: 0 -2rem;">
-      <div style="padding: 0 2rem;">
-        <h2>Implementation Timeline: Go Live in 24 Hours</h2>
-        <div class="neumorphic" style="max-width: 800px; margin: 0 auto;">
-          <h3 style="margin-bottom: 1.5rem; text-align: center;">Your First Week with Converso</h3>
-          
-          <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-            <div style="background: #3b82f6; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 1rem;">Day 1</div>
-            <div>
-              <h4>System Setup & Data Import</h4>
-              <p style="color: #666; font-size: 0.875rem;">Upload client list, set services/prices, configure schedule. Our team helps every step.</p>
-            </div>
-          </div>
-          
-          <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-            <div style="background: #10b981; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 1rem;">Day 2</div>
-            <div>
-              <h4>Staff Training & Access</h4>
-              <p style="color: #666; font-size: 0.875rem;">30-minute video training for each barber. Everyone comfortable with the system.</p>
-            </div>
-          </div>
-          
-          <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-            <div style="background: #f59e0b; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 1rem;">Day 3</div>
-            <div>
-              <h4>Soft Launch & Testing</h4>
-              <p style="color: #666; font-size: 0.875rem;">Test bookings with staff and friends. Fine-tune settings. Everything perfect.</p>
-            </div>
-          </div>
-          
-          <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-            <div style="background: #ef4444; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 1rem;">Day 7</div>
-            <div>
-              <h4>Full Launch & Optimization</h4>
-              <p style="color: #666; font-size: 0.875rem;">Announce to all clients. Watch bookings pour in. Success coach reviews performance.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Investment That Pays for Itself</h2>
-      <div class="card-grid">
-        <div class="neumorphic">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <h3>Free Trial</h3>
-            <p style="font-size: 2rem; font-weight: bold; color: #3b82f6;">14 Days</p>
-            <p style="color: #666;">Full access, no credit card</p>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.5rem 0;">✅ All features unlocked</li>
-            <li style="margin: 0.5rem 0;">✅ Free data migration</li>
-            <li style="margin: 0.5rem 0;">✅ Onboarding support</li>
-            <li style="margin: 0.5rem 0;">✅ No obligations</li>
-            <li style="margin: 0.5rem 0;">✅ Keep your data</li>
-          </ul>
-        </div>
-        
-        <div class="neumorphic" style="border: 2px solid #3b82f6;">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <h3 class="gradient-text">Professional</h3>
-            <p style="font-size: 2rem; font-weight: bold; color: #3b82f6;">$48/mo</p>
-            <p style="color: #666;">Per location</p>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.5rem 0;">✅ Unlimited bookings</li>
-            <li style="margin: 0.5rem 0;">✅ All 11+ apps included</li>
-            <li style="margin: 0.5rem 0;">✅ Unlimited staff accounts</li>
-            <li style="margin: 0.5rem 0;">✅ 24/7 phone support</li>
-            <li style="margin: 0.5rem 0;">✅ Custom domain</li>
-            <li style="margin: 0.5rem 0;">✅ API access</li>
-          </ul>
-          <div style="margin-top: 1rem; padding: 1rem; background: #d1fae5; border-radius: 10px; text-align: center;">
-            <strong>Average ROI: 142x</strong>
-          </div>
-        </div>
-        
-        <div class="neumorphic">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <h3>Enterprise</h3>
-            <p style="font-size: 2rem; font-weight: bold; color: #3b82f6;">Custom</p>
-            <p style="color: #666;">Multiple locations</p>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.5rem 0;">✅ Multi-location dashboard</li>
-            <li style="margin: 0.5rem 0;">✅ Franchise management</li>
-            <li style="margin: 0.5rem 0;">✅ Custom integrations</li>
-            <li style="margin: 0.5rem 0;">✅ Dedicated success manager</li>
-            <li style="margin: 0.5rem 0;">✅ SLA guarantees</li>
-            <li style="margin: 0.5rem 0;">✅ White label options</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="alert alert-warning" style="margin-top: 2rem;">
-        <strong>⚠️ Cost of Inaction:</strong> Every day without proper management costs you $140 in lost efficiency and missed opportunities. That's $4,200/month. Can you afford NOT to upgrade?
-      </div>
-    </section>
-
-    <section>
-      <h2>Frequently Asked Questions (FAQ)</h2>
-      <div style="max-width: 800px; margin: 0 auto;">
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Will my barbers actually use this system?</h3>
-          <p style="color: #666;">Yes! The interface is designed specifically for barbers, not tech people. Most barbers master it in 30 minutes. Plus, when they see their tips and commissions in real-time, adoption is instant. We have 94% daily active usage across all shops.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Can I import my existing client database?</h3>
-          <p style="color: #666;">Absolutely. We import from any format - Excel, CSV, even handwritten lists. Our migration team handles everything, including de-duplication and data cleaning. Most imports complete in under 2 hours with zero data loss.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">What if I have multiple locations?</h3>
-          <p style="color: #666;">Perfect! Our multi-location dashboard lets you manage all shops from one screen. See combined analytics, move staff between locations, and maintain consistent pricing. Each location can have unique settings while sharing client databases.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">How does inventory tracking actually work?</h3>
-          <p style="color: #666;">Link products to services (e.g., 2oz gel per haircut). The system automatically deducts inventory with each service. When supplies hit your reorder point, you get alerts. Approve orders with one click. Track costs per service for true profitability.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Is my financial data secure?</h3>
-          <p style="color: #666;">Bank-level secure. We use 256-bit SSL encryption, are PCI compliant, and undergo annual security audits. Your data is backed up hourly to multiple locations. You own your data and can export it anytime. We've never had a security breach in 8 years.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="cta-section" style="padding: 3rem 2rem;">
-      <h2 style="margin-bottom: 1.5rem;">Transform Your Barbershop in 24 Hours</h2>
-      <p style="margin-bottom: 2rem;">Join 15,000+ barbershops already using Converso to run smarter, earn more, and stress less.</p>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; max-width: 600px; margin: 2rem auto;">
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>14-day free trial</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>No credit card required</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Free data migration</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Cancel anytime</span>
-        </div>
-      </div>
-      
-      <div class="cta-buttons">
-        <a href="https://app.converso.pro/auth" class="btn-white">
-          Start Your Free Trial Now
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer-content">
-      <div>
-        <h4>Converso</h4>
-        <p style="font-size: 0.875rem; color: #999; margin-top: 0.5rem;">
-          The complete barbershop management system trusted by 15,000+ shops worldwide. Transform your business today.
-        </p>
-      </div>
-      
-      <div>
-        <h4>Product</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/pricing">Pricing</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/features">Features</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/apps">Apps</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/integrations">Integrations</a></li>
-        </ul>
-      </div>
-      
-      <div>
-        <h4>Resources</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/blog">Blog</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/academy">Academy</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/support">Support Center</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/api">API Docs</a></li>
-        </ul>
-      </div>
-      
-      <div>
-        <h4>Company</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/about">About Us</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/contact">Contact</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/privacy">Privacy Policy</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/terms">Terms of Service</a></li>
-        </ul>
-      </div>
-    </div>
+  <!-- Main Content -->
+  <main>
     
-    <div class="footer-bottom">
-      <p>&copy; 2025 Converso. All rights reserved.</p>
+    <section class="py-20 px-4">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Complete Barbershop Management System</h1>
+        <p class="text-xl text-gray-600 text-center mb-12">Complete system to manage your barbershop. Booking, digital queue, loyalty programs.</p>
+        
+        <div class="card-neumorphic mb-8">
+          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
+          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>No booking fees</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>Your own professional website</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>WhatsApp integration</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="text-center">
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
+            Create Your Website Now
+          </a>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Company -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Converso</h3>
+          <p class="text-gray-400 text-sm">
+            Create your professional booking website in minutes. Join thousands of professionals who trust Converso.
+          </p>
+        </div>
+        
+        <!-- Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro#features" class="hover:text-white transition">Features</a></li>
+            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/help" class="hover:text-white transition">Help Center</a></li>
+            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Converso. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 </body>

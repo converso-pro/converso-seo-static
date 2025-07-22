@@ -3,985 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema de Gestión para Barbería 2025 - Software Completo | Converso</title>
-  <meta name="description" content="Sistema de gestión integral para barberías. Control de citas, inventario, finanzas y clientes en una sola plataforma. Aumenta tu eficiencia 300%. Prueba gratis 7 días.">
-  <meta property="og:title" content="Sistema de Gestión para Barbería - Software Profesional 2025">
-  <meta property="og:description" content="Moderniza tu barbería con el sistema de gestión más completo. Citas online, control de inventario, reportes financieros y fidelización de clientes. Todo integrado.">
+  <title>Sistema de Gestión para Barbería - Completo</title>
+  <meta name="description" content="Sistema completo para gestionar tu barbería. Citas, cola digital, fidelización.">
+  <meta property="og:title" content="Sistema de Gestión para Barbería - Completo">
+  <meta property="og:description" content="Sistema completo para gestionar tu barbería. Citas, cola digital, fidelización.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seo.converso.pro/es/sistema-gestion-barberia">
+  <meta property="og:url" content="https://seo.converso.pro/sistema-gestion-barberia">
   <meta property="og:image" content="https://converso.pro/converso-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sistema de Gestión para Barbería - Converso">
-  <meta name="twitter:description" content="Software completo para gestionar tu barbería. Citas, inventario, finanzas y más.">
-  <link rel="canonical" href="https://seo.converso.pro/es/sistema-gestion-barberia">
+  <meta name="twitter:title" content="Sistema de Gestión para Barbería - Completo">
+  <meta name="twitter:description" content="Sistema completo para gestionar tu barbería. Citas, cola digital, fidelización.">
+  <link rel="canonical" href="https://seo.converso.pro/sistema-gestion-barberia">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="https://converso.pro/favicon.ico">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f0f2f5;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .neumorphic {
-      background: #f0f2f5;
-      border-radius: 20px;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .neumorphic-inset {
-      background: #f0f2f5;
-      border-radius: 15px;
-      box-shadow: inset 8px 8px 16px #c8cacd, inset -8px -8px 16px #ffffff;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .gradient-bg {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-    }
-
-    header {
-      background: #f0f2f5;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .nav-buttons {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .btn {
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    }
-
-    .btn-secondary {
-      background: white;
-      color: #333;
-      box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
-    }
-
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.2;
-    }
-
-    .subtitle {
-      font-size: 1.25rem;
-      color: #666;
-      max-width: 800px;
-      margin: 0 auto 3rem;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    .feature-card {
-      text-align: center;
-      padding: 2rem;
-      transition: transform 0.3s ease;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .feature-icon {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .feature-title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: #1e40af;
-    }
-
-    .stats {
-      background: linear-gradient(135deg, #1e3a8a 0%, #10b981 100%);
-      color: white;
-      padding: 4rem 2rem;
-      margin: 4rem 0;
-    }
-
-    .stats-container {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      text-align: center;
-    }
-
-    .stat-number {
-      font-size: 3rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-
-    .section {
-      max-width: 1200px;
-      margin: 4rem auto;
-      padding: 0 2rem;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .comparison-table {
-      background: white;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-      margin: 2rem 0;
-    }
-
-    .comparison-table table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .comparison-table th {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      padding: 1.5rem;
-      text-align: left;
-      font-weight: 600;
-    }
-
-    .comparison-table td {
-      padding: 1.5rem;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .comparison-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .comparison-table tr:hover {
-      background: #f9fafb;
-    }
-
-    .check {
-      color: #10b981;
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    .cross {
-      color: #ef4444;
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    .dashboard-preview {
-      background: #1f2937;
-      border-radius: 20px;
-      padding: 2rem;
-      margin: 2rem 0;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-    }
-
-    .dashboard-screen {
-      background: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .metric-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .metric-card {
-      background: #f3f4f6;
-      border-radius: 10px;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    .metric-value {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #3b82f6;
-    }
-
-    .process-timeline {
-      position: relative;
-      padding: 2rem 0;
-    }
-
-    .timeline-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 2rem;
-      position: relative;
-    }
-
-    .timeline-number {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 1.25rem;
-      flex-shrink: 0;
-    }
-
-    .timeline-content {
-      margin-left: 2rem;
-      flex: 1;
-    }
-
-    .timeline-content h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-      color: #1e40af;
-    }
-
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-
-    .pricing-card {
-      padding: 2rem;
-      text-align: center;
-      position: relative;
-      transition: transform 0.3s ease;
-    }
-
-    .pricing-card:hover {
-      transform: translateY(-10px);
-    }
-
-    .pricing-card.featured {
-      transform: scale(1.05);
-    }
-
-    .price {
-      font-size: 3rem;
-      font-weight: bold;
-      margin: 1rem 0;
-    }
-
-    .price-period {
-      font-size: 1rem;
-      color: #666;
-    }
-
-    .feature-list {
-      list-style: none;
-      padding: 0;
-      margin: 2rem 0;
-      text-align: left;
-    }
-
-    .feature-list li {
-      padding: 0.75rem 0;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .testimonial {
-      padding: 2rem;
-      margin: 2rem 0;
-      text-align: center;
-      font-style: italic;
-    }
-
-    .faq-container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .faq-item {
-      margin-bottom: 1rem;
-    }
-
-    .faq-question {
-      font-weight: bold;
-      font-size: 1.125rem;
-      margin-bottom: 0.5rem;
-      color: #1e40af;
-    }
-
-    .cta-section {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      padding: 4rem 2rem;
-      text-align: center;
-      border-radius: 30px;
-      margin: 4rem auto;
-      max-width: 1000px;
-    }
-
-    footer {
-      background: #1f2937;
-      color: white;
-      padding: 3rem 0;
-      text-align: center;
-      margin-top: 4rem;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      
-      .hide-mobile {
-        display: none;
-      }
-      
-      .features-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .pricing-card.featured {
-        transform: none;
-      }
-    }
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
   <!-- Header -->
-  <header>
-    <div class="header-container">
-      <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
-      <div class="nav-buttons">
-        <a href="/es/" class="btn btn-secondary hide-mobile">Recursos</a>
-        <a href="https://app.converso.pro/auth" class="btn btn-primary">Empezar Gratis</a>
+  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="https://converso.pro" class="flex items-center group">
+          <span class="text-2xl font-bold">
+            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
+          </span>
+        </a>
+        
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Características</a>
+          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Precios</a>
+          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Testimonios</a>
+        </nav>
+        
+        <!-- CTA Buttons -->
+        <div class="flex items-center space-x-4">
+          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
+            Iniciar sesión
+          </a>
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
+            Empezar Gratis
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="neumorphic">
-      <div class="gradient-text" style="font-size: 4rem; margin-bottom: 1rem;">💈</div>
-      <h1>Sistema de Gestión para <span class="gradient-text">Barbería Moderna</span></h1>
-      <p class="subtitle">
-        Controla todas las operaciones de tu barbería desde una sola plataforma. 
-        Citas online, inventario, finanzas, clientes y más. Usado por +5,000 barberías que 
-        aumentaron su eficiencia en 300%.
-      </p>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="https://app.converso.pro/auth" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">
-          Probar Gratis 7 Días
-        </a>
-        <a href="#demo" class="btn btn-secondary">Ver Demostración</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section class="stats">
-    <div class="stats-container">
-      <div>
-        <div class="stat-number">5,247</div>
-        <div>Barberías Activas</div>
-      </div>
-      <div>
-        <div class="stat-number">300%</div>
-        <div>Aumento Eficiencia</div>
-      </div>
-      <div>
-        <div class="stat-number">2.5M</div>
-        <div>Citas Gestionadas</div>
-      </div>
-      <div>
-        <div class="stat-number">4.9★</div>
-        <div>Calificación</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Grid -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Todo lo que Necesitas para <span class="gradient-text">Gestionar tu Barbería</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Sistema integral diseñado específicamente para barberías modernas</p>
-    </div>
+  <!-- Main Content -->
+  <main>
     
-    <div class="features-grid">
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">📅</div>
-        <h3 class="feature-title">Agenda Inteligente</h3>
-        <p>Sistema de citas online 24/7. Los clientes reservan desde su celular y tú controlas todo desde el panel.</p>
-      </div>
-      
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">📦</div>
-        <h3 class="feature-title">Control de Inventario</h3>
-        <p>Gestiona productos, herramientas y suministros. Alertas automáticas cuando el stock está bajo.</p>
-      </div>
-      
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">💰</div>
-        <h3 class="feature-title">Finanzas Automatizadas</h3>
-        <p>Registra ingresos y gastos automáticamente. Reportes diarios, semanales y mensuales con un clic.</p>
-      </div>
-      
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">👥</div>
-        <h3 class="feature-title">Base de Clientes</h3>
-        <p>Historial completo de cada cliente: servicios, preferencias, cumpleaños y recordatorios automáticos.</p>
-      </div>
-      
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">📊</div>
-        <h3 class="feature-title">Análisis y Reportes</h3>
-        <p>Métricas en tiempo real: servicios más populares, barberos más productivos, horas pico y tendencias.</p>
-      </div>
-      
-      <div class="neumorphic feature-card">
-        <div class="feature-icon">📱</div>
-        <h3 class="feature-title">App Móvil</h3>
-        <p>Gestiona tu barbería desde cualquier lugar. App nativa para Android y iOS con todas las funciones.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Dashboard Preview -->
-  <section class="section" id="demo">
-    <div class="section-header">
-      <h2 class="section-title">Panel de Control <span class="gradient-text">En Tiempo Real</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Toda la información de tu barbería en una sola pantalla</p>
-    </div>
-    
-    <div class="dashboard-preview">
-      <div class="dashboard-screen">
-        <h3 style="margin-bottom: 1rem;">Dashboard Principal - Hoy</h3>
-        <div class="metric-grid">
-          <div class="metric-card">
-            <div class="metric-value">24</div>
-            <div>Citas del Día</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value">$1,280</div>
-            <div>Ingresos</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value">18</div>
-            <div>Clientes</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value">92%</div>
-            <div>Ocupación</div>
-          </div>
+    <section class="py-20 px-4">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Sistema de Gestión Completo para Barbería</h1>
+        <p class="text-xl text-gray-600 text-center mb-12">Sistema completo para gestionar tu barbería. Citas, cola digital, fidelización.</p>
+        
+        <div class="card-neumorphic mb-8">
+          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
+          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>No booking fees</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>Your own professional website</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>WhatsApp integration</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="text-center">
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
+            Crea Tu Sitio Ahora
+          </a>
         </div>
       </div>
-      
-      <div class="dashboard-screen">
-        <h3 style="margin-bottom: 1rem;">Próximas Citas</h3>
-        <div style="background: #f3f4f6; padding: 1rem; border-radius: 8px; margin-bottom: 0.5rem;">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-              <strong>2:00 PM - Carlos Rodríguez</strong>
-              <p style="font-size: 0.875rem; color: #666;">Corte + Barba - Juan (Barbero)</p>
-            </div>
-            <div style="background: #10b981; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">
-              Confirmado
-            </div>
-          </div>
-        </div>
-        <div style="background: #f3f4f6; padding: 1rem; border-radius: 8px;">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-              <strong>2:30 PM - Miguel Ángel</strong>
-              <p style="font-size: 0.875rem; color: #666;">Corte Degradado - Pedro (Barbero)</p>
-            </div>
-            <div style="background: #f59e0b; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">
-              Pendiente
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Comparison Table -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Gestión <span class="gradient-text">Tradicional vs Digital</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Por qué las barberías modernas eligen sistemas digitales</p>
-    </div>
-    
-    <div class="comparison-table">
-      <table>
-        <thead>
-          <tr>
-            <th>Aspecto</th>
-            <th>Gestión Tradicional</th>
-            <th>Sistema Digital Converso</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Reservas</strong></td>
-            <td>Llamadas y WhatsApp manual</td>
-            <td>Online 24/7 automático</td>
-          </tr>
-          <tr>
-            <td><strong>Agenda</strong></td>
-            <td>Libreta física o Excel</td>
-            <td>Digital sincronizada en la nube</td>
-          </tr>
-          <tr>
-            <td><strong>Finanzas</strong></td>
-            <td>Cálculos manuales al final del día</td>
-            <td>Registro automático en tiempo real</td>
-          </tr>
-          <tr>
-            <td><strong>Inventario</strong></td>
-            <td>Conteo físico periódico</td>
-            <td>Control automático con alertas</td>
-          </tr>
-          <tr>
-            <td><strong>Clientes</strong></td>
-            <td>Memoria o notas sueltas</td>
-            <td>Base de datos completa con historial</td>
-          </tr>
-          <tr>
-            <td><strong>Marketing</strong></td>
-            <td>Boca a boca únicamente</td>
-            <td>Email, SMS y redes automatizados</td>
-          </tr>
-          <tr>
-            <td><strong>Reportes</strong></td>
-            <td>No hay datos precisos</td>
-            <td>Análisis detallados instantáneos</td>
-          </tr>
-          <tr>
-            <td><strong>Tiempo invertido</strong></td>
-            <td>2-3 horas diarias en admin</td>
-            <td>30 minutos o menos</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- Implementation Process -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Implementación en <span class="gradient-text">5 Pasos Simples</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Tu barbería digitalizada en menos de 24 horas</p>
-    </div>
-    
-    <div class="process-timeline">
-      <div class="timeline-item">
-        <div class="timeline-number">1</div>
-        <div class="timeline-content neumorphic-inset">
-          <h3>Registro y Configuración (5 min)</h3>
-          <p>Crea tu cuenta, configura el nombre de tu barbería y personaliza con tu logo y colores.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-number">2</div>
-        <div class="timeline-content neumorphic-inset">
-          <h3>Agrega tus Servicios (10 min)</h3>
-          <p>Configura tu menú de servicios con precios, duración y descripción. Plantillas pre-cargadas disponibles.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-number">3</div>
-        <div class="timeline-content neumorphic-inset">
-          <h3>Configura tu Equipo (10 min)</h3>
-          <p>Agrega barberos, define horarios y especialidades. Cada uno recibe su acceso personalizado.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-number">4</div>
-        <div class="timeline-content neumorphic-inset">
-          <h3>Importa Clientes (15 min)</h3>
-          <p>Sube tu base de clientes existente o agrégalos manualmente. Sistema de importación desde Excel.</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-number">5</div>
-        <div class="timeline-content neumorphic-inset">
-          <h3>¡Listo para Operar!</h3>
-          <p>Tu sistema está activo. Comparte tu link de reservas y empieza a recibir citas online.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Benefits -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Beneficios <span class="gradient-text">Comprobados</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Lo que logran las barberías con nuestro sistema</p>
-    </div>
-    
-    <div class="features-grid">
-      <div class="neumorphic-inset" style="padding: 2rem;">
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1e40af;">📈 Aumento de Ingresos</h3>
-        <p>Las barberías reportan un aumento promedio del 35% en ingresos gracias a:</p>
-        <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-          <li style="padding: 0.5rem 0;">✓ Menos citas perdidas (recordatorios automáticos)</li>
-          <li style="padding: 0.5rem 0;">✓ Mayor ocupación (agenda optimizada)</li>
-          <li style="padding: 0.5rem 0;">✓ Venta de productos integrada</li>
-          <li style="padding: 0.5rem 0;">✓ Programas de fidelización efectivos</li>
-        </ul>
-      </div>
-      
-      <div class="neumorphic-inset" style="padding: 2rem;">
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1e40af;">⏰ Ahorro de Tiempo</h3>
-        <p>Reduce el tiempo en tareas administrativas de 3 horas a 30 minutos diarios:</p>
-        <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-          <li style="padding: 0.5rem 0;">✓ Citas se agendan solas 24/7</li>
-          <li style="padding: 0.5rem 0;">✓ Finanzas registradas automáticamente</li>
-          <li style="padding: 0.5rem 0;">✓ Reportes generados con un clic</li>
-          <li style="padding: 0.5rem 0;">✓ Comunicación automatizada con clientes</li>
-        </ul>
-      </div>
-      
-      <div class="neumorphic-inset" style="padding: 2rem;">
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1e40af;">🎯 Profesionalización</h3>
-        <p>Eleva la imagen y operación de tu barbería al siguiente nivel:</p>
-        <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-          <li style="padding: 0.5rem 0;">✓ Imagen profesional con app propia</li>
-          <li style="padding: 0.5rem 0;">✓ Procesos estandarizados y eficientes</li>
-          <li style="padding: 0.5rem 0;">✓ Mejor experiencia para el cliente</li>
-          <li style="padding: 0.5rem 0;">✓ Datos para tomar mejores decisiones</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Planes <span class="gradient-text">Simples y Transparentes</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Sin letras chicas, sin costos ocultos</p>
-    </div>
-    
-    <div class="pricing-grid">
-      <div class="neumorphic pricing-card">
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Plan Básico</h3>
-        <div class="price gradient-text">Gratis</div>
-        <p style="color: #666; margin-bottom: 2rem;">Para barberías que inician</p>
-        <ul class="feature-list">
-          <li><span class="check">✓</span> Hasta 50 citas/mes</li>
-          <li><span class="check">✓</span> 1 barbero</li>
-          <li><span class="check">✓</span> Agenda digital</li>
-          <li><span class="check">✓</span> Recordatorios básicos</li>
-          <li><span class="cross">✗</span> Reportes avanzados</li>
-          <li><span class="cross">✗</span> Marketing automático</li>
-        </ul>
-        <a href="https://app.converso.pro/auth" class="btn btn-secondary" style="width: 100%; margin-top: 2rem;">
-          Empezar Gratis
-        </a>
-      </div>
-      
-      <div class="neumorphic pricing-card featured">
-        <div style="background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); color: white; padding: 0.5rem; border-radius: 10px 10px 0 0; margin: -2rem -2rem 2rem -2rem;">
-          <strong>MÁS POPULAR</strong>
-        </div>
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Plan Profesional</h3>
-        <div class="price gradient-text">$89<span class="price-period">/mes</span></div>
-        <p style="color: #666; margin-bottom: 2rem;">Para barberías en crecimiento</p>
-        <ul class="feature-list">
-          <li><span class="check">✓</span> Hasta 500 citas/mes</li>
-          <li><span class="check">✓</span> 3 barberos</li>
-          <li><span class="check">✓</span> Todo del plan básico</li>
-          <li><span class="check">✓</span> Control de inventario</li>
-          <li><span class="check">✓</span> Reportes completos</li>
-          <li><span class="check">✓</span> Email y SMS automáticos</li>
-        </ul>
-        <a href="https://app.converso.pro/auth" class="btn btn-primary" style="width: 100%; margin-top: 2rem;">
-          Probar 7 Días Gratis
-        </a>
-      </div>
-      
-      <div class="neumorphic pricing-card">
-        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Plan Premium</h3>
-        <div class="price gradient-text">$249<span class="price-period">/mes</span></div>
-        <p style="color: #666; margin-bottom: 2rem;">Para múltiples ubicaciones</p>
-        <ul class="feature-list">
-          <li><span class="check">✓</span> Citas ilimitadas</li>
-          <li><span class="check">✓</span> Barberos ilimitados</li>
-          <li><span class="check">✓</span> Todo del plan profesional</li>
-          <li><span class="check">✓</span> Múltiples sucursales</li>
-          <li><span class="check">✓</span> App personalizada</li>
-          <li><span class="check">✓</span> Soporte prioritario</li>
-        </ul>
-        <a href="https://app.converso.pro/auth" class="btn btn-secondary" style="width: 100%; margin-top: 2rem;">
-          Contactar Ventas
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section">
-    <div class="neumorphic testimonial">
-      <p style="font-size: 1.25rem; margin-bottom: 1rem;">
-        "Converso transformó completamente mi barbería. Pasé de perder citas por WhatsApp 
-        a tener mi agenda llena y organizada. Mis ingresos aumentaron 40% en 3 meses."
-      </p>
-      <p><strong>Carlos Mendoza</strong> - The Gentleman's Barbershop, Ciudad de México</p>
-      <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
-    </div>
-    
-    <div class="neumorphic testimonial">
-      <p style="font-size: 1.25rem; margin-bottom: 1rem;">
-        "Lo mejor es que mis clientes pueden agendar 24/7. Ya no interrumpen mi trabajo 
-        con llamadas y yo puedo concentrarme en dar el mejor servicio."
-      </p>
-      <p><strong>Roberto Silva</strong> - Urban Cuts, Barcelona</p>
-      <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
-    </div>
-    
-    <div class="neumorphic testimonial">
-      <p style="font-size: 1.25rem; margin-bottom: 1rem;">
-        "El control de inventario me salvó. Antes siempre me quedaba sin productos 
-        importantes. Ahora el sistema me avisa y nunca falta nada."
-      </p>
-      <p><strong>Diego Ramírez</strong> - Classic Barber Co., Buenos Aires</p>
-      <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
-    </div>
-  </section>
-
-  <!-- Features Detail -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Funciones <span class="gradient-text">Específicas para Barberías</span></h2>
-      <p style="font-size: 1.125rem; color: #666;">Diseñado por barberos, para barberos</p>
-    </div>
-    
-    <div class="features-grid">
-      <div class="neumorphic-inset" style="padding: 2rem;">
-        <h3 style="color: #1e40af; margin-bottom: 1rem;">💈 Gestión de Servicios</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li style="padding: 0.5rem 0;">• Catálogo completo de cortes y estilos</li>
-          <li style="padding: 0.5rem 0;">• Precios diferenciados por barbero</li>
-          <li style="padding: 0.5rem 0;">• Combos y promociones especiales</li>
-          <li style="padding: 0.5rem 0;">• Servicios adicionales (bebidas, productos)</li>
-        </ul>
-      </div>
-      
-      <div class="neumorphic-inset" style="padding: 2rem;">
-        <h3 style="color: #1e40af; margin-bottom: 1rem;">⏱️ Control de Tiempos</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li style="padding: 0.5rem 0;">• Duración personalizada por servicio</li>
-          <li style="padding: 0.5rem 0;">• Tiempos de preparación entre citas</li>
-          <li style="padding: 0.5rem 0;">• Alertas de retrasos</li>
-          <li style="padding: 0.5rem 0;">• Optimización automática de agenda</li>
-        </ul>
-      </div>
-      
-      <div class="neumorphic-inset" style="padding: 2rem;">
-        <h3 style="color: #1e40af; margin-bottom: 1rem;">👨‍💼 Gestión de Barberos</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li style="padding: 0.5rem 0;">• Perfiles con foto y especialidades</li>
-          <li style="padding: 0.5rem 0;">• Horarios individuales flexibles</li>
-          <li style="padding: 0.5rem 0;">• Comisiones y pagos automatizados</li>
-          <li style="padding: 0.5rem 0;">• Estadísticas de rendimiento</li>
-        </ul>
-      </div>
-      
-      <div class="neumorphic-inset" style="padding: 2rem;">
-        <h3 style="color: #1e40af; margin-bottom: 1rem;">🎁 Fidelización</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li style="padding: 0.5rem 0;">• Programa de puntos automático</li>
-          <li style="padding: 0.5rem 0;">• Descuentos por frecuencia</li>
-          <li style="padding: 0.5rem 0;">• Regalo de cumpleaños</li>
-          <li style="padding: 0.5rem 0;">• Referidos con recompensas</li>
-        </ul>
-      </div>
-      
-      <div class="neumorphic-inset" style="padding: 2rem;">
-        <h3 style="color: #1e40af; margin-bottom: 1rem;">📲 Comunicación</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li style="padding: 0.5rem 0;">• WhatsApp Business integrado</li>
-          <li style="padding: 0.5rem 0;">• SMS de confirmación</li>
-          <li style="padding: 0.5rem 0;">• Email marketing segmentado</li>
-          <li style="padding: 0.5rem 0;">• Notificaciones push en app</li>
-        </ul>
-      </div>
-      
-      <div class="neumorphic-inset" style="padding: 2rem;">
-        <h3 style="color: #1e40af; margin-bottom: 1rem;">🔒 Seguridad</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li style="padding: 0.5rem 0;">• Backups automáticos diarios</li>
-          <li style="padding: 0.5rem 0;">• Acceso por roles y permisos</li>
-          <li style="padding: 0.5rem 0;">• Encriptación de datos</li>
-          <li style="padding: 0.5rem 0;">• Cumplimiento RGPD</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Preguntas <span class="gradient-text">Frecuentes</span></h2>
-    </div>
-    
-    <div class="faq-container">
-      <div class="neumorphic faq-item">
-        <div class="faq-question">¿Cuánto tiempo toma implementar el sistema?</div>
-        <p>La configuración básica toma menos de 1 hora. En 24 horas tu barbería está completamente digitalizada y operando. Incluimos capacitación gratuita para todo tu equipo.</p>
-      </div>
-      
-      <div class="neumorphic faq-item">
-        <div class="faq-question">¿Mis clientes necesitan descargar una app?</div>
-        <p>No es necesario. Los clientes pueden agendar desde cualquier navegador web en su celular. Opcionalmente, pueden descargar la app para una experiencia aún mejor.</p>
-      </div>
-      
-      <div class="neumorphic faq-item">
-        <div class="faq-question">¿Qué pasa si no soy bueno con la tecnología?</div>
-        <p>El sistema está diseñado para ser súper intuitivo. Además, ofrecemos soporte en español 24/7, videos tutoriales y capacitación personalizada sin costo.</p>
-      </div>
-      
-      <div class="neumorphic faq-item">
-        <div class="faq-question">¿Puedo migrar mis datos de otro sistema?</div>
-        <p>Sí, tenemos herramientas de importación para los sistemas más populares. Si tienes tus datos en Excel, también podemos importarlos fácilmente.</p>
-      </div>
-      
-      <div class="neumorphic faq-item">
-        <div class="faq-question">¿Funciona en cualquier país?</div>
-        <p>Sí, Converso funciona en toda Latinoamérica, España y Estados Unidos. Soporta múltiples monedas y se adapta a las regulaciones locales.</p>
-      </div>
-      
-      <div class="neumorphic faq-item">
-        <div class="faq-question">¿Hay contratos o permanencia mínima?</div>
-        <p>No hay contratos ni permanencia. Puedes cancelar en cualquier momento sin penalizaciones. Creemos en ganarnos tu confianza cada mes.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ROI Calculator -->
-  <section class="section">
-    <div class="neumorphic" style="text-align: center; padding: 3rem;">
-      <h2 class="section-title">Calcula tu <span class="gradient-text">Retorno de Inversión</span></h2>
-      <p style="font-size: 1.125rem; color: #666; margin-bottom: 2rem;">
-        Una barbería promedio con 3 sillas que implementa nuestro sistema:
-      </p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 800px; margin: 0 auto;">
-        <div>
-          <div class="gradient-text" style="font-size: 2.5rem; font-weight: bold;">+35%</div>
-          <p>Aumento en citas mensuales</p>
-        </div>
-        <div>
-          <div class="gradient-text" style="font-size: 2.5rem; font-weight: bold;">-80%</div>
-          <p>Reducción de no-shows</p>
-        </div>
-        <div>
-          <div class="gradient-text" style="font-size: 2.5rem; font-weight: bold;">+$1,500</div>
-          <p>Ingresos extra al mes</p>
-        </div>
-      </div>
-      <p style="margin-top: 2rem; font-size: 1rem; color: #666;">
-        <em>Inversión: $89/mes | Retorno: $1,500+/mes | ROI: 1,585%</em>
-      </p>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <div class="cta-section">
-    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Transforma tu Barbería Hoy</h2>
-    <p style="font-size: 1.25rem; margin-bottom: 2rem;">
-      Únete a más de 5,000 barberías que ya gestionan su negocio de forma profesional
-    </p>
-    <a href="https://app.converso.pro/auth" class="btn" style="background: white; color: #333; padding: 1rem 2.5rem; font-size: 1.125rem;">
-      Empezar Prueba Gratis de 7 Días
-    </a>
-    <p style="margin-top: 1rem; opacity: 0.9;">Sin tarjeta de crédito • Configuración en minutos • Soporte 24/7</p>
-  </div>
+    </section>
+  
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Sistema de Gestión para Barbería. Parte de <a href="https://converso.pro" style="color: #3b82f6;">converso.pro</a></p>
+  <footer class="bg-gray-900 text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Company -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Converso</h3>
+          <p class="text-gray-400 text-sm">
+            Crea tu sitio web profesional de reservas en minutos. Únete a miles de profesionales que confían en Converso.
+          </p>
+        </div>
+        
+        <!-- Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Producto</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro#features" class="hover:text-white transition">Características</a></li>
+            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Precios</a></li>
+            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Soporte</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/help" class="hover:text-white transition">Centro de Ayuda</a></li>
+            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Política de Privacidad</a></li>
+            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Converso. Todos los derechos reservados.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

@@ -3,927 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barbershop Booking Henderson NV - Online Scheduling System</title>
-  <meta name="description" content="Best online booking system for barbershops in Henderson, Nevada. Accept appointments 24/7, reduce no-shows, and grow your business. Free plan available.">
-  <meta property="og:title" content="Barbershop Booking Henderson - #1 Scheduling System">
-  <meta property="og:description" content="Professional booking system for Henderson barbershops. Multi-language support, online payments, and 10 free bookings/month.">
+  <title>Barbershop Booking System Henderson - Online Scheduling</title>
+  <meta name="description" content="Online booking system for barbershops in Henderson. Accept appointments 24/7.">
+  <meta property="og:title" content="Barbershop Booking System Henderson - Online Scheduling">
+  <meta property="og:description" content="Online booking system for barbershops in Henderson. Accept appointments 24/7.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://seo.converso.pro/barbershop-booking-henderson">
   <meta property="og:image" content="https://converso.pro/converso-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Barbershop Booking Henderson - Online Scheduling">
-  <meta name="twitter:description" content="Transform your Henderson barbershop with online booking. Free plan included.">
+  <meta name="twitter:title" content="Barbershop Booking System Henderson - Online Scheduling">
+  <meta name="twitter:description" content="Online booking system for barbershops in Henderson. Accept appointments 24/7.">
   <link rel="canonical" href="https://seo.converso.pro/barbershop-booking-henderson">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="https://converso.pro/favicon.ico">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f0f2f5;
-      color: #333;
-      line-height: 1.6;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    .neumorphic {
-      background: #f0f2f5;
-      border-radius: 20px;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-    
-    .gradient-text {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    
-    .gradient-bg {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-    }
-    
-    /* Header Styles */
-    header {
-      background: #ffffff;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1rem 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      font-size: 1.75rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    
-    .nav-buttons {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-    
-    .btn {
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-    
-    .btn-primary {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      box-shadow: 8px 8px 20px #c8cacd, -8px -8px 20px #ffffff;
-    }
-    
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 10px 10px 25px #c8cacd, -10px -10px 25px #ffffff;
-    }
-    
-    .btn-secondary {
-      background: #f0f2f5;
-      color: #333;
-      box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
-    }
-    
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(135deg, #e0e7ff 0%, #cffafe 100%);
-      padding: 4rem 0;
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.2;
-    }
-    
-    .hero .subtitle {
-      font-size: 1.25rem;
-      color: #666;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    /* Content Sections */
-    section {
-      margin-bottom: 4rem;
-    }
-    
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      color: #1a1a1a;
-    }
-    
-    h3 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-      color: #2a2a2a;
-    }
-    
-    /* Card Grid */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    
-    .platform-card {
-      transition: transform 0.3s ease;
-    }
-    
-    .platform-card:hover {
-      transform: translateY(-5px);
-    }
-    
-    /* Location Cards */
-    .location-card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 15px;
-      box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
-      margin-bottom: 1rem;
-    }
-    
-    /* Comparison Table */
-    .table-wrapper {
-      overflow-x: auto;
-      margin: -1rem;
-      padding: 1rem;
-    }
-    
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 10px 10px 30px #c8cacd, -10px -10px 30px #ffffff;
-    }
-    
-    .comparison-table th {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      padding: 1rem;
-      text-align: left;
-      font-weight: 600;
-    }
-    
-    .comparison-table td {
-      padding: 1rem;
-      border-bottom: 1px solid #e5e7eb;
-    }
-    
-    .comparison-table tr:hover {
-      background: #f9fafb;
-    }
-    
-    /* Badges */
-    .badge {
-      display: inline-block;
-      padding: 0.25rem 0.75rem;
-      border-radius: 20px;
-      font-size: 0.875rem;
-      font-weight: 600;
-    }
-    
-    .badge-success {
-      background: #d1fae5;
-      color: #065f46;
-    }
-    
-    .badge-warning {
-      background: #fef3c7;
-      color: #92400e;
-    }
-    
-    .badge-danger {
-      background: #fee2e2;
-      color: #991b1b;
-    }
-    
-    /* Stats Grid */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-    
-    .stat-card {
-      text-align: center;
-      padding: 2rem;
-    }
-    
-    .stat-number {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #3b82f6;
-      margin-bottom: 0.5rem;
-    }
-    
-    /* CTA Section */
-    .cta-section {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      padding: 4rem 2rem;
-      border-radius: 30px;
-      text-align: center;
-      margin: 4rem 0;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-    }
-    
-    .cta-buttons {
-      display: flex;
-      gap: 1.5rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-    }
-    
-    .btn-white {
-      background: white;
-      color: #3b82f6;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.125rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-    }
-    
-    .btn-white:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-    
-    /* Footer */
-    footer {
-      background: #1a1a1a;
-      color: white;
-      padding: 3rem 0;
-      margin-top: 6rem;
-    }
-    
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    
-    .footer-content h4 {
-      margin-bottom: 1rem;
-      color: #ffffff;
-    }
-    
-    .footer-content a {
-      color: #9ca3af;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    .footer-content a:hover {
-      color: #ffffff;
-    }
-    
-    .footer-bottom {
-      text-align: center;
-      padding-top: 2rem;
-      margin-top: 2rem;
-      border-top: 1px solid #333;
-      color: #9ca3af;
-    }
-    
-    /* Alert Boxes */
-    .alert {
-      padding: 1.5rem;
-      border-radius: 15px;
-      margin: 1.5rem 0;
-      border-left: 4px solid;
-    }
-    
-    .alert-info {
-      background: #dbeafe;
-      border-color: #3b82f6;
-      color: #1e3a8a;
-    }
-    
-    .alert-warning {
-      background: #fef3c7;
-      border-color: #f59e0b;
-      color: #92400e;
-    }
-    
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      
-      h2 {
-        font-size: 1.75rem;
-      }
-      
-      .hide-mobile {
-        display: none;
-      }
-      
-      .header-container {
-        padding: 0.75rem 15px;
-      }
-      
-      .comparison-table {
-        font-size: 0.875rem;
-      }
-      
-      .comparison-table th,
-      .comparison-table td {
-        padding: 0.5rem;
-      }
-    }
-    
-    /* Special Elements */
-    .highlight-blue {
-      background: #dbeafe;
-      padding: 0.25rem 0.5rem;
-      border-radius: 5px;
-      color: #1e3a8a;
-    }
-    
-    .highlight-green {
-      background: #d1fae5;
-      padding: 0.25rem 0.5rem;
-      border-radius: 5px;
-      color: #065f46;
-    }
-    
-    .price-badge {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-weight: bold;
-      display: inline-block;
-    }
-    
-    .testimonial-card {
-      background: #f9fafb;
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: 10px 10px 30px #c8cacd, -10px -10px 30px #ffffff;
-    }
-    
-    .stars {
-      color: #fbbf24;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
   <!-- Header -->
-  <header>
-    <div class="header-container">
-      <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
-      <div class="nav-buttons">
-        <a href="https://converso.pro" class="btn btn-secondary hide-mobile">Back to Site</a>
-        <a href="https://app.converso.pro/auth" class="btn btn-primary">Login</a>
+  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="https://converso.pro" class="flex items-center group">
+          <span class="text-2xl font-bold">
+            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
+          </span>
+        </a>
+        
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Features</a>
+          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Pricing</a>
+          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Testimonials</a>
+        </nav>
+        
+        <!-- CTA Buttons -->
+        <div class="flex items-center space-x-4">
+          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
+            Login
+          </a>
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
+            Start Free
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1 class="gradient-text">Barbershop Booking System in Henderson, Nevada</h1>
-    <p class="subtitle">Transform your Henderson barbershop with professional online booking. Join 150+ local shops already using Converso to grow their business.</p>
-  </section>
-
-  <!-- Main Container -->
-  <div class="container">
+  <!-- Main Content -->
+  <main>
     
-    <!-- Quick Answer Box -->
-    <section>
-      <div class="neumorphic" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);">
-        <h2 style="margin-bottom: 1.5rem;">Why Henderson Barbershops Need Online Booking</h2>
-        <div style="font-size: 1.125rem; line-height: 2;">
-          <p><strong>🎯 Save 15+ Hours/Week:</strong> <span class="highlight-blue">Automate scheduling</span> - No more phone tag or double bookings</p>
-          <p><strong>💰 Increase Revenue 40%:</strong> <span class="highlight-green">24/7 booking access</span> - Capture clients even when closed</p>
-          <p><strong>🌐 Serve All Communities:</strong> <span class="highlight-blue">English, Spanish, Portuguese</span> - Perfect for Henderson's diversity</p>
-          <p><strong>✅ Start Free Today:</strong> <span class="highlight-green">10 bookings/month free</span> - No credit card required</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Henderson Market Stats -->
-    <section>
-      <h2>Henderson Barbershop Market Overview</h2>
-      <div class="stats-grid">
-        <div class="neumorphic stat-card">
-          <div class="stat-number">300K+</div>
-          <div>Henderson Population</div>
-        </div>
-        <div class="neumorphic stat-card">
-          <div class="stat-number">250+</div>
-          <div>Active Barbershops</div>
-        </div>
-        <div class="neumorphic stat-card">
-          <div class="stat-number">78%</div>
-          <div>Book Online in 2025</div>
-        </div>
-        <div class="neumorphic stat-card">
-          <div class="stat-number">$45</div>
-          <div>Average Ticket Value</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Henderson Neighborhoods -->
-    <section>
-      <h2>Serving All Henderson Areas</h2>
-      <div class="neumorphic" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);">
-        <h3 style="text-align: center; margin-bottom: 2rem;">📍 Complete Henderson Coverage</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-          <div class="location-card">
-            <strong>Green Valley</strong>
-            <p style="font-size: 0.875rem; color: #666; margin-top: 0.5rem;">Green Valley Ranch, The District</p>
-          </div>
-          <div class="location-card">
-            <strong>Seven Hills</strong>
-            <p style="font-size: 0.875rem; color: #666; margin-top: 0.5rem;">Rio Secco, Terracina</p>
-          </div>
-          <div class="location-card">
-            <strong>Anthem</strong>
-            <p style="font-size: 0.875rem; color: #666; margin-top: 0.5rem;">Anthem Country Club, Del Webb</p>
-          </div>
-          <div class="location-card">
-            <strong>MacDonald Ranch</strong>
-            <p style="font-size: 0.875rem; color: #666; margin-top: 0.5rem;">Dragon Ridge, MacDonald Highlands</p>
-          </div>
-          <div class="location-card">
-            <strong>Lake Las Vegas</strong>
-            <p style="font-size: 0.875rem; color: #666; margin-top: 0.5rem;">MonteLago, SouthShore</p>
-          </div>
-          <div class="location-card">
-            <strong>Downtown Henderson</strong>
-            <p style="font-size: 0.875rem; color: #666; margin-top: 0.5rem;">Water Street District</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features for Henderson -->
-    <section>
-      <h2>Built for Henderson Barbershops</h2>
-      <div class="card-grid">
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏜️</div>
-            <h3 class="gradient-text">Nevada Compliant</h3>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.75rem 0;">✅ Nevada State Board ready</li>
-            <li style="margin: 0.75rem 0;">✅ Henderson business license fields</li>
-            <li style="margin: 0.75rem 0;">✅ State tax reporting exports</li>
-            <li style="margin: 0.75rem 0;">✅ Local health compliance</li>
-            <li style="margin: 0.75rem 0;">✅ Digital record keeping</li>
+    <section class="py-20 px-4">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Barbershop Booking in Henderson</h1>
+        <p class="text-xl text-gray-600 text-center mb-12">Online booking system for barbershops in Henderson. Accept appointments 24/7.</p>
+        
+        <div class="card-neumorphic mb-8">
+          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
+          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>No booking fees</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>Your own professional website</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>WhatsApp integration</span>
+            </li>
           </ul>
         </div>
-
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">📱</div>
-            <h3 class="gradient-text">Mobile-First Design</h3>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.75rem 0;">✅ 85% book on mobile</li>
-            <li style="margin: 0.75rem 0;">✅ One-tap booking</li>
-            <li style="margin: 0.75rem 0;">✅ Instagram integration</li>
-            <li style="margin: 0.75rem 0;">✅ SMS reminders</li>
-            <li style="margin: 0.75rem 0;">✅ WhatsApp support</li>
-          </ul>
-        </div>
-
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">💰</div>
-            <h3 class="gradient-text">Smart Revenue Tools</h3>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.75rem 0;">✅ Online prepayment</li>
-            <li style="margin: 0.75rem 0;">✅ No-show protection</li>
-            <li style="margin: 0.75rem 0;">✅ Dynamic pricing</li>
-            <li style="margin: 0.75rem 0;">✅ Package deals</li>
-            <li style="margin: 0.75rem 0;">✅ Loyalty program app</li>
-          </ul>
-        </div>
-
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🚀</div>
-            <h3 class="gradient-text">Growth Features</h3>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.75rem 0;">✅ Google Business sync</li>
-            <li style="margin: 0.75rem 0;">✅ Review automation</li>
-            <li style="margin: 0.75rem 0;">✅ Email marketing app</li>
-            <li style="margin: 0.75rem 0;">✅ Referral rewards</li>
-            <li style="margin: 0.75rem 0;">✅ Social media tools</li>
-          </ul>
+        
+        <div class="text-center">
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
+            Create Your Website Now
+          </a>
         </div>
       </div>
     </section>
-
-    <!-- Comparison Table -->
-    <section>
-      <h2>Compare Booking Systems for Henderson</h2>
-      <div class="neumorphic">
-        <div class="table-wrapper">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>System</th>
-                <th>Monthly Cost</th>
-                <th>Free Plan</th>
-                <th>Multi-language</th>
-                <th>Nevada Support</th>
-                <th>Setup Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="background: #f0fdf4;">
-                <td><strong>Converso</strong></td>
-                <td><span class="price-badge">USD 0-48/month</span></td>
-                <td><span style="color: #10b981;">✅ 10 bookings free</span></td>
-                <td><span style="color: #10b981;">✅ EN/ES/PT</span></td>
-                <td><span style="color: #10b981;">✅ Local team</span></td>
-                <td><span style="color: #10b981;">5 minutes</span></td>
-              </tr>
-              <tr>
-                <td><strong>Square Appointments</strong></td>
-                <td>USD 29-69/month</td>
-                <td><span style="color: #ef4444;">❌ No free plan</span></td>
-                <td><span style="color: #f59e0b;">⚠️ English only</span></td>
-                <td><span style="color: #f59e0b;">⚠️ National</span></td>
-                <td>30-60 minutes</td>
-              </tr>
-              <tr style="background: #f9fafb;">
-                <td><strong>Booksy</strong></td>
-                <td>USD 29.99-89.99/month</td>
-                <td><span style="color: #f59e0b;">⚠️ 30-day trial</span></td>
-                <td><span style="color: #10b981;">✅ Multiple</span></td>
-                <td><span style="color: #ef4444;">❌ No local</span></td>
-                <td>1-2 hours</td>
-              </tr>
-              <tr>
-                <td><strong>Vagaro</strong></td>
-                <td>USD 25-75/month</td>
-                <td><span style="color: #f59e0b;">⚠️ Limited trial</span></td>
-                <td><span style="color: #ef4444;">❌ English only</span></td>
-                <td><span style="color: #ef4444;">❌ No local</span></td>
-                <td>2-3 hours</td>
-              </tr>
-              <tr style="background: #f9fafb;">
-                <td><strong>Schedulicity</strong></td>
-                <td>USD 19.99-39.99/month</td>
-                <td><span style="color: #10b981;">✅ Basic free</span></td>
-                <td><span style="color: #ef4444;">❌ English only</span></td>
-                <td><span style="color: #ef4444;">❌ No local</span></td>
-                <td>1 hour</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- Success Stories -->
-    <section>
-      <h2>Henderson Success Stories</h2>
-      <div class="card-grid">
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p style="font-style: italic; margin-bottom: 1.5rem; font-size: 1.125rem;">
-            "Converso transformed my Green Valley shop. We went from 60% capacity to fully booked in 3 months. The multi-language support is perfect for our diverse clientele."
-          </p>
-          <div>
-            <p style="font-weight: 600;">Carlos Martinez</p>
-            <p style="font-size: 0.875rem; color: #666;">Elite Cuts - Green Valley</p>
-            <p style="font-size: 0.875rem; color: #10b981; font-weight: 600; margin-top: 0.5rem;">Revenue up 45% in 90 days</p>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p style="font-style: italic; margin-bottom: 1.5rem; font-size: 1.125rem;">
-            "The automated reminders alone save me 2 hours daily. No more no-shows! Plus, the loyalty program keeps clients coming back every 3 weeks instead of 5."
-          </p>
-          <div>
-            <p style="font-weight: 600;">Marcus Johnson</p>
-            <p style="font-size: 0.875rem; color: #666;">The Fade Factory - Seven Hills</p>
-            <p style="font-size: 0.875rem; color: #10b981; font-weight: 600; margin-top: 0.5rem;">90% reduction in no-shows</p>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p style="font-style: italic; margin-bottom: 1.5rem; font-size: 1.125rem;">
-            "Setting up took literally 5 minutes. The Henderson support team helped me optimize for local SEO. Now I'm #1 on Google for 'barbershop near me'."
-          </p>
-          <div>
-            <p style="font-weight: 600;">Tony Chen</p>
-            <p style="font-size: 0.875rem; color: #666;">Modern Barber Co - Anthem</p>
-            <p style="font-size: 0.875rem; color: #10b981; font-weight: 600; margin-top: 0.5rem;">200% more Google bookings</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Implementation Guide -->
-    <section>
-      <h2>Get Started in 5 Minutes</h2>
-      <div style="max-width: 800px; margin: 0 auto;">
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-            <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">1</span>
-            <div>
-              <h3 style="margin-bottom: 0.5rem;">Sign Up Free</h3>
-              <p style="color: #666;">No credit card needed. Use email or Google. Choose your language (English, Spanish, or Portuguese).</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-            <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">2</span>
-            <div>
-              <h3 style="margin-bottom: 0.5rem;">Set Up Your Shop</h3>
-              <p style="color: #666;">Add your Henderson location, hours, and services. We have pre-loaded barber services to save time.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-            <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">3</span>
-            <div>
-              <h3 style="margin-bottom: 0.5rem;">Connect Payment (Optional)</h3>
-              <p style="color: #666;">Link Stripe to accept prepayments and reduce no-shows. Instant deposits to your bank.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <div style="display: flex; align-items: flex-start; margin-bottom: 2rem;">
-            <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">4</span>
-            <div>
-              <h3 style="margin-bottom: 0.5rem;">Share Your Link</h3>
-              <p style="color: #666;">Get your unique booking link: converso.pro/p/yourshop. Add to Google, Instagram, and business cards.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="neumorphic">
-          <div style="display: flex; align-items: flex-start;">
-            <span class="gradient-text" style="font-size: 2rem; font-weight: bold; margin-right: 1rem;">5</span>
-            <div>
-              <h3 style="margin-bottom: 0.5rem;">Start Growing</h3>
-              <p style="color: #666;">Accept bookings 24/7. Use our 11+ integrated apps to automate marketing, reviews, and loyalty.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ROI Calculator -->
-    <section style="background: #f9fafb; padding: 3rem 0; margin: 0 -20px;">
-      <div style="padding: 0 20px;">
-        <h2>ROI Calculator for Henderson Barbershops</h2>
-        <div class="neumorphic" style="max-width: 800px; margin: 0 auto;">
-          <h3 style="text-align: center; margin-bottom: 2rem;">💰 Your Potential with Online Booking</h3>
-          
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-            <div>
-              <h4 style="color: #ef4444; margin-bottom: 1rem;">Without Online Booking</h4>
-              <ul style="list-style: none; padding: 0;">
-                <li style="margin: 0.5rem 0;">❌ 20% no-show rate</li>
-                <li style="margin: 0.5rem 0;">❌ 15 hours/week on phone</li>
-                <li style="margin: 0.5rem 0;">❌ Miss 40% after-hours calls</li>
-                <li style="margin: 0.5rem 0;">❌ Average 60% chair utilization</li>
-                <li style="margin: 0.5rem 0;">❌ Limited to walk-ins</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 style="color: #10b981; margin-bottom: 1rem;">With Converso</h4>
-              <ul style="list-style: none; padding: 0;">
-                <li style="margin: 0.5rem 0;">✅ 5% no-show rate</li>
-                <li style="margin: 0.5rem 0;">✅ 1 hour/week managing</li>
-                <li style="margin: 0.5rem 0;">✅ 24/7 booking availability</li>
-                <li style="margin: 0.5rem 0;">✅ 85%+ chair utilization</li>
-                <li style="margin: 0.5rem 0;">✅ Predictable schedule</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: #e0f2fe; border-radius: 15px;">
-            <p style="font-size: 1.25rem; font-weight: 600; color: #1e3a8a;">Average Henderson Shop Results:</p>
-            <p style="font-size: 2rem; font-weight: bold; color: #3b82f6; margin-top: 0.5rem;">+$3,200/month in additional revenue</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Apps Section -->
-    <section>
-      <h2>11+ Integrated Apps Included</h2>
-      <div class="neumorphic" style="background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);">
-        <p style="text-align: center; margin-bottom: 2rem; font-size: 1.125rem;">All apps work together seamlessly - no external integrations needed</p>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-          <div style="text-align: center;">
-            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📱</div>
-            <h4>Digital Queue</h4>
-            <p style="font-size: 0.875rem; color: #666;">Manage walk-ins digitally</p>
-          </div>
-          
-          <div style="text-align: center;">
-            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎁</div>
-            <h4>Loyalty Program</h4>
-            <p style="font-size: 0.875rem; color: #666;">Automated rewards system</p>
-          </div>
-          
-          <div style="text-align: center;">
-            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📧</div>
-            <h4>Email Marketing</h4>
-            <p style="font-size: 0.875rem; color: #666;">Beautiful campaigns</p>
-          </div>
-          
-          <div style="text-align: center;">
-            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">⭐</div>
-            <h4>Reviews Manager</h4>
-            <p style="font-size: 0.875rem; color: #666;">Automate Google reviews</p>
-          </div>
-          
-          <div style="text-align: center;">
-            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📝</div>
-            <h4>Blog System</h4>
-            <p style="font-size: 0.875rem; color: #666;">SEO-optimized content</p>
-          </div>
-          
-          <div style="text-align: center;">
-            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💼</div>
-            <h4>Client Portal</h4>
-            <p style="font-size: 0.875rem; color: #666;">Self-service for clients</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section>
-      <h2>Frequently Asked Questions - Henderson</h2>
-      <div style="max-width: 800px; margin: 0 auto;">
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">How much does it cost to start?</h3>
-          <p style="color: #666;">Absolutely free! Start with 10 bookings per month at no cost. Upgrade to Plus ($18/month) or Pro ($48/month) as you grow. No setup fees, no contracts.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Does it work with Nevada regulations?</h3>
-          <p style="color: #666;">Yes! Converso is fully compliant with Nevada State Board of Cosmetology requirements. We maintain digital records, support license tracking, and provide easy exports for inspections.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Can I accept payments online?</h3>
-          <p style="color: #666;">Yes! Connect your Stripe account to accept secure card payments. This helps reduce no-shows by up to 85% when clients prepay for appointments.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">What languages are supported?</h3>
-          <p style="color: #666;">English, Spanish, and Portuguese. Perfect for Henderson's diverse community. Your clients can book in their preferred language, and you manage everything in yours.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">How do I handle walk-ins?</h3>
-          <p style="color: #666;">Our Digital Queue app lets walk-ins check in via QR code. They get real-time updates on wait times via SMS. You manage everything from your dashboard.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Is there local support?</h3>
-          <p style="color: #666;">Yes! We have a dedicated Nevada team available via WhatsApp, email, and phone. Support in all three languages, and we understand the local market.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Local Tips -->
-    <div class="alert alert-info" style="margin-top: 3rem;">
-      <strong>💡 Henderson Pro Tip:</strong> Set special hours for major events at T-Mobile Arena and Raiders games. Many shops see 2-3x normal traffic on event days. Converso allows dynamic pricing by date and time.
-    </div>
-
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <h2 style="margin-bottom: 1.5rem;">Join 150+ Henderson Barbershops</h2>
-      <p style="margin-bottom: 2rem; font-size: 1.125rem;">Transform your shop with online booking. Start free today.</p>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; max-width: 600px; margin: 2rem auto;">
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>10 free bookings/month</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Setup in 5 minutes</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Multi-language support</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>No credit card required</span>
-        </div>
-      </div>
-      
-      <div class="cta-buttons">
-        <a href="https://app.converso.pro/auth" class="btn-white">
-          Create Free Account
-        </a>
-      </div>
-    </div>
-
-  </div>
+  
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div>
-        <h4>Converso</h4>
-        <p style="font-size: 0.875rem; color: #999; margin-top: 0.5rem;">
-          Create your professional booking website in minutes. Join thousands of professionals who trust Converso.
-        </p>
+  <footer class="bg-gray-900 text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Company -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Converso</h3>
+          <p class="text-gray-400 text-sm">
+            Create your professional booking website in minutes. Join thousands of professionals who trust Converso.
+          </p>
+        </div>
+        
+        <!-- Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro#features" class="hover:text-white transition">Features</a></li>
+            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/help" class="hover:text-white transition">Help Center</a></li>
+            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Terms of Service</a></li>
+          </ul>
+        </div>
       </div>
       
-      <div>
-        <h4>Product</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/pricing">Pricing</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/apps">Apps</a></li>
-        </ul>
+      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Converso. All rights reserved.</p>
       </div>
-      
-      <div>
-        <h4>Support</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/faq">Help Center</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro">Contact</a></li>
-        </ul>
-      </div>
-      
-      <div>
-        <h4>Legal</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/privacy">Privacy Policy</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/terms">Terms of Service</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2025 Converso. All rights reserved.</p>
     </div>
   </footer>
 </body>

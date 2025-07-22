@@ -3,634 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aplicaciones Converso - Herramientas Profesionales para Tu Negocio</title>
-  <meta name="description" content="Descubre aplicaciones profesionales para gestionar tu negocio. Sistema de reservas, e-commerce, programas de fidelidad, marketing, y mucho más. Todo integrado en una plataforma completa.">
-  <meta property="og:title" content="Aplicaciones Converso - Herramientas Profesionales para Tu Negocio">
-  <meta property="og:description" content="Descubre aplicaciones profesionales para gestionar tu negocio. Sistema de reservas, e-commerce, programas de fidelidad, marketing, y mucho más.">
+  <title>Converso Apps - Professional Business Tools</title>
+  <meta name="description" content="Discover professional apps to manage your business. Booking, e-commerce, loyalty programs, and more.">
+  <meta property="og:title" content="Converso Apps - Professional Business Tools">
+  <meta property="og:description" content="Discover professional apps to manage your business. Booking, e-commerce, loyalty programs, and more.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seo.converso.pro/es/apps">
+  <meta property="og:url" content="https://seo.converso.pro/apps">
   <meta property="og:image" content="https://converso.pro/converso-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Aplicaciones Converso - Herramientas Profesionales">
-  <meta name="twitter:description" content="Aplicaciones profesionales para gestionar tu negocio. Reservas, e-commerce, fidelidad, marketing integrado.">
-  <link rel="canonical" href="https://seo.converso.pro/es/apps">
+  <meta name="twitter:title" content="Converso Apps - Professional Business Tools">
+  <meta name="twitter:description" content="Discover professional apps to manage your business. Booking, e-commerce, loyalty programs, and more.">
+  <link rel="canonical" href="https://seo.converso.pro/apps">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="https://converso.pro/favicon.ico">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f0f2f5;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .neumorphic {
-      background: #f0f2f5;
-      border-radius: 20px;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .gradient-bg {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-    }
-
-    header {
-      background: #f0f2f5;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .nav-buttons {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .btn {
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    }
-
-    .btn-secondary {
-      background: white;
-      color: #333;
-      box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
-    }
-
-    .btn-white {
-      background: white;
-      color: #333;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
-
-    .btn-white:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
-
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.2;
-    }
-
-    .subtitle {
-      font-size: 1.25rem;
-      color: #666;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    .apps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-
-    .app-card {
-      padding: 2rem;
-      height: 100%;
-      transition: transform 0.3s ease;
-    }
-
-    .app-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .app-icon {
-      width: 60px;
-      height: 60px;
-      border-radius: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .category-section {
-      margin: 4rem 0;
-    }
-
-    .category-title {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .category-subtitle {
-      text-align: center;
-      font-size: 1.25rem;
-      color: #666;
-      margin-bottom: 3rem;
-    }
-
-    .feature-list {
-      list-style: none;
-      padding: 0;
-      margin-top: 1rem;
-    }
-
-    .feature-list li {
-      padding: 0.5rem 0;
-      display: flex;
-      align-items: center;
-    }
-
-    .feature-list li .icon {
-      color: #10b981;
-      font-size: 1.2rem;
-      margin-right: 0.75rem;
-    }
-
-    .pricing-badge {
-      display: inline-block;
-      padding: 0.25rem 0.75rem;
-      border-radius: 15px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .badge-free {
-      background: #dcfce7;
-      color: #166534;
-    }
-
-    .badge-plus {
-      background: #dbeafe;
-      color: #1e40af;
-    }
-
-    .badge-pro {
-      background: #fef3c7;
-      color: #92400e;
-    }
-
-    .cta-section {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      border-radius: 30px;
-      color: white;
-      text-align: center;
-      margin: 4rem 0;
-      padding: 3rem 2rem;
-    }
-
-    .cta-section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      background: #1f2937;
-      color: white;
-      padding: 3rem 0 2rem;
-      margin-top: 4rem;
-    }
-
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .footer-content h4 {
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-    }
-
-    .footer-content a {
-      color: #9ca3af;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .footer-content a:hover {
-      color: white;
-    }
-
-    .footer-bottom {
-      text-align: center;
-      padding-top: 2rem;
-      border-top: 1px solid #374151;
-      color: #9ca3af;
-      font-size: 0.875rem;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      
-      .hide-mobile {
-        display: none;
-      }
-      
-      .apps-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .category-title {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
   <!-- Header -->
-  <header>
-    <div class="header-container">
-      <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
-      <div class="nav-buttons">
-        <a href="https://converso.pro" class="btn btn-secondary hide-mobile">Volver al Sitio</a>
-        <a href="https://app.converso.pro/auth" class="btn btn-primary">Iniciar Sesión</a>
+  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="https://converso.pro" class="flex items-center group">
+          <span class="text-2xl font-bold">
+            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
+          </span>
+        </a>
+        
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Características</a>
+          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Precios</a>
+          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Testimonios</a>
+        </nav>
+        
+        <!-- CTA Buttons -->
+        <div class="flex items-center space-x-4">
+          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
+            Iniciar sesión
+          </a>
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
+            Empezar Gratis
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1 class="gradient-text">Aplicaciones Profesionales para Tu Negocio</h1>
-    <p class="subtitle">Descubre herramientas poderosas diseñadas para profesionales de servicios. Desde reservas hasta marketing, todo integrado en una plataforma completa.</p>
-  </section>
-
   <!-- Main Content -->
-  <div class="container">
-    <!-- Core Apps Section -->
-    <section class="category-section">
-      <h2 class="category-title gradient-text">🚀 Aplicaciones Principales</h2>
-      <p class="category-subtitle">Las herramientas esenciales que todo negocio necesita para operar profesionalmente</p>
-      
-      <div class="apps-grid">
-        <!-- Booking System -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-free">Incluido en todos los planes</div>
-          <div class="app-icon gradient-bg">📅</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Sistema de Reservas</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Sistema de reservas profesional con calendario inteligente, gestión de horarios y confirmaciones automáticas.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Calendario en tiempo real</li>
-            <li><span class="icon">✓</span> Confirmaciones automáticas</li>
-            <li><span class="icon">✓</span> Recordatorios por email/SMS</li>
-            <li><span class="icon">✓</span> Gestión de disponibilidad</li>
-            <li><span class="icon">✓</span> Reservas desde tu sitio web</li>
-          </ul>
-        </div>
-
-        <!-- Website Builder -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-free">Incluido en todos los planes</div>
-          <div class="app-icon gradient-bg">🌐</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Constructor de Sitios Web</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Crea tu sitio web profesional en minutos con plantillas diseñadas específicamente para tu sector.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Plantillas profesionales</li>
-            <li><span class="icon">✓</span> Responsive design</li>
-            <li><span class="icon">✓</span> SEO optimizado</li>
-            <li><span class="icon">✓</span> Dominio personalizado (Pro)</li>
-            <li><span class="icon">✓</span> Integración completa</li>
-          </ul>
-        </div>
-
-        <!-- Client Management -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-free">Incluido en todos los planes</div>
-          <div class="app-icon gradient-bg">👥</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Gestión de Clientes</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">CRM completo para gestionar tu base de clientes, historial de servicios y comunicación.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Base de datos de clientes</li>
-            <li><span class="icon">✓</span> Historial de servicios</li>
-            <li><span class="icon">✓</span> Notas y observaciones</li>
-            <li><span class="icon">✓</span> Comunicación centralizada</li>
-            <li><span class="icon">✓</span> Exportación de datos</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Business Growth Apps -->
-    <section class="category-section">
-      <h2 class="category-title gradient-text">📈 Aplicaciones de Crecimiento</h2>
-      <p class="category-subtitle">Herramientas avanzadas para hacer crecer tu negocio y aumentar tus ingresos</p>
-      
-      <div class="apps-grid">
-        <!-- Email Marketing -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-plus">Plus & Pro</div>
-          <div class="app-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white;">📧</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Email Marketing</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Editor drag-and-drop para crear campañas profesionales. Sistema de créditos flexible.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Editor visual drag-and-drop</li>
-            <li><span class="icon">✓</span> Plantillas profesionales</li>
-            <li><span class="icon">✓</span> Automatizaciones</li>
-            <li><span class="icon">✓</span> Analytics detallados</li>
-            <li><span class="icon">✓</span> Sistema de reputación</li>
-          </ul>
-        </div>
-
-        <!-- Loyalty Program -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-plus">Plus & Pro</div>
-          <div class="app-icon" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white;">🎁</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Programa de Fidelidad</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Aumenta las visitas recurrentes con un sistema de puntos y recompensas automático.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Acumulación automática de puntos</li>
-            <li><span class="icon">✓</span> Sistema de recompensas</li>
-            <li><span class="icon">✓</span> Referidos y bonificaciones</li>
-            <li><span class="icon">✓</span> Portal del cliente</li>
-            <li><span class="icon">✓</span> Analytics de fidelidad</li>
-          </ul>
-        </div>
-
-        <!-- WhatsApp Integration -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-plus">Plus: $5/mes | Pro: Incluido</div>
-          <div class="app-icon" style="background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); color: white;">💬</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">WhatsApp Business</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Automatiza confirmaciones, recordatorios y comunicación con tus clientes vía WhatsApp.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Confirmaciones automáticas</li>
-            <li><span class="icon">✓</span> Recordatorios personalizados</li>
-            <li><span class="icon">✓</span> Chat widget en tu sitio</li>
-            <li><span class="icon">✓</span> Plantillas de mensajes</li>
-            <li><span class="icon">✓</span> Estado de entrega</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- E-commerce Apps -->
-    <section class="category-section">
-      <h2 class="category-title gradient-text">🛒 Aplicaciones E-commerce</h2>
-      <p class="category-subtitle">Vende productos además de servicios con herramientas de e-commerce completas</p>
-      
-      <div class="apps-grid">
-        <!-- E-commerce -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-plus">Plus: $10/mes | Pro: Incluido</div>
-          <div class="app-icon" style="background: linear-gradient(135deg, #ec4899 0%, #be185d 100%); color: white;">🛍️</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Tienda Online</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Catálogo de productos completo con inventario, pedidos y sistema de pago integrado.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Catálogo de productos</li>
-            <li><span class="icon">✓</span> Control de inventario</li>
-            <li><span class="icon">✓</span> Gestión de pedidos</li>
-            <li><span class="icon">✓</span> Múltiples formas de pago</li>
-            <li><span class="icon">✓</span> Facturación automática</li>
-          </ul>
-        </div>
-
-        <!-- Digital Queue -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-plus">Plus & Pro</div>
-          <div class="app-icon" style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%); color: white;">🎫</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Fila Digital</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Gestiona clientes sin cita con sistema de tickets digitales y notificaciones en tiempo real.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Tickets digitales con QR</li>
-            <li><span class="icon">✓</span> Tiempo de espera estimado</li>
-            <li><span class="icon">✓</span> Notificaciones automáticas</li>
-            <li><span class="icon">✓</span> Panel de control en tiempo real</li>
-            <li><span class="icon">✓</span> Analytics de flujo</li>
-          </ul>
-        </div>
-
-        <!-- Options Pro -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-plus">Plus: $5/mes | Pro: Incluido</div>
-          <div class="app-icon" style="background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%); color: white;">⚙️</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Options Pro</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Personaliza servicios con categorías, variantes y atributos avanzados.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Categorías personalizadas</li>
-            <li><span class="icon">✓</span> Variantes de servicios</li>
-            <li><span class="icon">✓</span> Atributos configurables</li>
-            <li><span class="icon">✓</span> Precios dinámicos</li>
-            <li><span class="icon">✓</span> Combinaciones ilimitadas</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Analytics & Management -->
-    <section class="category-section">
-      <h2 class="category-title gradient-text">📊 Analytics y Gestión</h2>
-      <p class="category-subtitle">Herramientas para optimizar y entender mejor tu negocio</p>
-      
-      <div class="apps-grid">
-        <!-- Analytics -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-free">Incluido en todos los planes</div>
-          <div class="app-icon" style="background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); color: white;">📈</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Analytics Avanzados</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Métricas detalladas de tu negocio con reportes automáticos y insights accionables.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Dashboard en tiempo real</li>
-            <li><span class="icon">✓</span> Reportes automáticos</li>
-            <li><span class="icon">✓</span> Métricas de conversión</li>
-            <li><span class="icon">✓</span> Analytics de clientes</li>
-            <li><span class="icon">✓</span> Predicciones de ingresos</li>
-          </ul>
-        </div>
-
-        <!-- Staff Management -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-plus">Plus & Pro</div>
-          <div class="app-icon" style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white;">👨‍💼</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Gestión de Personal</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Administra tu equipo con roles, permisos y seguimiento de productividad.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Roles y permisos</li>
-            <li><span class="icon">✓</span> Asignación de servicios</li>
-            <li><span class="icon">✓</span> Horarios individuales</li>
-            <li><span class="icon">✓</span> Comisiones automáticas</li>
-            <li><span class="icon">✓</span> Reportes de productividad</li>
-          </ul>
-        </div>
-
-        <!-- Reviews Management -->
-        <div class="neumorphic app-card">
-          <div class="pricing-badge badge-free">Incluido en todos los planes</div>
-          <div class="app-icon" style="background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); color: white;">⭐</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Gestión de Reseñas</h3>
-          <p style="color: #666; margin-bottom: 1.5rem;">Recolecta y gestiona reseñas automáticamente para mejorar tu reputación online.</p>
-          <ul class="feature-list">
-            <li><span class="icon">✓</span> Solicitud automática de reseñas</li>
-            <li><span class="icon">✓</span> Panel de gestión</li>
-            <li><span class="icon">✓</span> Respuestas centralizadas</li>
-            <li><span class="icon">✓</span> Integración con Google</li>
-            <li><span class="icon">✓</span> Widgets para tu sitio</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Summary -->
-    <section class="category-section">
-      <div class="neumorphic" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%); max-width: 800px; margin: 0 auto; text-align: center;">
-        <h2 style="margin-bottom: 2rem; color: #1e40af;">💎 Resumen de Planes y Aplicaciones</h2>
+  <main>
+    
+    <section class="py-20 px-4">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Professional Apps for Your Business</h1>
+        <p class="text-xl text-gray-600 text-center mb-12">Discover professional apps to manage your business. Booking, e-commerce, loyalty programs, and more.</p>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-          <div>
-            <h3 style="margin-bottom: 1rem; color: #10b981;">Plan Free</h3>
-            <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem;">$0/mes</p>
-            <p style="color: #666; font-size: 0.875rem;">7 aplicaciones incluidas</p>
-          </div>
-          <div>
-            <h3 style="margin-bottom: 1rem; color: #3b82f6;">Plan Plus</h3>
-            <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem;">$18/mes</p>
-            <p style="color: #666; font-size: 0.875rem;">Todas las aplicaciones</p>
-          </div>
-          <div>
-            <h3 style="margin-bottom: 1rem; color: #f59e0b;">Plan Pro</h3>
-            <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem;">$48/mes</p>
-            <p style="color: #666; font-size: 0.875rem;">Todo incluido + Exclusivas</p>
-          </div>
+        <div class="card-neumorphic mb-8">
+          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
+          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>No booking fees</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>Your own professional website</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>WhatsApp integration</span>
+            </li>
+          </ul>
         </div>
         
-        <p style="font-size: 1.125rem; line-height: 1.8;">
-          <strong>Todas las aplicaciones se integran perfectamente</strong> en una sola plataforma. 
-          Sin necesidad de plugins externos o configuraciones complicadas.
-        </p>
+        <div class="text-center">
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
+            Crea Tu Sitio Ahora
+          </a>
+        </div>
       </div>
     </section>
-
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <h2>Comienza con Todas las Aplicaciones Gratis</h2>
-      <p style="margin-bottom: 2rem; font-size: 1.25rem;">Prueba todas las herramientas profesionales durante 14 días sin compromiso</p>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 600px; margin: 2rem auto;">
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Sin tarjeta de crédito</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Configuración en 5 minutos</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Soporte especializado</span>
-        </div>
-      </div>
-      
-      <a href="https://app.converso.pro/auth" class="btn-white" style="font-size: 1.125rem; padding: 1rem 2.5rem;">
-        Crear Cuenta Gratis Ahora
-      </a>
-    </div>
-  </div>
+  
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div>
-        <h4>Converso</h4>
-        <p style="font-size: 0.875rem; color: #999; margin-top: 0.5rem;">
-          Plataforma completa para profesionales de servicios. Crea tu negocio digital en minutos.
-        </p>
+  <footer class="bg-gray-900 text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Company -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Converso</h3>
+          <p class="text-gray-400 text-sm">
+            Crea tu sitio web profesional de reservas en minutos. Únete a miles de profesionales que confían en Converso.
+          </p>
+        </div>
+        
+        <!-- Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Producto</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro#features" class="hover:text-white transition">Características</a></li>
+            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Precios</a></li>
+            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Soporte</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/help" class="hover:text-white transition">Centro de Ayuda</a></li>
+            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Política de Privacidad</a></li>
+            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Términos de Servicio</a></li>
+          </ul>
+        </div>
       </div>
       
-      <div>
-        <h4>Producto</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/pricing">Precios</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/apps">Aplicaciones</a></li>
-        </ul>
+      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Converso. Todos los derechos reservados.</p>
       </div>
-      
-      <div>
-        <h4>Soporte</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/faq">Centro de Ayuda</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro">Contacto</a></li>
-        </ul>
-      </div>
-      
-      <div>
-        <h4>Legal</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/privacy">Política de Privacidad</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/terms">Términos de Servicio</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2025 Converso. Todos los derechos reservados.</p>
     </div>
   </footer>
 </body>

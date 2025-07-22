@@ -3,949 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema de Agendamento para Barbearia Online - Aumente 40% o Faturamento</title>
-  <meta name="description" content="Sistema de agendamento online para barbearia. Reduza 90% das faltas, aceite PIX automático, agende 24h. Grátis para começar.">
-  <meta property="og:title" content="Sistema de Agendamento para Barbearia Online - Converso">
-  <meta property="og:description" content="Transforme sua barbearia com agendamento online profissional. Reduza faltas, aumente faturamento, aceite pagamentos automáticos.">
+  <title>Sistema de Agendamento para Barbearia Online</title>
+  <meta name="description" content="Agendamento online para barbearia. Reduza faltas, organize horários e aumente faturamento.">
+  <meta property="og:title" content="Sistema de Agendamento para Barbearia Online">
+  <meta property="og:description" content="Agendamento online para barbearia. Reduza faltas, organize horários e aumente faturamento.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seo.converso.pro/pt-BR/agendamento-barbearia">
+  <meta property="og:url" content="https://seo.converso.pro/agendamento-barbearia">
   <meta property="og:image" content="https://converso.pro/converso-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sistema de Agendamento para Barbearia - Converso">
-  <meta name="twitter:description" content="Agendamento online profissional para barbearias. Reduza faltas, aumente faturamento.">
-  <link rel="canonical" href="https://seo.converso.pro/pt-BR/agendamento-barbearia">
+  <meta name="twitter:title" content="Sistema de Agendamento para Barbearia Online">
+  <meta name="twitter:description" content="Agendamento online para barbearia. Reduza faltas, organize horários e aumente faturamento.">
+  <link rel="canonical" href="https://seo.converso.pro/agendamento-barbearia">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="https://converso.pro/favicon.ico">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f0f2f5;
-      color: #333;
-      line-height: 1.6;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    .neumorphic {
-      background: #f0f2f5;
-      border-radius: 20px;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-    
-    .gradient-text {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    
-    .gradient-bg {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-    }
-    
-    /* Header Styles */
-    header {
-      background: #ffffff;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .header-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1rem 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      font-size: 1.75rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    
-    .nav-buttons {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-    
-    .btn {
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-    
-    .btn-primary {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      box-shadow: 8px 8px 20px #c8cacd, -8px -8px 20px #ffffff;
-    }
-    
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 10px 10px 25px #c8cacd, -10px -10px 25px #ffffff;
-    }
-    
-    .btn-secondary {
-      background: #f0f2f5;
-      color: #333;
-      box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
-    }
-    
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(135deg, #e0e7ff 0%, #cffafe 100%);
-      padding: 4rem 0;
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.2;
-    }
-    
-    .hero .subtitle {
-      font-size: 1.25rem;
-      color: #666;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    /* Content Sections */
-    section {
-      margin-bottom: 4rem;
-    }
-    
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      color: #1a1a1a;
-    }
-    
-    h3 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-      color: #2a2a2a;
-    }
-    
-    /* Card Grid */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    
-    .platform-card {
-      transition: transform 0.3s ease;
-    }
-    
-    .platform-card:hover {
-      transform: translateY(-5px);
-    }
-    
-    /* Comparison Table */
-    .table-wrapper {
-      overflow-x: auto;
-      margin: -1rem;
-      padding: 1rem;
-    }
-    
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 10px 10px 30px #c8cacd, -10px -10px 30px #ffffff;
-    }
-    
-    .comparison-table th {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      padding: 1rem;
-      text-align: left;
-      font-weight: 600;
-    }
-    
-    .comparison-table td {
-      padding: 1rem;
-      border-bottom: 1px solid #e5e7eb;
-    }
-    
-    .comparison-table tr:hover {
-      background: #f9fafb;
-    }
-    
-    /* Badges */
-    .badge {
-      display: inline-block;
-      padding: 0.25rem 0.75rem;
-      border-radius: 20px;
-      font-size: 0.875rem;
-      font-weight: 600;
-    }
-    
-    .badge-success {
-      background: #d1fae5;
-      color: #065f46;
-    }
-    
-    .badge-warning {
-      background: #fef3c7;
-      color: #92400e;
-    }
-    
-    .badge-danger {
-      background: #fee2e2;
-      color: #991b1b;
-    }
-    
-    /* Stats Grid */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-    
-    .stat-card {
-      text-align: center;
-      padding: 2rem;
-    }
-    
-    .stat-number {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #3b82f6;
-      margin-bottom: 0.5rem;
-    }
-    
-    /* CTA Section */
-    .cta-section {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      padding: 4rem 2rem;
-      border-radius: 30px;
-      text-align: center;
-      margin: 4rem 0;
-      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
-    }
-    
-    .cta-buttons {
-      display: flex;
-      gap: 1.5rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-    }
-    
-    .btn-white {
-      background: white;
-      color: #3b82f6;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.125rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-    }
-    
-    .btn-white:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-    
-    /* Footer */
-    footer {
-      background: #1a1a1a;
-      color: white;
-      padding: 3rem 0;
-      margin-top: 6rem;
-    }
-    
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    
-    .footer-content h4 {
-      margin-bottom: 1rem;
-      color: #ffffff;
-    }
-    
-    .footer-content a {
-      color: #9ca3af;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    .footer-content a:hover {
-      color: #ffffff;
-    }
-    
-    .footer-bottom {
-      text-align: center;
-      padding-top: 2rem;
-      margin-top: 2rem;
-      border-top: 1px solid #333;
-      color: #9ca3af;
-    }
-    
-    /* Alert Boxes */
-    .alert {
-      padding: 1.5rem;
-      border-radius: 15px;
-      margin: 1.5rem 0;
-      border-left: 4px solid;
-    }
-    
-    .alert-info {
-      background: #dbeafe;
-      border-color: #3b82f6;
-      color: #1e3a8a;
-    }
-    
-    .alert-warning {
-      background: #fef3c7;
-      border-color: #f59e0b;
-      color: #92400e;
-    }
-    
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      
-      h2 {
-        font-size: 1.75rem;
-      }
-      
-      .hide-mobile {
-        display: none;
-      }
-      
-      .header-container {
-        padding: 0.75rem 15px;
-      }
-      
-      .comparison-table {
-        font-size: 0.875rem;
-      }
-      
-      .comparison-table th,
-      .comparison-table td {
-        padding: 0.5rem;
-      }
-    }
-    
-    /* Special Elements */
-    .highlight-blue {
-      background: #dbeafe;
-      padding: 0.25rem 0.5rem;
-      border-radius: 5px;
-      color: #1e3a8a;
-    }
-    
-    .highlight-green {
-      background: #d1fae5;
-      padding: 0.25rem 0.5rem;
-      border-radius: 5px;
-      color: #065f46;
-    }
-    
-    .price-badge {
-      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-weight: bold;
-      display: inline-block;
-    }
-    
-    .score-badge {
-      background: #fbbf24;
-      color: #92400e;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-weight: bold;
-      display: inline-block;
-    }
-    
-    /* Timeline */
-    .timeline-item {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 2rem;
-      gap: 1rem;
-    }
-    
-    .timeline-number {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #3b82f6;
-      min-width: 50px;
-    }
-    
-    .timeline-content h3 {
-      margin-bottom: 0.5rem;
-    }
-    
-    .timeline-content p {
-      color: #666;
-    }
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
   <!-- Header -->
-  <header>
-    <div class="header-container">
-      <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
-      <div class="nav-buttons">
-        <a href="https://converso.pro" class="btn btn-secondary hide-mobile">Voltar ao Site</a>
-        <a href="https://app.converso.pro/auth" class="btn btn-primary">Entrar</a>
+  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="https://converso.pro" class="flex items-center group">
+          <span class="text-2xl font-bold">
+            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
+          </span>
+        </a>
+        
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Recursos</a>
+          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Preços</a>
+          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Depoimentos</a>
+        </nav>
+        
+        <!-- CTA Buttons -->
+        <div class="flex items-center space-x-4">
+          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
+            Entrar
+          </a>
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
+            Começar Grátis
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1 class="gradient-text">Sistema de Agendamento Online para Barbearia</h1>
-    <p class="subtitle">Reduza 90% das faltas, aceite PIX automático, agende 24h por dia. Aumente seu faturamento em até 40% com agendamento profissional.</p>
-  </section>
-
-  <!-- Main Container -->
-  <div class="container">
+  <!-- Main Content -->
+  <main>
     
-    <!-- Quick Answer Box -->
-    <section>
-      <div class="neumorphic" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);">
-        <h2 style="margin-bottom: 1.5rem;">Por Que Sua Barbearia Precisa de Agendamento Online?</h2>
-        <div style="font-size: 1.125rem; line-height: 2;">
-          <p><strong>🎯 Redução de Faltas:</strong> <span class="highlight-blue">90% menos no-show</span> - Cliente paga antecipado ou confirma pelo WhatsApp</p>
-          <p><strong>📊 Aumento de Faturamento:</strong> <span class="highlight-green">+40% em 3 meses</span> - Agenda sempre cheia, sem horários vagos</p>
-          <p><strong>⏰ Economia de Tempo:</strong> <span class="highlight-blue">5 horas/semana</span> - Sem atender telefone para marcar horário</p>
-          <p><strong>💰 Pagamento Automático:</strong> <span class="highlight-green">PIX e cartão</span> - Receba antes do cliente chegar</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section>
-      <h2>Números Que Comprovam o Sucesso</h2>
-      <div class="stats-grid">
-        <div class="neumorphic stat-card">
-          <div class="stat-number">87%</div>
-          <div>dos clientes preferem agendar online</div>
-        </div>
-        <div class="neumorphic stat-card">
-          <div class="stat-number">40%</div>
-          <div>aumento médio no faturamento</div>
-        </div>
-        <div class="neumorphic stat-card">
-          <div class="stat-number">90%</div>
-          <div>redução nas faltas</div>
-        </div>
-        <div class="neumorphic stat-card">
-          <div class="stat-number">24/7</div>
-          <div>agendamentos a qualquer hora</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Comparison Table -->
-    <section>
-      <h2>Agendamento Manual vs Sistema Online</h2>
-      <div class="neumorphic">
-        <div class="table-wrapper">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Aspecto</th>
-                <th>📱 Agendamento Manual</th>
-                <th>💻 Sistema Online</th>
-                <th>Impacto</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Taxa de Faltas</strong></td>
-                <td><span style="color: #ef4444;">30-40% não aparecem</span></td>
-                <td><span style="color: #10b981;">Menos de 5%</span></td>
-                <td><span class="badge badge-success">+35% presença</span></td>
-              </tr>
-              <tr style="background: #f9fafb;">
-                <td><strong>Tempo Gasto</strong></td>
-                <td><span style="color: #ef4444;">20 min/dia no telefone</span></td>
-                <td><span style="color: #10b981;">Zero - automático</span></td>
-                <td><span class="badge badge-success">+5h/semana</span></td>
-              </tr>
-              <tr>
-                <td><strong>Horário de Agendamento</strong></td>
-                <td><span style="color: #f59e0b;">Só horário comercial</span></td>
-                <td><span style="color: #10b981;">24 horas por dia</span></td>
-                <td><span class="badge badge-success">+65% alcance</span></td>
-              </tr>
-              <tr style="background: #f9fafb;">
-                <td><strong>Pagamento</strong></td>
-                <td><span style="color: #ef4444;">Só no atendimento</span></td>
-                <td><span style="color: #10b981;">PIX/Cartão antecipado</span></td>
-                <td><span class="badge badge-success">100% garantido</span></td>
-              </tr>
-              <tr>
-                <td><strong>Confirmação</strong></td>
-                <td><span style="color: #f59e0b;">Liga manualmente</span></td>
-                <td><span style="color: #10b981;">WhatsApp automático</span></td>
-                <td><span class="badge badge-success">95% confirmam</span></td>
-              </tr>
-              <tr style="background: #f9fafb;">
-                <td><strong>Gestão de Agenda</strong></td>
-                <td><span style="color: #ef4444;">Caderno/planilha</span></td>
-                <td><span style="color: #10b981;">Dashboard completo</span></td>
-                <td><span class="badge badge-success">100% organizado</span></td>
-              </tr>
-              <tr>
-                <td><strong>Fidelização</strong></td>
-                <td><span style="color: #ef4444;">Sem controle</span></td>
-                <td><span style="color: #10b981;">Programa automático</span></td>
-                <td><span class="badge badge-success">+45% retorno</span></td>
-              </tr>
-              <tr style="background: #f9fafb;">
-                <td><strong>Custo Mensal</strong></td>
-                <td><span style="color: #f59e0b;">Tempo perdido = $$$</span></td>
-                <td><span style="color: #10b981;">A partir de USD 0</span></td>
-                <td><span class="badge badge-success">ROI 500%+</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Deep Dive -->
-    <section>
-      <h2>Funcionalidades Essenciais para Barbearias</h2>
-      <div class="card-grid">
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">📱</div>
-            <h3 class="gradient-text">Agendamento pelo WhatsApp</h3>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.75rem 0;">✅ Cliente agenda direto no WhatsApp</li>
-            <li style="margin: 0.75rem 0;">✅ Confirmação automática</li>
-            <li style="margin: 0.75rem 0;">✅ Lembrete 24h antes</li>
-            <li style="margin: 0.75rem 0;">✅ Reagendamento fácil</li>
-            <li style="margin: 0.75rem 0;">✅ Lista de espera inteligente</li>
+    <section class="py-20 px-4">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Agendamento Online para Barbearia</h1>
+        <p class="text-xl text-gray-600 text-center mb-12">Agendamento online para barbearia. Reduza faltas, organize horários e aumente faturamento.</p>
+        
+        <div class="card-neumorphic mb-8">
+          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
+          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>No booking fees</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>Your own professional website</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              <span>WhatsApp integration</span>
+            </li>
           </ul>
         </div>
-
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">💰</div>
-            <h3 class="gradient-text">Pagamento Antecipado</h3>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.75rem 0;">✅ PIX automático QR Code</li>
-            <li style="margin: 0.75rem 0;">✅ Cartão crédito/débito</li>
-            <li style="margin: 0.75rem 0;">✅ Política de cancelamento</li>
-            <li style="margin: 0.75rem 0;">✅ Reembolso automático</li>
-            <li style="margin: 0.75rem 0;">✅ Comprovante por email</li>
-          </ul>
-        </div>
-
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">👥</div>
-            <h3 class="gradient-text">Multi-Profissionais</h3>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.75rem 0;">✅ Agenda individual por barbeiro</li>
-            <li style="margin: 0.75rem 0;">✅ Comissões automáticas</li>
-            <li style="margin: 0.75rem 0;">✅ Relatório por profissional</li>
-            <li style="margin: 0.75rem 0;">✅ Bloqueio de horários</li>
-            <li style="margin: 0.75rem 0;">✅ Escalas flexíveis</li>
-          </ul>
-        </div>
-
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🎯</div>
-            <h3 class="gradient-text">Fidelização Automática</h3>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.75rem 0;">✅ Programa de pontos</li>
-            <li style="margin: 0.75rem 0;">✅ Corte grátis a cada 10</li>
-            <li style="margin: 0.75rem 0;">✅ Desconto progressivo</li>
-            <li style="margin: 0.75rem 0;">✅ Aniversário especial</li>
-            <li style="margin: 0.75rem 0;">✅ Indicação premiada</li>
-          </ul>
-        </div>
-
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">📊</div>
-            <h3 class="gradient-text">Dashboard Completo</h3>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.75rem 0;">✅ Faturamento em tempo real</li>
-            <li style="margin: 0.75rem 0;">✅ Taxa de ocupação</li>
-            <li style="margin: 0.75rem 0;">✅ Ranking de serviços</li>
-            <li style="margin: 0.75rem 0;">✅ Histórico de clientes</li>
-            <li style="margin: 0.75rem 0;">✅ Previsão de receita</li>
-          </ul>
-        </div>
-
-        <div class="neumorphic platform-card">
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🌐</div>
-            <h3 class="gradient-text">Site Profissional</h3>
-          </div>
-          <ul style="list-style: none; padding: 0;">
-            <li style="margin: 0.75rem 0;">✅ Domínio personalizado</li>
-            <li style="margin: 0.75rem 0;">✅ Galeria de trabalhos</li>
-            <li style="margin: 0.75rem 0;">✅ Preços dos serviços</li>
-            <li style="margin: 0.75rem 0;">✅ Avaliações de clientes</li>
-            <li style="margin: 0.75rem 0;">✅ SEO otimizado Google</li>
-          </ul>
+        
+        <div class="text-center">
+          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
+            Criar Seu Site Agora
+          </a>
         </div>
       </div>
     </section>
-
-    <!-- Implementation Guide -->
-    <section>
-      <h2>Como Implementar em Sua Barbearia</h2>
-      <div style="max-width: 800px; margin: 0 auto;">
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <div class="timeline-item">
-            <span class="timeline-number gradient-text">1</span>
-            <div class="timeline-content">
-              <h3>Cadastro Rápido (5 minutos)</h3>
-              <p>Crie sua conta, escolha o nome da barbearia e configure os dados básicos. Sistema já fica disponível para uso.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <div class="timeline-item">
-            <span class="timeline-number gradient-text">2</span>
-            <div class="timeline-content">
-              <h3>Configure Serviços e Preços</h3>
-              <p>Adicione seus serviços (corte, barba, etc), defina duração e valores. Sistema calcula automaticamente os horários.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <div class="timeline-item">
-            <span class="timeline-number gradient-text">3</span>
-            <div class="timeline-content">
-              <h3>Defina Horários e Profissionais</h3>
-              <p>Configure dias e horários de funcionamento. Se tiver equipe, adicione cada barbeiro com sua agenda própria.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <div class="timeline-item">
-            <span class="timeline-number gradient-text">4</span>
-            <div class="timeline-content">
-              <h3>Ative Pagamentos (Opcional)</h3>
-              <p>Configure PIX com sua chave e/ou cartão de crédito. Cliente paga ao agendar, você recebe na hora.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <div class="timeline-item">
-            <span class="timeline-number gradient-text">5</span>
-            <div class="timeline-content">
-              <h3>Divulgue para Clientes</h3>
-              <p>Compartilhe o link no WhatsApp, Instagram e Google. Clientes começam a agendar imediatamente.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ROI Calculator -->
-    <section style="background: #f9fafb; padding: 3rem 0; margin: 0 -20px;">
-      <div style="padding: 0 20px;">
-        <h2>Calcule seu Retorno sobre Investimento</h2>
-        <div class="neumorphic" style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, #e0e7ff 0%, #cffafe 100%);">
-          <h3 style="text-align: center; margin-bottom: 2rem;">Barbearia com 2 Profissionais</h3>
-          
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-            <div style="text-align: center;">
-              <p style="font-size: 0.875rem; color: #666; margin-bottom: 0.5rem;">Atendimentos/dia atual</p>
-              <p style="font-size: 2rem; font-weight: bold; color: #ef4444;">16</p>
-            </div>
-            <div style="text-align: center;">
-              <p style="font-size: 0.875rem; color: #666; margin-bottom: 0.5rem;">Com agendamento online</p>
-              <p style="font-size: 2rem; font-weight: bold; color: #10b981;">24</p>
-            </div>
-            <div style="text-align: center;">
-              <p style="font-size: 0.875rem; color: #666; margin-bottom: 0.5rem;">Aumento</p>
-              <p style="font-size: 2rem; font-weight: bold;" class="gradient-text">+50%</p>
-            </div>
-          </div>
-          
-          <div style="background: white; padding: 1.5rem; border-radius: 15px; margin-top: 1.5rem;">
-            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
-              <span>Ticket médio:</span>
-              <strong>R$ 50</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
-              <span>Faturamento extra/mês:</span>
-              <strong style="color: #10b981;">+ R$ 4.800</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
-              <span>Investimento sistema:</span>
-              <strong>R$ 88/mês</strong>
-            </div>
-            <div style="border-top: 2px solid #e5e7eb; padding-top: 1rem; margin-top: 1rem;">
-              <div style="display: flex; justify-content: space-between;">
-                <span style="font-size: 1.125rem;">ROI (Retorno):</span>
-                <strong style="font-size: 1.5rem; color: #10b981;">5.454%</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Success Stories -->
-    <section>
-      <h2>Barbearias Que Transformaram Seus Negócios</h2>
-      <div class="card-grid">
-        <div class="neumorphic">
-          <div style="margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-          <p style="font-style: italic; margin-bottom: 1.5rem; font-size: 1.125rem;">
-            "Antes eu perdia 3-4 clientes por dia com faltas. Hoje, com o pagamento antecipado, praticamente zeramos isso. Faturamento aumentou 35% em 2 meses."
-          </p>
-          <div>
-            <p style="font-weight: 600;">Carlos Mendes</p>
-            <p style="font-size: 0.875rem; color: #666;">Barbearia Premium - São Paulo</p>
-            <p style="font-size: 0.875rem; color: #10b981; font-weight: 600; margin-top: 0.5rem;">+35% faturamento, -95% faltas</p>
-          </div>
-        </div>
-
-        <div class="neumorphic">
-          <div style="margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-          <p style="font-style: italic; margin-bottom: 1.5rem; font-size: 1.125rem;">
-            "O melhor é que agora consigo ver toda minha agenda no celular. Clientes adoram agendar pelo WhatsApp, principalmente os mais jovens."
-          </p>
-          <div>
-            <p style="font-weight: 600;">Rafael Silva</p>
-            <p style="font-size: 0.875rem; color: #666;">Barber Shop Style - Rio de Janeiro</p>
-            <p style="font-size: 0.875rem; color: #10b981; font-weight: 600; margin-top: 0.5rem;">300+ agendamentos/mês online</p>
-          </div>
-        </div>
-
-        <div class="neumorphic">
-          <div style="margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-          <p style="font-style: italic; margin-bottom: 1.5rem; font-size: 1.125rem;">
-            "Trabalho sozinho e o sistema me salvou. Não preciso mais parar o corte para atender telefone. Agenda 100% organizada."
-          </p>
-          <div>
-            <p style="font-weight: 600;">João Pedro</p>
-            <p style="font-size: 0.875rem; color: #666;">JP Barbearia - Belo Horizonte</p>
-            <p style="font-size: 0.875rem; color: #10b981; font-weight: 600; margin-top: 0.5rem;">5 horas/semana economizadas</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Common Mistakes -->
-    <section>
-      <h2>7 Erros Fatais ao Escolher um Sistema</h2>
-      <div class="neumorphic" style="background: #fee2e2;">
-        <div style="display: grid; gap: 1.5rem;">
-          <div style="display: flex; align-items: start; gap: 1rem;">
-            <span style="font-size: 1.5rem;">❌</span>
-            <div>
-              <strong>Sistema complicado demais:</strong> Se você demora mais de 10 minutos para configurar, seus clientes não vão usar.
-            </div>
-          </div>
-          <div style="display: flex; align-items: start; gap: 1rem;">
-            <span style="font-size: 1.5rem;">❌</span>
-            <div>
-              <strong>Sem integração WhatsApp:</strong> 92% dos brasileiros usam WhatsApp diariamente. Sem isso, perde clientes.
-            </div>
-          </div>
-          <div style="display: flex; align-items: start; gap: 1rem;">
-            <span style="font-size: 1.5rem;">❌</span>
-            <div>
-              <strong>Pagamento só na hora:</strong> Sem pagamento antecipado, as faltas continuam altas.
-            </div>
-          </div>
-          <div style="display: flex; align-items: start; gap: 1rem;">
-            <span style="font-size: 1.5rem;">❌</span>
-            <div>
-              <strong>Sistema em inglês:</strong> Seus clientes precisam entender tudo em português.
-            </div>
-          </div>
-          <div style="display: flex; align-items: start; gap: 1rem;">
-            <span style="font-size: 1.5rem;">❌</span>
-            <div>
-              <strong>Sem versão mobile:</strong> 85% dos agendamentos são feitos pelo celular.
-            </div>
-          </div>
-          <div style="display: flex; align-items: start; gap: 1rem;">
-            <span style="font-size: 1.5rem;">❌</span>
-            <div>
-              <strong>Taxa por agendamento:</strong> Quanto mais cliente, mais você paga? Fuja disso.
-            </div>
-          </div>
-          <div style="display: flex; align-items: start; gap: 1rem;">
-            <span style="font-size: 1.5rem;">❌</span>
-            <div>
-              <strong>Sem suporte em português:</strong> Quando precisar de ajuda, vai falar com quem?
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section>
-      <h2>Perguntas Frequentes</h2>
-      <div style="max-width: 800px; margin: 0 auto;">
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">O cliente precisa baixar app?</h3>
-          <p style="color: #666;">Não! Tudo funciona pelo navegador do celular ou WhatsApp. Cliente agenda em 30 segundos sem instalar nada.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Como funciona o pagamento antecipado?</h3>
-          <p style="color: #666;">Cliente escolhe pagar por PIX (QR Code) ou cartão. Dinheiro cai na sua conta na hora. Se cancelar, você define a política de reembolso.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Posso usar com vários barbeiros?</h3>
-          <p style="color: #666;">Sim! Cada profissional tem sua agenda individual. Cliente escolhe com quem quer cortar. Sistema calcula comissões automaticamente.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">E se o cliente quiser remarcar?</h3>
-          <p style="color: #666;">Cliente cancela pelo próprio link e reagenda. Você define até quantas horas antes pode cancelar sem perder o valor.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Funciona para barbearia pequena?</h3>
-          <p style="color: #666;">Perfeito! Mesmo trabalhando sozinho, você economiza tempo, organiza melhor a agenda e garante o pagamento. Plano grátis disponível.</p>
-        </div>
-        
-        <div class="neumorphic" style="margin-bottom: 1.5rem;">
-          <h3 style="margin-bottom: 0.5rem;">Quanto tempo leva para configurar?</h3>
-          <p style="color: #666;">Menos de 10 minutos! Adicione seus serviços, horários e pronto. Sistema já cria seu site e link de agendamento.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tips Section -->
-    <div class="alert alert-info" style="margin-top: 3rem;">
-      <strong>💡 Dica Pro:</strong> Comece oferecendo 10% de desconto para quem agendar online nas primeiras 2 semanas. Isso acelera a adoção e mostra as vantagens do sistema para seus clientes.
-    </div>
-
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <h2 style="margin-bottom: 1.5rem;">Transforme Sua Barbearia Hoje Mesmo</h2>
-      <p style="margin-bottom: 2rem; font-size: 1.125rem;">Junte-se a milhares de barbearias que já aumentaram o faturamento com agendamento online profissional.</p>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; max-width: 600px; margin: 2rem auto;">
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Teste grátis por 7 dias</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Configuração em 10 minutos</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Sem taxa de setup</span>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 1.5rem; margin-right: 0.5rem;">✓</span>
-          <span>Cancele quando quiser</span>
-        </div>
-      </div>
-      
-      <div class="cta-buttons">
-        <a href="https://app.converso.pro/auth" class="btn-white">
-          Criar Conta Grátis
-        </a>
-      </div>
-    </div>
-
-  </div>
+  
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div>
-        <h4>Converso</h4>
-        <p style="font-size: 0.875rem; color: #999; margin-top: 0.5rem;">
-          Crie seu site profissional de agendamentos em minutos. Junte-se a milhares de profissionais que confiam no Converso.
-        </p>
+  <footer class="bg-gray-900 text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Company -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Converso</h3>
+          <p class="text-gray-400 text-sm">
+            Crie seu site profissional de agendamentos em minutos. Junte-se a milhares de profissionais que confiam no Converso.
+          </p>
+        </div>
+        
+        <!-- Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Produto</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro#features" class="hover:text-white transition">Recursos</a></li>
+            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Preços</a></li>
+            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Suporte</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/help" class="hover:text-white transition">Central de Ajuda</a></li>
+            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contato</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Política de Privacidade</a></li>
+            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Termos de Serviço</a></li>
+          </ul>
+        </div>
       </div>
       
-      <div>
-        <h4>Produto</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/pricing">Preços</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/apps">Apps</a></li>
-        </ul>
+      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Converso. Todos os direitos reservados.</p>
       </div>
-      
-      <div>
-        <h4>Suporte</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/faq">Central de Ajuda</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro">Contato</a></li>
-        </ul>
-      </div>
-      
-      <div>
-        <h4>Legal</h4>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/privacy">Política de Privacidade</a></li>
-          <li style="margin: 0.5rem 0;"><a href="https://converso.pro/terms">Termos de Serviço</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2025 Converso. Todos os direitos reservados.</p>
     </div>
   </footer>
 </body>
