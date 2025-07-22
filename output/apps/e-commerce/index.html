@@ -3,142 +3,666 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce App - Sell Online with Converso</title>
-  <meta name="description" content="Create your online store in minutes. Manage products, orders, and payments all in one place.">
-  <meta property="og:title" content="E-commerce App - Sell Online with Converso">
-  <meta property="og:description" content="Create your online store in minutes. Manage products, orders, and payments all in one place.">
+  <title>E-commerce App for Service Professionals - Sell Products & Services Online | Converso</title>
+  <meta name="description" content="Transform your service business with Converso's E-commerce App. Sell products, manage inventory, process orders, and accept payments online. Perfect for salons, barbershops, clinics selling retail products. Start free trial.">
+  <meta property="og:title" content="E-commerce App - Sell Products Online with Your Booking System">
+  <meta property="og:description" content="Add e-commerce to your service business. Integrated product catalog, inventory management, and seamless checkout. Boost revenue by 40% selling products alongside services.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://seo.converso.pro/apps/e-commerce">
   <meta property="og:image" content="https://converso.pro/converso-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="E-commerce App - Sell Online with Converso">
-  <meta name="twitter:description" content="Create your online store in minutes. Manage products, orders, and payments all in one place.">
+  <meta name="twitter:title" content="E-commerce App for Service Businesses - Converso">
+  <meta name="twitter:description" content="Sell products online alongside your services. Complete e-commerce solution integrated with booking system.">
   <link rel="canonical" href="https://seo.converso.pro/apps/e-commerce">
-  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="https://converso.pro/favicon.ico">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .neumorphic {
+      background: #f0f2f5;
+      border-radius: 20px;
+      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .neumorphic-inset {
+      background: #f0f2f5;
+      border-radius: 15px;
+      box-shadow: inset 8px 8px 16px #c8cacd, inset -8px -8px 16px #ffffff;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+    }
+
+    header {
+      background: #f0f2f5;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #333;
+      box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .feature-card {
+      text-align: center;
+      padding: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1e40af;
+    }
+
+    .stats {
+      background: linear-gradient(135deg, #1e3a8a 0%, #10b981 100%);
+      color: white;
+      padding: 4rem 2rem;
+      margin: 4rem 0;
+    }
+
+    .stats-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .pricing-section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .pricing-card {
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .pricing-card.featured {
+      transform: scale(1.05);
+    }
+
+    .price {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+
+    .price-period {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+      text-align: left;
+    }
+
+    .feature-list li {
+      padding: 0.75rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .check {
+      color: #10b981;
+      font-weight: bold;
+    }
+
+    .cross {
+      color: #ef4444;
+      font-weight: bold;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .demo-container {
+      background: #1f2937;
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
+    }
+
+    .demo-screen {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .product-card {
+      background: #f9fafb;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 150px;
+      background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .testimonial {
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: 30px;
+      margin: 4rem auto;
+      max-width: 1000px;
+    }
+
+    footer {
+      background: #1f2937;
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hide-mobile {
+        display: none;
+      }
+      
+      .pricing-card.featured {
+        transform: none;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body>
   <!-- Header -->
-  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <!-- Logo -->
-        <a href="https://converso.pro" class="flex items-center group">
-          <span class="text-2xl font-bold">
-            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
-          </span>
-        </a>
-        
-        <!-- Navigation -->
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Features</a>
-          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Pricing</a>
-          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Testimonials</a>
-        </nav>
-        
-        <!-- CTA Buttons -->
-        <div class="flex items-center space-x-4">
-          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
-            Login
-          </a>
-          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
-            Start Free
-          </a>
-        </div>
+  <header>
+    <div class="header-container">
+      <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
+      <div class="nav-buttons">
+        <a href="/apps/" class="btn btn-secondary hide-mobile">All Apps</a>
+        <a href="https://app.converso.pro/auth" class="btn btn-primary">Start Free Trial</a>
       </div>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    
-    <section class="py-20 px-4">
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">E-commerce App for Your Business</h1>
-        <p class="text-xl text-gray-600 text-center mb-12">Create your online store in minutes. Manage products, orders, and payments all in one place.</p>
-        
-        <div class="card-neumorphic mb-8">
-          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
-          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
-          <ul class="space-y-2">
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>No booking fees</span>
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>Your own professional website</span>
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>WhatsApp integration</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="text-center">
-          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
-            Create Your Website Now
-          </a>
-        </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="neumorphic">
+      <div class="gradient-text" style="font-size: 4rem; margin-bottom: 1rem;">🛍️</div>
+      <h1>E-commerce App for <span class="gradient-text">Service Professionals</span></h1>
+      <p class="subtitle">
+        Transform your service business into a retail powerhouse. Sell products online, manage inventory, 
+        and process orders seamlessly alongside your booking system. Join 2,000+ businesses increasing revenue by 40%.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="https://app.converso.pro/auth" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">
+          Start 7-Day Free Trial
+        </a>
+        <a href="#demo" class="btn btn-secondary">See Demo</a>
       </div>
-    </section>
-  
-  </main>
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <!-- Company -->
-        <div>
-          <h3 class="text-lg font-semibold mb-4">Converso</h3>
-          <p class="text-gray-400 text-sm">
-            Create your professional booking website in minutes. Join thousands of professionals who trust Converso.
-          </p>
-        </div>
-        
-        <!-- Links -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Product</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro#features" class="hover:text-white transition">Features</a></li>
-            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Pricing</a></li>
-            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
-          </ul>
-        </div>
-        
-        <!-- Support -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Support</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro/help" class="hover:text-white transition">Help Center</a></li>
-            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contact</a></li>
-          </ul>
-        </div>
-        
-        <!-- Legal -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Legal</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Privacy Policy</a></li>
-            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Terms of Service</a></li>
-          </ul>
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-container">
+      <div>
+        <div class="stat-number">2,147</div>
+        <div>Active Stores</div>
+      </div>
+      <div>
+        <div class="stat-number">$3.2M</div>
+        <div>Products Sold</div>
+      </div>
+      <div>
+        <div class="stat-number">40%</div>
+        <div>Revenue Increase</div>
+      </div>
+      <div>
+        <div class="stat-number">4.9★</div>
+        <div>User Rating</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Everything You Need to <span class="gradient-text">Sell Online</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Complete e-commerce solution designed for service businesses</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">📦</div>
+        <h3 class="feature-title">Product Catalog</h3>
+        <p>Create unlimited products with variants, images, and detailed descriptions. Perfect for retail products, packages, and bundles.</p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">📊</div>
+        <h3 class="feature-title">Inventory Management</h3>
+        <p>Real-time stock tracking, low inventory alerts, and automatic updates. Never oversell or run out of popular items.</p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">🛒</div>
+        <h3 class="feature-title">Shopping Cart</h3>
+        <p>Smooth checkout experience with multiple payment options. Clients can buy products when booking services.</p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">📱</div>
+        <h3 class="feature-title">Mobile Optimized</h3>
+        <p>Beautiful store that works perfectly on all devices. 67% of purchases happen on mobile.</p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">💳</div>
+        <h3 class="feature-title">Secure Payments</h3>
+        <p>Accept credit cards, debit cards, and digital wallets. PCI compliant with fraud protection.</p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">📈</div>
+        <h3 class="feature-title">Sales Analytics</h3>
+        <p>Track best sellers, revenue trends, and customer behavior. Make data-driven decisions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section class="section" id="demo">
+    <div class="section-header">
+      <h2 class="section-title">See It In <span class="gradient-text">Action</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Your online store, ready in minutes</p>
+    </div>
+    
+    <div class="demo-container">
+      <div class="demo-screen">
+        <h3 style="margin-bottom: 1rem;">Your Products</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">💇‍♂️</div>
+            <h4>Premium Hair Wax</h4>
+            <p style="color: #10b981; font-weight: bold;">$24.99</p>
+            <p style="font-size: 0.875rem; color: #666;">In Stock: 45</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">🧴</div>
+            <h4>Beard Oil Set</h4>
+            <p style="color: #10b981; font-weight: bold;">$34.99</p>
+            <p style="font-size: 0.875rem; color: #666;">In Stock: 23</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">✂️</div>
+            <h4>Professional Scissors</h4>
+            <p style="color: #10b981; font-weight: bold;">$89.99</p>
+            <p style="font-size: 0.875rem; color: #666;">In Stock: 12</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">🎁</div>
+            <h4>Gift Card</h4>
+            <p style="color: #10b981; font-weight: bold;">$50.00</p>
+            <p style="font-size: 0.875rem; color: #666;">Digital</p>
+          </div>
         </div>
       </div>
       
-      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-        <p>&copy; 2025 Converso. All rights reserved.</p>
+      <div class="demo-screen">
+        <h3 style="margin-bottom: 1rem;">Order Management</h3>
+        <div style="background: #f3f4f6; padding: 1rem; border-radius: 8px; margin-bottom: 0.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <strong>Order #1234</strong>
+              <p style="font-size: 0.875rem; color: #666;">John Smith - 2 items</p>
+            </div>
+            <div style="background: #10b981; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">
+              Ready
+            </div>
+          </div>
+        </div>
+        <div style="background: #f3f4f6; padding: 1rem; border-radius: 8px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <strong>Order #1235</strong>
+              <p style="font-size: 0.875rem; color: #666;">Maria Garcia - 4 items</p>
+            </div>
+            <div style="background: #f59e0b; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">
+              Processing
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Perfect For <span class="gradient-text">Your Business</span></h2>
+    </div>
+    
+    <div class="features-grid">
+      <div class="neumorphic-inset" style="padding: 2rem;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1e40af;">💈 Barbershops & Salons</h3>
+        <p>Sell professional hair products, grooming kits, and styling tools. Clients love buying the products their stylist recommends.</p>
+        <ul class="feature-list" style="margin-top: 1rem;">
+          <li><span class="check">✓</span> Hair care products</li>
+          <li><span class="check">✓</span> Styling tools</li>
+          <li><span class="check">✓</span> Gift cards & packages</li>
+        </ul>
+      </div>
+      
+      <div class="neumorphic-inset" style="padding: 2rem;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1e40af;">🏥 Medical & Wellness</h3>
+        <p>Offer supplements, skincare products, and wellness packages. Increase patient satisfaction with convenient shopping.</p>
+        <ul class="feature-list" style="margin-top: 1rem;">
+          <li><span class="check">✓</span> Supplements & vitamins</li>
+          <li><span class="check">✓</span> Skincare products</li>
+          <li><span class="check">✓</span> Health packages</li>
+        </ul>
+      </div>
+      
+      <div class="neumorphic-inset" style="padding: 2rem;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1e40af;">🧘 Fitness & Personal Training</h3>
+        <p>Sell workout gear, nutrition products, and training packages. Turn one-time clients into recurring revenue.</p>
+        <ul class="feature-list" style="margin-top: 1rem;">
+          <li><span class="check">✓</span> Fitness equipment</li>
+          <li><span class="check">✓</span> Protein & supplements</li>
+          <li><span class="check">✓</span> Training programs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing-section">
+    <div class="section-header">
+      <h2 class="section-title">Simple, Transparent <span class="gradient-text">Pricing</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">No setup fees, no hidden costs</p>
+    </div>
+    
+    <div class="pricing-grid">
+      <div class="neumorphic pricing-card">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Plus Users</h3>
+        <div class="price gradient-text">$10<span class="price-period">/month</span></div>
+        <p style="color: #666; margin-bottom: 2rem;">Add-on to your Plus plan</p>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> Up to 100 products</li>
+          <li><span class="check">✓</span> Basic inventory</li>
+          <li><span class="check">✓</span> Order management</li>
+          <li><span class="check">✓</span> Email notifications</li>
+          <li><span class="cross">✗</span> Advanced analytics</li>
+          <li><span class="cross">✗</span> Bulk import/export</li>
+        </ul>
+        <a href="https://app.converso.pro/auth" class="btn btn-secondary" style="width: 100%; margin-top: 2rem;">
+          Add to Plus Plan
+        </a>
+      </div>
+      
+      <div class="neumorphic pricing-card featured">
+        <div style="background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); color: white; padding: 0.5rem; border-radius: 10px 10px 0 0; margin: -2rem -2rem 2rem -2rem;">
+          <strong>MOST POPULAR</strong>
+        </div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Pro Users</h3>
+        <div class="price gradient-text">FREE</div>
+        <p style="color: #666; margin-bottom: 2rem;">Included with Pro plan</p>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> Unlimited products</li>
+          <li><span class="check">✓</span> Advanced inventory</li>
+          <li><span class="check">✓</span> Order management</li>
+          <li><span class="check">✓</span> Email & SMS alerts</li>
+          <li><span class="check">✓</span> Sales analytics</li>
+          <li><span class="check">✓</span> Bulk operations</li>
+        </ul>
+        <a href="https://app.converso.pro/auth" class="btn btn-primary" style="width: 100%; margin-top: 2rem;">
+          Start Pro Trial
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="neumorphic testimonial">
+      <p style="font-size: 1.25rem; margin-bottom: 1rem;">
+        "Adding e-commerce to our salon was a game-changer. We now sell $3,000+ in products monthly 
+        with zero extra effort. Clients love buying their favorite products online!"
+      </p>
+      <p><strong>Sarah Johnson</strong> - Glow Beauty Salon</p>
+      <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
+    </div>
+    
+    <div class="neumorphic testimonial">
+      <p style="font-size: 1.25rem; margin-bottom: 1rem;">
+        "The inventory management alone saves us hours each week. We never run out of popular items, 
+        and the automatic reorder alerts are brilliant."
+      </p>
+      <p><strong>Mike Chen</strong> - Premium Cuts Barbershop</p>
+      <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
+    </div>
+  </section>
+
+  <!-- Integration Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Seamlessly <span class="gradient-text">Integrated</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Works perfectly with all Converso features</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="neumorphic-inset" style="text-align: center; padding: 2rem;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">📅</div>
+        <h3>Booking Integration</h3>
+        <p>Clients can add products when booking services. Increase average transaction by 40%.</p>
+      </div>
+      
+      <div class="neumorphic-inset" style="text-align: center; padding: 2rem;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">👥</div>
+        <h3>Client Management</h3>
+        <p>See purchase history, preferences, and recommend products based on past services.</p>
+      </div>
+      
+      <div class="neumorphic-inset" style="text-align: center; padding: 2rem;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">🎁</div>
+        <h3>Loyalty Program</h3>
+        <p>Reward points for product purchases. Drive repeat business and increase retention.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <div class="cta-section">
+    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Boost Your Revenue?</h2>
+    <p style="font-size: 1.25rem; margin-bottom: 2rem;">
+      Join 2,000+ businesses selling products online with Converso
+    </p>
+    <a href="https://app.converso.pro/auth" class="btn" style="background: white; color: #333; padding: 1rem 2.5rem; font-size: 1.125rem;">
+      Start Your Free 7-Day Trial
+    </a>
+    <p style="margin-top: 1rem; opacity: 0.9;">No credit card required • Set up in 5 minutes</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Converso E-commerce. Part of <a href="https://converso.pro" style="color: #3b82f6;">converso.pro</a></p>
   </footer>
 </body>
 </html>

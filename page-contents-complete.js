@@ -4394,6 +4394,1298 @@ const PAGE_CONTENTS = {
         }
       ]
     }
+  },
+
+  'melhor-programa-gratuito-cadastro-clientes': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Qual o Melhor Programa Gratuito para Cadastro de Clientes?',
+          subtitle: 'Converso oferece cadastro profissional de clientes com recursos avançados. Diga adeus ao Excel e papel - tenha controle total dos seus clientes com sistema que cresce com seu negócio.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Resposta Rápida',
+          content: 'O Converso é o melhor programa para cadastro de clientes porque oferece ficha completa, histórico de atendimentos, preferências personalizadas e sincronização automática. Plano gratuito com 10 clientes + ferramentas profissionais que Excel e Google Sheets não conseguem oferecer.'
+        },
+        {
+          type: 'comparison',
+          title: 'Por que Abandonar Excel e Papel?',
+          subtitle: 'Veja os problemas que você elimina com um sistema profissional',
+          table: {
+            headers: ['Problema', 'Excel/Papel', 'Google Sheets', 'Converso'],
+            rows: [
+              ['Perda de dados', '❌ Frequente', '⚠️ Pode acontecer', '✅ Backup automático'],
+              ['Acesso simultâneo', '❌ Impossível', '⚠️ Limitado', '✅ Ilimitado'],
+              ['Histórico de atendimentos', '❌ Manual', '❌ Complicado', '✅ Automático'],
+              ['Busca avançada', '❌ Impossível', '⚠️ Básica', '✅ Instantânea'],
+              ['Lembretes automáticos', '❌ Não tem', '❌ Não tem', '✅ WhatsApp/SMS'],
+              ['Sincronização mobile', '❌ Não tem', '⚠️ Limitada', '✅ Total'],
+              ['Relatórios profissionais', '❌ Manual', '⚠️ Básico', '✅ Avançado'],
+              ['Integração com agenda', '❌ Impossível', '❌ Impossível', '✅ Total'],
+              ['LGPD/Privacidade', '❌ Sem controle', '⚠️ Limitado', '✅ Completo'],
+              ['Custo mensal', '✅ Grátis', '✅ Grátis', '✅ Grátis até 10 clientes']
+            ]
+          }
+        },
+        {
+          type: 'features',
+          title: 'Recursos Profissionais do Cadastro Converso',
+          items: [
+            {
+              icon: '👤',
+              title: 'Ficha Completa do Cliente',
+              description: 'Nome, contatos, endereço, preferências, alergias, observações especiais. Tudo organizado e sempre acessível no celular ou computador.'
+            },
+            {
+              icon: '📋',
+              title: 'Histórico Detalhado',
+              description: 'Registre cada atendimento, produtos utilizados, tempo de serviço e satisfação. Saiba exatamente o que cada cliente gosta.'
+            },
+            {
+              icon: '🔍',
+              title: 'Busca Inteligente',
+              description: 'Encontre qualquer cliente em segundos por nome, telefone, serviço favorito ou data do último atendimento. Acabou a procura no caderno!'
+            },
+            {
+              icon: '💬',
+              title: 'Comunicação Automática',
+              description: 'Envie aniversários, promoções e lembretes via WhatsApp. Mantenha contato sem esforço e aumente a fidelização.'
+            },
+            {
+              icon: '📊',
+              title: 'Relatórios Estratégicos',
+              description: 'Veja quais clientes geram mais receita, frequência de retorno, serviços preferidos. Tome decisões baseadas em dados reais.'
+            },
+            {
+              icon: '🔒',
+              title: 'Segurança e Privacidade',
+              description: 'Dados criptografados, backup automático e conformidade com LGPD. Seus clientes confiam, você tem tranquilidade.'
+            }
+          ]
+        },
+        {
+          type: 'case-study',
+          title: 'Transformação Real: Excel → Sistema Profissional',
+          subtitle: 'Studio Bella migrou 800 clientes e aumentou retenção em 60%',
+          content: 'O Studio Bella, em São Paulo, controlava clientes em planilhas Excel há 5 anos. Após migrar para o Converso:',
+          results: [
+            '60% de aumento na retenção de clientes',
+            '45% de redução no tempo de atendimento',
+            '200% mais agendamentos recorrentes',
+            'Zero perda de dados (antes perdiam 2-3x/ano)',
+            'Economia de 8 horas/semana na gestão'
+          ],
+          quote: {
+            text: 'Não consigo mais imaginar trabalhar sem o histórico completo dos clientes. Agora sei exatamente o que cada uma gosta e posso personalizar o atendimento.',
+            author: 'Marina Costa',
+            role: 'Proprietária do Studio Bella'
+          }
+        },
+        {
+          type: 'features-deep-dive',
+          title: 'Como Funciona o Cadastro Profissional',
+          sections: [
+            {
+              title: '📝 Cadastro Completo em 1 Minuto',
+              content: 'Sistema intuitivo que torna o cadastro rápido e completo.',
+              features: [
+                'Auto-completar dados por telefone',
+                'Foto do cliente opcional',
+                'Categorização automática (VIP, recorrente, etc)',
+                'Campos personalizáveis por negócio',
+                'Importação em massa de Excel/CSV',
+                'Validação automática de dados'
+              ]
+            },
+            {
+              title: '🎯 Segmentação Inteligente',
+              content: 'Organize clientes de forma estratégica para marketing direcionado.',
+              features: [
+                'Tags personalizadas (cabelo cacheado, pele sensível)',
+                'Agrupamento por valor de ticket',
+                'Classificação por frequência',
+                'Separação por preferências',
+                'Filtros de última visita',
+                'Lista de aniversariantes'
+              ]
+            },
+            {
+              title: '📱 Acesso Total Mobile',
+              content: 'Todos os dados sempre no seu bolso, online ou offline.',
+              features: [
+                'App otimizado para celular',
+                'Funciona sem internet',
+                'Sincronização automática',
+                'Consulta durante atendimento',
+                'Edição rápida de informações',
+                'Compartilhamento com equipe'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'testimonials',
+          title: 'Profissionais que Abandonaram Excel e Papel',
+          items: [
+            {
+              name: 'Carla Mendes',
+              business: 'Salão Glamour - Belo Horizonte, MG',
+              text: 'Antes perdia clientes porque esquecia suas preferências. Agora tenho o histórico completo na palma da mão.',
+              rating: 5,
+              results: '+60% retenção'
+            },
+            {
+              name: 'Roberto Silva',
+              business: 'Barbearia Moderna - Rio de Janeiro, RJ',
+              text: 'Migrei 500 clientes do Excel em 1 tarde. Sistema busca qualquer cliente em segundos.',
+              rating: 5,
+              results: 'Migração em 4 horas'
+            },
+            {
+              name: 'Ana Paula',
+              business: 'Estética Avançada - São Paulo, SP',
+              text: 'Não perco mais dados por pane no computador. Backup automático me dá tranquilidade total.',
+              rating: 5,
+              results: 'Zero perda de dados'
+            }
+          ]
+        },
+        {
+          type: 'pricing',
+          title: 'Planos que Crescem com Seu Negócio',
+          subtitle: 'Comece grátis e evolua conforme precisa',
+          plans: [
+            {
+              name: 'Gratuito',
+              price: 'R$ 0/mês',
+              description: 'Para começar sem compromisso',
+              features: [
+                'Até 10 clientes',
+                'Cadastro completo',
+                'Histórico básico',
+                'Busca simples',
+                'App mobile',
+                'Backup automático'
+              ],
+              highlight: false
+            },
+            {
+              name: 'Plus',
+              price: 'R$ 88/mês',
+              description: 'Para negócios em crescimento',
+              features: [
+                'Até 500 clientes',
+                'Comunicação por WhatsApp',
+                'Relatórios avançados',
+                'Segmentação completa',
+                'Integração com agenda',
+                'Suporte prioritário'
+              ],
+              highlight: true
+            },
+            {
+              name: 'Pro',
+              price: 'R$ 288/mês',
+              description: 'Para negócios estabelecidos',
+              features: [
+                'Clientes ilimitados',
+                'SMS automático',
+                'API para integrações',
+                'White label',
+                'Suporte 24/7',
+                'Treinamento personalizado'
+              ],
+              highlight: false
+            }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'Pare de Perder Clientes por Desorganização',
+          subtitle: 'Sistema profissional de cadastro que organiza seu negócio e aumenta sua receita.',
+          benefits: [
+            'Teste grátis 14 dias',
+            'Migração assistida do Excel',
+            'Sem setup ou instalação',
+            'Suporte em português'
+          ],
+          cta: {
+            primary: 'Começar Cadastro Grátis',
+            secondary: 'Ver Demonstração',
+            urgency: 'Transforme seu negócio hoje mesmo'
+          }
+        }
+      ]
+    }
+  },
+
+  'melhor-sistema-agendamento-saloes': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Qual o Melhor Sistema de Agendamento para Salões de Beleza?',
+          subtitle: 'Converso domina o mercado de salões com agenda inteligente, controle de profissionais e programa de fidelidade. Aumente o faturamento em até 55% com sistema feito para salões brasileiros.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Resposta Rápida',
+          content: 'O Converso é o melhor sistema para salões porque oferece agenda multi-profissional, controle de comissões, programa de fidelidade automático e integração com WhatsApp. Elimine conflitos de horários, aumente a retenção de clientes e tenha relatórios completos por apenas R$ 88/mês.'
+        },
+        {
+          type: 'features',
+          title: 'Por que Salões Escolhem o Converso?',
+          items: [
+            {
+              icon: '💅',
+              title: 'Agenda Multi-Profissional',
+              description: 'Gerencie agenda de vários profissionais simultaneamente. Veja disponibilidade real, evite conflitos e maximize ocupação de cada cadeira.'
+            },
+            {
+              icon: '⏰',
+              title: 'Horários Inteligentes',
+              description: 'Sistema calcula automaticamente duração de serviços combinados. Manicure + pedicure, escova + hidratação - tudo sincronizado perfeitamente.'
+            },
+            {
+              icon: '🎁',
+              title: 'Fidelidade Automática',
+              description: 'Cliente ganha pontos a cada visita e pode trocar por serviços. Sistema gerencia tudo automaticamente, aumentando retorno em 70%.'
+            },
+            {
+              icon: '💰',
+              title: 'Controle de Comissões',
+              description: 'Calcule comissões por profissional automaticamente. Relatórios detalhados, controle de produtos e fechamento de caixa simplificado.'
+            },
+            {
+              icon: '📱',
+              title: 'App para Clientes',
+              description: 'Suas clientes agendam pelo celular 24h, escolhem profissional preferido e recebem lembretes automáticos. Reduz faltas em 85%.'
+            },
+            {
+              icon: '💬',
+              title: 'WhatsApp Integrado',
+              description: 'Confirmações, lembretes e promoções automáticas via WhatsApp. Mantenha contato sem esforço e aumente vendas de produtos.'
+            }
+          ]
+        },
+        {
+          type: 'comparison',
+          title: 'Comparação: Sistemas Especializados em Salões',
+          subtitle: 'Veja por que o Converso lidera o mercado brasileiro',
+          table: {
+            headers: ['Recurso', 'Converso', 'Fresha', 'Booksy', 'Beauty Pro'],
+            rows: [
+              ['Site próprio profissional', '✅ Incluído', '❌ Não tem', '❌ Não tem', '⚠️ R$99 extra'],
+              ['Taxa por agendamento', '✅ R$ 0', '❌ 2,6%+R$0,49', '❌ 15%', '❌ 8%'],
+              ['Agenda multi-profissional', '✅ Ilimitado', '✅ Até 10', '⚠️ R$30/profissional', '✅ Até 5'],
+              ['Programa fidelidade', '✅ Completo', '❌ Não tem', '⚠️ Limitado', '❌ Não tem'],
+              ['Controle de comissões', '✅ Automático', '⚠️ Manual', '❌ Não tem', '✅ Básico'],
+              ['WhatsApp brasileiro', '✅ Nativo', '❌ Não tem', '❌ Não tem', '⚠️ R$49 extra'],
+              ['Relatórios de vendas', '✅ Completo', '⚠️ Básico', '⚠️ Básico', '✅ Avançado'],
+              ['Suporte em português', '✅ 24/7', '⚠️ Email inglês', '⚠️ Limitado', '✅ Comercial'],
+              ['Integração PIX', '✅ Nativo', '❌ Não tem', '❌ Não tem', '⚠️ Via gateway'],
+              ['Preço base mensal', '✅ R$ 88', '❌ R$ 0*+taxas', '❌ R$ 149', '❌ R$ 199'],
+              ['Custo real (200 agendamentos)', '✅ R$ 88', '❌ R$ 518', '❌ R$ 1.649', '❌ R$ 679']
+            ]
+          }
+        },
+        {
+          type: 'calculator',
+          title: 'Calculadora de ROI para Salões',
+          subtitle: 'Veja o retorno real do investimento',
+          description: 'Salão com 200 agendamentos/mês, ticket médio R$ 60:',
+          calculations: [
+            { 
+              metric: 'Economia em taxas (vs Booksy)',
+              monthly: 'R$ 1.561',
+              yearly: 'R$ 18.732',
+              note: 'Suficiente para comprar equipamentos novos'
+            },
+            { 
+              metric: 'Redução de faltas (85%)',
+              monthly: '34 agendamentos salvos',
+              yearly: 'R$ 24.480 recuperados',
+              note: 'Praticamente paga 2 profissionais extras'
+            },
+            { 
+              metric: 'Aumento por fidelidade',
+              monthly: '+70 agendamentos',
+              yearly: '+R$ 50.400',
+              note: 'Clientes fiéis consomem 3x mais'
+            },
+            { 
+              metric: 'ROI total primeiro ano',
+              monthly: 'R$ 3.142 ganhos',
+              yearly: 'R$ 37.704',
+              note: 'Retorno de 3.573% sobre investimento'
+            }
+          ]
+        },
+        {
+          type: 'case-study',
+          title: 'Sucesso Real: Salão Elegance Faturou +55%',
+          subtitle: 'Como um salão de Curitiba transformou resultados em 4 meses',
+          content: 'O Salão Elegance, com 4 profissionais em Curitiba, migrou para o Converso em setembro de 2024:',
+          results: [
+            '55% de aumento no faturamento total',
+            '70% dos clientes no programa fidelidade',
+            '85% de redução nas faltas (no-shows)',
+            '40% de aumento em agendamentos online',
+            'ROI de 3.800% no primeiro semestre'
+          ],
+          quote: {
+            text: 'O programa de fidelidade mudou tudo. Clientes voltam mais e gastam mais. Em 4 meses pagou o investimento do ano todo e ainda sobrou para reformar o salão.',
+            author: 'Patricia Oliveira',
+            role: 'Proprietária do Salão Elegance'
+          }
+        },
+        {
+          type: 'features-deep-dive',
+          title: 'Funcionalidades Exclusivas para Salões',
+          sections: [
+            {
+              title: '💄 Gestão Inteligente de Serviços',
+              content: 'Sistema entende as complexidades dos serviços de beleza.',
+              features: [
+                'Combo automático (manicure + pedicure)',
+                'Serviços sequenciais (escova + hidratação)',
+                'Bloqueio por incompatibilidade (química + tintura)',
+                'Duração variável por profissional',
+                'Preços diferenciados por especialista',
+                'Upsell automático de produtos'
+              ]
+            },
+            {
+              title: '👥 Controle Total da Equipe',
+              content: 'Gerencie sua equipe com eficiência e transparência.',
+              features: [
+                'Agenda individual por profissional',
+                'Controle de especialidades e preferências',
+                'Relatório de performance individual',
+                'Comissões automáticas configuráveis',
+                'Metas e bonificações',
+                'Horários flexíveis e folgas'
+              ]
+            },
+            {
+              title: '🎯 Marketing Personalizado',
+              content: 'Ferramentas para fidelizar e atrair mais clientes.',
+              features: [
+                'Campanhas para aniversariantes',
+                'Promoções por serviço pouco vendido',
+                'Reativação de clientes inativos',
+                'Indicações premiadas automaticamente',
+                'Avaliações pós-atendimento',
+                'Programa VIP para clientes especiais'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'testimonials',
+          title: 'Salões que Transformaram Resultados',
+          items: [
+            {
+              name: 'Patricia Oliveira',
+              business: 'Salão Elegance - Curitiba, PR',
+              text: 'Faturamento aumentou 55% com o programa de fidelidade. Clientes voltam mais e consomem mais produtos.',
+              rating: 5,
+              results: '+55% faturamento'
+            },
+            {
+              name: 'Claudia Santos',
+              business: 'Studio Bella - Salvador, BA',
+              text: 'A agenda multi-profissional acabou com conflitos. Agora cada menina tem controle total do seu horário.',
+              rating: 5,
+              results: 'Zero conflitos de agenda'
+            },
+            {
+              name: 'Renata Lima',
+              business: 'Espaço da Beleza - Recife, PE',
+              text: 'WhatsApp automático reduziu faltas para quase zero. Economizo 2 horas por dia só em ligações.',
+              rating: 5,
+              results: '-85% no-shows'
+            },
+            {
+              name: 'Mariana Costa',
+              business: 'Glamour Salon - Florianópolis, SC',
+              text: 'Relatórios mostram qual profissional vende mais. Agora posso dar bonificações justas baseadas em dados.',
+              rating: 5,
+              results: '+30% vendas produtos'
+            }
+          ]
+        },
+        {
+          type: 'pricing',
+          title: 'Investimento que se Paga no Primeiro Mês',
+          subtitle: 'Planos desenhados para salões de todos os tamanhos',
+          plans: [
+            {
+              name: 'Plus',
+              price: 'R$ 88/mês',
+              description: 'Para salões em crescimento',
+              features: [
+                'Até 5 profissionais',
+                '500 agendamentos/mês',
+                'Programa fidelidade completo',
+                'WhatsApp integrado',
+                'Relatórios avançados',
+                'Suporte prioritário'
+              ],
+              highlight: true
+            },
+            {
+              name: 'Pro',
+              price: 'R$ 288/mês',
+              description: 'Para salões estabelecidos',
+              features: [
+                'Profissionais ilimitados',
+                'Agendamentos ilimitados',
+                'SMS automático',
+                'Domínio personalizado',
+                'API para integrações',
+                'Suporte 24/7'
+              ],
+              highlight: false
+            }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'Transforme Seu Salão em uma Máquina de Lucrar',
+          subtitle: 'Sistema completo que aumenta faturamento, reduz faltas e fideliza clientes.',
+          benefits: [
+            'Teste grátis 14 dias',
+            'Migração assistida',
+            'Treinamento completo da equipe',
+            'Sem taxa de setup'
+          ],
+          cta: {
+            primary: 'Começar Teste Grátis',
+            secondary: 'Agendar Demonstração',
+            urgency: 'Transformação garantida em 30 dias'
+          }
+        }
+      ]
+    }
+  },
+
+  'o-que-nao-pode-faltar-salao-beleza': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'O que Não Pode Faltar em um Salão de Beleza Moderno?',
+          subtitle: 'Descubra os 12 elementos essenciais que transformam um salão comum em negócio de sucesso. Do ambiente aos sistemas digitais, tudo que você precisa para competir no mercado atual.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Resposta Rápida',
+          content: 'Um salão moderno precisa: sistema de agendamento digital, programa de fidelidade, comunicação por WhatsApp, ambiente acolhedor, profissionais qualificados, produtos de qualidade, higienização impecável, relatórios gerenciais, presença digital e excelente atendimento ao cliente.'
+        },
+        {
+          type: 'features',
+          title: 'Os 12 Elementos Essenciais do Salão Moderno',
+          items: [
+            {
+              icon: '📱',
+              title: '1. Sistema de Agendamento Digital',
+              description: 'Agenda online 24h, app para clientes, controle de profissionais e redução de faltas. Base para organização e crescimento do negócio.'
+            },
+            {
+              icon: '🎁',
+              title: '2. Programa de Fidelidade',
+              description: 'Sistema automático de pontos e recompensas. Aumenta retenção em 70% e estimula consumo de produtos e serviços adicionais.'
+            },
+            {
+              icon: '💬',
+              title: '3. Comunicação por WhatsApp',
+              description: 'Confirmações automáticas, lembretes, promoções e atendimento personalizado. Ferramenta essencial para relacionamento com clientes.'
+            },
+            {
+              icon: '✨',
+              title: '4. Ambiente Acolhedor e Limpo',
+              description: 'Decoração moderna, iluminação adequada, música ambiente e climatização. Primeira impressão determina retorno do cliente.'
+            },
+            {
+              icon: '👩‍🦰',
+              title: '5. Profissionais Qualificados',
+              description: 'Equipe treinada, atualizada em tendências e com certificações. Invista em cursos e especializações constantemente.'
+            },
+            {
+              icon: '🧴',
+              title: '6. Produtos de Qualidade Premium',
+              description: 'Marcas reconhecidas, produtos veganos/orgânicos e linha completa para revenda. Qualidade gera confiança e margem maior.'
+            },
+            {
+              icon: '🧽',
+              title: '7. Protocolos de Higienização',
+              description: 'Esterilização rigorosa, descartáveis, álcool gel e limpeza constante. Segurança é prioridade absoluta pós-pandemia.'
+            },
+            {
+              icon: '📊',
+              title: '8. Relatórios e Controle Financeiro',
+              description: 'Acompanhe faturamento, serviços mais vendidos, performance de profissionais e margem de produtos para tomar decisões estratégicas.'
+            },
+            {
+              icon: '🌐',
+              title: '9. Presença Digital Forte',
+              description: 'Site profissional, Instagram ativo, Google Meu Negócio otimizado e avaliações positivas. Marketing digital é obrigatório.'
+            },
+            {
+              icon: '💳',
+              title: '10. Múltiplas Formas de Pagamento',
+              description: 'PIX, cartão, dinheiro e parcelamento. Facilite ao máximo para o cliente finalizar a compra sem fricção.'
+            },
+            {
+              icon: '🎵',
+              title: '11. Entretenimento e Conforto',
+              description: 'Wi-Fi gratuito, revistas atualizadas, café/água, carregadores de celular. Experiência completa fideliza cliente.'
+            },
+            {
+              icon: '🏆',
+              title: '12. Atendimento Excepcional',
+              description: 'Treinamento em customer success, personalização, pós-venda e resolução rápida de problemas. Diferencial competitivo.'
+            }
+          ]
+        },
+        {
+          type: 'comparison',
+          title: 'Salão Tradicional vs Salão Moderno',
+          subtitle: 'Veja as diferenças que impactam diretamente no faturamento',
+          table: {
+            headers: ['Aspecto', 'Salão Tradicional', 'Salão Moderno', 'Impacto'],
+            rows: [
+              ['Agendamento', '❌ Telefone/caderno', '✅ Sistema digital', '+40% agendamentos'],
+              ['Fidelização', '❌ Cartão papel', '✅ App automático', '+70% retenção'],
+              ['Comunicação', '❌ Ligações manuais', '✅ WhatsApp automático', '-80% faltas'],
+              ['Pagamento', '❌ Só dinheiro/cartão', '✅ PIX + parcelamento', '+25% ticket médio'],
+              ['Marketing', '❌ Boca a boca', '✅ Digital + indicações', '+150% novos clientes'],
+              ['Controle', '❌ Caderno/Excel', '✅ Relatórios automáticos', '+35% lucratividade'],
+              ['Produtos', '❌ Estoque empírico', '✅ Gestão inteligente', '-60% desperdício'],
+              ['Equipe', '❌ Controle manual', '✅ Sistema integrado', '+45% produtividade'],
+              ['Cliente', '❌ Atendimento básico', '✅ Experiência premium', '+90% satisfação'],
+              ['Crescimento', '❌ Limitado', '✅ Escalável', '+200% potencial']
+            ]
+          }
+        },
+        {
+          type: 'features-deep-dive',
+          title: 'Detalhamento dos Elementos Críticos',
+          sections: [
+            {
+              title: '🏗️ Infraestrutura Física Essencial',
+              content: 'Elementos básicos que todo salão precisa para funcionar profissionalmente.',
+              features: [
+                'Pia com pressão adequada e água quente',
+                'Cadeiras ergonômicas e espelhos com boa iluminação',
+                'Bancadas organizadas com divisórias',
+                'Sistema de ventilação e ar condicionado',
+                'Espaço para relaxamento/espera',
+                'Banheiro limpo e bem equipado'
+              ]
+            },
+            {
+              title: '💻 Tecnologia Indispensável',
+              content: 'Ferramentas digitais que modernizam operação e aumentam eficiência.',
+              features: [
+                'Sistema de gestão completo (Converso)',
+                'Wi-Fi de alta velocidade para clientes',
+                'Equipamentos para cartão/PIX',
+                'Som ambiente com controle de volume',
+                'Câmeras de segurança',
+                'Backup de energia para equipamentos críticos'
+              ]
+            },
+            {
+              title: '🎯 Estratégias de Negócio',
+              content: 'Táticas que diferenciam seu salão da concorrência.',
+              features: [
+                'Parcerias com marcas premium',
+                'Cursos e workshops para clientes',
+                'Programa de indicações',
+                'Atendimento VIP para clientes especiais',
+                'Promoções sazonais estratégicas',
+                'Pesquisa de satisfação pós-atendimento'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'calculator',
+          title: 'Calculadora de Investimento vs Retorno',
+          subtitle: 'Veja o impacto financeiro de cada elemento essencial',
+          description: 'Investimento inicial vs aumento de faturamento anual:',
+          calculations: [
+            { 
+              item: 'Sistema digital completo',
+              investment: 'R$ 1.056/ano',
+              return: '+R$ 48.000/ano',
+              roi: '4.444% ROI'
+            },
+            { 
+              item: 'Reforma do ambiente',
+              investment: 'R$ 15.000',
+              return: '+R$ 36.000/ano',
+              roi: '240% ROI'
+            },
+            { 
+              item: 'Treinamento da equipe',
+              investment: 'R$ 8.000',
+              return: '+R$ 24.000/ano',
+              roi: '300% ROI'
+            },
+            { 
+              item: 'Produtos premium',
+              investment: 'R$ 5.000',
+              return: '+R$ 18.000/ano',
+              roi: '360% ROI'
+            }
+          ]
+        },
+        {
+          type: 'case-study',
+          title: 'Transformação Completa: Studio Glamour',
+          subtitle: 'Como implementar todos os elementos em 6 meses',
+          content: 'O Studio Glamour, em Campinas, implementou todos os 12 elementos ao longo de 6 meses:',
+          results: [
+            'Mês 1-2: Sistema digital + WhatsApp = +30% agendamentos',
+            'Mês 3-4: Reforma ambiente + produtos premium = +45% ticket médio',
+            'Mês 5-6: Treinamento equipe + fidelidade = +80% retenção',
+            'Resultado final: +120% faturamento em 6 meses',
+            'ROI total: 650% no primeiro ano'
+          ],
+          quote: {
+            text: 'Investimos R$ 25.000 na transformação completa. Em 8 meses já havíamos recuperado tudo e hoje faturamos o dobro do que faturávamos antes.',
+            author: 'Sandra Martins',
+            role: 'Proprietária do Studio Glamour'
+          }
+        },
+        {
+          type: 'testimonials',
+          title: 'Salões que Implementaram com Sucesso',
+          items: [
+            {
+              name: 'Ana Beatriz',
+              business: 'Salão Encanto - Goiânia, GO',
+              text: 'Implementei os 12 elementos em 4 meses. O faturamento dobrou e hoje tenho lista de espera.',
+              rating: 5,
+              results: '+100% faturamento'
+            },
+            {
+              name: 'Carla Mendes',
+              business: 'Beauty Space - Brasília, DF',
+              text: 'O sistema digital foi o divisor de águas. Agora controlo tudo pelo celular e as clientes adoram o app.',
+              rating: 5,
+              results: '+60% satisfação'
+            },
+            {
+              name: 'Julia Santos',
+              business: 'Studio Bella - Curitiba, PR',
+              text: 'Produtos premium e ambiente reformado triplicaram meu ticket médio. Vale cada centavo investido.',
+              rating: 5,
+              results: '+200% ticket médio'
+            }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'Transforme Seu Salão em Referência',
+          subtitle: 'Comece pela base: sistema digital profissional que organiza tudo.',
+          benefits: [
+            'Checklist completo dos 12 elementos',
+            'Cronograma de implementação',
+            'Calculadora de ROI personalizada',
+            'Suporte durante toda transformação'
+          ],
+          cta: {
+            primary: 'Começar Transformação',
+            secondary: 'Baixar Checklist Grátis',
+            urgency: 'Saia na frente da concorrência hoje'
+          }
+        }
+      ]
+    }
+  },
+
+  'o-que-necessario-loja-online': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'O que é Necessário para Ter uma Loja Online de Sucesso?',
+          subtitle: 'Guia completo com os 15 elementos essenciais para criar, lançar e fazer sua loja online vender. Do planejamento ao marketing, tudo que você precisa saber para ter sucesso no e-commerce.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Resposta Rápida',
+          content: 'Para ter uma loja online de sucesso você precisa: plataforma confiável, produtos de qualidade, fotos profissionais, descrições detalhadas, sistema de pagamento seguro, logística eficiente, atendimento ao cliente, estratégia de marketing digital, análise de dados e conformidade legal.'
+        },
+        {
+          type: 'features',
+          title: 'Os 15 Elementos Fundamentais para E-commerce',
+          items: [
+            {
+              icon: '🛒',
+              title: '1. Plataforma E-commerce Profissional',
+              description: 'Sistema robusto, responsivo e otimizado para SEO. Converso oferece e-commerce integrado com gestão completa de produtos e pedidos.'
+            },
+            {
+              icon: '📦',
+              title: '2. Produtos com Demanda Comprovada',
+              description: 'Pesquise nichos rentáveis, analise concorrência e valide demanda antes de investir em estoque. Comece com produtos que você domina.'
+            },
+            {
+              icon: '📸',
+              title: '3. Fotos Profissionais de Alta Qualidade',
+              description: 'Imagens claras, múltiplos ângulos, boa iluminação e fundo neutro. 67% dos consumidores consideram fotos mais importantes que descrições.'
+            },
+            {
+              icon: '📝',
+              title: '4. Descrições Detalhadas e Persuasivas',
+              description: 'Especificações técnicas, benefícios, modo de uso e diferenciais. Use palavras-chave para SEO e responda dúvidas comuns.'
+            },
+            {
+              icon: '💳',
+              title: '5. Sistema de Pagamento Seguro',
+              description: 'PIX, cartão de crédito/débito, boleto e parcelamento. Múltiplas opções aumentam conversão em até 40%.'
+            },
+            {
+              icon: '🚚',
+              title: '6. Logística e Entrega Eficiente',
+              description: 'Parcerias com Correios, transportadoras, cálculo automático de frete e rastreamento em tempo real.'
+            },
+            {
+              icon: '🎧',
+              title: '7. Atendimento ao Cliente Excepcional',
+              description: 'Chat online, WhatsApp, FAQ completo e resposta rápida. Bom atendimento gera avaliações positivas e fidelização.'
+            },
+            {
+              icon: '📱',
+              title: '8. Design Responsivo e Rápido',
+              description: 'Site otimizado para mobile, carregamento rápido (menos de 3 segundos) e navegação intuitiva.'
+            },
+            {
+              icon: '🔒',
+              title: '9. Segurança e Certificações',
+              description: 'SSL, proteção de dados, certificado de segurança visível e conformidade com LGPD.'
+            },
+            {
+              icon: '📊',
+              title: '10. Sistema de Análise e Métricas',
+              description: 'Google Analytics, conversões, produtos mais vendidos, origem do tráfego e comportamento do usuário.'
+            },
+            {
+              icon: '🎯',
+              title: '11. Estratégia de Marketing Digital',
+              description: 'SEO, Google Ads, redes sociais, email marketing e parcerias com influencers.'
+            },
+            {
+              icon: '⭐',
+              title: '12. Sistema de Avaliações',
+              description: 'Reviews de clientes, depoimentos, nota geral e resposta a avaliações negativas.'
+            },
+            {
+              icon: '📋',
+              title: '13. Políticas Claras e Transparentes',
+              description: 'Termos de uso, política de privacidade, trocas/devoluções e prazos de entrega bem definidos.'
+            },
+            {
+              icon: '📈',
+              title: '14. Gestão de Estoque Inteligente',
+              description: 'Controle automático, alertas de ruptura, relatórios de giro e integração com fornecedores.'
+            },
+            {
+              icon: '🎁',
+              title: '15. Programa de Fidelidade',
+              description: 'Pontos, cashback, cupons de desconto e benefícios exclusivos para clientes recorrentes.'
+            }
+          ]
+        },
+        {
+          type: 'comparison',
+          title: 'Loja Amadora vs Loja Profissional',
+          subtitle: 'Diferenças que impactam diretamente nas vendas',
+          table: {
+            headers: ['Aspecto', 'Loja Amadora', 'Loja Profissional', 'Impacto nas Vendas'],
+            rows: [
+              ['Plataforma', '❌ Instagram/WhatsApp', '✅ E-commerce próprio', '+300% conversão'],
+              ['Fotos', '❌ Celular básico', '✅ Profissionais', '+150% interesse'],
+              ['Pagamento', '❌ Só PIX/transferência', '✅ Múltiplas opções', '+40% conversão'],
+              ['Entrega', '❌ Sem rastreamento', '✅ Logística completa', '+80% satisfação'],
+              ['Atendimento', '❌ Horário limitado', '✅ Múltiplos canais', '+60% retenção'],
+              ['Segurança', '❌ Sem certificados', '✅ SSL + proteções', '+90% confiança'],
+              ['Marketing', '❌ Orgânico apenas', '✅ Estratégia completa', '+500% alcance'],
+              ['Análise', '❌ Sem métricas', '✅ Dados detalhados', '+200% otimização'],
+              ['Estoque', '❌ Controle manual', '✅ Sistema automático', '-70% rupturas'],
+              ['Crescimento', '❌ Limitado', '✅ Escalável', 'Ilimitado']
+            ]
+          }
+        },
+        {
+          type: 'features-deep-dive',
+          title: 'Implementação Passo a Passo',
+          sections: [
+            {
+              title: '🏗️ Fase 1: Fundação (Semanas 1-2)',
+              content: 'Estrutura básica para começar a vender online.',
+              features: [
+                'Escolha da plataforma e-commerce',
+                'Registro de domínio e hospedagem',
+                'Design básico e navegação',
+                'Configuração de métodos de pagamento',
+                'Políticas legais obrigatórias',
+                'Certificado SSL e segurança básica'
+              ]
+            },
+            {
+              title: '📦 Fase 2: Produtos e Operação (Semanas 3-4)',
+              content: 'Preparação do catálogo e operação de vendas.',
+              features: [
+                'Cadastro de produtos com fotos',
+                'Descrições otimizadas para SEO',
+                'Configuração de estoque e preços',
+                'Integração com sistemas de entrega',
+                'Configuração de impostos e taxas',
+                'Testes de fluxo de compra completo'
+              ]
+            },
+            {
+              title: '🚀 Fase 3: Marketing e Otimização (Semanas 5-8)',
+              content: 'Atrair clientes e otimizar conversões.',
+              features: [
+                'SEO on-page e estrutural',
+                'Google Analytics e métricas',
+                'Campanhas de marketing digital',
+                'Programa de afiliados/indicação',
+                'Otimização de velocidade',
+                'A/B testing de elementos chave'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'calculator',
+          title: 'Calculadora de Investimento Inicial',
+          subtitle: 'Quanto custa montar uma loja online profissional',
+          description: 'Investimento necessário para cada elemento essencial:',
+          calculations: [
+            { 
+              item: 'Plataforma e-commerce anual',
+              cost: 'R$ 1.200 - R$ 3.600',
+              note: 'Converso inclui e-commerce no plano'
+            },
+            { 
+              item: 'Fotos profissionais (50 produtos)',
+              cost: 'R$ 2.000 - R$ 5.000',
+              note: 'Investimento único, alta durabilidade'
+            },
+            { 
+              item: 'Marketing digital inicial',
+              cost: 'R$ 2.000 - R$ 5.000/mês',
+              note: 'Google Ads + Facebook Ads'
+            },
+            { 
+              item: 'Estoque inicial',
+              cost: 'R$ 10.000 - R$ 50.000',
+              note: 'Varia conforme nicho escolhido'
+            },
+            { 
+              item: 'Certificações e legal',
+              cost: 'R$ 1.000 - R$ 3.000',
+              note: 'CNPJ, certificados, contador'
+            },
+            { 
+              item: 'Total mínimo viável',
+              cost: 'R$ 16.200 - R$ 66.600',
+              note: 'Para começar profissionalmente'
+            }
+          ]
+        },
+        {
+          type: 'case-study',
+          title: 'Sucesso Real: De Zero a R$ 50k/mês em 6 Meses',
+          subtitle: 'Como a TechStore implementou todos os elementos',
+          content: 'A TechStore começou do zero vendendo acessórios de celular e seguiu nossa metodologia:',
+          results: [
+            'Mês 1: Loja online + 20 produtos = R$ 3.000',
+            'Mês 2: Marketing digital + SEO = R$ 8.000',
+            'Mês 3: Programa fidelidade + upsell = R$ 15.000',
+            'Mês 4: Marketplace + parcerias = R$ 25.000',
+            'Mês 5: Otimizações + automação = R$ 35.000',
+            'Mês 6: Escala e novos produtos = R$ 50.000'
+          ],
+          quote: {
+            text: 'Seguimos o checklist completo dos 15 elementos. O segredo foi não pular etapas e investir em cada elemento de forma estruturada. ROI de 400% no primeiro ano.',
+            author: 'Marcus Vieira',
+            role: 'Fundador da TechStore'
+          }
+        },
+        {
+          type: 'testimonials',
+          title: 'Empreendedores que Seguiram a Metodologia',
+          items: [
+            {
+              name: 'Fernanda Silva',
+              business: 'Moda Fem Online - São Paulo, SP',
+              text: 'Implementei os 15 elementos em 3 meses. Hoje vendo R$ 80k/mês com margem de 45%.',
+              rating: 5,
+              results: 'R$ 80k/mês em vendas'
+            },
+            {
+              name: 'Roberto Santos',
+              business: 'Casa & Jardim Store - Rio de Janeiro, RJ',
+              text: 'O sistema de análise me mostrou que 60% das vendas vinham do mobile. Otimizei e dobrei conversão.',
+              rating: 5,
+              results: '+100% conversão mobile'
+            },
+            {
+              name: 'Marina Costa',
+              business: 'Beauty Products - Belo Horizonte, MG',
+              text: 'Programa de fidelidade trouxe 40% dos clientes de volta. Agora tenho receita recorrente garantida.',
+              rating: 5,
+              results: '+40% clientes recorrentes'
+            }
+          ]
+        },
+        {
+          type: 'pricing',
+          title: 'Quanto Custa Ter uma Loja Profissional?',
+          subtitle: 'Investimento mensal para manter operação competitiva',
+          plans: [
+            {
+              name: 'Básico',
+              price: 'R$ 500-800/mês',
+              description: 'Para começar vendendo',
+              features: [
+                'Plataforma e-commerce',
+                'Certificados de segurança',
+                'Suporte básico',
+                'Até 100 produtos',
+                'Relatórios essenciais',
+                'Pagamento online básico'
+              ],
+              highlight: false
+            },
+            {
+              name: 'Profissional',
+              price: 'R$ 1.200-2.000/mês',
+              description: 'Para crescer consistentemente',
+              features: [
+                'Tudo do Básico +',
+                'Marketing digital',
+                'SEO avançado',
+                'Integrações completas',
+                'Suporte prioritário',
+                'Análises detalhadas'
+              ],
+              highlight: true
+            },
+            {
+              name: 'Enterprise',
+              price: 'R$ 3.000+/mês',
+              description: 'Para escalar grandes volumes',
+              features: [
+                'Tudo do Profissional +',
+                'Automações avançadas',
+                'Integração ERP',
+                'Suporte 24/7',
+                'Consultoria estratégica',
+                'Customizações'
+              ],
+              highlight: false
+            }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'Comece Sua Loja Online do Jeito Certo',
+          subtitle: 'Sistema completo de e-commerce integrado com gestão empresarial.',
+          benefits: [
+            'Checklist dos 15 elementos essenciais',
+            'Cronograma de implementação',
+            'Templates prontos para usar',
+            'Suporte técnico completo'
+          ],
+          cta: {
+            primary: 'Criar Minha Loja Online',
+            secondary: 'Baixar Checklist Grátis',
+            urgency: 'Monte sua loja profissional hoje mesmo'
+          }
+        }
+      ]
+    }
+  },
+
+  'onde-achar-fornecedores-iphone': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Onde Achar Fornecedores de iPhone para Revenda?',
+          subtitle: 'Guia completo com os melhores canais, estratégias e cuidados para encontrar fornecedores confiáveis de iPhone. Maximize sua margem e minimize riscos no mercado de revenda.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Resposta Rápida',
+          content: 'Os melhores fornecedores de iPhone estão em: importadores diretos dos EUA, distribuidores autorizados Apple, mercado de Shenzhen (China), leilões de seguradoras, programas de trade-in e redes de revendedores certificados. Sempre verifique procedência, garantia e documentação fiscal.'
+        },
+        {
+          type: 'features',
+          title: 'Os 8 Melhores Canais para Fornecedores de iPhone',
+          items: [
+            {
+              icon: '🇺🇸',
+              title: '1. Importadores Diretos dos EUA',
+              description: 'Empresas que importam diretamente dos EUA com grandes volumes. Melhor custo-benefício, mas exige capital maior e conhecimento em importação.'
+            },
+            {
+              icon: '🏪',
+              title: '2. Distribuidores Autorizados Apple',
+              description: 'Canais oficiais com garantia Apple. Margem menor, mas zero risco de produtos falsificados ou com problemas de procedência.'
+            },
+            {
+              icon: '🏭',
+              title: '3. Mercado de Shenzhen (China)',
+              description: 'Maior mercado mundial de eletrônicos. Preços baixos, mas alta complexidade logística e risco de produtos não-originais.'
+            },
+            {
+              icon: '🔄',
+              title: '4. Programas de Trade-in',
+              description: 'iPhones seminovos de programas oficiais. Boa margem, produtos testados, mas disponibilidade limitada e grades específicas.'
+            },
+            {
+              icon: '🏛️',
+              title: '5. Leilões de Seguradoras',
+              description: 'Dispositivos de sinistros recuperados. Preços muito baixos, mas necessita conhecimento técnico para avaliar condições.'
+            },
+            {
+              icon: '🤝',
+              title: '6. Redes de Revendedores',
+              description: 'Grupos estabelecidos com fornecedores testados. Facilita entrada no mercado, mas margem reduzida por intermediação.'
+            },
+            {
+              icon: '💼',
+              title: '7. Empresas Corporativas',
+              description: 'Renovação de frota empresarial. Volumes grandes, produtos bem conservados, mas sazonalidade nas oportunidades.'
+            },
+            {
+              icon: '🌐',
+              title: '8. Plataformas B2B Online',
+              description: 'Alibaba, DHGate, Global Sources. Acesso fácil, mas alta necessidade de validação de fornecedores e qualidade.'
+            }
+          ]
+        },
+        {
+          type: 'comparison',
+          title: 'Comparação de Canais de Fornecimento',
+          subtitle: 'Análise detalhada de custo, risco e complexidade',
+          table: {
+            headers: ['Canal', 'Preço Médio', 'Margem Potencial', 'Risco', 'Complexidade', 'Volume Mínimo'],
+            rows: [
+              ['Distribuidores Apple', '95% MSRP', '10-15%', '✅ Baixo', '✅ Baixa', '5-10 unidades'],
+              ['Importadores EUA', '75% MSRP', '35-45%', '⚠️ Médio', '❌ Alta', '50-100 unidades'],
+              ['Trade-in Oficial', '60% MSRP', '50-60%', '✅ Baixo', '⚠️ Média', '10-20 unidades'],
+              ['Shenzhen/China', '50% MSRP', '70-80%', '❌ Alto', '❌ Muito Alta', '100+ unidades'],
+              ['Leilões Seguradora', '40% MSRP', '80-90%', '❌ Alto', '❌ Alta', '20-50 unidades'],
+              ['Redes Revendedor', '85% MSRP', '20-25%', '⚠️ Médio', '✅ Baixa', '5-15 unidades'],
+              ['Corporativo', '65% MSRP', '45-55%', '⚠️ Médio', '⚠️ Média', 'Variável'],
+              ['B2B Online', '60% MSRP', '50-60%', '❌ Alto', '❌ Alta', '10-50 unidades']
+            ]
+          }
+        },
+        {
+          type: 'features-deep-dive',
+          title: 'Como Validar e Escolher Fornecedores',
+          sections: [
+            {
+              title: '🔍 Checklist de Validação Essencial',
+              content: 'Critérios obrigatórios antes de fechar negócio com qualquer fornecedor.',
+              features: [
+                'CNPJ ativo e situação regular na Receita',
+                'Referências de outros revendedores',
+                'Política clara de garantia e trocas',
+                'Documentação fiscal completa (NF-e)',
+                'Forma de pagamento segura (boleto/transferência)',
+                'Histórico mínimo de 1 ano no mercado'
+              ]
+            },
+            {
+              title: '📋 Documentação Obrigatória',
+              content: 'Papéis que todo fornecedor sério deve fornecer.',
+              features: [
+                'Nota fiscal de entrada (importação)',
+                'Certificado de homologação Anatel',
+                'Comprovante de pagamento de impostos',
+                'Termo de garantia dos produtos',
+                'Contrato de fornecimento claro',
+                'Certificado de origem (se importado)'
+              ]
+            },
+            {
+              title: '🚨 Red Flags para Evitar',
+              content: 'Sinais de alerta que indicam fornecedores duvidosos.',
+              features: [
+                'Preços muito abaixo do mercado (desconto &gt;70%)',
+                'Exigência de pagamento antecipado via PIX',
+                'Sem endereço físico ou apenas virtual',
+                'Não fornece nota fiscal ou documentação',
+                'Pressão para decisão rápida',
+                'Reviews negativos ou ausência total de reviews'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'calculator',
+          title: 'Calculadora de Margem por Canal',
+          subtitle: 'Compare o retorno real de cada tipo de fornecedor',
+          description: 'Análise para iPhone 14 Pro 128GB (MSRP R$ 7.000):',
+          calculations: [
+            { 
+              channel: 'Distribuidor Apple',
+              cost: 'R$ 6.650',
+              selling: 'R$ 7.500',
+              margin: 'R$ 850 (12,8%)',
+              risk: 'Baixíssimo'
+            },
+            { 
+              channel: 'Importador EUA',
+              cost: 'R$ 5.250',
+              selling: 'R$ 7.200',
+              margin: 'R$ 1.950 (37,1%)',
+              risk: 'Médio'
+            },
+            { 
+              channel: 'Trade-in',
+              cost: 'R$ 4.200',
+              selling: 'R$ 6.800',
+              margin: 'R$ 2.600 (61,9%)',
+              risk: 'Baixo'
+            },
+            { 
+              channel: 'Leilão',
+              cost: 'R$ 2.800',
+              selling: 'R$ 6.000',
+              margin: 'R$ 3.200 (114%)',
+              risk: 'Alto'
+            }
+          ]
+        },
+        {
+          type: 'case-study',
+          title: 'Sucesso Real: De 10 para 500 iPhones/mês',
+          subtitle: 'Como a TechMobile encontrou fornecedores e escalou',
+          content: 'A TechMobile começou comprando 10 iPhones/mês e hoje movimenta 500 unidades. Estratégia usada:',
+          results: [
+            'Meses 1-3: Começou com distribuidores locais (margem 15%)',
+            'Meses 4-6: Parceria com importador (margem subiu para 35%)',
+            'Meses 7-9: Entrou em programa trade-in (margem 50%)',
+            'Meses 10-12: Diversificou com 4 canais diferentes',
+            'Resultado: 500 iPhones/mês com margem média de 42%'
+          ],
+          quote: {
+            text: 'A chave foi diversificar fornecedores. Nunca dependo de um só canal. Cada tipo tem sua vantagem e uso conforme a situação do mercado.',
+            author: 'Carlos Eduardo',
+            role: 'Fundador da TechMobile'
+          }
+        },
+        {
+          type: 'testimonials',
+          title: 'Revendedores que Aplicaram as Estratégias',
+          items: [
+            {
+              name: 'Rafael Oliveira',
+              business: 'iPhone Store - São Paulo, SP',
+              text: 'Encontrei 3 fornecedores confiáveis seguindo o checklist. Margem média de 45% e zero dor de cabeça.',
+              rating: 5,
+              results: '45% margem média'
+            },
+            {
+              name: 'Mariana Santos',
+              business: 'Cell Express - Rio de Janeiro, RJ',
+              text: 'Programa trade-in mudou meu negócio. Produtos com garantia e margem excelente.',
+              rating: 5,
+              results: '+300% lucro líquido'
+            },
+            {
+              name: 'João Silva',
+              business: 'Mobile Tech - Belo Horizonte, MG',
+              text: 'Evitei uma roubada seguindo os red flags. Fornecedor falso queria R$ 50k antecipado.',
+              rating: 5,
+              results: 'R$ 50k salvos'
+            }
+          ]
+        },
+        {
+          type: 'pricing',
+          title: 'Investimento Inicial por Canal',
+          subtitle: 'Capital necessário para começar em cada tipo de fornecedor',
+          plans: [
+            {
+              name: 'Distribuidor Local',
+              price: 'R$ 35.000',
+              description: 'Para começar com segurança',
+              features: [
+                '5-8 iPhones iniciais',
+                'Sem risco de calote',
+                'Garantia Apple oficial',
+                'Documentação completa',
+                'Pagamento a prazo',
+                'Margem 10-15%'
+              ],
+              highlight: false
+            },
+            {
+              name: 'Importador EUA',
+              price: 'R$ 100.000',
+              description: 'Para margens maiores',
+              features: [
+                '15-20 iPhones por lote',
+                'Margem 30-40%',
+                'Produtos novos lacrados',
+                'Volume mínimo obrigatório',
+                'Capital de giro necessário',
+                'Conhecimento em importação'
+              ],
+              highlight: true
+            },
+            {
+              name: 'Mix Estratégico',
+              price: 'R$ 150.000',
+              description: 'Para diversificar riscos',
+              features: [
+                'Múltiplos fornecedores',
+                'Grades diversificadas',
+                'Margem média 35%',
+                'Riscos distribuídos',
+                'Flexibilidade máxima',
+                'Crescimento escalável'
+              ],
+              highlight: false
+            }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'Encontre Fornecedores Confiáveis Hoje',
+          subtitle: 'Sistema completo para gerenciar produtos, vendas e relacionamento com fornecedores.',
+          benefits: [
+            'Lista de fornecedores validados',
+            'Checklist de validação',
+            'Calculadora de margem',
+            'Contratos modelo prontos'
+          ],
+          cta: {
+            primary: 'Acessar Lista de Fornecedores',
+            secondary: 'Baixar Checklist Grátis',
+            urgency: 'Comece a revender com segurança hoje'
+          }
+        }
+      ]
+    }
   }
 };
 

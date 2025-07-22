@@ -3,142 +3,813 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cola Digital para Barbería - Sin Esperas</title>
-  <meta name="description" content="Sistema de cola digital para barbería. Los clientes se unen desde el móvil.">
-  <meta property="og:title" content="Cola Digital para Barbería - Sin Esperas">
-  <meta property="og:description" content="Sistema de cola digital para barbería. Los clientes se unen desde el móvil.">
+  <title>Fila Digital para Barbería 2025 - Sistema de Gestión de Esperas | Converso</title>
+  <meta name="description" content="Elimina las filas físicas en tu barbería. Sistema de fila digital con QR, notificaciones por WhatsApp y tiempo de espera en tiempo real. Mejora la experiencia del cliente 95%.">
+  <meta property="og:title" content="Fila Digital para Barbería - Gestión Inteligente de Esperas">
+  <meta property="og:description" content="Sistema moderno de fila digital para barberías. Los clientes se unen desde el móvil, reciben notificaciones y saben exactamente cuándo es su turno. Sin más esperas incómodas.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seo.converso.pro/fila-digital-barberia">
+  <meta property="og:url" content="https://seo.converso.pro/es/fila-digital-barberia">
   <meta property="og:image" content="https://converso.pro/converso-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cola Digital para Barbería - Sin Esperas">
-  <meta name="twitter:description" content="Sistema de cola digital para barbería. Los clientes se unen desde el móvil.">
-  <link rel="canonical" href="https://seo.converso.pro/fila-digital-barberia">
-  <link rel="stylesheet" href="/styles.css">
+  <meta name="twitter:title" content="Fila Digital para Barbería - Converso">
+  <meta name="twitter:description" content="Sistema inteligente de gestión de filas. Mejora la experiencia del cliente y optimiza el flujo de trabajo.">
+  <link rel="canonical" href="https://seo.converso.pro/es/fila-digital-barberia">
   <link rel="icon" href="https://converso.pro/favicon.ico">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .neumorphic {
+      background: #f0f2f5;
+      border-radius: 20px;
+      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .neumorphic-inset {
+      background: #f0f2f5;
+      border-radius: 15px;
+      box-shadow: inset 8px 8px 16px #c8cacd, inset -8px -8px 16px #ffffff;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+    }
+
+    header {
+      background: #f0f2f5;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #333;
+      box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .feature-card {
+      text-align: center;
+      padding: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1e40af;
+    }
+
+    .stats {
+      background: linear-gradient(135deg, #1e3a8a 0%, #10b981 100%);
+      color: white;
+      padding: 4rem 2rem;
+      margin: 4rem 0;
+    }
+
+    .stats-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .phone-mockup {
+      background: #1f2937;
+      border-radius: 30px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 400px;
+      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
+    }
+
+    .phone-screen {
+      background: white;
+      border-radius: 20px;
+      padding: 1.5rem;
+      min-height: 600px;
+    }
+
+    .queue-item {
+      background: #f3f4f6;
+      border-radius: 15px;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .queue-item.active {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .queue-number {
+      font-size: 2rem;
+      font-weight: bold;
+      width: 50px;
+      text-align: center;
+    }
+
+    .process-flow {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .process-step {
+      text-align: center;
+      position: relative;
+    }
+
+    .step-number {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 auto 1rem;
+    }
+
+    .comparison-table {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
+      margin: 2rem 0;
+    }
+
+    .comparison-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .comparison-table th {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+      color: white;
+      padding: 1.5rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .comparison-table td {
+      padding: 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comparison-table tr:hover {
+      background: #f9fafb;
+    }
+
+    .check {
+      color: #10b981;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .cross {
+      color: #ef4444;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .benefit-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 1rem 0;
+      box-shadow: 10px 10px 30px #c8cacd, -10px -10px 30px #ffffff;
+    }
+
+    .qr-demo {
+      background: #1f2937;
+      border-radius: 20px;
+      padding: 3rem;
+      text-align: center;
+      color: white;
+      margin: 2rem 0;
+    }
+
+    .qr-code {
+      background: white;
+      width: 200px;
+      height: 200px;
+      margin: 2rem auto;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem;
+    }
+
+    .testimonial {
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: 30px;
+      margin: 4rem auto;
+      max-width: 1000px;
+    }
+
+    footer {
+      background: #1f2937;
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hide-mobile {
+        display: none;
+      }
+      
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .process-flow {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body>
   <!-- Header -->
-  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <!-- Logo -->
-        <a href="https://converso.pro" class="flex items-center group">
-          <span class="text-2xl font-bold">
-            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
-          </span>
-        </a>
-        
-        <!-- Navigation -->
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Características</a>
-          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Precios</a>
-          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Testimonios</a>
-        </nav>
-        
-        <!-- CTA Buttons -->
-        <div class="flex items-center space-x-4">
-          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
-            Iniciar sesión
-          </a>
-          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
-            Empezar Gratis
-          </a>
-        </div>
+  <header>
+    <div class="header-container">
+      <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
+      <div class="nav-buttons">
+        <a href="/es/" class="btn btn-secondary hide-mobile">Recursos</a>
+        <a href="https://app.converso.pro/auth" class="btn btn-primary">Empezar Gratis</a>
       </div>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    
-    <section class="py-20 px-4">
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Cola Digital: Fin de la Espera</h1>
-        <p class="text-xl text-gray-600 text-center mb-12">Sistema de cola digital para barbería. Los clientes se unen desde el móvil.</p>
-        
-        <div class="card-neumorphic mb-8">
-          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
-          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
-          <ul class="space-y-2">
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>No booking fees</span>
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>Your own professional website</span>
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>WhatsApp integration</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="text-center">
-          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
-            Crea Tu Sitio Ahora
-          </a>
-        </div>
-      </div>
-    </section>
-  
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <!-- Company -->
-        <div>
-          <h3 class="text-lg font-semibold mb-4">Converso</h3>
-          <p class="text-gray-400 text-sm">
-            Crea tu sitio web profesional de reservas en minutos. Únete a miles de profesionales que confían en Converso.
-          </p>
-        </div>
-        
-        <!-- Links -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Producto</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro#features" class="hover:text-white transition">Características</a></li>
-            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Precios</a></li>
-            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
-          </ul>
-        </div>
-        
-        <!-- Support -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Soporte</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro/help" class="hover:text-white transition">Centro de Ayuda</a></li>
-            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contacto</a></li>
-          </ul>
-        </div>
-        
-        <!-- Legal -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Legal</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Política de Privacidad</a></li>
-            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Términos de Servicio</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-        <p>&copy; 2025 Converso. Todos los derechos reservados.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="neumorphic">
+      <div class="gradient-text" style="font-size: 4rem; margin-bottom: 1rem;">📱</div>
+      <h1>Fila Digital: <span class="gradient-text">Adiós a las Esperas</span></h1>
+      <p class="subtitle">
+        Revoluciona la experiencia en tu barbería con el sistema de fila digital más avanzado. 
+        Los clientes se unen desde su móvil, reciben notificaciones en tiempo real y pueden 
+        aprovechar su tiempo mientras esperan. Reduce abandonos 85% y aumenta satisfacción 95%.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="https://app.converso.pro/auth" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">
+          Activar Fila Digital
+        </a>
+        <a href="#demo" class="btn btn-secondary">Ver Demostración</a>
       </div>
     </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-container">
+      <div>
+        <div class="stat-number">85%</div>
+        <div>Menos Abandonos</div>
+      </div>
+      <div>
+        <div class="stat-number">95%</div>
+        <div>Satisfacción Cliente</div>
+      </div>
+      <div>
+        <div class="stat-number">3.5x</div>
+        <div>Más Clientes/Día</div>
+      </div>
+      <div>
+        <div class="stat-number">18min</div>
+        <div>Tiempo Promedio Ahorrado</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Cómo Funciona la <span class="gradient-text">Fila Digital</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Proceso simple para clientes y eficiente para tu barbería</p>
+    </div>
+    
+    <div class="process-flow">
+      <div class="process-step">
+        <div class="step-number">1</div>
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Cliente Escanea QR</h3>
+        <p style="color: #666;">Al llegar, escanea el código QR en la entrada o se une desde casa</p>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-number">2</div>
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Se Une a la Fila</h3>
+        <p style="color: #666;">Ingresa su nombre y teléfono. Recibe su número y tiempo estimado</p>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-number">3</div>
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Notificación WhatsApp</h3>
+        <p style="color: #666;">Recibe alertas cuando faltan 2 turnos y cuando es su momento</p>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-number">4</div>
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Atención Sin Esperas</h3>
+        <p style="color: #666;">Llega justo a tiempo, sin perder horas en la barbería</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phone Demo -->
+  <section class="section" id="demo">
+    <div class="section-header">
+      <h2 class="section-title">Vista del <span class="gradient-text">Cliente en Tiempo Real</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Lo que ven tus clientes en su móvil</p>
+    </div>
+    
+    <div class="phone-mockup">
+      <div class="phone-screen">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">The Classic Barbershop</h3>
+          <p style="color: #666;">Tu turno: <span style="font-size: 2rem; font-weight: bold; color: #3b82f6;">#15</span></p>
+        </div>
+        
+        <div style="background: #e0f2fe; border-radius: 15px; padding: 1rem; margin-bottom: 1.5rem; text-align: center;">
+          <p style="font-size: 0.875rem; color: #0369a1;">Tiempo estimado de espera</p>
+          <p style="font-size: 2rem; font-weight: bold; color: #0369a1;">25 minutos</p>
+        </div>
+        
+        <div>
+          <p style="font-weight: bold; margin-bottom: 1rem;">Fila actual:</p>
+          <div class="queue-item">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="queue-number">12</div>
+              <div>Carlos M.</div>
+            </div>
+            <span style="color: #10b981; font-weight: bold;">Atendiendo</span>
+          </div>
+          <div class="queue-item">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="queue-number">13</div>
+              <div>Juan P.</div>
+            </div>
+            <span style="color: #f59e0b;">Siguiente</span>
+          </div>
+          <div class="queue-item">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="queue-number">14</div>
+              <div>Miguel A.</div>
+            </div>
+            <span style="color: #666;">En espera</span>
+          </div>
+          <div class="queue-item active">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="queue-number">15</div>
+              <div>Tú</div>
+            </div>
+            <span>Tu turno</span>
+          </div>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+          <button class="btn btn-primary" style="width: 100%;">Cancelar Turno</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Funciones <span class="gradient-text">Avanzadas</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Todo lo que necesitas para gestionar filas eficientemente</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">📱</div>
+        <h3 class="feature-title">QR Dinámico</h3>
+        <p>Código QR único para tu barbería. Los clientes se unen escaneando o visitando tu link personalizado.</p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3 class="feature-title">Tiempo Real</h3>
+        <p>Actualización automática del tiempo de espera basado en el promedio de atención de cada barbero.</p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">💬</div>
+        <h3 class="feature-title">WhatsApp Automático</h3>
+        <p>Notificaciones cuando faltan 2 turnos y cuando es su momento. Sin apps adicionales.</p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">👥</div>
+        <h3 class="feature-title">Multi-Barbero</h3>
+        <p>Gestiona múltiples barberos con filas independientes o una fila general optimizada.</p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">📊</div>
+        <h3 class="feature-title">Estadísticas</h3>
+        <p>Tiempo promedio de espera, horas pico, abandonos y métricas para optimizar tu servicio.</p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3 class="feature-title">Prioridades</h3>
+        <p>Sistema de prioridad para clientes VIP, citas previas o servicios específicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Fila Tradicional vs <span class="gradient-text">Fila Digital</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Por qué las barberías modernas están cambiando</p>
+    </div>
+    
+    <div class="comparison-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Aspecto</th>
+            <th>Fila Tradicional</th>
+            <th>Fila Digital Converso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Tiempo de Espera</strong></td>
+            <td>Incertidumbre total</td>
+            <td>Tiempo exacto en tiempo real</td>
+          </tr>
+          <tr>
+            <td><strong>Ubicación Cliente</strong></td>
+            <td>Debe permanecer en el local</td>
+            <td>Libre para salir y regresar</td>
+          </tr>
+          <tr>
+            <td><strong>Abandonos</strong></td>
+            <td>30-40% se van sin cortar</td>
+            <td>Menos del 5% de abandonos</td>
+          </tr>
+          <tr>
+            <td><strong>Experiencia</strong></td>
+            <td>Aburrida y frustrante</td>
+            <td>Moderna y conveniente</td>
+          </tr>
+          <tr>
+            <td><strong>Gestión</strong></td>
+            <td>Manual y desorganizada</td>
+            <td>Automática y eficiente</td>
+          </tr>
+          <tr>
+            <td><strong>Capacidad Local</strong></td>
+            <td>Sala de espera llena</td>
+            <td>Solo clientes atendidos</td>
+          </tr>
+          <tr>
+            <td><strong>Satisfacción</strong></td>
+            <td>Quejas frecuentes</td>
+            <td>95% satisfacción</td>
+          </tr>
+          <tr>
+            <td><strong>COVID/Higiene</strong></td>
+            <td>Aglomeraciones</td>
+            <td>Distanciamiento natural</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Beneficios para <span class="gradient-text">Tu Barbería</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Mejora la operación y aumenta las ganancias</p>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+      <div class="benefit-card">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1e40af;">🚀 Mayor Productividad</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.5rem 0; display: flex; align-items: center;">
+            <span class="check" style="margin-right: 0.5rem;">✓</span>
+            Atiende 3-4 clientes más por día
+          </li>
+          <li style="padding: 0.5rem 0; display: flex; align-items: center;">
+            <span class="check" style="margin-right: 0.5rem;">✓</span>
+            Reduce tiempos muertos entre clientes
+          </li>
+          <li style="padding: 0.5rem 0; display: flex; align-items: center;">
+            <span class="check" style="margin-right: 0.5rem;">✓</span>
+            Barberos siempre con cliente listo
+          </li>
+          <li style="padding: 0.5rem 0; display: flex; align-items: center;">
+            <span class="check" style="margin-right: 0.5rem;">✓</span>
+            Optimiza el flujo de trabajo
+          </li>
+        </ul>
+      </div>
+      
+      <div class="benefit-card">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1e40af;">😊 Clientes Más Felices</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.5rem 0; display: flex; align-items: center;">
+            <span class="check" style="margin-right: 0.5rem;">✓</span>
+            No pierden tiempo esperando
+          </li>
+          <li style="padding: 0.5rem 0; display: flex; align-items: center;">
+            <span class="check" style="margin-right: 0.5rem;">✓</span>
+            Pueden hacer otras actividades
+          </li>
+          <li style="padding: 0.5rem 0; display: flex; align-items: center;">
+            <span class="check" style="margin-right: 0.5rem;">✓</span>
+            Saben exactamente cuándo venir
+          </li>
+          <li style="padding: 0.5rem 0; display: flex; align-items: center;">
+            <span class="check" style="margin-right: 0.5rem;">✓</span>
+            Experiencia moderna y profesional
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR Demo -->
+  <section class="section">
+    <div class="qr-demo">
+      <h2 style="font-size: 2rem; margin-bottom: 1rem;">Tu Código QR Personalizado</h2>
+      <p style="margin-bottom: 2rem;">Colócalo en la entrada, ventana o compártelo en redes sociales</p>
+      <div class="qr-code">
+        <span>QR</span>
+      </div>
+      <p style="font-size: 1.125rem; margin-bottom: 1rem;">
+        <strong>converso.pro/fila/tubarberia</strong>
+      </p>
+      <p style="opacity: 0.8;">Los clientes pueden unirse escaneando el QR o visitando el link directamente</p>
+    </div>
+  </section>
+
+  <!-- Advanced Features -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Funciones <span class="gradient-text">Profesionales</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Para barberías que buscan la excelencia</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="neumorphic-inset" style="padding: 2rem;">
+        <h3 style="color: #1e40af; margin-bottom: 1rem;">🎯 Sistema de Reservas Mixto</h3>
+        <p>Combina fila digital para walk-ins con sistema de citas programadas. Optimización automática de espacios.</p>
+      </div>
+      
+      <div class="neumorphic-inset" style="padding: 2rem;">
+        <h3 style="color: #1e40af; margin-bottom: 1rem;">📺 Pantalla TV en Barbería</h3>
+        <p>Muestra la fila en tiempo real en una TV. Los clientes ven su progreso y tiempo estimado.</p>
+      </div>
+      
+      <div class="neumorphic-inset" style="padding: 2rem;">
+        <h3 style="color: #1e40af; margin-bottom: 1rem;">🌐 Multi-Idioma</h3>
+        <p>Sistema disponible en español, inglés y portugués. Se adapta automáticamente al idioma del cliente.</p>
+      </div>
+      
+      <div class="neumorphic-inset" style="padding: 2rem;">
+        <h3 style="color: #1e40af; margin-bottom: 1rem;">📊 Reportes Avanzados</h3>
+        <p>Análisis de horas pico, tiempos de servicio por barbero, días más ocupados y predicciones.</p>
+      </div>
+      
+      <div class="neumorphic-inset" style="padding: 2rem;">
+        <h3 style="color: #1e40af; margin-bottom: 1rem;">🔄 Integración Completa</h3>
+        <p>Se conecta con tu sistema de citas, CRM y programa de fidelidad. Todo sincronizado.</p>
+      </div>
+      
+      <div class="neumorphic-inset" style="padding: 2rem;">
+        <h3 style="color: #1e40af; margin-bottom: 1rem;">🎁 Marketing Automático</h3>
+        <p>Envía ofertas a clientes en la fila. "Agrega barba por 50% descuento mientras esperas".</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI Section -->
+  <section class="section">
+    <div class="neumorphic" style="text-align: center; padding: 3rem;">
+      <h2 class="section-title">Retorno de <span class="gradient-text">Inversión Inmediato</span></h2>
+      <p style="font-size: 1.125rem; color: #666; margin-bottom: 2rem;">
+        Una barbería promedio con fila digital:
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 800px; margin: 0 auto;">
+        <div>
+          <div class="gradient-text" style="font-size: 2.5rem; font-weight: bold;">+4</div>
+          <p>Clientes extra por día</p>
+        </div>
+        <div>
+          <div class="gradient-text" style="font-size: 2.5rem; font-weight: bold;">$320</div>
+          <p>Ingresos extra diarios</p>
+        </div>
+        <div>
+          <div class="gradient-text" style="font-size: 2.5rem; font-weight: bold;">$8,000</div>
+          <p>Aumento mensual</p>
+        </div>
+      </div>
+      <p style="margin-top: 2rem; font-size: 1rem; color: #666;">
+        <em>Basado en ticket promedio de $80 y 4 clientes adicionales por día</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="neumorphic testimonial">
+      <p style="font-size: 1.25rem; margin-bottom: 1rem;">
+        "La fila digital cambió todo. Antes perdíamos 5-6 clientes diarios que se iban cansados 
+        de esperar. Ahora atendemos a todos y los clientes están mucho más contentos."
+      </p>
+      <p><strong>Fernando Gómez</strong> - Master Cuts, Buenos Aires</p>
+      <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
+    </div>
+    
+    <div class="neumorphic testimonial">
+      <p style="font-size: 1.25rem; margin-bottom: 1rem;">
+        "Increíble cómo algo tan simple mejora tanto la experiencia. Los clientes pueden ir a 
+        tomar un café y regresar justo a tiempo. Profesionalismo total."
+      </p>
+      <p><strong>Luis Herrera</strong> - The Modern Barber, Madrid</p>
+      <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <div class="cta-section">
+    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Moderniza tu Barbería Hoy</h2>
+    <p style="font-size: 1.25rem; margin-bottom: 2rem;">
+      Únete a más de 3,000 barberías que eliminaron las filas físicas
+    </p>
+    <a href="https://app.converso.pro/auth" class="btn" style="background: white; color: #333; padding: 1rem 2.5rem; font-size: 1.125rem;">
+      Activar Fila Digital Gratis
+    </a>
+    <p style="margin-top: 1rem; opacity: 0.9;">Configuración en 5 minutos • Sin tarjeta de crédito • Soporte incluido</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Fila Digital para Barbería. Parte de <a href="https://converso.pro" style="color: #3b82f6;">converso.pro</a></p>
   </footer>
 </body>
 </html>

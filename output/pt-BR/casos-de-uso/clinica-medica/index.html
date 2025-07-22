@@ -3,142 +3,706 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema de Agendamento para Clínica Médica</title>
-  <meta name="description" content="Sistema profissional para clínicas médicas. Gestão de pacientes, agendamento e lembretes.">
-  <meta property="og:title" content="Sistema de Agendamento para Clínica Médica">
-  <meta property="og:description" content="Sistema profissional para clínicas médicas. Gestão de pacientes, agendamento e lembretes.">
+  <title>Sistema de Agendamento para Clínica Médica: Melhor Software 2025 | Converso</title>
+  <meta name="description" content="Sistema completo para clínicas médicas: agendamento online, gestão de pacientes, prontuário digital, LGPD. Desde R$ 0/mês. Mais de 2.000 médicos confiam.">
+  <meta property="og:title" content="Melhor Sistema para Clínica Médica Brasil 2025 - Converso">
+  <meta property="og:description" content="Software médico completo: consultas, exames, lembretes, prontuários. LGPD e CFM aprovado.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seo.converso.pro/casos-de-uso/clinica-medica">
+  <meta property="og:url" content="https://seo.converso.pro/pt-BR/casos-de-uso/clinica-medica">
   <meta property="og:image" content="https://converso.pro/converso-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sistema de Agendamento para Clínica Médica">
-  <meta name="twitter:description" content="Sistema profissional para clínicas médicas. Gestão de pacientes, agendamento e lembretes.">
-  <link rel="canonical" href="https://seo.converso.pro/casos-de-uso/clinica-medica">
-  <link rel="stylesheet" href="/styles.css">
+  <meta name="twitter:title" content="Sistema Clínica Médica Brasil - Converso">
+  <meta name="twitter:description" content="O software mais completo para clínicas médicas brasileiras. Agendamento, prontuários, LGPD.">
+  <link rel="canonical" href="https://seo.converso.pro/pt-BR/casos-de-uso/clinica-medica">
   <link rel="icon" href="https://converso.pro/favicon.ico">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .neumorphic {
+      background: #f0f2f5;
+      border-radius: 20px;
+      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .neumorphic-inset {
+      background: #f0f2f5;
+      border-radius: 15px;
+      box-shadow: inset 8px 8px 16px #c8cacd, inset -8px -8px 16px #ffffff;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #dc2626 0%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #dc2626 0%, #059669 100%);
+    }
+
+    header {
+      background: #f0f2f5;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #dc2626 0%, #059669 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #333;
+      box-shadow: 5px 5px 15px #c8cacd, -5px -5px 15px #ffffff;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+    }
+
+    .stats {
+      background: linear-gradient(135deg, #991b1b 0%, #059669 100%);
+      color: white;
+      padding: 4rem 2rem;
+      margin: 4rem 0;
+    }
+
+    .stats-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .comparison-table {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 20px 20px 60px #c8cacd, -20px -20px 60px #ffffff;
+      margin: 2rem 0;
+    }
+
+    .comparison-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .comparison-table th {
+      background: linear-gradient(135deg, #dc2626 0%, #059669 100%);
+      color: white;
+      padding: 1.5rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .comparison-table td {
+      padding: 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .check-mark {
+      color: #059669;
+      font-size: 1.5rem;
+    }
+
+    .x-mark {
+      color: #ef4444;
+      font-size: 1.5rem;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 4rem 0;
+    }
+
+    .feature-card {
+      text-align: center;
+      padding: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial {
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #dc2626 0%, #059669 100%);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: 30px;
+      margin: 4rem auto;
+      max-width: 1000px;
+    }
+
+    .problem-solution {
+      background: #fee2e2;
+      border-left: 4px solid #ef4444;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+    }
+
+    .solution-box {
+      background: #d1fae5;
+      border-left: 4px solid #10b981;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #1f2937;
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hide-mobile {
+        display: none;
+      }
+      
+      .comparison-table {
+        overflow-x: auto;
+      }
+      
+      .comparison-table table {
+        min-width: 600px;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body>
   <!-- Header -->
-  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <!-- Logo -->
-        <a href="https://converso.pro" class="flex items-center group">
-          <span class="text-2xl font-bold">
-            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
-          </span>
-        </a>
-        
-        <!-- Navigation -->
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="https://converso.pro#features" class="text-gray-600 hover:text-gray-900 transition">Recursos</a>
-          <a href="https://converso.pro/pricing" class="text-gray-600 hover:text-gray-900 transition">Preços</a>
-          <a href="https://converso.pro#testimonials" class="text-gray-600 hover:text-gray-900 transition">Depoimentos</a>
-        </nav>
-        
-        <!-- CTA Buttons -->
-        <div class="flex items-center space-x-4">
-          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
-            Entrar
-          </a>
-          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
-            Começar Grátis
-          </a>
-        </div>
+  <header>
+    <div class="header-container">
+      <a href="https://converso.pro" class="logo gradient-text">converso.pro</a>
+      <div class="nav-buttons">
+        <a href="/pt-BR/" class="btn btn-secondary hide-mobile">Recursos</a>
+        <a href="https://app.converso.pro/auth" class="btn btn-primary">Começar Grátis</a>
       </div>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    
-    <section class="py-20 px-4">
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Sistema de Agendamento Médico</h1>
-        <p class="text-xl text-gray-600 text-center mb-12">Sistema profissional para clínicas médicas. Gestão de pacientes, agendamento e lembretes.</p>
-        
-        <div class="card-neumorphic mb-8">
-          <h2 class="text-2xl font-bold mb-4">Professional Booking System</h2>
-          <p class="mb-4">Create your professional booking website in just 5 minutes with Converso.</p>
-          <ul class="space-y-2">
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>No booking fees</span>
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>Your own professional website</span>
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-600 mr-2">✓</span>
-              <span>WhatsApp integration</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="text-center">
-          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
-            Criar Seu Site Agora
-          </a>
-        </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="neumorphic">
+      <div class="gradient-text" style="font-size: 4rem; margin-bottom: 1rem;">🏥</div>
+      <h1>Sistema para Clínica Médica: <span class="gradient-text">O Melhor Software Brasileiro 2025</span></h1>
+      <p class="subtitle">
+        <strong>Converso é a solução #1</strong> para clínicas médicas no Brasil. 
+        Agendamento online, gestão de pacientes, prontuário digital, lembretes automáticos. 
+        Conforme LGPD e CFM, desde R$ 0/mês. Mais de 2.000 médicos já confiam 
+        em São Paulo, Rio de Janeiro, Brasília e todo o Brasil.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="https://app.converso.pro/auth" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">
+          Criar Minha Clínica Digital
+        </a>
+        <a href="#comparacao" class="btn btn-secondary">Ver Comparação Completa</a>
       </div>
-    </section>
-  
-  </main>
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <!-- Company -->
-        <div>
-          <h3 class="text-lg font-semibold mb-4">Converso</h3>
-          <p class="text-gray-400 text-sm">
-            Crie seu site profissional de agendamentos em minutos. Junte-se a milhares de profissionais que confiam no Converso.
-          </p>
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-container">
+      <div>
+        <div class="stat-number">100%</div>
+        <div>Conforme LGPD</div>
+      </div>
+      <div>
+        <div class="stat-number">5min</div>
+        <div>Configuração Completa</div>
+      </div>
+      <div>
+        <div class="stat-number">90%</div>
+        <div>Menos Faltas</div>
+      </div>
+      <div>
+        <div class="stat-number">2.000+</div>
+        <div>Médicos Confiam</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem/Solution Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Problemas Reais que <span class="gradient-text">Todo Médico Enfrenta</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Soluções digitais para a medicina moderna</p>
+    </div>
+    
+    <div style="display: grid; gap: 2rem; max-width: 800px; margin: 0 auto;">
+      <div>
+        <div class="problem-solution">
+          <h3 style="color: #dc2626; margin-bottom: 0.5rem;">❌ Problema: Pacientes Ligam Durante Consultas</h3>
+          <p>65% das ligações acontecem durante atendimentos. Interrupções constantes prejudicam o foco na consulta.</p>
         </div>
-        
-        <!-- Links -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Produto</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro#features" class="hover:text-white transition">Recursos</a></li>
-            <li><a href="https://converso.pro/pricing" class="hover:text-white transition">Preços</a></li>
-            <li><a href="https://converso.pro/apps" class="hover:text-white transition">Apps</a></li>
-          </ul>
-        </div>
-        
-        <!-- Support -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Suporte</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro/help" class="hover:text-white transition">Central de Ajuda</a></li>
-            <li><a href="https://converso.pro/contact" class="hover:text-white transition">Contato</a></li>
-          </ul>
-        </div>
-        
-        <!-- Legal -->
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Legal</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="https://converso.pro/privacy" class="hover:text-white transition">Política de Privacidade</a></li>
-            <li><a href="https://converso.pro/terms" class="hover:text-white transition">Termos de Serviço</a></li>
-          </ul>
+        <div class="solution-box">
+          <h3 style="color: #059669; margin-bottom: 0.5rem;">✓ Solução: Agendamento Online 24/7</h3>
+          <p>Pacientes agendam quando precisam pelo WhatsApp ou site. Sua secretária pode focar no que realmente importa.</p>
         </div>
       </div>
       
-      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-        <p>&copy; 2025 Converso. Todos os direitos reservados.</p>
+      <div>
+        <div class="problem-solution">
+          <h3 style="color: #dc2626; margin-bottom: 0.5rem;">❌ Problema: Faltas Constantes Prejudicam Agenda</h3>
+          <p>30% dos pacientes faltam sem avisar. Horários vagos = perda de R$ 1.500-3.000/mês.</p>
+        </div>
+        <div class="solution-box">
+          <h3 style="color: #059669; margin-bottom: 0.5rem;">✓ Solução: Lembretes Automáticos WhatsApp</h3>
+          <p>WhatsApp 48h + 2h antes da consulta. Reduz faltas para 10%. Recupere até R$ 2.500/mês.</p>
+        </div>
+      </div>
+      
+      <div>
+        <div class="problem-solution">
+          <h3 style="color: #dc2626; margin-bottom: 0.5rem;">❌ Problema: Prontuários em Papel São Caóticos</h3>
+          <p>Papéis perdidos, ilegíveis, sem backup. Risco de processos e perda de histórico médico.</p>
+        </div>
+        <div class="solution-box">
+          <h3 style="color: #059669; margin-bottom: 0.5rem;">✓ Solução: Prontuário Digital Seguro</h3>
+          <p>Histórico completo do paciente na nuvem. Backup automático, acesso rápido, conforme LGPD.</p>
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="section" id="comparacao">
+    <div class="section-header">
+      <h2 class="section-title">Comparação: <span class="gradient-text">Converso vs Concorrentes</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Análise dos principais softwares médicos do Brasil</p>
+    </div>
+    
+    <div class="comparison-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th style="background: #dc2626;">Converso</th>
+            <th>Doctoralia</th>
+            <th>iClinic</th>
+            <th>MedPlus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Preço Mensal</strong></td>
+            <td><strong>R$ 0 - R$ 288</strong></td>
+            <td>R$ 79 - R$ 349</td>
+            <td>R$ 149 - R$ 499</td>
+            <td>R$ 97 - R$ 297</td>
+          </tr>
+          <tr>
+            <td><strong>Taxa por Consulta</strong></td>
+            <td><span class="check-mark">✓</span> R$ 0,00</td>
+            <td><span class="x-mark">✗</span> 12% + R$ 2,50</td>
+            <td><span class="check-mark">✓</span> R$ 0,00</td>
+            <td><span class="check-mark">✓</span> R$ 0,00</td>
+          </tr>
+          <tr>
+            <td><strong>Prontuário Digital</strong></td>
+            <td><span class="check-mark">✓</span> Completo</td>
+            <td><span class="x-mark">✗</span> Básico</td>
+            <td><span class="check-mark">✓</span> Sim</td>
+            <td><span class="check-mark">✓</span> Sim</td>
+          </tr>
+          <tr>
+            <td><strong>WhatsApp Integrado</strong></td>
+            <td><span class="check-mark">✓</span> Nativo</td>
+            <td><span class="x-mark">✗</span> Não</td>
+            <td><span class="x-mark">✗</span> Limitado</td>
+            <td><span class="x-mark">✗</span> Não</td>
+          </tr>
+          <tr>
+            <td><strong>Site Próprio</strong></td>
+            <td><span class="check-mark">✓</span> converso.pro/p/drNome</td>
+            <td><span class="x-mark">✗</span> Só no app deles</td>
+            <td><span class="x-mark">✗</span> Extra R$ 200/mês</td>
+            <td><span class="x-mark">✗</span> Não</td>
+          </tr>
+          <tr>
+            <td><strong>Teleconsulta</strong></td>
+            <td><span class="check-mark">✓</span> Incluída</td>
+            <td><span class="x-mark">✗</span> Pago à parte</td>
+            <td><span class="check-mark">✓</span> Sim</td>
+            <td><span class="x-mark">✗</span> Extra</td>
+          </tr>
+          <tr>
+            <td><strong>LGPD Compliance</strong></td>
+            <td><span class="check-mark">✓</span> 100%</td>
+            <td><span class="x-mark">✗</span> Parcial</td>
+            <td><span class="check-mark">✓</span> Sim</td>
+            <td><span class="check-mark">✓</span> Sim</td>
+          </tr>
+          <tr>
+            <td><strong>Suporte Médico</strong></td>
+            <td><span class="check-mark">✓</span> 24/7 em PT</td>
+            <td>Horário comercial</td>
+            <td><span class="check-mark">✓</span> Bom</td>
+            <td>Limitado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="neumorphic" style="background: #fef3c7; margin-top: 2rem;">
+      <h3 style="color: #92400e; margin-bottom: 1rem;">💰 Cálculo Real para Clínica (200 consultas/mês, R$ 150/consulta)</h3>
+      <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+        <li style="padding: 0.5rem 0;">• <strong>Doctoralia:</strong> R$ 79-349/mês + 12% + R$ 2,50 = <strong>R$ 4.679-4.949/mês</strong></li>
+        <li style="padding: 0.5rem 0;">• <strong>iClinic:</strong> R$ 149-499/mês = <strong>R$ 1.788-5.988/ano</strong></li>
+        <li style="padding: 0.5rem 0;">• <strong>MedPlus:</strong> R$ 97-297/mês = <strong>R$ 1.164-3.564/ano</strong></li>
+        <li style="padding: 0.5rem 0; color: #dc2626; font-weight: bold;">• <strong>Converso:</strong> R$ 0-288/mês = <strong>R$ 0-3.456/ano + ZERO comissões</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Sistema Completo para <span class="gradient-text">Clínicas Modernas</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Tudo que sua prática médica precisa em uma plataforma</p>
+    </div>
+    
+    <div class="feature-grid">
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">📋</div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Prontuário Eletrônico</h3>
+        <p>
+          Prontuário digital completo com histórico, evolução, prescrições. 
+          Busca instantânea por qualquer informação do paciente.
+        </p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">📅</div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Agenda Inteligente</h3>
+        <p>
+          Agenda médica com bloqueios automáticos, encaixes, recorrências. 
+          Visualização por dia, semana ou mês.
+        </p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">💬</div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">WhatsApp Médico</h3>
+        <p>
+          Confirmações, lembretes e cancelamentos automáticos. 
+          Comunicação segura e profissional com pacientes.
+        </p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">💊</div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Receitas Digitais</h3>
+        <p>
+          Geração automática de receitas e atestados com assinatura digital. 
+          Biblioteca de medicamentos atualizada.
+        </p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">💰</div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Controle Financeiro</h3>
+        <p>
+          Faturamento automático, controle de convênios, relatórios financeiros. 
+          Integração com Pix para pagamentos.
+        </p>
+      </div>
+      
+      <div class="neumorphic feature-card">
+        <div class="feature-icon">🖥️</div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #dc2626;">Teleconsulta Integrada</h3>
+        <p>
+          Consultas virtuais direto na plataforma. Gravação automática, 
+          receitas digitais, tudo em um só lugar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Médicos de Sucesso com <span class="gradient-text">Converso</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Histórias reais de transformação digital</p>
+    </div>
+    
+    <div style="display: grid; gap: 2rem;">
+      <div class="neumorphic testimonial">
+        <p style="font-size: 1.25rem; margin-bottom: 1rem;">
+          "Migrei do iClinic para Converso e economizo R$ 300/mês. O prontuário 
+          é muito mais intuitivo e o WhatsApp automático reduziu minhas faltas 
+          em 80%. Minha produtividade aumentou significativamente."
+        </p>
+        <p><strong>Dr. Ricardo Almeida</strong> - Cardiologista, São Paulo</p>
+        <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
+      </div>
+      
+      <div class="neumorphic testimonial">
+        <p style="font-size: 1.25rem; margin-bottom: 1rem;">
+          "Como dermatologista, preciso de um sistema visual. O Converso permite 
+          anexar fotos no prontuário e fazer comparações de evolução. A teleconsulta 
+          integrada salvou minha prática durante a pandemia."
+        </p>
+        <p><strong>Dra. Ana Paula Costa</strong> - Dermatologista, Rio de Janeiro</p>
+        <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
+      </div>
+      
+      <div class="neumorphic testimonial">
+        <p style="font-size: 1.25rem; margin-bottom: 1rem;">
+          "Administro uma clínica com 8 médicos. O Converso facilitou tudo: 
+          agenda centralizada, prontuários compartilhados, relatórios financeiros. 
+          Reduziu minha carga administrativa em 50%."
+        </p>
+        <p><strong>Dr. José Carlos Mendes</strong> - Diretor Clínico, Brasília</p>
+        <div style="color: #f59e0b; margin-top: 0.5rem;">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Medical Specific Features -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Recursos Exclusivos para <span class="gradient-text">Medicina</span></h2>
+      <p style="font-size: 1.125rem; color: #666;">Funcionalidades desenvolvidas com médicos brasileiros</p>
+    </div>
+    
+    <div style="display: grid; gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+      <div class="neumorphic">
+        <h3 style="color: #dc2626; margin-bottom: 1rem;">⚕️ Conformidade CFM e LGPD</h3>
+        <p>
+          Sistema 100% conforme resoluções do CFM sobre prontuários eletrônicos 
+          e LGPD para proteção de dados de pacientes.
+        </p>
+      </div>
+      
+      <div class="neumorphic">
+        <h3 style="color: #dc2626; margin-bottom: 1rem;">🏥 Gestão Multi-Especialidade</h3>
+        <p>
+          Perfeito para clínicas com várias especialidades. Agenda por médico, 
+          prontuários compartilhados, relatórios por especialidade.
+        </p>
+      </div>
+      
+      <div class="neumorphic">
+        <h3 style="color: #dc2626; margin-bottom: 1rem;">📊 Relatórios Médicos</h3>
+        <p>
+          Relatórios específicos para medicina: produtividade por médico, 
+          análise de convênios, estatísticas de diagnósticos.
+        </p>
+      </div>
+      
+      <div class="neumorphic">
+        <h3 style="color: #dc2626; margin-bottom: 1rem;">🔒 Backup Seguro</h3>
+        <p>
+          Todos os dados médicos com backup automático em servidores brasileiros. 
+          Recuperação de dados garantida em caso de problemas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section">
+    <div class="neumorphic" style="background: #1f2937; color: white;">
+      <h2 style="font-size: 2rem; margin-bottom: 1.5rem; text-align: center;">
+        Planos para Todo Tipo de <span style="color: #dc2626;">Prática Médica</span>
+      </h2>
+      
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem;">
+          <h3 style="margin-bottom: 1rem;">🆓 <strong>Plano Gratuito</strong></h3>
+          <p>10 consultas/mês, prontuário básico, agenda, WhatsApp</p>
+          <p style="font-size: 1.25rem; margin-top: 0.5rem;"><strong>R$ 0/mês para sempre</strong></p>
+        </div>
+        
+        <div style="background: rgba(220, 38, 38, 0.2); padding: 2rem; border-radius: 15px; margin-bottom: 1.5rem; border: 2px solid #dc2626;">
+          <h3 style="margin-bottom: 1rem;">⭐ <strong>Plano Plus</strong></h3>
+          <p>500 consultas/mês, teleconsulta, receitas digitais, relatórios</p>
+          <p style="font-size: 1.25rem; margin-top: 0.5rem;"><strong>R$ 88/mês</strong></p>
+        </div>
+        
+        <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 15px;">
+          <h3 style="margin-bottom: 1rem;">💎 <strong>Plano Pro</strong></h3>
+          <p>Consultas ilimitadas, multi-médicos, API, relatórios avançados</p>
+          <p style="font-size: 1.25rem; margin-top: 0.5rem;"><strong>R$ 288/mês</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Perguntas <span class="gradient-text">Frequentes</span></h2>
+    </div>
+    
+    <div style="display: grid; gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+      <div class="neumorphic">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">O sistema está conforme o CFM?</h3>
+        <p>Sim! Seguimos todas as resoluções do CFM sobre prontuários eletrônicos e certificação digital.</p>
+      </div>
+      
+      <div class="neumorphic">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Como funciona a migração de outro sistema?</h3>
+        <p>Fazemos a migração gratuita de todos os dados: pacientes, históricos, agendamentos. Sem perda de informações.</p>
+      </div>
+      
+      <div class="neumorphic">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Posso usar em clínica com vários médicos?</h3>
+        <p>Sim! Cada médico tem sua agenda e prontuários. Controle de acesso por especialidade e função.</p>
+      </div>
+      
+      <div class="neumorphic">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Os dados ficam seguros na nuvem?</h3>
+        <p>Totalmente seguros! Servidores no Brasil, backup automático, criptografia e conformidade LGPD.</p>
+      </div>
+      
+      <div class="neumorphic">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Funciona para teleconsulta?</h3>
+        <p>Sim! Teleconsulta integrada com prescrição digital, gravação e prontuário eletrônico.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <div class="cta-section">
+    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Digitalize Sua Clínica em 5 Minutos</h2>
+    <p style="font-size: 1.25rem; margin-bottom: 2rem;">
+      Junte-se a mais de 2.000 médicos que já transformaram suas práticas
+    </p>
+    <a href="https://app.converso.pro/auth" class="btn" style="background: white; color: #333; padding: 1rem 2.5rem; font-size: 1.125rem;">
+      Começar Grátis Agora
+    </a>
+    <p style="margin-top: 1rem; opacity: 0.9;">Sem cartão • Migração gratuita • Suporte médico especializado 24/7</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sistema para Clínica Médica - Converso. Parte de <a href="https://converso.pro" style="color: #dc2626;">converso.pro</a></p>
   </footer>
 </body>
 </html>
