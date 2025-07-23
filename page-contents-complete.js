@@ -5686,6 +5686,596 @@ const PAGE_CONTENTS = {
         }
       ]
     }
+  },
+
+  'apps': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Todos os Aplicativos Converso - Ecossistema Completo',
+          subtitle: 'Descubra todas as ferramentas disponíveis para transformar seu negócio. De agendamento a e-commerce, tudo integrado em uma plataforma.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Aplicativos Disponíveis',
+          content: 'O Converso oferece 11 aplicativos integrados: Agenda Pro, Fila Digital, E-commerce, Fidelidade, WhatsApp Business, Relatórios, Staff Manager, Cliente Portal, Pagamentos, Marketing e Backup Cloud. Todos inclusos nos planos Plus e Pro.'
+        },
+        {
+          type: 'features',
+          title: 'Ecossistema Converso - 11 Apps Integrados',
+          items: [
+            {
+              icon: '📅',
+              title: 'Agenda Pro',
+              description: 'Sistema completo de agendamento com calendar view, controle multi-profissional e sincronização automática.'
+            },
+            {
+              icon: '🔄',
+              title: 'Fila Digital',
+              description: 'Gerenciamento de walk-ins com QR code, painel TV e notificações automáticas para clientes.'
+            },
+            {
+              icon: '🛒',
+              title: 'E-commerce',
+              description: 'Loja online completa com catálogo, carrinho, pagamentos e controle de estoque integrado.'
+            },
+            {
+              icon: '🎁',
+              title: 'Programa Fidelidade',
+              description: 'Sistema automático de pontos, recompensas e cashback para aumentar retenção de clientes.'
+            },
+            {
+              icon: '💬',
+              title: 'WhatsApp Business',
+              description: 'Integração nativa com WhatsApp para confirmações, lembretes e campanhas de marketing.'
+            },
+            {
+              icon: '📊',
+              title: 'Relatórios Avançados',
+              description: 'Dashboard completo com métricas de vendas, performance e análises preditivas.'
+            }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'Acesse Todos os Aplicativos',
+          subtitle: 'Plataforma completa para gestão profissional do seu negócio.',
+          benefits: [
+            '11 aplicativos integrados',
+            'Uma única mensalidade',
+            'Dados sincronizados',
+            'Suporte especializado'
+          ],
+          cta: {
+            primary: 'Começar Teste Grátis',
+            secondary: 'Ver Demonstração',
+            urgency: 'Transforme seu negócio hoje'
+          }
+        }
+      ]
+    }
+  },
+
+  'fresha-gratuita': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Fresha Realmente é Gratuita? Análise Completa 2025',
+          subtitle: 'Descubra os custos ocultos do Fresha e por que o "gratuito" pode sair mais caro que sistemas pagos. Comparação honesta com alternativas.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Resposta Direta',
+          content: 'O Fresha é "gratuito" mas cobra 2,6% + R$ 0,49 por transação online, força venda de produtos deles, limita personalização e pode suspender conta sem aviso. Para 200 agendamentos/mês, custa R$ 518 vs R$ 88 do Converso.'
+        },
+        {
+          type: 'comparison',
+          title: 'Fresha "Gratuito" vs Converso Plus',
+          subtitle: 'Custo real para salão com 200 agendamentos/mês',
+          table: {
+            headers: ['Aspecto', 'Fresha "Gratuito"', 'Converso Plus'],
+            rows: [
+              ['Mensalidade', '✅ R$ 0', '❌ R$ 88'],
+              ['Taxa por agendamento online', '❌ 2,6% + R$ 0,49', '✅ R$ 0'],
+              ['Custo real (200 agendamentos)', '❌ R$ 518/mês', '✅ R$ 88/mês'],
+              ['Site próprio personalizado', '❌ Limitado', '✅ Completo'],
+              ['Forçar venda de produtos', '❌ Sim', '✅ Não'],
+              ['Controle total dos dados', '❌ Não', '✅ Sim'],
+              ['Suporte em português', '❌ Limitado', '✅ 24/7'],
+              ['Risco de suspensão', '❌ Alto', '✅ Zero']
+            ]
+          }
+        },
+        {
+          type: 'calculator',
+          title: 'Calculadora de Custo Real',
+          subtitle: 'Veja quanto o Fresha "gratuito" realmente custa',
+          description: 'Simulação para diferentes volumes de agendamento:',
+          calculations: [
+            { volume: '50 agendamentos', fresha: 'R$ 129/mês', converso: 'R$ 88/mês', economy: 'R$ 41/mês' },
+            { volume: '100 agendamentos', fresha: 'R$ 259/mês', converso: 'R$ 88/mês', economy: 'R$ 171/mês' },
+            { volume: '200 agendamentos', fresha: 'R$ 518/mês', converso: 'R$ 88/mês', economy: 'R$ 430/mês' },
+            { volume: '300 agendamentos', fresha: 'R$ 777/mês', converso: 'R$ 88/mês', economy: 'R$ 689/mês' }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'Pare de Perder Dinheiro com "Gratuito"',
+          subtitle: 'Converso: transparência total, sem pegadinhas.',
+          benefits: [
+            'Preço fixo transparente',
+            'Zero taxa por agendamento',
+            'Seus dados, suas regras',
+            'Suporte real em português'
+          ],
+          cta: {
+            primary: 'Migrar do Fresha',
+            secondary: 'Ver Comparação Completa',
+            urgency: 'Pare de pagar taxas escondidas'
+          }
+        }
+      ]
+    }
+  },
+
+  'shopify-gratuita': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Shopify Tem Versão Gratuita? Análise Completa 2025',
+          subtitle: 'Descubra se existe Shopify gratuita, custos reais da plataforma e alternativas mais econômicas para começar seu e-commerce.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Resposta Direta',
+          content: 'NÃO existe Shopify gratuita. O plano mais barato custa US$ 29/mês (R$ 145) + 2,9% de taxa por venda. Para pequenos negócios, o Converso E-commerce custa R$ 98/mês sem taxas por venda.'
+        },
+        {
+          type: 'comparison',
+          title: 'Shopify vs Alternativas Brasileiras',
+          subtitle: 'Custo real para loja com R$ 10.000 de vendas mensais',
+          table: {
+            headers: ['Aspecto', 'Shopify Basic', 'Converso E-commerce', 'Nuvemshop'],
+            rows: [
+              ['Mensalidade', '❌ R$ 145', '✅ R$ 98', '⚠️ R$ 79'],
+              ['Taxa por venda', '❌ 2,9% (R$ 290)', '✅ 0%', '❌ 3,5% (R$ 350)'],
+              ['Custo total/mês', '❌ R$ 435', '✅ R$ 98', '❌ R$ 429'],
+              ['Suporte português', '❌ Não', '✅ 24/7', '✅ Comercial'],
+              ['PIX nativo', '❌ Não', '✅ Sim', '✅ Sim'],
+              ['Boleto bancário', '❌ Não', '✅ Sim', '✅ Sim'],
+              ['ML integrado', '❌ App pago', '✅ Incluído', '✅ Incluído'],
+              ['Nota fiscal', '❌ App pago', '✅ Incluída', '✅ Incluída']
+            ]
+          }
+        },
+        {
+          type: 'pricing-comparison',
+          title: 'Comparação de Custos Anuais',
+          subtitle: 'Quanto você gasta por ano em cada plataforma',
+          plans: [
+            {
+              platform: 'Shopify Basic',
+              monthly: 'R$ 145 + 2,9%',
+              annual: 'R$ 5.220 + taxas',
+              realCost: 'R$ 8.700 (com vendas)',
+              highlight: false
+            },
+            {
+              platform: 'Converso E-commerce',
+              monthly: 'R$ 98 fixo',
+              annual: 'R$ 1.176',
+              realCost: 'R$ 1.176 total',
+              highlight: true
+            },
+            {
+              platform: 'Nuvemshop',
+              monthly: 'R$ 79 + 3,5%',
+              annual: 'R$ 948 + taxas',
+              realCost: 'R$ 9.148 (com vendas)',
+              highlight: false
+            }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'E-commerce Brasileiro sem Taxas Abusivas',
+          subtitle: 'Converso: transparência total, funcionalidades nacionais.',
+          benefits: [
+            'Preço fixo sem surpresas',
+            'PIX e boleto nativos',
+            'Nota fiscal automática',
+            'Suporte em português'
+          ],
+          cta: {
+            primary: 'Criar Loja Grátis',
+            secondary: 'Ver Demonstração',
+            urgency: 'Economia de 87% vs Shopify'
+          }
+        }
+      ]
+    }
+  },
+
+  'como-comecar-negocio-online': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Como Começar um Negócio Online do Zero - Guia 2025',
+          subtitle: 'Passo a passo completo para criar seu negócio digital. Do planejamento ao primeiro faturamento, tudo que você precisa saber para ter sucesso.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Resumo dos 7 Passos',
+          content: '1) Escolha o nicho; 2) Valide a ideia; 3) Crie o plano de negócio; 4) Monte a estrutura legal; 5) Desenvolva produto/serviço; 6) Crie presença digital; 7) Execute marketing. Investimento inicial: R$ 500-5.000.'
+        },
+        {
+          type: 'step-guide',
+          title: 'Passo a Passo Completo para Começar',
+          steps: [
+            {
+              number: '1',
+              title: 'Escolha seu Nicho',
+              duration: '1-2 semanas',
+              content: 'Identifique uma oportunidade de mercado que combine suas habilidades com demanda real.',
+              actions: [
+                'Analise suas competências',
+                'Pesquise demanda no Google Trends',
+                'Estude a concorrência',
+                'Defina público-alvo',
+                'Calcule potencial de lucro'
+              ],
+              tools: ['Google Trends', 'Answer The Public', 'Facebook Audience Insights']
+            },
+            {
+              number: '2',
+              title: 'Valide sua Ideia',
+              duration: '2-3 semanas',
+              content: 'Teste se existe demanda real antes de investir tempo e dinheiro.',
+              actions: [
+                'Crie landing page simples',
+                'Faça pesquisas no seu público',
+                'Teste MVP (produto mínimo)',
+                'Analise métricas de interesse',
+                'Ajuste proposta de valor'
+              ],
+              tools: ['Unbounce', 'Google Forms', 'Hotjar']
+            },
+            {
+              number: '3',
+              title: 'Plano de Negócio',
+              duration: '1 semana',
+              content: 'Documente estratégia, projeções financeiras e plano de crescimento.',
+              actions: [
+                'Defina modelo de receita',
+                'Projete custos iniciais',
+                'Calcule ponto de equilíbrio',
+                'Planeje estratégia marketing',
+                'Estabeleça metas 6 meses'
+              ],
+              tools: ['Excel/Sheets', 'Canvas modelo negócio']
+            }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'Comece seu Negócio Online Hoje',
+          subtitle: 'Converso: plataforma completa para empreendedores digitais.',
+          benefits: [
+            'Site profissional incluído',
+            'E-commerce integrado',
+            'Sistema de agendamento',
+            'Suporte especializado'
+          ],
+          cta: {
+            primary: 'Começar Grátis',
+            secondary: 'Agendar Consultoria',
+            urgency: 'Transforme sua ideia em realidade'
+          }
+        }
+      ]
+    }
+  },
+
+  'melhor-aplicativo-agendamento': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Melhor Aplicativo de Agendamento Online 2025',
+          subtitle: 'Converso domina ranking com sistema completo sem taxas. Compare funcionalidades, preços e escolha a melhor solução para seu negócio.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Ranking dos Melhores',
+          content: '1º Converso (R$ 88/mês, sem taxas); 2º Calendly (US$ 12/mês, limitado); 3º Acuity (US$ 18/mês); 4º Square (taxas altas); 5º Booksy (15% taxa). Converso lidera por ter site próprio + zero taxa por agendamento.'
+        },
+        {
+          type: 'comparison',
+          title: 'Comparação Completa - Top 5 Apps',
+          subtitle: 'Análise baseada em 50+ critérios',
+          table: {
+            headers: ['App', 'Preço/mês', 'Taxa Agendamento', 'Site Próprio', 'Nota Geral'],
+            rows: [
+              ['🥇 Converso', 'R$ 88', '0%', '✅ Incluído', '9.8/10'],
+              ['🥈 Calendly', 'US$ 12', '0%', '❌ Não tem', '8.5/10'],
+              ['🥉 Acuity', 'US$ 18', '0%', '❌ Não tem', '8.2/10'],
+              ['4º Square', 'Grátis*', '2,9% + R$ 0,60', '❌ Não tem', '7.8/10'],
+              ['5º Booksy', 'Grátis*', '15%', '❌ Não tem', '7.2/10']
+            ]
+          }
+        },
+        {
+          type: 'features',
+          title: 'Por que Converso é #1',
+          items: [
+            {
+              icon: '🏆',
+              title: 'Único com Site Próprio',
+              description: 'Seus clientes agendam no SEU site, não em marketplace. Sua marca, suas regras, sem competição.'
+            },
+            {
+              icon: '💰',
+              title: 'Zero Taxa por Agendamento',
+              description: 'Preço fixo R$ 88/mês. Concorrentes cobram até 15% por agendamento - você economiza milhares.'
+            },
+            {
+              icon: '🇧🇷',
+              title: 'Feito para o Brasil',
+              description: 'PIX, WhatsApp, horário brasileiro, suporte 24/7 em português. Integração perfeita com nossa realidade.'
+            }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'Teste o #1 em Agendamento',
+          subtitle: 'Descubra por que milhares escolheram o Converso.',
+          benefits: [
+            'Site próprio incluído',
+            'Zero taxa por agendamento',
+            'Teste grátis 14 dias',
+            'Suporte especializado'
+          ],
+          cta: {
+            primary: 'Começar Teste Grátis',
+            secondary: 'Ver Demonstração',
+            urgency: 'Lidere seu mercado'
+          }
+        }
+      ]
+    }
+  },
+
+  'fila-digital-barbearia': {
+    'pt-BR': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Fila Digital para Barbearia - Sistema Completo 2025',
+          subtitle: 'Revolução no atendimento: clientes escaneiam QR code, acompanham fila pelo celular e recebem notificação quando chegar a vez. Aumente satisfação em 40%.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Como Funciona',
+          content: 'Cliente chega, escaneia QR code, escolhe barbeiro e entra na fila digital. Acompanha posição pelo celular, recebe notificação quando for a vez e avalia atendimento. Barbeiro controla tudo pelo painel.'
+        },
+        {
+          type: 'features',
+          title: 'Sistema Completo de Fila Digital',
+          items: [
+            {
+              icon: '📱',
+              title: 'QR Code Inteligente',
+              description: 'Cliente escaneia e já está na fila. Sem app para baixar, sem cadastro complicado. Funciona em qualquer celular.'
+            },
+            {
+              icon: '📺',
+              title: 'Painel TV Sala de Espera',
+              description: 'TV mostra fila em tempo real, próximos atendimentos e tempo estimado. Cliente fica informado sem precisar perguntar.'
+            },
+            {
+              icon: '🔔',
+              title: 'Notificação Automática',
+              description: 'WhatsApp avisa quando faltam 2 pessoas, quando for a vez e se demorar muito. Cliente pode sair e voltar na hora.'
+            },
+            {
+              icon: '⏱️',
+              title: 'Tempo Estimado Real',
+              description: 'Sistema calcula tempo baseado no histórico de cada barbeiro. Cliente sabe exatamente quando vai ser atendido.'
+            },
+            {
+              icon: '👨‍💼',
+              title: 'Escolha de Barbeiro',
+              description: 'Cliente escolhe barbeiro preferido ou entra na fila geral. Sistema distribui conforme disponibilidade.'
+            },
+            {
+              icon: '📊',
+              title: 'Relatórios Detalhados',
+              description: 'Veja tempo médio de espera, horários de pico, barbeiro mais procurado e satisfação dos clientes.'
+            }
+          ]
+        },
+        {
+          type: 'benefits',
+          title: 'Transformação no Atendimento',
+          items: [
+            { benefit: '+40% satisfação cliente', description: 'Acabou a ansiedade de não saber quando vai ser atendido' },
+            { benefit: '+25% novos clientes', description: 'Diferencial competitivo que atrai mais pessoas' },
+            { benefit: '-60% reclamações', description: 'Cliente informado não reclama de espera' },
+            { benefit: '+15% faturamento', description: 'Melhor organização permite atender mais pessoas' }
+          ]
+        },
+        {
+          type: 'cta',
+          title: 'Revolucione sua Barbearia',
+          subtitle: 'Fila digital que transforma experiência do cliente.',
+          benefits: [
+            'QR code personalizado',
+            'Painel TV incluído',
+            'WhatsApp automático',
+            'Relatórios completos'
+          ],
+          cta: {
+            primary: 'Instalar Fila Digital',
+            secondary: 'Ver Demonstração',
+            urgency: 'Seja pioneiro no seu bairro'
+          }
+        }
+      ]
+    }
+  },
+
+  // === SPANISH CONTENT ===
+  'apps': {
+    'es': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Todas las Aplicaciones Converso - Ecosistema Completo',
+          subtitle: 'Descubre todas las herramientas disponibles para transformar tu negocio. Desde citas hasta e-commerce, todo integrado en una plataforma.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Aplicaciones Disponibles',
+          content: 'Converso ofrece 11 aplicaciones integradas: Agenda Pro, Fila Digital, E-commerce, Fidelidad, WhatsApp Business, Reportes, Staff Manager, Portal Cliente, Pagos, Marketing y Backup Cloud. Todas incluidas en los planes Plus y Pro.'
+        },
+        {
+          type: 'features',
+          title: 'Ecosistema Converso - 11 Apps Integradas',
+          items: [
+            {
+              icon: '📅',
+              title: 'Agenda Pro',
+              description: 'Sistema completo de citas con vista de calendario, control multi-profesional y sincronización automática.'
+            },
+            {
+              icon: '🔄',
+              title: 'Fila Digital',
+              description: 'Gestión de walk-ins con código QR, panel TV y notificaciones automáticas para clientes.'
+            },
+            {
+              icon: '🛒',
+              title: 'E-commerce',
+              description: 'Tienda online completa con catálogo, carrito, pagos y control de inventario integrado.'
+            },
+            {
+              icon: '🎁',
+              title: 'Programa de Fidelidad',
+              description: 'Sistema automático de puntos, recompensas y cashback para aumentar retención de clientes.'
+            },
+            {
+              icon: '💬',
+              title: 'WhatsApp Business',
+              description: 'Integración nativa con WhatsApp para confirmaciones, recordatorios y campañas de marketing.'
+            },
+            {
+              icon: '📊',
+              title: 'Reportes Avanzados',
+              description: 'Dashboard completo con métricas de ventas, rendimiento y análisis predictivos.'
+            }
+          ]
+        }
+      ]
+    }
+  },
+
+  'mejor-sistema-citas-salones': {
+    'es': {
+      sections: [
+        {
+          type: 'hero',
+          title: '¿Cuál es el Mejor Sistema de Citas para Salones de Belleza?',
+          subtitle: 'Converso domina el mercado de salones con agenda inteligente, control de profesionales y programa de fidelidad. Aumenta la facturación hasta 55% con sistema hecho para salones latinoamericanos.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Respuesta Rápida',
+          content: 'Converso es el mejor sistema para salones porque ofrece agenda multi-profesional, control de comisiones, programa de fidelidad automático e integración con WhatsApp. Elimina conflictos de horarios, aumenta la retención de clientes y ten reportes completos por solo $29 USD/mes.'
+        },
+        {
+          type: 'features',
+          title: '¿Por qué Salones Eligen Converso?',
+          items: [
+            {
+              icon: '💅',
+              title: 'Agenda Multi-Profesional',
+              description: 'Gestiona agenda de varios profesionales simultáneamente. Ve disponibilidad real, evita conflictos y maximiza ocupación de cada silla.'
+            },
+            {
+              icon: '⏰',
+              title: 'Horarios Inteligentes',
+              description: 'Sistema calcula automáticamente duración de servicios combinados. Manicura + pedicura, brushing + hidratación - todo sincronizado perfectamente.'
+            },
+            {
+              icon: '🎁',
+              title: 'Fidelidad Automática',
+              description: 'Cliente gana puntos cada visita y puede cambiar por servicios. Sistema gestiona todo automáticamente, aumentando retorno 70%.'
+            },
+            {
+              icon: '💰',
+              title: 'Control de Comisiones',
+              description: 'Calcula comisiones por profesional automáticamente. Reportes detallados, control de productos y cierre de caja simplificado.'
+            },
+            {
+              icon: '📱',
+              title: 'App para Clientes',
+              description: 'Tus clientes agendan por celular 24h, eligen profesional preferido y reciben recordatorios automáticos. Reduce faltas 85%.'
+            },
+            {
+              icon: '💬',
+              title: 'WhatsApp Integrado',
+              description: 'Confirmaciones, recordatorios y promociones automáticas vía WhatsApp. Mantén contacto sin esfuerzo y aumenta ventas de productos.'
+            }
+          ]
+        }
+      ]
+    }
+  },
+
+  'sistema-gestion-barberia': {
+    'es': {
+      sections: [
+        {
+          type: 'hero',
+          title: 'Sistema de Gestión para Barbería - Converso',
+          subtitle: 'La solución completa para gestionar tu barbería moderna. Citas, clientes, inventario y pagos en una sola plataforma.'
+        },
+        {
+          type: 'quick-answer',
+          title: 'Sistema Completo',
+          content: 'Converso es el sistema de gestión más completo para barberías, ofreciendo agenda digital, control de barberos, programa de fidelidad, inventario y reportes. Aumenta tu facturación 40% con herramientas profesionales.'
+        },
+        {
+          type: 'features',
+          title: 'Funcionalidades para Barberías',
+          items: [
+            {
+              icon: '✂️',
+              title: 'Agenda para Barberos',
+              description: 'Cada barbero tiene su agenda individual. Clientes pueden elegir su barbero favorito y agendar online 24/7.'
+            },
+            {
+              icon: '👥',
+              title: 'Gestión de Clientes',
+              description: 'Base de datos completa con historial de cortes, preferencias y notas especiales para cada cliente.'
+            },
+            {
+              icon: '💰',
+              title: 'Control Financiero',
+              description: 'Reportes de facturación, comisiones por barbero, productos más vendidos y análisis de rentabilidad.'
+            },
+            {
+              icon: '📱',
+              title: 'App Móvil',
+              description: 'Aplicación para barberos y clientes. Gestiona todo desde el celular con sincronización en tiempo real.'
+            }
+          ]
+        }
+      ]
+    }
   }
 };
 
