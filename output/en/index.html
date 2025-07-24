@@ -1,241 +1,1125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Converso Library - English Articles</title>
-  <meta name="description" content="Complete library of articles about booking systems, barbershop management, business guides and technology.">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" href="https://converso.pro/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converso.pro Library - Complete Resource Library for Professionals</title>
+    
+    <!-- Language Detection and Redirect -->
+    <script>
+        (function() {
+            // Save current language preference
+            localStorage.setItem('converso-library-lang', 'en');
+        })();
+    </script>
+    
+    <meta name="description" content="Complete library with 10+ specialized guides in 3 languages: E-commerce, Scheduling Systems, Calendly Alternatives, Digital Marketing and Business Management. 100% free.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Converso.pro Library - Free Resources">
+    <meta property="og:description" content="Complete guides for barbers, beauty salons, clinics and service professionals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seo.converso.pro/en/">
+    <meta property="og:image" content="https://converso.pro/converso-og.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Converso.pro Library">
+    <meta name="twitter:description" content="Free resources for service professionals">
+    
+    <link rel="canonical" href="https://seo.converso.pro/en/">
+    <link rel="icon" href="https://converso.pro/favicon.ico">
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1697178904498506');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1697178904498506&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <style>
+        /* Neumorphic Design System */
+        :root {
+            --bg-color: #f0f2f5;
+            --surface-color: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --primary-blue: #3b82f6;
+            --primary-green: #10b981;
+            --secondary-blue: #60a5fa;
+            --secondary-green: #34d399;
+            --shadow-light: #ffffff;
+            --shadow-dark: #c8cacd;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+        }
+        
+        /* Neumorphic Components */
+        .neumorphic {
+            background: var(--bg-color);
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light);
+            padding: 2rem;
+        }
+        
+        .neumorphic-flat {
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            padding: 1.5rem;
+        }
+        
+        .neumorphic-inset {
+            background: var(--bg-color);
+            border-radius: 12px;
+            box-shadow: inset 8px 8px 16px var(--shadow-dark), inset -8px -8px 16px var(--shadow-light);
+            padding: 1.5rem;
+        }
+        
+        .neumorphic-button {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 5px 5px 15px rgba(59, 130, 246, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .neumorphic-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(59, 130, 246, 0.4), -7px -7px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: var(--surface-color);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        
+        .logo-accent {
+            font-weight: 300;
+            opacity: 0.8;
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .stat-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Sections */
+        .categories, .featured, .languages, .cta {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+        
+        /* Category Grid */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background: var(--surface-color);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 15px 15px 40px rgba(200, 202, 205, 0.6), -15px -15px 40px rgba(255, 255, 255, 0.8);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .category-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-list li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-list a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .article-list a:hover {
+            color: var(--secondary-blue);
+            text-decoration: underline;
+        }
+        
+        .category-link {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .category-link:hover {
+            color: var(--secondary-green);
+        }
+        
+        /* Featured Articles */
+        .featured {
+            background: var(--bg-color);
+        }
+        
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .featured-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        
+        .featured-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .featured-card h3 {
+            margin: 1rem 0;
+        }
+        
+        .featured-card a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .featured-card a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .article-meta a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .article-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .category-section h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Enhanced card hover effects */
+        .featured-card h4 {
+            margin: 0 0 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        .featured-card h4 a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .featured-card h4 a:hover {
+            color: var(--primary-blue);
+        }
+        
+        /* Language Section */
+        .language-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .language-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .language-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.6), -10px -10px 30px rgba(255, 255, 255, 0.8);
+        }
+        
+        .flag {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+        }
+        
+        .cta-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .cta-content p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            box-shadow: 5px 5px 15px rgba(59, 130, 246, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(59, 130, 246, 0.4), -7px -7px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-secondary {
+            background: var(--surface-color);
+            color: var(--primary-blue);
+            box-shadow: 5px 5px 15px rgba(200, 202, 205, 0.5), -5px -5px 15px rgba(255, 255, 255, 0.7);
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(200, 202, 205, 0.6), -7px -7px 20px rgba(255, 255, 255, 0.8);
+        }
+        
+        .btn-large {
+            padding: 1rem 3rem;
+            font-size: 1.125rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Language Selector */
+        .language-selector {
+            position: relative;
+        }
+        
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--surface-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            box-shadow: 5px 5px 10px rgba(200, 202, 205, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .language-btn:hover {
+            box-shadow: 3px 3px 8px rgba(200, 202, 205, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.6);
+        }
+        
+        .flag {
+            font-size: 1.2rem;
+        }
+        
+        .lang-text {
+            font-weight: 600;
+        }
+        
+        .chevron {
+            transition: transform 0.3s ease;
+        }
+        
+        .language-btn.active .chevron {
+            transform: rotate(180deg);
+        }
+        
+        .language-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 0.5rem;
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+            min-width: 150px;
+        }
+        
+        .language-menu.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .language-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+        
+        .language-option:first-child {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        
+        .language-option:last-child {
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        
+        .language-option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .category-grid,
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .language-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <!-- Header -->
-  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <a href="https://converso.pro" class="flex items-center group">
-          <span class="text-2xl font-bold">
-            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
-          </span>
-        </a>
-        
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="/" class="text-gray-600 hover:text-gray-900 transition">Main Library</a>
-          <a href="/pt-BR/" class="text-gray-600 hover:text-gray-900 transition">Português</a>
-          <a href="/es/" class="text-gray-600 hover:text-gray-900 transition">Español</a>
-        </nav>
-        
-        <div class="flex items-center space-x-4">
-          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
-            Login
-          </a>
-          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
-            Start Free
-          </a>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    Converso.pro <span class="logo-accent">Library</span>
+                </a>
+                <nav class="nav">
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="language-btn" onclick="toggleLanguageMenu()">
+                            <span class="flag">🇺🇸</span>
+                            <span class="lang-text">EN</span>
+                            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12">
+                                <path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </button>
+                        <div class="language-menu" id="languageMenu">
+                            <a href="https://seo.converso.pro/" class="language-option">
+                                <span class="flag">🇧🇷</span>
+                                <span>Português</span>
+                            </a>
+                            <a href="https://seo.converso.pro/es/" class="language-option">
+                                <span class="flag">🇪🇸</span>
+                                <span>Español</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="https://converso.pro" class="neumorphic-button" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Main Site</a>
+                    <a href="https://app.converso.pro/auth" class="neumorphic-button">Create My Site</a>
+                </nav>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Main Content -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <!-- Hero Section -->
-    <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-        Converso English Library
-      </h1>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        100+ comprehensive articles about booking systems, barbershop management, and business technology. Rich, SEO-optimized content.
-      </p>
-    </div>
-
-    <!-- Search Box -->
-    <div class="max-w-2xl mx-auto mb-12">
-      <div class="card-neumorphic">
-        <input 
-          type="text" 
-          id="searchInput" 
-          placeholder="Search articles..." 
-          class="w-full p-4 bg-transparent border-none outline-none text-lg"
-        >
-      </div>
-    </div>
-
-    <!-- Categories -->
-    <div class="grid gap-12">
-      <!-- Local Business Guides -->
-      <section class="card-neumorphic">
-        <h2 class="text-3xl font-bold mb-6 text-blue-600">📍 Henderson & Clark County Guides</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="/barbershop-booking-henderson/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Barbershop Booking Henderson</h3>
-            <p class="text-sm text-gray-600">Complete guide for Henderson barbershop owners</p>
-          </a>
-          <a href="/barbershop-guide-henderson-nv/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Barbershop Guide Henderson NV</h3>
-            <p class="text-sm text-gray-600">Starting and managing barbershops in Henderson</p>
-          </a>
-          <a href="/best-barbershop-software-henderson/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Best Barbershop Software Henderson</h3>
-            <p class="text-sm text-gray-600">Top software solutions for Henderson barbershops</p>
-          </a>
-          <a href="/best-barber-app-clark-county/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Best Barber App Clark County</h3>
-            <p class="text-sm text-gray-600">Leading barbershop apps in Clark County</p>
-          </a>
-          <a href="/free-barber-app-clark-county/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Free Barber App Clark County</h3>
-            <p class="text-sm text-gray-600">Free solutions for Clark County barbershops</p>
-          </a>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Resource Library for<br>
+                <span class="text-gradient">Service Professionals</span>
+            </h1>
+            <p class="hero-subtitle">
+                Complete guides, step-by-step tutorials and free resources to create your booking website, 
+                manage clients and increase your sales.
+            </p>
+            
+            <!-- Quick Stats -->
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">17</div>
+                    <div class="stat-label">Specialized Articles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Languages</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free</div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Barbershop Management -->
-      <section class="card-neumorphic bg-blue-50">
-        <h2 class="text-3xl font-bold mb-6 text-green-600">✂️ Barbershop Management</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="/barbershop-management-system/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Barbershop Management System</h3>
-            <p class="text-sm text-gray-600">Complete management solutions for modern barbershops</p>
-          </a>
-          <a href="/barbershop-online-booking/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Barbershop Online Booking</h3>
-            <p class="text-sm text-gray-600">Set up online booking for your barbershop</p>
-          </a>
-          <a href="/digital-queue-barbershop/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Digital Queue for Barbershop</h3>
-            <p class="text-sm text-gray-600">Eliminate wait times with digital queue system</p>
-          </a>
-          <a href="/digital-marketing-barbershop/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Digital Marketing for Barbershop</h3>
-            <p class="text-sm text-gray-600">Marketing strategies for barbershop growth</p>
-          </a>
-          <a href="/modern-barbershop-use-case/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Modern Barbershop Use Case</h3>
-            <p class="text-sm text-gray-600">How modern barbershops use Converso</p>
-          </a>
-          <a href="/open-barbershop-guide/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Open Barbershop Guide</h3>
-            <p class="text-sm text-gray-600">Complete guide to opening a barbershop</p>
-          </a>
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Explore by Category</h2>
+            
+            <div class="category-grid">
+                <!-- E-commerce -->
+                <div class="category-card">
+                    <div class="category-icon">🛍️</div>
+                    <h3 class="category-title">E-commerce</h3>
+                    <p class="category-description">
+                        Learn how to create your online store, manage products, process orders 
+                        and increase your online sales.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/articles/how-create-online-store-little-money.html">How to Create an Online Store with Little Money?</a></li>
+                        <li><a href="/articles/how-much-cost-setup-complete-online-store.html">How Much Does It Cost to Set Up a Complete Online Store?</a></li>
+                        <li><a href="/articles/how-start-selling-online-without-inventory.html">How to Start Selling Without Inventory?</a></li>
+                        <li><a href="/articles/worth-paying-marketplace-fees-or-own-store.html">Marketplace vs Own Store?</a></li>
+                        <li><a href="/articles/best-payment-gateway-ecommerce-brazil.html">Best Payment Gateway?</a></li>
+                    </ul>
+                    <a href="#ecommerce" class="category-link">View all articles →</a>
+                </div>
+
+                <!-- Developer Resources -->
+                <div class="category-card">
+                    <div class="category-icon">👨‍💻</div>
+                    <h3 class="category-title">For Developers</h3>
+                    <p class="category-description">
+                        Specific resources for developers who want to integrate or 
+                        build solutions with the Converso platform.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/articles/converso-for-developers.html">Converso for Developers</a></li>
+                    </ul>
+                    <a href="#developers" class="category-link">View all articles →</a>
+                </div>
+
+                <!-- Scheduling Systems & Alternatives -->
+                <div class="category-card">
+                    <div class="category-icon">📅</div>
+                    <h3 class="category-title">Scheduling Systems</h3>
+                    <p class="category-description">
+                        Compare tools, discover alternatives and choose the best 
+                        scheduling system for your business.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/articles/calendly-alternatives.html">Calendly Alternatives</a></li>
+                        <li><a href="/articles/scheduling-system-cost.html">Scheduling System Cost</a></li>
+                        <li><a href="/articles/free-scheduling-system.html">Free Scheduling System</a></li>
+                        <li><a href="/articles/converso-vs-calendly.html">Converso vs Calendly</a></li>
+                    </ul>
+                    <a href="#scheduling" class="category-link">View all articles →</a>
+                </div>
+
+                <!-- Business Growth & Management -->
+                <div class="category-card">
+                    <div class="category-icon">📈</div>
+                    <h3 class="category-title">Growth & Management</h3>
+                    <p class="category-description">
+                        Proven strategies to reduce no-shows, attract clients, 
+                        start online businesses and master digital marketing.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/articles/how-attract-barbershop-clients-2025.html">How to Attract Barbershop Clients in 2025</a></li>
+                        <li><a href="/articles/reduce-no-shows-appointments.html">How to Reduce No-Shows in Appointments</a></li>
+                        <li><a href="/articles/how-start-online-business-brazil-2025.html">How to Start Online Business in Brazil 2025</a></li>
+                        <li><a href="/articles/best-strategies-attract-customers-2025.html">Best Strategies to Attract Customers 2025</a></li>
+                        <li><a href="/articles/how-much-cost-create-professional-website.html">How Much Does a Professional Website Cost in 2025?</a></li>
+                        <li><a href="/articles/how-choose-best-platform-create-website.html">How to Choose the Best Platform to Create Your Website?</a></li>
+                    </ul>
+                    <a href="#business" class="category-link">View all articles →</a>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Booking Systems -->
-      <section class="card-neumorphic">
-        <h2 class="text-3xl font-bold mb-6 text-purple-600">📅 Booking Systems</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="/best-booking-system-for-hair-salons/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Best Booking System for Hair Salons</h3>
-            <p class="text-sm text-gray-600">Top booking solutions for salon professionals</p>
-          </a>
-          <a href="/calendly-alternatives/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Calendly Alternatives</h3>
-            <p class="text-sm text-gray-600">Better alternatives to Calendly for businesses</p>
-          </a>
+    <!-- Complete Article Library -->
+    <section class="featured" id="complete-library">
+        <div class="container">
+            <h2 class="section-title">Complete Article Library</h2>
+            
+            <!-- E-commerce Category -->
+            <div id="ecommerce" class="category-section" style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">🛍️ E-commerce</h3>
+                <div class="featured-grid">
+                    <article class="featured-card">
+                        <h4><a href="/articles/how-create-online-store-little-money.html">How to Create an Online Store with Little Money?</a></h4>
+                        <p>Complete guide to create your online store spending less than $18/month. Compare platforms, real costs and ROI.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/como-criar-loja-online-pouco-dinheiro.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/como-crear-tienda-online-poco-dinero.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/how-much-cost-setup-complete-online-store.html">How Much Does It Cost to Set Up a Complete Online Store in 2025?</a></h4>
+                        <p>Detailed cost analysis: platform, domain, gateway, marketing. Compare options from $0 to $10,000+.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/quanto-custa-montar-loja-virtual-completa.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/cuanto-cuesta-montar-tienda-virtual-completa.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/how-start-selling-online-without-inventory.html">How to Start Selling Online Without Inventory in 2025?</a></h4>
+                        <p>4 proven methods: dropshipping, POD, digital products, marketplace. Compare suppliers and initial investment.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/como-comecar-vender-online-sem-estoque.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/como-empezar-vender-online-sin-inventario.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/worth-paying-marketplace-fees-or-own-store.html">Is It Worth Paying Marketplace Fees or Having Your Own Store?</a></h4>
+                        <p>Marketplaces charge 16% vs own store $18/month. With $2,000/month you save $302. Compare costs and find the best.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/vale-pena-comissao-mercado-livre-ou-loja-propria.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/vale-pena-comision-mercadolibre-o-tienda-propia.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/best-payment-gateway-ecommerce-brazil.html">What's the Best Payment Gateway for E-commerce in Brazil 2025?</a></h4>
+                        <p>Honest analysis of the top 8: PagSeguro, Mercado Pago, Stripe, PayPal. Compare fees, features and choose the ideal.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/melhor-gateway-pagamento-ecommerce-brasil.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/mejor-gateway-pago-ecommerce-brasil.html">Español</a></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Developer Resources Category -->
+            <div id="developers" class="category-section" style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">👨‍💻 For Developers</h3>
+                <div class="featured-grid">
+                    <article class="featured-card">
+                        <h4><a href="/articles/converso-for-developers.html">Converso for Developers</a></h4>
+                        <p>Complete API documentation, integration guides and resources for developers.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/converso-para-desenvolvedores.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/converso-para-desarrolladores.html">Español</a></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Scheduling Systems Category -->
+            <div id="scheduling" class="category-section" style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">📅 Scheduling Systems</h3>
+                <div class="featured-grid">
+                    <article class="featured-card">
+                        <h4><a href="/articles/calendly-alternatives.html">Calendly Alternatives</a></h4>
+                        <p>Compare the best Calendly alternatives in 2025, including pricing, features and detailed reviews.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/alternativas-ao-calendly.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/alternativas-calendly.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/scheduling-system-cost.html">Scheduling System Cost</a></h4>
+                        <p>Complete cost analysis of scheduling systems and how to choose the best option.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/custo-sistema-agendamento.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/costo-sistema-agendamiento.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/free-scheduling-system.html">Free Scheduling System</a></h4>
+                        <p>The best free scheduling systems for small businesses in 2025.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/sistema-agendamento-gratis.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/sistema-agendamiento-gratis.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/converso-vs-calendly.html">Converso vs Calendly</a></h4>
+                        <p>Detailed comparison between Converso and Calendly: features, pricing and which to choose.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/converso-vs-calendly.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/converso-vs-calendly.html">Español</a></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Business Growth Category -->
+            <div id="business" class="category-section" style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">📈 Growth & Management</h3>
+                <div class="featured-grid">
+                    <article class="featured-card">
+                        <h4><a href="/articles/how-attract-barbershop-clients-2025.html">How to Attract Barbershop Clients in 2025?</a></h4>
+                        <p>10 proven strategies to attract more clients with digital marketing and loyalty programs.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/como-captar-clientes-barbearia-2025.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/como-atraer-clientes-barberia-2025.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/reduce-no-shows-appointments.html">How to Reduce No-Shows in Appointments</a></h4>
+                        <p>Proven strategies to reduce no-shows and increase attendance rate.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/reduzir-faltas-agendamentos.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/reducir-ausencias-citas.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/how-start-online-business-brazil-2025.html">How to Start Online Business in Brazil 2025</a></h4>
+                        <p>Complete guide for entrepreneurs who want to start an online business in Brazil.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/como-comecar-negocio-online-brasil-2025.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/como-empezar-negocio-online-brasil-2025.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/best-strategies-attract-customers-2025.html">Best Strategies to Attract Customers 2025</a></h4>
+                        <p>The most effective strategies to attract and convert new customers in 2025.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/melhores-estrategias-captar-clientes-2025.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/mejores-estrategias-captar-clientes-2025.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/best-tips-beginners-digital-marketing.html">Best Tips for Digital Marketing Beginners</a></h4>
+                        <p>Essential guide for those starting in digital marketing and want quick results.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/melhores-dicas-iniciantes-marketing-digital.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/mejores-consejos-principiantes-marketing-digital.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/how-much-cost-create-professional-website.html">How Much Does a Professional Website Cost in 2025?</a></h4>
+                        <p>Complete cost analysis: SaaS platforms vs freelancers vs agencies. Compare real prices and ROI.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/quanto-custa-criar-site-profissional.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/cuanto-cuesta-crear-sitio-web-profesional.html">Español</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articles/how-choose-best-platform-create-website.html">How to Choose the Best Platform to Create Your Website in 2025?</a></h4>
+                        <p>Complete guide to choose between WordPress, Wix, Converso and others. Decision based on cost, ease and features.</p>
+                        <div class="article-meta">
+                            <span>🇺🇸 English</span>
+                            <span>🇧🇷 <a href="/artigos/como-escolher-plataforma-criar-site.html">Português</a></span>
+                            <span>🇪🇸 <a href="/articulos/como-elegir-mejor-plataforma-crear-sitio-web.html">Español</a></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Comparisons -->
-      <section class="card-neumorphic bg-green-50">
-        <h2 class="text-3xl font-bold mb-6 text-orange-600">⚖️ Platform Comparisons</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="/compare/converso-vs-acuity/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Converso vs Acuity</h3>
-            <p class="text-sm text-gray-600">Complete comparison of features and pricing</p>
-          </a>
-          <a href="/compare/converso-vs-calendly/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Converso vs Calendly</h3>
-            <p class="text-sm text-gray-600">Why Converso is better for service businesses</p>
-          </a>
-          <a href="/compare/converso-vs-square/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Converso vs Square</h3>
-            <p class="text-sm text-gray-600">Booking system comparison and analysis</p>
-          </a>
+    <!-- Featured Articles -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Articles</h2>
+            
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <div class="featured-badge">⭐ Most Read</div>
+                    <h3><a href="/articles/how-create-online-store-little-money.html">How to Create an Online Store with Little Money?</a></h3>
+                    <p>Complete guide to create your online store spending less than $18/month. Compare platforms, real costs and ROI up to 2,400%.</p>
+                    <div class="article-meta">
+                        <span>📖 12 min read</span>
+                        <span>📅 January 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">🔥 Trending</div>
+                    <h3><a href="/articles/calendly-alternatives.html">Calendly Alternatives</a></h3>
+                    <p>Compare the best Calendly alternatives in 2025, including pricing, features and detailed reviews.</p>
+                    <div class="article-meta">
+                        <span>📖 15 min read</span>
+                        <span>📅 January 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">💡 Practical Guide</div>
+                    <h3><a href="/articles/best-strategies-attract-customers-2025.html">Best Strategies to Attract Customers 2025</a></h3>
+                    <p>The most effective strategies to attract and convert new customers using proven methods.</p>
+                    <div class="article-meta">
+                        <span>📖 18 min read</span>
+                        <span>📅 January 2025</span>
+                    </div>
+                </article>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Use Cases -->
-      <section class="card-neumorphic">
-        <h2 class="text-3xl font-bold mb-6 text-indigo-600">💼 Professional Use Cases</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="/use-cases/barber/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Barber Use Case</h3>
-            <p class="text-sm text-gray-600">How barbers maximize bookings with Converso</p>
-          </a>
-          <a href="/use-cases/medical-clinic-booking/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Medical Clinic Booking</h3>
-            <p class="text-sm text-gray-600">Healthcare appointment management</p>
-          </a>
-          <a href="/use-cases/personal-trainer-booking/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Personal Trainer Booking</h3>
-            <p class="text-sm text-gray-600">Fitness professional scheduling</p>
-          </a>
-          <a href="/use-cases/therapist-booking/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Therapist Booking</h3>
-            <p class="text-sm text-gray-600">Mental health appointment system</p>
-          </a>
+    <!-- Language Section -->
+    <section class="languages">
+        <div class="container">
+            <h2 class="section-title">Content in Other Languages</h2>
+            <div class="language-cards">
+                <a href="https://seo.converso.pro/" class="language-card">
+                    <span class="flag">🇧🇷</span>
+                    <h3>Português</h3>
+                    <p>Artigos em Português</p>
+                </a>
+                <a href="https://seo.converso.pro/es/" class="language-card">
+                    <span class="flag">🇪🇸</span>
+                    <h3>Español</h3>
+                    <p>Artículos en Español</p>
+                </a>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Company -->
-      <section class="card-neumorphic bg-purple-50">
-        <h2 class="text-3xl font-bold mb-6 text-teal-600">ℹ️ About Converso</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="/about/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">About Converso</h3>
-            <p class="text-sm text-gray-600">Our mission and company story</p>
-          </a>
-          <a href="/privacy/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Privacy Policy</h3>
-            <p class="text-sm text-gray-600">How we protect your data</p>
-          </a>
-          <a href="/terms/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all">
-            <h3 class="font-bold">Terms of Service</h3>
-            <p class="text-sm text-gray-600">Legal terms and conditions</p>
-          </a>
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Create Your Booking Website?</h2>
+                <p>Join thousands of professionals already using Converso.pro</p>
+                <div class="cta-buttons">
+                    <a href="https://app.converso.pro/auth" class="btn btn-primary btn-large">
+                        Start Free
+                    </a>
+                    <a href="https://converso.pro" class="btn btn-secondary btn-large">
+                        Learn About Converso
+                    </a>
+                </div>
+            </div>
         </div>
-      </section>
-    </div>
+    </section>
 
-    <!-- Footer CTA -->
-    <div class="text-center mt-20">
-      <div class="card-neumorphic bg-gradient-to-r from-blue-50 to-green-50 p-12">
-        <h2 class="text-3xl font-bold mb-6">Ready to Get Started?</h2>
-        <p class="text-xl text-gray-600 mb-8">Create your professional booking website in 5 minutes</p>
-        <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
-          Start Free Now
-        </a>
-      </div>
-    </div>
-  </main>
-
-  <script>
-    // Search functionality
-    document.getElementById('searchInput').addEventListener('input', function(e) {
-      const searchTerm = e.target.value.toLowerCase();
-      const articles = document.querySelectorAll('a[href*="/"]');
-      
-      articles.forEach(article => {
-        if (article.href.includes('/en/') || article.href.includes('/pt-BR/') || article.href.includes('/es/')) {
-          return; // Skip navigation links
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Converso.pro Library</h4>
+                    <p>Free resources for service professionals to grow their businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="https://converso.pro">Main Site</a></li>
+                        <li><a href="https://app.converso.pro/auth">Create Account</a></li>
+                        <li><a href="https://app.converso.pro/auth">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="/articles/">Barbershops</a></li>
+                        <li><a href="/articles/">Beauty Salons</a></li>
+                        <li><a href="/articles/">E-commerce</a></li>
+                        <li><a href="/articles/">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Converso.pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Language Selector JavaScript -->
+    <script>
+        function toggleLanguageMenu() {
+            const menu = document.getElementById('languageMenu');
+            const btn = document.querySelector('.language-btn');
+            
+            menu.classList.toggle('active');
+            btn.classList.toggle('active');
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function closeMenu(e) {
+                if (!e.target.closest('.language-selector')) {
+                    menu.classList.remove('active');
+                    btn.classList.remove('active');
+                    document.removeEventListener('click', closeMenu);
+                }
+            });
         }
         
-        const title = article.querySelector('h3');
-        const description = article.querySelector('p');
-        
-        if (title && description) {
-          const titleText = title.textContent.toLowerCase();
-          const descText = description.textContent.toLowerCase();
-          
-          if (titleText.includes(searchTerm) || descText.includes(searchTerm)) {
-            article.style.display = 'block';
-          } else {
-            article.style.display = searchTerm === '' ? 'block' : 'none';
-          }
-        }
-      });
-    });
-  </script>
+        // Add click handlers to language options
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.language-option').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    // Clear saved language preference when user manually changes language
+                    localStorage.removeItem('converso-library-lang');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

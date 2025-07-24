@@ -1,170 +1,1125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblioteca Converso - Artículos en Español</title>
-  <meta name="description" content="Biblioteca de artículos sobre negocios, belleza, tecnología y emprendimiento.">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" href="https://converso.pro/favicon.ico">
-</head>
-<body class="bg-gray-50 text-gray-900">
-  <!-- Header -->
-  <header class="bg-white shadow-neumorphic sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <a href="https://converso.pro" class="flex items-center group">
-          <span class="text-2xl font-bold">
-            <span class="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">converso.pro</span>
-          </span>
-        </a>
-        
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="/" class="text-gray-600 hover:text-gray-900 transition">Biblioteca Principal</a>
-          <a href="/pt-BR/" class="text-gray-600 hover:text-gray-900 transition">Português</a>
-          <a href="https://converso.pro" class="text-gray-600 hover:text-gray-900 transition">Sitio Principal</a>
-        </nav>
-        
-        <div class="flex items-center space-x-4">
-          <a href="https://app.converso.pro/auth" class="hidden sm:block text-gray-600 hover:text-gray-900 transition">
-            Iniciar Sesión
-          </a>
-          <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white hover:opacity-90">
-            Comenzar Gratis
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <!-- Hero Section -->
-    <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-        Biblioteca Converso en Español
-      </h1>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        Artículos completos sobre negocios, belleza, tecnología y emprendimiento. Contenido rico y optimizado para SEO.
-      </p>
-      <div class="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg max-w-2xl mx-auto">
-        <p class="text-sm text-yellow-800">
-          <strong>📝 Biblioteca en construcción:</strong> Actualmente disponemos de 3 artículos completos en español. ¡Más contenido próximamente!
-        </p>
-      </div>
-    </div>
-
-    <!-- Search Box -->
-    <div class="max-w-2xl mx-auto mb-12">
-      <div class="card-neumorphic">
-        <input 
-          type="text" 
-          id="searchInput" 
-          placeholder="Buscar artículos..." 
-          class="w-full p-4 bg-transparent border-none outline-none text-lg"
-        >
-      </div>
-    </div>
-
-    <!-- Available Articles -->
-    <div class="grid gap-12">
-      <!-- Sistemas de Citas -->
-      <section class="card-neumorphic">
-        <h2 class="text-3xl font-bold mb-6 text-blue-600">📅 Sistemas de Citas</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="/es/mejor-sistema-citas-salones/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all bg-white">
-            <div class="flex items-center mb-2">
-              <span class="text-green-500 text-sm font-bold mr-2">✓ DISPONIBLE</span>
-            </div>
-            <h3 class="font-bold text-lg mb-2">Mejor Sistema de Citas para Salones</h3>
-            <p class="text-sm text-gray-600">Converso domina el mercado con agenda inteligente y programa de fidelidad. Aumenta facturación hasta 55%.</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Gestión de Barberías -->
-      <section class="card-neumorphic bg-blue-50">
-        <h2 class="text-3xl font-bold mb-6 text-green-600">✂️ Gestión de Barberías</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="/es/sistema-gestion-barberia/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all bg-white">
-            <div class="flex items-center mb-2">
-              <span class="text-green-500 text-sm font-bold mr-2">✓ DISPONIBLE</span>
-            </div>
-            <h3 class="font-bold text-lg mb-2">Sistema de Gestión para Barbería</h3>
-            <p class="text-sm text-gray-600">Solución completa para gestionar barbería moderna. Citas, clientes, inventario y pagos en una plataforma.</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Apps Converso -->
-      <section class="card-neumorphic">
-        <h2 class="text-3xl font-bold mb-6 text-purple-600">🚀 Apps Converso</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="/es/apps/" class="btn-neumorphic text-left p-4 hover:shadow-lg transition-all bg-white">
-            <div class="flex items-center mb-2">
-              <span class="text-green-500 text-sm font-bold mr-2">✓ DISPONIBLE</span>
-            </div>
-            <h3 class="font-bold text-lg mb-2">Todas las Aplicaciones Converso</h3>
-            <p class="text-sm text-gray-600">Ecosistema completo de 11 apps integradas: Agenda Pro, Fila Digital, E-commerce, Fidelidad y más.</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Otros Idiomas -->
-      <section class="card-neumorphic bg-gradient-to-r from-blue-50 to-green-50">
-        <h2 class="text-3xl font-bold mb-6 text-indigo-600">🌍 Más Contenido en Otros Idiomas</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <a href="/pt-BR/" class="card-neumorphic text-center p-6 hover:shadow-lg transition-all">
-            <div class="text-4xl mb-4">🇧🇷</div>
-            <h3 class="text-xl font-bold mb-2">Biblioteca en Português</h3>
-            <p class="text-gray-600 mb-4">148+ artículos completos sobre negocios y belleza</p>
-            <div class="text-sm text-green-600 font-bold">Ver Artículos en Português →</div>
-          </a>
-          
-          <a href="/" class="card-neumorphic text-center p-6 hover:shadow-lg transition-all">
-            <div class="text-4xl mb-4">🇺🇸</div>
-            <h3 class="text-xl font-bold mb-2">English Library</h3>
-            <p class="text-gray-600 mb-4">297+ complete business and technology articles</p>
-            <div class="text-sm text-green-600 font-bold">View English Articles →</div>
-          </a>
-        </div>
-      </section>
-    </div>
-
-    <!-- Footer CTA -->
-    <div class="text-center mt-20">
-      <div class="card-neumorphic bg-gradient-to-r from-blue-50 to-green-50 p-12">
-        <h2 class="text-3xl font-bold mb-6">¿Listo para Comenzar?</h2>
-        <p class="text-xl text-gray-600 mb-8">Crea tu sitio web profesional de citas en 5 minutos</p>
-        <a href="https://app.converso.pro/auth?mode=signup" class="btn-neumorphic bg-gradient-primary text-white text-lg px-8 py-4">
-          Comenzar Gratis Ahora
-        </a>
-      </div>
-    </div>
-  </main>
-
-  <script>
-    // Search functionality
-    document.getElementById('searchInput').addEventListener('input', function(e) {
-      const searchTerm = e.target.value.toLowerCase();
-      const articles = document.querySelectorAll('a[href*="/es/"]');
-      
-      articles.forEach(article => {
-        const title = article.querySelector('h3');
-        const description = article.querySelector('p');
-        
-        if (title && description) {
-          const titleText = title.textContent.toLowerCase();
-          const descText = description.textContent.toLowerCase();
-          
-          if (titleText.includes(searchTerm) || descText.includes(searchTerm)) {
-            article.style.display = 'block';
-          } else {
-            article.style.display = searchTerm === '' ? 'block' : 'none';
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converso.pro Library - Biblioteca Completa de Recursos para Profesionales</title>
+    
+    <!-- Language Detection and Redirect -->
+    <script>
+        (function() {
+            // Save current language preference
+            localStorage.setItem('converso-library-lang', 'es');
+        })();
+    </script>
+    
+    <meta name="description" content="Biblioteca completa con más de 10 guías especializadas en 3 idiomas: E-commerce, Sistemas de Agendamiento, Alternativas a Calendly, Marketing Digital y Gestión de Negocios. 100% gratis.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Converso.pro Library - Recursos Gratuitos">
+    <meta property="og:description" content="Guías completas para barberos, salones de belleza, clínicas y profesionales de servicios.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seo.converso.pro/es/">
+    <meta property="og:image" content="https://converso.pro/converso-og.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Converso.pro Library">
+    <meta name="twitter:description" content="Recursos gratuitos para profesionales de servicios">
+    
+    <link rel="canonical" href="https://seo.converso.pro/es/">
+    <link rel="icon" href="https://converso.pro/favicon.ico">
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1697178904498506');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1697178904498506&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <style>
+        /* Neumorphic Design System */
+        :root {
+            --bg-color: #f0f2f5;
+            --surface-color: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --primary-blue: #3b82f6;
+            --primary-green: #10b981;
+            --secondary-blue: #60a5fa;
+            --secondary-green: #34d399;
+            --shadow-light: #ffffff;
+            --shadow-dark: #c8cacd;
         }
-      });
-    });
-  </script>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+        }
+        
+        /* Neumorphic Components */
+        .neumorphic {
+            background: var(--bg-color);
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light);
+            padding: 2rem;
+        }
+        
+        .neumorphic-flat {
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            padding: 1.5rem;
+        }
+        
+        .neumorphic-inset {
+            background: var(--bg-color);
+            border-radius: 12px;
+            box-shadow: inset 8px 8px 16px var(--shadow-dark), inset -8px -8px 16px var(--shadow-light);
+            padding: 1.5rem;
+        }
+        
+        .neumorphic-button {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 5px 5px 15px rgba(59, 130, 246, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .neumorphic-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(59, 130, 246, 0.4), -7px -7px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: var(--surface-color);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        
+        .logo-accent {
+            font-weight: 300;
+            opacity: 0.8;
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .stat-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Sections */
+        .categories, .featured, .languages, .cta {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+        
+        /* Category Grid */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background: var(--surface-color);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 15px 15px 40px rgba(200, 202, 205, 0.6), -15px -15px 40px rgba(255, 255, 255, 0.8);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .category-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-list li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-list a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .article-list a:hover {
+            color: var(--secondary-blue);
+            text-decoration: underline;
+        }
+        
+        .category-link {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .category-link:hover {
+            color: var(--secondary-green);
+        }
+        
+        /* Featured Articles */
+        .featured {
+            background: var(--bg-color);
+        }
+        
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .featured-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        
+        .featured-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .featured-card h3 {
+            margin: 1rem 0;
+        }
+        
+        .featured-card a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .featured-card a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .article-meta a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .article-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .category-section h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Enhanced card hover effects */
+        .featured-card h4 {
+            margin: 0 0 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        .featured-card h4 a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .featured-card h4 a:hover {
+            color: var(--primary-blue);
+        }
+        
+        /* Language Section */
+        .language-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .language-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .language-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.6), -10px -10px 30px rgba(255, 255, 255, 0.8);
+        }
+        
+        .flag {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+        }
+        
+        .cta-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .cta-content p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            box-shadow: 5px 5px 15px rgba(59, 130, 246, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(59, 130, 246, 0.4), -7px -7px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-secondary {
+            background: var(--surface-color);
+            color: var(--primary-blue);
+            box-shadow: 5px 5px 15px rgba(200, 202, 205, 0.5), -5px -5px 15px rgba(255, 255, 255, 0.7);
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(200, 202, 205, 0.6), -7px -7px 20px rgba(255, 255, 255, 0.8);
+        }
+        
+        .btn-large {
+            padding: 1rem 3rem;
+            font-size: 1.125rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Language Selector */
+        .language-selector {
+            position: relative;
+        }
+        
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--surface-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            box-shadow: 5px 5px 10px rgba(200, 202, 205, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .language-btn:hover {
+            box-shadow: 3px 3px 8px rgba(200, 202, 205, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.6);
+        }
+        
+        .flag {
+            font-size: 1.2rem;
+        }
+        
+        .lang-text {
+            font-weight: 600;
+        }
+        
+        .chevron {
+            transition: transform 0.3s ease;
+        }
+        
+        .language-btn.active .chevron {
+            transform: rotate(180deg);
+        }
+        
+        .language-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 0.5rem;
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+            min-width: 150px;
+        }
+        
+        .language-menu.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .language-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+        
+        .language-option:first-child {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        
+        .language-option:last-child {
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        
+        .language-option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .category-grid,
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .language-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    Converso.pro <span class="logo-accent">Library</span>
+                </a>
+                <nav class="nav">
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="language-btn" onclick="toggleLanguageMenu()">
+                            <span class="flag">🇪🇸</span>
+                            <span class="lang-text">ES</span>
+                            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12">
+                                <path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </button>
+                        <div class="language-menu" id="languageMenu">
+                            <a href="https://seo.converso.pro/" class="language-option">
+                                <span class="flag">🇧🇷</span>
+                                <span>Português</span>
+                            </a>
+                            <a href="https://seo.converso.pro/en/" class="language-option">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="https://converso.pro" class="neumorphic-button" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Sitio Principal</a>
+                    <a href="https://app.converso.pro/auth" class="neumorphic-button">Crear Mi Sitio</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Biblioteca de Recursos para<br>
+                <span class="text-gradient">Profesionales de Servicios</span>
+            </h1>
+            <p class="hero-subtitle">
+                Guías completas, tutoriales paso a paso y recursos gratuitos para crear tu sitio de reservas, 
+                gestionar clientes y aumentar tus ventas.
+            </p>
+            
+            <!-- Quick Stats -->
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">17</div>
+                    <div class="stat-label">Artículos Especializados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Idiomas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Gratis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Explorar por Categoría</h2>
+            
+            <div class="category-grid">
+                <!-- E-commerce -->
+                <div class="category-card">
+                    <div class="category-icon">🛍️</div>
+                    <h3 class="category-title">E-commerce</h3>
+                    <p class="category-description">
+                        Aprende a crear tu tienda online, gestionar productos, procesar pedidos 
+                        y aumentar tus ventas en internet.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/articulos/como-crear-tienda-online-poco-dinero.html">¿Cómo Crear una Tienda Online con Poco Dinero?</a></li>
+                        <li><a href="/articulos/cuanto-cuesta-montar-tienda-virtual-completa.html">¿Cuánto Cuesta Montar una Tienda Virtual Completa?</a></li>
+                        <li><a href="/articulos/como-empezar-vender-online-sin-inventario.html">¿Cómo Empezar a Vender Sin Inventario?</a></li>
+                        <li><a href="/articulos/vale-pena-comision-mercadolibre-o-tienda-propia.html">¿Mercado Libre vs Tienda Propia?</a></li>
+                        <li><a href="/articulos/mejor-gateway-pago-ecommerce-brasil.html">¿Mejor Gateway de Pago?</a></li>
+                    </ul>
+                    <a href="#ecommerce" class="category-link">Ver todos los artículos →</a>
+                </div>
+
+                <!-- Developer Resources -->
+                <div class="category-card">
+                    <div class="category-icon">👨‍💻</div>
+                    <h3 class="category-title">Para Desarrolladores</h3>
+                    <p class="category-description">
+                        Recursos específicos para desarrolladores que quieren integrar o 
+                        construir soluciones con la plataforma Converso.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/articulos/converso-para-desarrolladores.html">Converso para Desarrolladores</a></li>
+                    </ul>
+                    <a href="#developers" class="category-link">Ver todos los artículos →</a>
+                </div>
+
+                <!-- Scheduling Systems & Alternatives -->
+                <div class="category-card">
+                    <div class="category-icon">📅</div>
+                    <h3 class="category-title">Sistemas de Agendamiento</h3>
+                    <p class="category-description">
+                        Compara herramientas, descubre alternativas y elige el mejor 
+                        sistema de agendamiento para tu negocio.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/articulos/alternativas-calendly.html">Alternativas a Calendly</a></li>
+                        <li><a href="/articulos/costo-sistema-agendamiento.html">Costo de Sistema de Agendamiento</a></li>
+                        <li><a href="/articulos/sistema-agendamiento-gratis.html">Sistema de Agendamiento Gratis</a></li>
+                        <li><a href="/articulos/converso-vs-calendly.html">Converso vs Calendly</a></li>
+                    </ul>
+                    <a href="#scheduling" class="category-link">Ver todos los artículos →</a>
+                </div>
+
+                <!-- Business Growth & Management -->
+                <div class="category-card">
+                    <div class="category-icon">📈</div>
+                    <h3 class="category-title">Gestión y Crecimiento</h3>
+                    <p class="category-description">
+                        Estrategias comprobadas para reducir ausencias, captar clientes, 
+                        comenzar negocios online y dominar el marketing digital.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/articulos/como-atraer-clientes-barberia-2025.html">Cómo Atraer Clientes para Barbería en 2025</a></li>
+                        <li><a href="/articulos/reducir-ausencias-citas.html">Cómo Reducir Ausencias en Citas</a></li>
+                        <li><a href="/articulos/como-empezar-negocio-online-brasil-2025.html">Cómo Empezar Negocio Online en Brasil 2025</a></li>
+                        <li><a href="/articulos/mejores-estrategias-captar-clientes-2025.html">Mejores Estrategias para Captar Clientes 2025</a></li>
+                        <li><a href="/articulos/cuanto-cuesta-crear-sitio-web-profesional.html">¿Cuánto Cuesta Crear Sitio Web Profesional en 2025?</a></li>
+                        <li><a href="/articulos/como-elegir-mejor-plataforma-crear-sitio-web.html">¿Cómo Elegir la Mejor Plataforma para Crear tu Sitio Web?</a></li>
+                    </ul>
+                    <a href="#business" class="category-link">Ver todos los artículos →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Article Library -->
+    <section class="featured" id="complete-library">
+        <div class="container">
+            <h2 class="section-title">Biblioteca Completa de Artículos</h2>
+            
+            <!-- E-commerce Category -->
+            <div id="ecommerce" class="category-section" style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">🛍️ E-commerce</h3>
+                <div class="featured-grid">
+                    <article class="featured-card">
+                        <h4><a href="/articulos/como-crear-tienda-online-poco-dinero.html">¿Cómo Crear una Tienda Online con Poco Dinero?</a></h4>
+                        <p>Guía completa para crear tu tienda virtual gastando menos de $18/mes. Compara plataformas, costos reales y ROI.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/como-criar-loja-online-pouco-dinheiro.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/how-create-online-store-little-money.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/cuanto-cuesta-montar-tienda-virtual-completa.html">¿Cuánto Cuesta Montar una Tienda Virtual Completa en 2025?</a></h4>
+                        <p>Análisis detallado de costos: plataforma, dominio, gateway, marketing. Compara opciones de $0 a $10.000+.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/quanto-custa-montar-loja-virtual-completa.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/how-much-cost-setup-complete-online-store.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/como-empezar-vender-online-sin-inventario.html">¿Cómo Empezar a Vender Online Sin Inventario en 2025?</a></h4>
+                        <p>4 métodos comprobados: dropshipping, POD, productos digitales, marketplace. Compara proveedores e inversión inicial.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/como-comecar-vender-online-sem-estoque.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/how-start-selling-online-without-inventory.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/vale-pena-comision-mercadolibre-o-tienda-propia.html">¿Vale la Pena Pagar Comisión de Mercado Libre o Tener Tienda Propia?</a></h4>
+                        <p>ML cobra 16% vs tienda propia $18/mes. Con $2.000/mes ahorras $302. Compara costos y descubre lo mejor.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/vale-pena-comissao-mercado-livre-ou-loja-propria.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/worth-paying-marketplace-fees-or-own-store.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/mejor-gateway-pago-ecommerce-brasil.html">¿Cuál es el Mejor Gateway de Pago para E-commerce en Brasil en 2025?</a></h4>
+                        <p>Análisis honesto de los 8 principales: PagSeguro, Mercado Pago, Stripe, PayPal. Compara tarifas, recursos y elige el ideal.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/melhor-gateway-pagamento-ecommerce-brasil.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/best-payment-gateway-ecommerce-brazil.html">English</a></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Developer Resources Category -->
+            <div id="developers" class="category-section" style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">👨‍💻 Para Desarrolladores</h3>
+                <div class="featured-grid">
+                    <article class="featured-card">
+                        <h4><a href="/articulos/converso-para-desarrolladores.html">Converso para Desarrolladores</a></h4>
+                        <p>Documentación completa de la API, guías de integración y recursos para desarrolladores.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/converso-para-desenvolvedores.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/converso-for-developers.html">English</a></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Scheduling Systems Category -->
+            <div id="scheduling" class="category-section" style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">📅 Sistemas de Agendamiento</h3>
+                <div class="featured-grid">
+                    <article class="featured-card">
+                        <h4><a href="/articulos/alternativas-calendly.html">Alternativas a Calendly</a></h4>
+                        <p>Compara las mejores alternativas a Calendly en 2025, incluyendo precios, características y reseñas detalladas.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/alternativas-ao-calendly.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/calendly-alternatives.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/costo-sistema-agendamiento.html">Costo de Sistema de Agendamiento</a></h4>
+                        <p>Análisis completo de costos de sistemas de agendamiento y cómo elegir la mejor opción.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/custo-sistema-agendamento.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/scheduling-system-cost.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/sistema-agendamiento-gratis.html">Sistema de Agendamiento Gratis</a></h4>
+                        <p>Los mejores sistemas de agendamiento gratuitos para pequeños negocios en 2025.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/sistema-agendamento-gratis.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/free-scheduling-system.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/converso-vs-calendly.html">Converso vs Calendly</a></h4>
+                        <p>Comparación detallada entre Converso y Calendly: características, precios y cuál elegir.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/converso-vs-calendly.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/converso-vs-calendly.html">English</a></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Business Growth Category -->
+            <div id="business" class="category-section" style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">📈 Gestión y Crecimiento</h3>
+                <div class="featured-grid">
+                    <article class="featured-card">
+                        <h4><a href="/articulos/como-atraer-clientes-barberia-2025.html">¿Cómo Atraer Clientes para Barbería en 2025?</a></h4>
+                        <p>10 estrategias comprobadas para atraer más clientes con marketing digital y fidelización.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/como-captar-clientes-barbearia-2025.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/how-attract-barbershop-clients-2025.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/reducir-ausencias-citas.html">Cómo Reducir Ausencias en Citas</a></h4>
+                        <p>Estrategias comprobadas para reducir no-shows y aumentar la tasa de asistencia.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/reduzir-faltas-agendamentos.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/reduce-no-shows-appointments.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/como-empezar-negocio-online-brasil-2025.html">Cómo Empezar Negocio Online en Brasil 2025</a></h4>
+                        <p>Guía completa para emprendedores que quieren comenzar un negocio online en Brasil.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/como-comecar-negocio-online-brasil-2025.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/how-start-online-business-brazil-2025.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/mejores-estrategias-captar-clientes-2025.html">Mejores Estrategias para Captar Clientes 2025</a></h4>
+                        <p>Las estrategias más efectivas para atraer y convertir nuevos clientes en 2025.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/melhores-estrategias-captar-clientes-2025.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/best-strategies-attract-customers-2025.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/mejores-consejos-principiantes-marketing-digital.html">Mejores Consejos para Principiantes en Marketing Digital</a></h4>
+                        <p>Guía esencial para quienes comienzan en marketing digital y quieren resultados rápidos.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/melhores-dicas-iniciantes-marketing-digital.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/best-tips-beginners-digital-marketing.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/cuanto-cuesta-crear-sitio-web-profesional.html">¿Cuánto Cuesta Crear Sitio Web Profesional en 2025?</a></h4>
+                        <p>Análisis completo de costos: plataformas SaaS vs freelancers vs agencias. Compara precios reales y ROI.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/quanto-custa-criar-site-profissional.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/how-much-cost-create-professional-website.html">English</a></span>
+                        </div>
+                    </article>
+                    <article class="featured-card">
+                        <h4><a href="/articulos/como-elegir-mejor-plataforma-crear-sitio-web.html">¿Cómo Elegir la Mejor Plataforma para Crear tu Sitio Web en 2025?</a></h4>
+                        <p>Guía completa para elegir entre WordPress, Wix, Converso y otras. Decisión basada en costo, facilidad y recursos.</p>
+                        <div class="article-meta">
+                            <span>🇪🇸 Español</span>
+                            <span>🇧🇷 <a href="/artigos/como-escolher-plataforma-criar-site.html">Português</a></span>
+                            <span>🇺🇸 <a href="/articles/how-choose-best-platform-create-website.html">English</a></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Artículos Destacados</h2>
+            
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <div class="featured-badge">⭐ Más Leído</div>
+                    <h3><a href="/articulos/como-crear-tienda-online-poco-dinero.html">¿Cómo Crear una Tienda Online con Poco Dinero?</a></h3>
+                    <p>Guía completa para crear tu tienda virtual gastando menos de $18/mes. Compara plataformas, costos reales y ROI de hasta 2.400%.</p>
+                    <div class="article-meta">
+                        <span>📖 12 min de lectura</span>
+                        <span>📅 Enero 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">🔥 Tendencia</div>
+                    <h3><a href="/articulos/alternativas-calendly.html">Alternativas a Calendly</a></h3>
+                    <p>Compara las mejores alternativas a Calendly en 2025, incluyendo precios, características y reseñas detalladas.</p>
+                    <div class="article-meta">
+                        <span>📖 15 min de lectura</span>
+                        <span>📅 Enero 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">💡 Guía Práctica</div>
+                    <h3><a href="/articulos/mejores-estrategias-captar-clientes-2025.html">Mejores Estrategias para Captar Clientes 2025</a></h3>
+                    <p>Las estrategias más efectivas para atraer y convertir nuevos clientes usando métodos comprobados.</p>
+                    <div class="article-meta">
+                        <span>📖 18 min de lectura</span>
+                        <span>📅 Enero 2025</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Section -->
+    <section class="languages">
+        <div class="container">
+            <h2 class="section-title">Contenido en Otros Idiomas</h2>
+            <div class="language-cards">
+                <a href="https://seo.converso.pro/" class="language-card">
+                    <span class="flag">🇧🇷</span>
+                    <h3>Português</h3>
+                    <p>Artigos em Português</p>
+                </a>
+                <a href="https://seo.converso.pro/en/" class="language-card">
+                    <span class="flag">🇺🇸</span>
+                    <h3>English</h3>
+                    <p>Articles in English</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para Crear tu Sitio de Reservas?</h2>
+                <p>Únete a miles de profesionales que ya usan Converso.pro</p>
+                <div class="cta-buttons">
+                    <a href="https://app.converso.pro/auth" class="btn btn-primary btn-large">
+                        Empezar Gratis
+                    </a>
+                    <a href="https://converso.pro" class="btn btn-secondary btn-large">
+                        Conocer Converso
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Converso.pro Library</h4>
+                    <p>Recursos gratuitos para profesionales de servicios para hacer crecer sus negocios.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Útiles</h4>
+                    <ul>
+                        <li><a href="https://converso.pro">Sitio Principal</a></li>
+                        <li><a href="https://app.converso.pro/auth">Crear Cuenta</a></li>
+                        <li><a href="https://app.converso.pro/auth">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li><a href="/articulos/">Barberías</a></li>
+                        <li><a href="/articulos/">Salones de Belleza</a></li>
+                        <li><a href="/articulos/">E-commerce</a></li>
+                        <li><a href="/articulos/">Tecnología</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Converso.pro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Language Selector JavaScript -->
+    <script>
+        function toggleLanguageMenu() {
+            const menu = document.getElementById('languageMenu');
+            const btn = document.querySelector('.language-btn');
+            
+            menu.classList.toggle('active');
+            btn.classList.toggle('active');
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function closeMenu(e) {
+                if (!e.target.closest('.language-selector')) {
+                    menu.classList.remove('active');
+                    btn.classList.remove('active');
+                    document.removeEventListener('click', closeMenu);
+                }
+            });
+        }
+        
+        // Add click handlers to language options
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.language-option').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    // Clear saved language preference when user manually changes language
+                    localStorage.removeItem('converso-library-lang');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

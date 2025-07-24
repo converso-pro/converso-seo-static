@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page -->
+    <url>
+        <loc>https://seo.converso.pro/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <!-- Language Indexes -->
+    <url>
+        <loc>https://seo.converso.pro/artigos/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/articles/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/articulos/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <!-- Example Articles - Portuguese -->
+    <url>
+        <loc>https://seo.converso.pro/artigos/como-abrir-barbearia-guia-completo.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/quanto-cobrar-corte-cabelo.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/fidelizar-clientes-barbearia.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/como-montar-salao-beleza.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/atrair-clientes-salao.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/gestao-financeira-salao.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/criar-loja-online-gratis.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/vender-pelo-whatsapp.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/fotografia-produtos.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/melhor-app-agendamento.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/sistema-gestao-gratuito.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://seo.converso.pro/artigos/marketing-digital-iniciantes.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-01-24</lastmod>
+    </url>
+    
+    <!-- Note: Add more URLs as articles are created -->
+</urlset>
