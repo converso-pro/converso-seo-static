@@ -666,6 +666,43 @@ const SEO_PAGES = [
       state: 'Nevada'
     }
   },
+  // Las Vegas, NV
+  {
+    slug: 'how-to-start-barbershop-las-vegas',
+    template: 'local',
+    languages: ['en'],
+    data: {
+      title: 'How to Start a Barbershop in Las Vegas, Nevada - Complete Guide 2025',
+      metaDescription: 'Learn how to start a barbershop in Las Vegas, NV. Complete guide with licenses, costs, location tips, and tools to succeed in the Vegas market.',
+      h1: 'How to Start a Barbershop in Las Vegas, Nevada?',
+      city: 'Las Vegas',
+      state: 'Nevada'
+    }
+  },
+  {
+    slug: 'como-abrir-barbearia-las-vegas',
+    template: 'local',
+    languages: ['pt-BR'],
+    data: {
+      title: 'Como Abrir uma Barbearia em Las Vegas, Nevada - Guia Completo 2025',
+      metaDescription: 'Aprenda como abrir uma barbearia em Las Vegas, NV. Guia completo com licenças, custos, dicas de localização e ferramentas para ter sucesso.',
+      h1: 'Como Abrir uma Barbearia em Las Vegas, Nevada?',
+      city: 'Las Vegas',
+      state: 'Nevada'
+    }
+  },
+  {
+    slug: 'como-abrir-barberia-las-vegas',
+    template: 'local',
+    languages: ['es'],
+    data: {
+      title: 'Cómo Abrir una Barbería en Las Vegas, Nevada - Guía Completa 2025',
+      metaDescription: 'Aprende cómo abrir una barbería en Las Vegas, NV. Guía completa con licencias, costos, consejos de ubicación y herramientas para tener éxito.',
+      h1: '¿Cómo Abrir una Barbería en Las Vegas, Nevada?',
+      city: 'Las Vegas',
+      state: 'Nevada'
+    }
+  },
 
   // ==================== BRAZILIAN MARKET SEO ====================
 
