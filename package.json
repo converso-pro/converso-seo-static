@@ -1,14 +1,12 @@
 {
   "name": "converso-seo-static",
-  "version": "1.0.0",
-  "description": "Simple static HTML generator for Converso SEO pages",
-  "main": "build.js",
+  "version": "2.0.0",
+  "description": "Static HTML pages for Converso SEO - No build system",
+  "main": "deploy-static.js",
   "scripts": {
-    "build": "node pre-build.js && node build.js && node post-build.js",
-    "build:css": "npx tailwindcss -i ./templates/input.css -o ./static/styles.css --minify",
+    "deploy": "node deploy-static.js",
     "serve": "npx http-server ./output -p 8000",
-    "pre-build": "node pre-build.js",
-    "post-build": "node post-build.js"
+    "serve:deploy": "npx http-server ./deploy-output -p 8001"
   },
   "dependencies": {},
   "devDependencies": {
