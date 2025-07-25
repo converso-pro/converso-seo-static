@@ -1,1 +1,3 @@
-Thu Jul 24 13:17:07 PDT 2025
+Deploy trigger: January 25, 2025 - 08:48 AM
+Fix: Removed build system, deploying static HTML only
+Changed output directory to deploy-output
