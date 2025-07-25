@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Converso Blog</title>
+    <script>
+        // Detect user language and redirect
+        const userLang = navigator.language.toLowerCase();
+        let targetLang = 'en';
+        
+        if (userLang.startsWith('pt')) {
+            targetLang = 'pt';
+        } else if (userLang.startsWith('es')) {
+            targetLang = 'es';
+        }
+        
+        window.location.href = '/' + targetLang + '/';
+    </script>
+</head>
+<body>
+    <p>Redirecting to blog...</p>
+</body>
+</html>
