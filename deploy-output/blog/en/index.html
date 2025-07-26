@@ -13,111 +13,865 @@
     <link rel="alternate" hreflang="pt" href="https://blog.converso.pro/pt/">
     <link rel="alternate" hreflang="es" href="https://blog.converso.pro/es/">
     
-    <link rel="stylesheet" href="https://seo.converso.pro/css/main.css">
     <style>
-        .hero {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.25rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .blog-card {
-            transition: transform 0.3s ease;
-            overflow: hidden;
-        }
-        .blog-card:hover {
-            transform: translateY(-5px);
-        }
-        .blog-card-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
-        }
-        .blog-card-content {
-            padding: 1.5rem;
-        }
-        .blog-card-title {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-            line-height: 1.4;
-        }
-        .blog-card-title a {
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .blog-card-title a:hover {
-            color: #4A90E2;
-        }
-        .blog-card-excerpt {
-            color: #666;
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #1a202c;
             line-height: 1.6;
-            margin-bottom: 1rem;
         }
-        .blog-card-meta {
-            font-size: 0.875rem;
-            color: #999;
+        
+        /* Neumorphic Design System */
+        .neumorphic-card {
+            background: #f0f4f8;
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px #ccd0d4, -20px -20px 60px #ffffff;
+            transition: all 0.3s ease;
+        }
+        
+        .neumorphic-card:hover {
+            box-shadow: 25px 25px 70px #ccd0d4, -25px -25px 70px #ffffff;
+            transform: translateY(-2px);
+        }
+        
+        .neumorphic-button {
+            background: linear-gradient(145deg, #f8fbff, #e1e5e9);
+            box-shadow: 8px 8px 16px #ccd0d4, -8px -8px 16px #ffffff;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 32px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            color: #4a5568;
+        }
+        
+        .neumorphic-button:hover {
+            box-shadow: 4px 4px 8px #ccd0d4, -4px -4px 8px #ffffff;
+            transform: translateY(-1px);
+        }
+        
+        .neumorphic-button.primary {
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+            color: white;
+            box-shadow: 0 8px 24px rgba(34, 197, 94, 0.3);
+        }
+        
+        .neumorphic-button.primary:hover {
+            box-shadow: 0 12px 32px rgba(34, 197, 94, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        /* Header */
+        .header {
+            background: #f0f4f8;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            background: rgba(240, 244, 248, 0.95);
+        }
+        
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .read-more {
-            color: #4A90E2;
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.75rem;
+        }
+        
+        .logo-text {
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .logo-blog {
+            color: #4a5568;
+            font-weight: 300;
+            margin-left: 0.5rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+        
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            margin-left: 2rem;
+        }
+        
+        .lang-btn {
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: #f0f4f8;
+            border: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #4a5568;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 4px 4px 8px #ccd0d4, -4px -4px 8px #ffffff;
+        }
+        
+        .lang-btn:hover {
+            box-shadow: 2px 2px 4px #ccd0d4, -2px -2px 4px #ffffff;
+            transform: translateY(-1px);
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+            color: white;
+            box-shadow: inset 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .nav-link {
+            color: #4a5568;
             text-decoration: none;
             font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
         }
+        
+        .nav-link:hover {
+            color: #22c55e;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        
+        .mobile-menu-btn span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #4a5568;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.1) rotate(180deg); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+        
+        /* Category Navigation */
+        .category-nav {
+            background: #f0f4f8;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            position: sticky;
+            top: 73px;
+            z-index: 999;
+        }
+        
+        .category-nav-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        
+        .category-nav-inner::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .category-tab {
+            background: #f0f4f8;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            color: #4a5568;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 5px 5px 10px #ccd0d4, -5px -5px 10px #ffffff;
+        }
+        
+        .category-tab:hover, .category-tab.active {
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+            color: white;
+            box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Main Content */
+        .main-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 3rem;
+        }
+        
+        /* Featured Post */
+        .featured-section {
+            margin-bottom: 3rem;
+        }
+        
+        .featured-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .featured-post {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .featured-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px #ccd0d4, -20px -20px 60px #ffffff;
+        }
+        
+        .featured-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .featured-content h2 a {
+            color: #1a202c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .featured-content h2 a:hover {
+            color: #22c55e;
+        }
+        
+        .featured-excerpt {
+            color: #4a5568;
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .featured-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #718096;
+            font-size: 0.875rem;
+        }
+        
+        .meta-divider {
+            width: 4px;
+            height: 4px;
+            background: #cbd5e0;
+            border-radius: 50%;
+        }
+        
+        /* Posts Grid */
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .blog-card {
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+        
+        .blog-card-category {
+            display: inline-block;
+            background: linear-gradient(135deg, #22c55e20 0%, #3b82f620 100%);
+            color: #22c55e;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+        }
+        
+        .blog-card-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        
+        .blog-card-title a {
+            color: #1a202c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .blog-card-title a:hover {
+            color: #22c55e;
+        }
+        
+        .blog-card-excerpt {
+            color: #4a5568;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .blog-card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+            color: #718096;
+        }
+        
+        .read-more {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            transition: gap 0.3s ease;
+        }
+        
         .read-more:hover {
-            text-decoration: underline;
+            gap: 0.5rem;
         }
+        
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 200px;
+            height: fit-content;
+        }
+        
+        .sidebar-section {
+            margin-bottom: 2rem;
+        }
+        
+        .sidebar-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a202c;
+        }
+        
+        .popular-post {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .popular-post:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .popular-number {
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.875rem;
+            flex-shrink: 0;
+        }
+        
+        .popular-content h4 {
+            font-size: 0.875rem;
+            line-height: 1.4;
+            margin-bottom: 0.25rem;
+        }
+        
+        .popular-content h4 a {
+            color: #1a202c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .popular-content h4 a:hover {
+            color: #22c55e;
+        }
+        
+        .popular-content time {
+            font-size: 0.75rem;
+            color: #718096;
+        }
+        
+        /* Newsletter */
+        .newsletter {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .newsletter h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .newsletter p {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .newsletter-input {
+            background: #f0f4f8;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 12px;
+            box-shadow: inset 5px 5px 10px #ccd0d4, inset -5px -5px 10px #ffffff;
+            font-size: 0.875rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        .newsletter-input:focus {
+            box-shadow: inset 3px 3px 6px #ccd0d4, inset -3px -3px 6px #ffffff;
+        }
+        
+        .newsletter-button {
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+        }
+        
+        .newsletter-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(34, 197, 94, 0.4);
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a202c;
+            color: #cbd5e0;
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: #22c55e;
+        }
+        
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        
+        .empty-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+        
+        .empty-title {
+            font-size: 1.5rem;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+        
+        .empty-message {
+            color: #718096;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+            
+            .featured-post {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-image {
+                height: 300px;
+            }
+        }
+        
         @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #f0f4f8;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .language-switcher {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+            
             .hero h1 {
                 font-size: 2rem;
             }
-            .blog-grid {
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .posts-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                grid-template-columns: 1fr;
+            }
+            
+            .category-nav {
+                top: 65px;
             }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="https://converso.pro" class="logo">
-                <img src="https://converso.pro/converso.svg" alt="Converso">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="https://blog.converso.pro" class="logo">
+                <span class="logo-text">Converso</span>
+                <span class="logo-blog">Blog</span>
             </a>
-            <div class="nav-links">
-                <a href="https://converso.pro">Home</a>
-                <a href="https://converso.pro/auth" class="cta-button">Start Free</a>
-            </div>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="https://converso.pro" class="nav-link">Home</a></li>
+                    <li><a href="https://converso.pro/academy" class="nav-link">Academy</a></li>
+                    <li><a href="https://seo.converso.pro" class="nav-link">Resources</a></li>
+                    <li><a href="https://blog.converso.pro" class="nav-link">Blog</a></li>
+                    <li><a href="https://converso.pro/auth" class="neumorphic-button primary">Start Free</a></li>
+                    <li class="language-switcher">
+                        <a href="/blog/pt/" class="lang-btn">PT</a>
+                        <a href="/blog/en/" class="lang-btn active">EN</a>
+                        <a href="/blog/es/" class="lang-btn">ES</a>
+                    </li>
+                </ul>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <div class="hero">
-        <h1>Converso Blog</h1>
-        <p>Tips, insights and best practices for service professionals to grow their business with online scheduling</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Converso Blog</h1>
+            <p>Tips, insights and best practices for service professionals to grow their business with online scheduling</p>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="category-nav-inner">
+            <button class="category-tab active">All Posts</button>
+            <button class="category-tab">Business Tips</button>
+            <button class="category-tab">Marketing</button>
+            <button class="category-tab">Technology</button>
+            <button class="category-tab">Tutorials</button>
+        </div>
     </div>
 
-    <div class="blog-grid">
-        
+    <!-- Main Content -->
+    <div class="main-content">
+        <main>
+            <!-- Featured Post -->
+            <section class="featured-section">
+                <span class="featured-label">✨ Trending Now</span>
+                <article class="featured-post neumorphic-card">
+                    <img src="https://converso.pro/placeholder.svg" alt="How to increase revenue by 40%" class="featured-image">
+                    <div class="featured-content">
+                        <h2>
+                            <a href="/en/how-to-increase-revenue-40-percent/">How to increase your revenue by 40% with online scheduling</a>
+                        </h2>
+                        <p class="featured-excerpt">Discover the proven strategies our clients use to dramatically increase their revenue through a professional online scheduling system.</p>
+                        <div class="featured-meta">
+                            <time>January 15, 2025</time>
+                            <span class="meta-divider"></span>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Latest Posts -->
+            <section>
+                <h2 style="font-size: 1.5rem; margin-bottom: 2rem;">Latest Posts</h2>
+                <div class="posts-grid">
+                    <article class="blog-card neumorphic-card">
+                        <img src="https://converso.pro/placeholder.svg" alt="5 mistakes salons make" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <span class="blog-card-category">Business Tips</span>
+                            <h3 class="blog-card-title">
+                                <a href="/en/5-mistakes-salons-scheduling/">5 mistakes salons make with scheduling (and how to avoid them)</a>
+                            </h3>
+                            <p class="blog-card-excerpt">Avoid the most common mistakes that could be costing your salon clients and money.</p>
+                            <div class="blog-card-meta">
+                                <time>Jan 12</time>
+                                <a href="/en/5-mistakes-salons-scheduling/" class="read-more">Read more →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card neumorphic-card">
+                        <img src="https://converso.pro/placeholder.svg" alt="Digital marketing for barbershops" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <span class="blog-card-category">Marketing</span>
+                            <h3 class="blog-card-title">
+                                <a href="/en/digital-marketing-barbershops/">Digital marketing for barbershops: Complete guide 2025</a>
+                            </h3>
+                            <p class="blog-card-excerpt">Everything you need to know to promote your barbershop online and attract more clients.</p>
+                            <div class="blog-card-meta">
+                                <time>Jan 10</time>
+                                <a href="/en/digital-marketing-barbershops/" class="read-more">Read more →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card neumorphic-card">
+                        <img src="https://converso.pro/placeholder.svg" alt="WhatsApp Business" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <span class="blog-card-category">Technology</span>
+                            <h3 class="blog-card-title">
+                                <a href="/en/whatsapp-business-integration/">How to integrate WhatsApp Business with your scheduling system</a>
+                            </h3>
+                            <p class="blog-card-excerpt">Automate customer service and improve communication with your clients using WhatsApp.</p>
+                            <div class="blog-card-meta">
+                                <time>Jan 8</time>
+                                <a href="/en/whatsapp-business-integration/" class="read-more">Read more →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Empty state (when no posts) -->
+            <!--
+            <div class="empty-state">
+                <div class="empty-icon">📝</div>
+                <h2 class="empty-title">New content coming soon</h2>
+                <p class="empty-message">We're preparing amazing content for you. Check back soon!</p>
+            </div>
+            -->
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <section class="sidebar-section neumorphic-card" style="padding: 2rem;">
+                <h3 class="sidebar-title">Popular Posts</h3>
+                <div class="popular-post">
+                    <span class="popular-number">1</span>
+                    <div class="popular-content">
+                        <h4><a href="/en/how-to-increase-revenue-40-percent/">How to increase revenue by 40%</a></h4>
+                        <time>Jan 15</time>
+                    </div>
+                </div>
+                <div class="popular-post">
+                    <span class="popular-number">2</span>
+                    <div class="popular-content">
+                        <h4><a href="/en/5-mistakes-salons-scheduling/">5 mistakes salons make</a></h4>
+                        <time>Jan 12</time>
+                    </div>
+                </div>
+                <div class="popular-post">
+                    <span class="popular-number">3</span>
+                    <div class="popular-content">
+                        <h4><a href="/en/digital-marketing-barbershops/">Digital marketing for barbershops</a></h4>
+                        <time>Jan 10</time>
+                    </div>
+                </div>
+                <div class="popular-post">
+                    <span class="popular-number">4</span>
+                    <div class="popular-content">
+                        <h4><a href="/en/whatsapp-business-integration/">WhatsApp Business integration</a></h4>
+                        <time>Jan 8</time>
+                    </div>
+                </div>
+                <div class="popular-post">
+                    <span class="popular-number">5</span>
+                    <div class="popular-content">
+                        <h4><a href="/en/customer-retention-salon/">How to retain customers</a></h4>
+                        <time>Jan 5</time>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sidebar-section newsletter neumorphic-card">
+                <h3>Subscribe to our Newsletter</h3>
+                <p>Get the latest tips and insights delivered to your inbox</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Coming soon!')">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+            </section>
+        </aside>
     </div>
 
     <footer class="footer">
@@ -125,5 +879,15 @@
             <p>&copy; 2025 Converso. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

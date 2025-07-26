@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Converso.pro Library - Complete Resource Library for Developers and Professionals</title>
+    <title>Converso.pro Library - Biblioteca Completa de Recursos para Profissionais e Desenvolvedores</title>
     
     <!-- Language Detection and Redirect -->
     <script>
@@ -13,31 +13,31 @@
                 const browserLang = navigator.language || navigator.userLanguage;
                 const lang = browserLang.toLowerCase();
                 
-                if (lang.startsWith('pt')) {
-                    window.location.replace('https://seo.converso.pro/');
+                if (lang.startsWith('en')) {
+                    window.location.replace('https://seo.converso.pro/en/');
                 } else if (lang.startsWith('es')) {
                     window.location.replace('https://seo.converso.pro/es/');
                 }
             }
-            localStorage.setItem('converso-library-lang', 'en');
+            localStorage.setItem('converso-library-lang', 'pt-BR');
         })();
     </script>
     
-    <meta name="description" content="Complete library with 90+ specialized guides: Developers, Business Growth, Digital Marketing, E-commerce and Scheduling Systems. Free resources in 3 languages.">
+    <meta name="description" content="Biblioteca completa com 90+ guias especializados: Desenvolvedores, Gestão e Crescimento, Marketing Digital, E-commerce e Sistemas de Agendamento. Recursos gratuitos em 3 idiomas.">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Converso.pro Library - Resources for Developers and Professionals">
-    <meta property="og:description" content="Complete guides for developers, barbers, beauty salons, clinics and service professionals.">
+    <meta property="og:title" content="Converso.pro Library - Recursos para Desenvolvedores e Profissionais">
+    <meta property="og:description" content="Guias completos para desenvolvedores, barbeiros, salões de beleza, clínicas e profissionais de serviços.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://seo.converso.pro/en/">
+    <meta property="og:url" content="https://seo.converso.pro">
     <meta property="og:image" content="https://converso.pro/converso-og.png">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Converso.pro Library">
-    <meta name="twitter:description" content="Free resources for developers and service professionals">
+    <meta name="twitter:description" content="Recursos gratuitos para desenvolvedores e profissionais de serviços">
     
-    <link rel="canonical" href="https://seo.converso.pro/en/">
+    <link rel="canonical" href="https://seo.converso.pro">
     <link rel="icon" href="https://converso.pro/favicon.ico">
     
     <!-- Facebook Pixel Code -->
@@ -69,7 +69,7 @@
             --primary-green: #10b981;
             --secondary-blue: #60a5fa;
             --secondary-green: #34d399;
-            --developer-gradient: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #f97316 100%);
+            --developer-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
             --shadow-light: #ffffff;
             --shadow-dark: #c8cacd;
         }
@@ -261,7 +261,7 @@
         /* Featured Developer Card - 2x size */
         .developer-card {
             grid-column: span 2;
-            background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #f97316 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
             color: white;
             position: relative;
             overflow: hidden;
@@ -695,23 +695,23 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <a href="/en/" class="logo">
+                <a href="/" class="logo">
                     Converso.pro <span class="logo-accent">Library</span>
                 </a>
                 <nav class="nav">
                     <!-- Language Selector -->
                     <div class="language-selector">
                         <button class="language-btn" onclick="toggleLanguageMenu()">
-                            <span class="flag">🇺🇸</span>
-                            <span class="lang-text">EN</span>
+                            <span class="flag">🇧🇷</span>
+                            <span class="lang-text">PT</span>
                             <svg class="chevron" width="12" height="12" viewBox="0 0 12 12">
                                 <path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="2" fill="none"/>
                             </svg>
                         </button>
                         <div class="language-menu" id="languageMenu">
-                            <a href="https://seo.converso.pro/" class="language-option">
-                                <span class="flag">🇧🇷</span>
-                                <span>Português</span>
+                            <a href="https://seo.converso.pro/en/" class="language-option">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
                             </a>
                             <a href="https://seo.converso.pro/es/" class="language-option">
                                 <span class="flag">🇪🇸</span>
@@ -719,8 +719,8 @@
                             </a>
                         </div>
                     </div>
-                    <a href="https://converso.pro" class="neumorphic-button" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Main Site</a>
-                    <a href="https://app.converso.pro/auth" class="neumorphic-button">Create My Site</a>
+                    <a href="https://converso.pro" class="neumorphic-button" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Site Principal</a>
+                    <a href="https://app.converso.pro/auth" class="neumorphic-button">Criar Meu Site</a>
                 </nav>
             </div>
         </div>
@@ -730,30 +730,30 @@
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">
-                Resource Library for<br>
-                <span class="text-gradient">Developers and Professionals</span>
+                Biblioteca de Recursos para<br>
+                <span class="text-gradient">Desenvolvedores e Profissionais</span>
             </h1>
             <p class="hero-subtitle">
-                Complete guides for beginner developers, step-by-step tutorials for service professionals, and free resources to create booking websites and increase sales.
+                Guias completos para desenvolvedores iniciantes, tutoriais passo a passo para profissionais de serviços e recursos gratuitos para criar sites de agendamento e aumentar vendas.
             </p>
             
             <!-- Quick Stats -->
             <div class="stats">
                 <div class="stat-card">
                     <div class="stat-number">90+</div>
-                    <div class="stat-label">Specialized Articles</div>
+                    <div class="stat-label">Artigos Especializados</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">15+</div>
-                    <div class="stat-label">Developer Guides</div>
+                    <div class="stat-label">Guias para Desenvolvedores</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">3</div>
-                    <div class="stat-label">Languages</div>
+                    <div class="stat-label">Idiomas</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">100%</div>
-                    <div class="stat-label">Free</div>
+                    <div class="stat-label">Grátis</div>
                 </div>
             </div>
         </div>
@@ -762,90 +762,90 @@
     <!-- Categories Section -->
     <section class="categories">
         <div class="container">
-            <h2 class="section-title">Browse by Category</h2>
+            <h2 class="section-title">Explorar por Categoria</h2>
             
             <div class="category-grid">
                 <!-- Developers - Featured Card (2x size) -->
                 <div class="category-card developer-card">
-                    <div class="developer-badge">💎 Featured</div>
+                    <div class="developer-badge">💎 Destaque</div>
                     <div class="category-icon">👨‍💻</div>
-                    <h3 class="category-title">Developers <span style="font-size: 0.8rem; opacity: 0.9;">(15 articles)</span></h3>
+                    <h3 class="category-title">Desenvolvedores <span style="font-size: 0.8rem; opacity: 0.9;">(15 artigos)</span></h3>
                     <p class="category-description">
-                        Complete guides for beginner developers: how to migrate to white-label, acquire local clients, generate recurring revenue, and compete with large platforms charging 3x more.
+                        Guias completos para desenvolvedores iniciantes: como migrar para white-label, conquistar clientes locais, gerar receita recorrente e competir com grandes plataformas cobrando 3x mais.
                     </p>
                     <ul class="article-list">
-                        <li><a href="/articles/what-best-free-ecommerce-platform.html">What's the best free e-commerce platform?</a></li>
-                        <li><a href="/articles/how-earn-money-creating-sites-small-businesses.html">How to earn money creating sites for small businesses</a></li>
-                        <li><a href="/articles/why-developers-migrate-white-label-platforms.html">Why developers migrate to white-label platforms?</a></li>
-                        <li><a href="/articles/how-compete-wix-wordpress-charging-3x-more.html">How to compete with Wix/WordPress charging 3x more</a></li>
-                        <li><a href="/articles/secret-devs-earn-6-figures-local-sites.html">Secret: devs earn 6 figures with local sites</a></li>
-                        <li><a href="/articles/how-earn-30-percent-recurring-commission.html">How to earn 30% recurring commission</a></li>
+                        <li><a href="/artigos/qual-melhor-plataforma-ecommerce-gratuita.html">Qual a melhor plataforma gratuita de e-commerce?</a></li>
+                        <li><a href="/artigos/como-ganhar-dinheiro-criando-sites-pequenas-empresas.html">Como ganhar dinheiro criando sites para pequenas empresas</a></li>
+                        <li><a href="/artigos/por-que-desenvolvedores-migram-plataformas-white-label.html">Por que desenvolvedores migram para white-label?</a></li>
+                        <li><a href="/artigos/como-competir-wix-wordpress-cobrando-3x-mais.html">Como competir com Wix/WordPress cobrando 3x mais</a></li>
+                        <li><a href="/artigos/segredo-devs-faturam-6-digitos-sites-locais.html">Segredo: devs faturam 6 dígitos com sites locais</a></li>
+                        <li><a href="/artigos/como-ganhar-comissao-recorrente-30-porcento.html">Como ganhar 30% de comissão recorrente</a></li>
                     </ul>
-                    <a href="/developers/" class="category-link">View all 15 articles →</a>
+                    <a href="/desenvolvedores/" class="category-link">Ver todos os 15 artigos →</a>
                 </div>
 
                 <!-- Business Growth -->
                 <div class="category-card">
                     <div class="category-icon">📈</div>
-                    <h3 class="category-title">Business Growth <span style="font-size: 0.8rem; opacity: 0.7;">(18 articles)</span></h3>
+                    <h3 class="category-title">Gestão e Crescimento <span style="font-size: 0.8rem; opacity: 0.7;">(18 artigos)</span></h3>
                     <p class="category-description">
-                        Proven strategies to grow your business: financial management, customer acquisition, pricing, and professional success.
+                        Estratégias comprovadas para crescer seu negócio: gestão financeira, captação de clientes, precificação e sucesso profissional.
                     </p>
                     <ul class="article-list">
-                        <li><a href="/en/how-start-online-business/">How to Start an Online Business</a></li>
-                        <li><a href="/en/how-manage-barbershop-money/">How to Manage Barbershop Money</a></li>
-                        <li><a href="/en/how-much-charge-haircut/">How Much to Charge for a Haircut</a></li>
-                        <li><a href="/en/how-retain-barbershop-customers/">How to Retain Barbershop Customers</a></li>
+                        <li><a href="/pt-BR/como-comecar-negocio-online/">Como Começar Negócio Online</a></li>
+                        <li><a href="/pt-BR/como-administrar-dinheiro-barbearia/">Como Administrar Dinheiro da Barbearia</a></li>
+                        <li><a href="/pt-BR/quanto-cobrar-corte-cabelo/">Quanto Cobrar por Corte de Cabelo</a></li>
+                        <li><a href="/pt-BR/como-fidelizar-clientes-barbearia/">Como Fidelizar Clientes na Barbearia</a></li>
                     </ul>
-                    <a href="/business-growth/" class="category-link">View all 18 articles →</a>
+                    <a href="/gestao-crescimento/" class="category-link">Ver todos os 18 artigos →</a>
                 </div>
 
                 <!-- Digital Marketing -->
                 <div class="category-card">
                     <div class="category-icon">📱</div>
-                    <h3 class="category-title">Digital Marketing <span style="font-size: 0.8rem; opacity: 0.7;">(22 articles)</span></h3>
+                    <h3 class="category-title">Marketing Digital <span style="font-size: 0.8rem; opacity: 0.7;">(22 artigos)</span></h3>
                     <p class="category-description">
-                        Marketing strategies for barbershops, beauty salons, technical assistance, and other local businesses.
+                        Estratégias de marketing para barbearias, salões de beleza, assistência técnica e outros negócios locais.
                     </p>
                     <ul class="article-list">
-                        <li><a href="/en/how-attract-barbershop-customers/">How to Attract Barbershop Customers</a></li>
-                        <li><a href="/en/digital-marketing-barbershop/">Digital Marketing for Barbershops</a></li>
-                        <li><a href="/en/how-attract-beauty-salon-customers/">How to Attract Beauty Salon Customers</a></li>
-                        <li><a href="/articles/best-customer-acquisition-strategies-2025.html">Best customer acquisition strategies 2025</a></li>
+                        <li><a href="/pt-BR/como-captar-clientes-barbearia/">Como Captar Clientes para Barbearia</a></li>
+                        <li><a href="/pt-BR/marketing-digital-barbearia/">Marketing Digital para Barbearia</a></li>
+                        <li><a href="/pt-BR/como-atrair-clientes-salao-beleza/">Como Atrair Clientes para Salão de Beleza</a></li>
+                        <li><a href="/artigos/melhores-estrategias-captar-clientes-2025.html">Melhores estratégias para captar clientes 2025</a></li>
                     </ul>
-                    <a href="/digital-marketing/" class="category-link">View all 22 articles →</a>
+                    <a href="/marketing-digital/" class="category-link">Ver todos os 22 artigos →</a>
                 </div>
 
                 <!-- E-commerce -->
                 <div class="category-card">
                     <div class="category-icon">🛍️</div>
-                    <h3 class="category-title">E-commerce <span style="font-size: 0.8rem; opacity: 0.7;">(19 articles)</span></h3>
+                    <h3 class="category-title">E-commerce <span style="font-size: 0.8rem; opacity: 0.7;">(19 artigos)</span></h3>
                     <p class="category-description">
-                        Learn to create your online store, manage products, process orders, and increase your internet sales.
+                        Aprenda a criar sua loja online, gerenciar produtos, processar pedidos e aumentar suas vendas na internet.
                     </p>
                     <ul class="article-list">
-                        <li><a href="/en/how-create-store-little-money/">How to Create an Online Store with Little Money</a></li>
-                        <li><a href="/articles/first-online-sale-complete-guide.html">First online sale - complete guide</a></li>
-                        <li><a href="/en/is-shopify-free/">Is Shopify Free?</a></li>
-                        <li><a href="/en/how-much-costs-create-shopify-site/">How Much Does It Cost to Create a Shopify Site</a></li>
+                        <li><a href="/pt-BR/como-criar-loja-pouco-dinheiro/">Como Criar uma Loja Online com Pouco Dinheiro</a></li>
+                        <li><a href="/artigos/primeira-venda-online-guia-completo.html">Primeira venda online - guia completo</a></li>
+                        <li><a href="/pt-BR/shopify-gratuita/">Shopify é Gratuita?</a></li>
+                        <li><a href="/pt-BR/quanto-custa-criar-site-shopify/">Quanto Custa Criar Site no Shopify</a></li>
                     </ul>
-                    <a href="/ecommerce/" class="category-link">View all 19 articles →</a>
+                    <a href="/ecommerce/" class="category-link">Ver todos os 19 artigos →</a>
                 </div>
 
                 <!-- Scheduling Systems -->
                 <div class="category-card">
                     <div class="category-icon">📅</div>
-                    <h3 class="category-title">Scheduling Systems <span style="font-size: 0.8rem; opacity: 0.7;">(16 articles)</span></h3>
+                    <h3 class="category-title">Sistemas de Agendamento <span style="font-size: 0.8rem; opacity: 0.7;">(16 artigos)</span></h3>
                     <p class="category-description">
-                        Compare tools, discover alternatives, and choose the best scheduling system for your business.
+                        Compare ferramentas, descubra alternativas e escolha o melhor sistema de agendamento para seu negócio.
                     </p>
                     <ul class="article-list">
-                        <li><a href="/en/calendly-alternatives/">Calendly Alternatives</a></li>
-                        <li><a href="/en/best-scheduling-system-salons/">Best Scheduling System for Salons</a></li>
-                        <li><a href="/en/best-scheduling-app/">Best Scheduling App</a></li>
+                        <li><a href="/pt-BR/alternativas-calendly/">Alternativas ao Calendly</a></li>
+                        <li><a href="/pt-BR/melhor-sistema-agendamento-saloes/">Melhor Sistema de Agendamento para Salões</a></li>
+                        <li><a href="/pt-BR/melhor-aplicativo-agendamento/">Melhor Aplicativo de Agendamento</a></li>
                         <li><a href="/articles/best-online-scheduling-system.html">Best online scheduling system</a></li>
                     </ul>
-                    <a href="/scheduling-systems/" class="category-link">View all 16 articles →</a>
+                    <a href="/sistemas-agendamento/" class="category-link">Ver todos os 16 artigos →</a>
                 </div>
             </div>
         </div>
@@ -854,66 +854,66 @@
     <!-- Featured Articles -->
     <section class="featured">
         <div class="container">
-            <h2 class="section-title">Featured Articles</h2>
+            <h2 class="section-title">Artigos em Destaque</h2>
             
             <div class="featured-grid">
                 <article class="featured-card">
-                    <div class="featured-badge">🚀 For Devs</div>
-                    <h3><a href="/articles/what-best-free-ecommerce-platform.html">What's the best free e-commerce platform?</a></h3>
-                    <p>For beginner developers: compare Converso vs WordPress, Shopify and other options. Start free with 10 bookings/month and earn 30% recurring commission.</p>
+                    <div class="featured-badge">🚀 Para Devs</div>
+                    <h3><a href="/artigos/qual-melhor-plataforma-ecommerce-gratuita.html">Qual a melhor plataforma gratuita de e-commerce?</a></h3>
+                    <p>Para desenvolvedores iniciantes: compare Converso vs WordPress, Shopify e outras opções. Comece grátis com 10 bookings/mês e ganhe 30% de comissão recorrente.</p>
                     <div class="article-meta">
-                        <span>📖 18 min read</span>
-                        <span>📅 January 2025</span>
+                        <span>📖 18 min de leitura</span>
+                        <span>📅 Janeiro 2025</span>
                     </div>
                 </article>
 
                 <article class="featured-card">
-                    <div class="featured-badge">💰 Opportunity</div>
-                    <h3><a href="/articles/why-72-percent-small-businesses-no-professional-site.html">Why 72% of small businesses still don't have a professional website?</a></h3>
-                    <p>$14.4 billion opportunity for beginner developers. Earn 30% recurring commission creating websites.</p>
+                    <div class="featured-badge">💰 Oportunidade</div>
+                    <h3><a href="/artigos/por-que-pequenas-empresas-sem-site-profissional.html">Por que 72% das pequenas empresas ainda não têm site profissional?</a></h3>
+                    <p>Oportunidade de R$ 14,4 bilhões para desenvolvedores iniciantes. Ganhe 30% de comissão recorrente criando sites.</p>
                     <div class="article-meta">
-                        <span>📖 15 min read</span>
-                        <span>📅 January 2025</span>
+                        <span>📖 15 min de leitura</span>
+                        <span>📅 Janeiro 2025</span>
                     </div>
                 </article>
 
                 <article class="featured-card">
-                    <div class="featured-badge">⭐ Most Read</div>
-                    <h3><a href="/en/best-barbershop-management-software/">Best Barbershop Management Software</a></h3>
-                    <p>Complete guide to choose the best management software for barbershops: features, pricing, and detailed comparison.</p>
+                    <div class="featured-badge">⭐ Mais Lido</div>
+                    <h3><a href="/artigos/como-abrir-barbearia-las-vegas.html">Como Abrir uma Barbearia em Las Vegas</a></h3>
+                    <p>Guia completo para abrir sua barbearia em Las Vegas: documentação, investimento inicial, localização, equipamentos e primeiros passos.</p>
                     <div class="article-meta">
-                        <span>📖 15 min read</span>
-                        <span>📅 January 2025</span>
+                        <span>📖 15 min de leitura</span>
+                        <span>📅 Janeiro 2025</span>
                     </div>
                 </article>
 
                 <article class="featured-card">
                     <div class="featured-badge">💎 White Label</div>
-                    <h3><a href="/articles/why-developers-migrate-white-label-platforms.html">Why are developers migrating to white label platforms?</a></h3>
-                    <p>Beginner developers are earning up to $15,000/month with 75% less work using white label platforms.</p>
+                    <h3><a href="/artigos/por-que-desenvolvedores-migram-plataformas-white-label.html">Por que desenvolvedores estão migrando para plataformas white label?</a></h3>
+                    <p>Desenvolvedores iniciantes estão faturando até R$ 15.000/mês com 75% menos trabalho usando plataformas white label.</p>
                     <div class="article-meta">
-                        <span>📖 18 min read</span>
-                        <span>📅 January 2025</span>
+                        <span>📖 18 min de leitura</span>
+                        <span>📅 Janeiro 2025</span>
                     </div>
                 </article>
 
                 <article class="featured-card">
                     <div class="featured-badge">🔥 Trending</div>
-                    <h3><a href="/articles/secret-devs-earn-6-figures-local-sites.html">Secret: developers earn 6 figures with local sites</a></h3>
-                    <p>How smart developers are earning $100,000+ per year focusing on local small businesses instead of competing in the global market.</p>
+                    <h3><a href="/artigos/segredo-devs-faturam-6-digitos-sites-locais.html">Segredo: desenvolvedores faturam 6 dígitos com sites locais</a></h3>
+                    <p>Como desenvolvedores inteligentes estão faturando R$ 100.000+ por ano focando em pequenas empresas locais ao invés de competir no mercado global.</p>
                     <div class="article-meta">
-                        <span>📖 20 min read</span>
-                        <span>📅 January 2025</span>
+                        <span>📖 20 min de leitura</span>
+                        <span>📅 Janeiro 2025</span>
                     </div>
                 </article>
 
                 <article class="featured-card">
-                    <div class="featured-badge">💡 Strategy</div>
-                    <h3><a href="/articles/how-compete-wix-wordpress-charging-3x-more.html">How to compete with Wix/WordPress charging 3x more</a></h3>
-                    <p>Proven strategies for developers to charge $3,000-5,000 for websites that competitors sell for $800-1,500.</p>
+                    <div class="featured-badge">💡 Estratégia</div>
+                    <h3><a href="/artigos/como-competir-wix-wordpress-cobrando-3x-mais.html">Como competir com Wix/WordPress cobrando 3x mais</a></h3>
+                    <p>Estratégias comprovadas para desenvolvedores cobrarem R$ 3.000-5.000 por sites que a concorrência vende por R$ 800-1.500.</p>
                     <div class="article-meta">
-                        <span>📖 16 min read</span>
-                        <span>📅 January 2025</span>
+                        <span>📖 16 min de leitura</span>
+                        <span>📅 Janeiro 2025</span>
                     </div>
                 </article>
             </div>
@@ -923,12 +923,12 @@
     <!-- Language Section -->
     <section class="languages">
         <div class="container">
-            <h2 class="section-title">Content in Other Languages</h2>
+            <h2 class="section-title">Conteúdo em Outros Idiomas</h2>
             <div class="language-cards">
-                <a href="https://seo.converso.pro/" class="language-card">
-                    <span class="flag">🇧🇷</span>
-                    <h3>Português</h3>
-                    <p>Artigos para Desenvolvedores e Profissionais</p>
+                <a href="https://seo.converso.pro/en/" class="language-card">
+                    <span class="flag">🇺🇸</span>
+                    <h3>English</h3>
+                    <p>Articles for Developers & Professionals</p>
                 </a>
                 <a href="https://seo.converso.pro/es/" class="language-card">
                     <span class="flag">🇪🇸</span>
@@ -943,14 +943,14 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Create Your Booking Website?</h2>
-                <p>Join developers and professionals who already use Converso.pro</p>
+                <h2>Pronto para Criar seu Site de Agendamentos?</h2>
+                <p>Junte-se a desenvolvedores e profissionais que já usam o Converso.pro</p>
                 <div class="cta-buttons">
                     <a href="https://app.converso.pro/auth" class="btn btn-primary btn-large">
-                        Get Started Free
+                        Começar Grátis
                     </a>
                     <a href="https://converso.pro/developers" class="btn btn-secondary btn-large">
-                        For Developers
+                        Para Desenvolvedores
                     </a>
                 </div>
             </div>
@@ -963,37 +963,37 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Converso.pro Library</h4>
-                    <p>Free resources for developers and service professionals to grow their businesses.</p>
+                    <p>Recursos gratuitos para desenvolvedores e profissionais de serviços crescerem seus negócios.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>For Developers</h4>
+                    <h4>Para Desenvolvedores</h4>
                     <ul>
-                        <li><a href="/developers/">All Guides</a></li>
-                        <li><a href="https://converso.pro/developers">Partner Program</a></li>
-                        <li><a href="/articles/what-best-free-ecommerce-platform.html">Get Started Free</a></li>
-                        <li><a href="/articles/how-earn-30-percent-recurring-commission.html">Earn Commissions</a></li>
+                        <li><a href="/desenvolvedores/">Todos os Guias</a></li>
+                        <li><a href="https://converso.pro/developers">Programa de Parceiros</a></li>
+                        <li><a href="/artigos/qual-melhor-plataforma-ecommerce-gratuita.html">Começar Grátis</a></li>
+                        <li><a href="/artigos/como-ganhar-comissao-recorrente-30-porcento.html">Ganhar Comissões</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Useful Links</h4>
+                    <h4>Links Úteis</h4>
                     <ul>
-                        <li><a href="https://converso.pro">Main Site</a></li>
-                        <li><a href="https://app.converso.pro/auth">Create Account</a></li>
+                        <li><a href="https://converso.pro">Site Principal</a></li>
+                        <li><a href="https://app.converso.pro/auth">Criar Conta</a></li>
                         <li><a href="https://app.converso.pro/auth">Login</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Categories</h4>
+                    <h4>Categorias</h4>
                     <ul>
-                        <li><a href="/developers/">Developers</a></li>
+                        <li><a href="/desenvolvedores/">Desenvolvedores</a></li>
                         <li><a href="/ecommerce/">E-commerce</a></li>
-                        <li><a href="/digital-marketing/">Digital Marketing</a></li>
-                        <li><a href="/business-growth/">Business Growth</a></li>
+                        <li><a href="/marketing-digital/">Marketing Digital</a></li>
+                        <li><a href="/gestao-crescimento/">Gestão</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Converso.pro. All rights reserved.</p>
+                <p>&copy; 2025 Converso.pro. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
