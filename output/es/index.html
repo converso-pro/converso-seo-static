@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Converso.pro Library - Biblioteca Completa de Recursos para Profesionales</title>
+    <title>Converso.pro Library - Biblioteca Completa de Recursos para Desarrolladores y Profesionales</title>
     
     <!-- Language Detection and Redirect -->
     <script>
         (function() {
-            // Save current language preference
+            // Auto detect and redirect based on browser language
+            if (!localStorage.getItem('converso-library-lang')) {
+                const browserLang = navigator.language || navigator.userLanguage;
+                const lang = browserLang.toLowerCase();
+                
+                if (lang.startsWith('pt')) {
+                    window.location.replace('https://seo.converso.pro/');
+                } else if (lang.startsWith('en')) {
+                    window.location.replace('https://seo.converso.pro/en/');
+                }
+            }
             localStorage.setItem('converso-library-lang', 'es');
         })();
     </script>
     
-    <meta name="description" content="Biblioteca completa con más de 10 guías especializadas en 3 idiomas: E-commerce, Sistemas de Agendamiento, Alternativas a Calendly, Marketing Digital y Gestión de Negocios. 100% gratis.">
+    <meta name="description" content="Biblioteca completa con 90+ guías especializadas: Desarrolladores, Crecimiento Empresarial, Marketing Digital, E-commerce y Sistemas de Citas. Recursos gratuitos en 3 idiomas.">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Converso.pro Library - Recursos Gratuitos">
-    <meta property="og:description" content="Guías completas para barberos, salones de belleza, clínicas y profesionales de servicios.">
+    <meta property="og:title" content="Converso.pro Library - Recursos para Desarrolladores y Profesionales">
+    <meta property="og:description" content="Guías completas para desarrolladores, barberos, salones de belleza, clínicas y profesionales de servicios.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://seo.converso.pro/es/">
     <meta property="og:image" content="https://converso.pro/converso-og.png">
@@ -25,7 +35,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Converso.pro Library">
-    <meta name="twitter:description" content="Recursos gratuitos para profesionales de servicios">
+    <meta name="twitter:description" content="Recursos gratuitos para desarrolladores y profesionales de servicios">
     
     <link rel="canonical" href="https://seo.converso.pro/es/">
     <link rel="icon" href="https://converso.pro/favicon.ico">
@@ -59,6 +69,7 @@
             --primary-green: #10b981;
             --secondary-blue: #60a5fa;
             --secondary-green: #34d399;
+            --developer-gradient: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #f97316 100%);
             --shadow-light: #ffffff;
             --shadow-dark: #c8cacd;
         }
@@ -88,13 +99,6 @@
             background: var(--surface-color);
             border-radius: 12px;
             box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
-            padding: 1.5rem;
-        }
-        
-        .neumorphic-inset {
-            background: var(--bg-color);
-            border-radius: 12px;
-            box-shadow: inset 8px 8px 16px var(--shadow-dark), inset -8px -8px 16px var(--shadow-light);
             padding: 1.5rem;
         }
         
@@ -191,7 +195,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
         }
         
@@ -233,10 +237,10 @@
             color: var(--text-primary);
         }
         
-        /* Category Grid */
+        /* Category Grid - Updated with Developer Focus */
         .category-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
         
@@ -246,11 +250,64 @@
             border-radius: 20px;
             box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.7);
             transition: all 0.3s ease;
+            position: relative;
         }
         
         .category-card:hover {
             transform: translateY(-5px);
             box-shadow: 15px 15px 40px rgba(200, 202, 205, 0.6), -15px -15px 40px rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Featured Developer Card - 2x size */
+        .developer-card {
+            grid-column: span 2;
+            background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #f97316 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .developer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.1) 100%);
+            z-index: 1;
+        }
+        
+        .developer-card > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .developer-card .category-title,
+        .developer-card .category-description,
+        .developer-card .article-list a,
+        .developer-card .category-link {
+            color: white;
+        }
+        
+        .developer-card .category-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .developer-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
         }
         
         .category-icon {
@@ -298,6 +355,101 @@
         
         .category-link:hover {
             color: var(--secondary-green);
+        }
+        
+        /* Developer-specific links in white card */
+        .developer-card .article-list a:hover {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .developer-card .category-link:hover {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        /* Language Selector */
+        .language-selector {
+            position: relative;
+        }
+        
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--surface-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            box-shadow: 5px 5px 10px rgba(200, 202, 205, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .language-btn:hover {
+            box-shadow: 3px 3px 8px rgba(200, 202, 205, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.6);
+        }
+        
+        .flag {
+            font-size: 1.2rem;
+        }
+        
+        .lang-text {
+            font-weight: 600;
+        }
+        
+        .chevron {
+            transition: transform 0.3s ease;
+        }
+        
+        .language-btn.active .chevron {
+            transform: rotate(180deg);
+        }
+        
+        .language-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 0.5rem;
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+            min-width: 150px;
+        }
+        
+        .language-menu.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .language-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+        
+        .language-option:first-child {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        
+        .language-option:last-child {
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        
+        .language-option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
         }
         
         /* Featured Articles */
@@ -356,42 +508,6 @@
             font-size: 0.875rem;
             color: var(--text-secondary);
         }
-
-        .article-meta a {
-            color: var(--primary-blue);
-            text-decoration: none;
-        }
-
-        .article-meta a:hover {
-            text-decoration: underline;
-        }
-
-        .category-section h3 {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        /* Smooth scroll for anchor links */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Enhanced card hover effects */
-        .featured-card h4 {
-            margin: 0 0 1rem 0;
-            font-size: 1.2rem;
-        }
-
-        .featured-card h4 a {
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .featured-card h4 a:hover {
-            color: var(--primary-blue);
-        }
         
         /* Language Section */
         .language-cards {
@@ -418,7 +534,7 @@
             box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.6), -10px -10px 30px rgba(255, 255, 255, 0.8);
         }
         
-        .flag {
+        .language-card .flag {
             font-size: 3rem;
             margin-bottom: 1rem;
             display: block;
@@ -534,92 +650,6 @@
             color: rgba(255, 255, 255, 0.8);
         }
         
-        /* Language Selector */
-        .language-selector {
-            position: relative;
-        }
-        
-        .language-btn {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--surface-color);
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            color: var(--text-primary);
-            box-shadow: 5px 5px 10px rgba(200, 202, 205, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
-            transition: all 0.3s ease;
-        }
-        
-        .language-btn:hover {
-            box-shadow: 3px 3px 8px rgba(200, 202, 205, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.6);
-        }
-        
-        .flag {
-            font-size: 1.2rem;
-        }
-        
-        .lang-text {
-            font-weight: 600;
-        }
-        
-        .chevron {
-            transition: transform 0.3s ease;
-        }
-        
-        .language-btn.active .chevron {
-            transform: rotate(180deg);
-        }
-        
-        .language-menu {
-            position: absolute;
-            top: 100%;
-            right: 0;
-            margin-top: 0.5rem;
-            background: var(--surface-color);
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-10px);
-            transition: all 0.3s ease;
-            z-index: 100;
-            min-width: 150px;
-        }
-        
-        .language-menu.active {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        
-        .language-option {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem 1.25rem;
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: background-color 0.2s ease;
-        }
-        
-        .language-option:first-child {
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
-        }
-        
-        .language-option:last-child {
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
-        }
-        
-        .language-option:hover {
-            background-color: rgba(59, 130, 246, 0.1);
-        }
-        
         /* Responsive */
         @media (max-width: 768px) {
             .hero-title {
@@ -636,7 +666,14 @@
                 grid-template-columns: 1fr;
             }
             
-            .category-grid,
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .developer-card {
+                grid-column: span 1;
+            }
+            
             .featured-grid {
                 grid-template-columns: 1fr;
             }
@@ -658,7 +695,7 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
+                <a href="/es/" class="logo">
                     Converso.pro <span class="logo-accent">Library</span>
                 </a>
                 <nav class="nav">
@@ -694,18 +731,21 @@
         <div class="container">
             <h1 class="hero-title">
                 Biblioteca de Recursos para<br>
-                <span class="text-gradient">Profesionales de Servicios</span>
+                <span class="text-gradient">Desarrolladores y Profesionales</span>
             </h1>
             <p class="hero-subtitle">
-                Guías completas, tutoriales paso a paso y recursos gratuitos para crear tu sitio de reservas, 
-                gestionar clientes y aumentar tus ventas.
+                Guías completas para desarrolladores principiantes, tutoriales paso a paso para profesionales de servicios y recursos gratuitos para crear sitios de citas y aumentar ventas.
             </p>
             
             <!-- Quick Stats -->
             <div class="stats">
                 <div class="stat-card">
-                    <div class="stat-number">17</div>
+                    <div class="stat-number">90+</div>
                     <div class="stat-label">Artículos Especializados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Guías para Desarrolladores</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">3</div>
@@ -725,260 +765,87 @@
             <h2 class="section-title">Explorar por Categoría</h2>
             
             <div class="category-grid">
+                <!-- Developers - Featured Card (2x size) -->
+                <div class="category-card developer-card">
+                    <div class="developer-badge">💎 Destacado</div>
+                    <div class="category-icon">👨‍💻</div>
+                    <h3 class="category-title">Desarrolladores <span style="font-size: 0.8rem; opacity: 0.9;">(15 artículos)</span></h3>
+                    <p class="category-description">
+                        Guías completas para desarrolladores principiantes: cómo migrar a white-label, adquirir clientes locales, generar ingresos recurrentes y competir con grandes plataformas cobrando 3 veces más.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/articulos/cual-mejor-plataforma-ecommerce-gratuita.html">¿Cuál es la mejor plataforma gratuita de e-commerce?</a></li>
+                        <li><a href="/articulos/como-ganar-dinero-creando-sitios-pequenas-empresas.html">Cómo ganar dinero creando sitios para pequeñas empresas</a></li>
+                        <li><a href="/articulos/por-que-desarrolladores-migran-plataformas-white-label.html">¿Por qué los desarrolladores migran a white-label?</a></li>
+                        <li><a href="/articulos/como-competir-wix-wordpress-cobrando-3x-mas.html">Cómo competir con Wix/WordPress cobrando 3x más</a></li>
+                        <li><a href="/articulos/secreto-devs-ganan-6-cifras-sitios-locales.html">Secreto: devs ganan 6 cifras con sitios locales</a></li>
+                        <li><a href="/articulos/como-ganar-comision-recurrente-30-porciento.html">Cómo ganar 30% de comisión recurrente</a></li>
+                    </ul>
+                    <a href="/desarrolladores/" class="category-link">Ver todos los 15 artículos →</a>
+                </div>
+
+                <!-- Business Growth -->
+                <div class="category-card">
+                    <div class="category-icon">📈</div>
+                    <h3 class="category-title">Gestión y Crecimiento <span style="font-size: 0.8rem; opacity: 0.7;">(18 artículos)</span></h3>
+                    <p class="category-description">
+                        Estrategias probadas para hacer crecer tu negocio: gestión financiera, captación de clientes, precios y éxito profesional.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/es/como-empezar-negocio-online/">Cómo Empezar un Negocio Online</a></li>
+                        <li><a href="/es/como-administrar-dinero-barberia/">Cómo Administrar el Dinero de la Barbería</a></li>
+                        <li><a href="/es/cuanto-cobrar-corte-cabello/">Cuánto Cobrar por Corte de Cabello</a></li>
+                        <li><a href="/es/como-fidelizar-clientes-barberia/">Cómo Fidelizar Clientes en la Barbería</a></li>
+                    </ul>
+                    <a href="/gestion-crecimiento/" class="category-link">Ver todos los 18 artículos →</a>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h3 class="category-title">Marketing Digital <span style="font-size: 0.8rem; opacity: 0.7;">(22 artículos)</span></h3>
+                    <p class="category-description">
+                        Estrategias de marketing para barberías, salones de belleza, asistencia técnica y otros negocios locales.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/es/como-captar-clientes-barberia/">Cómo Captar Clientes para Barbería</a></li>
+                        <li><a href="/es/marketing-digital-barberia/">Marketing Digital para Barbería</a></li>
+                        <li><a href="/es/como-atraer-clientes-salon-belleza/">Cómo Atraer Clientes para Salón de Belleza</a></li>
+                        <li><a href="/articulos/mejores-estrategias-captar-clientes-2025.html">Mejores estrategias para captar clientes 2025</a></li>
+                    </ul>
+                    <a href="/marketing-digital/" class="category-link">Ver todos los 22 artículos →</a>
+                </div>
+
                 <!-- E-commerce -->
                 <div class="category-card">
                     <div class="category-icon">🛍️</div>
-                    <h3 class="category-title">E-commerce</h3>
+                    <h3 class="category-title">E-commerce <span style="font-size: 0.8rem; opacity: 0.7;">(19 artículos)</span></h3>
                     <p class="category-description">
-                        Aprende a crear tu tienda online, gestionar productos, procesar pedidos 
-                        y aumentar tus ventas en internet.
+                        Aprende a crear tu tienda online, gestionar productos, procesar pedidos y aumentar tus ventas en internet.
                     </p>
                     <ul class="article-list">
-                        <li><a href="/articulos/como-crear-tienda-online-poco-dinero.html">¿Cómo Crear una Tienda Online con Poco Dinero?</a></li>
-                        <li><a href="/articulos/cuanto-cuesta-montar-tienda-virtual-completa.html">¿Cuánto Cuesta Montar una Tienda Virtual Completa?</a></li>
-                        <li><a href="/articulos/como-empezar-vender-online-sin-inventario.html">¿Cómo Empezar a Vender Sin Inventario?</a></li>
-                        <li><a href="/articulos/vale-pena-comision-mercadolibre-o-tienda-propia.html">¿Mercado Libre vs Tienda Propia?</a></li>
-                        <li><a href="/articulos/mejor-gateway-pago-ecommerce-brasil.html">¿Mejor Gateway de Pago?</a></li>
+                        <li><a href="/es/como-crear-tienda-poco-dinero/">Cómo Crear una Tienda Online con Poco Dinero</a></li>
+                        <li><a href="/articulos/primera-venta-online-guia-completa.html">Primera venta online - guía completa</a></li>
+                        <li><a href="/es/shopify-gratuita/">¿Shopify es Gratuita?</a></li>
+                        <li><a href="/es/cuanto-cuesta-crear-sitio-shopify/">Cuánto Cuesta Crear un Sitio en Shopify</a></li>
                     </ul>
-                    <a href="#ecommerce" class="category-link">Ver todos los artículos →</a>
+                    <a href="/ecommerce/" class="category-link">Ver todos los 19 artículos →</a>
                 </div>
 
-                <!-- Developer Resources -->
-                <div class="category-card">
-                    <div class="category-icon">👨‍💻</div>
-                    <h3 class="category-title">Para Desarrolladores</h3>
-                    <p class="category-description">
-                        Recursos específicos para desarrolladores que quieren integrar o 
-                        construir soluciones con la plataforma Converso.
-                    </p>
-                    <ul class="article-list">
-                        <li><a href="/articulos/converso-para-desarrolladores.html">Converso para Desarrolladores</a></li>
-                    </ul>
-                    <a href="#developers" class="category-link">Ver todos los artículos →</a>
-                </div>
-
-                <!-- Scheduling Systems & Alternatives -->
+                <!-- Scheduling Systems -->
                 <div class="category-card">
                     <div class="category-icon">📅</div>
-                    <h3 class="category-title">Sistemas de Agendamiento</h3>
+                    <h3 class="category-title">Sistemas de Citas <span style="font-size: 0.8rem; opacity: 0.7;">(16 artículos)</span></h3>
                     <p class="category-description">
-                        Compara herramientas, descubre alternativas y elige el mejor 
-                        sistema de agendamiento para tu negocio.
+                        Compara herramientas, descubre alternativas y elige el mejor sistema de citas para tu negocio.
                     </p>
                     <ul class="article-list">
-                        <li><a href="/articulos/alternativas-calendly.html">Alternativas a Calendly</a></li>
-                        <li><a href="/articulos/costo-sistema-agendamiento.html">Costo de Sistema de Agendamiento</a></li>
-                        <li><a href="/articulos/sistema-agendamiento-gratis.html">Sistema de Agendamiento Gratis</a></li>
-                        <li><a href="/articulos/converso-vs-calendly.html">Converso vs Calendly</a></li>
+                        <li><a href="/es/alternativas-calendly/">Alternativas a Calendly</a></li>
+                        <li><a href="/es/mejor-sistema-citas-salones/">Mejor Sistema de Citas para Salones</a></li>
+                        <li><a href="/es/mejor-aplicacion-citas/">Mejor Aplicación de Citas</a></li>
+                        <li><a href="/articulos/mejor-sistema-citas-online.html">Mejor sistema de citas online</a></li>
                     </ul>
-                    <a href="#scheduling" class="category-link">Ver todos los artículos →</a>
-                </div>
-
-                <!-- Business Growth & Management -->
-                <div class="category-card">
-                    <div class="category-icon">📈</div>
-                    <h3 class="category-title">Gestión y Crecimiento</h3>
-                    <p class="category-description">
-                        Estrategias comprobadas para reducir ausencias, captar clientes, 
-                        comenzar negocios online y dominar el marketing digital.
-                    </p>
-                    <ul class="article-list">
-                        <li><a href="/articulos/como-atraer-clientes-barberia-2025.html">Cómo Atraer Clientes para Barbería en 2025</a></li>
-                        <li><a href="/articulos/reducir-ausencias-citas.html">Cómo Reducir Ausencias en Citas</a></li>
-                        <li><a href="/articulos/como-empezar-negocio-online-brasil-2025.html">Cómo Empezar Negocio Online en Brasil 2025</a></li>
-                        <li><a href="/articulos/mejores-estrategias-captar-clientes-2025.html">Mejores Estrategias para Captar Clientes 2025</a></li>
-                        <li><a href="/articulos/cuanto-cuesta-crear-sitio-web-profesional.html">¿Cuánto Cuesta Crear Sitio Web Profesional en 2025?</a></li>
-                        <li><a href="/articulos/como-elegir-mejor-plataforma-crear-sitio-web.html">¿Cómo Elegir la Mejor Plataforma para Crear tu Sitio Web?</a></li>
-                    </ul>
-                    <a href="#business" class="category-link">Ver todos los artículos →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Complete Article Library -->
-    <section class="featured" id="complete-library">
-        <div class="container">
-            <h2 class="section-title">Biblioteca Completa de Artículos</h2>
-            
-            <!-- E-commerce Category -->
-            <div id="ecommerce" class="category-section" style="margin-bottom: 3rem;">
-                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">🛍️ E-commerce</h3>
-                <div class="featured-grid">
-                    <article class="featured-card">
-                        <h4><a href="/articulos/como-crear-tienda-online-poco-dinero.html">¿Cómo Crear una Tienda Online con Poco Dinero?</a></h4>
-                        <p>Guía completa para crear tu tienda virtual gastando menos de $18/mes. Compara plataformas, costos reales y ROI.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/como-criar-loja-online-pouco-dinheiro.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/how-create-online-store-little-money.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/cuanto-cuesta-montar-tienda-virtual-completa.html">¿Cuánto Cuesta Montar una Tienda Virtual Completa en 2025?</a></h4>
-                        <p>Análisis detallado de costos: plataforma, dominio, gateway, marketing. Compara opciones de $0 a $10.000+.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/quanto-custa-montar-loja-virtual-completa.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/how-much-cost-setup-complete-online-store.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/como-empezar-vender-online-sin-inventario.html">¿Cómo Empezar a Vender Online Sin Inventario en 2025?</a></h4>
-                        <p>4 métodos comprobados: dropshipping, POD, productos digitales, marketplace. Compara proveedores e inversión inicial.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/como-comecar-vender-online-sem-estoque.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/how-start-selling-online-without-inventory.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/vale-pena-comision-mercadolibre-o-tienda-propia.html">¿Vale la Pena Pagar Comisión de Mercado Libre o Tener Tienda Propia?</a></h4>
-                        <p>ML cobra 16% vs tienda propia $18/mes. Con $2.000/mes ahorras $302. Compara costos y descubre lo mejor.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/vale-pena-comissao-mercado-livre-ou-loja-propria.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/worth-paying-marketplace-fees-or-own-store.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/mejor-gateway-pago-ecommerce-brasil.html">¿Cuál es el Mejor Gateway de Pago para E-commerce en Brasil en 2025?</a></h4>
-                        <p>Análisis honesto de los 8 principales: PagSeguro, Mercado Pago, Stripe, PayPal. Compara tarifas, recursos y elige el ideal.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/melhor-gateway-pagamento-ecommerce-brasil.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/best-payment-gateway-ecommerce-brazil.html">English</a></span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- Developer Resources Category -->
-            <div id="developers" class="category-section" style="margin-bottom: 3rem;">
-                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">👨‍💻 Para Desarrolladores</h3>
-                <div class="featured-grid">
-                    <article class="featured-card">
-                        <h4><a href="/articulos/converso-para-desarrolladores.html">Converso para Desarrolladores</a></h4>
-                        <p>Documentación completa de la API, guías de integración y recursos para desarrolladores.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/converso-para-desenvolvedores.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/converso-for-developers.html">English</a></span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- Scheduling Systems Category -->
-            <div id="scheduling" class="category-section" style="margin-bottom: 3rem;">
-                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">📅 Sistemas de Agendamiento</h3>
-                <div class="featured-grid">
-                    <article class="featured-card">
-                        <h4><a href="/articulos/alternativas-calendly.html">Alternativas a Calendly</a></h4>
-                        <p>Compara las mejores alternativas a Calendly en 2025, incluyendo precios, características y reseñas detalladas.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/alternativas-ao-calendly.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/calendly-alternatives.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/costo-sistema-agendamiento.html">Costo de Sistema de Agendamiento</a></h4>
-                        <p>Análisis completo de costos de sistemas de agendamiento y cómo elegir la mejor opción.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/custo-sistema-agendamento.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/scheduling-system-cost.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/sistema-agendamiento-gratis.html">Sistema de Agendamiento Gratis</a></h4>
-                        <p>Los mejores sistemas de agendamiento gratuitos para pequeños negocios en 2025.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/sistema-agendamento-gratis.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/free-scheduling-system.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/converso-vs-calendly.html">Converso vs Calendly</a></h4>
-                        <p>Comparación detallada entre Converso y Calendly: características, precios y cuál elegir.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/converso-vs-calendly.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/converso-vs-calendly.html">English</a></span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- Business Growth Category -->
-            <div id="business" class="category-section" style="margin-bottom: 3rem;">
-                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">📈 Gestión y Crecimiento</h3>
-                <div class="featured-grid">
-                    <article class="featured-card">
-                        <h4><a href="/articulos/como-atraer-clientes-barberia-2025.html">¿Cómo Atraer Clientes para Barbería en 2025?</a></h4>
-                        <p>10 estrategias comprobadas para atraer más clientes con marketing digital y fidelización.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/como-captar-clientes-barbearia-2025.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/how-attract-barbershop-clients-2025.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/reducir-ausencias-citas.html">Cómo Reducir Ausencias en Citas</a></h4>
-                        <p>Estrategias comprobadas para reducir no-shows y aumentar la tasa de asistencia.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/reduzir-faltas-agendamentos.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/reduce-no-shows-appointments.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/como-empezar-negocio-online-brasil-2025.html">Cómo Empezar Negocio Online en Brasil 2025</a></h4>
-                        <p>Guía completa para emprendedores que quieren comenzar un negocio online en Brasil.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/como-comecar-negocio-online-brasil-2025.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/how-start-online-business-brazil-2025.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/mejores-estrategias-captar-clientes-2025.html">Mejores Estrategias para Captar Clientes 2025</a></h4>
-                        <p>Las estrategias más efectivas para atraer y convertir nuevos clientes en 2025.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/melhores-estrategias-captar-clientes-2025.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/best-strategies-attract-customers-2025.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/mejores-consejos-principiantes-marketing-digital.html">Mejores Consejos para Principiantes en Marketing Digital</a></h4>
-                        <p>Guía esencial para quienes comienzan en marketing digital y quieren resultados rápidos.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/melhores-dicas-iniciantes-marketing-digital.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/best-tips-beginners-digital-marketing.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/cuanto-cuesta-crear-sitio-web-profesional.html">¿Cuánto Cuesta Crear Sitio Web Profesional en 2025?</a></h4>
-                        <p>Análisis completo de costos: plataformas SaaS vs freelancers vs agencias. Compara precios reales y ROI.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/quanto-custa-criar-site-profissional.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/how-much-cost-create-professional-website.html">English</a></span>
-                        </div>
-                    </article>
-                    <article class="featured-card">
-                        <h4><a href="/articulos/como-elegir-mejor-plataforma-crear-sitio-web.html">¿Cómo Elegir la Mejor Plataforma para Crear tu Sitio Web en 2025?</a></h4>
-                        <p>Guía completa para elegir entre WordPress, Wix, Converso y otras. Decisión basada en costo, facilidad y recursos.</p>
-                        <div class="article-meta">
-                            <span>🇪🇸 Español</span>
-                            <span>🇧🇷 <a href="/artigos/como-escolher-plataforma-criar-site.html">Português</a></span>
-                            <span>🇺🇸 <a href="/articles/how-choose-best-platform-create-website.html">English</a></span>
-                        </div>
-                    </article>
+                    <a href="/sistemas-citas/" class="category-link">Ver todos los 16 artículos →</a>
                 </div>
             </div>
         </div>
@@ -991,19 +858,19 @@
             
             <div class="featured-grid">
                 <article class="featured-card">
-                    <div class="featured-badge">⭐ Más Leído</div>
-                    <h3><a href="/articulos/como-crear-tienda-online-poco-dinero.html">¿Cómo Crear una Tienda Online con Poco Dinero?</a></h3>
-                    <p>Guía completa para crear tu tienda virtual gastando menos de $18/mes. Compara plataformas, costos reales y ROI de hasta 2.400%.</p>
+                    <div class="featured-badge">🚀 Para Devs</div>
+                    <h3><a href="/articulos/cual-mejor-plataforma-ecommerce-gratuita.html">¿Cuál es la mejor plataforma gratuita de e-commerce?</a></h3>
+                    <p>Para desarrolladores principiantes: compara Converso vs WordPress, Shopify y otras opciones. Comienza gratis con 10 reservas/mes y gana 30% de comisión recurrente.</p>
                     <div class="article-meta">
-                        <span>📖 12 min de lectura</span>
+                        <span>📖 18 min de lectura</span>
                         <span>📅 Enero 2025</span>
                     </div>
                 </article>
 
                 <article class="featured-card">
-                    <div class="featured-badge">🔥 Tendencia</div>
-                    <h3><a href="/articulos/alternativas-calendly.html">Alternativas a Calendly</a></h3>
-                    <p>Compara las mejores alternativas a Calendly en 2025, incluyendo precios, características y reseñas detalladas.</p>
+                    <div class="featured-badge">💰 Oportunidad</div>
+                    <h3><a href="/articulos/por-que-72-porciento-pequenas-empresas-sin-sitio-profesional.html">¿Por qué el 72% de las pequeñas empresas aún no tienen sitio web profesional?</a></h3>
+                    <p>Oportunidad de $14.4 mil millones para desarrolladores principiantes. Gana 30% de comisión recurrente creando sitios web.</p>
                     <div class="article-meta">
                         <span>📖 15 min de lectura</span>
                         <span>📅 Enero 2025</span>
@@ -1011,11 +878,41 @@
                 </article>
 
                 <article class="featured-card">
-                    <div class="featured-badge">💡 Guía Práctica</div>
-                    <h3><a href="/articulos/mejores-estrategias-captar-clientes-2025.html">Mejores Estrategias para Captar Clientes 2025</a></h3>
-                    <p>Las estrategias más efectivas para atraer y convertir nuevos clientes usando métodos comprobados.</p>
+                    <div class="featured-badge">⭐ Más Leído</div>
+                    <h3><a href="/es/mejor-software-gestion-barberia/">Mejor Software de Gestión para Barberías</a></h3>
+                    <p>Guía completa para elegir el mejor software de gestión para barberías: características, precios y comparación detallada.</p>
+                    <div class="article-meta">
+                        <span>📖 15 min de lectura</span>
+                        <span>📅 Enero 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">💎 White Label</div>
+                    <h3><a href="/articulos/por-que-desarrolladores-migran-plataformas-white-label.html">¿Por qué los desarrolladores están migrando a plataformas white label?</a></h3>
+                    <p>Los desarrolladores principiantes están ganando hasta $15,000/mes con 75% menos trabajo usando plataformas white label.</p>
                     <div class="article-meta">
                         <span>📖 18 min de lectura</span>
+                        <span>📅 Enero 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">🔥 Tendencia</div>
+                    <h3><a href="/articulos/secreto-devs-ganan-6-cifras-sitios-locales.html">Secreto: desarrolladores ganan 6 cifras con sitios locales</a></h3>
+                    <p>Cómo los desarrolladores inteligentes están ganando $100,000+ por año enfocándose en pequeñas empresas locales en lugar de competir en el mercado global.</p>
+                    <div class="article-meta">
+                        <span>📖 20 min de lectura</span>
+                        <span>📅 Enero 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">💡 Estrategia</div>
+                    <h3><a href="/articulos/como-competir-wix-wordpress-cobrando-3x-mas.html">Cómo competir con Wix/WordPress cobrando 3x más</a></h3>
+                    <p>Estrategias probadas para que los desarrolladores cobren $3,000-5,000 por sitios web que la competencia vende por $800-1,500.</p>
+                    <div class="article-meta">
+                        <span>📖 16 min de lectura</span>
                         <span>📅 Enero 2025</span>
                     </div>
                 </article>
@@ -1031,12 +928,12 @@
                 <a href="https://seo.converso.pro/" class="language-card">
                     <span class="flag">🇧🇷</span>
                     <h3>Português</h3>
-                    <p>Artigos em Português</p>
+                    <p>Artigos para Desenvolvedores e Profissionais</p>
                 </a>
                 <a href="https://seo.converso.pro/en/" class="language-card">
                     <span class="flag">🇺🇸</span>
                     <h3>English</h3>
-                    <p>Articles in English</p>
+                    <p>Articles for Developers & Professionals</p>
                 </a>
             </div>
         </div>
@@ -1046,14 +943,14 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2>¿Listo para Crear tu Sitio de Reservas?</h2>
-                <p>Únete a miles de profesionales que ya usan Converso.pro</p>
+                <h2>¿Listo para Crear tu Sitio de Citas?</h2>
+                <p>Únete a desarrolladores y profesionales que ya usan Converso.pro</p>
                 <div class="cta-buttons">
                     <a href="https://app.converso.pro/auth" class="btn btn-primary btn-large">
-                        Empezar Gratis
+                        Comenzar Gratis
                     </a>
-                    <a href="https://converso.pro" class="btn btn-secondary btn-large">
-                        Conocer Converso
+                    <a href="https://converso.pro/developers" class="btn btn-secondary btn-large">
+                        Para Desarrolladores
                     </a>
                 </div>
             </div>
@@ -1066,7 +963,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Converso.pro Library</h4>
-                    <p>Recursos gratuitos para profesionales de servicios para hacer crecer sus negocios.</p>
+                    <p>Recursos gratuitos para desarrolladores y profesionales de servicios para hacer crecer sus negocios.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Desarrolladores</h4>
+                    <ul>
+                        <li><a href="/desarrolladores/">Todas las Guías</a></li>
+                        <li><a href="https://converso.pro/developers">Programa de Socios</a></li>
+                        <li><a href="/articulos/cual-mejor-plataforma-ecommerce-gratuita.html">Comenzar Gratis</a></li>
+                        <li><a href="/articulos/como-ganar-comision-recurrente-30-porciento.html">Ganar Comisiones</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Enlaces Útiles</h4>
@@ -1079,10 +985,10 @@
                 <div class="footer-section">
                     <h4>Categorías</h4>
                     <ul>
-                        <li><a href="/articulos/">Barberías</a></li>
-                        <li><a href="/articulos/">Salones de Belleza</a></li>
-                        <li><a href="/articulos/">E-commerce</a></li>
-                        <li><a href="/articulos/">Tecnología</a></li>
+                        <li><a href="/desarrolladores/">Desarrolladores</a></li>
+                        <li><a href="/ecommerce/">E-commerce</a></li>
+                        <li><a href="/marketing-digital/">Marketing Digital</a></li>
+                        <li><a href="/gestion-crecimiento/">Gestión</a></li>
                     </ul>
                 </div>
             </div>
