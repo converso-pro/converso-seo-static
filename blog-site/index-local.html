@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converso Blog - Business Growth Tips & Insights</title>
+    <meta name="description" content="Expert tips, strategies, and insights to help service professionals grow their business with online scheduling and digital transformation.">
+    
+    <!-- Use local CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <style>
+        .hero-blog {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 5rem 2rem;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-blog::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 20s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.2); opacity: 0.1; }
+        }
+        
+        .hero-blog h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-blog p {
+            font-size: 1.5rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .language-selector {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .language-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 1.5rem 2.5rem;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            min-width: 150px;
+        }
+        
+        .language-card:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .language-card h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .language-card p {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .features-section {
+            padding: 4rem 2rem;
+            background: #f9f9f9;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .cta-section {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: white;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .cta-section p {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-blog h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-blog p {
+                font-size: 1.2rem;
+            }
+            
+            .language-selector {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stats-row {
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="https://converso.pro/converso.svg" alt="Converso">
+            </a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/">Academy</a>
+                <a href="#" class="cta-button">Start Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-blog">
+        <h1>Converso Blog</h1>
+        <p>Expert insights to grow your service business</p>
+        
+        <div class="language-selector">
+            <a href="en/index.html" class="language-card">
+                <h3>English</h3>
+                <p>Read in English</p>
+            </a>
+            <a href="pt/index.html" class="language-card">
+                <h3>Português</h3>
+                <p>Ler em Português</p>
+            </a>
+            <a href="es/index.html" class="language-card">
+                <h3>Español</h3>
+                <p>Leer en Español</p>
+            </a>
+        </div>
+    </div>
+
+    <section class="features-section">
+        <div class="features-grid">
+            <div class="feature-card neumorphic-card">
+                <div class="feature-icon">📈</div>
+                <h3>Business Growth</h3>
+                <p>Strategies to increase revenue and expand your customer base</p>
+            </div>
+            <div class="feature-card neumorphic-card">
+                <div class="feature-icon">🔧</div>
+                <h3>Industry Tips</h3>
+                <p>Best practices for barbershops, salons, and service professionals</p>
+            </div>
+            <div class="feature-card neumorphic-card">
+                <div class="feature-icon">💡</div>
+                <h3>Digital Innovation</h3>
+                <p>Latest trends in online scheduling and business automation</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Learn from the Best</h2>
+        <p>Join thousands of professionals who are transforming their businesses with Converso</p>
+        
+        <div class="stats-row">
+            <div class="stat-item">
+                <div class="stat-number">50K+</div>
+                <div class="stat-label">Active Users</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15M+</div>
+                <div class="stat-label">Appointments Booked</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">97%</div>
+                <div class="stat-label">Customer Satisfaction</div>
+            </div>
+        </div>
+        
+        <a href="#" class="cta-button cta-primary">
+            Start Your Free Trial
+        </a>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Partners</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#">Academy</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Resources</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Converso. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        console.log('Local version - for testing only');
+    </script>
+</body>
+</html>

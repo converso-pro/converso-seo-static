@@ -1,330 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Converso Blog - Business Growth Tips & Insights</title>
-    <meta name="description" content="Expert tips, strategies, and insights to help service professionals grow their business with online scheduling and digital transformation.">
-    <meta property="og:title" content="Converso Blog - Business Growth Tips & Insights">
-    <meta property="og:description" content="Expert tips, strategies, and insights to help service professionals grow their business with online scheduling and digital transformation.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blog.converso.pro">
-    <meta property="og:image" content="https://converso.pro/og-image.png">
+    <title>Converso Blog</title>
+    <meta name="description" content="Blog Converso - Dicas para crescer seu negócio | Business growth tips | Consejos para crecer tu negocio">
     
-    <!-- Multilingual support -->
-    <link rel="alternate" hreflang="en" href="https://blog.converso.pro/en/">
+    <!-- Hreflang tags for SEO -->
     <link rel="alternate" hreflang="pt" href="https://blog.converso.pro/pt/">
+    <link rel="alternate" hreflang="en" href="https://blog.converso.pro/en/">
     <link rel="alternate" hreflang="es" href="https://blog.converso.pro/es/">
-    <link rel="canonical" href="https://blog.converso.pro/">
+    <link rel="alternate" hreflang="x-default" href="https://blog.converso.pro/en/">
     
-    <!-- Share CSS from main SEO site -->
-    <link rel="stylesheet" href="https://seo.converso.pro/css/main.css">
+    <script>
+        // Language detection and redirect
+        (function() {
+            // Get browser language
+            var browserLang = navigator.language || navigator.userLanguage;
+            var lang = browserLang.toLowerCase().substring(0, 2);
+            
+            // Map language codes
+            var supportedLangs = {
+                'pt': '/pt/',
+                'es': '/es/',
+                'en': '/en/'
+            };
+            
+            // Default to English if language not supported
+            var redirectPath = supportedLangs[lang] || '/en/';
+            
+            // Special handling for Portuguese variants
+            if (browserLang.toLowerCase().includes('pt')) {
+                redirectPath = '/pt/';
+            }
+            
+            // Redirect to appropriate language
+            window.location.replace(redirectPath);
+        })();
+    </script>
     
     <style>
-        .hero-blog {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 5rem 2rem;
-            text-align: center;
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-blog::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: pulse 20s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 0.3; }
-            50% { transform: scale(1.2); opacity: 0.1; }
-        }
-        
-        .hero-blog h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .hero-blog p {
-            font-size: 1.5rem;
-            opacity: 0.95;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .language-selector {
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f4f8;
             display: flex;
-            gap: 1rem;
             justify-content: center;
-            margin-top: 2rem;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .language-card {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 1.5rem 2.5rem;
-            border-radius: 15px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            min-width: 150px;
-        }
-        
-        .language-card:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .language-card h3 {
-            margin: 0 0 0.5rem;
-            font-size: 1.25rem;
-            font-weight: 600;
-        }
-        
-        .language-card p {
+            align-items: center;
+            min-height: 100vh;
             margin: 0;
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-        
-        .features-section {
-            padding: 4rem 2rem;
-            background: #f9f9f9;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .feature-card {
             text-align: center;
+        }
+        
+        .loading {
             padding: 2rem;
         }
         
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            margin: 0 auto 1rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-        }
-        
-        .cta-section {
-            padding: 4rem 2rem;
-            text-align: center;
-            background: white;
-        }
-        
-        .cta-section h2 {
+        .logo-text {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-weight: 800;
+            background: linear-gradient(135deg, #22c55e 0%, #3b82f6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
         }
         
-        .cta-section p {
-            font-size: 1.25rem;
-            color: #666;
+        .logo-blog {
+            color: #4a5568;
+            font-weight: 300;
+            margin-left: 0.5rem;
+        }
+        
+        .message {
+            color: #718096;
+            font-size: 1.125rem;
             margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
         }
         
-        .stats-row {
+        .manual-links {
             display: flex;
+            gap: 1rem;
             justify-content: center;
-            gap: 4rem;
-            margin: 3rem 0;
             flex-wrap: wrap;
         }
         
-        .stat-item {
-            text-align: center;
+        .lang-link {
+            padding: 12px 24px;
+            background: linear-gradient(145deg, #f8fbff, #e1e5e9);
+            box-shadow: 8px 8px 16px #ccd0d4, -8px -8px 16px #ffffff;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 600;
+            transition: all 0.3s ease;
         }
         
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .lang-link:hover {
+            box-shadow: 4px 4px 8px #ccd0d4, -4px -4px 8px #ffffff;
+            transform: translateY(-2px);
         }
         
-        .stat-label {
-            color: #666;
-            font-size: 1.1rem;
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
         }
         
-        @media (max-width: 768px) {
-            .hero-blog h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-blog p {
-                font-size: 1.2rem;
-            }
-            
-            .language-selector {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .stats-row {
-                gap: 2rem;
-            }
+        .dots {
+            display: inline-block;
+            animation: pulse 1.5s ease-in-out infinite;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="https://converso.pro" class="logo">
-                <img src="https://converso.pro/converso.svg" alt="Converso">
-            </a>
-            <div class="nav-links">
-                <a href="https://converso.pro">Home</a>
-                <a href="https://converso.pro/academy">Academy</a>
-                <a href="https://converso.pro/auth" class="cta-button">Start Free</a>
-            </div>
-        </div>
-    </nav>
-
-    <div class="hero-blog">
-        <h1>Converso Blog</h1>
-        <p>Expert insights to grow your service business</p>
+    <div class="loading">
+        <h1>
+            <span class="logo-text">Converso</span>
+            <span class="logo-blog">Blog</span>
+        </h1>
+        <p class="message">Detectando seu idioma<span class="dots">...</span></p>
         
-        <div class="language-selector">
-            <a href="/en/" class="language-card">
-                <h3>English</h3>
-                <p>Read in English</p>
-            </a>
-            <a href="/pt/" class="language-card">
-                <h3>Português</h3>
-                <p>Ler em Português</p>
-            </a>
-            <a href="/es/" class="language-card">
-                <h3>Español</h3>
-                <p>Leer en Español</p>
-            </a>
+        <!-- Manual language selection fallback -->
+        <noscript>
+            <p class="message">Por favor, selecione seu idioma / Please select your language / Por favor seleccione su idioma:</p>
+        </noscript>
+        
+        <div class="manual-links">
+            <a href="/pt/" class="lang-link">Português</a>
+            <a href="/en/" class="lang-link">English</a>
+            <a href="/es/" class="lang-link">Español</a>
         </div>
     </div>
-
-    <section class="features-section">
-        <div class="features-grid">
-            <div class="feature-card neumorphic-card">
-                <div class="feature-icon">📈</div>
-                <h3>Business Growth</h3>
-                <p>Strategies to increase revenue and expand your customer base</p>
-            </div>
-            <div class="feature-card neumorphic-card">
-                <div class="feature-icon">🔧</div>
-                <h3>Industry Tips</h3>
-                <p>Best practices for barbershops, salons, and service professionals</p>
-            </div>
-            <div class="feature-card neumorphic-card">
-                <div class="feature-icon">💡</div>
-                <h3>Digital Innovation</h3>
-                <p>Latest trends in online scheduling and business automation</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <h2>Learn from the Best</h2>
-        <p>Join thousands of professionals who are transforming their businesses with Converso</p>
-        
-        <div class="stats-row">
-            <div class="stat-item">
-                <div class="stat-number">50K+</div>
-                <div class="stat-label">Active Users</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">15M+</div>
-                <div class="stat-label">Appointments Booked</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">97%</div>
-                <div class="stat-label">Customer Satisfaction</div>
-            </div>
-        </div>
-        
-        <a href="https://converso.pro/auth" class="cta-button cta-primary">
-            Start Your Free Trial
-        </a>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <a href="https://converso.pro/about">About Us</a>
-                    <a href="https://converso.pro/contact">Contact</a>
-                    <a href="https://converso.pro/partners">Partners</a>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <a href="https://converso.pro/academy">Academy</a>
-                    <a href="https://blog.converso.pro">Blog</a>
-                    <a href="https://seo.converso.pro">Resources</a>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <a href="https://converso.pro/terms">Terms of Service</a>
-                    <a href="https://converso.pro/privacy">Privacy Policy</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Converso. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Auto-detect language and suggest redirection
-        document.addEventListener('DOMContentLoaded', function() {
-            const userLang = navigator.language.toLowerCase();
-            let suggestedLang = 'en';
-            
-            if (userLang.startsWith('pt')) {
-                suggestedLang = 'pt';
-            } else if (userLang.startsWith('es')) {
-                suggestedLang = 'es';
-            }
-            
-            // If user's language is not English and they're on the main page
-            if (suggestedLang !== 'en' && !window.location.pathname.includes('/' + suggestedLang + '/')) {
-                // You could show a banner suggesting the user to switch languages
-                console.log('User might prefer:', suggestedLang);
-            }
-        });
-    </script>
 </body>
 </html>

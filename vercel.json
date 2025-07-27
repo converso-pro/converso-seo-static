@@ -22,26 +22,11 @@
       ]
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/",
-      "destination": "/blog/index.html",
-      "has": [
-        {
-          "type": "host",
-          "value": "blog.converso.pro"
-        }
-      ]
-    },
-    {
-      "source": "/:path*",
-      "destination": "/blog/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "blog.converso.pro"
-        }
-      ]
+      "src": "/(.*)",
+      "dest": "/blog/$1",
+      "host": "blog.converso.pro"
     }
   ]
 }
