@@ -21,12 +21,5 @@
         }
       ]
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/blog/$1",
-      "host": "blog.converso.pro"
-    }
   ]
 }
