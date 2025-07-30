@@ -282,22 +282,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://seo.converso.pro/barbershop-booking-software/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://seo.converso.pro/best-booking-system-for-hair-salons/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://seo.converso.pro/digital-queue-barbershop/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/digital-marketing-barbershop/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -380,11 +370,6 @@
   </url>
   <url>
     <loc>https://seo.converso.pro/es/guia-abrir-barberia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://seo.converso.pro/es/marketing-digital-barberia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1099,5 +1084,379 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-27</lastmod>
+  </url>
+
+  <!-- Facebook Local Business Marketing (Jan 27, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/artigos/facebook-marketing-negocio-local.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articles/facebook-local-business-marketing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/facebook-marketing-negocio-local.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+
+  <!-- Google Ads for Small Business (Jan 27, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/artigos/google-ads-pequenas-empresas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articles/google-ads-small-business.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/google-ads-pequenas-empresas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+
+  <!-- WhatsApp Marketing Strategies (Jan 27, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/artigos/estrategias-marketing-whatsapp.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articles/whatsapp-marketing-strategies.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/estrategias-marketing-whatsapp.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+
+  <!-- Video Marketing Trends 2025 (Jan 27, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/artigos/tendencias-video-marketing-2025.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articles/video-marketing-trends-2025.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/tendencias-video-marketing-2025.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+
+  <!-- Influencer Marketing Guide (Jan 27, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/artigos/guia-marketing-influenciadores.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articles/influencer-marketing-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/guia-marketing-influencers.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-27</lastmod>
+  </url>
+
+  <!-- Marketing Automation for Beginners (Jul 28, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/articles/marketing-automation-beginners.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-28</lastmod>
+  </url>
+  <!-- Brand Storytelling Techniques (Jul 27, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/articles/brand-storytelling-techniques.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/artigos/tecnicas-storytelling-marca.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/tecnicas-storytelling-marca.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-27</lastmod>
+  </url>
+
+  <!-- Customer Retention Strategies (Jul 27, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/articles/customer-retention-strategies.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/artigos/estrategias-retencao-clientes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/estrategias-retencion-clientes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-27</lastmod>
+  </url>
+
+  <!-- Video Marketing Trends 2025 (Jul 27, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/articles/video-marketing-trends-2025.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/artigos/tendencias-video-marketing-2025.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/tendencias-video-marketing-2025.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-27</lastmod>
+  </url>
+
+  <!-- Conversion Rate Optimization (Jul 28, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/articles/conversion-rate-optimization.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/artigos/otimizacao-taxa-conversao.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/optimizacion-tasa-conversion.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-28</lastmod>
+  </url>
+
+  <!-- Mobile Marketing Strategies (Jul 28, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/articles/mobile-marketing-strategies.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/artigos/estrategias-marketing-mobile.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/estrategias-marketing-movil.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-28</lastmod>
+  </url>
+
+  <!-- Online Reputation Management (Jul 28, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/articles/reputation-management-online.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/artigos/gestao-reputacao-online.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/gestion-reputacion-online.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-28</lastmod>
+  </url>
+
+  <!-- Seasonal Marketing Campaigns (Jul 29, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/articles/seasonal-marketing-campaigns.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/artigos/campanhas-marketing-sazonais.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/campanas-marketing-estacionales.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+
+  <!-- Omnichannel Marketing Strategy (Jul 29, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/articles/omnichannel-marketing-strategy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/artigos/estrategia-marketing-omnichannel.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/estrategia-marketing-omnicanal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+
+  <!-- Growth Hacking Tactics (Jul 29, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/articles/growth-hacking-tactics.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/artigos/taticas-growth-hacking.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/tacticas-growth-hacking.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+
+  <!-- How to Retain Barbershop Clients (Jul 29, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/artigos/como-fidelizar-clientes-barbearia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articles/how-retain-barbershop-clients.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/como-fidelizar-clientes-barberia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+
+  <!-- How to Attract Clients to Beauty Salon (Jul 29, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/artigos/como-atrair-clientes-salao-beleza.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articles/how-attract-clients-beauty-salon.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/como-atrair-clientes-salao-beleza.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+
+  <!-- Digital Marketing for Barbershop (Jul 29, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/artigos/marketing-digital-barbearia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <!-- Barbershop Management System (Jul 29, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/artigos/sistema-gestao-barbearia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articles/barbershop-management-system.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/sistema-gestion-barberia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+
+  <!-- How to Succeed as Hairstylist (Jul 29, 2025) -->
+  <url>
+    <loc>https://seo.converso.pro/artigos/como-ter-sucesso-cabeleireira.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articles/how-succeed-hairstylist-career.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
+  </url>
+  <url>
+    <loc>https://seo.converso.pro/articulos/como-tener-exito-estilista.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-07-29</lastmod>
   </url>
 </urlset>
