@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+
+# Block SEO pages that should be on seo.converso.pro
+Disallow: /como-fidelizar-clientes-barbearia
+Disallow: /quanto-custa-site-barbearia
+Disallow: /como-administrar-dinheiro-barbearia
+Disallow: /melhor-programa-gratuito-cadastro-clientes
+Disallow: /fresha-gratuita
+Disallow: /como-captar-clientes-barbearia
+Disallow: /melhor-aplicativo-agendamento
+Disallow: /quanto-custa-app-barbearia
+Disallow: /melhor-aplicativo-barbearia
+
+# Block blog pages that should be on blog.converso.pro
+Disallow: /blog/
+Disallow: /pt/blog/
+Disallow: /es/blog/
+
+# Block template previews (internal use only)
+Disallow: /template-preview/
+
+# Block demo pages (duplicate content)
+Disallow: /demo/
+
+# Block support page (moved or deprecated)
+Disallow: /support
+Disallow: /template-showcase
+Disallow: /phone-sales
+
+# Sitemaps
+Sitemap: https://converso.pro/sitemap.xml
+Sitemap: https://seo.converso.pro/sitemap.xml
+Sitemap: https://blog.converso.pro/sitemap.xml
