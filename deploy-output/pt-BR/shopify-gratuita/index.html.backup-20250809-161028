@@ -75,7 +75,7 @@
           <div class="max-w-4xl mx-auto">
             <div class="card-neumorphic bg-blue-50">
               <h2 class="text-2xl font-bold mb-4">Resposta Direta</h2>
-              <p class="text-lg text-gray-700">NÃO existe Shopify gratuita. O plano mais barato custa US$ 29/mês (R$ 145) + 2,9% de taxa por venda. Para pequenos negócios, o Converso E-commerce custa R$ 88/mês sem taxas por venda.</p>
+              <p class="text-lg text-gray-700">NÃO existe Shopify gratuita. O plano mais barato custa US$ 29/mês (R$ 145) + 2,9% de taxa por venda. Para pequenos negócios, o Converso E-commerce custa R$ 98/mês sem taxas por venda.</p>
               
             </div>
           </div>
@@ -95,7 +95,7 @@
                 <tbody>
                   
                     <tr class="bg-gray-50 border-b">
-                      <td class="p-4 font-medium">Mensalidade</td><td class="p-4 text-center">❌ R$ 145</td><td class="p-4 text-center">✅ R$ 88</td><td class="p-4 text-center">⚠️ R$ 79</td>
+                      <td class="p-4 font-medium">Mensalidade</td><td class="p-4 text-center">❌ R$ 145</td><td class="p-4 text-center">✅ R$ 98</td><td class="p-4 text-center">⚠️ R$ 79</td>
                     </tr>
                   
                     <tr class=" border-b">
@@ -103,7 +103,7 @@
                     </tr>
                   
                     <tr class="bg-gray-50 border-b">
-                      <td class="p-4 font-medium">Custo total/mês</td><td class="p-4 text-center">❌ R$ 435</td><td class="p-4 text-center">✅ R$ 88</td><td class="p-4 text-center">❌ R$ 429</td>
+                      <td class="p-4 font-medium">Custo total/mês</td><td class="p-4 text-center">❌ R$ 435</td><td class="p-4 text-center">✅ R$ 98</td><td class="p-4 text-center">❌ R$ 429</td>
                     </tr>
                   
                     <tr class=" border-b">
