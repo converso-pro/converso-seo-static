@@ -21,5 +21,107 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/pt-BR/como-abrir-barbearia-las-vegas",
+      "destination": "/artigos/como-abrir-barbearia-las-vegas.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/como-administrar-dinheiro-barbearia",
+      "destination": "/artigos/como-administrar-dinheiro-barbearia.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/como-atrair-clientes-salao-beleza",
+      "destination": "/artigos/como-atrair-clientes-salao-beleza.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/como-fidelizar-clientes-barbearia",
+      "destination": "/artigos/como-fidelizar-clientes-barbearia.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/como-montar-salao-beleza",
+      "destination": "/artigos/como-montar-salao-beleza.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/sistema-gestao-barbearia",
+      "destination": "/artigos/sistema-gestao-barbearia.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/sistema-gestao-loja-celular",
+      "destination": "/artigos/sistema-gestao-ordens-servico-lojas-celular.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/como-captar-clientes-barbearia",
+      "destination": "/artigos/como-captar-clientes-barbearia-2025.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/melhor-aplicativo-barbearia",
+      "destination": "/artigos/melhor-software-barbearia-las-vegas-2025.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/alternativas-calendly",
+      "destination": "/artigos/alternativas-ao-calendly.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/agendamento-barbearia",
+      "destination": "/artigos/agendamento-online-barbearia.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/como-ser-revendedor-iphone",
+      "destination": "/artigos/como-ser-revendedor-iphones-2025.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/como-ter-sucesso-cabeleireira",
+      "destination": "/artigos/como-ter-sucesso-cabeleireira.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/marketing-digital-barbearia",
+      "destination": "/artigos/marketing-digital-barbearia.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/melhor-sistema-agendamento-saloes",
+      "destination": "/artigos/melhor-sistema-agendamento-saloes.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/quanto-ganha-tecnico-iphone",
+      "destination": "/artigos/quanto-ganha-tecnico-iphones.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/como-comecar-negocio-online",
+      "destination": "/artigos/como-comecar-negocio-online-brasil-2025.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/como-criar-loja-pouco-dinheiro",
+      "destination": "/artigos/como-criar-loja-online-pouco-dinheiro.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/guia-abrir-barbearia",
+      "destination": "/artigos/guia-abrir-barbearia.html",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/melhor-plataforma-ecommerce",
+      "destination": "/artigos/qual-melhor-plataforma-ecommerce-gratuita.html",
+      "permanent": true
+    }
   ]
 }
