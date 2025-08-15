@@ -122,6 +122,16 @@
       "source": "/pt-BR/melhor-plataforma-ecommerce",
       "destination": "/artigos/qual-melhor-plataforma-ecommerce-gratuita.html",
       "permanent": true
+    },
+    {
+      "source": "/artigos/melhor-plataforma-ecommerce",
+      "destination": "/artigos/qual-melhor-plataforma-ecommerce-gratuita.html",
+      "permanent": true
+    },
+    {
+      "source": "/melhor-plataforma-ecommerce",
+      "destination": "/artigos/qual-melhor-plataforma-ecommerce-gratuita.html",
+      "permanent": true
     }
   ]
 }
