@@ -147,19 +147,35 @@ function reorganizeFiles() {
 }
 
 function createIndexPages(outputDir, deployDir) {
-  const indexPath = path.join(outputDir, 'index.html');
+  // Usar os índices específicos de cada idioma
+  const ptIndexPath = path.join(outputDir, 'pt-BR', 'index.html');
+  const enIndexPath = path.join(outputDir, 'en', 'index.html');
+  const esIndexPath = path.join(outputDir, 'es', 'index.html');
+  const defaultIndexPath = path.join(outputDir, 'index.html');
   
-  if (fs.existsSync(indexPath)) {
-    // Copiar index para biblioteca (português)
-    fs.copyFileSync(indexPath, path.join(deployDir, 'biblioteca', 'index.html'));
-    console.log('  ✅ Index PT criado');
-    
-    // Por enquanto, copiar o mesmo para library e libreria (depois vamos traduzir)
-    fs.copyFileSync(indexPath, path.join(deployDir, 'library', 'index.html'));
-    console.log('  ✅ Index EN criado');
-    
-    fs.copyFileSync(indexPath, path.join(deployDir, 'libreria', 'index.html'));
-    console.log('  ✅ Index ES criado');
+  // Biblioteca (português) - usar pt-BR/index.html ou fallback para index.html
+  if (fs.existsSync(ptIndexPath)) {
+    fs.copyFileSync(ptIndexPath, path.join(deployDir, 'biblioteca', 'index.html'));
+    console.log('  ✅ Index PT criado (de pt-BR/index.html)');
+  } else if (fs.existsSync(defaultIndexPath)) {
+    fs.copyFileSync(defaultIndexPath, path.join(deployDir, 'biblioteca', 'index.html'));
+    console.log('  ✅ Index PT criado (de index.html)');
+  }
+  
+  // Library (inglês) - usar en/index.html
+  if (fs.existsSync(enIndexPath)) {
+    fs.copyFileSync(enIndexPath, path.join(deployDir, 'library', 'index.html'));
+    console.log('  ✅ Index EN criado (de en/index.html)');
+  } else {
+    console.log('  ⚠️ Index EN não encontrado em en/index.html');
+  }
+  
+  // Librería (espanhol) - usar es/index.html
+  if (fs.existsSync(esIndexPath)) {
+    fs.copyFileSync(esIndexPath, path.join(deployDir, 'libreria', 'index.html'));
+    console.log('  ✅ Index ES criado (de es/index.html)');
+  } else {
+    console.log('  ⚠️ Index ES não encontrado em es/index.html');
   }
 }
 
