@@ -508,17 +508,18 @@ const SEO_PAGES = [
       feature: 'digital-queue'
     }
   },
-  {
-    slug: 'digital-marketing-barbershop',
-    template: 'guide',
-    languages: ['en'],
-    data: {
-      title: 'Digital Marketing for Barbershops - Guide 2025',
-      metaDescription: 'Digital marketing strategies for barbershops. Social media, Google, and customer retention.',
-      h1: 'Digital Marketing for Barbershops',
-      guideType: 'marketing'
-    }
-  },
+  // REMOVED - Article does not exist
+  // {
+  //   slug: 'digital-marketing-barbershop',
+  //   template: 'guide',
+  //   languages: ['en'],
+  //   data: {
+  //     title: 'Digital Marketing for Barbershops - Guide 2025',
+  //     metaDescription: 'Digital marketing strategies for barbershops. Social media, Google, and customer retention.',
+  //     h1: 'Digital Marketing for Barbershops',
+  //     guideType: 'marketing'
+  //   }
+  // },
 
   // Spanish Barbershop Pages
   {
@@ -565,17 +566,18 @@ const SEO_PAGES = [
       feature: 'digital-queue'
     }
   },
-  {
-    slug: 'marketing-digital-barberia',
-    template: 'guide',
-    languages: ['es'],
-    data: {
-      title: 'Marketing Digital para Barbería - Guía 2025',
-      metaDescription: 'Estrategias de marketing digital para barbería. Redes sociales y fidelización.',
-      h1: 'Marketing Digital para Barbería',
-      guideType: 'marketing'
-    }
-  },
+  // REMOVED - Article does not exist
+  // {
+  //   slug: 'marketing-digital-barberia',
+  //   template: 'guide',
+  //   languages: ['es'],
+  //   data: {
+  //     title: 'Marketing Digital para Barbería - Guía 2025',
+  //     metaDescription: 'Estrategias de marketing digital para barbería. Redes sociales y fidelización.',
+  //     h1: 'Marketing Digital para Barbería',
+  //     guideType: 'marketing'
+  //   }
+  // },
 
   // ==================== LOCAL SEO PAGES ====================
 
