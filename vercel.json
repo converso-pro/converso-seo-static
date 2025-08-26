@@ -1,5 +1,5 @@
 {
-  "buildCommand": "echo 'No build needed - static files only'",
+  "buildCommand": "node prepare-static.js",
   "outputDirectory": "deploy-output",
   "cleanUrls": true,
   "trailingSlash": false,
@@ -18,119 +18,97 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=86400"
         }
       ]
     }
   ],
+  "rewrites": [
+    {
+      "source": "/biblioteca",
+      "destination": "/biblioteca/index.html"
+    },
+    {
+      "source": "/library",
+      "destination": "/library/index.html"
+    },
+    {
+      "source": "/libreria",
+      "destination": "/libreria/index.html"
+    }
+  ],
   "redirects": [
     {
+      "source": "/artigos/:slug",
+      "destination": "/biblioteca/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/articles/:slug",
+      "destination": "/library/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/:slug",
+      "destination": "/libreria/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/pt-BR/:path*",
+      "destination": "/biblioteca/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/:path*",
+      "destination": "/library/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/es/:path*",
+      "destination": "/libreria/:path*",
+      "permanent": true
+    },
+    {
       "source": "/pt-BR/como-abrir-barbearia-las-vegas",
-      "destination": "/artigos/como-abrir-barbearia-las-vegas.html",
+      "destination": "/biblioteca/como-abrir-barbearia-las-vegas",
       "permanent": true
     },
     {
       "source": "/pt-BR/como-administrar-dinheiro-barbearia",
-      "destination": "/artigos/como-administrar-dinheiro-barbearia.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/como-atrair-clientes-salao-beleza",
-      "destination": "/artigos/como-atrair-clientes-salao-beleza.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/como-fidelizar-clientes-barbearia",
-      "destination": "/artigos/como-fidelizar-clientes-barbearia.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/como-montar-salao-beleza",
-      "destination": "/artigos/como-montar-salao-beleza.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/sistema-gestao-barbearia",
-      "destination": "/artigos/sistema-gestao-barbearia.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/sistema-gestao-loja-celular",
-      "destination": "/artigos/sistema-gestao-ordens-servico-lojas-celular.html",
+      "destination": "/biblioteca/como-administrar-dinheiro-barbearia",
       "permanent": true
     },
     {
       "source": "/pt-BR/como-captar-clientes-barbearia",
-      "destination": "/artigos/como-captar-clientes-barbearia-2025.html",
+      "destination": "/biblioteca/como-captar-clientes-barbearia-2025",
       "permanent": true
     },
     {
       "source": "/pt-BR/melhor-aplicativo-barbearia",
-      "destination": "/artigos/melhor-software-barbearia-las-vegas-2025.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/alternativas-calendly",
-      "destination": "/artigos/alternativas-ao-calendly.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/agendamento-barbearia",
-      "destination": "/artigos/agendamento-online-barbearia.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/como-ser-revendedor-iphone",
-      "destination": "/artigos/como-ser-revendedor-iphones-2025.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/como-ter-sucesso-cabeleireira",
-      "destination": "/artigos/como-ter-sucesso-cabeleireira.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/marketing-digital-barbearia",
-      "destination": "/artigos/marketing-digital-barbearia.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/melhor-sistema-agendamento-saloes",
-      "destination": "/artigos/melhor-sistema-agendamento-saloes.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/quanto-ganha-tecnico-iphone",
-      "destination": "/artigos/quanto-ganha-tecnico-iphones.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/como-comecar-negocio-online",
-      "destination": "/artigos/como-comecar-negocio-online-brasil-2025.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/como-criar-loja-pouco-dinheiro",
-      "destination": "/artigos/como-criar-loja-online-pouco-dinheiro.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/guia-abrir-barbearia",
-      "destination": "/artigos/guia-abrir-barbearia.html",
-      "permanent": true
-    },
-    {
-      "source": "/pt-BR/melhor-plataforma-ecommerce",
-      "destination": "/artigos/qual-melhor-plataforma-ecommerce-gratuita.html",
-      "permanent": true
-    },
-    {
-      "source": "/artigos/melhor-plataforma-ecommerce",
-      "destination": "/artigos/qual-melhor-plataforma-ecommerce-gratuita.html",
+      "destination": "/biblioteca/melhor-software-barbearia-las-vegas-2025",
       "permanent": true
     },
     {
       "source": "/melhor-plataforma-ecommerce",
-      "destination": "/artigos/qual-melhor-plataforma-ecommerce-gratuita.html",
+      "destination": "/biblioteca/qual-melhor-plataforma-ecommerce-gratuita",
+      "permanent": true
+    },
+    {
+      "source": "/barbearias",
+      "destination": "/biblioteca/barbearias",
+      "permanent": true
+    },
+    {
+      "source": "/barbershops",
+      "destination": "/library/barbershops",
+      "permanent": true
+    },
+    {
+      "source": "/barberias",
+      "destination": "/libreria/barberias",
       "permanent": true
     }
   ]
