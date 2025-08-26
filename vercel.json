@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node prepare-static.js",
+  "buildCommand": "node build-and-deploy.js",
   "outputDirectory": "deploy-output",
   "cleanUrls": true,
   "trailingSlash": false,

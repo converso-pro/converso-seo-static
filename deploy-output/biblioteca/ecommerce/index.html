@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos de E-commerce - Biblioteca SEO Converso</title>
+    <meta name="description" content="Coleção completa de artigos sobre e-commerce: como criar loja online, plataformas, gateway de pagamento, estratégias de vendas e gestão.">
+    <meta name="keywords" content="e-commerce, loja online, vendas online, plataformas e-commerce, gateway pagamento, Converso">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Artigos de E-commerce - Biblioteca SEO Converso">
+    <meta property="og:description" content="Guias completos para criar e gerenciar sua loja online: plataformas, pagamentos e estratégias de vendas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goconverso.com/ecommerce/">
+    
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="pt" href="https://goconverso.com/ecommerce/">
+    <link rel="alternate" hreflang="en" href="https://goconverso.com/en/ecommerce/">
+    <link rel="alternate" hreflang="es" href="https://goconverso.com/es/ecommerce/">
+    
+    <!-- Facebook Pixel -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1697178904498506');
+    fbq('track', 'PageView');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Neumorphism Design System */
+        .neumorphic {
+            background: #f5f5f5;
+            box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+            border-radius: 20px;
+        }
+        
+        .neumorphic-inset {
+            background: #f5f5f5;
+            box-shadow: inset 8px 8px 16px #d0d0d0, inset -8px -8px 16px #ffffff;
+            border-radius: 15px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #667eea;
+        }
+        
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+        
+        .lang-switcher a {
+            padding: 0.25rem 0.5rem;
+            border-radius: 5px;
+            background: #f0f0f0;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+        }
+        
+        .lang-switcher a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .lang-switcher a.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .hero-accent {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            padding: 3rem 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat-card {
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        /* Articles Section */
+        .articles-section {
+            padding: 3rem 0;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .article-card {
+            padding: 2rem;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 25px 25px 70px #c0c0c0, -25px -25px 70px #ffffff;
+        }
+        
+        .article-title {
+            font-size: 1.25rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            color: #666;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .article-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: #f0f0f0;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            padding: 0.25rem 0;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #555;
+            color: #ccc;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <a href="/biblioteca/" class="logo">Biblioteca SEO Converso</a>
+                <div class="nav-links">
+                    <a href="/biblioteca/">Início</a>
+                    <a href="https://blog.converso.pro" target="_blank">Blog</a>
+                    <a href="https://app.converso.pro/auth" target="_blank">Criar Conta</a>
+                    <div class="lang-switcher">
+                        <a href="/ecommerce/" class="active">PT</a>
+                        <a href="/en/ecommerce/">EN</a>
+                        <a href="/es/ecommerce/">ES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Artigos sobre <span class="hero-accent">E-commerce</span>
+            </h1>
+            <p class="hero-subtitle">
+                Tudo o que você precisa saber para criar sua loja online, escolher plataformas, configurar pagamentos e vender na internet com sucesso
+            </p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card neumorphic">
+                    <div class="stat-number">17+</div>
+                    <div class="stat-label">Artigos de E-commerce</div>
+                </div>
+                <div class="stat-card neumorphic">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Categorias</div>
+                </div>
+                <div class="stat-card neumorphic">
+                    <div class="stat-number">2025</div>
+                    <div class="stat-label">Conteúdo Atualizado</div>
+                </div>
+                <div class="stat-card neumorphic">
+                    <div class="stat-number">Grátis</div>
+                    <div class="stat-label">Recursos de Aprendizado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles-section">
+        <div class="container">
+            <h2 class="section-title">Todos os Artigos de E-commerce</h2>
+            
+            <div class="articles-grid">
+                <a href="/biblioteca/como-criar-loja-online-pouco-dinheiro" class="article-card neumorphic">
+                    <h3 class="article-title">Como Criar uma Loja Online com Pouco Dinheiro</h3>
+                    <div class="article-meta">
+                        <span>12 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Guia prático para criar sua loja virtual gastando menos de R$100/mês: plataformas, custos reais e ROI.</p>
+                    <div class="article-tags">
+                        <span class="tag">Loja Online</span>
+                        <span class="tag">Baixo Custo</span>
+                        <span class="tag">Início</span>
+                    </div>
+                </a>
+
+                <a href="/biblioteca/quanto-custa-montar-loja-virtual-completa" class="article-card neumorphic">
+                    <h3 class="article-title">Quanto Custa Abrir uma Loja Virtual Completa</h3>
+                    <div class="article-meta">
+                        <span>15 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Análise completa de investimento: plataforma, design, domínio, hospedagem e marketing inicial.</p>
+                    <div class="article-tags">
+                        <span class="tag">Investimento</span>
+                        <span class="tag">Custos</span>
+                        <span class="tag">Planejamento</span>
+                    </div>
+                </a>
+
+
+                <a href="/biblioteca/melhor-plataforma-ecommerce" class="article-card neumorphic">
+                    <h3 class="article-title">Melhor Plataforma de E-commerce</h3>
+                    <div class="article-meta">
+                        <span>20 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Comparativo completo: Shopify, WooCommerce, Magento, Nuvemshop e outras plataformas populares.</p>
+                    <div class="article-tags">
+                        <span class="tag">Plataformas</span>
+                        <span class="tag">Comparação</span>
+                        <span class="tag">Escolha</span>
+                    </div>
+                </a>
+
+                <a href="/biblioteca/melhor-gateway-pagamento-ecommerce-brasil" class="article-card neumorphic">
+                    <h3 class="article-title">Melhor Gateway de Pagamento E-commerce Brasil</h3>
+                    <div class="article-meta">
+                        <span>14 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Análise dos melhores gateways para o mercado brasileiro: taxas, funcionalidades e integrações.</p>
+                    <div class="article-tags">
+                        <span class="tag">Gateway</span>
+                        <span class="tag">Pagamento</span>
+                        <span class="tag">Brasil</span>
+                    </div>
+                </a>
+
+                <a href="/biblioteca/melhor-gateway-pagamento-ecommerce-estados-unidos" class="article-card neumorphic">
+                    <h3 class="article-title">Melhor Gateway de Pagamento E-commerce EUA</h3>
+                    <div class="article-meta">
+                        <span>13 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Gateways ideais para vender nos Estados Unidos: Stripe, PayPal, Square e suas características.</p>
+                    <div class="article-tags">
+                        <span class="tag">Gateway</span>
+                        <span class="tag">Pagamento</span>
+                        <span class="tag">EUA</span>
+                    </div>
+                </a>
+
+                <a href="/biblioteca/como-comecar-vender-online-sem-estoque" class="article-card neumorphic">
+                    <h3 class="article-title">Como Começar a Vender Online sem Estoque</h3>
+                    <div class="article-meta">
+                        <span>10 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Dropshipping e print on demand: como vender sem investir em estoque, fornecedores e logística.</p>
+                    <div class="article-tags">
+                        <span class="tag">Dropshipping</span>
+                        <span class="tag">Sem Estoque</span>
+                        <span class="tag">Início</span>
+                    </div>
+                </a>
+
+                <a href="/biblioteca/como-vender-roupas-online-sem-loja-fisica" class="article-card neumorphic">
+                    <h3 class="article-title">Como Vender Roupas Online sem Loja Física</h3>
+                    <div class="article-meta">
+                        <span>11 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Estratégias específicas para venda de roupas: fotografia, descrições, medidas e atendimento.</p>
+                    <div class="article-tags">
+                        <span class="tag">Moda</span>
+                        <span class="tag">Roupas</span>
+                        <span class="tag">Online</span>
+                    </div>
+                </a>
+
+                <a href="/biblioteca/primeira-venda-online-guia-completo" class="article-card neumorphic">
+                    <h3 class="article-title">Primeira Venda Online - Guia Completo</h3>
+                    <div class="article-meta">
+                        <span>9 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Passo a passo para conquistar sua primeira venda: configuração, marketing e conversão.</p>
+                    <div class="article-tags">
+                        <span class="tag">Primeira Venda</span>
+                        <span class="tag">Conversão</span>
+                        <span class="tag">Guia</span>
+                    </div>
+                </a>
+
+                <a href="/biblioteca/como-comecar-negocio-online-brasil-2025" class="article-card neumorphic">
+                    <h3 class="article-title">Como Começar Negócio Online Brasil 2025</h3>
+                    <div class="article-meta">
+                        <span>16 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Guia atualizado para empreender online no Brasil: regulamentações, impostos e oportunidades.</p>
+                    <div class="article-tags">
+                        <span class="tag">Brasil</span>
+                        <span class="tag">Negócio</span>
+                        <span class="tag">2025</span>
+                    </div>
+                </a>
+
+                <a href="/biblioteca/vale-pena-comissao-mercado-livre-ou-loja-propria" class="article-card neumorphic">
+                    <h3 class="article-title">Marketplace vs Loja Própria</h3>
+                    <div class="article-meta">
+                        <span>12 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Análise completa: quando usar Mercado Livre, Amazon e marketplaces vs ter sua própria loja.</p>
+                    <div class="article-tags">
+                        <span class="tag">Marketplace</span>
+                        <span class="tag">Loja Própria</span>
+                        <span class="tag">Comparação</span>
+                    </div>
+                </a>
+
+
+
+
+
+                <a href="/biblioteca/qual-melhor-plataforma-ecommerce-gratuita" class="article-card neumorphic">
+                    <h3 class="article-title">Qual a Melhor Plataforma Gratuita de E-commerce?</h3>
+                    <div class="article-meta">
+                        <span>5 min leitura</span>
+                        <span>Julho 2025</span>
+                    </div>
+                    <p class="article-excerpt">Guia completo para desenvolvedores que buscam plataformas de e-commerce gratuitas com opções white-label e compartilhamento de receita.</p>
+                    <div class="article-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">Plataforma Grátis</span>
+                        <span class="tag">White-label</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Plataforma</h3>
+                    <a href="https://app.converso.pro/auth">Criar Conta</a>
+                    <a href="https://app.converso.pro/auth">Entrar</a>
+                    <a href="/desenvolvedores/">Programa para Desenvolvedores</a>
+                    <a href="https://converso.pro/pricing">Preços</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Recursos</h3>
+                    <a href="/biblioteca/">Biblioteca SEO</a>
+                    <a href="https://blog.converso.pro">Blog</a>
+                    <a href="/desenvolvedores/">Documentação</a>
+                    <a href="/marketing-digital/">Guias de Marketing</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Categorias</h3>
+                    <a href="/gestao-crescimento/">Gestão e Crescimento</a>
+                    <a href="/ecommerce/">E-commerce</a>
+                    <a href="/sistemas-agendamento/">Sistemas de Agendamento</a>
+                    <a href="/assistencia-tecnica/">Assistência Técnica</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <a href="https://converso.pro/about">Sobre</a>
+                    <a href="https://converso.pro/contact">Contato</a>
+                    <a href="https://converso.pro/privacy">Privacidade</a>
+                    <a href="https://converso.pro/terms">Termos</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Converso. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

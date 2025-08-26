@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converso.pro Library - Biblioteca Completa de Recursos para Profissionais e Desenvolvedores</title>
+    
+    <!-- Language Detection and Redirect -->
+    <script>
+        (function() {
+            // Auto detect and redirect based on browser language
+            if (!localStorage.getItem('converso-library-lang')) {
+                const browserLang = navigator.language || navigator.userLanguage;
+                const lang = browserLang.toLowerCase();
+                
+                if (lang.startsWith('en')) {
+                    window.location.replace('https://seo.converso.pro/en/');
+                } else if (lang.startsWith('es')) {
+                    window.location.replace('https://seo.converso.pro/es/');
+                }
+            }
+            localStorage.setItem('converso-library-lang', 'pt-BR');
+        })();
+    </script>
+    
+    <meta name="description" content="Biblioteca completa com 90+ guias especializados: Desenvolvedores, Gestão e Crescimento, Marketing Digital, E-commerce e Sistemas de Agendamento. Recursos gratuitos em 3 idiomas.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Converso.pro Library - Recursos para Desenvolvedores e Profissionais">
+    <meta property="og:description" content="Guias completos para desenvolvedores, barbeiros, salões de beleza, clínicas e profissionais de serviços.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goconverso.com">
+    <meta property="og:image" content="https://converso.pro/converso-og.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Converso.pro Library">
+    <meta name="twitter:description" content="Recursos gratuitos para desenvolvedores e profissionais de serviços">
+    
+    <link rel="canonical" href="https://goconverso.com">
+    <link rel="icon" href="https://converso.pro/favicon.ico">
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1697178904498506');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1697178904498506&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <style>
+        /* Neumorphic Design System */
+        :root {
+            --bg-color: #f0f2f5;
+            --surface-color: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --primary-blue: #3b82f6;
+            --primary-green: #10b981;
+            --secondary-blue: #60a5fa;
+            --secondary-green: #34d399;
+            --developer-gradient: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #f97316 100%);
+            --shadow-light: #ffffff;
+            --shadow-dark: #c8cacd;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+        }
+        
+        /* Neumorphic Components */
+        .neumorphic {
+            background: var(--bg-color);
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light);
+            padding: 2rem;
+        }
+        
+        .neumorphic-flat {
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            padding: 1.5rem;
+        }
+        
+        .neumorphic-button {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 5px 5px 15px rgba(59, 130, 246, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .neumorphic-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(59, 130, 246, 0.4), -7px -7px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: var(--surface-color);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        
+        .logo-accent {
+            font-weight: 300;
+            opacity: 0.8;
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .stat-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Sections */
+        .categories, .featured, .languages, .cta {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+        
+        /* Category Grid - Updated with Developer Focus */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background: var(--surface-color);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 15px 15px 40px rgba(200, 202, 205, 0.6), -15px -15px 40px rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Featured Developer Card - 2x size */
+        .developer-card {
+            grid-column: span 2;
+            background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #f97316 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .developer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.1) 100%);
+            z-index: 1;
+        }
+        
+        .developer-card > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .developer-card .category-title,
+        .developer-card .category-description,
+        .developer-card .article-list a,
+        .developer-card .category-link {
+            color: white;
+        }
+        
+        .developer-card .category-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .developer-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .category-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-list li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-list a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .article-list a:hover {
+            color: var(--secondary-blue);
+            text-decoration: underline;
+        }
+        
+        .category-link {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .category-link:hover {
+            color: var(--secondary-green);
+        }
+        
+        /* Developer-specific links in white card */
+        .developer-card .article-list a:hover {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .developer-card .category-link:hover {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        /* Language Selector */
+        .language-selector {
+            position: relative;
+        }
+        
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--surface-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            box-shadow: 5px 5px 10px rgba(200, 202, 205, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .language-btn:hover {
+            box-shadow: 3px 3px 8px rgba(200, 202, 205, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.6);
+        }
+        
+        .flag {
+            font-size: 1.2rem;
+        }
+        
+        .lang-text {
+            font-weight: 600;
+        }
+        
+        .chevron {
+            transition: transform 0.3s ease;
+        }
+        
+        .language-btn.active .chevron {
+            transform: rotate(180deg);
+        }
+        
+        .language-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 0.5rem;
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+            min-width: 150px;
+        }
+        
+        .language-menu.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .language-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+        
+        .language-option:first-child {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        
+        .language-option:last-child {
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        
+        .language-option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        /* Featured Articles */
+        .featured {
+            background: var(--bg-color);
+        }
+        
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .featured-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        
+        .featured-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .featured-card h3 {
+            margin: 1rem 0;
+        }
+        
+        .featured-card a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .featured-card a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Language Section */
+        .language-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .language-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .language-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.6), -10px -10px 30px rgba(255, 255, 255, 0.8);
+        }
+        
+        .language-card .flag {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+        }
+        
+        .cta-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .cta-content p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            box-shadow: 5px 5px 15px rgba(59, 130, 246, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(59, 130, 246, 0.4), -7px -7px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-secondary {
+            background: var(--surface-color);
+            color: var(--primary-blue);
+            box-shadow: 5px 5px 15px rgba(200, 202, 205, 0.5), -5px -5px 15px rgba(255, 255, 255, 0.7);
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(200, 202, 205, 0.6), -7px -7px 20px rgba(255, 255, 255, 0.8);
+        }
+        
+        .btn-large {
+            padding: 1rem 3rem;
+            font-size: 1.125rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .developer-card {
+                grid-column: span 1;
+            }
+            
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .language-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/libreria/" class="logo">
+                    Converso.pro <span class="logo-accent">Library</span>
+                </a>
+                <nav class="nav">
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="language-btn" onclick="toggleLanguageMenu()">
+                            <span class="flag">🇧🇷</span>
+                            <span class="lang-text">PT</span>
+                            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12">
+                                <path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </button>
+                        <div class="language-menu" id="languageMenu">
+                            <a href="https://goconverso.com/en/" class="language-option">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                            <a href="https://goconverso.com/es/" class="language-option">
+                                <span class="flag">🇪🇸</span>
+                                <span>Español</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="https://converso.pro" class="neumorphic-button" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Site Principal</a>
+                    <a href="https://app.converso.pro/auth" class="neumorphic-button">Criar Meu Site</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Biblioteca de Recursos para<br>
+                <span class="text-gradient">Desenvolvedores e Profissionais</span>
+            </h1>
+            <p class="hero-subtitle">
+                Guias completos para desenvolvedores iniciantes, tutoriais passo a passo para profissionais de serviços e recursos gratuitos para criar sites de agendamento e aumentar vendas.
+            </p>
+            
+            <!-- Quick Stats -->
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">90+</div>
+                    <div class="stat-label">Artigos Especializados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Guias para Desenvolvedores</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Idiomas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Grátis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Explorar por Categoria</h2>
+            
+            <div class="category-grid">
+                <!-- Developers - Featured Card (2x size) -->
+                <div class="category-card developer-card">
+                    <div class="developer-badge">💎 Destaque</div>
+                    <div class="category-icon">👨‍💻</div>
+                    <h3 class="category-title">Desenvolvedores <span style="font-size: 0.8rem; opacity: 0.9;">(15 artigos)</span></h3>
+                    <p class="category-description">
+                        Guias completos para desenvolvedores iniciantes: como migrar para white-label, conquistar clientes locais, gerar receita recorrente e competir com grandes plataformas cobrando 3x mais.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/biblioteca/qual-melhor-plataforma-ecommerce-gratuita">Qual a melhor plataforma gratuita de e-commerce?</a></li>
+                        <li><a href="/biblioteca/como-ganhar-dinheiro-criando-sites-pequenas-empresas">Como ganhar dinheiro criando sites para pequenas empresas</a></li>
+                        <li><a href="/biblioteca/por-que-desenvolvedores-migram-plataformas-white-label">Por que desenvolvedores migram para white-label?</a></li>
+                        <li><a href="/biblioteca/como-competir-wix-wordpress-cobrando-3x-mais">Como competir com Wix/WordPress cobrando 3x mais</a></li>
+                        <li><a href="/biblioteca/segredo-devs-faturam-6-digitos-sites-locais">Segredo: devs faturam 6 dígitos com sites locais</a></li>
+                        <li><a href="/biblioteca/como-ganhar-comissao-recorrente-30-porcento">Como ganhar 30% de comissão recorrente</a></li>
+                    </ul>
+                    <a href="/desenvolvedores/" class="category-link">Ver todos os 15 artigos →</a>
+                </div>
+
+                <!-- Business Growth -->
+                <div class="category-card">
+                    <div class="category-icon">📈</div>
+                    <h3 class="category-title">Gestão e Crescimento <span style="font-size: 0.8rem; opacity: 0.7;">(18 artigos)</span></h3>
+                    <p class="category-description">
+                        Estratégias comprovadas para crescer seu negócio: gestão financeira, captação de clientes, precificação e sucesso profissional.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/como-comecar-negocio-online/">Como Começar Negócio Online</a></li>
+                        <li><a href="/como-administrar-dinheiro-barbearia/">Como Administrar Dinheiro da Barbearia</a></li>
+                        <li><a href="/quanto-cobrar-corte-cabelo/">Quanto Cobrar por Corte de Cabelo</a></li>
+                        <li><a href="/como-fidelizar-clientes-barbearia/">Como Fidelizar Clientes na Barbearia</a></li>
+                    </ul>
+                    <a href="/gestao-crescimento/" class="category-link">Ver todos os 18 artigos →</a>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h3 class="category-title">Marketing Digital <span style="font-size: 0.8rem; opacity: 0.7;">(22 artigos)</span></h3>
+                    <p class="category-description">
+                        Estratégias de marketing para barbearias, salões de beleza, assistência técnica e outros negócios locais.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/como-captar-clientes-barbearia/">Como Captar Clientes para Barbearia</a></li>
+                        <li><a href="/marketing-digital-barbearia/">Marketing Digital para Barbearia</a></li>
+                        <li><a href="/como-atrair-clientes-salao-beleza/">Como Atrair Clientes para Salão de Beleza</a></li>
+                        <li><a href="/biblioteca/melhores-estrategias-captar-clientes-2025">Melhores estratégias para captar clientes 2025</a></li>
+                    </ul>
+                    <a href="/marketing-digital/" class="category-link">Ver todos os 22 artigos →</a>
+                </div>
+
+                <!-- E-commerce -->
+                <div class="category-card">
+                    <div class="category-icon">🛍️</div>
+                    <h3 class="category-title">E-commerce <span style="font-size: 0.8rem; opacity: 0.7;">(19 artigos)</span></h3>
+                    <p class="category-description">
+                        Aprenda a criar sua loja online, gerenciar produtos, processar pedidos e aumentar suas vendas na internet.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/como-criar-loja-pouco-dinheiro/">Como Criar uma Loja Online com Pouco Dinheiro</a></li>
+                        <li><a href="/biblioteca/primeira-venda-online-guia-completo">Primeira venda online - guia completo</a></li>
+                        <li><a href="/biblioteca/qual-melhor-plataforma-ecommerce-gratuita">Qual a melhor plataforma gratuita de e-commerce?</a></li>
+                        <li><a href="/biblioteca/vale-pena-comissao-mercado-livre-ou-loja-propria">Vale a pena pagar comissão do Mercado Livre?</a></li>
+                    </ul>
+                    <a href="/ecommerce/" class="category-link">Ver todos os 19 artigos →</a>
+                </div>
+
+                <!-- Scheduling Systems -->
+                <div class="category-card">
+                    <div class="category-icon">📅</div>
+                    <h3 class="category-title">Sistemas de Agendamento <span style="font-size: 0.8rem; opacity: 0.7;">(16 artigos)</span></h3>
+                    <p class="category-description">
+                        Compare ferramentas, descubra alternativas e escolha o melhor sistema de agendamento para seu negócio.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/alternativas-calendly/">Alternativas ao Calendly</a></li>
+                        <li><a href="/melhor-sistema-agendamento-saloes/">Melhor Sistema de Agendamento para Salões</a></li>
+                        <li><a href="/melhor-aplicativo-agendamento/">Melhor Aplicativo de Agendamento</a></li>
+                        <li><a href="/biblioteca/melhor-sistema-agendamento-online">Melhor sistema de agendamento online</a></li>
+                    </ul>
+                    <a href="/sistemas-agendamento/" class="category-link">Ver todos os 16 artigos →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Artigos em Destaque</h2>
+            
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <div class="featured-badge">🚀 Para Devs</div>
+                    <h3><a href="/biblioteca/qual-melhor-plataforma-ecommerce-gratuita">Qual a melhor plataforma gratuita de e-commerce?</a></h3>
+                    <p>Para desenvolvedores iniciantes: compare Converso vs WordPress, Shopify e outras opções. Comece grátis com 10 bookings/mês e ganhe 30% de comissão recorrente.</p>
+                    <div class="article-meta">
+                        <span>📖 18 min de leitura</span>
+                        <span>📅 Julho 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">💰 Oportunidade</div>
+                    <h3><a href="/biblioteca/por-que-pequenas-empresas-sem-site-profissional">Por que 72% das pequenas empresas ainda não têm site profissional?</a></h3>
+                    <p>Oportunidade de R$ 14,4 bilhões para desenvolvedores iniciantes. Ganhe 30% de comissão recorrente criando sites.</p>
+                    <div class="article-meta">
+                        <span>📖 15 min de leitura</span>
+                        <span>📅 Julho 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">⭐ Mais Lido</div>
+                    <h3><a href="/biblioteca/como-abrir-barbearia-las-vegas">Como Abrir uma Barbearia em Las Vegas</a></h3>
+                    <p>Guia completo para abrir sua barbearia em Las Vegas: documentação, investimento inicial, localização, equipamentos e primeiros passos.</p>
+                    <div class="article-meta">
+                        <span>📖 15 min de leitura</span>
+                        <span>📅 Julho 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">💎 White Label</div>
+                    <h3><a href="/biblioteca/por-que-desenvolvedores-migram-plataformas-white-label">Por que desenvolvedores estão migrando para plataformas white label?</a></h3>
+                    <p>Desenvolvedores iniciantes estão faturando até R$ 15.000/mês com 75% menos trabalho usando plataformas white label.</p>
+                    <div class="article-meta">
+                        <span>📖 18 min de leitura</span>
+                        <span>📅 Julho 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">🔥 Trending</div>
+                    <h3><a href="/biblioteca/segredo-devs-faturam-6-digitos-sites-locais">Segredo: desenvolvedores faturam 6 dígitos com sites locais</a></h3>
+                    <p>Como desenvolvedores inteligentes estão faturando R$ 100.000+ por ano focando em pequenas empresas locais ao invés de competir no mercado global.</p>
+                    <div class="article-meta">
+                        <span>📖 20 min de leitura</span>
+                        <span>📅 Julho 2025</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-badge">💡 Estratégia</div>
+                    <h3><a href="/biblioteca/como-competir-wix-wordpress-cobrando-3x-mais">Como competir com Wix/WordPress cobrando 3x mais</a></h3>
+                    <p>Estratégias comprovadas para desenvolvedores cobrarem R$ 3.000-5.000 por sites que a concorrência vende por R$ 800-1.500.</p>
+                    <div class="article-meta">
+                        <span>📖 16 min de leitura</span>
+                        <span>📅 Julho 2025</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Section -->
+    <section class="languages">
+        <div class="container">
+            <h2 class="section-title">Conteúdo em Outros Idiomas</h2>
+            <div class="language-cards">
+                <a href="https://goconverso.com/en/" class="language-card">
+                    <span class="flag">🇺🇸</span>
+                    <h3>English</h3>
+                    <p>Articles for Developers & Professionals</p>
+                </a>
+                <a href="https://goconverso.com/es/" class="language-card">
+                    <span class="flag">🇪🇸</span>
+                    <h3>Español</h3>
+                    <p>Artículos para Desarrolladores y Profesionales</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para Criar seu Site de Agendamentos?</h2>
+                <p>Junte-se a desenvolvedores e profissionais que já usam o Converso.pro</p>
+                <div class="cta-buttons">
+                    <a href="https://app.converso.pro/auth" class="btn btn-primary btn-large">
+                        Começar Grátis
+                    </a>
+                    <a href="https://converso.pro/developers" class="btn btn-secondary btn-large">
+                        Para Desenvolvedores
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Converso.pro Library</h4>
+                    <p>Recursos gratuitos para desenvolvedores e profissionais de serviços crescerem seus negócios.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Desenvolvedores</h4>
+                    <ul>
+                        <li><a href="/desenvolvedores/">Todos os Guias</a></li>
+                        <li><a href="https://converso.pro/developers">Programa de Parceiros</a></li>
+                        <li><a href="/biblioteca/qual-melhor-plataforma-ecommerce-gratuita">Começar Grátis</a></li>
+                        <li><a href="/biblioteca/como-ganhar-comissao-recorrente-30-porcento">Ganhar Comissões</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="https://converso.pro">Site Principal</a></li>
+                        <li><a href="https://app.converso.pro/auth">Criar Conta</a></li>
+                        <li><a href="https://app.converso.pro/auth">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="/desenvolvedores/">Desenvolvedores</a></li>
+                        <li><a href="/ecommerce/">E-commerce</a></li>
+                        <li><a href="/marketing-digital/">Marketing Digital</a></li>
+                        <li><a href="/gestao-crescimento/">Gestão</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Converso.pro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Language Selector JavaScript -->
+    <script>
+        function toggleLanguageMenu() {
+            const menu = document.getElementById('languageMenu');
+            const btn = document.querySelector('.language-btn');
+            
+            menu.classList.toggle('active');
+            btn.classList.toggle('active');
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function closeMenu(e) {
+                if (!e.target.closest('.language-selector')) {
+                    menu.classList.remove('active');
+                    btn.classList.remove('active');
+                    document.removeEventListener('click', closeMenu);
+                }
+            });
+        }
+        
+        // Add click handlers to language options
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.language-option').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    // Clear saved language preference when user manually changes language
+                    localStorage.removeItem('converso-library-lang');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
