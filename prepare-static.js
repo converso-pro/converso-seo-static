@@ -147,14 +147,22 @@ function reorganizeFiles() {
 }
 
 function createIndexPages(outputDir, deployDir) {
-  // Usar os índices específicos de cada idioma
+  // PRIORIZAR os arquivos modificados biblioteca.html, library.html, libreria.html
+  const bibliotecaPath = path.join(outputDir, 'biblioteca.html');
+  const libraryPath = path.join(outputDir, 'library.html');
+  const libreriaPath = path.join(outputDir, 'libreria.html');
+  
+  // Fallback para os índices antigos
   const ptIndexPath = path.join(outputDir, 'pt-BR', 'index.html');
   const enIndexPath = path.join(outputDir, 'en', 'index.html');
   const esIndexPath = path.join(outputDir, 'es', 'index.html');
   const defaultIndexPath = path.join(outputDir, 'index.html');
   
-  // Biblioteca (português) - usar pt-BR/index.html ou fallback para index.html
-  if (fs.existsSync(ptIndexPath)) {
+  // Biblioteca (português) - usar biblioteca.html prioritariamente
+  if (fs.existsSync(bibliotecaPath)) {
+    fs.copyFileSync(bibliotecaPath, path.join(deployDir, 'biblioteca', 'index.html'));
+    console.log('  ✅ Index PT criado (de biblioteca.html com conteúdo atualizado)');
+  } else if (fs.existsSync(ptIndexPath)) {
     fs.copyFileSync(ptIndexPath, path.join(deployDir, 'biblioteca', 'index.html'));
     console.log('  ✅ Index PT criado (de pt-BR/index.html)');
   } else if (fs.existsSync(defaultIndexPath)) {
@@ -162,20 +170,26 @@ function createIndexPages(outputDir, deployDir) {
     console.log('  ✅ Index PT criado (de index.html)');
   }
   
-  // Library (inglês) - usar en/index.html
-  if (fs.existsSync(enIndexPath)) {
+  // Library (inglês) - usar library.html prioritariamente
+  if (fs.existsSync(libraryPath)) {
+    fs.copyFileSync(libraryPath, path.join(deployDir, 'library', 'index.html'));
+    console.log('  ✅ Index EN criado (de library.html com conteúdo atualizado)');
+  } else if (fs.existsSync(enIndexPath)) {
     fs.copyFileSync(enIndexPath, path.join(deployDir, 'library', 'index.html'));
     console.log('  ✅ Index EN criado (de en/index.html)');
   } else {
-    console.log('  ⚠️ Index EN não encontrado em en/index.html');
+    console.log('  ⚠️ Index EN não encontrado');
   }
   
-  // Librería (espanhol) - usar es/index.html
-  if (fs.existsSync(esIndexPath)) {
+  // Librería (espanhol) - usar libreria.html prioritariamente
+  if (fs.existsSync(libreriaPath)) {
+    fs.copyFileSync(libreriaPath, path.join(deployDir, 'libreria', 'index.html'));
+    console.log('  ✅ Index ES criado (de libreria.html com conteúdo atualizado)');
+  } else if (fs.existsSync(esIndexPath)) {
     fs.copyFileSync(esIndexPath, path.join(deployDir, 'libreria', 'index.html'));
     console.log('  ✅ Index ES criado (de es/index.html)');
   } else {
-    console.log('  ⚠️ Index ES não encontrado em es/index.html');
+    console.log('  ⚠️ Index ES não encontrado');
   }
 }
 
