@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca GoCONVERSO - Recursos Completos para Profissionais e Desenvolvedores</title>
+    
+    <!-- Language Detection and Redirect -->
+    <script>
+        (function() {
+            // Auto detect and redirect based on browser language
+            if (!localStorage.getItem('converso-library-lang')) {
+                const browserLang = navigator.language || navigator.userLanguage;
+                const lang = browserLang.toLowerCase();
+                
+                if (lang.startsWith('en')) {
+                    window.location.replace('/library/');
+                } else if (lang.startsWith('es')) {
+                    window.location.replace('/libreria/');
+                }
+            }
+            localStorage.setItem('converso-library-lang', 'pt');
+        })();
+    </script>
+    
+    <meta name="description" content="Biblioteca completa com mais de 90 guias especializados: Desenvolvedores, Crescimento de Negócios, Marketing Digital, E-commerce e Sistemas de Agendamento. Recursos gratuitos em 3 idiomas.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Biblioteca GoCONVERSO - Recursos para Desenvolvedores e Profissionais">
+    <meta property="og:description" content="Guias completos para desenvolvedores, barbearias, salões de beleza, clínicas e profissionais de serviços.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goconverso.com/biblioteca/">
+    <meta property="og:image" content="https://converso.pro/converso-og.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Biblioteca GoCONVERSO">
+    <meta name="twitter:description" content="Recursos gratuitos para desenvolvedores e profissionais de serviços">
+    
+    <link rel="canonical" href="https://goconverso.com/biblioteca/">
+    <link rel="icon" href="https://converso.pro/favicon.ico">
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1697178904498506');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1697178904498506&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <style>
+        /* Neumorphic Design System */
+        :root {
+            --bg-color: #f0f2f5;
+            --surface-color: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --primary-blue: #3b82f6;
+            --primary-green: #10b981;
+            --secondary-blue: #60a5fa;
+            --secondary-green: #34d399;
+            --developer-gradient: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #f97316 100%);
+            --shadow-light: #ffffff;
+            --shadow-dark: #c8cacd;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+        }
+        
+        /* Neumorphic Components */
+        .neumorphic {
+            background: var(--bg-color);
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light);
+            padding: 2rem;
+        }
+        
+        .neumorphic-flat {
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            padding: 1.5rem;
+        }
+        
+        .neumorphic-button {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 5px 5px 15px rgba(59, 130, 246, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .neumorphic-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(59, 130, 246, 0.4), -7px -7px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: var(--surface-color);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        
+        .logo-accent {
+            font-weight: 300;
+            opacity: 0.8;
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .stat-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Sections */
+        .categories, .featured, .languages, .cta {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+        
+        /* Category Grid - Updated with Developer Focus */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background: var(--surface-color);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 15px 15px 40px rgba(200, 202, 205, 0.6), -15px -15px 40px rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Featured Developer Card - 2x size */
+        .developer-card {
+            grid-column: span 2;
+            background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #f97316 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .developer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.1) 100%);
+            z-index: 1;
+        }
+        
+        .developer-card > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .developer-card .category-title,
+        .developer-card .category-description,
+        .developer-card .article-list a,
+        .developer-card .category-link {
+            color: white;
+        }
+        
+        .developer-card .category-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .developer-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .category-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-list li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-list a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .article-list a:hover {
+            color: var(--secondary-blue);
+            text-decoration: underline;
+        }
+        
+        .category-link {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .category-link:hover {
+            color: var(--secondary-green);
+        }
+        
+        /* Developer-specific links in white card */
+        .developer-card .article-list a:hover {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .developer-card .category-link:hover {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        /* Language Selector */
+        .language-selector {
+            position: relative;
+        }
+        
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--surface-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            box-shadow: 5px 5px 10px rgba(200, 202, 205, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .language-btn:hover {
+            box-shadow: 3px 3px 8px rgba(200, 202, 205, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.6);
+        }
+        
+        .flag {
+            font-size: 1.2rem;
+        }
+        
+        .lang-text {
+            font-weight: 600;
+        }
+        
+        .chevron {
+            transition: transform 0.3s ease;
+        }
+        
+        .language-btn.active .chevron {
+            transform: rotate(180deg);
+        }
+        
+        .language-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 0.5rem;
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+            min-width: 150px;
+        }
+        
+        .language-menu.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .language-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+        
+        .language-option:first-child {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        
+        .language-option:last-child {
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        
+        .language-option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        /* Featured Articles */
+        .featured {
+            background: var(--bg-color);
+        }
+        
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .featured-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        
+        .featured-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .featured-card h3 {
+            margin: 1rem 0;
+        }
+        
+        .featured-card a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .featured-card a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Language Section */
+        .language-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .language-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .language-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.6), -10px -10px 30px rgba(255, 255, 255, 0.8);
+        }
+        
+        .language-card .flag {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+        }
+        
+        .cta-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .cta-content p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            box-shadow: 5px 5px 15px rgba(59, 130, 246, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(59, 130, 246, 0.4), -7px -7px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-secondary {
+            background: var(--surface-color);
+            color: var(--primary-blue);
+            box-shadow: 5px 5px 15px rgba(200, 202, 205, 0.5), -5px -5px 15px rgba(255, 255, 255, 0.7);
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(200, 202, 205, 0.6), -7px -7px 20px rgba(255, 255, 255, 0.8);
+        }
+        
+        .btn-large {
+            padding: 1rem 3rem;
+            font-size: 1.125rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .developer-card {
+                grid-column: span 1;
+            }
+            
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .language-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    Go<span class="logo-accent">CONVERSO</span>
+                </a>
+                <nav class="nav">
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="language-btn" onclick="toggleLanguageMenu()">
+                            <span class="flag">🇧🇷</span>
+                            <span class="lang-text">PT</span>
+                            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12">
+                                <path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </button>
+                        <div class="language-menu" id="languageMenu">
+                            <a href="/library/" class="language-option">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                            <a href="/libreria/" class="language-option">
+                                <span class="flag">🇪🇸</span>
+                                <span>Español</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="https://goconverso.com" class="neumorphic-button" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Site Principal</a>
+                    <a href="https://app.converso.pro/auth" class="neumorphic-button">Começar Grátis</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Biblioteca Completa de Recursos<br>
+                <span class="text-gradient">para Desenvolvedores e Profissionais</span>
+            </h1>
+            <p class="hero-subtitle">
+                Acesse <span class="text-gradient">250+ guias</span>, tutoriais, comparações e estratégias comprovadas para crescer seu negócio de serviços.
+            </p>
+            
+            <!-- Quick Stats -->
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-label">Guias</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Tutoriais</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Comparações</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Casos de Sucesso</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Recursos em Destaque</h2>
+            
+            <div class="category-grid">
+                <!-- Barbearias -->
+                <div class="category-card">
+                    <div class="category-icon">💈</div>
+                    <h3 class="category-title">Barbearias <span style="font-size: 0.8rem; opacity: 0.7;">(33 recursos)</span></h3>
+                    <p class="category-description">
+                        Sistemas de gestão, agendamento online, marketing e captação de clientes para barbearias.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/biblioteca/sistema-gestao-barbearia">Sistema de Gestão para Barbearia: Guia Completo</a></li>
+                        <li><a href="/biblioteca/agendamento-online-barbearia">Agendamento Online para Barbearia</a></li>
+                        <li><a href="/biblioteca/como-fidelizar-clientes-barbearia">Como Fidelizar Clientes da Barbearia</a></li>
+                        <li><a href="/biblioteca/fila-digital-barberia">Fila Digital para Barbearia</a></li>
+                    </ul>
+                    <a href="/biblioteca/barbearias/" class="category-link">Ver todos →</a>
+                </div>
+
+                <!-- Salões de Beleza -->
+                <div class="category-card">
+                    <div class="category-icon">💇‍♀️</div>
+                    <h3 class="category-title">Salões de Beleza <span style="font-size: 0.8rem; opacity: 0.7;">(12 recursos)</span></h3>
+                    <p class="category-description">
+                        Como montar, gerenciar e atrair clientes para seu salão de beleza.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/biblioteca/melhor-sistema-agendamento-saloes">Melhor Sistema de Agendamento para Salões</a></li>
+                        <li><a href="/biblioteca/como-atrair-clientes-salao-beleza">Como Atrair Clientes para Salão de Beleza</a></li>
+                        <li><a href="/biblioteca/como-montar-salao-beleza">Como Montar Salão de Beleza</a></li>
+                    </ul>
+                    <a href="/biblioteca/saloes-beleza/" class="category-link">Ver todos →</a>
+                </div>
+
+                <!-- Celulares & Tech -->
+                <div class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h3 class="category-title">Celulares & Tech <span style="font-size: 0.8rem; opacity: 0.7;">(13 recursos)</span></h3>
+                    <p class="category-description">
+                        Assistência técnica, revenda de iPhones e gestão de lojas de celular.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/biblioteca/sistema-gestao-ordens-servico-lojas-celular">Sistema de Ordem de Serviço</a></li>
+                        <li><a href="/biblioteca/como-ser-revendedor-iphones-2025">Como Ser Revendedor de iPhone</a></li>
+                        <li><a href="/biblioteca/quanto-ganha-tecnico-iphones">Quanto Ganha Técnico de iPhone</a></li>
+                    </ul>
+                    <a href="/biblioteca/assistencia-tecnica/" class="category-link">Ver todos →</a>
+                </div>
+
+                <!-- E-commerce -->
+                <div class="category-card">
+                    <div class="category-icon">🛍️</div>
+                    <h3 class="category-title">E-commerce <span style="font-size: 0.8rem; opacity: 0.7;">(8 recursos)</span></h3>
+                    <p class="category-description">
+                        Como criar loja online, vender sem estoque e comparação de plataformas.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/biblioteca/como-criar-loja-online-pouco-dinheiro">Como Criar Loja com Pouco Dinheiro</a></li>
+                        <li><a href="/biblioteca/qual-melhor-plataforma-ecommerce-gratuita">Melhor Plataforma E-commerce Gratuita</a></li>
+                        <li><a href="/biblioteca/como-comecar-vender-online-sem-estoque">Vender Online Sem Estoque</a></li>
+                    </ul>
+                    <a href="/biblioteca/ecommerce/" class="category-link">Ver todos →</a>
+                </div>
+
+                <!-- Comparações -->
+                <div class="category-card">
+                    <div class="category-icon">⚖️</div>
+                    <h3 class="category-title">Comparações <span style="font-size: 0.8rem; opacity: 0.7;">(8 recursos)</span></h3>
+                    <p class="category-description">
+                        Compare Converso com outras plataformas e descubra as diferenças.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/biblioteca/converso-vs-calendly">Converso vs Calendly</a></li>
+                        <li><a href="/biblioteca/alternativas-ao-calendly">Alternativas ao Calendly</a></li>
+                    </ul>
+                </div>
+
+                <!-- Outros -->
+                <div class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h3 class="category-title">Outros <span style="font-size: 0.8rem; opacity: 0.7;">(14 recursos)</span></h3>
+                    <p class="category-description">
+                        Sistemas de agendamento, cadastro de clientes e mais recursos.
+                    </p>
+                    <ul class="article-list">
+                        <li><a href="/biblioteca/melhor-sistema-agendamento-online">Melhor Sistema de Agendamento</a></li>
+                        <li><a href="/biblioteca/sistema-agendamento-gratis">Sistema de Agendamento Grátis</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Comece Seu Teste Grátis Hoje</h2>
+                <p>Junte-se a 10.000+ profissionais transformando seus negócios com Converso</p>
+                <div class="cta-buttons">
+                    <a href="https://app.converso.pro/auth" class="btn btn-primary btn-large">
+                        Começar Teste Grátis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Converso. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Language Selector JavaScript -->
+    <script>
+        function toggleLanguageMenu() {
+            const menu = document.getElementById('languageMenu');
+            const btn = document.querySelector('.language-btn');
+            
+            menu.classList.toggle('active');
+            btn.classList.toggle('active');
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function closeMenu(e) {
+                if (!e.target.closest('.language-selector')) {
+                    menu.classList.remove('active');
+                    btn.classList.remove('active');
+                    document.removeEventListener('click', closeMenu);
+                }
+            });
+        }
+        
+        // Language switcher
+        function switchLanguage(value) {
+            if (value === 'en') {
+                window.location.href = '/library/';
+            } else if (value === 'es') {
+                window.location.href = '/libreria/';
+            }
+        }
+        
+        // Add click handlers to language options
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.language-option').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    // Clear saved language preference when user manually changes language
+                    localStorage.removeItem('converso-library-lang');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

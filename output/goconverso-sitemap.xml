@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- GoConverso Trust/Reliability SEO Pages -->
+  
+  <!-- Portuguese Version -->
+  <url>
+    <loc>https://goconverso.com/artigos/goconverso-e-confiavel</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- English Version -->
+  <url>
+    <loc>https://goconverso.com/articles/is-goconverso-reliable</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Spanish Version -->
+  <url>
+    <loc>https://goconverso.com/articulos/goconverso-es-confiable</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

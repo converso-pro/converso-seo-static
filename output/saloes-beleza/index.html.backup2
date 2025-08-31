@@ -1,0 +1,1269 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guias para Salões de Beleza - 12 Artigos Especializados | Converso.pro Library</title>
+    
+    <meta name="description" content="Guias completos para salões de beleza: como montar, gerenciar, atrair clientes, custos de investimento e crescimento profissional. 12 artigos especializados.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Guias para Salões de Beleza - Converso.pro Library">
+    <meta property="og:description" content="12 guias especializados para salões de beleza: abertura, gestão, crescimento e mercado de beleza.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seo.converso.pro/saloes-beleza/">
+    <meta property="og:image" content="https://converso.pro/converso-og.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Guias para Salões de Beleza - Converso.pro Library">
+    <meta name="twitter:description" content="12 guias especializados para salões de beleza">
+    
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="pt-BR" href="https://seo.converso.pro/saloes-beleza/">
+    <link rel="alternate" hreflang="en" href="https://seo.converso.pro/en/beauty-salons/">
+    <link rel="alternate" hreflang="es" href="https://seo.converso.pro/es/salones-belleza/">
+    <link rel="alternate" hreflang="x-default" href="https://seo.converso.pro/saloes-beleza/">
+    
+    <link rel="canonical" href="https://seo.converso.pro/saloes-beleza/">
+    <link rel="icon" href="https://converso.pro/favicon.ico">
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1697178904498506');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1697178904498506&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <style>
+        /* Same neumorphic CSS as other category pages */
+        :root {
+            --bg-color: #f0f2f5;
+            --surface-color: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --primary-blue: #3b82f6;
+            --primary-green: #10b981;
+            --secondary-blue: #60a5fa;
+            --secondary-green: #34d399;
+            --shadow-light: #ffffff;
+            --shadow-dark: #c8cacd;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+        }
+        
+        .neumorphic {
+            background: var(--bg-color);
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light);
+            padding: 2rem;
+        }
+        
+        .neumorphic-flat {
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            padding: 1.5rem;
+        }
+        
+        .neumorphic-button {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 5px 5px 15px rgba(59, 130, 246, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .neumorphic-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(59, 130, 246, 0.4), -7px -7px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background: var(--surface-color);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        
+        .logo-accent {
+            font-weight: 300;
+            opacity: 0.8;
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .breadcrumb {
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .hero {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .language-selector {
+            position: relative;
+        }
+        
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--surface-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            box-shadow: 5px 5px 10px rgba(200, 202, 205, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .language-btn:hover {
+            box-shadow: 3px 3px 8px rgba(200, 202, 205, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.6);
+        }
+        
+        .flag {
+            font-size: 1.2rem;
+        }
+        
+        .lang-text {
+            font-weight: 600;
+        }
+        
+        .chevron {
+            transition: transform 0.3s ease;
+        }
+        
+        .language-btn.active .chevron {
+            transform: rotate(180deg);
+        }
+        
+        .language-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 0.5rem;
+            background: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+            min-width: 150px;
+        }
+        
+        .language-menu.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .language-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+        
+        .language-option:first-child {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        
+        .language-option:last-child {
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        
+        .language-option:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        .category-section {
+            margin-bottom: 4rem;
+        }
+        
+        .category-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .category-icon {
+            font-size: 2.5rem;
+        }
+        
+        .category-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .article-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 8px 8px 20px rgba(200, 202, 205, 0.5), -8px -8px 20px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 30px rgba(200, 202, 205, 0.6), -10px -10px 30px rgba(255, 255, 255, 0.8);
+        }
+        
+        .article-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .article-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .article-title a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .article-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .article-languages {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+        }
+        
+        .article-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+            color: var(--primary-blue);
+            opacity: 0.8;
+        }
+        
+        .article-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .language-link {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .language-link:hover {
+            color: var(--secondary-blue);
+            text-decoration: underline;
+        }
+        
+        .language-link.current {
+            color: var(--text-secondary);
+            pointer-events: none;
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .cta-content p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            box-shadow: 5px 5px 15px rgba(59, 130, 246, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(59, 130, 246, 0.4), -7px -7px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-secondary {
+            background: var(--surface-color);
+            color: var(--primary-blue);
+            box-shadow: 5px 5px 15px rgba(200, 202, 205, 0.5), -5px -5px 15px rgba(255, 255, 255, 0.7);
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 7px 7px 20px rgba(200, 202, 205, 0.6), -7px -7px 20px rgba(255, 255, 255, 0.8);
+        }
+        
+        .btn-large {
+            padding: 1rem 3rem;
+            font-size: 1.125rem;
+        }
+        
+        .footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .language-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="/assets/header-universal.css">
+</head>
+<body>
+<!-- Universal Header Template for SEO Library -->
+<!-- This template will be applied to all 410+ pages -->
+<!-- Placeholders: en, English, 🇺🇸, /library, Library -->
+
+<header class="universal-header" data-lang="en">
+  <div class="header-container">
+    <!-- Logo Section -->
+    <div class="header-logo">
+      <a href="https://goconverso.com" class="logo-link" aria-label="Go to GoConverso homepage">
+        <span class="logo-gradient">GoCONVERSO</span>
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="header-nav desktop-nav" aria-label="Main navigation">
+      <!-- Apps Dropdown -->
+      <div class="dropdown" data-dropdown="apps">
+        <button class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          <span data-i18n="apps">Apps</span>
+          <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="dropdown-content apps-grid" role="menu">
+          <!-- Digital Queue -->
+          <a href="https://goconverso.com/apps/fila-digital" class="app-item" role="menuitem">
+            <div class="app-icon purple-gradient">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="app-info">
+              <div class="app-name" data-i18n="digitalQueue">Digital Queue</div>
+              <div class="app-desc" data-i18n="digitalQueueDesc">Smart waitlist management</div>
+              <div class="app-badge popular" data-i18n="popular">Popular</div>
+            </div>
+          </a>
+
+          <!-- Combo Mágico -->
+          <a href="https://goconverso.com/apps/combo-magico" class="app-item" role="menuitem">
+            <div class="app-icon orange-gradient">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="app-info">
+              <div class="app-name" data-i18n="comboMagico">Magic Combo</div>
+              <div class="app-desc" data-i18n="comboMagicoDesc">Boost sales with combos</div>
+            </div>
+          </a>
+
+          <!-- Loyalty Program -->
+          <a href="https://goconverso.com/apps/programa-fidelidade" class="app-item" role="menuitem">
+            <div class="app-icon amber-gradient">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M12 2L15 9L23 10L17.5 15L19 23L12 19L5 23L6.5 15L1 10L9 9L12 2Z"></path>
+              </svg>
+            </div>
+            <div class="app-info">
+              <div class="app-name" data-i18n="loyaltyProgram">Loyalty Program</div>
+              <div class="app-desc" data-i18n="loyaltyDesc">Reward your customers</div>
+              <div class="app-badge popular" data-i18n="popular">Popular</div>
+            </div>
+          </a>
+
+          <!-- Reviews -->
+          <a href="https://goconverso.com/apps/reviews" class="app-item" role="menuitem">
+            <div class="app-icon yellow-gradient">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="app-info">
+              <div class="app-name" data-i18n="reviews">Reviews</div>
+              <div class="app-desc" data-i18n="reviewsDesc">Collect customer feedback</div>
+            </div>
+          </a>
+
+          <!-- Email Marketing -->
+          <a href="https://goconverso.com/apps/email-marketing" class="app-item" role="menuitem">
+            <div class="app-icon rose-gradient">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="app-info">
+              <div class="app-name" data-i18n="emailMarketing">Email Marketing</div>
+              <div class="app-desc" data-i18n="emailDesc">Automated campaigns</div>
+              <div class="app-badge popular" data-i18n="popular">Popular</div>
+            </div>
+          </a>
+
+          <!-- E-commerce -->
+          <a href="https://goconverso.com/apps/ecommerce" class="app-item" role="menuitem">
+            <div class="app-icon emerald-gradient">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </div>
+            <div class="app-info">
+              <div class="app-name" data-i18n="ecommerce">E-commerce</div>
+              <div class="app-desc" data-i18n="ecommerceDesc">Sell products online</div>
+            </div>
+          </a>
+
+          <!-- Blog -->
+          <a href="https://goconverso.com/apps/blog" class="app-item" role="menuitem">
+            <div class="app-icon green-gradient">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="app-info">
+              <div class="app-name" data-i18n="blog">Blog</div>
+              <div class="app-desc" data-i18n="blogDesc">Content marketing</div>
+            </div>
+          </a>
+
+          <!-- Digital Business Card -->
+          <a href="https://goconverso.com/apps/cartao-digital" class="app-item" role="menuitem">
+            <div class="app-icon indigo-gradient">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                <line x1="1" y1="10" x2="23" y2="10"></line>
+              </svg>
+            </div>
+            <div class="app-info">
+              <div class="app-name" data-i18n="digitalCard">Digital Card</div>
+              <div class="app-desc" data-i18n="cardDesc">Professional presence</div>
+            </div>
+          </a>
+
+          <!-- Service Orders -->
+          <a href="https://goconverso.com/apps/ordens-servico" class="app-item" role="menuitem">
+            <div class="app-icon blue-gradient">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <div class="app-info">
+              <div class="app-name" data-i18n="serviceOrders">Service Orders</div>
+              <div class="app-desc" data-i18n="ordersDesc">Manage repairs &amp; services</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Resources Dropdown -->
+      <div class="dropdown" data-dropdown="resources">
+        <button class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          <span data-i18n="resources">Resources</span>
+          <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="dropdown-content resources-menu" role="menu">
+          <!-- Academy -->
+          <a href="https://goconverso.com/academy" class="resource-item" role="menuitem">
+            <div class="resource-icon academy-icon">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="resource-info">
+              <div class="resource-name" data-i18n="academy">Academy</div>
+              <div class="resource-desc" data-i18n="academyDesc">Learn &amp; grow your business</div>
+              <span class="resource-badge new" data-i18n="new">New</span>
+            </div>
+          </a>
+
+          <!-- Blog -->
+          <a href="https://goconverso.com/blog" class="resource-item" role="menuitem">
+            <div class="resource-icon blog-icon">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div class="resource-info">
+              <div class="resource-name" data-i18n="blog">Blog</div>
+              <div class="resource-desc" data-i18n="blogResourceDesc">Tips and insights</div>
+            </div>
+          </a>
+
+          <!-- Library (Current Page) -->
+          <a href="/library" class="resource-item active" role="menuitem" aria-current="page">
+            <div class="resource-icon library-icon">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                <path d="M12 6v8"></path>
+                <path d="M8 10h8"></path>
+              </svg>
+            </div>
+            <div class="resource-info">
+              <div class="resource-name">Library</div>
+              <div class="resource-desc" data-i18n="libraryDesc">Articles and guides</div>
+            </div>
+          </a>
+
+          <!-- FAQ -->
+          <a href="https://goconverso.com/faq" class="resource-item" role="menuitem">
+            <div class="resource-icon faq-icon">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <div class="resource-info">
+              <div class="resource-name" data-i18n="faq">FAQ</div>
+              <div class="resource-desc" data-i18n="faqDesc">Common questions</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Direct Links -->
+      <a href="https://goconverso.com/templates" class="nav-link" data-i18n="templates">Templates</a>
+      <a href="https://goconverso.com/pricing" class="nav-link" data-i18n="pricing">Pricing</a>
+    </nav>
+
+    <!-- Right Section -->
+    <div class="header-actions">
+      <!-- Language Switcher -->
+      <div class="language-switcher">
+        <button class="lang-trigger" aria-label="Change language" aria-expanded="false" aria-haspopup="true">
+          <span class="flag">🇺🇸</span>
+          <span class="lang-name">English</span>
+          <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="lang-dropdown" role="menu">
+          <a href="/library" class="lang-option" data-lang="en" role="menuitem">
+            <span class="flag">🇺🇸</span>
+            <span>English</span>
+          </a>
+          <a href="/libreria" class="lang-option" data-lang="es" role="menuitem">
+            <span class="flag">🇪🇸</span>
+            <span>Español</span>
+          </a>
+          <a href="/biblioteca" class="lang-option" data-lang="pt" role="menuitem">
+            <span class="flag">🇧🇷</span>
+            <span>Português</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <a href="https://app.converso.pro/auth" class="btn-login" data-i18n="login">Login</a>
+      <a href="https://app.converso.pro/auth?signup=true" class="btn-start" data-i18n="startFree">
+        <span>Start Free</span>
+        <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" data-state="closed" aria-label="Mobile navigation">
+    <div class="mobile-menu-content">
+      <!-- Mobile Apps Section -->
+      <div class="mobile-section">
+        <button class="mobile-section-toggle" data-section="apps">
+          <span data-i18n="apps">Apps</span>
+          <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="mobile-section-content" data-content="apps">
+          <a href="https://goconverso.com/apps/fila-digital" class="mobile-app-link">
+            <span data-i18n="digitalQueue">Digital Queue</span>
+          </a>
+          <a href="https://goconverso.com/apps/combo-magico" class="mobile-app-link">
+            <span data-i18n="comboMagico">Magic Combo</span>
+          </a>
+          <a href="https://goconverso.com/apps/programa-fidelidade" class="mobile-app-link">
+            <span data-i18n="loyaltyProgram">Loyalty Program</span>
+          </a>
+          <a href="https://goconverso.com/apps/reviews" class="mobile-app-link">
+            <span data-i18n="reviews">Reviews</span>
+          </a>
+          <a href="https://goconverso.com/apps/email-marketing" class="mobile-app-link">
+            <span data-i18n="emailMarketing">Email Marketing</span>
+          </a>
+          <a href="https://goconverso.com/apps/ecommerce" class="mobile-app-link">
+            <span data-i18n="ecommerce">E-commerce</span>
+          </a>
+          <a href="https://goconverso.com/apps/blog" class="mobile-app-link">
+            <span data-i18n="blog">Blog</span>
+          </a>
+          <a href="https://goconverso.com/apps/cartao-digital" class="mobile-app-link">
+            <span data-i18n="digitalCard">Digital Card</span>
+          </a>
+          <a href="https://goconverso.com/apps/ordens-servico" class="mobile-app-link">
+            <span data-i18n="serviceOrders">Service Orders</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Resources Section -->
+      <div class="mobile-section">
+        <button class="mobile-section-toggle" data-section="resources">
+          <span data-i18n="resources">Resources</span>
+          <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="mobile-section-content" data-content="resources">
+          <a href="https://goconverso.com/academy" class="mobile-resource-link">
+            <span data-i18n="academy">Academy</span>
+          </a>
+          <a href="https://goconverso.com/blog" class="mobile-resource-link">
+            <span data-i18n="blog">Blog</span>
+          </a>
+          <a href="/library" class="mobile-resource-link active">
+            <span>Library</span>
+          </a>
+          <a href="https://goconverso.com/faq" class="mobile-resource-link">
+            <span data-i18n="faq">FAQ</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Direct Links -->
+      <a href="https://goconverso.com/templates" class="mobile-nav-link" data-i18n="templates">Templates</a>
+      <a href="https://goconverso.com/pricing" class="mobile-nav-link" data-i18n="pricing">Pricing</a>
+
+      <!-- Mobile Language Selector -->
+      <div class="mobile-language-selector">
+        <div class="mobile-lang-label" data-i18n="selectLanguage">Select Language:</div>
+        <div class="mobile-lang-options">
+          <a href="/library" class="mobile-lang-option" data-lang="en">
+            <span class="flag">🇺🇸</span>
+            <span>English</span>
+          </a>
+          <a href="/libreria" class="mobile-lang-option" data-lang="es">
+            <span class="flag">🇪🇸</span>
+            <span>Español</span>
+          </a>
+          <a href="/biblioteca" class="mobile-lang-option" data-lang="pt">
+            <span class="flag">🇧🇷</span>
+            <span>Português</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile CTAs -->
+      <div class="mobile-cta-section">
+        <a href="https://app.converso.pro/auth" class="mobile-btn-login" data-i18n="login">Login</a>
+        <a href="https://app.converso.pro/auth?signup=true" class="mobile-btn-start" data-i18n="startFree">Start Free</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Include CSS and JS -->
+<link rel="stylesheet" href="/assets/header-universal.css">
+<script src="/assets/header-universal.js"></script>
+
+    <!-- Header -->
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Guias Completos para <span class="text-gradient">Salões de Beleza</span>
+            </h1>
+            <p class="hero-subtitle">
+                Tudo o que você precisa saber para abrir, gerenciar e fazer seu salão de beleza prosperar. 
+                Desde o planejamento até o crescimento profissional.
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Artigos Especializados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Categorias</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Idiomas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Sections -->
+    <div class="container">
+        <!-- Abertura e Estruturação -->
+        <section class="category-section">
+            <h2 class="category-title">
+                <span class="category-icon">🏗️</span>
+                Abertura e Estruturação
+            </h2>
+            <p class="category-description">
+                Guias completos para estruturar e abrir seu salão de beleza do jeito certo, desde o planejamento até a inauguração.
+            </p>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/como-montar-salao-beleza/">Como Montar um Salão de Beleza</a>
+                    </h3>
+                    <p class="article-description">
+                        Guia completo: planejamento, localização, estrutura física, equipamentos, equipe e estratégias de lançamento.
+                    </p>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/como-comecar-salao-beleza/">Como Começar um Salão de Beleza</a>
+                    </h3>
+                    <p class="article-description">
+                        Primeiros passos para abrir seu salão: documentação, licenças, investimento inicial e preparação do espaço.
+                    </p>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/como-comecar-salao-beleza-pequeno/">Como Começar um Salão de Beleza Pequeno</a>
+                    </h3>
+                    <p class="article-description">
+                        Estratégias para começar com pouco investimento: otimização de espaço, equipamentos essenciais e crescimento gradual.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Custos e Investimentos -->
+        <section class="category-section">
+            <h2 class="category-title">
+                <span class="category-icon">💰</span>
+                Custos e Investimentos
+            </h2>
+            <p class="category-description">
+                Análise detalhada de investimentos necessários e custos de formação profissional na área da beleza.
+            </p>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/quanto-custa-abrir-salao-beleza/">Quanto Custa Abrir um Salão de Beleza</a>
+                    </h3>
+                    <p class="article-description">
+                        Análise completa de investimento: equipamentos, reforma, licenças, estoque inicial e capital de giro.
+                    </p>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/quanto-custa-curso-cabeleireiro/">Quanto Custa um Curso de Cabeleireiro</a>
+                    </h3>
+                    <p class="article-description">
+                        Comparativo de cursos de formação: preços, duração, modalidades e retorno do investimento profissional.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Gestão e Operações -->
+        <section class="category-section">
+            <h2 class="category-title">
+                <span class="category-icon">⚙️</span>
+                Gestão e Operações
+            </h2>
+            <p class="category-description">
+                Sistemas e ferramentas para otimizar a gestão diária do seu salão de beleza.
+            </p>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/melhor-sistema-agendamento-saloes/">Melhor Sistema de Agendamento para Salões</a>
+                    </h3>
+                    <p class="article-description">
+                        Compare sistemas de agendamento: funcionalidades, preços, integração e qual escolher para seu salão.
+                    </p>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/o-que-nao-pode-faltar-salao-beleza/">O que Não Pode Faltar em um Salão de Beleza</a>
+                    </h3>
+                    <p class="article-description">
+                        Lista completa de equipamentos e estrutura essenciais: desde mobiliário até produtos e acessórios indispensáveis.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Crescimento Profissional -->
+        <section class="category-section">
+            <h2 class="category-title">
+                <span class="category-icon">💼</span>
+                Crescimento Profissional
+            </h2>
+            <p class="category-description">
+                Estratégias para o sucesso profissional e maximização da renda na área da beleza.
+            </p>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/como-ter-sucesso-cabeleireira/">Como Ter Sucesso como Cabeleireira</a>
+                    </h3>
+                    <p class="article-description">
+                        Estratégias profissionais: especialização, networking, portfolio, atendimento e construção de marca pessoal.
+                    </p>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/como-ganhar-dinheiro-cabeleireira/">Como Ganhar Dinheiro como Cabeleireira</a>
+                    </h3>
+                    <p class="article-description">
+                        Técnicas para maximizar a renda: precificação, serviços adicionais, parcerias e múltiplas fontes de receita.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Mercado e Tendências -->
+        <section class="category-section">
+            <h2 class="category-title">
+                <span class="category-icon">📊</span>
+                Mercado e Tendências
+            </h2>
+            <p class="category-description">
+                Análise do mercado de beleza, estratégias de marketing e identificação de oportunidades de negócio.
+            </p>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/como-atrair-clientes-salao-beleza/">Como Atrair Clientes para Salão de Beleza</a>
+                    </h3>
+                    <p class="article-description">
+                        Estratégias de marketing: redes sociais, promoções, parcerias, referências e fidelização de clientes.
+                    </p>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/qual-area-beleza-da-mais-lucro/">Qual Área da Beleza Dá Mais Lucro</a>
+                    </h3>
+                    <p class="article-description">
+                        Análise de rentabilidade por segmento: cabelo, estética, unhas, maquiagem e procedimentos especializados.
+                    </p>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="/pt-BR/mercado-beleza-estetica-brasil/">Mercado de Beleza e Estética no Brasil</a>
+                    </h3>
+                    <p class="article-description">
+                        Panorama completo do setor: números, tendências, oportunidades e perspectivas de crescimento.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para Modernizar seu Salão de Beleza?</h2>
+                <p>Crie seu sistema de agendamentos profissional em menos de 5 minutos</p>
+                <div class="cta-buttons">
+                    <a href="https://app.converso.pro/auth" class="btn btn-primary btn-large">
+                        Começar Grátis
+                    </a>
+                    <a href="https://converso.pro" class="btn btn-secondary btn-large">
+                        Conhecer o Converso
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Converso.pro Library</h4>
+                    <p>Recursos gratuitos para profissionais de beleza e salões crescerem seus negócios.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="/barbearias/">Barbearias</a></li>
+                        <li><a href="/assistencia-tecnica/">Assistência Técnica</a></li>
+                        <li><a href="/gestao-crescimento/">Gestão e Crescimento</a></li>
+                        <li><a href="/saloes-beleza/">Salões de Beleza</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="https://converso.pro">Site Principal</a></li>
+                        <li><a href="https://app.converso.pro/auth">Criar Conta</a></li>
+                        <li><a href="/">Voltar à Biblioteca</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Converso.pro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Language Selector JavaScript -->
+    <script>
+        function toggleLanguageMenu() {
+            const menu = document.getElementById('languageMenu');
+            const btn = document.querySelector('.language-btn');
+            
+            menu.classList.toggle('active');
+            btn.classList.toggle('active');
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function closeMenu(e) {
+                if (!e.target.closest('.language-selector')) {
+                    menu.classList.remove('active');
+                    btn.classList.remove('active');
+                    document.removeEventListener('click', closeMenu);
+                }
+            });
+        }
+        
+        // Facebook Pixel Events
+        fbq('track', 'ViewContent', {
+            content_category: 'Saloes de Beleza',
+            content_name: 'Guias para Salões de Beleza'
+        });
+    </script>
+
+
+<script src="/assets/header-universal.js"></script>
+</body></html>

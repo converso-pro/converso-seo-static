@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbeiros no Rio de Janeiro - Sistema #1 de Agendamento | CONVERSO</title>
+    <meta name="description" content="Junte-se a 8,500+ barbeiros no Rio de Janeiro que triplicaram o faturamento. Sistema 100% brasileiro, aceita PIX, 10 dias grátis.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Barbeiros Rio de Janeiro - Domine a Cidade Maravilhosa">
+    <meta property="og:description" content="Sistema de agendamento #1 para barbeiros cariocas. Aceita PIX, cartão e dinheiro. 100% em português.">
+    <meta property="og:image" content="https://goconverso.com/images/og-barber-rio-de-janeiro.jpg">
+    <meta property="og:url" content="https://goconverso.com/barber-rio-de-janeiro-v2">
+    <meta property="og:type" content="website">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "CONVERSO - Sistema de Agendamento para Barbeiros Rio de Janeiro",
+      "description": "Plataforma #1 para barbeiros no Rio de Janeiro e região metropolitana",
+      "url": "https://goconverso.com/barber-rio-de-janeiro-v2",
+      "telephone": "+5521999999999",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-22.9068",
+        "longitude": "-43.1729"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "8500"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "88",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: #1a1a1a;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Neumorphic Design System - Azul/Amarelo (cores do Ceará + sol) */
+        .neumorphic-card {
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff;
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .neumorphic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 25px 25px 70px #d1d1d1, -25px -25px 70px #ffffff;
+        }
+        
+        .neumorphic-button {
+            background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+        }
+        
+        .neumorphic-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.6);
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: transparent;
+            background: linear-gradient(135deg, #3B82F6, #10B981);
+            background-clip: text;
+            -webkit-background-clip: text;
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .nav-menu a {
+            color: #374151;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-menu a:hover {
+            color: #3B82F6;
+        }
+        
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            background: none;
+            border: none;
+            color: #374151;
+            font-weight: 500;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .dropdown-toggle:hover {
+            color: #3B82F6;
+        }
+        
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .login-btn {
+            color: #374151;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .login-btn:hover {
+            background-color: #F3F4F6;
+            color: #3B82F6;
+        }
+        
+        .signup-btn {
+            background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .signup-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #374151;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .mobile-menu {
+            position: fixed;
+            top: 64px;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .mobile-menu.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .mobile-menu a {
+            display: block;
+            padding: 1rem 0;
+            color: #374151;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid #f0f0f0;
+            transition: color 0.3s ease;
+        }
+        
+        .mobile-menu a:hover {
+            color: #3B82F6;
+        }
+        
+        .mobile-menu .signup-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 1.4rem;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .auth-buttons .login-btn {
+                display: none;
+            }
+            
+            .signup-btn {
+                padding: 0.525rem 1.05rem;
+                font-size: 0.875rem;
+            }
+        }
+        
+        /* Hero Section - Azul/Branco gradient (Rio de Janeiro) */
+        .hero {
+            position: relative;
+            color: white;
+            padding: 8rem 1rem 4rem;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9) 0%, rgba(59, 130, 246, 0.85) 100%);
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .live-counter {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            margin-bottom: 2rem;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            color: white;
+            font-size: 1.3rem;
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.4);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(46, 204, 113, 0.6);
+        }
+        
+        /* Problems Section */
+        .problems {
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2d3436;
+        }
+        
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .problem-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .problem-emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .problem-title {
+            font-size: 1.3rem;
+            color: #e74c3c;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Social Proof Section */
+        .social-proof {
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .metric-card {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .metric-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-label {
+            color: #636e72;
+            font-size: 1rem;
+        }
+        
+        .metric-growth {
+            color: #00b894;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        /* Locations Section */
+        .locations {
+            padding: 4rem 1rem;
+            background: #f8f9fa;
+        }
+        
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .location-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .location-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .location-name {
+            font-weight: bold;
+            color: #2d3436;
+            margin-bottom: 0.5rem;
+        }
+        
+        .location-count {
+            font-size: 1.5rem;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .location-growth {
+            font-size: 0.8rem;
+            color: #00b894;
+            margin-top: 0.3rem;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%);
+        }
+        
+        .testimonials h2 {
+            color: white;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .testimonial-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .testimonial-quote {
+            font-size: 1.1rem;
+            color: #2d3436;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        .testimonial-business {
+            color: #636e72;
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-metric {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e0e0e0;
+            color: #00b894;
+            font-weight: bold;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            padding: 4rem 1rem;
+            background: white;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+            border: 2px solid #f0f0f0;
+        }
+        
+        .pricing-card.featured {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            border: 2px solid #3498db;
+        }
+        
+        .pricing-popular {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .pricing-name {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2d3436;
+        }
+        
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pricing-period {
+            color: #636e72;
+            margin-bottom: 2rem;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .pricing-features li {
+            padding: 0.5rem 0;
+            color: #2d3436;
+        }
+        
+        .pricing-features li:before {
+            content: '✓ ';
+            color: #00b894;
+            font-weight: bold;
+        }
+        
+        /* Steps Section */
+        .steps {
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #dfe6e9 0%, #b2bec3 100%);
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .step-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+        
+        .step-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #2d3436;
+        }
+        
+        .step-description {
+            color: #636e72;
+        }
+        
+        .step-time {
+            color: #3498db;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        
+        /* Cultural Section */
+        .cultural {
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2d3436;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+        }
+        
+        /* Mobile Responsive - 10% Size Reduction (Header and Chat Widget Unchanged) */
+        @media (max-width: 768px) {
+            /* Hero Section - 10% smaller */
+            h1 {
+                font-size: 1.8rem; /* Was 2rem */
+            }
+            
+            .hero {
+                padding: 5.4rem 0.9rem 2.7rem; /* Was 6rem 1rem 3rem */
+            }
+            
+            .hero-subtitle {
+                font-size: 1.17rem; /* Was 1.3rem */
+            }
+            
+            .trust-badges {
+                gap: 0.9rem; /* Was 1rem */
+                margin-bottom: 1.8rem; /* Was 2rem */
+            }
+            
+            .trust-badge {
+                padding: 0.45rem 0.9rem; /* Was 0.5rem 1rem */
+                font-size: 0.81rem; /* Was 0.9rem */
+            }
+            
+            .live-counter {
+                padding: 0.9rem 1.8rem; /* Was 1rem 2rem */
+                margin-bottom: 1.8rem; /* Was 2rem */
+                font-size: 0.9rem;
+            }
+            
+            .cta-button {
+                font-size: 1.17rem; /* Was 1.3rem */
+                padding: 1.08rem 2.7rem; /* Was 1.2rem 3rem */
+            }
+            
+            /* Section Headings - 10% smaller */
+            h2 {
+                font-size: 1.62rem; /* Was 1.8rem */
+                margin-bottom: 2.7rem; /* Was 3rem */
+            }
+            
+            /* Section Padding - 10% smaller */
+            .problems {
+                padding: 3.6rem 0.9rem; /* Was 4rem 1rem */
+            }
+            
+            .social-proof {
+                padding: 3.6rem 0.9rem; /* Was 4rem 1rem */
+            }
+            
+            .locations {
+                padding: 3.6rem 0.9rem; /* Was 4rem 1rem */
+            }
+            
+            .testimonials {
+                padding: 3.6rem 0.9rem; /* Was 4rem 1rem */
+            }
+            
+            .pricing {
+                padding: 3.6rem 0.9rem; /* Was 4rem 1rem */
+            }
+            
+            .steps {
+                padding: 3.6rem 0.9rem; /* Was 4rem 1rem */
+            }
+            
+            .cultural {
+                padding: 3.6rem 0.9rem; /* Was 4rem 1rem */
+            }
+            
+            .final-cta {
+                padding: 3.6rem 0.9rem; /* Was 4rem 1rem */
+            }
+            
+            /* Card Padding and Spacing - 10% smaller */
+            .problem-card, .metric-card, .location-card, .testimonial-card, .pricing-card, .step-card {
+                padding: 1.8rem; /* Was 2rem */
+                margin-bottom: 1.8rem; /* Was 2rem where applicable */
+            }
+            
+            .location-card {
+                padding: 1.35rem; /* Was 1.5rem */
+            }
+            
+            .problem-emoji {
+                font-size: 2.7rem; /* Was 3rem */
+                margin-bottom: 0.9rem; /* Was 1rem */
+            }
+            
+            .problem-title {
+                font-size: 1.17rem; /* Was 1.3rem */
+                margin-bottom: 0.45rem; /* Was 0.5rem */
+            }
+            
+            .metric-number {
+                font-size: 2.25rem; /* Was 2.5rem */
+                margin-bottom: 0.45rem; /* Was 0.5rem */
+            }
+            
+            .metric-label {
+                font-size: 0.9rem; /* Was 1rem */
+            }
+            
+            .metric-growth {
+                font-size: 0.81rem; /* Was 0.9rem */
+                margin-top: 0.45rem; /* Was 0.5rem */
+            }
+            
+            /* Location Cards - 10% smaller */
+            .location-count {
+                font-size: 1.35rem; /* Was 1.5rem */
+            }
+            
+            .location-growth {
+                font-size: 0.72rem; /* Was 0.8rem */
+                margin-top: 0.27rem; /* Was 0.3rem */
+            }
+            
+            /* Testimonial Cards - 10% smaller */
+            .testimonial-quote {
+                font-size: 0.99rem; /* Was 1.1rem */
+                margin-bottom: 0.9rem; /* Was 1rem */
+            }
+            
+            .testimonial-business {
+                font-size: 0.81rem; /* Was 0.9rem */
+            }
+            
+            .testimonial-metric {
+                margin-top: 0.9rem; /* Was 1rem */
+                padding-top: 0.9rem; /* Was 1rem */
+            }
+            
+            /* Pricing Cards - 10% smaller */
+            .pricing-card.featured {
+                transform: none;
+            }
+            
+            .pricing-name {
+                font-size: 1.35rem; /* Was 1.5rem */
+                margin-bottom: 0.9rem; /* Was 1rem */
+            }
+            
+            .pricing-price {
+                font-size: 2.7rem; /* Was 3rem */
+                margin-bottom: 0.45rem; /* Was 0.5rem */
+            }
+            
+            .pricing-period {
+                margin-bottom: 1.8rem; /* Was 2rem */
+            }
+            
+            .pricing-features {
+                margin-bottom: 1.8rem; /* Was 2rem */
+            }
+            
+            .pricing-features li {
+                padding: 0.45rem 0; /* Was 0.5rem 0 */
+            }
+            
+            /* Step Cards - 10% smaller */
+            .step-number {
+                width: 54px; /* Was 60px */
+                height: 54px; /* Was 60px */
+                font-size: 1.35rem; /* Was 1.5rem */
+                margin: 0 auto 0.9rem; /* Was 0 auto 1rem */
+            }
+            
+            .step-title {
+                font-size: 1.17rem; /* Was 1.3rem */
+                margin-bottom: 0.9rem; /* Was 1rem */
+            }
+            
+            .step-time {
+                margin-top: 0.9rem; /* Was 1rem */
+            }
+            
+            /* Stats Grid - 10% smaller */
+            .stat-number {
+                font-size: 1.8rem; /* Was 2rem */
+                margin-bottom: 0.45rem; /* Was 0.5rem */
+            }
+            
+            /* Neumorphic Cards - 10% smaller */
+            .neumorphic-card {
+                padding: 1.8rem; /* Was 2rem */
+            }
+            
+            .neumorphic-button {
+                padding: 0.9rem 1.8rem; /* Was 1rem 2rem */
+                font-size: 0.99rem; /* Was 1.1rem */
+            }
+            
+            /* Grids - 10% smaller gaps */
+            .problems-grid, .metrics-grid, .locations-grid, .testimonials-grid, .pricing-grid, .steps-grid {
+                gap: 1.8rem; /* Was 2rem */
+            }
+            
+            .locations-grid {
+                gap: 1.35rem; /* Was 1.5rem */
+            }
+            
+            /* Footer - 10% smaller */
+            footer {
+                padding: 1.8rem 0.9rem; /* Was 2rem 1rem */
+            }
+            
+            .footer-links {
+                gap: 1.8rem; /* Was 2rem */
+                margin-bottom: 0.9rem; /* Was 1rem */
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">CONVERSO</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <a href="/templates">Templates</a>
+                
+                
+                <a href="/blog">Blog</a>
+                <a href="/faq">FAQ</a>
+                <a href="/#pricing">Preços</a>
+            </div>
+            
+            <!-- Auth Buttons -->
+            <div class="auth-buttons">
+                <a href="/auth" class="login-btn">Entrar</a>
+                <a href="/auth" class="signup-btn">Começar Grátis</a>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/templates">Templates</a>
+            <a href="/blog">Blog</a>
+            <a href="/faq">FAQ</a>
+            <a href="/#pricing">Preços</a>
+            <a href="/auth">Entrar</a>
+            <a href="/auth">Começar Grátis</a>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Video Background -->
+        <video 
+            class="hero-video" 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            poster="/images/hero-fallback.jpg"
+        >
+            <source src="/videos/hero-background.mp4" type="video/mp4" />
+            <source src="/videos/hero-background.webm" type="video/webm" />
+        </video>
+        
+        <div class="hero-content" style="position: relative; z-index: 1;">
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <span>🔒</span>
+                    <span>100% Seguro</span>
+                </div>
+                <div class="trust-badge">
+                    <span>🇧🇷</span>
+                    <span>100% Brasileiro</span>
+                </div>
+                <div class="trust-badge">
+                    <span>⭐</span>
+                    <span>4.9/5 Estrelas</span>
+                </div>
+            </div>
+            
+            <h1>Barbeiros Dominando a Cidade Maravilhosa 🏖️</h1>
+            <p class="hero-subtitle">O sistema de agendamento criado especialmente para barbeiros cariocas. Aceita PIX, cartão e dinheiro. Na moral, sem caozada!</p>
+            
+            <div class="live-counter">
+                🔴 238 barbeiros criando sites agora mesmo
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+                <a href="https://converso.pro/auth" class="cta-button">Crie Seu Site em 3 Minutos - GRÁTIS</a>
+            </div>
+            
+            <p style="font-size: 0.9rem; opacity: 0.9;">
+                ⏰ Promoção Rio de Janeiro: 10 dias grátis + 50% desconto no primeiro mês
+            </p>
+        </div>
+    </section>
+    
+    <!-- Problems Section -->
+    <section class="problems">
+        <div class="container">
+            <h2>Tá perdendo dinheiro todo dia, parceiro? 💸</h2>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-emoji">😤</div>
+                    <div class="problem-title">Barbeiro de Copacabana perdeu 40 clientes mês passado</div>
+                    <p>Sem sistema de lembrete, o pessoal simplesmente esquece do horário marcado.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-emoji">📱</div>
+                    <div class="problem-title">João ainda usa caderninho em 2025</div>
+                    <p>Enquanto a concorrência aceita agendamento 24h pelo WhatsApp e Instagram.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-emoji">💰</div>
+                    <div class="problem-title">Barbearia Top perdeu R$ 4.000 em furados</div>
+                    <p>Cliente marca e não aparece. Sem PIX antecipado, você perde tempo e dinheiro.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-emoji">🔥</div>
+                    <div class="problem-title">As franquias grandes tão dominando</div>
+                    <p>Elas têm app, site, sistema... E você? Só o talento não basta mais, patrão!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Locations Section -->
+    <section class="locations">
+        <div class="container">
+            <h2>Dominando o Rio de Janeiro e Região 📍</h2>
+            <p style="text-align: center; color: #636e72; margin-bottom: 3rem;">
+                De Copacabana ao Centro, de Ipanema à Barra da Tijuca
+            </p>
+            
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-name">Copacabana</div>
+                    <div class="location-count">623</div>
+                    <div class="location-growth">+28 este mês</div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-name">Ipanema</div>
+                    <div class="location-count">456</div>
+                    <div class="location-growth">+21 este mês</div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-name">Centro</div>
+                    <div class="location-count">743</div>
+                    <div class="location-growth">+38 este mês</div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-name">Barra da Tijuca</div>
+                    <div class="location-count">512</div>
+                    <div class="location-growth">+25 este mês</div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-name">Botafogo</div>
+                    <div class="location-count">389</div>
+                    <div class="location-growth">+17 este mês</div>
+                </div>
+                
+                <div class="location-card">
+                    <div class="location-name">Tijuca</div>
+                    <div class="location-count">421</div>
+                    <div class="location-growth">+22 este mês</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="container">
+            <h2>Eles também duvidavam... até ver isso 📊</h2>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-number">8.500</div>
+                    <div class="metric-label">Barbeiros no Ceará</div>
+                    <div class="metric-growth">+37 essa semana</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-number">R$ 4.2M</div>
+                    <div class="metric-label">Em cortes e serviços</div>
+                    <div class="metric-growth">+R$ 287K este mês</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-number">89K+</div>
+                    <div class="metric-label">Clientes atendidos</div>
+                    <div class="metric-growth">4.9★ avaliação</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-number">94.7%</div>
+                    <div class="metric-label">Continuam após teste</div>
+                    <div class="metric-growth">30 dias garantia</div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="font-size: 1.2rem; color: #2d3436;">
+                    <strong>A maior comunidade de barbeiros do Nordeste</strong>
+                </p>
+                <p style="margin-top: 1rem;">
+                    ☀️ Terra do Sol, terra de oportunidades ☀️
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Barbeiros cearenses arretados de bom! 🏆</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-badge">TOP FATURAMENTO</div>
+                    <p class="testimonial-quote">"Parça, o bagulho é da hora! Triplicou o movimento, aceito PIX antecipado e acabou a furada!"</p>
+                    <div class="testimonial-author">Rodrigo Silva</div>
+                    <div class="testimonial-business">Barbearia Carioca - Copacabana</div>
+                    <div class="testimonial-metric">De R$ 8K para R$ 24K/mês</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-badge">⭐ DESTAQUE</div>
+                    <p class="testimonial-quote">"Sistema sinistro! Cliente agenda online, paga no PIX e eu foco só no corte bolado."</p>
+                    <div class="testimonial-author">Bruno Oliveira</div>
+                    <div class="testimonial-business">Barber Zone - Ipanema</div>
+                    <div class="testimonial-metric">+180% mais clientes</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-badge">🔥 VIRAL</div>
+                    <p class="testimonial-quote">"Botei o link na bio do Insta e explodiu! De 3K pra 12K seguidores em 2 meses!"</p>
+                    <div class="testimonial-author">Felipe Costa</div>
+                    <div class="testimonial-business">RJ Barber Style - Barra</div>
+                    <div class="testimonial-metric">200+ agendamentos do Insta</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Invista no seu negócio (ou continue perdendo dinheiro) 💰</h2>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-name">Plano Básico</div>
+                    <div class="pricing-price">GRÁTIS</div>
+                    <div class="pricing-period">Para começar</div>
+                    <ul class="pricing-features">
+                        <li>Até 50 agendamentos/mês</li>
+                        <li>Site profissional</li>
+                        <li>Calendário online</li>
+                        <li>Gestão de clientes</li>
+                        <li>100% em português</li>
+                    </ul>
+                    <a href="https://converso.pro/auth" class="neumorphic-button" style="display: inline-block; text-decoration: none; text-align: center;">Começar Agora</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-popular">MAIS ESCOLHIDO</div>
+                    <div class="pricing-name">Plano Plus</div>
+                    <div class="pricing-price">R$ 88</div>
+                    <div class="pricing-period">por mês</div>
+                    <ul class="pricing-features">
+                        <li>Até 500 agendamentos/mês</li>
+                        <li>WhatsApp integrado</li>
+                        <li>Lembretes automáticos</li>
+                        <li>Aceita PIX antecipado</li>
+                        <li>Instagram booking</li>
+                        <li>Relatórios completos</li>
+                        <li>Suporte prioritário</li>
+                    </ul>
+                    <a href="https://converso.pro/auth" class="neumorphic-button" style="display: inline-block; text-decoration: none; text-align: center;">7 Dias Grátis</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-name">Plano Pro</div>
+                    <div class="pricing-price">R$ 288</div>
+                    <div class="pricing-period">por mês</div>
+                    <ul class="pricing-features">
+                        <li>Agendamentos ILIMITADOS</li>
+                        <li>Múltiplos barbeiros</li>
+                        <li>Sistema de fidelidade</li>
+                        <li>Email marketing</li>
+                        <li>Seu próprio domínio</li>
+                        <li>API completa</li>
+                        <li>Suporte VIP 24/7</li>
+                    </ul>
+                    <a href="https://converso.pro/auth" class="neumorphic-button" style="display: inline-block; text-decoration: none; text-align: center;">Teste 14 Dias</a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.1rem; color: #2d3436;">
+                    💡 <strong>Comparação:</strong> Outros sistemas cobram R$ 400+/mês e nem aceitam PIX.
+                </p>
+                <p style="margin-top: 1rem; color: #e74c3c; font-weight: bold;">
+                    Nós: R$ 88/mês com tudo incluído. 100% brasileiro, aceita PIX!
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Steps Section -->
+    <section class="steps">
+        <div class="container">
+            <h2>Mais fácil que tomar um cafezinho ☕</h2>
+            <p style="text-align: center; color: #636e72; margin-bottom: 3rem;">
+                Sério mesmo, em 3 minutos tu tá online
+            </p>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Escolhe teu nome</div>
+                    <p class="step-description">
+                        Digite: sua-barbearia<br>
+                        Seu site: goconverso.com/sua-barbearia<br>
+                        <strong>Exemplo:</strong><br>
+                        goconverso.com/barber-fortaleza
+                    </p>
+                    <div class="step-time">⏱️ 30 segundos</div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Personaliza tudo</div>
+                    <p class="step-description">
+                        Coloca teu logo,<br>
+                        escolhe as cores do Ceará,<br>
+                        adiciona serviços e preços,<br>
+                        configura horários
+                    </p>
+                    <div class="step-time">⏱️ 2 minutos</div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Começa a faturar</div>
+                    <p class="step-description">
+                        Compartilha no:<br>
+                        WhatsApp • Instagram<br>
+                        Facebook • Google<br>
+                        Status • Stories
+                    </p>
+                    <div class="step-time">⏱️ Na hora!</div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem; background: white; padding: 2rem; border-radius: 20px;">
+                <p style="font-size: 1.3rem; color: #2d3436;">
+                    🚀 <strong>Tempo total: Menos de 3 minutos</strong>
+                </p>
+                <p style="margin-top: 1rem; color: #636e72;">
+                    (Agências cobram R$ 5.000+ e demoram 1 mês)
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cultural Section -->
+    <section class="cultural">
+        <div class="container">
+            <h2>Feito por cearenses, para cearenses 🌴</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="neumorphic-card">
+                    <h3 style="color: #3B82F6; margin-bottom: 1rem;">💰 Aceita tudo</h3>
+                    <p>PIX na hora, cartão, dinheiro, fiado pro amigo. Tu decide como receber, mah!</p>
+                </div>
+                
+                <div class="neumorphic-card">
+                    <h3 style="color: #3B82F6; margin-bottom: 1rem;">📱 WhatsApp direto</h3>
+                    <p>Cliente agenda pelo zap do jeito que já tá acostumado. Sem complicação.</p>
+                </div>
+                
+                <div class="neumorphic-card">
+                    <h3 style="color: #3B82F6; margin-bottom: 1rem;">☀️ Horário flexível</h3>
+                    <p>Abre cedo por causa do sol? Fecha tarde? Configura do teu jeito, rapaz!</p>
+                </div>
+                
+                <div class="neumorphic-card">
+                    <h3 style="color: #3B82F6; margin-bottom: 1rem;">🏖️ Modo praia</h3>
+                    <p>Vai pra praia no domingo? Bloqueia o dia no sistema. Simples assim!</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.2rem; color: #2d3436;">
+                    <strong>Sistema 100% adaptado à realidade nordestina</strong>
+                </p>
+                <p style="margin-top: 1rem; color: #636e72;">
+                    Entendemos seu jeito de trabalhar e resolvemos seus problemas de verdade
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Junte-se a 8.500 barbeiros que mudaram o jogo 🎯</h2>
+            
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Agendamento online</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">-87%</div>
+                    <div class="stat-label">Menos furados</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">+150%</div>
+                    <div class="stat-label">Mais faturamento</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">R$ 0</div>
+                    <div class="stat-label">Para começar</div>
+                </div>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 20px; margin-bottom: 2rem;">
+                <p style="font-size: 1.2rem; margin-bottom: 1rem;">
+                    "Comecei há 3 meses. Já abri a segunda unidade graças ao CONVERSO. É massa demais!"
+                </p>
+                <p style="opacity: 0.9;">— Carlos Mendes, Barbearia Elite Aldeota</p>
+            </div>
+            
+            <a href="https://converso.pro/auth" class="cta-button" style="font-size: 1.5rem; padding: 1.5rem 4rem;">
+                Crie Sua História de Sucesso - GRÁTIS
+            </a>
+            
+            <p style="margin-top: 2rem; opacity: 0.9;">
+                🎁 Oferta limitada: 7 dias grátis + 50% desconto primeiro mês<br>
+                ⚡ 67 barbeiros se cadastrando agora mesmo no Rio de Janeiro
+            </p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content" style="max-width: 1200px; margin: 0 auto; padding: 3rem 1rem;">
+            <!-- Logo e descrição -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem;">
+                    <span style="background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">CONVERSO</span>
+                </h3>
+                <p style="opacity: 0.8; font-size: 0.9rem;">A plataforma #1 para barbeiros no Brasil</p>
+            </div>
+            
+            <!-- Links organizados -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; margin-bottom: 2rem; text-align: center;">
+                <!-- Produto -->
+                <div>
+                    <h4 style="font-weight: bold; margin-bottom: 0.75rem; color: #10B981;">Produto</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="/auth?mode=signup" style="color: inherit; opacity: 0.8; text-decoration: none; hover:opacity: 1;">Criar Conta</a>
+                        <a href="/auth" style="color: inherit; opacity: 0.8; text-decoration: none;">Entrar</a>
+                        <a href="/pricing" style="color: inherit; opacity: 0.8; text-decoration: none;">Preços</a>
+                        <a href="/templates" style="color: inherit; opacity: 0.8; text-decoration: none;">Modelos</a>
+                    </div>
+                </div>
+                
+                <!-- Recursos -->
+                <div>
+                    <h4 style="font-weight: bold; margin-bottom: 0.75rem; color: #10B981;">Recursos</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="https://blog.converso.pro" style="color: inherit; opacity: 0.8; text-decoration: none;">Blog</a>
+                        <a href="/academy" style="color: inherit; opacity: 0.8; text-decoration: none;">Academia</a>
+                        <a href="/faq" style="color: inherit; opacity: 0.8; text-decoration: none;">Perguntas Frequentes</a>
+                        <a href="https://seo.converso.pro" style="color: inherit; opacity: 0.8; text-decoration: none;">Guias SEO</a>
+                    </div>
+                </div>
+                
+                <!-- Comparar -->
+                <div>
+                    <h4 style="font-weight: bold; margin-bottom: 0.75rem; color: #10B981;">Comparar</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="/compare/converso-vs-calendly" style="color: inherit; opacity: 0.8; text-decoration: none;">vs Calendly</a>
+                        <a href="/compare/converso-vs-acuity" style="color: inherit; opacity: 0.8; text-decoration: none;">vs Acuity</a>
+                        <a href="/compare/converso-vs-square" style="color: inherit; opacity: 0.8; text-decoration: none;">vs Square</a>
+                        <a href="/compare/converso-vs-wix" style="color: inherit; opacity: 0.8; text-decoration: none;">vs Wix</a>
+                    </div>
+                </div>
+                
+                <!-- Legal -->
+                <div>
+                    <h4 style="font-weight: bold; margin-bottom: 0.75rem; color: #10B981;">Legal</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="/terms" style="color: inherit; opacity: 0.8; text-decoration: none;">Termos de Uso</a>
+                        <a href="/privacy" style="color: inherit; opacity: 0.8; text-decoration: none;">Política de Privacidade</a>
+                        <a href="/cookies" style="color: inherit; opacity: 0.8; text-decoration: none;">Política de Cookies</a>
+                        <a href="javascript:void(0)" onclick="document.getElementById('chatButton').click();" style="color: inherit; opacity: 0.8; text-decoration: none; cursor: pointer;">Contato</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div style="text-align: center; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                <p style="opacity: 0.6; font-size: 0.875rem;">
+                    © 2025 CONVERSO. Todos os direitos reservados.<br>
+                    Feito com ❤️ para barbeiros cariocas
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Chat Widget Button -->
+    <div id="chatButton" style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    ">
+        <div style="
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+        " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <svg viewBox="0 0 24 24" style="width: 32px; height: 32px; fill: white;">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Chat Widget Iframe -->
+    <iframe id="chatWidget" src="/widget-chat?lang=pt-BR" style="
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        width: 320px;
+        height: 600px;
+        border: none;
+        border-radius: 16px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        display: none;
+        background: white;
+        transform: scale(0);
+        opacity: 0;
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    "></iframe>
+
+    <!-- Supabase Client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <!-- Scripts -->
+    <script>
+        // Initialize Supabase
+        const { createClient } = supabase;
+        const supabaseClient = createClient(
+            'https://osuozhvpecszacvnqwky.supabase.co',
+            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9zdW96aHZwZWNzemFjdm5xd2t5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA1NDY0NjgsImV4cCI6MjA2NjEyMjQ2OH0.ZdVskwk3C56ZDvQgZwyGyEyywCBniUHmEmVBnP5wgsY'
+        );
+
+        // Fetch and update hero video
+        async function loadHeroVideo() {
+            try {
+                const { data, error } = await supabaseClient
+                    .from('landing_media')
+                    .select('compressed_url')
+                    .eq('section', 'hero')
+                    .eq('status', 'active')
+                    .single();
+
+                if (error) {
+                    console.log('No hero video found, using fallback gradient');
+                    return;
+                }
+
+                if (data && data.compressed_url) {
+                    const video = document.querySelector('.hero-video');
+                    const source = video.querySelector('source[type="video/mp4"]');
+                    
+                    if (source) {
+                        source.src = data.compressed_url;
+                        video.load(); // Reload video with new source
+                    }
+                }
+            } catch (error) {
+                console.log('Error fetching hero video:', error);
+                // Keep gradient fallback
+            }
+        }
+
+        // Load video when page loads
+        document.addEventListener('DOMContentLoaded', loadHeroVideo);
+
+        // Animate counter
+        const counter = document.querySelector('.live-counter');
+        if (counter) {
+            setInterval(() => {
+                const min = 120;
+                const max = 140;
+                const num = Math.floor(Math.random() * (max - min + 1)) + min;
+                counter.innerHTML = `🔴 ${num} barbeiros criando sites agora mesmo`;
+            }, 5000);
+        }
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                }
+            });
+            
+            // Close menu when clicking on links
+            mobileMenu.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        }
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                // Skip if href is just '#' or empty
+                if (!href || href === '#') return;
+                
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Chat Widget Control System
+        const chatWidget = document.getElementById('chatWidget');
+        const chatButton = document.getElementById('chatButton');
+        let isChatOpen = false;
+
+        // Toggle chat widget visibility
+        function toggleChatWidget() {
+            if (!chatWidget || !chatButton) return;
+
+            if (isChatOpen) {
+                // Close chat
+                chatWidget.style.transform = 'scale(0)';
+                chatWidget.style.opacity = '0';
+                setTimeout(() => {
+                    chatWidget.style.display = 'none';
+                }, 300);
+                chatButton.style.display = 'block';
+                isChatOpen = false;
+            } else {
+                // Open chat
+                chatButton.style.display = 'none';
+                chatWidget.style.display = 'block';
+                setTimeout(() => {
+                    chatWidget.style.transform = 'scale(1)';
+                    chatWidget.style.opacity = '1';
+                }, 10);
+                isChatOpen = true;
+            }
+        }
+
+        // Add click event to chat button
+        if (chatButton) {
+            chatButton.addEventListener('click', toggleChatWidget);
+        }
+
+        // Listen for close events from within the iframe
+        window.addEventListener('message', function(event) {
+            if (event.data === 'closeChatWidget') {
+                toggleChatWidget();
+            }
+        });    </script>
+</body>
+</html>

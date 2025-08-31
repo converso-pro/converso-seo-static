@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste Header GoCONVERSO</title>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .test-header { 
+            background: #f0f0f0; 
+            padding: 20px; 
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+        .test-logo { 
+            font-size: 28px; 
+            font-weight: 700; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+        .info {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .status { 
+            padding: 10px; 
+            margin: 10px 0; 
+            border-radius: 5px;
+        }
+        .success { background: #d4edda; color: #155724; }
+        .warning { background: #fff3cd; color: #856404; }
+        .error { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <div class="test-header">
+        <div class="test-logo">GoCONVERSO</div>
+        <p style="margin-top: 10px; color: #666;">Esta é a header de teste</p>
+    </div>
+    
+    <div class="info">
+        <h1>Teste da Header Universal</h1>
+        
+        <div class="status success">
+             Se você vê "GoCONVERSO" com gradiente roxo acima, o navegador está funcionando corretamente.
+        </div>
+        
+        <h2>Status dos arquivos:</h2>
+        <ul>
+            <li><a href="/biblioteca.html">biblioteca.html</a> - deve mostrar header com GoCONVERSO</li>
+            <li><a href="/library.html">library.html</a> - deve mostrar header com GoCONVERSO</li>
+            <li><a href="/libreria.html">libreria.html</a> - deve mostrar header com GoCONVERSO</li>
+        </ul>
+        
+        <div class="status warning">
+              Se você NÃO vê a header correta nos links acima, mas vê nesta página de teste, então há um problema com o HTML/CSS dos arquivos principais.
+        </div>
+        
+        <h2>Possíveis soluções:</h2>
+        <ol>
+            <li>Limpar cache do navegador (Cmd+Shift+R no Mac)</li>
+            <li>Testar em aba anônima/privada</li>
+            <li>Verificar console do navegador para erros JavaScript</li>
+        </ol>
+    </div>
+</body>
+</html>

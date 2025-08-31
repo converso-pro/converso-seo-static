@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Header Preview - SEO Library</title>
+    
+    <!-- Include the header CSS -->
+    <style>
+        /* Include header-universal.css content here for preview */
+        /* Universal Header Styles for SEO Library */
+/* Based on IndexV2/UniversalPublicHeader design */
+
+/* Reset and Base Styles */
+.universal-header * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Container */
+.universal-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.universal-header.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Logo Styles */
+.header-logo {
+  flex-shrink: 0;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.logo-link:hover {
+  transform: scale(1.05);
+}
+
+.logo-gradient {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+/* Navigation Styles */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.desktop-nav {
+  display: flex;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #4a5568;
+  transition: color 0.2s;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.dropdown-trigger:hover {
+  color: #1a202c;
+}
+
+.chevron-icon {
+  transition: transform 0.2s;
+}
+
+.dropdown:hover .chevron-icon,
+.dropdown.active .chevron-icon {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0.5rem);
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  padding: 0.5rem;
+  min-width: 320px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Apps Grid */
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+  min-width: 500px;
+}
+
+.app-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.app-item:hover {
+  background: #f7fafc;
+}
+
+.app-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.app-icon .icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+/* Gradient backgrounds for app icons */
+.purple-gradient { background: linear-gradient(135deg, #667eea, #764ba2); }
+.orange-gradient { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.amber-gradient { background: linear-gradient(135deg, #ffd89b, #f9a826); }
+.yellow-gradient { background: linear-gradient(135deg, #fcff9e, #ffd700); }
+.rose-gradient { background: linear-gradient(135deg, #ff6fd8, #ff3b7d); }
+.emerald-gradient { background: linear-gradient(135deg, #00c9ff, #00d084); }
+.green-gradient { background: linear-gradient(135deg, #a8ff78, #78ffd6); }
+.indigo-gradient { background: linear-gradient(135deg, #667eea, #4c63d2); }
+.blue-gradient { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+
+.app-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1a202c;
+  margin-bottom: 0.125rem;
+}
+
+.app-desc {
+  font-size: 0.75rem;
+  color: #718096;
+  line-height: 1.2;
+}
+
+.app-badge {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.app-badge.popular {
+  background: #f0f4ff;
+  color: #5a67d8;
+}
+
+/* Resources Menu */
+.resources-menu {
+  min-width: 280px;
+}
+
+.resource-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.resource-item:hover {
+  background: #f7fafc;
+}
+
+.resource-item.active {
+  background: #f0f4ff;
+}
+
+.resource-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.academy-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.blog-icon { background: linear-gradient(135deg, #a8ff78, #78ffd6); }
+.library-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+.faq-icon { background: linear-gradient(135deg, #ffd89b, #f9a826); }
+
+.resource-icon .icon {
+  width: 18px;
+  height: 18px;
+  color: white;
+}
+
+.resource-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.resource-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1a202c;
+  margin-bottom: 0.125rem;
+}
+
+.resource-desc {
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+.resource-badge {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.resource-badge.new {
+  background: #fef5e7;
+  color: #f39c12;
+}
+
+/* Direct Navigation Links */
+.nav-link {
+  padding: 0.5rem 1rem;
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #1a202c;
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+/* Language Switcher */
+.language-switcher {
+  position: relative;
+}
+
+.lang-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #4a5568;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.lang-trigger:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+}
+
+.lang-trigger .flag {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.lang-trigger .lang-name {
+  font-weight: 500;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  min-width: 150px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.language-switcher:hover .lang-dropdown,
+.language-switcher.active .lang-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  color: #4a5568;
+  transition: background 0.2s;
+  font-size: 0.9rem;
+}
+
+.lang-option:hover {
+  background: #f7fafc;
+  color: #1a202c;
+}
+
+.lang-option[data-lang="en"],
+.lang-option.active {
+  background: #f0f4ff;
+  color: #5a67d8;
+  font-weight: 500;
+}
+
+.lang-option .flag {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* CTA Buttons */
+.btn-login {
+  padding: 0.5rem 1.25rem;
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.btn-login:hover {
+  color: #1a202c;
+}
+
+.btn-start {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-start:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-start .arrow-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+
+.btn-start:hover .arrow-icon {
+  transform: translateX(2px);
+}
+
+/* Mobile Menu Toggle */
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger-line {
+  width: 24px;
+  height: 2px;
+  background: #4a5568;
+  transition: all 0.3s;
+  transform-origin: center;
+}
+
+.mobile-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translateY(6px);
+}
+
+.mobile-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  transform: translateY(-100%);
+}
+
+.mobile-menu[data-state="open"] {
+  transform: translateY(0);
+}
+
+.mobile-menu-content {
+  padding: 1rem;
+}
+
+.mobile-section {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mobile-section-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a202c;
+  text-align: left;
+}
+
+.mobile-section-toggle .chevron-icon {
+  transition: transform 0.2s;
+}
+
+.mobile-section.open .chevron-icon {
+  transform: rotate(90deg);
+}
+
+.mobile-section-content {
+  display: none;
+  padding: 0.5rem 0;
+}
+
+.mobile-section.open .mobile-section-content {
+  display: block;
+}
+
+.mobile-app-link,
+.mobile-resource-link,
+.mobile-nav-link {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.mobile-app-link:hover,
+.mobile-resource-link:hover,
+.mobile-nav-link:hover {
+  background: #f7fafc;
+  color: #1a202c;
+}
+
+.mobile-resource-link.active {
+  background: #f0f4ff;
+  color: #5a67d8;
+  font-weight: 500;
+}
+
+/* Mobile Language Selector */
+.mobile-language-selector {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.mobile-lang-label {
+  font-size: 0.875rem;
+  color: #718096;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.mobile-lang-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mobile-lang-option {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.mobile-lang-option:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+}
+
+.mobile-lang-option[data-lang="en"],
+.mobile-lang-option.active {
+  background: #f0f4ff;
+  border-color: #667eea;
+  color: #5a67d8;
+  font-weight: 500;
+}
+
+.mobile-lang-option .flag {
+  font-size: 1.5rem;
+}
+
+/* Mobile CTAs */
+.mobile-cta-section {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.mobile-btn-login,
+.mobile-btn-start {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+}
+
+.mobile-btn-login {
+  background: #f7fafc;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.mobile-btn-login:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+}
+
+.mobile-btn-start {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.mobile-btn-start:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+  
+  .apps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  
+  .header-actions {
+    display: none;
+  }
+  
+  .mobile-toggle {
+    display: flex;
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
+  
+  .header-container {
+    padding: 0.75rem 1rem;
+  }
+  
+  .logo-gradient {
+    font-size: 1.25rem;
+  }
+}
+
+/* Accessibility */
+.universal-header *:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* Smooth scrolling for the page when header is sticky */
+html {
+  scroll-padding-top: 70px;
+}
+
+/* Print styles */
+@media print {
+  .universal-header {
+    position: static;
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+  }
+  
+  .dropdown-content,
+  .lang-dropdown,
+  .mobile-menu,
+  .mobile-toggle {
+    display: none !important;
+  }
+}
+    </style>
+    
+    <!-- Page styles for demo -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f7fafc;
+        }
+        
+        .demo-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .demo-section {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        h1 {
+            color: #1a202c;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            color: #2d3748;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .preview-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .preview-info h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+        
+        .preview-info ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .test-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .test-link {
+            padding: 0.5rem 1rem;
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: #4a5568;
+            transition: all 0.2s;
+        }
+        
+        .test-link:hover {
+            background: #edf2f7;
+            border-color: #cbd5e0;
+            color: #1a202c;
+        }
+        
+        .scroll-area {
+            height: 800px;
+            background: linear-gradient(to bottom, #f7fafc 0%, #e2e8f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #718096;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with English placeholders filled in -->
+    <header class="universal-header" data-lang="en">
+      <div class="header-container">
+        <!-- Logo Section -->
+        <div class="header-logo">
+          <a href="https://goconverso.com" class="logo-link" aria-label="Go to GoConverso homepage">
+            <span class="logo-gradient">GoCONVERSO</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="header-nav desktop-nav" aria-label="Main navigation">
+          <!-- Apps Dropdown -->
+          <div class="dropdown" data-dropdown="apps">
+            <button class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              <span data-i18n="apps">Apps</span>
+              <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-content apps-grid" role="menu">
+              <!-- Digital Queue -->
+              <a href="https://goconverso.com/apps/fila-digital" class="app-item" role="menuitem">
+                <div class="app-icon purple-gradient">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="app-info">
+                  <div class="app-name" data-i18n="digitalQueue">Digital Queue</div>
+                  <div class="app-desc" data-i18n="digitalQueueDesc">Smart waitlist management</div>
+                  <div class="app-badge popular" data-i18n="popular">Popular</div>
+                </div>
+              </a>
+
+              <!-- Combo Mágico -->
+              <a href="https://goconverso.com/apps/combo-magico" class="app-item" role="menuitem">
+                <div class="app-icon orange-gradient">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <div class="app-info">
+                  <div class="app-name" data-i18n="comboMagico">Magic Combo</div>
+                  <div class="app-desc" data-i18n="comboMagicoDesc">Boost sales with combos</div>
+                </div>
+              </a>
+
+              <!-- Loyalty Program -->
+              <a href="https://goconverso.com/apps/programa-fidelidade" class="app-item" role="menuitem">
+                <div class="app-icon amber-gradient">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 2L15 9L23 10L17.5 15L19 23L12 19L5 23L6.5 15L1 10L9 9L12 2Z"/>
+                  </svg>
+                </div>
+                <div class="app-info">
+                  <div class="app-name" data-i18n="loyaltyProgram">Loyalty Program</div>
+                  <div class="app-desc" data-i18n="loyaltyDesc">Reward your customers</div>
+                  <div class="app-badge popular" data-i18n="popular">Popular</div>
+                </div>
+              </a>
+
+              <!-- Reviews -->
+              <a href="https://goconverso.com/apps/reviews" class="app-item" role="menuitem">
+                <div class="app-icon yellow-gradient">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="app-info">
+                  <div class="app-name" data-i18n="reviews">Reviews</div>
+                  <div class="app-desc" data-i18n="reviewsDesc">Collect customer feedback</div>
+                </div>
+              </a>
+
+              <!-- Email Marketing -->
+              <a href="https://goconverso.com/apps/email-marketing" class="app-item" role="menuitem">
+                <div class="app-icon rose-gradient">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="app-info">
+                  <div class="app-name" data-i18n="emailMarketing">Email Marketing</div>
+                  <div class="app-desc" data-i18n="emailDesc">Automated campaigns</div>
+                  <div class="app-badge popular" data-i18n="popular">Popular</div>
+                </div>
+              </a>
+
+              <!-- E-commerce -->
+              <a href="https://goconverso.com/apps/ecommerce" class="app-item" role="menuitem">
+                <div class="app-icon emerald-gradient">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </div>
+                <div class="app-info">
+                  <div class="app-name" data-i18n="ecommerce">E-commerce</div>
+                  <div class="app-desc" data-i18n="ecommerceDesc">Sell products online</div>
+                </div>
+              </a>
+
+              <!-- Blog -->
+              <a href="https://goconverso.com/apps/blog" class="app-item" role="menuitem">
+                <div class="app-icon green-gradient">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <div class="app-info">
+                  <div class="app-name" data-i18n="blog">Blog</div>
+                  <div class="app-desc" data-i18n="blogDesc">Content marketing</div>
+                </div>
+              </a>
+
+              <!-- Digital Business Card -->
+              <a href="https://goconverso.com/apps/cartao-digital" class="app-item" role="menuitem">
+                <div class="app-icon indigo-gradient">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                  </svg>
+                </div>
+                <div class="app-info">
+                  <div class="app-name" data-i18n="digitalCard">Digital Card</div>
+                  <div class="app-desc" data-i18n="cardDesc">Professional presence</div>
+                </div>
+              </a>
+
+              <!-- Service Orders -->
+              <a href="https://goconverso.com/apps/ordens-servico" class="app-item" role="menuitem">
+                <div class="app-icon blue-gradient">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                  </svg>
+                </div>
+                <div class="app-info">
+                  <div class="app-name" data-i18n="serviceOrders">Service Orders</div>
+                  <div class="app-desc" data-i18n="ordersDesc">Manage repairs & services</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Resources Dropdown -->
+          <div class="dropdown" data-dropdown="resources">
+            <button class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              <span data-i18n="resources">Resources</span>
+              <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-content resources-menu" role="menu">
+              <!-- Academy -->
+              <a href="https://goconverso.com/academy" class="resource-item" role="menuitem">
+                <div class="resource-icon academy-icon">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div class="resource-info">
+                  <div class="resource-name" data-i18n="academy">Academy</div>
+                  <div class="resource-desc" data-i18n="academyDesc">Learn & grow your business</div>
+                  <span class="resource-badge new" data-i18n="new">New</span>
+                </div>
+              </a>
+
+              <!-- Blog -->
+              <a href="https://goconverso.com/blog" class="resource-item" role="menuitem">
+                <div class="resource-icon blog-icon">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+                <div class="resource-info">
+                  <div class="resource-name" data-i18n="blog">Blog</div>
+                  <div class="resource-desc" data-i18n="blogResourceDesc">Tips and insights</div>
+                </div>
+              </a>
+
+              <!-- Library (Current Page) -->
+              <a href="/library" class="resource-item active" role="menuitem" aria-current="page">
+                <div class="resource-icon library-icon">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    <path d="M12 6v8"></path>
+                    <path d="M8 10h8"></path>
+                  </svg>
+                </div>
+                <div class="resource-info">
+                  <div class="resource-name">Library</div>
+                  <div class="resource-desc" data-i18n="libraryDesc">Articles and guides</div>
+                </div>
+              </a>
+
+              <!-- FAQ -->
+              <a href="https://goconverso.com/faq" class="resource-item" role="menuitem">
+                <div class="resource-icon faq-icon">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                </div>
+                <div class="resource-info">
+                  <div class="resource-name" data-i18n="faq">FAQ</div>
+                  <div class="resource-desc" data-i18n="faqDesc">Common questions</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Direct Links -->
+          <a href="https://goconverso.com/templates" class="nav-link" data-i18n="templates">Templates</a>
+          <a href="https://goconverso.com/pricing" class="nav-link" data-i18n="pricing">Pricing</a>
+        </nav>
+
+        <!-- Right Section -->
+        <div class="header-actions">
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <button class="lang-trigger" aria-label="Change language" aria-expanded="false" aria-haspopup="true">
+              <span class="flag">🇺🇸</span>
+              <span class="lang-name">English</span>
+              <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="lang-dropdown" role="menu">
+              <a href="/library" class="lang-option active" data-lang="en" role="menuitem">
+                <span class="flag">🇺🇸</span>
+                <span>English</span>
+              </a>
+              <a href="/libreria" class="lang-option" data-lang="es" role="menuitem">
+                <span class="flag">🇪🇸</span>
+                <span>Español</span>
+              </a>
+              <a href="/biblioteca" class="lang-option" data-lang="pt" role="menuitem">
+                <span class="flag">🇧🇷</span>
+                <span>Português</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <a href="https://app.converso.pro/auth" class="btn-login" data-i18n="login">Login</a>
+          <a href="https://app.converso.pro/auth?signup=true" class="btn-start" data-i18n="startFree">
+            <span>Start Free</span>
+            <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav class="mobile-menu" data-state="closed" aria-label="Mobile navigation">
+        <div class="mobile-menu-content">
+          <!-- Mobile content here (simplified for preview) -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- Demo Content -->
+    <div class="demo-content">
+        <div class="preview-info">
+            <h3>🎨 Universal Header Preview - SEO Library</h3>
+            <ul>
+                <li>✅ Logo GoCONVERSO with gradient effect</li>
+                <li>✅ Apps dropdown with 9 main apps</li>
+                <li>✅ Resources dropdown (Academy, Blog, Library, FAQ)</li>
+                <li>✅ Language switcher for EN/ES/PT</li>
+                <li>✅ Login and Start Free CTAs</li>
+                <li>✅ Mobile responsive menu</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h1>SEO Library - Universal Header Test</h1>
+            <p>This is a preview of the universal header that will be applied to all 410+ pages in the SEO library.</p>
+            
+            <h2>✅ Features to Test</h2>
+            <ul>
+                <li><strong>Apps Dropdown:</strong> Hover over "Apps" to see all 9 applications</li>
+                <li><strong>Resources Dropdown:</strong> Hover over "Resources" to see Academy, Blog, Library (highlighted), and FAQ</li>
+                <li><strong>Language Switcher:</strong> Hover over the language selector to switch between EN/ES/PT</li>
+                <li><strong>Responsive Design:</strong> Resize browser window to see mobile menu</li>
+                <li><strong>Scroll Effects:</strong> Scroll down to see header background change</li>
+            </ul>
+
+            <h2>🌍 Language Versions</h2>
+            <div class="test-links">
+                <a href="?lang=en" class="test-link">🇺🇸 English - /library</a>
+                <a href="?lang=es" class="test-link">🇪🇸 Español - /libreria</a>
+                <a href="?lang=pt" class="test-link">🇧🇷 Português - /biblioteca</a>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>📱 Mobile Menu Test</h2>
+            <p>Resize your browser window to less than 768px wide to see the mobile menu hamburger icon appear.</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>🎯 Next Steps</h2>
+            <ol>
+                <li>Review the header design and functionality</li>
+                <li>Test all dropdowns and interactions</li>
+                <li>Verify mobile responsiveness</li>
+                <li>Once approved, run the apply script to add to all 410+ pages</li>
+            </ol>
+        </div>
+
+        <div class="scroll-area">
+            <p>↓ Scroll down to test sticky header behavior ↓</p>
+        </div>
+    </div>
+
+    <!-- Include the JavaScript -->
+    <script src="header-universal.js"></script>
+</body>
+</html>
