@@ -54,746 +54,176 @@
             line-height: 1.6;
         }
         
-        /* Universal Header Styles - Inline to avoid path issues */
-
-    /* Universal Header Styles - Inline to avoid path issues */
-    .universal-header * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .universal-header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    }
-    
-    .header-container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-    }
-    
-    .header-logo {
-      flex-shrink: 0;
-    }
-    
-    .logo-link {
-      text-decoration: none;
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-    
-    .logo-link:hover {
-      transform: scale(1.05);
-    }
-    
-    .logo-gradient {
-      font-size: 1.5rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      letter-spacing: -0.02em;
-    }
-    
-    .header-nav {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex: 1;
-    }
-    
-    .dropdown {
-      position: relative;
-    }
-    
-    .dropdown-trigger {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      font-size: 0.95rem;
-      color: #4a5568;
-      transition: color 0.2s;
-      font-family: inherit;
-      font-weight: 500;
-    }
-    
-    .dropdown-trigger:hover {
-      color: #1a202c;
-    }
-    
-    .chevron-icon {
-      transition: transform 0.2s;
-    }
-    
-    .dropdown[data-state="open"] .chevron-icon {
-      transform: rotate(180deg);
-    }
-    
-    .dropdown-content {
-      position: absolute;
-      top: calc(100% + 0.5rem);
-      left: 50%;
-      transform: translateX(-50%);
-      background: white;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.2s;
-      z-index: 100;
-    }
-    
-    .dropdown[data-state="open"] .dropdown-content {
-      opacity: 1;
-      visibility: visible;
-    }
-    
-    /* Apps Grid */
-    .apps-grid {
-      padding: 1rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.5rem;
-      width: 600px;
-    }
-    
-    .app-item {
-      display: flex;
-      gap: 0.75rem;
-      padding: 0.75rem;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    
-    .app-item:hover {
-      background: #f7fafc;
-    }
-    
-    .app-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    
-    .purple-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-    .orange-gradient { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-    .amber-gradient { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
-    .yellow-gradient { background: linear-gradient(135deg, #fddb92 0%, #d1fdff 100%); }
-    .rose-gradient { background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%); }
-    .emerald-gradient { background: linear-gradient(135deg, #0fc59b 0%, #0abf53 100%); }
-    .green-gradient { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
-    .indigo-gradient { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
-    .blue-gradient { background: linear-gradient(135deg, #667eea 0%, #00d2ff 100%); }
-    
-    .app-icon .icon {
-      color: white;
-    }
-    
-    .app-info {
-      flex: 1;
-      min-width: 0;
-    }
-    
-    .app-name {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #1a202c;
-      margin-bottom: 0.25rem;
-    }
-    
-    .app-desc {
-      font-size: 0.8rem;
-      color: #718096;
-      line-height: 1.3;
-    }
-    
-    .app-badge {
-      display: inline-block;
-      padding: 0.125rem 0.5rem;
-      border-radius: 9999px;
-      font-size: 0.7rem;
-      font-weight: 600;
-      margin-top: 0.25rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    
-    .app-badge.popular {
-      background: #fef3c7;
-      color: #d97706;
-    }
-    
-    /* Resources Menu */
-    .resources-menu {
-      padding: 1rem;
-      width: 320px;
-    }
-    
-    .resource-item {
-      display: flex;
-      gap: 1rem;
-      padding: 0.75rem;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    
-    .resource-item:hover {
-      background: #f7fafc;
-    }
-    
-    .resource-item.active {
-      background: #edf2f7;
-    }
-    
-    .resource-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      background: #f7fafc;
-    }
-    
-    .academy-icon { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-    .blog-icon { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-    .library-icon { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
-    .faq-icon { background: linear-gradient(135deg, #fddb92 0%, #d1fdff 100%); }
-    
-    .resource-icon .icon {
-      color: white;
-    }
-    
-    .resource-info {
-      flex: 1;
-    }
-    
-    .resource-name {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #1a202c;
-      margin-bottom: 0.25rem;
-    }
-    
-    .resource-desc {
-      font-size: 0.8rem;
-      color: #718096;
-    }
-    
-    .resource-badge {
-      display: inline-block;
-      padding: 0.125rem 0.5rem;
-      border-radius: 9999px;
-      font-size: 0.7rem;
-      font-weight: 600;
-      margin-left: 0.5rem;
-      text-transform: uppercase;
-    }
-    
-    .resource-badge.new {
-      background: #dbeafe;
-      color: #1e40af;
-    }
-    
-    /* Direct Links */
-    .nav-link {
-      padding: 0.5rem 1rem;
-      color: #4a5568;
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    
-    .nav-link:hover {
-      color: #1a202c;
-    }
-    
-    /* Header Actions */
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-    
-    /* Language Switcher */
-    .language-switcher {
-      position: relative;
-    }
-    
-    .lang-trigger {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 0.75rem;
-      background: #f7fafc;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      color: #4a5568;
-      transition: all 0.2s;
-      font-family: inherit;
-    }
-    
-    .lang-trigger:hover {
-      background: white;
-      border-color: rgba(0, 0, 0, 0.2);
-    }
-    
-    .flag {
-      font-size: 1.2rem;
-    }
-    
-    .lang-name {
-      font-weight: 500;
-    }
-    
-    .lang-dropdown {
-      position: absolute;
-      top: calc(100% + 0.5rem);
-      right: 0;
-      background: white;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.2s;
-      z-index: 100;
-      min-width: 160px;
-    }
-    
-    .language-switcher[data-state="open"] .lang-dropdown {
-      opacity: 1;
-      visibility: visible;
-    }
-    
-    .lang-option {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.75rem 1rem;
-      text-decoration: none;
-      color: #4a5568;
-      transition: background 0.2s;
-    }
-    
-    .lang-option:hover {
-      background: #f7fafc;
-    }
-    
-    .lang-option:first-child {
-      border-radius: 8px 8px 0 0;
-    }
-    
-    .lang-option:last-child {
-      border-radius: 0 0 8px 8px;
-    }
-    
-    /* CTA Buttons */
-    .btn-login {
-      padding: 0.5rem 1.25rem;
-      color: #4a5568;
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    
-    .btn-login:hover {
-      color: #1a202c;
-    }
-    
-    .btn-start {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.625rem 1.5rem;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 600;
-      border-radius: 8px;
-      transition: all 0.2s;
-    }
-    
-    .btn-start:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-    }
-    
-    .arrow-icon {
-      transition: transform 0.2s;
-    }
-    
-    .btn-start:hover .arrow-icon {
-      transform: translateX(2px);
-    }
-    
-    /* Mobile Toggle */
-    .mobile-toggle {
-      display: none;
-      flex-direction: column;
-      gap: 0.25rem;
-      padding: 0.5rem;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-    }
-    
-    .hamburger-line {
-      width: 24px;
-      height: 2px;
-      background: #4a5568;
-      transition: all 0.3s;
-    }
-    
-    .mobile-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
-      transform: rotate(45deg) translateY(8px);
-    }
-    
-    .mobile-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
-      opacity: 0;
-    }
-    
-    .mobile-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
-      transform: rotate(-45deg) translateY(-8px);
-    }
-    
-    /* Mobile Menu */
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background: white;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      max-height: calc(100vh - 60px);
-      overflow-y: auto;
-      transform: translateY(-100%);
-      transition: transform 0.3s;
-      z-index: 999;
-    }
-    
-    .mobile-menu[data-state="open"] {
-      transform: translateY(0);
-    }
-    
-    .mobile-menu-content {
-      padding: 1rem;
-    }
-    
-    .mobile-cta-section {
-      display: flex;
-      gap: 1rem;
-      padding: 1rem 0;
-    }
-    
-    .mobile-btn-login,
-    .mobile-btn-start {
-      flex: 1;
-      padding: 0.75rem;
-      text-align: center;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 8px;
-      transition: all 0.2s;
-    }
-    
-    .mobile-btn-login {
-      background: #f7fafc;
-      color: #4a5568;
-    }
-    
-    .mobile-btn-start {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-    }
-    
-    /* Responsive */
-    @media (max-width: 1024px) {
-      .header-container {
-        padding: 1rem;
-      }
-      
-      .desktop-nav {
-        display: none;
-      }
-      
-      .header-actions {
-        display: none;
-      }
-      
-      .mobile-toggle {
-        display: flex;
-      }
-      
-      .mobile-menu {
-        display: block;
-      }
-    }
+        /* Simplified Header Styles */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 16px 0;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: #555;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #667eea;
+        }
+        
+        .auth-buttons {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        
+        .btn-login {
+            text-decoration: none;
+            color: #555;
+            padding: 8px 20px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .btn-login:hover {
+            color: #667eea;
+        }
+        
+        .btn-cta {
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .btn-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        
+        .mobile-menu-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #333;
+            margin: 6px 0;
+            transition: 0.3s;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu, .auth-buttons {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .header-container {
+                padding: 0 16px;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                gap: 16px;
+            }
+            
+            .auth-buttons.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: calc(100% + 200px);
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 20px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+        }
     
     </style>
 </head>
 <body>
-    <!-- Universal Header -->
-    <header class="universal-header" data-lang="es">
-      <div class="header-container">
-        <!-- Logo Section -->
-        <div class="header-logo">
-          <a href="https://goconverso.com" class="logo-link" aria-label="Go to GoConverso homepage">
-            <span class="logo-gradient">GoCONVERSO</span>
-          </a>
-        </div>
-    
-        <!-- Desktop Navigation -->
-        <nav class="header-nav desktop-nav" aria-label="Main navigation">
-          <!-- Apps Dropdown -->
-          <div class="dropdown" data-dropdown="apps">
-            <button class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
-              <span>Apps</span>
-              <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <div class="dropdown-content apps-grid" role="menu">
-              <!-- Digital Queue -->
-              <a href="https://goconverso.com/apps/fila-digital" class="app-item" role="menuitem">
-                <div class="app-icon purple-gradient">
-                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                  </svg>
-                </div>
-                <div class="app-info">
-                  <div class="app-name">Fila Digital</div>
-                  <div class="app-desc">Gestión inteligente de filas</div>
-                  <div class="app-badge popular">Popular</div>
-                </div>
-              </a>
-              
-              <!-- Other apps... -->
+    <!-- Simplified Header -->
+    <header>
+        <div class="header-container">
+            <a href="https://goconverso.com" class="logo">GoCONVERSO</a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="https://goconverso.com/libreria" class="nav-link">Biblioteca</a>
+                <a href="https://goconverso.com/apps" class="nav-link">Apps</a>
+                <a href="https://goconverso.com/pricing" class="nav-link">Precios</a>
+                <a href="https://goconverso.com/templates" class="nav-link">Plantillas</a>
+            </nav>
+            <div class="auth-buttons" id="authButtons">
+                <a href="https://app.converso.pro/auth" class="btn-login">Iniciar Sesión</a>
+                <a href="https://app.converso.pro/auth?signup=true" class="btn-cta">Comenzar Gratis</a>
             </div>
-          </div>
-    
-          <!-- Resources Dropdown -->
-          <div class="dropdown" data-dropdown="resources">
-            <button class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
-              <span>Recursos</span>
-              <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <div class="dropdown-content resources-menu" role="menu">
-              <!-- Academia -->
-              <a href="https://goconverso.com/academy" class="resource-item" role="menuitem">
-                <div class="resource-icon academy-icon">
-                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                  </svg>
-                </div>
-                <div class="resource-info">
-                  <div class="resource-name">Academia</div>
-                  <div class="resource-desc">Aprende y crece</div>
-                  <span class="resource-badge new">Nuevo</span>
-                </div>
-              </a>
-              
-              <!-- Library -->
-              <a href="https://goconverso.com/libreria" class="resource-item" role="menuitem">
-                <div class="resource-icon library-icon">
-                  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                  </svg>
-                </div>
-                <div class="resource-info">
-                  <div class="resource-name">Biblioteca</div>
-                  <div class="resource-desc">Artículos y guías</div>
-                </div>
-              </a>
-            </div>
-          </div>
-    
-          <!-- Direct Links -->
-          <a href="https://goconverso.com/templates" class="nav-link">Plantillas</a>
-          <a href="https://goconverso.com/pricing" class="nav-link">Precios</a>
-        </nav>
-    
-        <!-- Right Section -->
-        <div class="header-actions">
-          <!-- Language Switcher -->
-          <div class="language-switcher">
-            <button class="lang-trigger" aria-label="Change language" aria-expanded="false" aria-haspopup="true">
-              <span class="flag">🇪🇸</span>
-              <span class="lang-name">Español</span>
-              <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <div class="lang-dropdown" role="menu">
-              <a href="https://goconverso.com/articles/is-goconverso-reliable" class="lang-option" data-lang="en" role="menuitem">
-                <span class="flag">🇺🇸</span>
-                <span>English</span>
-              </a>
-              <a href="https://goconverso.com/articulos/goconverso-es-confiable" class="lang-option" data-lang="es" role="menuitem">
-                <span class="flag">🇪🇸</span>
-                <span>Español</span>
-              </a>
-              <a href="https://goconverso.com/artigos/goconverso-e-confiavel" class="lang-option" data-lang="es" role="menuitem">
-                <span class="flag">🇧🇷</span>
-                <span>Português</span>
-              </a>
-            </div>
-          </div>
-    
-          <!-- CTA Buttons -->
-          <a href="https://app.converso.pro/auth" class="btn-login">Iniciar Sesión</a>
-          <a href="https://app.converso.pro/auth?signup=true" class="btn-start">
-            <span>Comenzar Gratis</span>
-            <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
         </div>
-    
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </button>
-      </div>
-    
-      <!-- Mobile Menu -->
-      <nav class="mobile-menu" data-state="closed" aria-label="Mobile navigation">
-        <div class="mobile-menu-content">
-          <div class="mobile-cta-section">
-            <a href="https://app.converso.pro/auth" class="mobile-btn-login">Iniciar Sesión</a>
-            <a href="https://app.converso.pro/auth?signup=true" class="mobile-btn-start">Comenzar Gratis</a>
-          </div>
-        </div>
-      </nav>
     </header>
     
     <script>
-    // Universal Header JavaScript
-    (function() {
-      'use strict';
-      
-      function initHeader() {
-        const header = document.querySelector('.universal-header');
-        if (!header) return;
-        
-        // Scroll effect
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-          const currentScroll = window.pageYOffset;
-          if (currentScroll > 50) {
-            header.classList.add('scrolled');
-          } else {
-            header.classList.remove('scrolled');
-          }
-          lastScroll = currentScroll;
-        });
-        
-        // Dropdown functionality
-        const dropdowns = header.querySelectorAll('.dropdown');
-        dropdowns.forEach(dropdown => {
-          const trigger = dropdown.querySelector('.dropdown-trigger');
-          
-          trigger.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const isOpen = dropdown.dataset.state === 'open';
-            
-            // Close all dropdowns
-            dropdowns.forEach(d => d.dataset.state = 'closed');
-            
-            // Toggle current dropdown
-            dropdown.dataset.state = isOpen ? 'closed' : 'open';
-            trigger.setAttribute('aria-expanded', !isOpen);
-          });
-        });
-        
-        // Language switcher
-        const langSwitcher = header.querySelector('.language-switcher');
-        if (langSwitcher) {
-          const trigger = langSwitcher.querySelector('.lang-trigger');
-          
-          trigger.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const isOpen = langSwitcher.dataset.state === 'open';
-            langSwitcher.dataset.state = isOpen ? 'closed' : 'open';
-            trigger.setAttribute('aria-expanded', !isOpen);
-          });
-        }
-        
-        // Mobile menu
-        const mobileToggle = header.querySelector('.mobile-toggle');
-        const mobileMenu = header.querySelector('.mobile-menu');
-        
-        if (mobileToggle && mobileMenu) {
-          mobileToggle.addEventListener('click', () => {
-            const isOpen = mobileMenu.dataset.state === 'open';
-            mobileMenu.dataset.state = isOpen ? 'closed' : 'open';
-            mobileToggle.setAttribute('aria-expanded', !isOpen);
-          });
-        }
-        
-        // Close dropdowns on outside click
-        document.addEventListener('click', () => {
-          dropdowns.forEach(d => {
-            d.dataset.state = 'closed';
-            const trigger = d.querySelector('.dropdown-trigger');
-            if (trigger) trigger.setAttribute('aria-expanded', 'false');
-          });
-          
-          if (langSwitcher) {
-            langSwitcher.dataset.state = 'closed';
-            const trigger = langSwitcher.querySelector('.lang-trigger');
-            if (trigger) trigger.setAttribute('aria-expanded', 'false');
-          }
-        });
-      }
-      
-      // Initialize on DOM ready
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initHeader);
-      } else {
-        initHeader();
-      }
-    })();
-    
+    // Mobile menu toggle
+    document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+        const navMenu = document.getElementById('navMenu');
+        const authButtons = document.getElementById('authButtons');
+        navMenu.classList.toggle('active');
+        authButtons.classList.toggle('active');
+    });
     </script>
     
     <!-- Hero Section -->
@@ -942,35 +372,35 @@
             <div class="partner-logos neumorphic">
                 <!-- Stripe Logo -->
                 <div class="partner-logo">
-                    <img src="../parceiros-logos/goconverso-logo-stripe-png-transparent.png" 
+                    <img src="/parceiros-logos/goconverso-logo-stripe-png-transparent.png" 
                          alt="Stripe" 
                          style="width: 140px; height: auto; object-fit: contain;">
                 </div>
                 
                 <!-- Vercel Logo -->
                 <div class="partner-logo">
-                    <img src="../parceiros-logos/goconverso-logo-vercel-png-transparent.png" 
+                    <img src="/parceiros-logos/goconverso-logo-vercel-png-transparent.png" 
                          alt="Vercel" 
                          style="width: 140px; height: auto; object-fit: contain;">
                 </div>
                 
                 <!-- Supabase Logo -->
                 <div class="partner-logo">
-                    <img src="../parceiros-logos/goconverso-logo-supabase-png-transparent.png" 
+                    <img src="/parceiros-logos/goconverso-logo-supabase-png-transparent.png" 
                          alt="Supabase" 
                          style="width: 140px; height: auto; object-fit: contain;">
                 </div>
                 
                 <!-- GitHub Logo -->
                 <div class="partner-logo">
-                    <img src="../parceiros-logos/goconverso-logo-github-png-transparent.png" 
+                    <img src="/parceiros-logos/goconverso-logo-github-png-transparent.png" 
                          alt="GitHub" 
                          style="width: 140px; height: auto; object-fit: contain;">
                 </div>
                 
                 <!-- Google Logo -->
                 <div class="partner-logo">
-                    <img src="../parceiros-logos/goconverso-logo-google-png-transparent.png" 
+                    <img src="/parceiros-logos/goconverso-logo-google-png-transparent.png" 
                          alt="Google" 
                          style="width: 140px; height: auto; object-fit: contain;">
                 </div>
