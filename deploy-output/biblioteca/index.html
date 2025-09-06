@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca SEO - Guias e Recursos para Negócios Locais | GoConverso</title>
+    <meta name="description" content="Biblioteca completa de guias SEO, marketing digital e gestão para barbearias, salões de beleza e negócios locais. Aprenda a crescer seu negócio online.">
+    <meta name="keywords" content="seo, marketing digital, barbearia, salão beleza, agendamento online, gestão negócios">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Biblioteca SEO - Recursos para Negócios Locais">
+    <meta property="og:description" content="Guias completos de marketing digital e gestão para seu negócio">
+    <meta property="og:url" content="https://goconverso.com/biblioteca/">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSHB9J6WS7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LSHB9J6WS7', {
+        send_page_view: true,
+        custom_map: {
+          'dimension1': 'user_type',
+          'dimension2': 'content_category'
+        }
+      });
+      gtag('event', 'page_view', {
+        user_type: 'visitor',
+        content_category: 'biblioteca-hub'
+      });
+    </script>
+    
+    <!-- Meta Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1697178904498506');
+      fbq('track', 'PageView');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f9fafb;
+        }
+        
+        /* Header */
+        .header {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #10b981;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: #4b5563;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #10b981;
+        }
+        
+        .btn-cta {
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        
+        .btn-cta:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Search Box */
+        .search-container {
+            max-width: 600px;
+            margin: -2rem auto 3rem;
+            padding: 0 2rem;
+        }
+        
+        .search-box {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        .search-input:focus {
+            border-color: #10b981;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Categories Section */
+        .categories-section {
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #1f2937;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 2px solid transparent;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            border-color: #10b981;
+        }
+        
+        .category-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+        
+        .category-count {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+        
+        /* Articles Grid */
+        .articles-section {
+            margin-bottom: 4rem;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        .article-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #f3f4f6;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+            line-height: 1.4;
+        }
+        
+        .article-excerpt {
+            font-size: 0.875rem;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 1rem;
+            margin-top: 4rem;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-text {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            background: white;
+            color: #10b981;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-link {
+            color: #9ca3af;
+            text-decoration: none;
+        }
+        
+        .footer-link:hover {
+            color: white;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="https://goconverso.com" class="logo">GoConverso</a>
+            <nav class="nav-links">
+                <a href="/library/" class="nav-link">🇺🇸 English</a>
+                <a href="/libreria/" class="nav-link">🇪🇸 Español</a>
+                <a href="https://goconverso.com/pricing" class="btn-cta">Começar Grátis</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>📚 Biblioteca de Recursos SEO</h1>
+        <p>Guias completos para fazer seu negócio crescer online com estratégias comprovadas de marketing digital</p>
+    </section>
+    
+    <!-- Search -->
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" 
+                   class="search-input" 
+                   id="searchInput"
+                   placeholder="Buscar artigos... (ex: barbearia, marketing, agendamento)"
+                   onkeyup="searchArticles()">
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Categories -->
+        <section class="categories-section">
+            <h2 class="section-title">📂 Categorias Populares</h2>
+            <div class="categories-grid">
+                <!-- Barbearias - Link para artigo real -->
+                <a href="/biblioteca/guia-abrir-barbearia.html" class="category-card">
+                    <div class="category-icon">💈</div>
+                    <div class="category-title">Barbearias</div>
+                    <div class="category-count">11 artigos disponíveis</div>
+                </a>
+                
+                <!-- Marketing - Link para artigo real -->
+                <a href="/biblioteca/melhores-dicas-iniciantes-marketing-digital.html" class="category-card">
+                    <div class="category-icon">📱</div>
+                    <div class="category-title">Marketing Digital</div>
+                    <div class="category-count">14 artigos disponíveis</div>
+                </a>
+                
+                <!-- Agendamento - Link para artigo real -->
+                <a href="/biblioteca/melhor-sistema-agendamento-online.html" class="category-card">
+                    <div class="category-icon">📅</div>
+                    <div class="category-title">Sistemas de Agendamento</div>
+                    <div class="category-count">8 artigos disponíveis</div>
+                </a>
+                
+                <!-- E-commerce - Link para artigo real -->
+                <a href="/biblioteca/como-criar-loja-online-pouco-dinheiro.html" class="category-card">
+                    <div class="category-icon">🛒</div>
+                    <div class="category-title">E-commerce</div>
+                    <div class="category-count">12 artigos disponíveis</div>
+                </a>
+                
+                <!-- Salão de Beleza - Link para artigo real -->
+                <a href="/biblioteca/como-montar-salao-beleza.html" class="category-card">
+                    <div class="category-icon">💅</div>
+                    <div class="category-title">Salões de Beleza</div>
+                    <div class="category-count">6 artigos disponíveis</div>
+                </a>
+                
+                <!-- Gestão - Link para artigo real -->
+                <a href="/biblioteca/sistema-gestao-barbearia.html" class="category-card">
+                    <div class="category-icon">📊</div>
+                    <div class="category-title">Gestão de Negócios</div>
+                    <div class="category-count">9 artigos disponíveis</div>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Recent Articles -->
+        <section class="articles-section">
+            <h2 class="section-title">📰 Artigos Mais Recentes</h2>
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Artigo 1 - REAL -->
+                <a href="/biblioteca/agendamento-online-barbearia.html" class="article-card">
+                    <span class="article-tag">Barbearia</span>
+                    <h3 class="article-title">Sistema de Agendamento Online para Barbearias 2025</h3>
+                    <p class="article-excerpt">Guia completo para implementar agendamento online com calculadora ROI e comparação de plataformas.</p>
+                </a>
+                
+                <!-- Artigo 2 - REAL -->
+                <a href="/biblioteca/como-captar-clientes-barbearia-2025.html" class="article-card">
+                    <span class="article-tag">Marketing</span>
+                    <h3 class="article-title">Como Captar Clientes para Barbearia em 2025</h3>
+                    <p class="article-excerpt">Estratégias comprovadas para atrair mais clientes e aumentar o faturamento da sua barbearia.</p>
+                </a>
+                
+                <!-- Artigo 3 - REAL -->
+                <a href="/biblioteca/alternativas-ao-calendly.html" class="article-card">
+                    <span class="article-tag">Agendamento</span>
+                    <h3 class="article-title">Melhores Alternativas ao Calendly</h3>
+                    <p class="article-excerpt">Comparação completa das melhores plataformas de agendamento online do mercado.</p>
+                </a>
+                
+                <!-- Artigo 4 - REAL -->
+                <a href="/biblioteca/marketing-digital-barbearia.html" class="article-card">
+                    <span class="article-tag">Marketing</span>
+                    <h3 class="article-title">Marketing Digital para Barbearias</h3>
+                    <p class="article-excerpt">Estratégias de marketing digital específicas para fazer sua barbearia crescer online.</p>
+                </a>
+                
+                <!-- Artigo 5 - REAL -->
+                <a href="/biblioteca/como-montar-salao-beleza.html" class="article-card">
+                    <span class="article-tag">Salão</span>
+                    <h3 class="article-title">Como Montar um Salão de Beleza</h3>
+                    <p class="article-excerpt">Guia passo a passo para abrir seu próprio salão de beleza com sucesso.</p>
+                </a>
+                
+                <!-- Artigo 6 - REAL -->
+                <a href="/biblioteca/sistema-gestao-barbearia.html" class="article-card">
+                    <span class="article-tag">Gestão</span>
+                    <h3 class="article-title">Sistema de Gestão para Barbearias</h3>
+                    <p class="article-excerpt">Como escolher e implementar o melhor sistema de gestão para sua barbearia.</p>
+                </a>
+                
+                <!-- Artigo 7 - REAL -->
+                <a href="/biblioteca/como-criar-loja-online-pouco-dinheiro.html" class="article-card">
+                    <span class="article-tag">E-commerce</span>
+                    <h3 class="article-title">Como Criar Loja Online com Pouco Dinheiro</h3>
+                    <p class="article-excerpt">Aprenda a montar sua loja virtual gastando o mínimo possível.</p>
+                </a>
+                
+                <!-- Artigo 8 - REAL -->
+                <a href="/biblioteca/estrategias-marketing-whatsapp.html" class="article-card">
+                    <span class="article-tag">Marketing</span>
+                    <h3 class="article-title">Estratégias de Marketing no WhatsApp</h3>
+                    <p class="article-excerpt">Como usar o WhatsApp Business para aumentar suas vendas e fidelizar clientes.</p>
+                </a>
+                
+                <!-- Artigo 9 - REAL -->
+                <a href="/biblioteca/como-fidelizar-clientes-barbearia.html" class="article-card">
+                    <span class="article-tag">Barbearia</span>
+                    <h3 class="article-title">Como Fidelizar Clientes na Barbearia</h3>
+                    <p class="article-excerpt">Técnicas comprovadas para manter seus clientes voltando sempre.</p>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Lista completa de artigos (oculta, para busca) -->
+        <div id="allArticles" style="display: none;">
+            <!-- Todos os artigos REAIS da biblioteca -->
+            <div class="article-item" data-title="agendamento online barbearia" data-url="/biblioteca/agendamento-online-barbearia.html"></div>
+            <div class="article-item" data-title="alternativas calendly" data-url="/biblioteca/alternativas-ao-calendly.html"></div>
+            <div class="article-item" data-title="campanhas marketing sazonais" data-url="/biblioteca/campanhas-marketing-sazonais.html"></div>
+            <div class="article-item" data-title="como abrir barbearia henderson" data-url="/biblioteca/como-abrir-barbearia-henderson-nevada.html"></div>
+            <div class="article-item" data-title="como abrir barbearia las vegas" data-url="/biblioteca/como-abrir-barbearia-las-vegas.html"></div>
+            <div class="article-item" data-title="administrar dinheiro barbearia" data-url="/biblioteca/como-administrar-dinheiro-barbearia.html"></div>
+            <div class="article-item" data-title="atrair clientes salao beleza" data-url="/biblioteca/como-atrair-clientes-salao-beleza.html"></div>
+            <div class="article-item" data-title="aumentar vendas loja celular" data-url="/biblioteca/como-aumentar-vendas-loja-celular.html"></div>
+            <div class="article-item" data-title="captar clientes barbearia 2025" data-url="/biblioteca/como-captar-clientes-barbearia-2025.html"></div>
+            <div class="article-item" data-title="comecar negocio online brasil" data-url="/biblioteca/como-comecar-negocio-online-brasil-2025.html"></div>
+            <div class="article-item" data-title="comecar salao beleza" data-url="/biblioteca/como-comecar-pequeno-salao-beleza-2025-brasil.html"></div>
+            <div class="article-item" data-title="vender online sem estoque" data-url="/biblioteca/como-comecar-vender-online-sem-estoque.html"></div>
+            <div class="article-item" data-title="competir wix wordpress" data-url="/biblioteca/como-competir-wix-wordpress-cobrando-3x-mais.html"></div>
+            <div class="article-item" data-title="primeiros clientes desenvolvedor" data-url="/biblioteca/como-conseguir-primeiros-clientes-desenvolvedor.html"></div>
+            <div class="article-item" data-title="criar loja online pouco dinheiro" data-url="/biblioteca/como-criar-loja-online-pouco-dinheiro.html"></div>
+            <div class="article-item" data-title="entregar 5 sites mes" data-url="/biblioteca/como-entregar-5-sites-profissionais-mes-sozinho.html"></div>
+            <div class="article-item" data-title="escolher plataforma criar site" data-url="/biblioteca/como-escolher-plataforma-criar-site.html"></div>
+            <div class="article-item" data-title="fidelizar clientes barbearia" data-url="/biblioteca/como-fidelizar-clientes-barbearia.html"></div>
+            <div class="article-item" data-title="ganhar comissao recorrente" data-url="/biblioteca/como-ganhar-comissao-recorrente-30-porcento.html"></div>
+            <div class="article-item" data-title="ganhar dinheiro criando sites" data-url="/biblioteca/como-ganhar-dinheiro-criando-sites-pequenas-empresas.html"></div>
+            <div class="article-item" data-title="montar salao beleza" data-url="/biblioteca/como-montar-salao-beleza.html"></div>
+            <div class="article-item" data-title="sair clt viver sites" data-url="/biblioteca/como-sair-clt-viver-criar-sites-90-dias.html"></div>
+            <div class="article-item" data-title="revendedor iphones 2025" data-url="/biblioteca/como-ser-revendedor-iphones-2025.html"></div>
+            <div class="article-item" data-title="sucesso cabeleireira" data-url="/biblioteca/como-ter-sucesso-cabeleireira.html"></div>
+            <div class="article-item" data-title="vender roupas online" data-url="/biblioteca/como-vender-roupas-online-sem-loja-fisica.html"></div>
+            <div class="article-item" data-title="converso desenvolvedores" data-url="/biblioteca/converso-para-desenvolvedores.html"></div>
+            <div class="article-item" data-title="converso vs calendly" data-url="/biblioteca/converso-vs-calendly.html"></div>
+            <div class="article-item" data-title="custo sistema agendamento" data-url="/biblioteca/custo-sistema-agendamento.html"></div>
+            <div class="article-item" data-title="marketing omnichannel" data-url="/biblioteca/estrategia-marketing-omnichannel.html"></div>
+            <div class="article-item" data-title="marketing mobile" data-url="/biblioteca/estrategias-marketing-mobile.html"></div>
+            <div class="article-item" data-title="marketing whatsapp" data-url="/biblioteca/estrategias-marketing-whatsapp.html"></div>
+            <div class="article-item" data-title="retencao clientes" data-url="/biblioteca/estrategias-retencao-clientes.html"></div>
+            <div class="article-item" data-title="facebook marketing negocio" data-url="/biblioteca/facebook-marketing-negocio-local.html"></div>
+            <div class="article-item" data-title="ferramentas desenvolvedor freelance" data-url="/biblioteca/ferramentas-essenciais-desenvolvedor-freelance.html"></div>
+            <div class="article-item" data-title="gestao reputacao online" data-url="/biblioteca/gestao-reputacao-online.html"></div>
+            <div class="article-item" data-title="goconverso confiavel" data-url="/biblioteca/goconverso-e-confiavel.html"></div>
+            <div class="article-item" data-title="google ads pequenas empresas" data-url="/biblioteca/google-ads-pequenas-empresas.html"></div>
+            <div class="article-item" data-title="guia abrir barbearia" data-url="/biblioteca/guia-abrir-barbearia.html"></div>
+            <div class="article-item" data-title="analytics marketing" data-url="/biblioteca/guia-analytics-marketing.html"></div>
+            <div class="article-item" data-title="marketing influenciadores" data-url="/biblioteca/guia-marketing-influenciadores.html"></div>
+            <div class="article-item" data-title="instagram crescimento negocio" data-url="/biblioteca/instagram-crescimento-negocio.html"></div>
+            <div class="article-item" data-title="marketing digital barbearia" data-url="/biblioteca/marketing-digital-barbearia.html"></div>
+            <div class="article-item" data-title="marketing personalizacao" data-url="/biblioteca/marketing-personalizacao.html"></div>
+            <div class="article-item" data-title="gateway pagamento brasil" data-url="/biblioteca/melhor-gateway-pagamento-ecommerce-brasil.html"></div>
+            <div class="article-item" data-title="gateway pagamento eua" data-url="/biblioteca/melhor-gateway-pagamento-ecommerce-estados-unidos.html"></div>
+            <div class="article-item" data-title="plataforma desenvolver sites" data-url="/biblioteca/melhor-plataforma-desenvolver-websites-portugues.html"></div>
+            <div class="article-item" data-title="sistema agendamento online" data-url="/biblioteca/melhor-sistema-agendamento-online.html"></div>
+            <div class="article-item" data-title="sistema agendamento saloes" data-url="/biblioteca/melhor-sistema-agendamento-saloes.html"></div>
+            <div class="article-item" data-title="software barbearia las vegas" data-url="/biblioteca/melhor-software-barbearia-las-vegas-2025.html"></div>
+            <div class="article-item" data-title="dicas marketing digital" data-url="/biblioteca/melhores-dicas-iniciantes-marketing-digital.html"></div>
+            <div class="article-item" data-title="estrategias captar clientes" data-url="/biblioteca/melhores-estrategias-captar-clientes-2025.html"></div>
+            <div class="article-item" data-title="otimizacao taxa conversao" data-url="/biblioteca/otimizacao-taxa-conversao.html"></div>
+            <div class="article-item" data-title="planejamento orcamento marketing" data-url="/biblioteca/planejamento-orcamento-marketing.html"></div>
+            <div class="article-item" data-title="desenvolvedores migram white label" data-url="/biblioteca/por-que-desenvolvedores-migram-plataformas-white-label.html"></div>
+            <div class="article-item" data-title="empresas sem site" data-url="/biblioteca/por-que-pequenas-empresas-sem-site-profissional.html"></div>
+            <div class="article-item" data-title="primeira venda online" data-url="/biblioteca/primeira-venda-online-guia-completo.html"></div>
+            <div class="article-item" data-title="programas marketing indicacao" data-url="/biblioteca/programas-marketing-indicacao.html"></div>
+            <div class="article-item" data-title="email marketing negocio" data-url="/biblioteca/qual-importancia-email-marketing-negocio-2025.html"></div>
+            <div class="article-item" data-title="plataforma ecommerce gratuita" data-url="/biblioteca/qual-melhor-plataforma-ecommerce-gratuita.html"></div>
+            <div class="article-item" data-title="quanto cobrar site agendamento" data-url="/biblioteca/quanto-cobrar-site-agendamento-online-integrado.html"></div>
+            <div class="article-item" data-title="quanto custa site profissional" data-url="/biblioteca/quanto-custa-criar-site-profissional.html"></div>
+            <div class="article-item" data-title="quanto custa loja virtual" data-url="/biblioteca/quanto-custa-montar-loja-virtual-completa.html"></div>
+            <div class="article-item" data-title="quanto ganha tecnico iphones" data-url="/biblioteca/quanto-ganha-tecnico-iphones.html"></div>
+            <div class="article-item" data-title="reduzir faltas agendamentos" data-url="/biblioteca/reduzir-faltas-agendamentos.html"></div>
+            <div class="article-item" data-title="devs faturam 6 digitos" data-url="/biblioteca/segredo-devs-faturam-6-digitos-sites-locais.html"></div>
+            <div class="article-item" data-title="sistema agendamento gratis" data-url="/biblioteca/sistema-agendamento-gratis.html"></div>
+            <div class="article-item" data-title="sistema gestao barbearia" data-url="/biblioteca/sistema-gestao-barbearia.html"></div>
+            <div class="article-item" data-title="sistema ordens servico" data-url="/biblioteca/sistema-gestao-ordens-servico-lojas-celular.html"></div>
+            <div class="article-item" data-title="taticas growth hacking" data-url="/biblioteca/taticas-growth-hacking.html"></div>
+            <div class="article-item" data-title="storytelling marca" data-url="/biblioteca/tecnicas-storytelling-marca.html"></div>
+            <div class="article-item" data-title="video marketing 2025" data-url="/biblioteca/tendencias-video-marketing-2025.html"></div>
+            <div class="article-item" data-title="mercado livre loja propria" data-url="/biblioteca/vale-pena-comissao-mercado-livre-ou-loja-propria.html"></div>
+        </div>
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2 class="cta-title">Pronto para Crescer seu Negócio?</h2>
+            <p class="cta-text">Crie seu site profissional com agendamento online em minutos</p>
+            <a href="https://goconverso.com/pricing" class="cta-button">Começar Teste Grátis</a>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://goconverso.com" class="footer-link">🏠 Home</a>
+            <a href="/biblioteca/" class="footer-link">📚 Biblioteca</a>
+            <a href="https://goconverso.com/privacy" class="footer-link">Privacidade</a>
+            <a href="https://goconverso.com/terms" class="footer-link">Termos</a>
+            <a href="https://converso.pro/auth?mode=signup" class="footer-link" style="background: linear-gradient(135deg, #10b981, #3b82f6); color: white; padding: 8px 20px; border-radius: 20px;">✨ Criar Conta Grátis</a>
+        </div>
+        <p>© 2025 GoConverso. Todos os direitos reservados.</p>
+    </footer>
+    
+    <!-- Simple Search Script -->
+    <script>
+    function searchArticles() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const grid = document.getElementById('articlesGrid');
+        const allArticles = document.querySelectorAll('#allArticles .article-item');
+        
+        if (input.length < 2) {
+            // Show default articles if search is empty
+            return;
+        }
+        
+        // Clear current grid
+        grid.innerHTML = '';
+        
+        // Search and display matching articles
+        let found = 0;
+        allArticles.forEach(article => {
+            const title = article.getAttribute('data-title');
+            const url = article.getAttribute('data-url');
+            
+            if (title.includes(input) && found < 9) {
+                found++;
+                const card = document.createElement('a');
+                card.href = url;
+                card.className = 'article-card';
+                card.innerHTML = `
+                    <span class="article-tag">Resultado</span>
+                    <h3 class="article-title">${title.replace(/-/g, ' ')}</h3>
+                    <p class="article-excerpt">Clique para ler o artigo completo</p>
+                `;
+                grid.appendChild(card);
+            }
+        });
+        
+        if (found === 0) {
+            grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #6b7280;">Nenhum artigo encontrado. Tente outra palavra-chave.</p>';
+        }
+    }
+    </script>
+    
+    <!-- Internal Analytics -->
+    <script>
+    (function() {
+        let sessionId = sessionStorage.getItem('converso_session_id');
+        if (!sessionId) {
+            sessionId = 'sess_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            sessionStorage.setItem('converso_session_id', sessionId);
+        }
+        
+        const trackingData = {
+            event_type: 'page_view',
+            page_url: window.location.href,
+            page_title: document.title,
+            referrer: document.referrer,
+            session_id: sessionId,
+            professional_id: 'biblioteca-seo',
+            timestamp: new Date().toISOString()
+        };
+        
+        fetch('https://osuozhvpecszacvnqwky.supabase.co/functions/v1/track-insight', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(trackingData)
+        }).catch(err => console.error('Tracking error:', err));
+    })();
+    </script>
+</body>
+</html>

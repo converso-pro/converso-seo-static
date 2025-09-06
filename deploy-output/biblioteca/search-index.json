@@ -1,0 +1,399 @@
+{
+  "articles": {
+    "pt": [
+      {
+        "id": "agendamento-online-barbearia",
+        "title": "Sistema de Agendamento Online para Barbearia - Guia Completo 2025",
+        "description": "Aprenda como implementar um sistema de agendamento online que aumenta sua produtividade em 40% e reduz faltas em 60%.",
+        "tags": ["agendamento", "barbearia", "sistema", "produtividade"],
+        "url": "/biblioteca/agendamento-online-barbearia.html",
+        "readTime": "5 min",
+        "category": "sistemas"
+      },
+      {
+        "id": "alternativas-ao-calendly",
+        "title": "10 Melhores Alternativas ao Calendly em 2025 - Comparação Completa",
+        "description": "Análise detalhada das melhores ferramentas de agendamento online como alternativas ao Calendly, com preços e recursos.",
+        "tags": ["calendly", "alternativas", "agendamento", "ferramentas"],
+        "url": "/biblioteca/alternativas-ao-calendly.html",
+        "readTime": "8 min",
+        "category": "ferramentas"
+      },
+      {
+        "id": "campanhas-marketing-sazonais",
+        "title": "Campanhas de Marketing Sazonais - Como Vender Mais em Datas Especiais",
+        "description": "Estratégias comprovadas para criar campanhas de marketing sazonais que aumentam vendas em até 300% em datas comemorativas.",
+        "tags": ["marketing", "campanhas", "sazonais", "vendas"],
+        "url": "/biblioteca/campanhas-marketing-sazonais.html",
+        "readTime": "7 min",
+        "category": "marketing"
+      },
+      {
+        "id": "como-abrir-barbearia-las-vegas",
+        "title": "Como Abrir uma Barbearia em Las Vegas - Guia Completo 2025",
+        "description": "Passo a passo completo para abrir sua barbearia em Las Vegas, incluindo licenças, custos e estratégias de sucesso.",
+        "tags": ["barbearia", "las vegas", "negócio", "empreendedorismo"],
+        "url": "/biblioteca/como-abrir-barbearia-las-vegas.html",
+        "readTime": "10 min",
+        "category": "barbearias"
+      },
+      {
+        "id": "como-administrar-dinheiro-barbearia",
+        "title": "Como Administrar o Dinheiro da Barbearia - Gestão Financeira",
+        "description": "Guia prático de gestão financeira para barbearias: controle de caixa, margem de lucro e investimentos inteligentes.",
+        "tags": ["gestão", "finanças", "barbearia", "administração"],
+        "url": "/biblioteca/como-administrar-dinheiro-barbearia.html",
+        "readTime": "6 min",
+        "category": "gestao"
+      },
+      {
+        "id": "como-atrair-clientes-salao-beleza",
+        "title": "Como Atrair Clientes para Salão de Beleza - 15 Estratégias",
+        "description": "Descubra 15 estratégias comprovadas para atrair mais clientes para seu salão de beleza e aumentar o faturamento.",
+        "tags": ["salão", "beleza", "clientes", "marketing"],
+        "url": "/biblioteca/como-atrair-clientes-salao-beleza.html",
+        "readTime": "8 min",
+        "category": "saloes"
+      },
+      {
+        "id": "como-aumentar-vendas-loja-celular",
+        "title": "Como Aumentar Vendas de Loja de Celular - Estratégias 2025",
+        "description": "Técnicas avançadas para aumentar vendas em lojas de celular, incluindo upsell, cross-sell e marketing digital.",
+        "tags": ["vendas", "celular", "loja", "e-commerce"],
+        "url": "/biblioteca/como-aumentar-vendas-loja-celular.html",
+        "readTime": "7 min",
+        "category": "vendas"
+      },
+      {
+        "id": "como-captar-clientes-barbearia",
+        "title": "Como Captar Clientes para Barbearia em 2025 - Guia Definitivo",
+        "description": "Métodos comprovados para captar novos clientes para sua barbearia usando marketing digital e estratégias locais.",
+        "tags": ["barbearia", "captação", "clientes", "marketing"],
+        "url": "/biblioteca/como-captar-clientes-barbearia-2025.html",
+        "readTime": "9 min",
+        "category": "barbearias"
+      },
+      {
+        "id": "como-comecar-negocio-online-brasil",
+        "title": "Como Começar um Negócio Online no Brasil em 2025",
+        "description": "Guia completo para iniciar seu negócio online no Brasil, desde a legalização até as primeiras vendas.",
+        "tags": ["negócio", "online", "brasil", "empreendedorismo"],
+        "url": "/biblioteca/como-comecar-negocio-online-brasil-2025.html",
+        "readTime": "12 min",
+        "category": "empreendedorismo"
+      },
+      {
+        "id": "como-comecar-pequeno-salao-beleza",
+        "title": "Como Começar um Pequeno Salão de Beleza em 2025",
+        "description": "Tudo que você precisa saber para abrir um salão de beleza pequeno mas lucrativo, com investimento mínimo.",
+        "tags": ["salão", "beleza", "pequeno negócio", "início"],
+        "url": "/biblioteca/como-comecar-pequeno-salao-beleza-2025-brasil.html",
+        "readTime": "10 min",
+        "category": "saloes"
+      },
+      {
+        "id": "como-vender-online-sem-estoque",
+        "title": "Como Começar a Vender Online Sem Estoque - Dropshipping",
+        "description": "Aprenda a montar uma loja online lucrativa sem precisar de estoque usando dropshipping e marketplace.",
+        "tags": ["dropshipping", "e-commerce", "vendas", "sem estoque"],
+        "url": "/biblioteca/como-comecar-vender-online-sem-estoque.html",
+        "readTime": "8 min",
+        "category": "ecommerce"
+      },
+      {
+        "id": "como-competir-wix-wordpress",
+        "title": "Como Competir com Wix e WordPress Cobrando 3x Mais",
+        "description": "Estratégias para desenvolvedores web cobrarem mais que plataformas DIY oferecendo valor agregado.",
+        "tags": ["desenvolvimento", "web", "preços", "estratégia"],
+        "url": "/biblioteca/como-competir-wix-wordpress-cobrando-3x-mais.html",
+        "readTime": "7 min",
+        "category": "desenvolvedores"
+      },
+      {
+        "id": "como-conseguir-primeiros-clientes",
+        "title": "Como Conseguir os Primeiros Clientes como Desenvolvedor",
+        "description": "Guia prático para desenvolvedores iniciantes conseguirem seus primeiros clientes pagantes.",
+        "tags": ["desenvolvedor", "clientes", "freelance", "início"],
+        "url": "/biblioteca/como-conseguir-primeiros-clientes-desenvolvedor.html",
+        "readTime": "6 min",
+        "category": "desenvolvedores"
+      },
+      {
+        "id": "como-criar-loja-online-pouco-dinheiro",
+        "title": "Como Criar Loja Online com Pouco Dinheiro - Guia 2025",
+        "description": "Monte sua loja virtual gastando menos de R$ 100 por mês com ferramentas profissionais.",
+        "tags": ["loja online", "e-commerce", "baixo custo", "economia"],
+        "url": "/biblioteca/como-criar-loja-online-pouco-dinheiro.html",
+        "readTime": "9 min",
+        "category": "ecommerce"
+      },
+      {
+        "id": "como-entregar-5-sites-mes",
+        "title": "Como Entregar 5 Sites Profissionais por Mês Sozinho",
+        "description": "Sistema otimizado para desenvolvedores entregarem múltiplos projetos com qualidade e eficiência.",
+        "tags": ["produtividade", "desenvolvimento", "sites", "gestão"],
+        "url": "/biblioteca/como-entregar-5-sites-profissionais-mes-sozinho.html",
+        "readTime": "11 min",
+        "category": "desenvolvedores"
+      },
+      {
+        "id": "como-escolher-plataforma-criar-site",
+        "title": "Como Escolher a Melhor Plataforma para Criar Site em 2025",
+        "description": "Comparação completa entre WordPress, Wix, Converso e outras plataformas de criação de sites.",
+        "tags": ["plataforma", "site", "comparação", "escolha"],
+        "url": "/biblioteca/como-escolher-plataforma-criar-site.html",
+        "readTime": "8 min",
+        "category": "ferramentas"
+      },
+      {
+        "id": "como-fidelizar-clientes-barbearia",
+        "title": "Como Fidelizar Clientes na Barbearia - 20 Estratégias",
+        "description": "Técnicas comprovadas para criar clientes fiéis que voltam sempre e recomendam sua barbearia.",
+        "tags": ["fidelização", "barbearia", "clientes", "retenção"],
+        "url": "/biblioteca/como-fidelizar-clientes-barbearia.html",
+        "readTime": "10 min",
+        "category": "barbearias"
+      },
+      {
+        "id": "como-ganhar-comissao-recorrente",
+        "title": "Como Ganhar Comissão Recorrente de 30% como Parceiro",
+        "description": "Descubra como ganhar renda passiva mensal indicando clientes para plataformas SaaS.",
+        "tags": ["afiliado", "comissão", "recorrente", "parceiro"],
+        "url": "/biblioteca/como-ganhar-comissao-recorrente-30-porcento.html",
+        "readTime": "5 min",
+        "category": "parceiros"
+      }
+    ],
+    "en": [
+      {
+        "id": "online-booking-barbershop",
+        "title": "Online Booking System for Barbershops - Complete Guide 2025",
+        "description": "Learn how to implement an online booking system that increases productivity by 40% and reduces no-shows by 60%.",
+        "tags": ["booking", "barbershop", "system", "productivity"],
+        "url": "/library/online-booking-barbershop.html",
+        "readTime": "5 min",
+        "category": "systems"
+      },
+      {
+        "id": "calendly-alternatives",
+        "title": "10 Best Calendly Alternatives in 2025 - Complete Comparison",
+        "description": "Detailed analysis of the best online scheduling tools as alternatives to Calendly, with prices and features.",
+        "tags": ["calendly", "alternatives", "scheduling", "tools"],
+        "url": "/library/calendly-alternatives.html",
+        "readTime": "8 min",
+        "category": "tools"
+      },
+      {
+        "id": "seasonal-marketing-campaigns",
+        "title": "Seasonal Marketing Campaigns - How to Sell More on Special Dates",
+        "description": "Proven strategies to create seasonal marketing campaigns that increase sales up to 300% on holidays.",
+        "tags": ["marketing", "campaigns", "seasonal", "sales"],
+        "url": "/library/seasonal-marketing-campaigns.html",
+        "readTime": "7 min",
+        "category": "marketing"
+      },
+      {
+        "id": "how-open-barbershop-las-vegas",
+        "title": "How to Open a Barbershop in Las Vegas - Complete Guide 2025",
+        "description": "Step-by-step guide to open your barbershop in Las Vegas, including licenses, costs and success strategies.",
+        "tags": ["barbershop", "las vegas", "business", "entrepreneurship"],
+        "url": "/library/how-open-barbershop-las-vegas.html",
+        "readTime": "10 min",
+        "category": "barbershops"
+      },
+      {
+        "id": "manage-barbershop-finances",
+        "title": "How to Manage Barbershop Finances - Financial Management",
+        "description": "Practical guide for barbershop financial management: cash control, profit margins and smart investments.",
+        "tags": ["management", "finances", "barbershop", "administration"],
+        "url": "/library/manage-barbershop-finances.html",
+        "readTime": "6 min",
+        "category": "management"
+      },
+      {
+        "id": "attract-beauty-salon-clients",
+        "title": "How to Attract Clients to Beauty Salon - 15 Strategies",
+        "description": "Discover 15 proven strategies to attract more clients to your beauty salon and increase revenue.",
+        "tags": ["salon", "beauty", "clients", "marketing"],
+        "url": "/library/attract-beauty-salon-clients.html",
+        "readTime": "8 min",
+        "category": "salons"
+      },
+      {
+        "id": "increase-phone-store-sales",
+        "title": "How to Increase Phone Store Sales - 2025 Strategies",
+        "description": "Advanced techniques to increase sales in phone stores, including upsell, cross-sell and digital marketing.",
+        "tags": ["sales", "phone", "store", "e-commerce"],
+        "url": "/library/increase-phone-store-sales.html",
+        "readTime": "7 min",
+        "category": "sales"
+      },
+      {
+        "id": "attract-barbershop-clients",
+        "title": "How to Attract Clients to Barbershop in 2025 - Ultimate Guide",
+        "description": "Proven methods to attract new clients to your barbershop using digital marketing and local strategies.",
+        "tags": ["barbershop", "acquisition", "clients", "marketing"],
+        "url": "/library/attract-barbershop-clients-2025.html",
+        "readTime": "9 min",
+        "category": "barbershops"
+      },
+      {
+        "id": "start-online-business",
+        "title": "How to Start an Online Business in 2025",
+        "description": "Complete guide to start your online business, from legalization to first sales.",
+        "tags": ["business", "online", "entrepreneurship", "startup"],
+        "url": "/library/start-online-business-2025.html",
+        "readTime": "12 min",
+        "category": "entrepreneurship"
+      },
+      {
+        "id": "start-small-beauty-salon",
+        "title": "How to Start a Small Beauty Salon in 2025",
+        "description": "Everything you need to know to open a small but profitable beauty salon with minimal investment.",
+        "tags": ["salon", "beauty", "small business", "startup"],
+        "url": "/library/start-small-beauty-salon-2025.html",
+        "readTime": "10 min",
+        "category": "salons"
+      }
+    ],
+    "es": [
+      {
+        "id": "sistema-reservas-barberia",
+        "title": "Sistema de Reservas Online para Barbería - Guía Completa 2025",
+        "description": "Aprende cómo implementar un sistema de reservas online que aumenta la productividad en 40% y reduce ausencias en 60%.",
+        "tags": ["reservas", "barbería", "sistema", "productividad"],
+        "url": "/libreria/sistema-reservas-barberia.html",
+        "readTime": "5 min",
+        "category": "sistemas"
+      },
+      {
+        "id": "alternativas-calendly",
+        "title": "10 Mejores Alternativas a Calendly en 2025 - Comparación Completa",
+        "description": "Análisis detallado de las mejores herramientas de agendamiento online como alternativas a Calendly, con precios y características.",
+        "tags": ["calendly", "alternativas", "agendamiento", "herramientas"],
+        "url": "/libreria/alternativas-calendly.html",
+        "readTime": "8 min",
+        "category": "herramientas"
+      },
+      {
+        "id": "campanas-marketing-estacionales",
+        "title": "Campañas de Marketing Estacionales - Cómo Vender Más en Fechas Especiales",
+        "description": "Estrategias comprobadas para crear campañas de marketing estacionales que aumentan ventas hasta 300% en fechas festivas.",
+        "tags": ["marketing", "campañas", "estacionales", "ventas"],
+        "url": "/libreria/campanas-marketing-estacionales.html",
+        "readTime": "7 min",
+        "category": "marketing"
+      },
+      {
+        "id": "como-abrir-barberia-las-vegas",
+        "title": "Cómo Abrir una Barbería en Las Vegas - Guía Completa 2025",
+        "description": "Paso a paso completo para abrir tu barbería en Las Vegas, incluyendo licencias, costos y estrategias de éxito.",
+        "tags": ["barbería", "las vegas", "negocio", "emprendimiento"],
+        "url": "/libreria/como-abrir-barberia-las-vegas.html",
+        "readTime": "10 min",
+        "category": "barberias"
+      },
+      {
+        "id": "administrar-dinero-barberia",
+        "title": "Cómo Administrar el Dinero de la Barbería - Gestión Financiera",
+        "description": "Guía práctica de gestión financiera para barberías: control de caja, margen de ganancia e inversiones inteligentes.",
+        "tags": ["gestión", "finanzas", "barbería", "administración"],
+        "url": "/libreria/administrar-dinero-barberia.html",
+        "readTime": "6 min",
+        "category": "gestion"
+      },
+      {
+        "id": "atraer-clientes-salon-belleza",
+        "title": "Cómo Atraer Clientes para Salón de Belleza - 15 Estrategias",
+        "description": "Descubre 15 estrategias comprobadas para atraer más clientes a tu salón de belleza y aumentar la facturación.",
+        "tags": ["salón", "belleza", "clientes", "marketing"],
+        "url": "/libreria/atraer-clientes-salon-belleza.html",
+        "readTime": "8 min",
+        "category": "salones"
+      },
+      {
+        "id": "aumentar-ventas-tienda-moviles",
+        "title": "Cómo Aumentar Ventas de Tienda de Móviles - Estrategias 2025",
+        "description": "Técnicas avanzadas para aumentar ventas en tiendas de móviles, incluyendo upsell, cross-sell y marketing digital.",
+        "tags": ["ventas", "móvil", "tienda", "e-commerce"],
+        "url": "/libreria/aumentar-ventas-tienda-moviles.html",
+        "readTime": "7 min",
+        "category": "ventas"
+      },
+      {
+        "id": "captar-clientes-barberia",
+        "title": "Cómo Captar Clientes para Barbería en 2025 - Guía Definitiva",
+        "description": "Métodos comprobados para captar nuevos clientes para tu barbería usando marketing digital y estrategias locales.",
+        "tags": ["barbería", "captación", "clientes", "marketing"],
+        "url": "/libreria/captar-clientes-barberia-2025.html",
+        "readTime": "9 min",
+        "category": "barberias"
+      },
+      {
+        "id": "empezar-negocio-online",
+        "title": "Cómo Empezar un Negocio Online en 2025",
+        "description": "Guía completa para iniciar tu negocio online, desde la legalización hasta las primeras ventas.",
+        "tags": ["negocio", "online", "emprendimiento", "inicio"],
+        "url": "/libreria/empezar-negocio-online-2025.html",
+        "readTime": "12 min",
+        "category": "emprendimiento"
+      },
+      {
+        "id": "empezar-pequeno-salon-belleza",
+        "title": "Cómo Empezar un Pequeño Salón de Belleza en 2025",
+        "description": "Todo lo que necesitas saber para abrir un salón de belleza pequeño pero rentable, con inversión mínima.",
+        "tags": ["salón", "belleza", "pequeño negocio", "inicio"],
+        "url": "/libreria/empezar-pequeno-salon-belleza-2025.html",
+        "readTime": "10 min",
+        "category": "salones"
+      }
+    ]
+  },
+  "categories": {
+    "pt": {
+      "sistemas": "Sistemas e Ferramentas",
+      "marketing": "Marketing Digital",
+      "gestao": "Gestão de Negócios",
+      "barbearias": "Barbearias",
+      "saloes": "Salões de Beleza",
+      "ecommerce": "E-commerce",
+      "vendas": "Vendas e Atendimento",
+      "desenvolvedores": "Para Desenvolvedores",
+      "empreendedorismo": "Empreendedorismo",
+      "parceiros": "Programa de Parceiros",
+      "ferramentas": "Ferramentas e Apps"
+    },
+    "en": {
+      "systems": "Systems & Tools",
+      "marketing": "Digital Marketing",
+      "management": "Business Management",
+      "barbershops": "Barbershops",
+      "salons": "Beauty Salons",
+      "ecommerce": "E-commerce",
+      "sales": "Sales & Service",
+      "developers": "For Developers",
+      "entrepreneurship": "Entrepreneurship",
+      "partners": "Partner Program",
+      "tools": "Tools & Apps"
+    },
+    "es": {
+      "sistemas": "Sistemas y Herramientas",
+      "marketing": "Marketing Digital",
+      "gestion": "Gestión de Negocios",
+      "barberias": "Barberías",
+      "salones": "Salones de Belleza",
+      "ecommerce": "E-commerce",
+      "ventas": "Ventas y Atención",
+      "desarrolladores": "Para Desarrolladores",
+      "emprendimiento": "Emprendimiento",
+      "socios": "Programa de Socios",
+      "herramientas": "Herramientas y Apps"
+    }
+  },
+  "metadata": {
+    "totalArticles": 221,
+    "languages": ["pt", "en", "es"],
+    "lastUpdated": "2025-09-09",
+    "version": "1.0.0"
+  }
+}

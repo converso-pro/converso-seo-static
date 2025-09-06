@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Library - Guides and Resources for Local Businesses | GoConverso</title>
+    <meta name="description" content="Complete library of SEO guides, digital marketing and management for barbershops, beauty salons and local businesses. Learn to grow your business online.">
+    <meta name="keywords" content="seo, digital marketing, barbershop, beauty salon, online booking, business management">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SEO Library - Resources for Local Businesses">
+    <meta property="og:description" content="Complete guides for digital marketing and management for your business">
+    <meta property="og:url" content="https://goconverso.com/library/">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSHB9J6WS7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LSHB9J6WS7', {
+        send_page_view: true,
+        custom_map: {
+          'dimension1': 'user_type',
+          'dimension2': 'content_category'
+        }
+      });
+      gtag('event', 'page_view', {
+        user_type: 'visitor',
+        content_category: 'library-hub'
+      });
+    </script>
+    
+    <!-- Meta Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1697178904498506');
+      fbq('track', 'PageView');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f9fafb;
+        }
+        
+        /* Header */
+        .header {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #10b981;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: #4b5563;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #10b981;
+        }
+        
+        .btn-cta {
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        
+        .btn-cta:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Search Box */
+        .search-container {
+            max-width: 600px;
+            margin: -2rem auto 3rem;
+            padding: 0 2rem;
+        }
+        
+        .search-box {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        .search-input:focus {
+            border-color: #10b981;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Categories Section */
+        .categories-section {
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #1f2937;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 2px solid transparent;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            border-color: #10b981;
+        }
+        
+        .category-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+        
+        .category-count {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+        
+        /* Articles Grid */
+        .articles-section {
+            margin-bottom: 4rem;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        .article-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #f3f4f6;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+            line-height: 1.4;
+        }
+        
+        .article-excerpt {
+            font-size: 0.875rem;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 1rem;
+            margin-top: 4rem;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-text {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            background: white;
+            color: #10b981;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-link {
+            color: #9ca3af;
+            text-decoration: none;
+        }
+        
+        .footer-link:hover {
+            color: white;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="https://goconverso.com" class="logo">GoConverso</a>
+            <nav class="nav-links">
+                <a href="/biblioteca/" class="nav-link">🇧🇷 Português</a>
+                <a href="/libreria/" class="nav-link">🇪🇸 Español</a>
+                <a href="https://goconverso.com/pricing" class="btn-cta">Start Free</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>📚 SEO Resource Library</h1>
+        <p>Complete guides to grow your business online with proven digital marketing strategies</p>
+    </section>
+    
+    <!-- Search -->
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" 
+                   class="search-input" 
+                   id="searchInput"
+                   placeholder="Search articles... (e.g. barbershop, marketing, booking)"
+                   onkeyup="searchArticles()">
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Categories -->
+        <section class="categories-section">
+            <h2 class="section-title">📂 Popular Categories</h2>
+            <div class="categories-grid">
+                <!-- Barbershops - Real link -->
+                <a href="/library/how-open-barbershop-guide.html" class="category-card">
+                    <div class="category-icon">💈</div>
+                    <div class="category-title">Barbershops</div>
+                    <div class="category-count">12 articles available</div>
+                </a>
+                
+                <!-- Marketing - Real link -->
+                <a href="/library/best-tips-beginners-digital-marketing.html" class="category-card">
+                    <div class="category-icon">📱</div>
+                    <div class="category-title">Digital Marketing</div>
+                    <div class="category-count">15 articles available</div>
+                </a>
+                
+                <!-- Booking - Real link -->
+                <a href="/library/best-online-scheduling-system.html" class="category-card">
+                    <div class="category-icon">📅</div>
+                    <div class="category-title">Booking Systems</div>
+                    <div class="category-count">10 articles available</div>
+                </a>
+                
+                <!-- E-commerce - Real link -->
+                <a href="/library/how-create-online-store-little-money.html" class="category-card">
+                    <div class="category-icon">🛒</div>
+                    <div class="category-title">E-commerce</div>
+                    <div class="category-count">14 articles available</div>
+                </a>
+                
+                <!-- Beauty Salon - Real link -->
+                <a href="/library/how-start-beauty-salon.html" class="category-card">
+                    <div class="category-icon">💅</div>
+                    <div class="category-title">Beauty Salons</div>
+                    <div class="category-count">8 articles available</div>
+                </a>
+                
+                <!-- Management - Real link -->
+                <a href="/library/barbershop-management-system.html" class="category-card">
+                    <div class="category-icon">📊</div>
+                    <div class="category-title">Business Management</div>
+                    <div class="category-count">11 articles available</div>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Recent Articles -->
+        <section class="articles-section">
+            <h2 class="section-title">📰 Most Recent Articles</h2>
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Article 1 - REAL -->
+                <a href="/library/barbershop-online-booking.html" class="article-card">
+                    <span class="article-tag">Barbershop</span>
+                    <h3 class="article-title">Online Booking System for Barbershops 2025</h3>
+                    <p class="article-excerpt">Complete guide to implement online booking with ROI calculator and platform comparison.</p>
+                </a>
+                
+                <!-- Article 2 - REAL -->
+                <a href="/library/how-attract-barbershop-clients-2025.html" class="article-card">
+                    <span class="article-tag">Marketing</span>
+                    <h3 class="article-title">How to Attract Barbershop Clients in 2025</h3>
+                    <p class="article-excerpt">Proven strategies to attract more clients and increase your barbershop revenue.</p>
+                </a>
+                
+                <!-- Article 3 - REAL -->
+                <a href="/library/calendly-alternatives.html" class="article-card">
+                    <span class="article-tag">Booking</span>
+                    <h3 class="article-title">Best Calendly Alternatives</h3>
+                    <p class="article-excerpt">Complete comparison of the best online booking platforms in the market.</p>
+                </a>
+                
+                <!-- Article 4 - REAL -->
+                <a href="/library/instagram-business-growth.html" class="article-card">
+                    <span class="article-tag">Marketing</span>
+                    <h3 class="article-title">Instagram for Business Growth</h3>
+                    <p class="article-excerpt">How to use Instagram to grow your local business and attract more customers.</p>
+                </a>
+                
+                <!-- Article 5 - REAL -->
+                <a href="/library/how-start-beauty-salon.html" class="article-card">
+                    <span class="article-tag">Salon</span>
+                    <h3 class="article-title">How to Start a Beauty Salon</h3>
+                    <p class="article-excerpt">Step-by-step guide to open your own beauty salon successfully.</p>
+                </a>
+                
+                <!-- Article 6 - REAL -->
+                <a href="/library/barbershop-management-system.html" class="article-card">
+                    <span class="article-tag">Management</span>
+                    <h3 class="article-title">Barbershop Management System</h3>
+                    <p class="article-excerpt">How to choose and implement the best management system for your barbershop.</p>
+                </a>
+                
+                <!-- Article 7 - REAL -->
+                <a href="/library/whatsapp-marketing-strategies.html" class="article-card">
+                    <span class="article-tag">Marketing</span>
+                    <h3 class="article-title">WhatsApp Marketing Strategies</h3>
+                    <p class="article-excerpt">How to use WhatsApp Business to increase sales and retain customers.</p>
+                </a>
+                
+                <!-- Article 8 - REAL -->
+                <a href="/library/growth-hacking-tactics.html" class="article-card">
+                    <span class="article-tag">Growth</span>
+                    <h3 class="article-title">Growth Hacking Tactics</h3>
+                    <p class="article-excerpt">Proven growth hacking strategies to scale your business quickly.</p>
+                </a>
+                
+                <!-- Article 9 - REAL -->
+                <a href="/library/customer-retention-strategies.html" class="article-card">
+                    <span class="article-tag">Retention</span>
+                    <h3 class="article-title">Customer Retention Strategies</h3>
+                    <p class="article-excerpt">Proven techniques to keep your customers coming back.</p>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Hidden articles list for search -->
+        <div id="allArticles" style="display: none;">
+            <!-- All REAL articles from library folder -->
+            <div class="article-item" data-title="barbershop management system" data-url="/library/barbershop-management-system.html"></div>
+            <div class="article-item" data-title="barbershop online booking" data-url="/library/barbershop-online-booking.html"></div>
+            <div class="article-item" data-title="best barbershop software las vegas" data-url="/library/best-barbershop-software-las-vegas-2025.html"></div>
+            <div class="article-item" data-title="best booking system hair salons" data-url="/library/best-booking-system-for-hair-salons.html"></div>
+            <div class="article-item" data-title="best online scheduling system" data-url="/library/best-online-scheduling-system.html"></div>
+            <div class="article-item" data-title="best payment gateway brazil" data-url="/library/best-payment-gateway-ecommerce-brazil.html"></div>
+            <div class="article-item" data-title="best payment gateway usa" data-url="/library/best-payment-gateway-ecommerce-usa.html"></div>
+            <div class="article-item" data-title="best platform develop websites" data-url="/library/best-platform-develop-websites-portuguese.html"></div>
+            <div class="article-item" data-title="best strategies attract customers" data-url="/library/best-strategies-attract-customers-2025.html"></div>
+            <div class="article-item" data-title="best tips beginners marketing" data-url="/library/best-tips-beginners-digital-marketing.html"></div>
+            <div class="article-item" data-title="brand storytelling techniques" data-url="/library/brand-storytelling-techniques.html"></div>
+            <div class="article-item" data-title="calendly alternatives" data-url="/library/calendly-alternatives.html"></div>
+            <div class="article-item" data-title="conversion rate optimization" data-url="/library/conversion-rate-optimization.html"></div>
+            <div class="article-item" data-title="converso for developers" data-url="/library/converso-for-developers.html"></div>
+            <div class="article-item" data-title="converso vs calendly" data-url="/library/converso-vs-calendly.html"></div>
+            <div class="article-item" data-title="customer retention strategies" data-url="/library/customer-retention-strategies.html"></div>
+            <div class="article-item" data-title="developers migrating white label" data-url="/library/developers-migrating-white-label-platforms.html"></div>
+            <div class="article-item" data-title="essential tools freelance developer" data-url="/library/essential-tools-freelance-developer.html"></div>
+            <div class="article-item" data-title="facebook local business marketing" data-url="/library/facebook-local-business-marketing.html"></div>
+            <div class="article-item" data-title="first online sale guide" data-url="/library/first-online-sale-complete-guide.html"></div>
+            <div class="article-item" data-title="free scheduling system" data-url="/library/free-scheduling-system.html"></div>
+            <div class="article-item" data-title="google ads small business" data-url="/library/google-ads-small-business.html"></div>
+            <div class="article-item" data-title="growth hacking tactics" data-url="/library/growth-hacking-tactics.html"></div>
+            <div class="article-item" data-title="how attract barbershop clients" data-url="/library/how-attract-barbershop-clients-2025.html"></div>
+            <div class="article-item" data-title="how attract clients beauty salon" data-url="/library/how-attract-clients-beauty-salon.html"></div>
+            <div class="article-item" data-title="how become iphone reseller" data-url="/library/how-become-iphone-reseller-2025.html"></div>
+            <div class="article-item" data-title="how choose best platform" data-url="/library/how-choose-best-platform-create-website.html"></div>
+            <div class="article-item" data-title="how compete wix wordpress" data-url="/library/how-compete-wix-wordpress-charging-3x-more.html"></div>
+            <div class="article-item" data-title="how create online store" data-url="/library/how-create-online-store-little-money.html"></div>
+            <div class="article-item" data-title="how deliver 5 websites month" data-url="/library/how-deliver-5-professional-websites-month-working-alone.html"></div>
+            <div class="article-item" data-title="how earn recurring commission" data-url="/library/how-earn-30-percent-recurring-commission.html"></div>
+            <div class="article-item" data-title="how get first clients developer" data-url="/library/how-get-first-clients-developer.html"></div>
+            <div class="article-item" data-title="how increase sales phone store" data-url="/library/how-increase-sales-phone-store.html"></div>
+            <div class="article-item" data-title="how much charge website booking" data-url="/library/how-much-charge-website-integrated-online-booking.html"></div>
+            <div class="article-item" data-title="how much cost professional website" data-url="/library/how-much-cost-create-professional-website.html"></div>
+            <div class="article-item" data-title="how much cost online store" data-url="/library/how-much-cost-setup-complete-online-store.html"></div>
+            <div class="article-item" data-title="how much iphone technician earns" data-url="/library/how-much-iphone-technician-earns.html"></div>
+            <div class="article-item" data-title="how open barbershop guide" data-url="/library/how-open-barbershop-guide.html"></div>
+            <div class="article-item" data-title="how open barbershop henderson" data-url="/library/how-open-barbershop-henderson-nevada-2025.html"></div>
+            <div class="article-item" data-title="how quit job live websites" data-url="/library/how-quit-job-live-creating-websites-90-days.html"></div>
+            <div class="article-item" data-title="how retain barbershop clients" data-url="/library/how-retain-barbershop-clients.html"></div>
+            <div class="article-item" data-title="how sell clothes online" data-url="/library/how-sell-clothes-online-without-physical-store.html"></div>
+            <div class="article-item" data-title="how start barbershop henderson" data-url="/library/how-start-barbershop-henderson-nevada.html"></div>
+            <div class="article-item" data-title="how start beauty salon" data-url="/library/how-start-beauty-salon.html"></div>
+            <div class="article-item" data-title="how start online business brazil" data-url="/library/how-start-online-business-brazil-2025.html"></div>
+            <div class="article-item" data-title="how start selling without inventory" data-url="/library/how-start-selling-online-without-inventory.html"></div>
+            <div class="article-item" data-title="how start small beauty salon" data-url="/library/how-start-small-beauty-salon-2025-brazil.html"></div>
+            <div class="article-item" data-title="how succeed hairstylist career" data-url="/library/how-succeed-hairstylist-career.html"></div>
+            <div class="article-item" data-title="how make money creating websites" data-url="/library/how-to-make-money-creating-websites-small-businesses.html"></div>
+            <div class="article-item" data-title="how start barbershop las vegas" data-url="/library/how-to-start-barbershop-las-vegas.html"></div>
+            <div class="article-item" data-title="influencer marketing guide" data-url="/library/influencer-marketing-guide.html"></div>
+            <div class="article-item" data-title="instagram business growth" data-url="/library/instagram-business-growth.html"></div>
+            <div class="article-item" data-title="is goconverso reliable" data-url="/library/is-goconverso-reliable.html"></div>
+            <div class="article-item" data-title="marketing analytics guide" data-url="/library/marketing-analytics-guide.html"></div>
+            <div class="article-item" data-title="marketing automation beginners" data-url="/library/marketing-automation-beginners.html"></div>
+            <div class="article-item" data-title="marketing budget planning" data-url="/library/marketing-budget-planning.html"></div>
+            <div class="article-item" data-title="medical clinic booking" data-url="/library/medical-clinic-booking.html"></div>
+            <div class="article-item" data-title="mobile marketing strategies" data-url="/library/mobile-marketing-strategies.html"></div>
+            <div class="article-item" data-title="omnichannel marketing strategy" data-url="/library/omnichannel-marketing-strategy.html"></div>
+            <div class="article-item" data-title="personal trainer booking" data-url="/library/personal-trainer-booking.html"></div>
+            <div class="article-item" data-title="personalization marketing" data-url="/library/personalization-marketing.html"></div>
+            <div class="article-item" data-title="reduce no shows appointments" data-url="/library/reduce-no-shows-appointments.html"></div>
+            <div class="article-item" data-title="referral marketing programs" data-url="/library/referral-marketing-programs.html"></div>
+            <div class="article-item" data-title="reputation management online" data-url="/library/reputation-management-online.html"></div>
+            <div class="article-item" data-title="scheduling system cost" data-url="/library/scheduling-system-cost.html"></div>
+            <div class="article-item" data-title="seasonal marketing campaigns" data-url="/library/seasonal-marketing-campaigns.html"></div>
+            <div class="article-item" data-title="secret devs earning 6 figures" data-url="/library/secret-devs-earning-6-figures-local-sites.html"></div>
+            <div class="article-item" data-title="therapist booking" data-url="/library/therapist-booking.html"></div>
+            <div class="article-item" data-title="video marketing trends 2025" data-url="/library/video-marketing-trends-2025.html"></div>
+            <div class="article-item" data-title="what best free ecommerce platform" data-url="/library/what-best-free-ecommerce-platform.html"></div>
+            <div class="article-item" data-title="whatsapp marketing strategies" data-url="/library/whatsapp-marketing-strategies.html"></div>
+            <div class="article-item" data-title="why developers migrate white label" data-url="/library/why-developers-migrate-white-label-platforms.html"></div>
+            <div class="article-item" data-title="why email marketing important" data-url="/library/why-email-marketing-important-business-2025.html"></div>
+            <div class="article-item" data-title="why small businesses no website" data-url="/library/why-small-businesses-no-professional-website.html"></div>
+            <div class="article-item" data-title="work order management phone stores" data-url="/library/work-order-management-system-phone-stores.html"></div>
+            <div class="article-item" data-title="worth paying marketplace fees" data-url="/library/worth-paying-marketplace-fees-or-own-store.html"></div>
+        </div>
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2 class="cta-title">Ready to Grow Your Business?</h2>
+            <p class="cta-text">Create your professional website with online booking in minutes</p>
+            <a href="https://goconverso.com/pricing" class="cta-button">Start Free Trial</a>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://goconverso.com" class="footer-link">🏠 Home</a>
+            <a href="/library/" class="footer-link">📚 Library</a>
+            <a href="https://goconverso.com/privacy" class="footer-link">Privacy</a>
+            <a href="https://goconverso.com/terms" class="footer-link">Terms</a>
+            <a href="https://converso.pro/auth?mode=signup" class="footer-link" style="background: linear-gradient(135deg, #10b981, #3b82f6); color: white; padding: 8px 20px; border-radius: 20px;">✨ Create Free Account</a>
+        </div>
+        <p>© 2025 GoConverso. All rights reserved.</p>
+    </footer>
+    
+    <!-- Simple Search Script -->
+    <script>
+    function searchArticles() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const grid = document.getElementById('articlesGrid');
+        const allArticles = document.querySelectorAll('#allArticles .article-item');
+        
+        if (input.length < 2) {
+            // Show default articles if search is empty
+            return;
+        }
+        
+        // Clear current grid
+        grid.innerHTML = '';
+        
+        // Search and display matching articles
+        let found = 0;
+        allArticles.forEach(article => {
+            const title = article.getAttribute('data-title');
+            const url = article.getAttribute('data-url');
+            
+            if (title.includes(input) && found < 9) {
+                found++;
+                const card = document.createElement('a');
+                card.href = url;
+                card.className = 'article-card';
+                card.innerHTML = `
+                    <span class="article-tag">Result</span>
+                    <h3 class="article-title">${title.replace(/-/g, ' ')}</h3>
+                    <p class="article-excerpt">Click to read the full article</p>
+                `;
+                grid.appendChild(card);
+            }
+        });
+        
+        if (found === 0) {
+            grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #6b7280;">No articles found. Try another keyword.</p>';
+        }
+    }
+    </script>
+    
+    <!-- Internal Analytics -->
+    <script>
+    (function() {
+        let sessionId = sessionStorage.getItem('converso_session_id');
+        if (!sessionId) {
+            sessionId = 'sess_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            sessionStorage.setItem('converso_session_id', sessionId);
+        }
+        
+        const trackingData = {
+            event_type: 'page_view',
+            page_url: window.location.href,
+            page_title: document.title,
+            referrer: document.referrer,
+            session_id: sessionId,
+            professional_id: 'biblioteca-seo',
+            timestamp: new Date().toISOString()
+        };
+        
+        fetch('https://osuozhvpecszacvnqwky.supabase.co/functions/v1/track-insight', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(trackingData)
+        }).catch(err => console.error('Tracking error:', err));
+    })();
+    </script>
+</body>
+</html>
