@@ -4,6 +4,8 @@
   "description": "Static HTML pages for Converso SEO - No build system",
   "main": "deploy-static.js",
   "scripts": {
+    "build": "echo 'Build disabled - using pre-built static files'",
+    "build:css": "echo 'CSS build disabled - using pre-built static files'",
     "deploy": "node deploy-static.js",
     "serve": "npx http-server ./output -p 8000",
     "serve:deploy": "npx http-server ./deploy-output -p 8001"
