@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Tracking - Biblioteca SEO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+        }
+        
+        .tracking-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .tracking-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .tracking-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            animation: pulse 2s infinite;
+        }
+        
+        .status-indicator.active {
+            background: #4ade80;
+        }
+        
+        .status-indicator.error {
+            background: #f87171;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .tracking-details {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        
+        .detail-label {
+            color: #666;
+        }
+        
+        .detail-value {
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .test-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .test-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+        }
+        
+        .test-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .log-container {
+            background: #f3f4f6;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+        
+        .log-entry {
+            padding: 5px;
+            margin-bottom: 5px;
+            border-left: 3px solid #667eea;
+            background: white;
+            border-radius: 3px;
+        }
+        
+        .log-entry.success {
+            border-color: #4ade80;
+        }
+        
+        .log-entry.error {
+            border-color: #f87171;
+        }
+        
+        .iframe-container {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Validação de Tracking - Biblioteca SEO GoConverso</h1>
+            <p class="subtitle">Verificação em tempo real de GA4, Meta Pixel e Analytics Interno</p>
+        </div>
+        
+        <div class="tracking-grid">
+            <!-- GA4 Card -->
+            <div class="tracking-card">
+                <div class="tracking-title">
+                    <span class="status-indicator" id="ga4-status"></span>
+                    Google Analytics 4
+                </div>
+                <div class="tracking-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Measurement ID:</span>
+                        <span class="detail-value" id="ga4-id">G-LSHB9J6WS7</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Status:</span>
+                        <span class="detail-value" id="ga4-status-text">Verificando...</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Eventos Enviados:</span>
+                        <span class="detail-value" id="ga4-events">0</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Custom Dimensions:</span>
+                        <span class="detail-value" id="ga4-dimensions">-</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Meta Pixel Card -->
+            <div class="tracking-card">
+                <div class="tracking-title">
+                    <span class="status-indicator" id="meta-status"></span>
+                    Meta/Facebook Pixel
+                </div>
+                <div class="tracking-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Pixel ID:</span>
+                        <span class="detail-value">1697178904498506</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Status:</span>
+                        <span class="detail-value" id="meta-status-text">Verificando...</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Eventos Enviados:</span>
+                        <span class="detail-value" id="meta-events">0</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Último Evento:</span>
+                        <span class="detail-value" id="meta-last-event">-</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Internal Analytics Card -->
+            <div class="tracking-card">
+                <div class="tracking-title">
+                    <span class="status-indicator" id="internal-status"></span>
+                    Analytics Interno (Supabase)
+                </div>
+                <div class="tracking-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Edge Function:</span>
+                        <span class="detail-value">/track-insight</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Status:</span>
+                        <span class="detail-value" id="internal-status-text">Verificando...</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Professional ID:</span>
+                        <span class="detail-value">biblioteca-seo</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Session ID:</span>
+                        <span class="detail-value" id="internal-session">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2 style="margin-bottom: 20px;">🧪 Testes de Tracking</h2>
+            <button class="test-button" onclick="testPageView()">Testar Page View</button>
+            <button class="test-button" onclick="testScrollTracking()">Testar Scroll Tracking</button>
+            <button class="test-button" onclick="testCustomEvent()">Testar Evento Customizado</button>
+            <button class="test-button" onclick="loadTestPage()">Carregar Página da Biblioteca</button>
+            
+            <div class="log-container" id="log-container">
+                <div class="log-entry">Console de tracking iniciado...</div>
+            </div>
+        </div>
+        
+        <div class="iframe-container">
+            <h2 style="margin-bottom: 20px;">📚 Preview da Biblioteca</h2>
+            <iframe id="test-iframe" src="http://localhost:8888/biblioteca/"></iframe>
+        </div>
+    </div>
+    
+    <script>
+        // Tracking validation script
+        let ga4Events = 0;
+        let metaEvents = 0;
+        let internalCalls = 0;
+        
+        // Log function
+        function addLog(message, type = 'info') {
+            const logContainer = document.getElementById('log-container');
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logContainer.appendChild(entry);
+            logContainer.scrollTop = logContainer.scrollHeight;
+        }
+        
+        // Check for GA4
+        function checkGA4() {
+            if (typeof gtag !== 'undefined') {
+                document.getElementById('ga4-status').classList.add('active');
+                document.getElementById('ga4-status-text').textContent = 'Ativo';
+                addLog('GA4 detectado e funcionando', 'success');
+                
+                // Override gtag to monitor calls
+                const originalGtag = window.gtag;
+                window.gtag = function() {
+                    ga4Events++;
+                    document.getElementById('ga4-events').textContent = ga4Events;
+                    addLog(`GA4 Event: ${arguments[0]} - ${JSON.stringify(arguments[1])}`, 'success');
+                    originalGtag.apply(this, arguments);
+                };
+                
+                return true;
+            }
+            document.getElementById('ga4-status').classList.add('error');
+            document.getElementById('ga4-status-text').textContent = 'Não detectado';
+            return false;
+        }
+        
+        // Check for Meta Pixel
+        function checkMetaPixel() {
+            if (typeof fbq !== 'undefined') {
+                document.getElementById('meta-status').classList.add('active');
+                document.getElementById('meta-status-text').textContent = 'Ativo';
+                addLog('Meta Pixel detectado e funcionando', 'success');
+                
+                // Override fbq to monitor calls
+                const originalFbq = window.fbq;
+                window.fbq = function() {
+                    metaEvents++;
+                    document.getElementById('meta-events').textContent = metaEvents;
+                    document.getElementById('meta-last-event').textContent = arguments[0];
+                    addLog(`Meta Event: ${arguments[0]} - ${JSON.stringify(arguments[1])}`, 'success');
+                    originalFbq.apply(this, arguments);
+                };
+                
+                return true;
+            }
+            document.getElementById('meta-status').classList.add('error');
+            document.getElementById('meta-status-text').textContent = 'Não detectado';
+            return false;
+        }
+        
+        // Check internal analytics
+        function checkInternalAnalytics() {
+            // Check if session ID exists
+            const sessionId = sessionStorage.getItem('converso_session_id');
+            if (sessionId) {
+                document.getElementById('internal-session').textContent = sessionId.substr(0, 20) + '...';
+                document.getElementById('internal-status').classList.add('active');
+                document.getElementById('internal-status-text').textContent = 'Ativo';
+                addLog('Analytics interno configurado', 'success');
+                return true;
+            }
+            document.getElementById('internal-status').classList.add('error');
+            document.getElementById('internal-status-text').textContent = 'Não configurado';
+            return false;
+        }
+        
+        // Test functions
+        function testPageView() {
+            addLog('Testando evento de page view...');
+            
+            // Test GA4
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    page_title: 'Test Page',
+                    page_location: window.location.href,
+                    user_type: 'visitor',
+                    content_category: 'biblioteca-seo'
+                });
+            }
+            
+            // Test Meta Pixel
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'PageView');
+            }
+            
+            // Test internal
+            fetch('https://osuozhvpecszacvnqwky.supabase.co/functions/v1/track-insight', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    event_type: 'page_view',
+                    page_url: window.location.href,
+                    professional_id: 'biblioteca-seo',
+                    timestamp: new Date().toISOString()
+                })
+            }).then(res => {
+                addLog('Analytics interno: evento enviado', 'success');
+            }).catch(err => {
+                addLog('Analytics interno: erro ao enviar', 'error');
+            });
+        }
+        
+        function testScrollTracking() {
+            addLog('Simulando scroll tracking...');
+            
+            [25, 50, 75, 100].forEach((percent, index) => {
+                setTimeout(() => {
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'scroll', { 'percent': percent });
+                    }
+                    addLog(`Scroll ${percent}% tracked`);
+                }, index * 500);
+            });
+        }
+        
+        function testCustomEvent() {
+            addLog('Testando evento customizado...');
+            
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'test_event', {
+                    'event_category': 'testing',
+                    'event_label': 'validation',
+                    'value': 1
+                });
+            }
+            
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'ViewContent', {
+                    content_category: 'biblioteca-test'
+                });
+            }
+        }
+        
+        function loadTestPage() {
+            const pages = [
+                '/biblioteca/',
+                '/biblioteca/agendamento-online-barbearia.html',
+                '/library/',
+                '/libreria/'
+            ];
+            
+            const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            document.getElementById('test-iframe').src = `http://localhost:8888${randomPage}`;
+            addLog(`Carregando: ${randomPage}`);
+        }
+        
+        // Initialize checks on page load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                checkGA4();
+                checkMetaPixel();
+                checkInternalAnalytics();
+                
+                // Monitor network requests
+                if (window.performance && window.performance.getEntriesByType) {
+                    const resources = window.performance.getEntriesByType('resource');
+                    const gaRequests = resources.filter(r => r.name.includes('google-analytics.com') || r.name.includes('googletagmanager.com'));
+                    const fbRequests = resources.filter(r => r.name.includes('facebook.com'));
+                    
+                    if (gaRequests.length > 0) {
+                        addLog(`GA4: ${gaRequests.length} requisições detectadas`, 'success');
+                    }
+                    
+                    if (fbRequests.length > 0) {
+                        addLog(`Meta Pixel: ${fbRequests.length} requisições detectadas`, 'success');
+                    }
+                }
+            }, 1000);
+        });
+        
+        // Auto-refresh tracking status every 5 seconds
+        setInterval(() => {
+            const iframe = document.getElementById('test-iframe');
+            if (iframe && iframe.contentWindow) {
+                try {
+                    // Check if tracking is active in iframe
+                    const iframeGA = iframe.contentWindow.gtag;
+                    const iframeFBQ = iframe.contentWindow.fbq;
+                    
+                    if (iframeGA) {
+                        document.getElementById('ga4-dimensions').textContent = 'user_type, content_category';
+                    }
+                    
+                    if (iframeFBQ) {
+                        document.getElementById('meta-last-event').textContent = 'ViewContent';
+                    }
+                } catch (e) {
+                    // Cross-origin restrictions
+                }
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
